@@ -2,9 +2,10 @@
 
 # Writing a Custom Authentication Script
 
-To develop Multi-factor Authentication with Custom Script. It was decided to write a script to use
+To develop Multi-factor Authentication with Custom Script. It was decided to write a script to use [Twilio](http://twilio.com) to send an SMS code to implement a two-step out-of-band authentication mechanism.
 
-[Twilio](http://twilio.com) to send an SMS code to implement a two-step out-of-band authentication mechanism.
+To use Twilio, registration with Twilio is required. For U2F, it is recommended to use token which is available online and register with Gluu.
+To use Super Gluu authentication, Super Gluu mobile app available for iOS and android in their respective stores. 
 
 Fields in Custom Script:
 
