@@ -88,7 +88,7 @@ assumption that step 1 and step 2 happen on the same server, therefore the value
 
 Below are few Methods and Libraries used to Save the Value to LDAP and retrieve the values as per the requirement.
 
-**random.randit()**
+**random.randit()** 
 random.randit("start number",""end number"), Generates the code as per designer or requirements. 
 Example: random.randit(10000,99999)
 
