@@ -64,10 +64,10 @@ Simple example of how to add a custom template and how to pass values between 2 
 6. Select the Level needed to set the security level to.
 7. Select Location Type from the script to be executed.
 8. Select the Usage Type required for the authentication.
-9. Define Custom property which is provided by Twilio and can be noted down from Twilio account page of the signed up user.
-  i. AUTH_TOKEN - Numerical sequence of numbers, to identify the token assigned to the user associated with Twilio.
-  ii. ACCOUNT_SID - Alphanumerical number provided by Twilio for the account holder to identify the user.
-  iii. FROM_NUMBER - Number which is either assigned by Twilio or can be a number user provides to send the code from.
+9. Define Custom property which is provided by Twilio and can be noted down from Twilio account page of the signed up user. 
+  * AUTH_TOKEN - Numerical sequence of numbers, to identify the token assigned to the user associated with Twilio. 
+  * ACCOUNT_SID - Alphanumerical number provided by Twilio for the account holder to identify the user. 
+  * FROM_NUMBER - Number which is either assigned by Twilio or can be a number user provides to send the code from. 
 10. Click on Enabled to enable the added custom script.
 11. Scroll down to the end of the update and click on Update button to submit the form. 
 12. After the custom script is added, click on Manage Authenticaion on the Menu Panel to left. 
