@@ -77,7 +77,7 @@ Simple example of how to add a custom template and how to pass values between 2 
 
 As shown in the below illustration:
 
-![image](https://github.com/GluuFederation/docs/blob/master/sources/img/auth_article/custom script-Add.png)
+![image](https://github.com/GluuFederation/docs/blob/master/sources/img/auth_article/twilio.png)
 
 ##Methods 
 **authenticate():**
