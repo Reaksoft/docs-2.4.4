@@ -65,7 +65,9 @@ Simple example of how to add a custom template and how to pass values between 2 
 7. Select Location Type from the script to be executed.
 8. Select the Usage Type required for the authentication.
 9. Define Custom property which is provided by Twilio and can be noted down from Twilio account page of the signed up user. 
-   
+   * ACCOUNT_SID
+   * AUTH_TOKEN
+   * FROM_NUMBER 
 10. Click on Enabled to enable the added custom script.
 11. Scroll down to the end of the update and click on Update button to submit the form. 
 12. After the custom script is added, click on Manage Authenticaion on the Menu Panel to left. 
@@ -75,8 +77,7 @@ Simple example of how to add a custom template and how to pass values between 2 
 
 As shown in the below illustration:
 
-![image](https://github.com/GluuFederation/docs/blob/master/sources/img/auth_article/twillo.jpg)
-![image](https://raw.githubusercontent.com//GluuFederation/docs/blob/master/sources/img/auth_article/twillo.jpg)
+![image](https://github.com/GluuFederation/docs/blob/master/sources/img/auth_article/custom script-Add.png)
 
 ##Methods 
 **authenticate():**
