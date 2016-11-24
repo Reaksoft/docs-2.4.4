@@ -24,7 +24,7 @@ It is necessary to create a Trust Relationship in the IdP for TestShib2.
 
      iv. Provide TestShib2 XML metadata link: http://www.testshib.org/metadata/testshib-providers.xml
 
-      v. Release Attributes: First Name, Username, "eduPerson TargetedID" if required and released in IdP.
+      v. Release Attributes: First Name, Username, TransientId if required and released in IdP.
 
      vi. Click "Add".
 
