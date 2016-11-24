@@ -54,7 +54,8 @@ Wikid Authentication [Wikid Authentication](https://github.com/GluuFederation/ox
 
 ## Implement methods
 
-Simple example of how to add a custom template and how to pass values between 2 steps of authentication and save the value temporarily for authentication of a user.
+Simple example of how to add a custom template and how to pass values between 2 steps of authentication and save the value temporarily for authentication of a user. Our Sample 
+[Twilio script](https://github.com/GluuFederation/oxAuth/blob/master/Server/integrations/TwilioSMS/TwilioSmsAuthenticator.py)
 
 1. Login to Gluu UI
 2. Navigate to "Configuration" on the Menu panel to the left
@@ -71,6 +72,7 @@ Simple example of how to add a custom template and how to pass values between 2 
 13. Select "Default Authentication Method" tab and change the oxTrust authentication mode to "Twilio" or "Name of the script" from the drop down.
 
 **Note: All three below custom properties are Mandatroy in order to Twilio 2 Factor Authentication to work**
+
   - ACCOUNT_SID - Numerical sequence of numbers, to identify the token assigned to the user associated with Twilio.
   - AUTH TOKEN  - Alphanumerical number provided by Twilio for the account holder to identify the user.
   - FROM_NUMBER - Number which is either assigned by Twilio or can be a number user provides to send the code from.
