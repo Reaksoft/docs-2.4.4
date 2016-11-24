@@ -65,15 +65,15 @@ Simple example of how to add a custom template and how to pass values between 2 
 7. Select Location Type from the script to be executed.
 8. Select the Usage Type required for the authentication.
 9. Define Custom property which is provided by Twilio and can be noted down from Twilio account page of the signed up user. 
-   * ACCOUNT_SID
-   * AUTH_TOKEN
-   * FROM_NUMBER 
 10. Click on Enabled to enable the added custom script.
 11. Scroll down to the end of the update and click on Update button to submit the form. 
 12. After the custom script is added, click on Manage Authenticaion on the Menu Panel to left. 
 13. Select "Default Authentication Method" tab and change the oxTrust authentication mode to "Twilio" or "Name of the script" from the drop down.
 
-**Note: All three custom properties are Mandatroy in order to Twilio 2 Factor Authentication to work**
+**Note: All three below custom properties are Mandatroy in order to Twilio 2 Factor Authentication to work**
+  - ACCOUNT_SID - Numerical sequence of numbers, to identify the token assigned to the user associated with Twilio.
+  - AUTH TOKEN  - Alphanumerical number provided by Twilio for the account holder to identify the user.
+  - FROM_NUMBER - Number which is either assigned by Twilio or can be a number user provides to send the code from.
 
 As shown in the below illustration:
 
@@ -127,8 +127,8 @@ abc = requestParameters.get("passcode")[0].strip()
 
 Another method usually needed to implement is `getCountAuthenticationSteps`. This method normally just returns 1, 2, or 3. If implementing an adaptive authentication strategy,
 where the number of steps depends on the context. Check out the
-Duo script for a good example of this. In our sample [Duo script]
-(https://github.com/GluuFederation/oxAuth/blob/master/Server/integrations/duo/DuoExternalAuthenticator.py),
+Duo script for a good example of this. In our sample 
+[Duo script](https://github.com/GluuFederation/oxAuth/blob/master/Server/integrations/duo/DuoExternalAuthenticator.py),
 
 Duo Script was scripted only for those who wanted to use Duo
 for the IT group. So this was checked for group membership, and dynamically adjusted the number of steps. And this can be scripted for any logic or attribute to the check the authentication, like "country" or "region".
