@@ -43,7 +43,7 @@ Below are the following commands:
 
 # cd /install/community-edition-setup/
 
-#./setup.py
+# ./setup.py
 ```
 
 The `setup.py` script will bring up a prompt to provide information for certificate. It is recommened to use
@@ -100,7 +100,7 @@ To stop the Gluu Server use the below command:
 To check the status of Gluu Server use the below command:
 
 ```
-#/etc/init.d/gluu-server-2.4.4 status
+# /etc/init.d/gluu-server-2.4.4 status
 ```
 
 ## Login to the chroot environment
@@ -113,7 +113,7 @@ To check the status of Gluu Server use the below command:
 alternatively sudo can be used as below
 
 ```
-# chroot /home/gluu-server24/ su -
+# chroot /opt/gluu-server-2.4.4/ su -
 
 ```
 ### Scripted Installation
