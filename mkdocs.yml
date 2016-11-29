@@ -72,10 +72,10 @@ pages:
     - 'Update Gluu Server Certificates': 'how-to/update-certificate.md'
     - 'Inbound SAML End to End Testing': 'how-to/saml_proxy_end_to_end.md'
     - 'Logout': 'reference/logout.md'
+    - 'Write a Custom OTP Authentication Script using Twilio': 'customize/auth-script.md'
 - Customize Gluu Server: 
     - 'Design Customization': 'customize/design.md'
     - 'Behaviour Customization': 'customize/script.md'
-    - 'Custom Script How-To': 'customize/auth-script.md'
     - 'Custom Attributes': 'customize/attributes.md'
 - Supported Protocols: 
     - 'Outbound SAML': 'integrate/outbound-saml.md'
