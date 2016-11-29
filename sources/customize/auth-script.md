@@ -2,7 +2,7 @@
 
 # Writing a Custom Authentication Script
 
-To develop Multi-factor Authentication with Custom Script. It was decided to write a script to use [Twilio](http://twilio.com) to send an SMS code to implement a two-step out-of-band authentication mechanism.
+In this document we walk through the steps of writing a custom authentication script to implement OTP authentication using [Twilio](http://twilio.com) to send an SMS code to implement a two-step out-of-band authentication mechanism.
 
 Fields in Custom Script:
 
