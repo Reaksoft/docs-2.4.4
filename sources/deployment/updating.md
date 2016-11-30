@@ -54,7 +54,7 @@ finalize the installation by running the update script.
 ```
 # service gluu-server-2.4.4 start
 # service gluu-server-2.4.4 login
-# cd /opt/upd/2.4.4.sp1/bin
+# cd /opt/upd/2.4.4.sp2/bin
 # ./update_war.sh
 ```
 
