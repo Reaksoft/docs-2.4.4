@@ -7,23 +7,22 @@ work for 389DS, too:
  * [OpenDJ](https://github.com/GluuFederation/community-edition-setup/tree/master/static/opendj)
  * [OpenLDAP](https://github.com/GluuFederation/community-edition-setup/tree/master/static/openldap)
 
-## Object class gluuAppliance
+Below objectclasses and attributes are extracted from Gluu Specific Schema 101-ox.ldif
 
+## Objectclass gluuAppliance
  * __Description__ 
  * __blowfishPassword__ Blowfish crypted text
  * __c__ 
  * __description__ 
  * __displayName__ 
  * __gluuAdditionalBandwidth__ Track bandwidth requirements for the Gluu Server instance
- * __gluuAdditionalMemory__ Track additional memory requirements for the Gluu Server instance
- * __gluuApplianceDnsServer__ Persist the DNS server that should be used for the Gluu Server instance
+ * __gluuAdditionalMemory__ Track additional memory requirements for the Gluu Server instance.
+ * __gluuApplianceDnsServer__ Persist the DNS server that should be used for the Gluu Server instance.
  * __gluuAppliancePollingInterval__ Set the frequency of the health status update of the Gluu Server
  * __gluuBandwidthRX__ Track data received by the Gluu Server
  * __gluuBandwidthTX__ Track data sent by the Gluu Server
- * __gluuBillingEmail__ Billing alert email address
- * __gluuCentreonEmail__ TODO - in use? Email address to send monitoring alerts
  * __gluuDSstatus__ Monitor health of the instance LDAP server.
- * __gluuFederationHostingEnabled__ oxTrust flag for the federation feature. Values enabled or disabled
+ * __gluuFederationHostingEnabled__ oxTrust flag for the federation feature. Values enabled or disabled.
  * __gluuFreeDiskSpace__ Monitor free disk space on the Gluu Server instance
  * __gluuFreeMemory__ Monitor free memory on the Gluu Server instance
  * __gluuFreeSwap__ Monitor swap space on the Gluu Server instance
@@ -32,41 +31,39 @@ work for 389DS, too:
  * __gluuHostname__ The hostname of the Gluu Server instance
  * __gluuInvoiceNo__ TODO - in use?
  * __gluuIpAddress__ IP address of the Gluu Server instance
- * __gluuJiraEmail__ TODO - in use? Jira alert email address
- * __gluuLastUpdate__ Monitors last time the server was able to connect to the monitoring system
+ * __gluuLastUpdate__ Monitors last time the server was able to connect to the monitoring system.
  * __gluuLifeRay__ None
- * __gluuLoadAvg__ Monitor the average CPU load for a Gluu Server instance
+ * __gluuLoadAvg__ Montior the average CPU load for a Gluu Server instance.
  * __gluuManageIdentityPermission__ TODO - in use?
  * __gluuManager__ Used to specify if a person has the manager role
- * __gluuMaxLogSize__ Maximum log file size
+ * __gluuMaxLogSize__ Maximum Log File Size
  * __gluuOrgProfileMgt__ enable or disable profile management feature in oxTrust
  * __gluuPaidUntil__ TODO - in use?
  * __gluuPaymentProcessorTimestamp__ TODO - in use?
- * __gluuPersonCount__ Monitor the number of people in the LDAP server for a Gluu Server instance
- * __gluuPrivacyEmail__ Privacy alert email address used by oxTrust
+ * __gluuPersonCount__ Monitor the number of people in the LDAP severs for a Gluu Server instance
  * __gluuPrivate__ TODO - in use?
  * __gluuPublishIdpMetadata__ Gluu Server flag to publish the IDP metadata via the web server
  * __gluuResizeInitiated__ TODO - in use?
  * __gluuSPTR__ TODO - in use?
  * __gluuScimEnabled__ oxTrust SCIM feature - enabled or disabled
- * __gluuShibAssertionsIssued__ Monitors the activity of Gluu Server Shibboleth IDP
+ * __gluuShibAssertionsIssued__ Monitors activity of Gluu Server Shibboleth IDP
  * __gluuShibFailedAuth__ Monitors failed login attempts on Gluu Server Shibboleth IDP
  * __gluuShibSecurityEvents__ Monitors security events on Gluu Server Shibboleth IDP
  * __gluuShibSuccessfulAuths__ Monitors login attempts on Gluu Server Shibboleth IDP
- * __gluuSmtpFromEmailAddress__ SMTP From email address
- * __gluuSmtpFromName__ SMTP From name
- * __gluuSmtpHost__ SMTP host
- * __gluuSmtpPassword__ SMTP user password
- * __gluuSmtpPort__ SMTP port
- * __gluuSmtpRequiresAuthentication__ SMTP requires authentication
- * __gluuSmtpRequiresSsl__ SMTP requires SSL
- * __gluuSmtpUserName__ SMTP user name
- * __gluuSslExpiry__ SAML trust relationship configuration
- * __gluuStatus__ Status of the entry, used by many object classes
- * __gluuSvnEmail__ SVN alert email address
- * __gluuSystemUptime__ Monitors how long the Gluu Server instance has been running
- * __gluuTargetRAM__ Monitors total available RAM on the Gluu Server instance
- * __gluuUrl__ Gluu Server instance uri
+ * __oxTrustEmail__ None
+ * __gluuSmtpFromEmailAddress__ Gluu Server SMTP configuration
+ * __gluuSmtpFromName__ SMTP From Name
+ * __gluuSmtpHost__ SMTP Host
+ * __gluuSmtpPassword__ SMTP User Password
+ * __gluuSmtpPort__ SMTP Port
+ * __gluuSmtpRequiresAuthentication__ SMTP Requires Authentication
+ * __gluuSmtpRequiresSsl__ SMTP Requires SSL
+ * __gluuSmtpUserName__ SMTP User Name
+ * __gluuSslExpiry__ SAML Trust Relationship configuration
+ * __gluuStatus__ Status of the entry, used by many objectclasses
+ * __gluuSystemUptime__ Monitors how long the Gluu Server instance has been running.
+ * __gluuTargetRAM__ Monitors total available RAM on Gluu Server instance
+ * __gluuUrl__ Gluu instance URL
  * __gluuVDSenabled__ oxTrust VDS enabled or disabled
  * __gluuVDSstatus__ Gluu VDS configuration
  * __gluuVdsCacheRefreshEnabled__ None
@@ -76,16 +73,13 @@ work for 389DS, too:
  * __gluuVdsCacheRefreshProblemCount__ None
  * __gluuWhitePagesEnabled__ None
  * __iname__ None
- * __inum__ XRI i-number (iNum)
- * __inumFN__ XRI i-number (iNum) without punctuation
+ * __inum__ XRI i-number
+ * __inumFN__ XRI i-number sans punctuation
  * __o__ 
- * __oxAuthenticationLevel__ None
  * __oxAuthenticationMode__ None
- * __oxClusterType__ Type of the underlying clustering mechanism
- * __oxClusteredServers__ List of the clustering partners of this server
+ * __oxTrustAuthenticationMode__ None
  * __oxIDPAuthentication__ Custom IDP authentication configuration
  * __oxLogViewerConfig__ Log viewer configuration
- * __oxMemcachedServerAddress__ Initialization string for memcached client
  * __oxSmtpConfiguration__ SMTP configuration
  * __oxTrustStoreCert__ oxPush device configuration
  * __oxTrustStoreConf__ oxPush application configuration
@@ -93,65 +87,69 @@ work for 389DS, too:
  * __softwareVersion__ None
  * __userPassword__ 
  * __oxTrustCacheRefreshServerIpAddress__ None
+ * __gluuPassportEnabled__ None
 
-## Object class gluuAttribute
-
+## Objectclass gluuAttribute
  * __Description__ 
  * __description__ 
  * __displayName__ 
- * __gluuAttributeEditType__ Specify in oxTrust who can update an attribute - admin or user
- * __gluuAttributeName__ Specify an identifier for an attribute. May be multi-value where an attribute has two names, like givenName and first-name
- * __gluuAttributeOrigin__ Specify the person object class associated with the attribute, used for display purposes in oxTrust
+ * __gluuAttributeEditType__ Specify in oxTrust who can update an attribute, admin or user
+ * __gluuAttributeName__ Specify an identifier for an attribute. May be multi-value where an attribute has two names, like givenName and first-name.
+ * __gluuAttributeOrigin__ Specify the person objectclass associated with the attribute, used for display purposes in oxTrust.
  * __gluuAttributeSystemEditType__ TODO - still required?
- * __gluuAttributeType__ Data type of attribute. Values can be string, photo, numeric, and date
+ * __gluuAttributeType__ Data type of attribute. Values can be string, photo, numeric, date
+ * __oxAuthClaimName__ Used by oxAuth in conjunction with gluuttributeName to map claims to attributes in LDAP.
  * __gluuAttributeUsageType__ TODO - Usage? Value can be OpenID
- * __gluuAttributeViewType__ Specify in oxTrust who can view an attribute -  admin or user
- * __gluuCategory__ TODO - in use? Used to group attributes together
+ * __gluuAttributeViewType__ Specify in oxTrust who can view an attribute, admin or user
+ * __gluuCategory__ TODO - in use? Used to group attributes together.
  * __gluuSAML1URI__ SAML 1 uri of attribute
  * __gluuSAML2URI__ SAML 2 uri of attribute
- * __gluuStatus__ Status of the entry, used by many object classes
+ * __gluuStatus__ Status of the entry, used by many objectclasses
  * __iname__ None
  * __inum__ XRI i-number
  * __objectClass__ 
  * __oxAttributeType__ NameId or attribute
  * __oxMultivaluedAttribute__ None
- * __oxNameIdType__ NameId type
+ * __oxNameIdType__ NameId Type
  * __oxSCIMCustomAttribute__ None
- * __oxSourceAttribute__ Source attribute for this attribute
+ * __oxSourceAttribute__ Source Attribute for this Attribute
  * __seeAlso__ 
  * __urn__ None
- * __oxAuthClaimName__ Used by oxAuth in conjunction with gluuLdapAttributeName to map claims to attributes in LDAP.
+ * __gluuRegExp__ Regular expression used to validate attribute data
+ * __gluuTooltip__ Custom tooltip to be shown on the UI
+ * __oxValidation__ This data has information about attribute Validation
 
-## Object class gluuGroup
-
+## Objectclass gluuGroup
  * __Description__ 
  * __c__ 
  * __description__ 
  * __displayName__ 
- * __gluuGroupType__ Type of group. Not used
- * __gluuGroupVisibility__ Group visibility. Not used
- * __gluuStatus__ Status of the entry, used by many object classes
+ * __gluuGroupType__ Type of Group. Not used.
+ * __gluuGroupVisibility__ Group visibility. Not used.
+ * __gluuStatus__ Status of the entry, used by many objectclasses
  * __iname__ None
- * __inum__ XRI i-number (iNum)
+ * __inum__ XRI i-number
  * __member__ 
  * __o__ 
  * __owner__ 
  * __seeAlso__ 
+ * __oxTrustMetaCreated__ None
+ * __oxTrustMetaLastModified__ None
+ * __oxTrustMetaLocation__ None
+ * __oxTrustMetaVersion__ None
 
-## Object class gluuInumMap
-
+## Objectclass gluuInumMap
  * __Description__ 
- * __gluuStatus__ Status of the entry, used by many object classes
- * __inum__ XRI i-number (iNum)
- * __primaryKeyAttrName__ Primary key attribute name
- * __primaryKeyValue__ Primary key value
- * __secondaryKeyAttrName__ Secondary key attribute name
- * __secondaryKeyValue__ Secondary key value
- * __tertiaryKeyAttrName__ Tertiary key attribute name
- * __tertiaryKeyValue__ Tertiary key value
+ * __gluuStatus__ Status of the entry, used by many objectclasses
+ * __inum__ XRI i-number
+ * __primaryKeyAttrName__ Primary Key Attribute Name
+ * __primaryKeyValue__ Primary Key Value
+ * __secondaryKeyAttrName__ Secondary Key Attribute Name
+ * __secondaryKeyValue__ Secondary Key Value
+ * __tertiaryKeyAttrName__ Tertiary Key Attribute Name
+ * __tertiaryKeyValue__ Tertiary Key Value
 
-## Object class gluuInvoice
-
+## Objectclass gluuInvoice
  * __Description__ 
  * __gluuInvoiceAmount__ TODO - in use?
  * __gluuInvoiceDate__ TODO - in use?
@@ -162,37 +160,35 @@ work for 389DS, too:
  * __gluuInvoiceStatus__ TODO - in use?
  * __inum__ XRI i-number
 
-## Object class gluuOrganization
-
+## Objectclass gluuOrganization
  * __Description__ 
  * __c__ 
- * __county__ ISO 3166-1 Alpha-2 country code
- * __deployedAppliances__ Track which appliances are deployed at an organization
+ * __county__ ISO 3166-1 Alpha-2 Country Code
+ * __deployedAppliances__ Track which appliances are deployed at an organization.
  * __description__ 
  * __displayName__ 
- * __gluuAddPersonCapability__ Organizational attribute to control whether new users can be added via the oxTrust GUI
- * __gluuAdditionalUsers__ TODO: use unclear
+ * __gluuAddPersonCapability__ Organizational attribute to control whether new users can be added via the oxTrust GUI.
+ * __gluuAdditionalUsers__ TODO : use unclear
  * __gluuApplianceUpdateRequestList__ Used by the Gluu Server to request an update
  * __gluuCustomMessage__ oxTrust custom welcome message
- * __gluuFaviconImage__ TODO - Stores uri of Gluu Server favicon
- * __gluuFederationHostingEnabled__ oxTrust flag for the federation feature. Values enabled or disabled
+ * __gluuFaviconImage__ TODO - Stores URL of favicon
+ * __gluuFederationHostingEnabled__ oxTrust flag for the federation feature. Values enabled or disabled.
  * __gluuInvoiceNo__ TODO - in use?
- * __gluuLogoImage__ Logo used by oxTrust for default look and feel
+ * __gluuLogoImage__ Logo used by oxTrust for default look and feel.
  * __gluuManageIdentityPermission__ TODO - in use?
  * __gluuManager__ Used to specify if a person has the manager role
- * __gluuManagerGroup__ Used in organization entry to specifies the DN of the group that has admin privileges in oxTrust
+ * __gluuManagerGroup__ Used in organizatoin entry to specifies the dn of the group that has admin priviledges in oxTrust.
  * __gluuOrgProfileMgt__ enable or disable profile management feature in oxTrust
- * __gluuOrgShortName__ Short description, as few letters as possible, no spaces
- * __gluuOwnerGroup__ Deprecated. Use gluuManagerGroup, instead.
+ * __gluuOrgShortName__ Short description, as few letters as possible, no spaces.
  * __gluuPaidUntil__ TODO - in use?
  * __gluuPaymentProcessorTimestamp__ TODO - in use?
  * __gluuProStoresUser__ TODO - remove
- * __gluuStatus__ Status of the entry, used by many object classes
- * __gluuTempFaviconImage__ Store location for upload of the Gluu Server favicon
+ * __gluuStatus__ Status of the entry, used by many objectclasses
+ * __gluuTempFaviconImage__ Store location for upload of Favicon
  * __gluuThemeColor__ oxTrust login page configuration
  * __gluuWhitePagesEnabled__ None
  * __iname__ None
- * __inum__ XRI i-number (iNum)
+ * __inum__ XRI i-number
  * __l__ 
  * __mail__ 
  * __memberOf__ None
@@ -204,13 +200,13 @@ work for 389DS, too:
  * __oxLinktrackEnabled__ Is Linktrack API configured
  * __oxLinktrackLogin__ Linktrack API login
  * __oxLinktrackPassword__ Linktrack API password
- * __oxRegistrationConfiguration__ Registration configuration
+ * __oxRegistrationConfiguration__ Registration Configuration
  * __postalCode__ 
  * __proStoresToken__ None
  * __prostoresTimestamp__ None
- * __scimAuthMode__ SCIM authorization mode
- * __scimGroup__ SCIM group
- * __scimStatus__ SCIM status
+ * __scimAuthMode__ SCIM Authorization mode
+ * __scimGroup__ scim Group
+ * __scimStatus__ scim status
  * __st__ 
  * __street__ 
  * __telephoneNumber__ 
@@ -218,33 +214,31 @@ work for 389DS, too:
  * __uid__ 
  * __userPassword__ 
 
-## Object class gluuPasswordResetRequest
-
+## Objectclass gluuPasswordResetRequest
  * __Description__ 
- * __creationDate__ Creation date used for password reset requests
+ * __creationDate__ Creation Date used for password reset requests
  * __oxGuid__ A random string to mark temporary tokens
- * __personInum__ iNum of a person
+ * __personInum__ Inum of a person
 
-## Object class gluuPerson
-
+## Objectclass gluuPerson
  * __Description__ 
  * __associatedClient__ 
  * __c__ 
  * __displayName__ 
  * __givenName__ 
- * __gluuManagedOrganizations__ Used to track the organizations a person is associated with
+ * __gluuManagedOrganizations__ Used to track with which organizations a person is associated
  * __gluuOptOuts__ White pages attributes restricted by person in oxTrust profile management
- * __gluuStatus__ Status of the entry, used by many object classes
- * __gluuWhitePagesListed__ Allow publication
+ * __gluuStatus__ Status of the entry, used by many objectclasses
+ * __gluuWhitePagesListed__ Allow Publication
  * __iname__ None
- * __inum__ XRI i-number (iNum)
+ * __inum__ XRI i-number
  * __mail__ 
+ * __gluuSLAManager__ Specifies if the person has the SLA manager role
  * __memberOf__ None
  * __o__ 
- * __oxAuthPersistentJWT__ oxAuth persistent JWT
+ * __oxAuthPersistentJWT__ oxAuth Persistent JWT
  * __oxCreationTimestamp__ Registration time
  * __oxExternalUid__ None
- * __oxInviteCode__ Invite Code
  * __oxLastLogonTime__ Last logon time
  * __oxTrustActive__ None
  * __oxTrustAddresses__ None
@@ -266,52 +260,59 @@ work for 389DS, too:
  * __oxTrusthonorificPrefix__ None
  * __oxTrusthonorificSuffix__ None
  * __oxTrustx509Certificate__ None
- * __persistentId__ Persistent id
+ * __oxPasswordExpirationDate__ Password Expiration date, represented as an ISO 8601 (YYYY-MM-DD) format
+ * __persistentId__ PersistentId
  * __middleName__ Middle name(s)
- * __nickname__ Casual name of the end-user
- * __preferredUsername__ Shorthand name
- * __profile__ Profile page uri of the person
- * __picture__ Profile picture uri of the person
- * __website__ Web page or blog uri of the person
- * __emailVerified__ True if the email address of the person has been verified; otherwise false
- * __gender__ Gender of the person - either female or male
- * __birthdate__ Birthday of the person, represented as an ISO 8601:2004 [ISO8601â€‘2004] YYYY-MM-DD format
- * __zoneinfo__ time zone database representing the end-user
+ * __nickname__ Casual name of the End-User
+ * __preferredUsername__ Shorthand Name
+ * __profile__ Profile page URL of the person
+ * __picture__ Profile picture URL of the person
+ * __website__ Web page or blog URL of the person
+ * __emailVerified__ True if the e-mail address of the person has been verified; otherwise false
+ * __gender__ Gender of the person either female or male
+ * __birthdate__ Birthday of the person, represented as an ISO 8601:2004 [ISO8601‑2004] YYYY-MM-DD format
+ * __zoneinfo__ Time zone database representing the End-Users time zone. For example, Europe/Paris or America/Los_Angeles
  * __locale__ Locale of the person, represented as a BCP47 [RFC5646] language tag
  * __phoneNumberVerified__ True if the phone number of the person has been verified, otherwise false
  * __address__ OpenID Connect formatted JSON object representing the address of the person
  * __updatedAt__ Time the information of the person was last updated. Seconds from 1970-01-01T0:0:0Z
- * __preferredLanguage__ Preferred language of the person
+ * __preferredLanguage__ 
  * __role__ Role
- * __secretAnswer__ Secret answer
- * __secretQuestion__ Secret question
+ * __secretAnswer__ Secret Answer
+ * __secretQuestion__ Secret Question
  * __seeAlso__ 
  * __sn__ 
  * __cn__ 
- * __transientId__ Transient id
- * __uid__ User id of the person
- * __userPassword__ Password of the person
+ * __transientId__ TransientId
+ * __uid__ 
+ * __userPassword__ 
+ * __st__ 
+ * __street__ 
+ * __l__ 
+ * __oxCountInvalidLogin__ Invalid login attempts count
+ * __oxEnrollmentCode__ oxEnrollmentCode
+ * __gluuIMAPData__ This data has information about your imap connection
+ * __oxPPID__ Persistent Pairwise ID for OpenID Connect
 
-## Object class gluuSAMLconfig
-
+## Objectclass gluuSAMLconfig
  * __Description__ 
  * __description__ 
  * __displayName__ 
- * __federationRules__ Track rules for the federation in Gluu SAML configuration. Deprecated as multi-party federation management should move to Jagger
- * __gluuContainerFederation__ SAML trust relationship federation info
- * __gluuEntityId__ Specifies SAML trust relationship entity id
- * __gluuIsFederation__ Used in oxTrust to specify if a SAML trust relationship is a federation. It could also be a website
- * __gluuProfileConfiguration__ SAML trust relationship attribute
- * __gluuReleasedAttribute__ oxTrust reference for the DN of the released attribute
- * __gluuRulesAccepted__ TODO - use unknown for Gluu SAML configuration
+ * __federationRules__ Track rules for the federation in Gluu SAML config. Deprecated as multi-party federation management should move to Jagger.
+ * __gluuContainerFederation__ SAML Trust Relationship federation info
+ * __gluuEntityId__ Specifies SAML trust relationship entity ID
+ * __gluuIsFederation__ Used in oxTrust to specify if a SAML Trust Relationship is a federation. It could also be a website
+ * __gluuProfileConfiguration__ SAML Trust Relationship attribute
+ * __gluuReleasedAttribute__ oxTrust reference for the dn of the released attribute
+ * __gluuRulesAccepted__ TODO - use unknown for Gluu SAML config
  * __gluuSAMLMetaDataFilter__ Metadata filter in SAML trust relationship
  * __gluuSAMLTrustEngine__ SAML trust relationship configuration
  * __gluuSAMLmaxRefreshDelay__ SAML trust relationship refresh time
  * __gluuSAMLspMetaDataFN__ SAML Trust Relationship file location of metadata
- * __gluuSAMLspMetaDataSourceType__ SAML Trust Relationship SP metadata type - file, uri, federation
- * __gluuSAMLspMetaDataURL__ SAML Trust Relationship uri location of metadata
+ * __gluuSAMLspMetaDataSourceType__ SAML Trust Relationship SP metadata type - file, URI, federation
+ * __gluuSAMLspMetaDataURL__ SAML Trust Relationship URI location of metadata
  * __gluuSpecificRelyingPartyConfig__ SAML Trust Relationship configuration
- * __gluuStatus__ Status of the entry, used by many object classes
+ * __gluuStatus__ Status of the entry, used by many objectclasses
  * __gluuTrustContact__ oxTrust login page configuration
  * __gluuTrustDeconstruction__ TODO - in use?
  * __gluuValidationLog__ None
@@ -320,338 +321,356 @@ work for 389DS, too:
  * __inum__ XRI i-number
  * __o__ 
  * __objectClass__ 
- * __oxAuthPostLogoutRedirectURI__ oxAuth post logout redirect uri
+ * __oxAuthPostLogoutRedirectURI__ oxAuth Post Logout Redirect URI
  * __url__ None
+ * __researchAndScholarshipEnabled__ Trust relationship attribute to show that InCommon R&S activated
+ * __gluuEntityType__ This data has information about TR EntityType
 
-## Object class oxAuthClient
-
- * __Description__ 
- * __associatedPerson__ Reference the DN of a person.
- * __displayName__ 
- * __inum__ XRI i-number (iNum)
- * __oxAuthAppType__ oxAuth app type
- * __oxAuthClientIdIssuedAt__ oxAuth client ID issued at
- * __oxAuthClientSecret__ oxAuth client secret
- * __oxAuthClientSecretExpiresAt__ the date the oxAuth client secret expires
- * __oxAuthClientURI__ oxAuth client uri
- * __oxAuthClientUserGroup__ oxAuth client user group
- * __oxAuthContact__ oxAuth contact
- * __oxAuthDefaultAcrValues__ oxAuth default ACR values
- * __oxAuthDefaultMaxAge__ oxAuth default maximum age
- * __oxAuthFederationId__ oxAuth Federation ID attribute
- * __oxAuthFederationMetadataURI__ oxAuth federation metadata uri attribute
- * __oxAuthGrantType__ oxAuth Grant type
- * __oxAuthIdTokenEncryptedResponseAlg__ oxAuth ID token encrypted response algorithm
- * __oxAuthIdTokenEncryptedResponseEnc__ oxAuth ID token encrypted response encoding
- * __oxAuthIdTokenSignedResponseAlg__ oxAuth ID token signed response algorithm
- * __oxAuthInitiateLoginURI__ oxAuth initiate login uri
- * __oxAuthJwksURI__ uri for the oxAuth JWKs file
- * __oxAuthLogoURI__ uri for the oxAuth logo file
- * __oxAuthPolicyURI__ uri for the oxAuth policy
- * __oxAuthPostLogoutRedirectURI__ uri for the oxAuth post logout redirect
- * __oxAuthRedirectURI__ uri for the oxAuth redirect
- * __oxAuthRegistrationAccessToken__ oxAuth registration access token
- * __oxAuthRequestObjectSigningAlg__ oxAuth request object signing algorithm
- * __oxAuthRequestURI__ oxAuth request uri
- * __oxAuthRequireAuthTime__ oxAuth require authentication time
- * __oxAuthResponseType__ oxAuth response type
- * __oxAuthScope__ oxAuth attribute scope
- * __oxAuthSectorIdentifierURI__ oxAuth sector identifier uri
- * __oxAuthSignedResponseAlg__ oxAuth signed response algorithm
- * __oxAuthSubjectType__ oxAuth subject type
- * __oxAuthTokenEndpointAuthMethod__ oxAuth token endpoint authentication method
- * __oxAuthTosURI__ oxAuth type of service uri
- * __oxAuthTrustedClient__ oxAuth trusted client
- * __oxAuthUserInfoEncryptedResponseAlg__ oxAuth user info encrypted response algorithm
- * __oxAuthUserInfoEncryptedResponseEnc__ oxAuth user info encrypted response encoding
- * __oxLastAccessTime__ Last access time
- * __oxLastLogonTime__ Last logon time
-
-## Object class oxAuthConfiguration
-
+## Objectclass oxApplicationConfiguration
  * __Description__ 
  * __ou__ 
- * __oxAuthConfCustomAuthMethod__ Custom authentication method
- * __oxAuthConfDynamic__ oxAuth dynamic configuration
- * __oxAuthConfErrors__ oxAuth errors configuration
- * __oxAuthConfIdPythonScript__ Custom ID generation
- * __oxAuthConfLdapAuth__ LDAP authentication configuration
- * __oxAuthConfStatic__ oxAuth static configuration
- * __oxAuthConfWebKeys__ oxAuth web keys configuration
+ * __oxConfApplication__ ox Application Configuration
+ * __oxRevision__ Revision
 
-## Object class oxAuthCustomScope
-
+## Objectclass oxAuthClient
  * __Description__ 
- * __defaultScope__ Track the default scope for an custom OAuth2 scope
+ * __associatedPerson__ Reference the dn of a person.
+ * __displayName__ 
+ * __inum__ XRI i-number
+ * __oxAuthAppType__ oxAuth App Type
+ * __oxAuthClientIdIssuedAt__ oxAuth Client Issued At
+ * __oxAuthClientSecret__ oxAuth Client Secret
+ * __oxAuthClientSecretExpiresAt__ Date client expires
+ * __oxAuthClientURI__ oxAuth Client URI
+ * __oxAuthContact__ oxAuth Contact
+ * __oxAuthDefaultAcrValues__ oxAuth Default Acr Values
+ * __oxAuthDefaultMaxAge__ oxAuth Default Max Age
+ * __oxAuthGrantType__ oxAuth Grant Type
+ * __oxAuthIdTokenEncryptedResponseAlg__ oxAuth ID Token Encrypted Response Alg
+ * __oxAuthIdTokenEncryptedResponseEnc__ oxAuth ID Token Encrypted Response Enc
+ * __oxAuthIdTokenSignedResponseAlg__ oxAuth ID Token Signed Response Alg
+ * __oxAuthInitiateLoginURI__ oxAuth Initiate Login URI
+ * __oxAuthJwksURI__ oxAuth JWKs URI
+ * __oxAuthJwks__ oxAuth JWKs
+ * __oxAuthLogoURI__ oxAuth Logo URI
+ * __oxAuthPolicyURI__ oxAuth Policy URI
+ * __oxAuthPostLogoutRedirectURI__ oxAuth Post Logout Redirect URI
+ * __oxAuthRedirectURI__ oxAuth Redirect URI
+ * __oxAuthRegistrationAccessToken__ oxAuth Registration Access Token
+ * __oxAuthRequestObjectSigningAlg__ oxAuth Request Object Signing Alg
+ * __oxAuthRequestObjectEncryptionAlg__ oxAuth Request Object Encryption Alg
+ * __oxAuthRequestObjectEncryptionEnc__ oxAuth Request Object Encryption Enc
+ * __oxAuthRequestURI__ oxAuth Request URI
+ * __oxAuthRequireAuthTime__ oxAuth Require Authentication Time
+ * __oxAuthResponseType__ oxAuth Response Type
+ * __oxAuthScope__ oxAuth Attribute Scope
+ * __oxAuthSectorIdentifierURI__ oxAuth Sector Identifier URI
+ * __oxAuthSignedResponseAlg__ oxAuth Signed Response Alg
+ * __oxAuthSubjectType__ oxAuth Subject Type
+ * __oxAuthTokenEndpointAuthMethod__ oxAuth Token Endpoint Auth Method
+ * __oxAuthTokenEndpointAuthSigningAlg__ oxAuth Token Endpoint Auth Signing Alg
+ * __oxAuthTosURI__ oxAuth TOS URI
+ * __oxAuthTrustedClient__ oxAuth Trusted Client
+ * __oxAuthUserInfoEncryptedResponseAlg__ oxAuth User Info Encrypted Response Alg
+ * __oxAuthUserInfoEncryptedResponseEnc__ oxAuth User Info Encrypted Response Enc
+ * __oxAuthExtraConf__ oxAuth additional configuration
+ * __oxLastAccessTime__ Last access time
+ * __oxLastLogonTime__ Last logon time
+ * __oxPersistClientAuthorizations__ ox Persist Client Authorizations
+ * __oxAuthLogoutURI__ oxAuth Policy URI
+ * __oxAuthLogoutSessionRequired__ oxAuth Policy URI
+
+## Objectclass oxAuthConfiguration
+ * __Description__ 
+ * __ou__ 
+ * __oxAuthConfDynamic__ oxAuth Dynamic Configuration
+ * __oxAuthConfErrors__ oxAuth Errors Configuration
+ * __oxAuthConfStatic__ oxAuth Static Configuration
+ * __oxAuthConfWebKeys__ oxAuth Web Keys Configuration
+ * __oxRevision__ Revision
+
+## Objectclass oxAuthCustomScope
+ * __Description__ 
+ * __defaultScope__ Track the default scope for an custom OAuth2 Scope.
  * __description__ 
  * __displayName__ 
- * __inum__ XRI i-number (iNum)
- * __oxAuthClaim__ oxAuth attribute claim
-
-## Object class oxAuthFederationMetadata
-
- * __Description__ 
- * __displayName__ 
- * __inum__ XRI i-number (iNum)
- * __oxAuthFederationMetadataIntervalCheck__ oxAuth Federation metadata interval check attribute
- * __oxAuthFederationOP__ oxAuth Federation OP attribute
- * __oxAuthFederationRP__ oxAuth Federation RP attribute
- * __oxAuthRedirectURI__ oxAuth Redirect uri
-
-## Object class oxAuthFederationOP
-
- * __Description__ 
- * __displayName__ 
  * __inum__ XRI i-number
- * __oxAuthFederationOpDomain__ oxAuth Federation OP domain attribute
- * __oxAuthFederationOpId__ oxAuth Federation OP ID attribute
- * __oxAuthX509PEM__ oxAuth x509 in PEM format
- * __oxAuthX509URL__ oxAuth x509 uri
+ * __oxScopeType__ OX Attribute Scope type
+ * __oxAuthClaim__ oxAuth Attribute Claim
+ * __oxAuthGroupClaims__ oxAuth Group Attribute Claims (true or false)
 
-## Object class oxAuthFederationRP
-
+## Objectclass oxAuthGrant
  * __Description__ 
- * __displayName__ 
- * __inum__ XRI i-number (iNum)
- * __oxAuthRedirectURI__ oxAuth redirect uri
- * __oxAuthX509PEM__ oxAuth x509 in PEM format
- * __oxAuthX509URL__ oxAuth x509 uri
-
-## Object class oxAuthFederationRequest
-
- * __Description__ 
- * __displayName__ 
- * __inum__ XRI i-number (iNum)
- * __oxAuthFederationOpDomain__ oxAuth Federation OP domain attribute
- * __oxAuthFederationOpId__ oxAuth Federation OP ID attribute
- * __oxAuthFederationRequestType__ oxAuth Federation request type attribute
- * __oxAuthRedirectURI__ oxAuth redirect uri
-
-## Object class oxAuthFederationTrust
-
- * __Description__ 
- * __displayName__ 
- * __inum__ XRI i-number
- * __oxAuthFederationId__ oxAuth Federation ID attribute
- * __oxAuthFederationMetadataURI__ oxAuth Federation metadata uri attribute
- * __oxAuthFederationTrustStatus__ oxAuth Federation trust status attribute
- * __oxAuthRedirectURI__ oxAuth redirect uri
- * __oxAuthReleasedScope__ oxAuth released scope attribute
- * __oxAuthSkipAuthorization__ oxAuth skip authorization attribute
-
-## Object class oxAuthSessionId
-
- * __Description__ 
- * __lastModifiedTime__ timestamp of the last modification
- * __oxAuthAuthenticationTime__ oxAuth authentication time
- * __oxAuthPermissionGranted__ oxAuth permission granted
- * __oxAuthPermissionGrantedMap__ oxAuth permission granted map
- * __oxAuthUserDN__ oxAuth user DN
- * __uniqueIdentifier__ an unique identifier for this object
-
-## Object class oxAuthToken
-
- * __Description__ 
- * __createTimestamp__ 
- * __oxAuthAuthenticationTime__ oxAuth authentication time
- * __oxAuthAuthorizationCode__ oxAuth authorization code
- * __oxAuthCreation__ oxAuth creation
- * __oxAuthExpiration__ oxAuth expiration
  * __oxAuthGrantId__ oxAuth grant id
- * __oxAuthGrantType__ oxAuth grant type
- * __oxAuthJwtRequest__ oxAuth JWT request
+ * __oxAuthCreation__ oxAuth Creation
+
+## Objectclass oxAuthSessionId
+ * __Description__ 
+ * __oxLastAccessTime__ Last access time
+ * __oxAuthAuthenticationTime__ oxAuth Authentication Time
+ * __oxAuthPermissionGranted__ oxAuth Permission Granted
+ * __oxAuthPermissionGrantedMap__ oxAuth Permission Granted Map
+ * __oxAuthUserDN__ oxAuth User DN
+ * __uniqueIdentifier__ 
+ * __oxState__ oxState
+ * __oxAuthSessionAttribute__ oxAuthSessionAttribute
+ * __oxAsJwt__ Boolean field to indicate whether object is used as JWT
+ * __oxJwt__ JWT representation of the object or otherwise jwt associated with the object
+ * __oxInvolvedClients__ Involved clients
+
+## Objectclass oxAuthToken
+ * __Description__ 
+ * __oxAuthAuthenticationTime__ oxAuth Authentication Time
+ * __oxAuthAuthorizationCode__ oxAuth authorization code
+ * __oxAuthCreation__ oxAuth Creation
+ * __oxAuthExpiration__ oxAuth Expiration
+ * __oxAuthGrantId__ oxAuth grant id
+ * __oxAuthGrantType__ oxAuth Grant Type
+ * __oxAuthJwtRequest__ oxAuth JWT Request
  * __oxAuthNonce__ oxAuth nonce
- * __oxAuthScope__ oxAuth attribute scope
- * __oxAuthTokenCode__ oxAuth token code
- * __oxAuthTokenType__ oxAuth token type
+ * __oxAuthScope__ oxAuth Attribute Scope
+ * __oxAuthTokenCode__ oxAuth Token Code
+ * __oxAuthTokenType__ oxAuth Token Type
  * __oxAuthUserId__ oxAuth user id
- * __oxAuthenticationLevel__ None
+ * __oxAuthClientId__ oxAuth Client id
  * __oxAuthenticationMode__ None
  * __uniqueIdentifier__ 
+ * __oxCodeChallenge__ OX PKCE code challenge
+ * __oxCodeChallengeMethod__ OX PKCE code challenge method
+ * __oxAuthSessionDn__ oxAuth Session DN
 
-## Object class oxAuthUmaPolicy
-
+## Objectclass oxAuthUmaRPT
  * __Description__ 
- * __description__ 
+ * __oxAmHost__ am host
+ * __oxAuthAuthenticationTime__ oxAuth Authentication Time
+ * __oxAuthClientId__ oxAuth Client id
+ * __oxAuthCreation__ oxAuth Creation
+ * __oxAuthExpiration__ oxAuth Expiration
+ * __oxAuthTokenCode__ oxAuth Token Code
+ * __oxAuthUserId__ oxAuth user id
+ * __oxUmaPermission__ ox uma permission
+ * __uniqueIdentifier__ 
+
+## Objectclass oxAuthUmaResourceSet
+ * __Description__ 
  * __displayName__ 
- * __inum__ XRI i-number (iNum)
- * __oxAuthUmaScope__ uri reference of scope descriptor
- * __oxPolicyScript__ ox policy script
- * __programmingLanguage__ programming language
-
-## Object class oxAuthUmaRPT
-
- * __Description__ 
- * __oxAmHost__ AM host
- * __oxAuthAuthenticationTime__ oxAuth authentication time
- * __oxAuthClientId__ oxAuth client ID
- * __oxAuthCreation__ oxAuth creation
- * __oxAuthExpiration__ oxAuth expiration
- * __oxAuthTokenCode__ oxAuth token code
- * __oxAuthUserId__ oxAuth user ID
- * __oxUmaPermission__ ox UMA permission
- * __uniqueIdentifier__ the unique identifier that is in use
-
-## Object class oxAuthUmaResourceSet
-
- * __Description__ 
- * __displayName__ (user) name that appears on the display
- * __inum__ XRI i-number (iNum)
+ * __inum__ XRI i-number
  * __owner__ 
- * __oxAssociatedClient__ Associate the DN of an OAuth2 client with a person or UMA resource set
- * __oxAuthUmaScope__ uri reference of scope descriptor
- * __oxFaviconImage__ uri for the favicon
+ * __oxAssociatedClient__ Associate the dn of an OAuth2 client with a person or UMA Resource Set.
+ * __oxAuthUmaScope__ URI reference of scope descriptor
+ * __oxFaviconImage__ URI for a graphic icon
  * __oxGroup__ User group
- * __oxId__ oxAuth identifier
+ * __oxId__ Identifier
  * __oxResource__ Host path
- * __oxRevision__ Revision number
+ * __oxRevision__ Revision
  * __oxType__ ox type
+ * __oxUrl__ ox url
 
-## Object class oxAuthUmaResourceSetPermission
-
+## Objectclass oxAuthUmaResourceSetPermission
  * __Description__ 
- * __oxAmHost__ AM host
- * __oxAuthExpiration__ oxAuth expiration
- * __oxAuthUmaScope__ uri reference of scope descriptor
+ * __oxAmHost__ am host
+ * __oxAuthExpiration__ oxAuth Expiration
+ * __oxAuthUmaScope__ URI reference of scope descriptor
  * __oxConfigurationCode__ ox configuration code
  * __oxHost__ ox host
  * __oxResourceSetId__ ox resource set id
  * __oxTicket__ ox ticket
 
-## Object class oxAuthUmaScopeDescription
-
+## Objectclass oxAuthUmaScopeDescription
  * __Description__ 
- * __displayName__ (user) name that appears on the display
- * __inum__ XRI i-number (iNum)
+ * __displayName__ 
+ * __inum__ XRI i-number
  * __owner__ 
- * __oxFaviconImage__ uri for the favicon
- * __oxIconUrl__ uri for the ox icon
- * __oxId__ ox identifier
- * __oxPolicyRule__ ox policy rule
- * __oxRevision__ ox Revision
+ * __oxFaviconImage__ URI for a graphic icon
+ * __oxIconUrl__ ox icon url
+ * __oxId__ Identifier
+ * __oxPolicyRule__ Policy Rule
+ * __oxPolicyScriptDn__ OX policy script Dn
+ * __oxRevision__ Revision
  * __oxType__ ox type
- * __oxUrl__ ox uri
+ * __oxUrl__ ox url
 
-## Object class oxEntry
-
+## Objectclass oxClientAuthorizations
  * __Description__ 
- * __displayName__ (user) name that appears on the display
+ * __oxId__ Identifier
+ * __oxAuthClientId__ oxAuth Client id
+ * __oxAuthScope__ oxAuth Attribute Scope
+
+## Objectclass oxCustomScript
+ * __Description__ 
+ * __inum__ XRI i-number
+ * __displayName__ 
+ * __description__ 
+ * __oxScript__ Attribute that contains script (python, java script)
+ * __oxScriptType__ Attribute that contains script type (e.g. python, java script)
+ * __programmingLanguage__ programming language
+ * __oxModuleProperty__ Module property
+ * __oxConfigurationProperty__ Configuration property
+ * __oxLevel__ Level
+ * __oxRevision__ Revision
+ * __gluuStatus__ Status of the entry, used by many objectclasses
+
+## Objectclass oxDeviceRegistration
+ * __Description__ 
+ * __oxId__ Identifier
+ * __displayName__ 
+ * __description__ 
+ * __oxDeviceKeyHandle__ oxDeviceKeyHandle
+ * __oxDeviceHashCode__ oxDeviceHashCode
+ * __oxApplication__ oxApplication
+ * __oxDeviceRegistrationConf__ oxDeviceRegistrationConf
+ * __oxDeviceData__ oxDeviceData
+ * __oxCounter__ oxCounter
+ * __oxStatus__ oxStatus
+ * __creationDate__ Creation Date used for password reset requests
+ * __oxLastAccessTime__ Last access time
+ * __oxTrustMetaLastModified__ None
+ * __oxTrustMetaLocation__ None
+ * __oxTrustMetaVersion__ None
+
+## Objectclass oxEntry
+ * __Description__ 
+ * __displayName__ 
  * __iname__ None
- * __inum__ XRI i-number (iNum)
+ * __inum__ XRI i-number
 
-## Object class oxLink
-
+## Objectclass oxLink
  * __Description__ 
- * __description__ oxLink description
- * __oxGuid__ A random string to mark temporary ox tokens
- * __oxLinkCreator__ ox link creator
- * __oxLinkExpirationDate__ ox Link expiration date
- * __oxLinkLinktrack__ ox linktrack link
- * __oxLinkModerated__ is the ox link moderated?
- * __oxLinkModerators__ ox link moderators
- * __oxLinkPending__ pending ox registrations
+ * __description__ 
+ * __oxGuid__ A random string to mark temporary tokens
+ * __oxLinkCreator__ Link Creator
+ * __oxLinkExpirationDate__ Link Expiration Date
+ * __oxLinkLinktrack__ Linktrack link
+ * __oxLinkModerated__ Is Link Moderated?
+ * __oxLinkModerators__ Link Moderators
+ * __oxLinkPending__ Pending Registrations
 
-## Object class oxLiteralNode
-
+## Objectclass oxLiteralNode
  * __Description__ 
- * __literalBinaryValue__ ox literal binary value
- * __literalValue__ ox literal value
- * __organizationalOwner__ ox organizational owner
- * __owner__ ox owner
- * __targetRelationalXdiStatement__ ox TargetRelationalXdiStatement
- * __x__ ox XRI component
- * __xdiStatement__ ox XDI statement
+ * __literalBinaryValue__ OX literalValue
+ * __literalValue__ OX literalValue
+ * __organizationalOwner__ OX organizationalOwner
+ * __owner__ 
+ * __targetRelationalXdiStatement__ OX TargetRelationalXdiStatement
+ * __x__ OX XRI Component
+ * __xdiStatement__ OX xdiStatement
  * __xri__ OX XRI address
 
-## Object class oxNode
-
+## Objectclass oxMetric
  * __Description__ 
- * __organizationalOwner__ ox organizational owner
- * __owner__ ox owner
- * __sourceRelationalXdiStatement__ ox source relational XDI statement
- * __targetRelationalXdiStatement__ ox target relational XDI statement
- * __x__ ox XRI component
- * __xdiStatement__ ox XDI statement
- * __xri__ ox XRI address
+ * __uniqueIdentifier__ 
+ * __oxStartDate__ Start date
+ * __oxEndDate__ End date
+ * __oxApplicationType__ Application type
+ * __oxMetricType__ Metric type
+ * __creationDate__ Creation Date used for password reset requests
+ * __oxData__ OX data
 
-## Object class oxProxAccessToken
-
+## Objectclass oxNode
  * __Description__ 
- * __oxAuthCreation__ oxAuth creation
- * __oxAuthExpiration__ oxAuth expiration
- * __oxProxyAccessToken__ oxProxy access token
- * __oxProxyClientId__ oxProxy client ID
+ * __organizationalOwner__ OX organizationalOwner
+ * __owner__ 
+ * __sourceRelationalXdiStatement__ OX SourceRelationalXdiStatement
+ * __targetRelationalXdiStatement__ OX TargetRelationalXdiStatement
+ * __x__ OX XRI Component
+ * __xdiStatement__ OX xdiStatement
+ * __xri__ OX XRI address
 
-## Object class oxProxClient
-
- * __Description__ 
- * __displayName__ (user) name that appears on the display
- * __inum__ XRI i-number (iNum)
- * __oxProxyClaimMapping__ oxProxy claim mapping
- * __oxProxyScope__ oxProxy scope
- * __oxProxyToOpClientMapping__ oxProxy client mapping to op client
-
-## Object class oxProxConfiguration
-
+## Objectclass oxPassportConfiguration
  * __Description__ 
  * __ou__ 
- * __oxProxConf__ oxProxy Configuration
- * __oxScriptDn__ script object DN
+ * __gluuPassportConfiguration__ oxTrust Passport Strategy Configuration
+ * __gluuStatus__ Status of the entry, used by many objectclasses
 
-## Object class oxProxOp
+## Objectclass oxProxAccessToken
+ * __Description__ 
+ * __oxAuthCreation__ oxAuth Creation
+ * __oxAuthExpiration__ oxAuth Expiration
+ * __oxProxyAccessToken__ oxProx access token
+ * __oxProxyClientId__ oxProx client id
 
+## Objectclass oxProxClient
+ * __Description__ 
+ * __displayName__ 
+ * __inum__ XRI i-number
+ * __oxProxyClaimMapping__ oxProx claim mapping
+ * __oxProxyScope__ oxProx scope
+ * __oxProxyToOpClientMapping__ oxProx client mapping to op client
+
+## Objectclass oxProxConfiguration
+ * __Description__ 
+ * __ou__ 
+ * __oxProxConf__ oxProx Configuration
+ * __oxScriptDn__ Script object DN
+
+## Objectclass oxProxOp
  * __Description__ 
  * __c__ 
- * __displayName__ (user) name that appears on the display
- * __inum__ XRI i-number (iNum)
+ * __displayName__ 
+ * __inum__ XRI i-number
  * __l__ 
- * __oxDomain__ ox domain
- * __oxId__ ox identifier
- * __oxX509PEM__ ox X.509 in PEM format
- * __oxX509URL__ ox X.509 uri
+ * __oxDomain__ domain
+ * __oxId__ Identifier
+ * __oxX509PEM__ x509 in PEM format
+ * __oxX509URL__ x509 URL
 
-## Object class oxPushApplication
-
+## Objectclass oxPushApplication
  * __Description__ 
- * __displayName__ (user) name that appears on the display
- * __oxId__ ox identifier
- * __oxName__ ox name
+ * __displayName__ 
+ * __oxId__ Identifier
+ * __oxName__ Name
  * __oxPushApplicationConf__ oxPush application configuration
 
-## Object class oxPushDevice
-
+## Objectclass oxPushDevice
  * __Description__ 
- * __oxAuthUserId__ oxAuth user ID
- * __oxId__ ox identifier
+ * __oxAuthUserId__ oxAuth user id
+ * __oxId__ Identifier
  * __oxPushApplication__ oxPush application DN
  * __oxPushDeviceConf__ oxPush device configuration
  * __oxType__ ox type
 
-## Object class oxScript
-
+## Objectclass oxScript
  * __Description__ 
- * __inum__ XRI i-number (iNum)
- * __oxScript__ Attribute that contains the script (python, java script)
- * __oxScriptType__ Attribute that contains the script type (e.g. python, java script)
+ * __inum__ XRI i-number
+ * __oxScript__ Attribute that contains script (python, java script)
+ * __oxScriptType__ Attribute that contains script type (e.g. python, java script)
 
-## Object class oxTrustConfiguration
+## Objectclass oxSectorIdentifier
+ * __Description__ 
+ * __inum__ XRI i-number
+ * __oxAuthRedirectURI__ oxAuth Redirect URI
+ * __oxAuthClientId__ oxAuth Client id
 
+## Objectclass oxTrustConfiguration
  * __Description__ 
  * __ou__ 
- * __oxTrustConfApplication__ oxTrust application configuration
+ * __oxTrustConfApplication__ oxTrust Application Configuration
+ * __oxTrustConfCacheRefresh__ oxTrust Cache Refresh Configuration
+ * __oxRevision__ Revision
+ * __oxTrustConfImportPerson__ oxTrust Import Person Configuration
 
-## Object class vdDirectoryView
+## Objectclass oxU2fRequest
+ * __Description__ 
+ * __oxId__ Identifier
+ * __oxRequestId__ oxRequestId
+ * __oxRequest__ oxRequest
+ * __oxSessionStateId__ oxSessionStateId
+ * __personInum__ Inum of a person
+ * __creationDate__ Creation Date used for password reset requests
 
+## Objectclass pairwiseIdentifier
+ * __Description__ 
+ * __oxId__ Identifier
+ * __oxSectorIdentifier__ ox Sector Identifier
+
+## Objectclass vdDirectoryView
  * __Description__ 
  * __o__ 
 
-## Object class vdapcontainer
-
+## Objectclass vdapcontainer
  * __Description__ 
  * __ou__ 
 
-## Object class vdlabel
-
+## Objectclass vdlabel
  * __Description__ 
  * __o__ 
-
