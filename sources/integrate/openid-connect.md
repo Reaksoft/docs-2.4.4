@@ -336,8 +336,9 @@ new client.
 
 ![Add new client](https://raw.githubusercontent.com/GluuFederation/docs/master/sources/img/oxTrust/admin_oauth2_newclient.png)
 
-* _Client Name:_ This contains the recognizable and unique display name
-  of the client. The name of the Client to be presented to the End-User.
+* _Client Name:_ This contains the recognizable display name
+  of the client, which is presented to the End-User in the authorization
+  dialogue.
 
 * _Client Secret:_ This is the Data Encryption Standard scheme used by
   Confidential Clients to authenticate to the token endpoint. The value for
