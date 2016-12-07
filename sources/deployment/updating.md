@@ -5,6 +5,16 @@ impact on deployment. Normally these involve updates to the java code,
 effected replacing the `war` file. These are installed using 
 `yum` or `apt-get` command.
 
+##Checking the version of installed Gluu CE server.
+- Version of the server can be found from the name of the installed home Gluu directory
+- Below the other way to verify versions of the installed CE server.
+ 
+ `oxTrust version: cat /opt/tomcat/webapps/identity/META-INF/MANIFEST.MF`
+ `oxAuth version: cat /opt/tomcat/webapps/oxauth/META-INF/MANIFEST.MF`
+ 
+ ![image](https://raw.githubusercontent.com/GluuFederation/docs/master/sources/img/gluu-verify-version.png)
+ 
+ 
 ## Backup
 
 It is highly recommended to stop the Gluu Server, and `tar` 
@@ -57,6 +67,8 @@ finalize the installation by running the update script.
 # cd /opt/upd/2.4.4.sp2/bin
 # ./update_war.sh
 ```
+
+Upon successful update, check the version again to confirm on the update.
 
 ** NOTE: It is recommended to wait for few minutes while the changes take place and 
 Gluu Server CE can be used.**
