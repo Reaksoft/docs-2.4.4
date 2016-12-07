@@ -73,6 +73,7 @@ pages:
     - 'Inbound SAML End to End Testing': 'how-to/saml_proxy_end_to_end.md'
     - 'Logout': 'reference/logout.md'
     - 'Write a Custom OTP Authentication Script using Twilio': 'customize/auth-script.md'
+    - 'Find which version of Gluu you are using':'how-to/find-gluu-server-version.md'
 - Customize Gluu Server: 
     - 'Design Customization': 'customize/design.md'
     - 'Behaviour Customization': 'customize/script.md'
