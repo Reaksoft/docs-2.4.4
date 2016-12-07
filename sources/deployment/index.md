@@ -3,7 +3,7 @@
 # Hardware Requirements
 The Gluu Server is very flexible, and can be used for a wide array of
 access management requirements. Depending on the size of data, and
-the number of concurrent transactions to be supported, depending on which memory(less or more) and CPU capacity may vary.
+the number of concurrent transactions to be supported, memory and CPU capacity may vary.
 
 If Gluu Server services are running on the same server (i.e.
 SAML, OAuth2, LDAP), server will need at least:
