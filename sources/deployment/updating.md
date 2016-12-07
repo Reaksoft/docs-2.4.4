@@ -5,7 +5,7 @@ impact on deployment. Normally these involve updates to the java code,
 effected replacing the `war` file. These are installed using 
 `yum` or `apt-get` command.
 
-##Checking the version of installed Gluu CE server.
+##Check version of installed Gluu CE server.
 - Version of the server can be found from the name of the installed home Gluu directory
 - Below the other way to verify versions of the installed CE server.
  
