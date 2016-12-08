@@ -7,7 +7,7 @@ effected replacing the `war` file. These are installed using
 
 ##Check version of installed Gluu CE server.
 - Version of the server can be found from the name of the installed home Gluu directory
-- Below the other way to verify versions of the installed CE server.
+- Below is an alternate method to determine the version of the installed CE server.
  
  `oxTrust version: cat /opt/tomcat/webapps/identity/META-INF/MANIFEST.MF`
  `oxAuth version: cat /opt/tomcat/webapps/oxauth/META-INF/MANIFEST.MF`
