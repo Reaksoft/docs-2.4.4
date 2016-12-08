@@ -7,7 +7,8 @@ Gluu CE Server Back up can be performed using below methods.
 * Using tar command to tar the Gluu Server Folder from the Host OS
 * Using Gluu provided export and import scripts to back up ldif of the LDAP.
 
-> NOTE: In this documentation we are specifying '2.4.x' as older version and '2.4.y' the latest one. 
+> NOTE: In this documentation we are specifying '2.4.x' as installed version. 
+
 ##Tar command to Back up Gluu Server
 
 ###Steps to Back up Gluu CE server using tar
