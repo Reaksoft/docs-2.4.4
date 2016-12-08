@@ -74,6 +74,7 @@ pages:
     - 'Logout': 'reference/logout.md'
     - 'Write a Custom OTP Authentication Script using Twilio': 'customize/auth-script.md'
     - 'Find which version of Gluu you are using': 'how-to/find-gluu-server-version.md'
+    - 'Backup Gluu CE Server': 'how-to/backup.md'
 - Customize Gluu Server: 
     - 'Design Customization': 'customize/design.md'
     - 'Behaviour Customization': 'customize/script.md'
