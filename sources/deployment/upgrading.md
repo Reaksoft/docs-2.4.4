@@ -4,9 +4,8 @@
 
 Upgrading a Gluu Server is NOT a simple `apt-get upgrade`. The admin needs to explicitly install the version of the Gluu Server. It generally involves the following steps:
 
-!!! Warning 
-    As a precautionary measure, 
-    Please make sure to back up the Gluu container or LDAP Ldif before proceeding to upgrading.
+!!! Warning
+    As a precautionary measure, Please make sure to back up the Gluu container or LDAP Ldif before proceeding to upgrading.
 
 * Install new version
 * Export the data from your current version
@@ -16,7 +15,7 @@ Upgrading a Gluu Server is NOT a simple `apt-get upgrade`. The admin needs to ex
 
 Gluu provides the necessary [scripts](https://github.com/GluuFederation/community-edition-setup/tree/master/static/scripts) to perform the import and export of the data in and out of the servers.
 
-> NOTE: In this documentation we are specifying '2.4.x' as installed version. 
+> NOTE: In this documentation, '2.4.x' is referred to existing installed version of Gluu CE Server. 
 
 ## Export the data from the current installation
 
