@@ -14,7 +14,7 @@ Upgrading a Gluu Server is NOT a simple `apt-get upgrade`. The admin needs to ex
 
 Gluu provides the necessary [scripts](https://github.com/GluuFederation/community-edition-setup/tree/master/static/scripts) to perform the import and export of the data in and out of the servers.
 
-> NOTE: In this documentation we are specifying '2.4.x' as older version and '2.4.y' the latest one. 
+> NOTE: In this documentation we are specifying '2.4.x' as installed version. 
 
 ## Export the data from the current installation
 
