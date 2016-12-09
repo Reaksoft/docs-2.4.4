@@ -1097,7 +1097,29 @@ defined in OAuth Token Revocation [RFC7009].</td>
 </li>
 </ul>
 <h6 id="response_1">Response</h6>
-<p><a href="#"></a></p>
+<p><pre>
+                HTTP/1.1 200 OK
+                Content-Type: application/json
+                Cache-Control: no-store
+
+                   {
+                    "active": true,
+                    "exp": 1256953732,
+                    "iat": 1256912345,
+                    "permissions": [
+                      {
+                        "resource_set_id": "112210f47de98100",
+                        "scopes": [
+                          "view",
+                          "http://photoz.example.com/dev/actions/print"
+                         ],
+                        "exp" : 1256953732
+                      }
+                    ]
+                   }
+</pre>
+
+
 <h6 id="errors_1">Errors</h6>
 <p><table border="1">
     <tr>
