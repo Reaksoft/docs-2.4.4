@@ -61,8 +61,30 @@ sudo netstat -l|grep www
 sudo /etc/init.d/apache2 restart
 ```
 
-## Authentication Module (auth_openidc)
+# Authentication Module (auth_openidc)
+## Requirements
+The `mod_auth_openidc` module depends on `libhiredis0.10, libpcre3, & libjansson4` package. If the dependencies are not met, please install them manually using the `apt-get` command.
 
+Additionally the moduel depends on `libcjose` package which must be downloaded and installed from [this page](https://github.com/pingidentity/mod_auth_openidc/releases).
+
+Please run the following commands to install the dependency package for `libcjose`.
+
+```
+# apt-get install libjansson
+# apt-get install libc6
+```
+The `libcjose` package must be downloaded from [this page](https://github.com/pingidentity/mod_auth_openidc/releases). Please run the following commands to downlaod and install the package.
+
+```
+# wget https://github.com/pingidentity/mod_auth_openidc/releases/download/v2.1.3/libcjose_0.4.1-1ubuntu1.trusty.1_amd64.deb
+
+# dpkg -i libcjose_0.4.1-1ubuntu1.trusty.1_amd64.deb
+```
+
+!!! Note
+    The latest package for the OpenID Connect module is available from https://github.com/pingidentity/mod_auth_openidc/releases
+
+## Install Apache OpenID Connect Module
 Run the following command to download and install the `auth_openidc` module:
 
 ```
@@ -71,8 +93,6 @@ Run the following command to download and install the `auth_openidc` module:
 ```
 
 If the package is not available, please check this [Github Page](https://github.com/pingidentity/mod_auth_openidc/wiki).
-
-**Note:** This module depends on `libhiredis0.10, libpcre3, & libjansson4` package. If the dependencies are not met, please install them manually using the `apt-get` command.
 
 # Configuration
 This is the configuration guide for the Apache Module `mod_auth_aidc`.
