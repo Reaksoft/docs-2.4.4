@@ -14,7 +14,7 @@ and Gluu Server.
 If you don't have the Apache HTTPD server installed, use apt-get
 to install the Ubuntu standard distribution:
 
-```
+``` bash
 # apt-get install apache2
 # service apache2 start
 ```
@@ -22,20 +22,23 @@ to install the Ubuntu standard distribution:
 ## SSL Configuration
 The SSL Module is necessary for the Apache OpenID Connect Module. Please 
 use the following commands to activate the `ssl module`.
-```
+
+``` bash
 # a2enmod ssl
 ```
 
 The next step is to create a self-signed SSL Certificate.
 
 * Create a directory to put the generate the ssl certificate
-```
+
+``` bash
 # mkdir /etc/apache2/ssl`
 # openssl req -x509 -nodes -days 365 -newkey rsa:2048 -keyout /etc/apache2/ssl/apache.key -out /etc/apache2/ssl/apache.crt
 ```
 
 * Answer the questions that are asked. A template is given below
-```
+
+``` bash
 	Country Name (2 letter code) [AU]:US
 	State or Province Name (full name) [Some-State]:TX
 	Organization Name (eg, company) [Internet Widgits Pty Ltd]:Acme Inc.
@@ -50,19 +53,27 @@ use the SSL module
 
 1. Open the `default-ssl.conf` file
 
-```
+``` bash
 # vim /etc/apache2/sites-available/default-ssl.conf`
+
 ```
 
 2. Update the certificate locations with the newly created certificates 
 `/etc/apache2/ssl/apache.key` and `/etc/apache2/ssl/apache.crt`
 
-3. Activate the SSl Virtual Host and CGI
-```
+3. Activate the SSL Virtual Host and CGI
+
+``` bash
 # a2ensite default-ssl.conf
 # a2enmod cgid
 # service apache2 restart
+
 ```
+
+At this point, its a good time to test to make sure SSL and CGI are 
+working. Point your browser at 
+https://www.mydomain.com/cgi-bin/printHeaders.cgi
+You should see a list of current environment variables. 
 
 # Configuration of mod_auth_openidc 
 
@@ -70,19 +81,22 @@ use the SSL module
 
 `mod_auth_openidc` module depends on the Ubuntu package `libjansson4`: 
 
-```
+``` bash
 # apt-get install libjansson
+
 ```
 
 You'll also need the mod_auth_openidc and libjose packages which can 
 be downloaded from the [Releases Page](https://github.com/pingidentity/mod_auth_openidc/releases).
 
 For example, at this time the current release is 2.1.3, so the command would be:
-```
+
+``` bash
 # wget https://github.com/pingidentity/mod_auth_openidc/releases/download/v2.1.3/libcjose_0.4.1-1ubuntu1.trusty.1_amd64.deb
 # wget https://github.com/pingidentity/mod_auth_openidc/releases/download/v2.1.3/libapache2-mod-auth-openidc_2.1.3-1ubuntu1.trusty.1_amd64.deb
 # dpkg -i libcjose_0.4.1-1ubuntu1.trusty.1_amd64.deb
 # dpkg -i libapache2-mod-auth-openidc_2.1.3-1ubuntu1.trusty.1_amd64.deb
+
 ```
 
 !!! Note
@@ -92,9 +106,10 @@ Note, if you like to build from source, you can clone the project at [Github Pag
 
 Now you can enable the module
 
-```
+``` bash
 # sudo a2enmod auth_openidc
 # sudo service apache2 restart
+
 ```
 
 ## Client Registration
@@ -126,13 +141,14 @@ also need the `client_id` for the next step.
 
 This cgi-script makes for a good test page! 
 
-```
+``` bash
 # vi /usr/lib/cgi-bin/printHeaders.cgi
+
 ```
 
 Then past in this code
 
-```
+``` bash
 #!/usr/bin/python
 
 import os
@@ -153,9 +169,10 @@ print "</BODY></HTML>"
 
 Then you'll need to make the script executable by the Apache2
 
-```
+``` bash
 # chown www-data:www-data /usr/lib/cgi-bin/printHeaders.cgi
 # chmod ug+x /usr/lib/cgi-bin/printHeaders.cgi
+
 ```
 
 ## Configuring the Apache VirtualHost 
@@ -163,12 +180,14 @@ Then you'll need to make the script executable by the Apache2
 You are almost done! You'll need to configure mod_auth_openidc to
 protect your server.
 
-```
+``` bash
 # vi /etc/apache2/sites-available/default-ssl.conf
+
 ```
 
 Add the following right under `<VirtualHost _default_:443>`
-```
+
+``` bash
 OIDCProviderMetadataURL https://idp.mydomain.com/.well-known/openid-configuration
 OIDCClientID (client-id-you-got-back-when-you-added-the-client)
 OIDCClientSecret (your-client-secret)
@@ -184,11 +203,14 @@ OIDCPassIDTokenAs payload
     Require valid-user
     AuthType openid-connect
 </Location>
+
 ```
 
 Then restart Apache to effect the changes
-```
+
+``` bash
 # service apache2 restart
+
 ```
 
 The most confusing part here is the `OIDCRedirectURI`--don't set this
