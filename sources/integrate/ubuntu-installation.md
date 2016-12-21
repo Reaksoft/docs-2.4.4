@@ -14,7 +14,7 @@ and Gluu Server.
 If you don't have the Apache HTTPD server installed, use apt-get
 to install the Ubuntu standard distribution:
 
-``` bash
+``` text
 # apt-get install apache2
 # service apache2 start
 ```
@@ -23,7 +23,7 @@ to install the Ubuntu standard distribution:
 The SSL Module is necessary for the Apache OpenID Connect Module. Please 
 use the following commands to activate the `ssl module`.
 
-``` bash
+``` text
 # a2enmod ssl
 ```
 
@@ -31,14 +31,14 @@ The next step is to create a self-signed SSL Certificate.
 
 * Create a directory to put the generate the ssl certificate
 
-``` bash
+``` text
 # mkdir /etc/apache2/ssl`
 # openssl req -x509 -nodes -days 365 -newkey rsa:2048 -keyout /etc/apache2/ssl/apache.key -out /etc/apache2/ssl/apache.crt
 ```
 
 * Answer the questions that are asked. A template is given below
 
-``` bash
+``` text
 	Country Name (2 letter code) [AU]:US
 	State or Province Name (full name) [Some-State]:TX
 	Organization Name (eg, company) [Internet Widgits Pty Ltd]:Acme Inc.
@@ -53,7 +53,7 @@ use the SSL module
 
 1. Open the `default-ssl.conf` file
 
-``` bash
+``` text
 # vim /etc/apache2/sites-available/default-ssl.conf`
 
 ```
@@ -63,7 +63,7 @@ use the SSL module
 
 3. Activate the SSL Virtual Host and CGI
 
-``` bash
+``` text
 # a2ensite default-ssl.conf
 # a2enmod cgid
 # service apache2 restart
@@ -81,7 +81,7 @@ You should see a list of current environment variables.
 
 `mod_auth_openidc` module depends on the Ubuntu package `libjansson4`: 
 
-``` bash
+``` text
 # apt-get install libjansson
 
 ```
@@ -91,7 +91,7 @@ be downloaded from the [Releases Page](https://github.com/pingidentity/mod_auth_
 
 For example, at this time the current release is 2.1.3, so the command would be:
 
-``` bash
+``` text
 # wget https://github.com/pingidentity/mod_auth_openidc/releases/download/v2.1.3/libcjose_0.4.1-1ubuntu1.trusty.1_amd64.deb
 # wget https://github.com/pingidentity/mod_auth_openidc/releases/download/v2.1.3/libapache2-mod-auth-openidc_2.1.3-1ubuntu1.trusty.1_amd64.deb
 # dpkg -i libcjose_0.4.1-1ubuntu1.trusty.1_amd64.deb
@@ -106,7 +106,7 @@ Note, if you like to build from source, you can clone the project at [Github Pag
 
 Now you can enable the module
 
-``` bash
+``` text
 # sudo a2enmod auth_openidc
 # sudo service apache2 restart
 
@@ -122,7 +122,7 @@ There are two methods for client registration:
 For this example, let's create the client manually in the Gluu Server.
 When you add the client, use the following parameters:
 
-```
+``` text
 Name: mod_auth_openidc
 Client Secret: something-sufficiently-unguessable
 Application Type: Web
@@ -141,14 +141,14 @@ also need the `client_id` for the next step.
 
 This cgi-script makes for a good test page! 
 
-``` bash
+``` text
 # vi /usr/lib/cgi-bin/printHeaders.cgi
 
 ```
 
 Then past in this code
 
-``` bash
+``` python
 #!/usr/bin/python
 
 import os
@@ -169,7 +169,7 @@ print "</BODY></HTML>"
 
 Then you'll need to make the script executable by the Apache2
 
-``` bash
+``` text
 # chown www-data:www-data /usr/lib/cgi-bin/printHeaders.cgi
 # chmod ug+x /usr/lib/cgi-bin/printHeaders.cgi
 
@@ -180,14 +180,14 @@ Then you'll need to make the script executable by the Apache2
 You are almost done! You'll need to configure mod_auth_openidc to
 protect your server.
 
-``` bash
+``` text
 # vi /etc/apache2/sites-available/default-ssl.conf
 
 ```
 
 Add the following right under `<VirtualHost _default_:443>`
 
-``` bash
+``` apacheconf
 OIDCProviderMetadataURL https://idp.mydomain.com/.well-known/openid-configuration
 OIDCClientID (client-id-you-got-back-when-you-added-the-client)
 OIDCClientSecret (your-client-secret)
@@ -208,7 +208,7 @@ OIDCPassIDTokenAs payload
 
 Then restart Apache to effect the changes
 
-``` bash
+``` text
 # service apache2 restart
 
 ```
