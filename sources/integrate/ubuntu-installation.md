@@ -1,340 +1,205 @@
 [TOC]
-# Installation
-This is the installation guide for the Apache Module `auth_openaidc`.
+
+# Basic Web Server Installation
+
+Before you can install mod_auth_openidc, you need to have an Apache
+HTTPD server running with SSL enabled. 
 
 ## Apache Web Server
 
-It is assumed that all the hostnames will be dns resolvable; if not, then add the entries in `/etc/hosts` file. Run the following commands to install Apache2, enable SSL and restart the server:
+It is assumed that all the hostnames will be dns resolvable. If not, 
+then add the entries in `/etc/hosts` file on both the web server
+and Gluu Server. 
+
+If you don't have the Apache HTTPD server installed, use apt-get
+to install the Ubuntu standard distribution:
 
 ```
-sudo apt-get install apache2
-service apache2 restart
+# apt-get install apache2
+# service apache2 start
 ```
 
 ## SSL Configuration
-The SSL Module is necessary for the Apache OpenID Connect Module. Please use the following commands to activate the `ssl module`.
+The SSL Module is necessary for the Apache OpenID Connect Module. Please 
+use the following commands to activate the `ssl module`.
 ```
-sudo a2enmod ssl
-service apache2 restart
+# a2enmod ssl
 ```
 
 The next step is to create a self-signed SSL Certificate.
 
-* Create a directory to put the ssl certificates<br/>`sudo mkdir /etc/apache2/ssl`
-
-* Generate the certificate<br/>`sudo openssl req -x509 -nodes -days 365 -newkey rsa:2048 -keyout /etc/apache2/ssl/apache.key -out /etc/apache2/ssl/apache.crt`
+* Create a directory to put the generate the ssl certificate
+```
+# mkdir /etc/apache2/ssl`
+# openssl req -x509 -nodes -days 365 -newkey rsa:2048 -keyout /etc/apache2/ssl/apache.key -out /etc/apache2/ssl/apache.crt
+```
 
 * Answer the questions that are asked. A template is given below
 ```
 	Country Name (2 letter code) [AU]:US
-	State or Province Name (full name) [Some-State]:Texas
-	Organization Name (eg, company) [Internet Widgits Pty Ltd]:Gluu Inc
-	Organizational Unit Name (eg, section) []:Gluu Test
-	Common Name (e.g. server FQDN or YOUR name) []:gluu.org
-	Email Address []:support@gluu.org
+	State or Province Name (full name) [Some-State]:TX
+	Organization Name (eg, company) [Internet Widgits Pty Ltd]:Acme Inc.
+	Organizational Unit Name (eg, section) []:
+	Common Name (e.g. server FQDN or YOUR name) []:www.mydomain.com
+	Email Address []:help@mydomain.com
 ```
 
 ### Configure Apache to use SSL
-This section will guide you through the steps to configure apache to use the SSL module
+This section will guide you through the steps to configure apache to 
+use the SSL module
 
-1. Open the `default-ssl.conf` file<br/>`sudo vim /etc/apache2/sites-available/default-ssl.conf`
-
-2. Update the certificate locations with the newly created certificates `/etc/apache2/ssl/apache.key` and `/etc/apache2/ssl/apache.crt`
-
-3. Activate the SSl Virtual Host, if you are running `auth_oidc` and `Gluu Server` in the same machine, and restart Apache Server
-```
-sudo a2ensite default-ssl.conf
-sudo service apache2 restart
-```
-
-### Restart Apache Manually
-If Apache Web Server fails and the following error is shown, then Apache Server needs to be stopped manually.
-
-`Restarting web server apache2                                               [fail]`
-
-Run the following commands to stop the Apache Server manually:
+1. Open the `default-ssl.conf` file
 
 ```
-sudo /etc/init.d/apache2 stop
-sudo killall apache2
-sudo netstat -l|grep www
-sudo /etc/init.d/apache2 restart
+# vim /etc/apache2/sites-available/default-ssl.conf`
 ```
 
-# Authentication Module (auth_openidc)
-## Requirements
-The `mod_auth_openidc` module depends on `libhiredis0.10, libpcre3, & libjansson4` package. If the dependencies are not met, please install them manually using the `apt-get` command.
+2. Update the certificate locations with the newly created certificates 
+`/etc/apache2/ssl/apache.key` and `/etc/apache2/ssl/apache.crt`
 
-Additionally the moduel depends on `libcjose` package which must be downloaded and installed from [this page](https://github.com/pingidentity/mod_auth_openidc/releases).
+3. Activate the SSl Virtual Host and CGI
+```
+# a2ensite default-ssl.conf
+# a2enmod cgid
+# service apache2 restart
+```
 
-Please run the following commands to install the dependency package for `libcjose`.
+# Configuration of mod_auth_openidc 
+
+## Installation
+
+`mod_auth_openidc` module depends on the Ubuntu package `libjansson4`: 
 
 ```
 # apt-get install libjansson
-# apt-get install libc6
 ```
-The `libcjose` package must be downloaded from [this page](https://github.com/pingidentity/mod_auth_openidc/releases). Please run the following commands to downlaod and install the package.
 
+You'll also need the mod_auth_openidc and libjose packages which can 
+be downloaded from the [Releases Page](https://github.com/pingidentity/mod_auth_openidc/releases).
+
+For example, at this time the current release is 2.1.3, so the command would be:
 ```
 # wget https://github.com/pingidentity/mod_auth_openidc/releases/download/v2.1.3/libcjose_0.4.1-1ubuntu1.trusty.1_amd64.deb
-
+# wget https://github.com/pingidentity/mod_auth_openidc/releases/download/v2.1.3/libapache2-mod-auth-openidc_2.1.3-1ubuntu1.trusty.1_amd64.deb
 # dpkg -i libcjose_0.4.1-1ubuntu1.trusty.1_amd64.deb
+# dpkg -i libapache2-mod-auth-openidc_2.1.3-1ubuntu1.trusty.1_amd64.deb
 ```
 
 !!! Note
-    The latest package for the OpenID Connect module is available from https://github.com/pingidentity/mod_auth_openidc/releases
+    Get the latest packages here: https://github.com/pingidentity/mod_auth_openidc/releases
 
-## Install Apache OpenID Connect Module
-Run the following command to download and install the `auth_openidc` module:
+Note, if you like to build from source, you can clone the project at [Github Page](https://github.com/pingidentity/mod_auth_openidc)
+
+Now you can enable the module
 
 ```
-# wget http://ftp.us.debian.org/debian/pool/main/liba/libapache2-mod-auth-openidc/libapache2-mod-auth-openidc_1.6.0-1_amd64.deb
-# dpkg -i libapache2-mod-auth-openidc_1.6.0-1_amd64.deb
+# sudo a2enmod auth_openidc
+# sudo service apache2 restart
 ```
 
-If the package is not available, please check this [Github Page](https://github.com/pingidentity/mod_auth_openidc/wiki).
+## Client Registration
 
-# Configuration
-This is the configuration guide for the Apache Module `mod_auth_aidc`.
-
-## Apache Web Server
-
-The default ports for `http` and `https` are not used for `auth_openidc` module, therefore it is necessary to update three files. The changes are done to avoid a conflict with the Gluu Server's Apache ports. 
-But, if the Gluu Server and the Apache server are different, there is no need to change the ports. 
-
-Change port numbers to **44443** (for SSL) and **8000** (for non-SSL) in these three files.
-
-* /etc/apache2/ports.conf
-
-* /etc/apache2/sites-available/000-default.conf
-
-* /etc/apache2/sites-available/default-ssl.conf
-
-# Client Registration
 There are two methods for client registration:
 
 1. Dynamic Client Registration
 2. Manual Client Registration
 
-The example configuration uses `dynamic.gluu.org` as the server name and `ce.gluu.org` as the Gluu Server name.
-
-## Dynamic Client Registration
-The following example shows the configuration for dynamic client registration. 
-
-### Preparing auth_openidc Module
-The OpenID Connect module requires a folder to store the metadata, therefore create a metadata folder and change permission using the following commands.
+For this example, let's create the client manually in the Gluu Server.
+When you add the client, use the following parameters:
 
 ```
-# mkdir /var/cache/apache2/metadata
-# chown -R www-data:www-data /var/cache/apache2/metadata
+Name: mod_auth_openidc
+Client Secret: something-sufficiently-unguessable
+Application Type: Web
+Pre-Authorization: Enabled
+login uri: https://www.mydomain.com/callback
+Subject Type: Public
+Scopes: openid, profile, email
+Response Types: code
+
 ```
 
-Please add the following lines in the `auth_openidc.conf` configuration file under `/etc/apache2/mods-available/` folder.
+Make a note of the `client_secret` (you won't get to see it again)! You'll
+also need the `client_id` for the next step.
+
+## Install CGI script
+
+This cgi-script makes for a good test page! 
 
 ```
-OIDCMetadataDir /var/cache/apache2/mod_auth_openidc/metadata
-OIDCClientSecret secret
-OIDCRedirectURI https://dynamic.gluu.org:44443/dynamic/fake_redirect_uri
-OIDCCryptoPassphrase secret
+# vi /usr/lib/cgi-bin/printHeaders.cgi
+```
+
+Then past in this code
+
+```
+#!/usr/bin/python
+
+import os
+
+d = os.environ
+k = d.keys()
+k.sort()
+
+print "Content-type: text/html\n\n"
+
+print "<HTML><Head><TITLE>Print Env Variables</TITLE></Head><BODY>"
+print "<h1>Environment Variables</H1>"
+for item in k:
+    print "<p><B>%s</B>: %s </p>" % (item, d[item])
+print "</BODY></HTML>"
+
+```
+
+Then you'll need to make the script executable by the Apache2
+
+```
+# chown www-data:www-data /usr/lib/cgi-bin/printHeaders.cgi
+# chmod ug+x /usr/lib/cgi-bin/printHeaders.cgi
+```
+
+## Configuring the Apache VirtualHost 
+
+You are almost done! You'll need to configure mod_auth_openidc to
+protect your server.
+
+```
+# vi /etc/apache2/sites-available/default-ssl.conf
+```
+
+Add the following right under `<VirtualHost _default_:443>`
+```
+OIDCProviderMetadataURL https://idp.mydomain.com/.well-known/openid-configuration
+OIDCClientID (client-id-you-got-back-when-you-added-the-client)
+OIDCClientSecret (your-client-secret)
+OIDCRedirectURI https://www.mydomain.com/callback
+OIDCResponseType code
+OIDCScope "openid profile email"
 OIDCSSLValidateServer Off
+OIDCCryptoPassphrase (a-random-seed-value)
+OIDCPassClaimsAs environment
+OIDCClaimPrefix USERINFO_
+OIDCPassIDTokenAs payload
+<Location "/">
+    Require valid-user
+    AuthType openid-connect
+</Location>
 ```
 
-### Load auth_openidc Module
-
-The module can be enabled using the follwing command:
-
-`sudo a2enmod auth_openidc`
-
-
-The Apache Web Server must be restarted to load this module. Pleae run the following command to restart the Apache Server:
-
-`sudo service apache2 restart`
-
-**Note:** Restart the server after configuring the module, else the server will not restart and it will throw errors. To check for errors, please chek the `errors.log` file in `/var/log/apache/` folder.
-
-
-### Preparing Protected Resource
-
-Create a directory named `dynamic` inside the `/var/www/html` directory using the following command:
-
-`sudo mkdir /var/www/html/dynamic`
-
-Create a file named `index.html` in the `dynamic` folder and add the following content:
-
+Then restart Apache to effect the changes
 ```
-<html>
-    <title>
-        Protected URL
-    </title>
-    <body>
-        Nice to see the protected url via Dynamic Registration
-    </body>
-</html>
+# service apache2 restart
 ```
 
-Change the ownership of the `html` directory using the following command:
+The most confusing part here is the `OIDCRedirectURI`--don't set this
+to a path used by your server. The apache-filter uses the redirect_uri 
+to process the response from the OpenID Provider (Gluu Server). 
 
-`sudo chown -R www-data:www-data /var/www/html`
+Now you're ready to test. Open your web browser, and point it at 
+`https://www.mydomain.com/cgi-bin/printHeaders.py` 
 
-Create the apache configuration file named `dynamic.conf` in the `/etc/apache2/sites-available/` folder and add the following lines in the file:
-
-```
-<VirtualHost *:44443>
-    ServerName dynamic.gluu.org
-    DocumentRoot /var/www/html
-
-    <Location /dynamic/>
-        AuthType openid-connect
-        Require valid-user
-    </Location>
-
-    SSLEngine On
-    SSLCertificateFile /etc/apache2/ssl/apache.crt
-    SSLCertificateKeyFile /etc/apache2/ssl/apache.key
-</VirtualHost>
-```
-
-**Note:** The example uses a custom port, but if the Apache server is stand-alone in the server, the default `443` port can be used. 
-
-### Enable Site
-The `dynamic` site is enabled using the `a2ensite` command. Run the commands below to enable the site and restart Apache Server:
-
-`sudo a2ensite dynamic.conf`
-
-`sudo service apache2 restart`
-
-### Access Site
-The `dynamic` site can be accessed from the following URL:
-
-`https://dynamic.gluu.org:44443/dynamic`
-
-Accessing the link will land you in the discovery page.
-![IMAGE](https://raw.githubusercontent.com/GluuFederation/docs/master/sources/img/mod_auth_oidc/dynamic_discovery.png)
-
-The usual choice as per present used uris is: `admin@ce.gluu.org`. Note
-that you have to use an existing user at the gluuCE along with an
-existing uri. An example is `existing_user@your.gluu.ce.server`.
-
-After this the *oxAuth* page from gluuCE is displayed where you enter
-the credentials for authentication.
-
-![IMAGE](https://raw.githubusercontent.com/GluuFederation/docs/master/sources/img/mod_auth_oidc/oxauth_authentication.png)
-
-## Manual Client Registration
-The following example shows the configuration for manual client registration.
-
-### Preparing auth_openidc Module
-Please add the following lines in the `auth_openidc` configuration file.
-
-Add the following lines in `/etc/apache2/mods-available/auth_openidc.conf`
-
-```
-    OIDCRedirectURI https://static.gluu.org:44443/static/fake_redirect_uri
-    OIDCCryptoPassphrase newsecret
-
-    OIDCProviderMetadataURL https://ce.gluu.org/.well-known/openid-configuration
-    OIDCClientID @!C648.9803.5565.E5CB!0001!0DB0.EEDB!0008!7728.5650
-    OIDCClientSecret newsecret
-    OIDCResponseType id_token
-    OIDCProviderTokenEndpointAuth client_secret_basic
-
-    OIDCProviderIssuer  https://ce.gluu.org
-    OIDCSSLValidateServer Off
-```
-
-Run the following command to enable the module:
-
-`sudo a2enmod auth_openidc`
-
-### Preparing Protected Resource
-Create a directory named `static` inside the `/var/www/html` directory using the following command:
-
-`sudo mkdir /var/www/html/static`
-
-Create a file named `index.html` in the `static` folder and add the following content:
-
-```
-<html>
-    <title>
-        Protected URL
-    </title>
-    <body>
-        Nice to see the protected url via Dynamic Registration
-    </body>
-</html>
-```
-
-Change the ownership of the html directory using the following command:
-
-`sudo chown -R www-data:www-data /var/www/html`
-
-Create the apache configuration file named static.conf in the `/etc/apache2/sites-available/` folder and add the following lines in the file:
-
-```
-<VirtualHost *:44443>
-    ServerName static.gluu.org
-    DocumentRoot /var/www/html
-
-    <Location /static/>
-        AuthType openid-connect
-        Require valid-user
-    </Location>
-
-    SSLEngine On
-    SSLCertificateFile /etc/ssl/certs/ssl-cert-snakeoil.pem
-    SSLCertificateKeyFile /etc/ssl/private/ssl-cert-snakeoil.key
-</VirtualHost>
-```
-### Enable Site
-The dynamic site is enabled using the `a2ensite` command. Run the commands below to enable the site and restart Apache Server:
-
-`sudo a2ensite static.conf`
-
-`sudo service apache2 restart`
-
-### Access Site
-The `static` site can be accessed from the following URL:
-
-`https://static.gluu.org:44443/static`
-
-This link will lead to the oxAuth page from gluuCE where you enter the credentials for authentication.
-![image](https://raw.githubusercontent.com/GluuFederation/docs/master/sources/img/mod_auth_oidc/oxauth_authentication.png)
-
-There is a possibility that you will see the following error upon login:
-
-```
-Error:
-
-The OpenID Connect Provider returned an error: Error in handling response type.
-```
-
-The apache log will contain the following:
-
-```
-[Fri Jun 05 14:48:28 2015] [error] [client 124.253.60.123] oidc_proto_validate_idtoken: id_token JSON payload did not contain the required-by-spec "sub" string value, referer: https://static.gluu.org:44443/static/fake_redirect_uri
-[Fri Jun 05 14:48:28 2015] [error] [client 124.253.60.123] oidc_proto_parse_idtoken: id_token payload could not be validated, aborting, referer: https://static.gluu.org:44443/static/fake_redirect_uri
-```
-
-### Getting DN from Client ID
-Log into the gluuCE server by running the following command:
-
-`sudo service gluu-server login`
-
-We get the client id from the search performed in Gluu Server's Web UI. So, to get the DN part we perform the below command. The LDAP password can be stored in /root/.pw or at any other location that is convenient for you. In our case the command is:
-
-`/opt/opendj/bin/ldapsearch -T -X -Z -p 1636 -D "cn=Directory Manager" -j /root/.pw -s sub -b "o=gluu" 'inum=@!C648.9803.5565.E5CB!0001!0DB0.EEDB!0008!7728.5650'`
-
-Create a file named `mod.ldif` with the contents given below. The DN part to be used in mod.ldif is obtained from output of the command above:
-
-```
-dn: inum=@!C648.9803.5565.E5CB!0001!0DB0.EEDB!0008!7728.5650,ou=clients,o=@!C648.9803.5565.E5CB!0001!0DB0.EEDB,o=gluu
-changetype: modify
-add: oxAuthSubjectIdentifier
-oxAuthSubjectIdentifier: @!C648.9803.5565.E5CB!0001!0DB0.EEDB!0008!7728.5650
-```
-
-Then, run the `ldapmodify` command to insert the **oxAuthSubjectIdentifier** as below:
-
-`sudo /opt/opendj/bin/ldapmodify -Z -X -h localhost -p 1636 -D "cn=Directory Manager" -j /root/.pw -f /root/mod.ldif`
-
-The command may vary depending upon your installation. Next, access [this page](https://static.gluu.org:44443/static), and the success message should be visible or `<hostname>:44443/static`.
+If you're not logged in already, you should be redirected to 
+the authentication page. If you are logged in, you should just see
+an html page with the `REMOTE_USER` variable populated. Also
+check out the `OIDC_id_token_payload` and all the claims for 
+`USERINFO_` 
