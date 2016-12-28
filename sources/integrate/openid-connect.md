@@ -2,40 +2,35 @@
 
 # Overview
 [OpenID Connect](http://openid.net/connect) ("Connect") is an authentication layer built on OAuth 2.0. 
-OpenID Connect is a specific implementation of OAuth 2.0 
-where the identity provider holds protected resources that a 
-third-party application needs to access on behalf of a person. 
-OpenID Connect allows relying parties to verify the identity of, and obtain information about a person requesting to access the applications protected resources. 
+It is both a profile and extension of OAuth. The authorization server (or "OpenID Provider" in this case) holds information about a person. OAuth is used to protect this information, enabling a third-party application (client) to access it on behalf of a person. To authorize the release of information, the person is authenticated, and the OpenID Provider provides details to the client about when and how that authentication happened.
 
-## Jargon (taxonomy)
+## OpenID Connect Architecture
 
-In OpenID Connect the key entities include:
+Some OpenID Connect jargon to keep in mind:
 
-- The *end user* (a.k.a. OAuth 2.0 resource owner) whose user information the application needs to access.
+- The *end user* or *subject* (a.k.a. OAuth 2.0 resource owner) is the person whose user information the application needs to access.
 
-The end user wants to login to an application using an existing account at an OpenID Connect identity provider (OP).
+- The *OpenID Provider* is the OAuth authorization server which issues the tokens and generally provides the user infromation. The role is similar to a SAML identity provider (IDP).
 
-- The *Relying Party (RP)* (a.k.a. OAuth 2.0 client) needs access to the end user's protected user information.
+- The *User Agent* is normally a browser, but could also be a native application. 
 
-For example, an online chat application needs to know who is accessing the application in order to present the correct user account and contacts. 
+- The *Relying Party (RP)* (a.k.a. OAuth 2.0 client) needs access to the end user's protected user information. The RP can be either server side (like a typical web application), or client side (for example a JavaScript application residing in the User Agent).
 
-- The *OpenID Provider (OP)* (a.k.a. OAuth 2.0 authorization server and also resource server) that holds the user information and grants access.
+The Gluu Server is an OpenID Provider. The OP holds information about the user and allows the end user to consent to providing the RP with access to user information (unless the RP has been "pre-authorized", in which case the OP may just release information automatically). OpenID Connect defines a unique identification for an account (subject identifier + issuer identifier), and the RP can use this as a key to its own user profile. 
 
-The Gluu Server is an OpenID Provider. The OP holds information about the user and allows the end user or the organization (depending on configuration) to consent to providing the RP with access to user information. OpenID Connect defines a unique identification for an account (subject identifier + issuer identifier), and the RP can use this as a key to its own user profile. 
-
-The relying party can verify claims about the identity of the end user, and log the user out at the end of a session. OpenID Connect also makes it possible to discover the OpenID Provider for an end user, and to register relying party client applications dynamically. OpenID connect services are built on OAuth 2.0, JSON Web Token (JWT), WebFinger and Well-Known URIs.
+OpenID Connect defines some optional dynamic features. It makes it possible to discover OpenID Provider metadata, and to register RP client applications on the fly. For example, hypothetically, a person should be able to shop at a new online store, and authenticate at their home domain by providing nothing more then an email address. From the email domain, a discovery request and client registration can happen, and the person can be redirected to authenticate at their home domain.
 
 # OpenID Connect Support in the Gluu Server
-The Gluu Server is a [fully certified OpenID Connect Provider (OP)](http://openid.net/certification/). As an OpenID Provider, the Gluu Server enables OpenID Connect relying parties (clients) to discover its capabilities, handle both dynamic and static registration of relying parties, respond to relying party requests with authorization codes, access tokens, and user information according to the Authorization Code and Implicit flows of OpenID Connect, and manages sessions.
+The Gluu Server has passed all [conformance profiles for an OpenID Connect Provider](http://openid.net/certification/). As an OpenID Provider, the Gluu Server enables OpenID Connect clients to discover its capabilities, handle both dynamic and static registration of relying parties, respond to relying party requests with authorization codes, access tokens, and user information according to the code, implicit and hybrid flows.
 
-## OpenID Connect Implicit Flow
-The OpenID Connect Implicit Flow specifies how the relying party interacts with the OpenID Provider based on use of the OAuth 2.0 implicit grant. The main difference between the OAuth and OpenID Connect implicit flows lie in the use of the id_token, which must be returned in Connect. The id_token adds additional security to the transaction. For more information, read the [OpenID Connect Implicit Client Implementer's guide](http://openid.net/specs/openid-connectimplicit-1_0.html).
+## OpenID Connect Implicit Flows
+This flow is used only for user-agent based clients--primarily JavaScript--where you cannot hide a client secret, so client authentication makes no sense. The main difference between the OAuth and OpenID Connect implicit flows is the use of the *id_token*, which provides extra contextual information about the subject and authentication event. Properly validated, the *id_token* also adds additional security to the transaction. For example, the *nonce* can be verified, and the *at_hash* can be used to check the integrity of the returned token. For more information, read the [OpenID Connect Implicit Client Implementer's guide](http://openid.net/specs/openid-connectimplicit-1_0.html).
 
-## OpenID Connect Authorization Code Flow
-The OpenID Connect Authorization Code Flow specifies how the relying party interacts with the OpenID Provider based on use of the OAuth 2.0 authorization grant. The authorization code flow is more secure than the implicit flow because the tokens are never exposed to the web browser and possibly other malicious applications with access to the browser. As with the implicit flow the extra securuty in Connect's authorization code flow stems from the id_token.
+## OpenID Connect Authorization Code Flows
+The OpenID Connect Authorization Code Flow specifies how the relying party interacts with the OpenID Provider based on use of the OAuth 2.0 authorization grant. The authorization code flow is more secure than the implicit flow because the tokens are never exposed to the web browser and because the client is authenticated. As with the implicit flow, the id_token should be validated and adds extra security over an OAuth2 code flow.
 
-## OpenID Connect Hybrid Flow 
-Hybrid flow is one of the least understood Connect features. The `response_type` for hybrid flow always includes code, plus either token, `id_token`, or both. The hybrid flow can be used to achieve higher security levels--by returning the `id_token` from the authorization endpoint, the client can verify the integrity of the code by verifying the `id_token` claim `c_hash`. The most logical hybrid flow `response_type` is `code id_token`. You can also get back and access token from the authorization endpoint in the hybrid flow.   
+## OpenID Connect Hybrid Flows 
+Hybrid flow is one of the least understood Connect features, but it's really not that bad. The `response_type` for hybrid flow always includes code, plus either token, `id_token`, or both. The hybrid flow can be used to achieve higher security levels--by returning the `id_token` from the authorization endpoint, the client can verify the integrity of the code by verifying the `id_token` claim `c_hash`. The most logical hybrid flow `response_type` is `code id_token`. You can also get back and access token from the authorization endpoint in the hybrid flow.
 
 ## Discovery 
 
