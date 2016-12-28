@@ -35,6 +35,7 @@ The OpenID Connect Implicit Flow specifies how the relying party interacts with 
 The OpenID Connect Authorization Code Flow specifies how the relying party interacts with the OpenID Provider based on use of the OAuth 2.0 authorization grant. The authorization code flow is more secure than the implicit flow because the tokens are never exposed to the web browser and possibly other malicious applications with access to the browser. As with the implicit flow the extra securuty in Connect's authorization code flow stems from the id_token.
 
 ## OpenID Connect Hybrid Flow 
+Hybrid flow is one of the least understood Connect features. The `response_type` for hybrid flow always includes code, plus either token, `id_token`, or both. The hybrid flow can be used to achieve higher security levels--by returning the `id_token` from the authorization endpoint, the client can verify the integrity of the code by verifying the `id_token` claim `c_hash`. The most logical hybrid flow `response_type` is `code id_token`. You can also get back and access token from the authorization endpoint in the hybrid flow.   
 
 ## Discovery 
 
