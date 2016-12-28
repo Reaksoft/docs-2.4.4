@@ -1,5 +1,4 @@
 # Table of Contents 
-[TOC]
 
 # Overview
 [OpenID Connect](http://openid.net/connect) ("Connect") is an authentication layer built on OAuth 2.0. 
