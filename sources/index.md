@@ -1,5 +1,4 @@
-[TOC]
-# Gluu Server Community Edition Docs
+# Gluu Server Community Edition (CE) Docs
 The Gluu Server is a free open source identity provider (IDP) and access management suite of software primarily written in Java. The Gluu Server is a central authentication and authorization server that should be leveraged by applications to perform person identification and lowest common denominator authorization decisions. The Gluu Server is engineered to support robust enterprise requirements for uptime and availability.
 
 Organizations use the Gluu Server to achieve:          
