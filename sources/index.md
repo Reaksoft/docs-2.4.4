@@ -29,7 +29,7 @@ The Gluu Server code is open source, and can be found on [Github](github.com/Glu
 # Client Software
 In order for an application to leverage the Gluu Server (or any identity provider) for authentication and authorization, the application needs to support federation. The Gluu Server provides identity provider endpoints for the SAML and OpenID Connect federation standards. Therefore, any application that wants to send users to the Gluu Server for login should support either SAML or OpenID Connect. 
 
-If the target application does not already support one of these standards, we highly recommend securing the application with [oxd](http://oxd.gluu.org), our OpenID Connect middleware software. oxd makes its easy to properly secure the sign-in flow for applications with OpenID Connect, and is supported and maintained by Gluu. 
+If the target application does not already support one of these standards, we highly recommend securing the application using [oxd](http://oxd.gluu.org), our OpenID Connect middleware software. oxd makes its easy to properly secure the sign-in flow for applications with OpenID Connect, and is supported and maintained by Gluu. 
 
 Learn more about oxd in [this blog](https://www.gluu.org/blog/secure-web-apps-openid-connect-oxd/). 
 
