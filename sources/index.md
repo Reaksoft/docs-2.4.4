@@ -10,14 +10,14 @@ Organizations use the Gluu Server to achieve:
 - Strong authentication
 - Identity Federation
 
-The Gluu Server supports the following open standards for authentication, authorization, and identity management:
+The Gluu Server supports the following open standards for federation, authentication, authorization, and identity management:
 - SAML      
 - OpenID Connect     
-- UMA    
-- CAS 
-- SCIM     
-- FIDO    
-- LDAP
+- UMA     
+- CAS       
+- SCIM        
+- FIDO       
+- LDAP         
 
 Learn more about the differences between OAuth, SAML and OpenID Connect in [this blog](https://www.gluu.org/blog/oauth-vs-saml-vs-openid-connect/).
 
