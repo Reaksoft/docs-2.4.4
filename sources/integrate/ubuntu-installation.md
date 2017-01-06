@@ -146,7 +146,7 @@ This cgi-script makes for a good test page!
 
 ```
 
-Then past in this code
+Then paste in this code
 
 ``` python
 #!/usr/bin/python
@@ -218,7 +218,7 @@ to a path used by your server. The apache-filter uses the redirect_uri
 to process the response from the OpenID Provider (Gluu Server). 
 
 Now you're ready to test. Open your web browser, and point it at 
-`https://www.mydomain.com/cgi-bin/printHeaders.py` 
+`https://www.mydomain.com/cgi-bin/printHeaders.cgi` 
 
 If you're not logged in already, you should be redirected to 
 the authentication page. If you are logged in, you should just see
