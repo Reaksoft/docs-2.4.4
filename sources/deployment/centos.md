@@ -13,7 +13,7 @@ As an alternative, use our Gluu repository for CentOS 6.5:
 # wget https://repo.gluu.org/centos/RPM-GPG-KEY-GLUU -O /etc/pki/rpm-gpg/RPM-GPG-KEY-GLUU
 # rpm --import /etc/pki/rpm-gpg/RPM-GPG-KEY-GLUU
 # yum clean all
-# yum install gluu-server-2.4.4
+# yum install gluu-server-2.4.4.2
 ```
 **Note: It is recommended to copy and paste the commands to avoid errors and issue**
 
@@ -33,8 +33,8 @@ Below are the steps to configure Gluu Server:
 Below are the following commands:
 
 ```
-# service gluu-server-2.4.4 start
-# service gluu-server-2.4.4 login
+# service gluu-server-2.4.4.2 start
+# service gluu-server-2.4.4.2 login
 # cd /install/community-edition-setup/
 #./setup.py
 ```
@@ -63,25 +63,25 @@ Either remove `/etc/yum.repos.d/Gluu.repo` file, or modify it setting "enabled" 
 To start the Gluu Server use the below command:
 
 ```
-# service gluu-server-2.4.4 start
+# service gluu-server-2.4.4.2 start
 ```
 
 To stop the Gluu Server use the below command:
 
 ```
-# service gluu-server-2.4.4 stop
+# service gluu-server-2.4.4.2 stop
 ```
 
 To check the status of the Gluu Server use the below command:
 
 ```
-# service gluu-server-2.4.4 stop
+# service gluu-server-2.4.4.2 stop
 ```
 
 ## Login to the chroot environment
 
 ```
-# service gluu-server-2.4.4 login
+# service gluu-server-2.4.4.2 login
 ```
 
 ### Scripted Installation
@@ -109,13 +109,10 @@ Step by Step instructions to uninstall Gluu Server: 
 The following commands illustrate the steps:
 
 ```
-# service gluu-server-2.4.4 stop
-# yum remove gluu-server-2.4.4
-# rm -rf /opt/gluu-server-2.4.4*
+# service gluu-server-2.4.4.2 stop
+# yum remove gluu-server-2.4.4.2
+# rm -rf /opt/gluu-server-2.4.4.2*
 ```
-
-During an installation, any modified files will be saved in the directory, `/opt/gluu-server24.save`.  If required to remove all the remnants of the installation, delete these files with the command `rm -rf /opt/gluu-server24.save`.
-
 ## Support
 
 Gluu offers both community and VIP support. Anyone can browse and open

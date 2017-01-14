@@ -13,7 +13,7 @@ As an alternative, use our Gluu repository for CentOS 7:
 # wget https://repo.gluu.org/centos/RPM-GPG-KEY-GLUU -O /etc/pki/rpm-gpg/RPM-GPG-KEY-GLUU
 # rpm --import /etc/pki/rpm-gpg/RPM-GPG-KEY-GLUU
 # yum clean all
-# yum install gluu-server-2.4.4
+# yum install gluu-server-2.4.4.2
 ```
 
 
@@ -34,9 +34,9 @@ Below are the steps to configure Gluu Server:
 Below are the following commands:
 
 ```
-# /sbin/gluu-serverd-2.4.4 start
-# /sbin/gluu-serverd-2.4.4 enable
-# /sbin/gluu-serverd-2.4.4 login
+# /sbin/gluu-serverd-2.4.4.2 start
+# /sbin/gluu-serverd-2.4.4.2 enable
+# /sbin/gluu-serverd-2.4.4.2 login
 # cd /install/community-edition-setup/
 #./setup.py
 ```
@@ -75,25 +75,25 @@ Either remove `/etc/yum.repos.d/Gluu.repo` file, or modify it setting
 To start the Gluu Server use the below command:
 
 ```
-# /sbin/gluu-serverd-2.4.4 start
+# /sbin/gluu-serverd-2.4.4.2 start
 ```
 
 To stop the Gluu Server use the below command:
 
 ```
-# /sbin/gluu-serverd-2.4.4 stop
+# /sbin/gluu-serverd-2.4.4.2 stop
 ```
 
 To check the Gluu Server status use the below command:
 
 ```
-# /sbin/gluu-serverd-2.4.4 status
+# /sbin/gluu-serverd-2.4.4.2 status
 ```
 
 ## Login to the chroot environment
 
 ```
-# /sbin/gluu-serverd-2.4.4 login
+# /sbin/gluu-serverd-2.4.4.2 login
 ```
 
 ### Scripted Installation
@@ -104,7 +104,7 @@ Below are the steps to script the installation of the Gluu Server:
 * Uninstall existing Gluu Server installation.
 * For a new installation you can either grab a new VM, or just use the
   existing one.
-* Run all the commands until `# /sbin/gluu-serverd-2.4.4 login`.
+* Run all the commands until `# /sbin/gluu-serverd-2.4.4.2 login`.
 * Copy your file `setup.properties.last` into the new server's
   `/install/community-edition-setup/` location.
 * Rename the file `setup.properties.last` to `setup.properties`.
@@ -119,14 +119,14 @@ Step by Step instructions to uninstall Gluu Server: 
 3.  Delete both the Gluu Server packages that are installed, and the home directory of the Gluu Server user. 
 
 ```
-# /sbin/gluu-serverd-2.4.4 stop
-# yum remove gluu-server-2.4.4
-# rm -rf /opt/gluu-server-2.4.4*
+# /sbin/gluu-serverd-2.4.4.2 stop
+# yum remove gluu-server-2.4.4.2
+# rm -rf /opt/gluu-server-2.4.4.2*
 ```
 
 During an installation, any modified files will be saved in the directory,
 `/opt/gluu-server24.save`. If required to remove all the remnants of the installation, delete these files with the command `rm -
-rf /opt/gluu-server24.save'.
+rf /opt/gluu-server-2.4.4.2.save'.
 
 ## Support
 

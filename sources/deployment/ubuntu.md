@@ -17,7 +17,7 @@ As an alternative, use our Gluu repository for Ubuntu Trusty (14.04):
 
 # apt-get update
 
-# apt-get install gluu-server-2.4.4
+# apt-get install gluu-server-2.4.4.2
 ```
 
 **Note: While entering the "deb" command manually, make sure to enter an extra space between "/ubuntu/" and "trusty main".**
@@ -37,9 +37,9 @@ Below are the steps to configure Gluu Server:
 Below are the following commands:
 
 ```
-# /etc/init.d/gluu-server-2.4.4 start
+# /etc/init.d/gluu-server-2.4.4.2 start
 
-# /etc/init.d/gluu-server-2.4.4 login
+# /etc/init.d/gluu-server-2.4.4.2 login
 
 # cd /install/community-edition-setup/
 
@@ -87,33 +87,33 @@ commenting out lines declaring Gluu CE's repos there.
 To start the Gluu Server use the below command:
 
 ```
-# /etc/init.d/gluu-server-2.4.4 start
+# /etc/init.d/gluu-server-2.4.4.2 start
 
 ```
 
 To stop the Gluu Server use the below command:
 
 ```
-# /etc/init.d/gluu-server-2.4.4 stop
+# /etc/init.d/gluu-server-2.4.4.2 stop
 
 ```
 To check the status of Gluu Server use the below command:
 
 ```
-# /etc/init.d/gluu-server-2.4.4 status
+# /etc/init.d/gluu-server-2.4.4.2 status
 ```
 
 ## Login to the chroot environment
 
 ```
-# /etc/init.d/gluu-server-2.4.4 login
+# /etc/init.d/gluu-server-2.4.4.2 login
 
 ```
 
 alternatively sudo can be used as below
 
 ```
-# chroot /opt/gluu-server-2.4.4/ su -
+# chroot /opt/gluu-server-2.4.4.2/ su -
 
 ```
 ### Scripted Installation
@@ -141,24 +141,24 @@ Step by Step instructions to uninstall Gluu Server:
 The following commands illustrate the steps:
 
 ```
-# service gluu-server-2.4.4 stop
+# service gluu-server-2.4.4.2 stop
 
-# apt-get remove gluu-server-2.4.4
+# apt-get remove gluu-server-2.4.4.2
 
-# rm -rf /opt/gluu-server-2.4.4*
+# rm -rf /opt/gluu-server-2.4.4.2*
 
 ```
 
 During an installation, any modified files will be saved in the directory
-`/home/gluu-server24.save`. 
+`/home/gluu-server-2.4.4.2.save`. 
 If required to remove all the remnants of the
-installation, delete these files with the command `rm -rf /home/gluu-server24.save'.
+installation, delete these files with the command `rm -rf /home/gluu-server-2.4.4.2.save'.
 
 In some circumstances, the installation can be broken. In that case
 please try the following to force to uninstall the package.
 
 ```
-# dpkg --purge --force-all gluu-server-2.4.4
+# dpkg --purge --force-all gluu-server-2.4.4.2
 
 ```
 

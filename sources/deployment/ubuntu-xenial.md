@@ -15,7 +15,7 @@ As an alternative, use our Gluu repository for Ubuntu Xenial (16.04):
 
 # apt-get update
 
-# apt-get install gluu-server-2.4.4
+# apt-get install gluu-server-2.4.4.2
 ```
 
 **Note: While entering the "deb" command manually, make sure to enter an extra space between "/ubuntu/" and "xenial main"**
@@ -35,9 +35,9 @@ Below are the steps to configure Gluu Server:
 
 Below are the following commands:
 ```
-# /etc/init.d/gluu-server-2.4.4 start
+# /etc/init.d/gluu-server-2.4.4.2 start
 
-# /etc/init.d/gluu-server-2.4.4 login
+# /etc/init.d/gluu-server-2.4.4.2 login
 
 # cd /install/community-edition-setup/
 
@@ -80,27 +80,27 @@ commenting out lines declaring Gluu CE's repos there.
 To start the Gluu Server use the below command:
 
 ```
-# /etc/init.d/gluu-server-2.4.4 start
+# /etc/init.d/gluu-server-2.4.4.2 start
 
 ```
 
 To stop the Gluu Server use the below command:
 
 ```
-# /etc/init.d/gluu-server-2.4.4 stop
+# /etc/init.d/gluu-server-2.4.4.2 stop
 
 ```
 
 To check the status of the Gluu Server use the below command:
 
 ```
-#/etc/init.d/gluu-server-2.4.4 staus
+#/etc/init.d/gluu-server-2.4.4.2 staus
 ```
 
 ## Login to the chroot environment
 
 ```
-# /etc/init.d/gluu-server-2.4.4 login
+# /etc/init.d/gluu-server-2.4.4.2 login
 
 ```
 
@@ -135,11 +135,11 @@ Step by Step instructions to uninstall Gluu Server: 
 The following commands illustrate the steps:
 
 ```
-# service gluu-server-2.4.4 stop
+# service gluu-server-2.4.4.2 stop
 
-# apt-get remove gluu-server-2.4.4
+# apt-get remove gluu-server-2.4.4.2
 
-# rm -rf /opt/gluu-server-2.4.4*
+# rm -rf /opt/gluu-server-2.4.4.2*
 
 ```
 
@@ -152,7 +152,7 @@ In some circumstances, the installation can be broken. In that case
 please try the following to force to uninstall the package.
 
 ```
-# dpkg --purge --force-all gluu-server-2.4.4
+# dpkg --purge --force-all gluu-server-2.4.4.2
 
 ```
 
