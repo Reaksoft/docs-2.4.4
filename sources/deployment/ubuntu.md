@@ -150,9 +150,9 @@ The following commands illustrate the steps:
 ```
 
 During an installation, any modified files will be saved in the directory
-`/home/gluu-server-2.4.4.2.save`. 
+`/opt/gluu-server-2.4.4.2.save`. 
 If required to remove all the remnants of the
-installation, delete these files with the command `rm -rf /home/gluu-server-2.4.4.2.save'.
+installation, delete these files with the command `rm -rf /opt/gluu-server-2.4.4.2.save'.
 
 In some circumstances, the installation can be broken. In that case
 please try the following to force to uninstall the package.
