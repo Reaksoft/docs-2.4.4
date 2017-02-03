@@ -5,10 +5,10 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
-  <title>oxTrust Properties File - Gluu Docs</title>
+  <title>Gluu Policy - Gluu Docs</title>
   
 
-  <link rel="shortcut icon" href="../../img/gluu_favicon.ico">
+  <link rel="shortcut icon" href="/img/gluu_favicon.ico">
   
 
   
@@ -241,7 +241,7 @@
         
             
     <li class="toctree-l1 ">
-        <a class="" href="./">OxTrust JSON Configuration</a>
+        <a class="" href="../oxtrust-properties/">OxTrust JSON Configuration</a>
         
     </li>
 
@@ -468,6 +468,34 @@
     </li>
 
         
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../logout/">Logout</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../../customize/auth-script/">Write a Custom OTP Authentication Script using Twilio</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../../how-to/find-gluu-server-version/">Find which version of Gluu you are using</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../../how-to/backup/">Backup Gluu CE Server</a>
+        
+    </li>
+
+        
     </ul>
 <li>
 		
@@ -488,13 +516,6 @@
             
     <li class="toctree-l1 ">
         <a class="" href="../../customize/script/">Behaviour Customization</a>
-        
-    </li>
-
-        
-            
-    <li class="toctree-l1 ">
-        <a class="" href="../../customize/auth-script/">Custom Script How-To</a>
         
     </li>
 
@@ -599,6 +620,13 @@
             
     <li class="toctree-l1 ">
         <a class="" href="../../integrate/oxray/">OpenID Connect Liferay Plugin</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../../integrate/java-connect/">OpenID Connect Java Authentication</a>
         
     </li>
 
@@ -714,12 +742,21 @@
 			
             <li>
     <ul class="subnav">
-    <li><span>Gluu Defaults</span></li>
+    <li><span>Reference</span></li>
 
         
             
-    <li class="toctree-l1 ">
-        <a class="" href="../policy/">Gluu Policy</a>
+    <li class="toctree-l1 current">
+        <a class="current" href="./">Gluu Policy</a>
+        
+            <ul>
+            
+                <li class="toctree-l3"><a href="#gluu-default-policy">Gluu Default Policy</a></li>
+                
+                    <li><a class="toctree-l4" href="#tomcat">Tomcat</a></li>
+                
+            
+            </ul>
         
     </li>
 
@@ -747,6 +784,20 @@
         
             
     <li class="toctree-l1 ">
+        <a class="" href="../schema/">Schema</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../schema/">LDAP Schema</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
         <a class="" href="../logout/">Logout</a>
         
     </li>
@@ -754,35 +805,7 @@
         
             
     <li class="toctree-l1 ">
-        <a class="" href="../schema/">Schema</a>
-        
-    </li>
-
-        
-            
-    <li class="toctree-l1 current">
-        <a class="current" href="./">oxTrust Properties File</a>
-        
-            <ul>
-            
-                <li class="toctree-l3"><a href="#configuration">Configuration</a></li>
-                
-                    <li><a class="toctree-l4" href="#oxtrust-configuration">oxTrust Configuration</a></li>
-                
-                    <li><a class="toctree-l4" href="#oxtrustproperties">oxtrust.properties</a></li>
-                
-                    <li><a class="toctree-l4" href="#personobjectclasstypes">personObjectClassTypes</a></li>
-                
-                    <li><a class="toctree-l4" href="#personobjectclassdisplaynames">personObjectClassDisplayNames</a></li>
-                
-                    <li><a class="toctree-l4" href="#contactobjectclassdisplaynames">contactObjectClassDisplayNames</a></li>
-                
-                    <li><a class="toctree-l4" href="#gluuspattributes">gluuSpAttributes</a></li>
-                
-                    <li><a class="toctree-l4" href="#clusteredinums">clusteredInums</a></li>
-                
-            
-            </ul>
+        <a class="" href="../oxtrust-properties/">oxTrust Properties File</a>
         
     </li>
 
@@ -942,16 +965,16 @@
     
       
         
-          <li>Gluu Defaults &raquo;</li>	 
+          <li>Reference &raquo;</li>	 
         
       
     
-    <li>oxTrust Properties File</li>
+    <li>Gluu Policy</li>
     <li class="wy-breadcrumbs-aside">
            
       
         
-          <a href="https://github.com/GluuFederation/docs/blob/master/sources/gluu-defaults/oxtrust-properties.md" class="icon icon-github"> Edit on GitHub</a>
+          <a href="https://github.com/GluuFederation/docs/blob/master/sources/reference\policy.md" class="icon icon-github"> Edit on GitHub</a>
       
         
       
@@ -962,189 +985,10 @@
           <div role="main">
             <div class="section">
               
-                <div class="toc">
-<ul>
-<li><a href="#configuration">Configuration</a><ul>
-<li><a href="#oxtrust-configuration">oxTrust Configuration</a></li>
-<li><a href="#oxtrustproperties">oxtrust.properties</a></li>
-<li><a href="#personobjectclasstypes">personObjectClassTypes</a></li>
-<li><a href="#personobjectclassdisplaynames">personObjectClassDisplayNames</a></li>
-<li><a href="#contactobjectclassdisplaynames">contactObjectClassDisplayNames</a></li>
-<li><a href="#gluuspattributes">gluuSpAttributes</a></li>
-<li><a href="#clusteredinums">clusteredInums</a></li>
-</ul>
-</li>
-</ul>
-</div>
-<h1 id="configuration">Configuration</h1>
-<h2 id="oxtrust-configuration">oxTrust Configuration</h2>
-<p>This page explains the JSON Configuration under the Configuration Tab in the Configuration menu.</p>
-<p><img alt="image" src="https://raw.githubusercontent.com/GluuFederation/docs/master/sources/img/2.4/config-json_menu.png" /></p>
-<h2 id="oxtrustproperties">oxtrust.properties</h2>
-<p><img alt="image" src="https://raw.githubusercontent.com/GluuFederation/docs/master/sources/img/2.4/config-json_oxtrustproperties.png" /></p>
-<p>The following fields are available for edit in the menu.</p>
-<ul>
-<li><em>idpBindDn:</em> the admin user of the ldap server</li>
-<li><em>baseDN:</em> the base doaim name of oxtrust. The default is <code>o=gluu</code></li>
-<li><em>orgIname:</em> </li>
-<li><em>orgSupportEmail:</em> the support email address of the Gluu Server installation</li>
-</ul>
-<p><img alt="image" src="https://raw.githubusercontent.com/GluuFederation/docs/master/sources/img/2.4/config-json_oxauthproperties0.png" /></p>
-<ul>
-<li><em>applianceInum:</em> the <a href="https://en.wikipedia.org/wiki/INum_Initiative" title="INUM definition in wikipedia">INUM</a> of the appliance</li>
-<li><em>applianceUrl:</em> the <a href="https://en.wikipedia.org/wiki/Uniform_Resource_Identifier" title="Uniform Resource Identifier">URI</a> of the appliance</li>
-<li><em>baseEndpoint:</em> </li>
-<li><em>schemaAddObjectClassWithAttributeTypesDefinition:</em> the schema to add various attribute types</li>
-<li><em>schemaAddObjectClassWithoutAttributeTypesDefinition:</em> the schema to add various attribute types</li>
-</ul>
-<h2 id="personobjectclasstypes">personObjectClassTypes</h2>
-<p>This class holds the relation between the person entry and it's relative object class.</p>
-<p><img alt="image" src="https://raw.githubusercontent.com/GluuFederation/docs/master/sources/img/2.4/config-json_oxtrustproperties1.png" /></p>
-<ul>
-<li><em>item 1:</em> inetOrgPerson</li>
-<li><em>item 2:</em> gluuPerson</li>
-</ul>
-<p><img alt="image" src="https://raw.githubusercontent.com/GluuFederation/docs/master/sources/img/2.4/config-json_oxtrustproperties1-1.png" /></p>
-<ul>
-<li><em>personCustomObjectClass:</em></li>
-</ul>
-<h2 id="personobjectclassdisplaynames">personObjectClassDisplayNames</h2>
-<p>This class holds the relation betwee the display name of the person and the relative object class.</p>
-<p><img alt="image" src="https://raw.githubusercontent.com/GluuFederation/docs/master/sources/img/2.4/config-json_oxtrustproperties2.png" /></p>
-<ul>
-<li><em>item 1:</em> inetOrgPerson</li>
-<li><em>item 2:</em> gluuPerson</li>
-</ul>
-<p><img alt="image" src="https://raw.githubusercontent.com/GluuFederation/docs/master/sources/img/2.4/config-json_oxtrustproperties2-1.png" /></p>
-<ul>
-<li><em>schemaAddAttributeDefenition:</em> </li>
-</ul>
-<h2 id="contactobjectclassdisplaynames">contactObjectClassDisplayNames</h2>
-<p>Items can be added under this class by clicking on the <code>+ item</code> button.</p>
-<p><img alt="image" src="https://raw.githubusercontent.com/GluuFederation/docs/master/sources/img/2.4/config-json_oxtrustproperties3.png" /></p>
-<ul>
-<li><em>photoRepositoryRootDir:</em> the path to the root directory of photographs</li>
-<li><em>photoRepositoryThumbWidth:</em> the thumb with of a photo</li>
-<li><em>photoRepositoryThumbheight:</em> sets the thumb height of a photo</li>
-<li><em>photoRepositoryCountLevels:</em> the count level per photo repository</li>
-<li><em>photoRepositoryCountFoldersPerLevel:</em> he number of folders per level</li>
-</ul>
-<p><img alt="image" src="https://raw.githubusercontent.com/GluuFederation/docs/master/sources/img/2.4/config-json_oxtrustproperties3-1.png" /></p>
-<ul>
-<li><em>authMode:</em> set this tag to <code>basic</code> to use basic authentication or leave it blank to use oxAuth</li>
-<li><em>ldifStore:</em> the path to the <a href="https://en.wikipedia.org/wiki/LDAP_Data_Interchange_Format" title="LDAP Data Interchange Format">LDIF</a> store</li>
-</ul>
-<p><img alt="image" src="https://raw.githubusercontent.com/GluuFederation/docs/master/sources/img/2.4/config-json_oxtrustproperties3-2.png" /></p>
-<ul>
-<li><em>shibboleth2IdpRootDir:</em> the root directory for the shibboleth plugin</li>
-<li><em>shibboleth2SpConfDir:</em> the configuration directory for the shibboleth plugin</li>
-</ul>
-<p><img alt="image" src="https://raw.githubusercontent.com/GluuFederation/docs/master/sources/img/2.4/config-json_oxtrustproperties3-3.png" /></p>
-<ul>
-<li><em>pokenApplicationSecret:</em></li>
-<li><em>updateAplicanceStatus:</em>  the update appliance state for the site. Use <code>true</code> to allow, and <code>false</code> to forbid (default value)</li>
-<li><em>svnConfigurationStoreRoot:</em> he root of the <a href="https://en.wikipedia.org/wiki/Apache_Subversion" title="Apache Subversion">SVN</a> configuration store</li>
-<li><em>svnConfigurationStorePassword:</em> the password of the <a href="https://en.wikipedia.org/wiki/Apache_Subversion" title="Apache Subversion">SVN</a> configuration store</li>
-</ul>
-<p><img alt="image" src="https://raw.githubusercontent.com/GluuFederation/docs/master/sources/img/2.4/config-json_oxtrustproperties3-4.png" /></p>
-<ul>
-<li><em>keystorePath:</em> the path to the keystore</li>
-<li><em>keystorePassword:</em> the password to the keystore</li>
-<li><em>allowPersonModification:</em> enables or disables the allowance to modify a person entry. Use <code>true</code> to allow (default value), and  <code>false</code> otherwise</li>
-</ul>
-<p><img alt="image" src="https://raw.githubusercontent.com/GluuFederation/docs/master/sources/img/2.4/config-json_oxtrustproperties3-5.png" /></p>
-<ul>
-<li><em>idpUrl:</em> the <a href="https://en.wikipedia.org/wiki/Uniform_Resource_Identifier" title="Uniform Resource Identifier">uri</a> of the <a href="https://en.wikipedia.org/wiki/OpenID" title="OpenID Connect">OpenID</a> provider that is in use</li>
-<li><em>velocityLog:</em> the velocity log filename with path</li>
-<li>_spMetadataPath:_the path to the Gluu Server metadata</li>
-<li><em>logoLocation:</em> the directory name for the images and logos that are used</li>
-</ul>
-<p><img alt="image" src="https://raw.githubusercontent.com/GluuFederation/docs/master/sources/img/2.4/config-json_oxtrustproperties3-6.png" /></p>
-<ul>
-<li><em>idpSecurityKey:</em> the security key of the <a href="https://en.wikipedia.org/wiki/OpenID" title="OpenID Connect">OpenID</a> provider</li>
-<li><em>idpSecurityKeyPassowrd:</em> the security password of the <a href="https://en.wikipedia.org/wiki/OpenID" title="OpenID Connect">OpenID</a> provider</li>
-<li><em>idpSecurityCert:</em> the security certificate of the machine</li>
-</ul>
-<h2 id="gluuspattributes">gluuSpAttributes</h2>
-<p>Items can be added here by clicking on the <code>+ item</code> button.</p>
-<p><img alt="image" src="https://raw.githubusercontent.com/GluuFederation/docs/master/sources/img/2.4/config-json_oxtrustproperties4.png" /></p>
-<ul>
-<li><em>configGeneration:</em> this entry controls the automatic generation of the configuration files. Use <code>enable</code> to allow and <code>disable</code> otherwise</li>
-<li><em>idpLdapProtocol:</em> the protocol used by the [LDAP][ldap] server</li>
-<li><em>idpLdapServer:</em> hostname of the [LDAP][ldap] server with port</li>
-</ul>
-<p><img alt="image" src="https://raw.githubusercontent.com/GluuFederation/docs/master/sources/img/2.4/config-json_oxtrustproperties4-1.png" /></p>
-<ul>
-<li><em>orgInum:</em> the <a href="https://en.wikipedia.org/wiki/INum_Initiative" title="INUM definition in wikipedia">INUM</a> of the organization</li>
-<li><em>idpBindDn:</em> the domain name of the <a href="https://en.wikipedia.org/wiki/OpenID" title="OpenID Connect">OpenID</a> provider</li>
-<li><em>idpBindPassowrd:</em> the password for the <a href="https://en.wikipedia.org/wiki/OpenID" title="OpenID Connect">OpenID</a> provider</li>
-<li><em>idpUserFields:</em> </li>
-<li><em>gluuSpCert:</em> the certificate name and location of the Gluu Server</li>
-</ul>
-<p><img alt="image" src="https://raw.githubusercontent.com/GluuFederation/docs/master/sources/img/2.4/config-json_oxtrustproperties4-2.png" /></p>
-<ul>
-<li><em>mysqlUrl:</em> the MySql connector as <a href="https://en.wikipedia.org/wiki/Uniform_Resource_Identifier" title="Uniform Resource Identifier">URI</a></li>
-<li><em>mysqlUser:</em> the username for the MySql server</li>
-<li><em>mysqlPassword:</em> passowrd for the MySql server</li>
-<li><em>shibboleth2FederationRootDir:</em> the root directory for the <a href="https://en.wikipedia.org/wiki/Shibboleth_%28Internet2%29" title="Shibboleth">Shobboleth</a> federation plugin</li>
-</ul>
-<p><img alt="image" src="https://raw.githubusercontent.com/GluuFederation/docs/master/sources/img/2.4/config-json_oxtrustproperties4-3.png" /></p>
-<ul>
-<li><em>cacheRefreshEnabled:</em> the value of the cache refresh mechanism. Use <code>true</code> to enable and <code>false</code> otherwise</li>
-<li><em>cacheRefreshIntervalMinutes:</em> the time in minutes counting down to next cache-refresh event</li>
-<li><em>caCertsLocation:</em> the keystore to use for downloaded <a href="https://en.wikipedia.org/wiki/Transport_Layer_Security" title="Secure Sockets Layer">SSL</a> certificates</li>
-<li><em>caCertsPassphrase:</em> the password for the caCerts keystore</li>
-<li><em>tempCertDir:</em> the temporary location for certificates while certificate update procedure</li>
-<li><em>certDir:</em> the locaiton of certificates used in configuration files</li>
-</ul>
-<p><img alt="image" src="https://raw.githubusercontent.com/GluuFederation/docs/master/sources/img/2.4/config-json_oxtrustproperties4-4.png" /></p>
-<ul>
-<li><em>servicesRestartTrigger:</em> the location of the file which will restart the applicance server if deleted</li>
-<li><em>persistSVN:</em> the state of persistence in <a href="https://en.wikipedia.org/wiki/Apache_Subversion" title="Apache Subversion">SVN</a>. Use <code>true</code> to enable or <code>false</code> otherwise</li>
-</ul>
-<p><img alt="image" src="https://raw.githubusercontent.com/GluuFederation/docs/master/sources/img/2.4/config-json_oxtrustproperties4-5.png" /></p>
-<ul>
-<li><em>oxAuthAuthorizeUrl:</em> the authorization <a href="https://en.wikipedia.org/wiki/Uniform_Resource_Identifier" title="Uniform Resource Identifier">URI</a> for oxAuth</li>
-<li><em>oxAuthTokenUrl:</em> the token <a href="https://en.wikipedia.org/wiki/Uniform_Resource_Identifier" title="Uniform Resource Identifier">URI</a> for oxAuth</li>
-<li><em>oxAuthValidateTokenUrl:</em> the <a href="https://en.wikipedia.org/wiki/Uniform_Resource_Identifier" title="Uniform Resource Identifier">URI</a> for oxAuth token validation</li>
-<li><em>oxAuthEndSessionUrl:</em> the <a href="https://en.wikipedia.org/wiki/Uniform_Resource_Identifier" title="Uniform Resource Identifier">URI</a> for oxAuth session termination</li>
-<li><em>oxAuthLogoutUrl:</em> the <a href="https://en.wikipedia.org/wiki/Uniform_Resource_Identifier" title="Uniform Resource Identifier">URI</a> for logging out of oxAuth</li>
-<li><em>oxAuthTokenValidationUrl:</em> the <a href="https://en.wikipedia.org/wiki/Uniform_Resource_Identifier" title="Uniform Resource Identifier">URI</a> for oxAuth token validation</li>
-</ul>
-<p><img alt="image" src="https://raw.githubusercontent.com/GluuFederation/docs/master/sources/img/2.4/config-json_oxtrustproperties4-6.png" /></p>
-<ul>
-<li><em>oxAuthUserInfo:</em> the <a href="https://en.wikipedia.org/wiki/Uniform_Resource_Identifier" title="Uniform Resource Identifier">URI</a> for oxAuth user information</li>
-<li><em>oxAuthSectorIdentifierUrl:</em> the <a href="https://en.wikipedia.org/wiki/Uniform_Resource_Identifier" title="Uniform Resource Identifier">URI</a> for oxAuth sector identifier</li>
-<li>_oxAuthClientId:_the identification number for oxAuth client</li>
-<li><em>oxAuthClientPassowrd:</em> the password for oxAuth client</li>
-<li><em>oxAuthClientScope:</em> the scope of the oxAuth client</li>
-<li><em>loginRedirectUrl:</em> the redirect <a href="https://en.wikipedia.org/wiki/Uniform_Resource_Identifier" title="Uniform Resource Identifier">URI</a> for oxAuth</li>
-<li><em>logoutRedirectUrl:</em> the <a href="https://en.wikipedia.org/wiki/Uniform_Resource_Identifier" title="Uniform Resource Identifier">URI</a> for oxAuth </li>
-</ul>
-<h2 id="clusteredinums">clusteredInums</h2>
-<p>Items can be added here by clicking on the <code>+ item</code> button.</p>
-<p><img alt="image" src="https://raw.githubusercontent.com/GluuFederation/docs/master/sources/img/2.4/config-json_oxtrustproperties5.png" /></p>
-<ul>
-<li><em>clientAssociationAttribute:</em> the attribute which identifies the <a href="https://en.wikipedia.org/wiki/OpenID" title="OpenID Connect">OpenID</a> client</li>
-<li><em>oxAuthIssuers:</em> the <a href="https://en.wikipedia.org/wiki/Uniform_Resource_Identifier" title="Uniform Resource Identifier">URI</a> of the issuer authorization server</li>
-<li><em>ignoreValidation:</em> the control to check/ignore token validation. Use <code>true</code> to validate or <code>false</code> otherwise</li>
-</ul>
-<p><img alt="image" src="https://raw.githubusercontent.com/GluuFederation/docs/master/sources/img/2.4/config-json_oxtrustproperties5-1.png" /></p>
-<ul>
-<li><em>umaIssuer:</em> the <a href="https://en.wikipedia.org/wiki/Uniform_Resource_Identifier" title="Uniform Resource Identifier">URI</a> of the issuer authorization server</li>
-<li><em>umaClientId:</em> the identification of the <a href="https://en.wikipedia.org/wiki/User-Managed_Access" title="User-Managed Access">UMA</a> client</li>
-<li><em>umaClientKeyId:</em> </li>
-<li><em>umaResourceId:</em></li>
-<li><em>umaScope:</em> the scopes available for this resource</li>
-</ul>
-<p><img alt="image" src="https://raw.githubusercontent.com/GluuFederation/docs/master/sources/img/2.4/config-json_oxtrustproperties5-2.png" /></p>
-<ul>
-<li><em>recaptchaSiteKey:</em></li>
-<li><em>recaptchaSecretKey:</em></li>
-<li><em>cssLocation:</em> the path to the CSS files</li>
-<li><em>jsLocation:</em> the path to the JS files</li>
-<li><em>repactchUrl:</em> the type for the recaptcha <a href="https://en.wikipedia.org/wiki/Uniform_Resource_Identifier" title="Uniform Resource Identifier">URI</a> attribute</li>
-</ul>
+                <h1 id="gluu-default-policy">Gluu Default Policy</h1>
+<p>This page contains the policy for gluu components.</p>
+<h2 id="tomcat">Tomcat</h2>
+<p>Please remember to restart Tomcat Server on updating any <code>lib</code> or library. It extends to <code>.war</code> files too. If any resource is updated, it is not necessary to restart tomcat.</p>
               
             </div>
           </div>
@@ -1152,10 +996,10 @@
   
     <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
       
-        <a href="../oxauth-properties/" class="btn btn-neutral float-right" title="oxAuth Properties File"/>Next <span class="icon icon-circle-arrow-right"></span></a>
+        <a href="../config/" class="btn btn-neutral float-right" title="Configurations"/>Next <span class="icon icon-circle-arrow-right"></span></a>
       
       
-        <a href="../schema/" class="btn btn-neutral" title="Schema"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+        <a href="../../fine-tuning/" class="btn btn-neutral" title="Tuning LDAP, Tomcat"><span class="icon icon-circle-arrow-left"></span> Previous</a>
       
     </div>
   
@@ -1184,10 +1028,10 @@
           <a class="icon icon-github" style="float: left; color: #fcfcfc"> GitHub</a>
       
       
-        <span><a href="../schema/" style="color: #fcfcfc;">&laquo; Previous</a></span>
+        <span><a href="../../fine-tuning/" style="color: #fcfcfc;">&laquo; Previous</a></span>
       
       
-        <span style="margin-left: 15px"><a href="../oxauth-properties/" style="color: #fcfcfc">Next &raquo;</a></span>
+        <span style="margin-left: 15px"><a href="../config/" style="color: #fcfcfc">Next &raquo;</a></span>
       
     </span>
 </div>

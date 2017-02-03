@@ -5,10 +5,10 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
-  <title>Gluu Policy - Gluu Docs</title>
+  <title>LDAP - Gluu Docs</title>
   
 
-  <link rel="shortcut icon" href="../../img/gluu_favicon.ico">
+  <link rel="shortcut icon" href="/img/gluu_favicon.ico">
   
 
   
@@ -468,6 +468,34 @@
     </li>
 
         
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../logout/">Logout</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../../customize/auth-script/">Write a Custom OTP Authentication Script using Twilio</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../../how-to/find-gluu-server-version/">Find which version of Gluu you are using</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../../how-to/backup/">Backup Gluu CE Server</a>
+        
+    </li>
+
+        
     </ul>
 <li>
 		
@@ -488,13 +516,6 @@
             
     <li class="toctree-l1 ">
         <a class="" href="../../customize/script/">Behaviour Customization</a>
-        
-    </li>
-
-        
-            
-    <li class="toctree-l1 ">
-        <a class="" href="../../customize/auth-script/">Custom Script How-To</a>
         
     </li>
 
@@ -599,6 +620,13 @@
             
     <li class="toctree-l1 ">
         <a class="" href="../../integrate/oxray/">OpenID Connect Liferay Plugin</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../../integrate/java-connect/">OpenID Connect Java Authentication</a>
         
     </li>
 
@@ -714,21 +742,12 @@
 			
             <li>
     <ul class="subnav">
-    <li><span>Gluu Defaults</span></li>
+    <li><span>Reference</span></li>
 
         
             
-    <li class="toctree-l1 current">
-        <a class="current" href="./">Gluu Policy</a>
-        
-            <ul>
-            
-                <li class="toctree-l3"><a href="#gluu-default-policy">Gluu Default Policy</a></li>
-                
-                    <li><a class="toctree-l4" href="#tomcat">Tomcat</a></li>
-                
-            
-            </ul>
+    <li class="toctree-l1 ">
+        <a class="" href="../policy/">Gluu Policy</a>
         
     </li>
 
@@ -748,15 +767,44 @@
 
         
             
-    <li class="toctree-l1 ">
-        <a class="" href="../ldap/">LDAP</a>
+    <li class="toctree-l1 current">
+        <a class="current" href="./">LDAP</a>
         
-    </li>
-
-        
+            <ul>
             
-    <li class="toctree-l1 ">
-        <a class="" href="../logout/">Logout</a>
+                <li class="toctree-l3"><a href="#ldap-namespace">LDAP Namespace</a></li>
+                
+            
+                <li class="toctree-l3"><a href="#ldap-configuration">LDAP Configuration</a></li>
+                
+            
+                <li class="toctree-l3"><a href="#indexing">Indexing</a></li>
+                
+                    <li><a class="toctree-l4" href="#opendj-indexing">OpenDJ Indexing</a></li>
+                
+                    <li><a class="toctree-l4" href="#389ds-indexing">389DS Indexing</a></li>
+                
+                    <li><a class="toctree-l4" href="#openldap-indexing">OpenLDAP Indexing</a></li>
+                
+                    <li><a class="toctree-l4" href="#configuring-ldap-indexing-to-improve-ox-applications-performance">Configuring LDAP indexing to improve OX applications performance</a></li>
+                
+                    <li><a class="toctree-l4" href="#oxauth-filters">oxAuth filters</a></li>
+                
+                    <li><a class="toctree-l4" href="#determining-what-needs-indexing">Determining what needs indexing</a></li>
+                
+                    <li><a class="toctree-l4" href="#sample-commands-to-add-indexes">Sample commands to add indexes</a></li>
+                
+            
+                <li class="toctree-l3"><a href="#replication">Replication</a></li>
+                
+                    <li><a class="toctree-l4" href="#opendj">OpenDJ</a></li>
+                
+                    <li><a class="toctree-l4" href="#openldap">OpenLDAP</a></li>
+                
+                    <li><a class="toctree-l4" href="#389ds">389DS</a></li>
+                
+            
+            </ul>
         
     </li>
 
@@ -764,6 +812,20 @@
             
     <li class="toctree-l1 ">
         <a class="" href="../schema/">Schema</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../schema/">LDAP Schema</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../logout/">Logout</a>
         
     </li>
 
@@ -930,16 +992,16 @@
     
       
         
-          <li>Gluu Defaults &raquo;</li>	 
+          <li>Reference &raquo;</li>	 
         
       
     
-    <li>Gluu Policy</li>
+    <li>LDAP</li>
     <li class="wy-breadcrumbs-aside">
            
       
         
-          <a href="https://github.com/GluuFederation/docs/blob/master/sources/gluu-defaults/policy.md" class="icon icon-github"> Edit on GitHub</a>
+          <a href="https://github.com/GluuFederation/docs/blob/master/sources/reference\ldap.md" class="icon icon-github"> Edit on GitHub</a>
       
         
       
@@ -950,10 +1012,266 @@
           <div role="main">
             <div class="section">
               
-                <h1 id="gluu-default-policy">Gluu Default Policy</h1>
-<p>This page contains the policy for gluu components.</p>
-<h2 id="tomcat">Tomcat</h2>
-<p>Please remember to restart Tomcat Server on updating any <code>lib</code> or library. It extends to <code>.war</code> files too. If any resource is updated, it is not necessary to restart tomcat.</p>
+                <div class="toc">
+<ul>
+<li><a href="#ldap-namespace">LDAP Namespace</a></li>
+<li><a href="#ldap-configuration">LDAP Configuration</a></li>
+<li><a href="#indexing">Indexing</a><ul>
+<li><a href="#opendj-indexing">OpenDJ Indexing</a></li>
+<li><a href="#389ds-indexing">389DS Indexing</a></li>
+<li><a href="#openldap-indexing">OpenLDAP Indexing</a></li>
+<li><a href="#configuring-ldap-indexing-to-improve-ox-applications-performance">Configuring LDAP indexing to improve OX applications performance</a></li>
+<li><a href="#oxauth-filters">oxAuth filters</a></li>
+<li><a href="#determining-what-needs-indexing">Determining what needs indexing</a></li>
+<li><a href="#sample-commands-to-add-indexes">Sample commands to add indexes</a></li>
+</ul>
+</li>
+<li><a href="#replication">Replication</a><ul>
+<li><a href="#opendj">OpenDJ</a></li>
+<li><a href="#openldap">OpenLDAP</a></li>
+<li><a href="#389ds">389DS</a></li>
+</ul>
+</li>
+</ul>
+</div>
+<h1 id="ldap-namespace">LDAP Namespace</h1>
+<p>The LDAP Namespace, or Directory Information Tree (DIT) structure, is
+the convention for naming entries in LDAP so that they form a
+hierarchical tree structure.</p>
+<p>In general, the Gluu Server tries to keep the data pretty flat. But at
+times, we use the namespace to store information that is relative to a
+certain entry.</p>
+<p>There are two root namespaces in the Gluu Server: <code>o=gluu</code> and <code>o=site</code>.
+The <code>o=gluu</code> namespace is used to store all the important configuration
+and entity data. The <code>o=site</code> DIT is used only when identities are being
+synchronized from an external LDAP server using the Gluu Server Cache
+Refresh feature.</p>
+<p>The following table has a list of all the major branches of the tree
+under <code>o=gluu</code>:</p>
+<table>
+<thead>
+<tr>
+<th>base DN</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>o=gluu</td>
+<td>organization entry, IPv6 style id by default</td>
+</tr>
+<tr>
+<td>@!.....</td>
+<td>Basic info with inum</td>
+</tr>
+<tr>
+<td>ou=clients</td>
+<td>OAuth2 client entities</td>
+</tr>
+<tr>
+<td>ou=federation</td>
+<td>OAuth2 federation metadata</td>
+</tr>
+<tr>
+<td>ou=groups</td>
+<td>Group entities</td>
+</tr>
+<tr>
+<td>ou=hosts</td>
+<td>Hosts</td>
+</tr>
+<tr>
+<td>ou=oxasimba</td>
+<td>Asimba configuration is stored in this branch</td>
+</tr>
+<tr>
+<td>ou=oxProx</td>
+<td>oxProx configuration data</td>
+</tr>
+<tr>
+<td>ou=people</td>
+<td>User entities</td>
+</tr>
+<tr>
+<td>ou=push</td>
+<td>Mobile device metadata used by oxPush</td>
+</tr>
+<tr>
+<td>ou=scopes</td>
+<td>Oauth2 scope entities</td>
+</tr>
+<tr>
+<td>ou=scripts</td>
+<td>Custom scripts are stored in this branch</td>
+</tr>
+<tr>
+<td>ou=session</td>
+<td>oxAuth Session data (if persistent sessions are enabled)</td>
+</tr>
+<tr>
+<td>ou=u2f</td>
+<td>The U2F authentication requests, registration requests and registered devices are stored in this branch</td>
+</tr>
+<tr>
+<td>ou=uma</td>
+<td>UMA policies, scopes, and resource sets</td>
+</tr>
+</tbody>
+</table>
+<h1 id="ldap-configuration">LDAP Configuration</h1>
+<p>This section has information about how the Gluu Server uses LDAP, and
+other LDAP recommendations.</p>
+<p>The Gluu Server uses LDAP for persistence to store information about
+things like configuration, user claims, and client claims. Currently
+Gluu ships with a forked version of OpenDJ. However, we hope to bolster
+support for OpenLDAP and 389DS. If you are an LDAP guru please help us
+by contributing documentation details!</p>
+<h1 id="indexing">Indexing</h1>
+<p>All databases need proper indexing to function. This is particularly
+true for LDAP servers. There should never be any <code>sub</code> or <code>one</code> scoped
+searches to the LDAP server that are not properly indexed. Because
+indexing is implementation specific, the following guidelines should
+provide a good starting point. The LDAP server logs should be
+periodically analyzed to identify un-indexed searches. The exact
+indexing requirements may vary based on custom attributes, and custom
+authentication and authorization requirements.</p>
+<h2 id="opendj-indexing">OpenDJ Indexing</h2>
+<p><a href="http://opendj.forgerock.org/opendj-server/doc/bootstrap/admin-guide/#chap-indexing">Indexing Attribute Values</a></p>
+<h2 id="389ds-indexing">389DS Indexing</h2>
+<p><a href="http://directory.fedoraproject.org/docs/389ds/design/database-architecture.html">Indexing Architecture</a></p>
+<h2 id="openldap-indexing">OpenLDAP Indexing</h2>
+<p><a href="http://www.openldap.org/doc/admin24/tuning.html">OpenLDAP Tuning</a></p>
+<p><strong>Recommended Indexes for OX</strong></p>
+<p>Indexed attributes in OpenDS on seed.gluu.org server:</p>
+<pre><code>| cn               | equality, substring | default | 
+| --               | ------------------- | ------- | 
+| entryUUID        | equality            | default | 
+| givenName        | equality, substring | default | 
+| mail             | equality, substring | default | 
+| member           | equality            | default | 
+| sn               | equality, substring | default | 
+| telephoneNumber  | equality, substring | default | 
+| uid              | equality            | default | 
+| uniqueMember     | equality            | default | 
+| uniqueIdentifier | equality            | Gluu    | 
+| inum             | equality            | Gluu    | 
+| oxid             | equality            | Gluu    | 
+| lastModifiedTime | ordering            | Gluu    | 
+| oxAuthExpiration | ordering            | Gluu    |
+</code></pre>
+<p>For o=site cache refresh will search on the 'Primary Key'. So it will
+not be possible for us to know which attributes need to be indexed until
+configuration time.</p>
+<h2 id="configuring-ldap-indexing-to-improve-ox-applications-performance">Configuring LDAP indexing to improve OX applications performance</h2>
+<p>In order to keep optimal server load it is necessary to configure
+indexing for OpenDJ LDAP server. OpenDJ support these index types:
+approximate, equality, ordering, presence, substring, virtual list view,
+extensible matching rule. There is more information about index types in
+<a href="http://opendj.forgerock.org/opendj-server/doc/admin-guide/#indexes-overview">OpenDJ Admin
+Guide</a>.
+It is possible to add them for any LDAP attribute. OpenDJ will use them
+during searching result entries.</p>
+<p>Default OpenDJ installation has few preconfigured indexes for these
+attributes: aci, cn, dn2id, ds-sync-conflict, ds-sync-hist, entryUUID,
+givenName, id2children, id2subtree, mail, member, objectClass, sn,
+telephone­Number, uid, unique­Member. This table contains definition of
+these indexes: <a href="http://opendj.forgerock.org/opendj-server/doc/admin-guide/#default-indexes">default
+Indexes</a>.</p>
+<h2 id="oxauth-filters">oxAuth filters</h2>
+<p>oxAuth has a few parts which allows custom LDAP filters:</p>
+<pre><code>`&lt;auth-filters-enabled&gt;`true`&lt;/auth-filters-enabled&gt;`
+`&lt;auth-filters&gt;`
+    `&lt;auth-filter&gt;`
+        `&lt;!--filter&gt;`(&amp;amp;(associatedClient=*{0}*)(myPinCode={1}))`&lt;/filter--&gt;`
+        `&lt;filter&gt;`(&amp;amp;(mail=*{0}*)(inum={1}))`&lt;/filter&gt;`
+        `&lt;!-- If bind=true oxAuth should try to bind to entry which it found by filter specified above --&gt;`
+        `&lt;bind&gt;`false`&lt;/bind&gt;`
+        `&lt;base-dn&gt;`o=gluu`&lt;/base-dn&gt;`
+    `&lt;/auth-filter&gt;`
+
+    `&lt;auth-filter&gt;`
+        `&lt;filter&gt;`uid={0}`&lt;/filter&gt;`
+        `&lt;bind&gt;`true`&lt;/bind&gt;`
+        `&lt;bind-password-attribute&gt;`pwd`&lt;/bind-password-attribute&gt;`
+        `&lt;base-dn&gt;`o=gluu`&lt;/base-dn&gt;`
+    `&lt;/auth-filter&gt;`
+`&lt;/auth-filters&gt;`
+
+`&lt;!-- Custom client filters to be able identify client by custom id. --&gt;`
+`&lt;client-auth-filters-enabled&gt;`true`&lt;/client-auth-filters-enabled&gt;`
+`&lt;client-auth-filters&gt;`
+    `&lt;client-auth-filter&gt;`
+        `&lt;filter&gt;`myCustomAttr1={0}`&lt;/filter&gt;`
+        `&lt;base-dn&gt;`ou=clients,o=@!1111,o=gluu`&lt;/base-dn&gt;`
+    `&lt;/client-auth-filter&gt;`
+    `&lt;!--client-auth-filter&gt;`
+        `&lt;filter&gt;`(&amp;amp;(myCustomAttr1={0})(myCustomAttr2={0}))`&lt;/filter&gt;`
+        `&lt;base-dn&gt;`ou=clients,o=@!1111,o=gluu`&lt;/base-dn&gt;`
+    `&lt;/client-auth-filter--&gt;`
+`&lt;/client-auth-filters&gt;`
+</code></pre>
+<p>oxAuth uses them to find clients. Hence it is necessary to configure
+indexing for these filters. If there are no indexes for the filter
+attributes OpenDJ might use an unindexed search.</p>
+<h2 id="determining-what-needs-indexing">Determining what needs indexing</h2>
+<p>OpenDJ has built in functionality to help the admin find unindexed
+searches. More information about this is available in the OpenDJ Admin
+Guide <a href="http://opendj.forgerock.org/opendj-server/doc/admin-guide/#debug-search-indexes">Determining What Needs
+Indexing</a>.</p>
+<h2 id="sample-commands-to-add-indexes">Sample commands to add indexes</h2>
+<p>Add an index for the inum attribute.</p>
+<pre><code>./dsconfig create-local-db-index --backend-name userRoot --type generic --index-name inum --set index-type:equality --set index-entry-limit:4000 --hostName host --port 4444 --bindDN cn=Directory\ Manager -j /tmp/.pw --trustAll --noPropertiesFile --no-prompt
+./dsconfig set-backend-prop --backend-name userRoot --set enabled:false --hostName host --port 4444 --bindDN cn=Directory\ Manager -j /tmp/.pw --trustAll --noPropertiesFile --no-prompt
+./rebuild-index --baseDN o=gluu --index inum
+./dsconfig set-backend-prop --backend-name userRoot --set enabled:true --hostName host --port 4444 --bindDN cn=Directory\ Manager -j /tmp/.pw --trustAll --noPropertiesFile --no-prompt
+
+./dsconfig create-local-db-index --backend-name inumDB --type generic --index-name inum --set index-type:equality --set index-entry-limit:4000 --hostName host --port 4444 --bindDN cn=Directory\ Manager -j /tmp/.pw --trustAll --noPropertiesFile --no-prompt
+./dsconfig set-backend-prop --backend-name inumDB --set enabled:false --hostName host --port 4444 --bindDN cn=Directory\ Manager -j /tmp/.pw --trustAll --noPropertiesFile --no-prompt
+./rebuild-index --baseDN o=site --index inum
+./dsconfig set-backend-prop --backend-name inumDB --set enabled:true --hostName host --port 4444 --bindDN cn=Directory\ Manager -j /tmp/.pw --trustAll --noPropertiesFile --no-prompt
+</code></pre>
+<p>Add an index for the uniqueIdentifier attribute.</p>
+<pre><code>./dsconfig create-local-db-index --backend-name userRoot --type generic --index-name uniqueIdentifier --set index-type:equality --set index-entry-limit:4000 --hostName host --port 4444 --bindDN cn=Directory\ Manager -j /tmp/.pw --trustAll --noPropertiesFile --no-prompt
+./dsconfig set-backend-prop --backend-name userRoot --set enabled:false --hostName host --port 4444 --bindDN cn=Directory\ Manager -j /tmp/.pw --trustAll --noPropertiesFile --no-prompt
+./rebuild-index --baseDN o=gluu --index uniqueIdentifier
+./rebuild-index --baseDN o=site --index uniqueIdentifier
+./dsconfig set-backend-prop --backend-name userRoot --set enabled:true --hostName host --port 4444 --bindDN cn=Directory\ Manager -j /tmp/.pw --trustAll --noPropertiesFile --no-prompt
+</code></pre>
+<p>Add an index for the oxId attribute.</p>
+<pre><code>./dsconfig create-local-db-index --backend-name userRoot --type generic --index-name oxId --set index-type:equality --set index-entry-limit:4000 --hostName host --port 4444 --bindDN cn=Directory\ Manager -j /tmp/.pw --trustAll --noPropertiesFile --no-prompt
+./dsconfig set-backend-prop --backend-name userRoot --set enabled:false --hostName host --port 4444 --bindDN cn=Directory\ Manager -j /tmp/.pw --trustAll --noPropertiesFile --no-prompt
+./rebuild-index --baseDN o=gluu --index oxId
+./rebuild-index --baseDN o=site --index oxId
+./dsconfig set-backend-prop --backend-name userRoot --set enabled:true --hostName host --port 4444 --bindDN cn=Directory\ Manager -j /tmp/.pw --trustAll --noPropertiesFile --no-prompt
+</code></pre>
+<p>Add an index for the lastModifiedTime attribute.</p>
+<pre><code>./dsconfig create-local-db-index --backend-name userRoot --type generic --index-name lastModifiedTime --set index-type:ordering --set index-entry-limit:4000 --hostName host --port 4444 --bindDN cn=Directory\ Manager -j /tmp/.pw --trustAll --noPropertiesFile --no-prompt
+./dsconfig set-backend-prop --backend-name userRoot --set enabled:false --hostName host --port 4444 --bindDN cn=Directory\ Manager -j /tmp/.pw --trustAll --noPropertiesFile --no-prompt
+./rebuild-index --baseDN o=gluu --index lastModifiedTime
+./rebuild-index --baseDN o=site --index lastModifiedTime
+./dsconfig set-backend-prop --backend-name userRoot --set enabled:true --hostName host --port 4444 --bindDN cn=Directory\ Manager -j /tmp/.pw --trustAll --noPropertiesFile --no-prompt
+</code></pre>
+<p>Add an index for oxAuthExpiration attribute.</p>
+<pre><code>./dsconfig create-local-db-index --backend-name userRoot --type generic --index-name oxAuthExpiration --set index-type:ordering --set index-entry-limit:4000 --hostName host --port 4444 --bindDN cn=Directory\ Manager -j /tmp/.pw --trustAll --noPropertiesFile --no-prompt
+./dsconfig set-backend-prop --backend-name userRoot --set enabled:false --hostName host --port 4444 --bindDN cn=Directory\ Manager -j /tmp/.pw --trustAll --noPropertiesFile --no-prompt
+./rebuild-index --baseDN o=gluu --index oxAuthExpiration
+./rebuild-index --baseDN o=site --index oxAuthExpiration
+./dsconfig set-backend-prop --backend-name userRoot --set enabled:true --hostName host --port 4444 --bindDN cn=Directory\ Manager -j /tmp/.pw --trustAll --noPropertiesFile --no-prompt
+</code></pre>
+<p>Determine the current status of indexes.</p>
+<pre><code>./dbtest list-index-status --backendID userRoot -b o=gluu
+</code></pre>
+<h1 id="replication">Replication</h1>
+<p>The Gluu Server was designed to take advantage of LDAP replication. Each
+server has its own special configuration for replication. Below are some
+pointers to the respective platform's documentation on how to manage
+replication.</p>
+<h2 id="opendj">OpenDJ</h2>
+<p><a href="http://opendj.forgerock.org/opendj-server/doc/bootstrap/admin-guide/#chap-replication">Managing Replication - OpenDJ Admin Guide</a></p>
+<h2 id="openldap">OpenLDAP</h2>
+<p><a href="http://www.openldap.org/doc/admin24/replication.html">Replication</a></p>
+<h2 id="389ds">389DS</h2>
+<p><a href="https://access.redhat.com/documentation/en-US/Red_Hat_Directory_Server/9.0/html/Administration_Guide/Managing_Replication.html">Managing Replication</a></p>
               
             </div>
           </div>
@@ -961,10 +1279,10 @@
   
     <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
       
-        <a href="../config/" class="btn btn-neutral float-right" title="Configurations"/>Next <span class="icon icon-circle-arrow-right"></span></a>
+        <a href="../schema/" class="btn btn-neutral float-right" title="Schema"/>Next <span class="icon icon-circle-arrow-right"></span></a>
       
       
-        <a href="../../fine-tuning/" class="btn btn-neutral" title="Tuning LDAP, Tomcat"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+        <a href="../certificates/" class="btn btn-neutral" title="Certificates"><span class="icon icon-circle-arrow-left"></span> Previous</a>
       
     </div>
   
@@ -993,10 +1311,10 @@
           <a class="icon icon-github" style="float: left; color: #fcfcfc"> GitHub</a>
       
       
-        <span><a href="../../fine-tuning/" style="color: #fcfcfc;">&laquo; Previous</a></span>
+        <span><a href="../certificates/" style="color: #fcfcfc;">&laquo; Previous</a></span>
       
       
-        <span style="margin-left: 15px"><a href="../config/" style="color: #fcfcfc">Next &raquo;</a></span>
+        <span style="margin-left: 15px"><a href="../schema/" style="color: #fcfcfc">Next &raquo;</a></span>
       
     </span>
 </div>

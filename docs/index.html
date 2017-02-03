@@ -8,7 +8,7 @@
   <title>Gluu Docs</title>
   
 
-  <link rel="shortcut icon" href="img/gluu_favicon.ico">
+  <link rel="shortcut icon" href="/img/gluu_favicon.ico">
   
 
   
@@ -51,22 +51,16 @@
         
             <ul>
             
-                <li class="toctree-l3"><a href="#gluu-server-community-edition-docs">Gluu Server Community Edition Docs</a></li>
+                <li class="toctree-l3"><a href="#gluu-server-community-edition-ce-docs">Gluu Server Community Edition (CE) Docs</a></li>
                 
             
-                <li class="toctree-l3"><a href="#navigating-the-docs">Navigating The Docs</a></li>
+                <li class="toctree-l3"><a href="#client-software">Client Software</a></li>
                 
-                    <li><a class="toctree-l4" href="#install-gluu-server">Install Gluu Server</a></li>
+            
+                <li class="toctree-l3"><a href="#support">Support</a></li>
                 
-                    <li><a class="toctree-l4" href="#configure-cluster">Configure Cluster</a></li>
-                
-                    <li><a class="toctree-l4" href="#gluu-server-gui">Gluu Server GUI</a></li>
-                
-                    <li><a class="toctree-l4" href="#integrate-gluu-server">Integrate Gluu Server</a></li>
-                
-                    <li><a class="toctree-l4" href="#authentication">Authentication</a></li>
-                
-                    <li><a class="toctree-l4" href="#support">Support</a></li>
+            
+                <li class="toctree-l3"><a href="#license">License</a></li>
                 
             
             </ul>
@@ -263,14 +257,14 @@
         
             
     <li class="toctree-l1 ">
-        <a class="" href="gluu-defaults/oxtrust-properties/">OxTrust JSON Configuration</a>
+        <a class="" href="reference/oxtrust-properties/">OxTrust JSON Configuration</a>
         
     </li>
 
         
             
     <li class="toctree-l1 ">
-        <a class="" href="gluu-defaults/oxauth-properties/">OxAuth JSON Configuration</a>
+        <a class="" href="reference/oxauth-properties/">OxAuth JSON Configuration</a>
         
     </li>
 
@@ -490,6 +484,34 @@
     </li>
 
         
+            
+    <li class="toctree-l1 ">
+        <a class="" href="reference/logout/">Logout</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="customize/auth-script/">Write a Custom OTP Authentication Script using Twilio</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="how-to/find-gluu-server-version/">Find which version of Gluu you are using</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="how-to/backup/">Backup Gluu CE Server</a>
+        
+    </li>
+
+        
     </ul>
 <li>
 		
@@ -510,13 +532,6 @@
             
     <li class="toctree-l1 ">
         <a class="" href="customize/script/">Behaviour Customization</a>
-        
-    </li>
-
-        
-            
-    <li class="toctree-l1 ">
-        <a class="" href="customize/auth-script/">Custom Script How-To</a>
         
     </li>
 
@@ -621,6 +636,13 @@
             
     <li class="toctree-l1 ">
         <a class="" href="integrate/oxray/">OpenID Connect Liferay Plugin</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="integrate/java-connect/">OpenID Connect Java Authentication</a>
         
     </li>
 
@@ -736,68 +758,75 @@
 			
             <li>
     <ul class="subnav">
-    <li><span>Gluu Defaults</span></li>
+    <li><span>Reference</span></li>
 
         
             
     <li class="toctree-l1 ">
-        <a class="" href="gluu-defaults/policy/">Gluu Policy</a>
+        <a class="" href="reference/policy/">Gluu Policy</a>
         
     </li>
 
         
             
     <li class="toctree-l1 ">
-        <a class="" href="gluu-defaults/config/">Configurations</a>
+        <a class="" href="reference/config/">Configurations</a>
         
     </li>
 
         
             
     <li class="toctree-l1 ">
-        <a class="" href="gluu-defaults/certificates/">Certificates</a>
+        <a class="" href="reference/certificates/">Certificates</a>
         
     </li>
 
         
             
     <li class="toctree-l1 ">
-        <a class="" href="gluu-defaults/ldap/">LDAP</a>
+        <a class="" href="reference/ldap/">LDAP</a>
         
     </li>
 
         
             
     <li class="toctree-l1 ">
-        <a class="" href="gluu-defaults/logout/">Logout</a>
+        <a class="" href="reference/schema/">Schema</a>
         
     </li>
 
         
             
     <li class="toctree-l1 ">
-        <a class="" href="gluu-defaults/schema/">Schema</a>
+        <a class="" href="reference/schema/">LDAP Schema</a>
         
     </li>
 
         
             
     <li class="toctree-l1 ">
-        <a class="" href="gluu-defaults/oxtrust-properties/">oxTrust Properties File</a>
+        <a class="" href="reference/logout/">Logout</a>
         
     </li>
 
         
             
     <li class="toctree-l1 ">
-        <a class="" href="gluu-defaults/oxauth-properties/">oxAuth Properties File</a>
+        <a class="" href="reference/oxtrust-properties/">oxTrust Properties File</a>
         
     </li>
 
         
             
     <li class="toctree-l1 ">
-        <a class="" href="gluu-defaults/logs/">Logs</a>
+        <a class="" href="reference/oxauth-properties/">oxAuth Properties File</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="reference/logs/">Logs</a>
         
     </li>
 
@@ -959,190 +988,64 @@
           <div role="main">
             <div class="section">
               
-                <div class="toc">
+                <h1 id="gluu-server-community-edition-ce-docs">Gluu Server Community Edition (CE) Docs</h1>
+<p>The Gluu Server is a free open source identity provider (IDP) and access management suite of software primarily written in Java. The Gluu Server is a central authentication and authorization server that should be leveraged by applications to perform person identification and lowest common denominator authorization decisions. The Gluu Server is engineered to support robust enterprise requirements for uptime and availability.</p>
+<p>Organizations use the Gluu Server to achieve:       </p>
 <ul>
-<li><a href="#gluu-server-community-edition-docs">Gluu Server Community Edition Docs</a></li>
-<li><a href="#navigating-the-docs">Navigating The Docs</a><ul>
-<li><a href="#install-gluu-server">Install Gluu Server</a><ul>
-<li><a href="#upgrading-from-a-previous-release">Upgrading from a previous release</a></li>
+<li>Outbound and Inbound Single Sign-On (SSO)          </li>
+<li>Centralized authentication and authorization          </li>
+<li>Customer, partner, and employee authentication          </li>
+<li>Web &amp; API access management          </li>
+<li>Strong authentication          </li>
+<li>Identity Federation          </li>
 </ul>
-</li>
-<li><a href="#configure-cluster">Configure Cluster</a></li>
-<li><a href="#gluu-server-gui">Gluu Server GUI</a></li>
-<li><a href="#integrate-gluu-server">Integrate Gluu Server</a><ul>
-<li><a href="#service-providerrequesting-party-integration">Service Provider/Requesting Party Integration</a></li>
-<li><a href="#integration-guides">Integration Guides</a></li>
-</ul>
-</li>
-<li><a href="#authentication">Authentication</a></li>
-<li><a href="#support">Support</a></li>
-</ul>
-</li>
-</ul>
-</div>
-<h1 id="gluu-server-community-edition-docs">Gluu Server Community Edition Docs</h1>
-<p>Gluu Server is a free open source identity provider (IDP) and access management suite of software primarily written in java. The Gluu Server combines best-of-breed open source identity and access management software with easy deployment and administration, and is engineered to support robust enterprise requirements for uptime and availability.</p>
-<p>Primarily, the Gluu Server is used to achieve the following solutions:   <br />
-- Outbound and Inbound Single Sign-On (SSO)    <br />
-- Centralized authentication and authorization    <br />
-- Customer, partner, and employee authentication    <br />
-- Web &amp; API access management   <br />
-- Strong authentication   <br />
-- Identity Federation     </p>
-<p>The code is open source, and available on <a href="https://github.com/gluufederation">Github</a>.</p>
-<p>Community support can be enlisted on the <a href="http://support.gluu.org">Gluu support site</a>. If your organization needs to open private tickets with us, or needs an SLA or consultative support, Gluu offers a range of <a href="http://gluu.org/pricing">VIP support</a> options. </p>
-<h1 id="navigating-the-docs">Navigating The Docs</h1>
-<p>The menu on the left can be used to navigate the docs. However for convenience the following is given.</p>
-<h2 id="install-gluu-server">Install Gluu Server</h2>
-<table>
-<thead>
-<tr>
-<th>Operating System</th>
-<th>Version</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>Ubuntu</td>
-<td><strong><a href="deployment/ubuntu/">14.04</a> <br/> <a href="deployment/ubuntu-xenial/">16.04</a></strong></td>
-</tr>
-<tr>
-<td>CentOS</td>
-<td><strong><a href="deployment/centos/">6.x</a> <br/> <a href="deployment/centos7/">7.2</a></strong></td>
-</tr>
-<tr>
-<td>RHEL</td>
-<td><strong><a href="deployment/rhel/">6.x</a> <br/> <a href="deployment/rhel7/">7</a></strong></td>
-</tr>
-<tr>
-<td>Debian</td>
-<td><strong><a href="deployment/debian/">8.x</a></strong></td>
-</tr>
-</tbody>
-</table>
-<h3 id="upgrading-from-a-previous-release">Upgrading from a previous release</h3>
+<p>The Gluu Server supports the following open standards for federation, authentication, authorization, and identity management:</p>
 <ul>
-<li><a href="deployment/upgrading/"><strong>Upgrade to latest release</strong></a></li>
+<li>SAML      </li>
+<li>OpenID Connect     </li>
+<li>UMA     </li>
+<li>CAS       </li>
+<li>SCIM        </li>
+<li>FIDO       </li>
+<li>LDAP         </li>
 </ul>
-<h2 id="configure-cluster">Configure Cluster</h2>
-<p>Please use the following to confugure Gluu Server manual cluster.</p>
-<ul>
-<li><a href="cluster/"><strong>Cluster with Gluu Server</strong></a></li>
-</ul>
-<h2 id="gluu-server-gui">Gluu Server GUI</h2>
-<p>The following pages explain the oxTrust GUI</p>
+<p>Learn more about the differences between OAuth, SAML and OpenID Connect in <a href="https://www.gluu.org/blog/oauth-vs-saml-vs-openid-connect/">this blog</a>.</p>
+<p>Learn more about each supported standard on <a href="https://www.gluu.org/resources/documents/#standards">our website</a>. </p>
+<p>The Gluu Server code is open source, and can be found on <a href="./github.com/GluuFederation/">Github</a>.</p>
+<h1 id="client-software">Client Software</h1>
+<p>In order for an application to leverage the Gluu Server (or any external identity provider) for authentication and authorization, the application needs to support federation. The Gluu Server provides identity provider endpoints for the SAML and OpenID Connect federation standards. Therefore, any application that wants to send users to the Gluu Server for login should support either SAML or OpenID Connect. </p>
+<p>If the application does not already support one of these standards, we highly recommend securing the application using <a href="http://oxd.gluu.org">oxd</a>, our OpenID Connect middleware software. oxd makes its easy to properly secure the sign-in flow for applications with OpenID Connect, and is supported and maintained by Gluu. </p>
+<p>Learn more about oxd in <a href="https://www.gluu.org/blog/secure-web-apps-openid-connect-oxd/">this blog</a>. </p>
+<p>Watch the <a href="http://gluu.co/oxd-demo">oxd demo</a>. </p>
+<p>The Gluu Server also supports a few third party OpenID Connect client library projects, including the AppAuth client SDK for mobile single sign-on. See <a href="https://www.gluu.org/blog/limiting-openid-connect-community-client-support/">the current list</a>. </p>
+<h1 id="support">Support</h1>
+<p>Gluu hosts a public knowledge base and support platform on the <a href="http://support.gluu.org">Gluu support site</a>. Anyone can browse tickets and register to open public tickets. </p>
+<p>VIP support can be purchased if you or your organization wants private support, SLA's on support responses (like production outages), and consultative support from Gluu. See VIP support pricing on <a href="./gluu.org/pricing">our website</a> options.</p>
+<h1 id="license">License</h1>
+<p>Any software published by Gluu in the OX Project is under the <a href="http://opensource.org/licenses/MIT">MIT License</a>. This includes oxAuth, the OAuth 2.0 and OpenID Connect Provider, and UMA Authorization Server, and oxTrust, the web based server administration GUI.</p>
+<p>During installation you will also have the option to install third party software components which have the following licenses:</p>
 <table>
 <thead>
 <tr>
-<th>oxTrust Tab Menu</th>
-<th>Sub-menu</th>
+<th>Component</th>
+<th>License</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td><strong><a href="oxtrust/configuration/">Configuration</a></strong></td>
-<td><a href="gluu-defaults/oxtrust-properties/">oxTrust JSON Configuration</a> <br/><a href="gluu-defaults/oxauth-properties/">oxAuth JSON Configuration</a><br/> <a href="cache-refresh/">Cache Refresh/Backend LDAP/AD</a></td>
+<td>Shibboleth</td>
+<td><a href="http://www.apache.org/licenses/LICENSE-2.0">Apache2</a></td>
 </tr>
 <tr>
-<td>SAML</td>
-<td><a href="integrate/outbound-saml/">Outbound</a><br/> <a href="integrate/inbound-saml/">Inbound</a></td>
+<td>OpenDJ</td>
+<td><a href="http://opensource.org/licenses/CDDL-1.0">CDDL-1.0</a></td>
 </tr>
 <tr>
-<td><strong><a href="integrate/openid-connect/">OpenID Connect</a></strong></td>
-<td>n/a</td>
-</tr>
-<tr>
-<td><strong><a href="integrate/uma/">UMA</a></strong></td>
-<td>n/a</td>
-</tr>
-<tr>
-<td><strong><a href="oxtrust/users/">Users</a></strong></td>
-<td><a href="user-management/xlsfile/">Import People</a></td>
-</tr>
-<tr>
-<td><strong><a href="oxtrust/personal/">Personal</a></strong></td>
-<td>n/a</td>
+<td>Asimba</td>
+<td><a href="http://www.gnu.org/licenses/agpl-3.0.html">GNU APGL 3.0</a></td>
 </tr>
 </tbody>
 </table>
-<h2 id="integrate-gluu-server">Integrate Gluu Server</h2>
-<h3 id="service-providerrequesting-party-integration">Service Provider/Requesting Party Integration</h3>
-<table>
-<thead>
-<tr>
-<th>SAML SP</th>
-<th>OpenID Connect RP</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td><a href="integrate/apache-saml/">CentOS</a></td>
-<td><a href="integrate/centos-installation/">CentOS</a></td>
-</tr>
-<tr>
-<td><a href="integrate/ubuntu-shib-apache/">Ubuntu</a></td>
-<td><a href="integrate/ubuntu-installation/">Ubuntu</a></td>
-</tr>
-<tr>
-<td><a href="integrate/iis-saml/">IIS 7</a></td>
-<td></td>
-</tr>
-<tr>
-<td><a href="integrate/saml-windows/">Windows</a></td>
-<td></td>
-</tr>
-</tbody>
-</table>
-<h3 id="integration-guides">Integration Guides</h3>
-<table>
-<thead>
-<tr>
-<th>SSO</th>
-<th>Plugin</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td><a href="integrate/google-saml/">Google</a></td>
-<td><a href="integrate/oxray/">Liferay</a></td>
-</tr>
-<tr>
-<td><a href="integrate/hobsons-saml/">Hobsons</a></td>
-<td></td>
-</tr>
-<tr>
-<td><a href="integrate/salesforce-sso/">Salesforce</a></td>
-<td></td>
-</tr>
-</tbody>
-</table>
-<h2 id="authentication">Authentication</h2>
-<table>
-<thead>
-<tr>
-<th>Multi Factor Guides</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td><a href="multi-factor/duo/">DUO</a></td>
-</tr>
-<tr>
-<td><a href="multi-factor/u2f/">U2F</a></td>
-</tr>
-<tr>
-<td><a href="multi-factor/oxpush2/">oxPush2</a></td>
-</tr>
-<tr>
-<td><a href="multi-factor/wikid/">Wikid</a></td>
-</tr>
-<tr>
-<td><a href="multi-factor/cert/">Certificate</a></td>
-</tr>
-</tbody>
-</table>
-<h2 id="support">Support</h2>
-<p>Please see the <a href="faq/troubleshooting/">FAQ Page</a> for basic troubleshooting, or <a href="http://support.gluu.org">open a ticket</a> on our support portal for community support. Gluu also offers paid support. Please view our <a href="https://www.gluu.org/gluu-server/pricing/">pricing page</a> to learn more about our VIP support options. </p>
               
             </div>
           </div>
@@ -1190,6 +1093,6 @@
 </html>
 
 <!--
-MkDocs version : 0.14.0
-Build Date UTC : 2016-11-08 23:13:46.596090
+MkDocs version : 0.16.0
+Build Date UTC : 2017-02-03 20:51:16
 -->

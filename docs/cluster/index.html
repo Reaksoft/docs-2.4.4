@@ -8,7 +8,7 @@
   <title>Clustering with CE - Gluu Docs</title>
   
 
-  <link rel="shortcut icon" href="../img/gluu_favicon.ico">
+  <link rel="shortcut icon" href="/img/gluu_favicon.ico">
   
 
   
@@ -262,14 +262,14 @@
         
             
     <li class="toctree-l1 ">
-        <a class="" href="../gluu-defaults/oxtrust-properties/">OxTrust JSON Configuration</a>
+        <a class="" href="../reference/oxtrust-properties/">OxTrust JSON Configuration</a>
         
     </li>
 
         
             
     <li class="toctree-l1 ">
-        <a class="" href="../gluu-defaults/oxauth-properties/">OxAuth JSON Configuration</a>
+        <a class="" href="../reference/oxauth-properties/">OxAuth JSON Configuration</a>
         
     </li>
 
@@ -489,6 +489,34 @@
     </li>
 
         
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../reference/logout/">Logout</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../customize/auth-script/">Write a Custom OTP Authentication Script using Twilio</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../how-to/find-gluu-server-version/">Find which version of Gluu you are using</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../how-to/backup/">Backup Gluu CE Server</a>
+        
+    </li>
+
+        
     </ul>
 <li>
 		
@@ -509,13 +537,6 @@
             
     <li class="toctree-l1 ">
         <a class="" href="../customize/script/">Behaviour Customization</a>
-        
-    </li>
-
-        
-            
-    <li class="toctree-l1 ">
-        <a class="" href="../customize/auth-script/">Custom Script How-To</a>
         
     </li>
 
@@ -620,6 +641,13 @@
             
     <li class="toctree-l1 ">
         <a class="" href="../integrate/oxray/">OpenID Connect Liferay Plugin</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../integrate/java-connect/">OpenID Connect Java Authentication</a>
         
     </li>
 
@@ -735,68 +763,75 @@
 			
             <li>
     <ul class="subnav">
-    <li><span>Gluu Defaults</span></li>
+    <li><span>Reference</span></li>
 
         
             
     <li class="toctree-l1 ">
-        <a class="" href="../gluu-defaults/policy/">Gluu Policy</a>
+        <a class="" href="../reference/policy/">Gluu Policy</a>
         
     </li>
 
         
             
     <li class="toctree-l1 ">
-        <a class="" href="../gluu-defaults/config/">Configurations</a>
+        <a class="" href="../reference/config/">Configurations</a>
         
     </li>
 
         
             
     <li class="toctree-l1 ">
-        <a class="" href="../gluu-defaults/certificates/">Certificates</a>
+        <a class="" href="../reference/certificates/">Certificates</a>
         
     </li>
 
         
             
     <li class="toctree-l1 ">
-        <a class="" href="../gluu-defaults/ldap/">LDAP</a>
+        <a class="" href="../reference/ldap/">LDAP</a>
         
     </li>
 
         
             
     <li class="toctree-l1 ">
-        <a class="" href="../gluu-defaults/logout/">Logout</a>
+        <a class="" href="../reference/schema/">Schema</a>
         
     </li>
 
         
             
     <li class="toctree-l1 ">
-        <a class="" href="../gluu-defaults/schema/">Schema</a>
+        <a class="" href="../reference/schema/">LDAP Schema</a>
         
     </li>
 
         
             
     <li class="toctree-l1 ">
-        <a class="" href="../gluu-defaults/oxtrust-properties/">oxTrust Properties File</a>
+        <a class="" href="../reference/logout/">Logout</a>
         
     </li>
 
         
             
     <li class="toctree-l1 ">
-        <a class="" href="../gluu-defaults/oxauth-properties/">oxAuth Properties File</a>
+        <a class="" href="../reference/oxtrust-properties/">oxTrust Properties File</a>
         
     </li>
 
         
             
     <li class="toctree-l1 ">
-        <a class="" href="../gluu-defaults/logs/">Logs</a>
+        <a class="" href="../reference/oxauth-properties/">oxAuth Properties File</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../reference/logs/">Logs</a>
         
     </li>
 
@@ -951,7 +986,7 @@
            
       
         
-          <a href="https://github.com/GluuFederation/docs/blob/master/sources/cluster/index.md" class="icon icon-github"> Edit on GitHub</a>
+          <a href="https://github.com/GluuFederation/docs/blob/master/sources/cluster\index.md" class="icon icon-github"> Edit on GitHub</a>
       
         
       
@@ -1082,10 +1117,10 @@ The requirements for Clusters vary only in the RAM requirement. Clusters require
 <p>Log into <code>host-1</code> Gluu Server container</p>
 </li>
 <li>
-<p>Run <a href="./ldapGeneralConfigInstall.py">ldapGeneralConfigInstall.py</a> in <code>host-1</code>. This script will prepare the <code>host-1</code> LDAP server to accept various configurations such as <code>allow-pre-encoded-passwords</code> or applyting the host and port for LDAP Server.</p>
+<p>Run <a href="../ldapGeneralConfigInstall.py">ldapGeneralConfigInstall.py</a> in <code>host-1</code>. This script will prepare the <code>host-1</code> LDAP server to accept various configurations such as <code>allow-pre-encoded-passwords</code> or applyting the host and port for LDAP Server.</p>
 </li>
 <li>
-<p>Run <a href="./replicationSetup.py">replicationSetup.py</a> in <code>host-1</code> and it will give a similar output as below:</p>
+<p>Run <a href="../replicationSetup.py">replicationSetup.py</a> in <code>host-1</code> and it will give a similar output as below:</p>
 </li>
 </ul>
 <pre><code>[ldap@]$ python replicationSetup.py 
@@ -1209,7 +1244,7 @@ operation.
 </ol>
 <pre><code>openssl genrsa -out /etc/csync2_ssl_key.pem 1024
 openssl req -new -key /etc/csync2_ssl_key.pem -out /etc/csync2_ssl_cert.csr
-openssl x509 -req -days 600 -in /etc/csync2_ssl_cert.csr -signkey /etc/csync 2_ssl_key.pem \
+openssl x509 -req -days 600 -in /etc/csync2_ssl_cert.csr -signkey /etc/csync2_ssl_key.pem \
 -out /etc/csync2_ssl_cert.pem
 </code></pre>
 
@@ -1439,7 +1474,7 @@ group cluster_group
 <h2 id="certificate-management">Certificate Management</h2>
 <p>Certificates are not being synced automatically in the proposed setup. They must be initially copied by hand from one node to the other, and must be synced in this manner each time they are being updated.
 in each host, when required. Move to <code>/etc/certs/</code> on the 1st node (inside the container). Copy all keys, certs and key storages conforming to these masks: <code>httpd.*</code>, <code>asimba.*</code>, <code>asimbaIDP.*</code>, <code>idp-encryption.*</code>, <code>idp-signing.*</code>, <code>shibIDP.*</code>, <code>oxauth-keys.*</code> and <code>scim-rs.*</code> - to the same directory on the 2nd node (overwriting files that exist there; you may opt to backup them first, just in case).</p>
-<p>After that's done you still will need to update default system storage (<code>cacerts</code> file) at the 2nd node with these newly copied certificates. The <a href="../gluu-defaults/certificates/">Certificate Page</a> contains the details about available certificates and how to update certificates are detailed in the <a href="../how-to/update-certificate/">update-certificate page</a>.</p>
+<p>After that's done you still will need to update default system storage (<code>cacerts</code> file) at the 2nd node with these newly copied certificates. The <a href="../reference/certificates/">Certificate Page</a> contains the details about available certificates and how to update certificates are detailed in the <a href="../how-to/update-certificate/">update-certificate page</a>.</p>
 <h2 id="optional-actions-in-case-setuppropertieslast-method-of-installation-didnt-work-for-you">[Optional] Actions in case setup.properties.last method of installation didn't work for you</h2>
 <p>In this case jks keystores you'll be moving to the 2nd node will be protected by passwords hardcoded into different configuration files on the 1st node, which are different from the similar passwords hardcoded into the same files on the 2nd node.</p>
 <p>Thus you MUST ensure that the 1st node will be the one that will initialize the 2nd node during first csync's run (i.e., that it will win any conflicts due to changes in files that csync may detect during its very first run), as otherwise different components won't be able to decrypt these keystores and will fail.</p>

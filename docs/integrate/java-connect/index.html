@@ -5,10 +5,10 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
-  <title>oxAuth Properties File - Gluu Docs</title>
+  <title>OpenID Connect Java Authentication - Gluu Docs</title>
   
 
-  <link rel="shortcut icon" href="../../img/gluu_favicon.ico">
+  <link rel="shortcut icon" href="/img/gluu_favicon.ico">
   
 
   
@@ -241,35 +241,35 @@
         
             
     <li class="toctree-l1 ">
-        <a class="" href="../oxtrust-properties/">OxTrust JSON Configuration</a>
+        <a class="" href="../../reference/oxtrust-properties/">OxTrust JSON Configuration</a>
         
     </li>
 
         
             
     <li class="toctree-l1 ">
-        <a class="" href="./">OxAuth JSON Configuration</a>
+        <a class="" href="../../reference/oxauth-properties/">OxAuth JSON Configuration</a>
         
     </li>
 
         
             
     <li class="toctree-l1 ">
-        <a class="" href="../../integrate/outbound-saml/">SAML</a>
+        <a class="" href="../outbound-saml/">SAML</a>
         
     </li>
 
         
             
     <li class="toctree-l1 ">
-        <a class="" href="../../integrate/openid-connect/">OpenID Connect</a>
+        <a class="" href="../openid-connect/">OpenID Connect</a>
         
     </li>
 
         
             
     <li class="toctree-l1 ">
-        <a class="" href="../../integrate/uma/">UMA</a>
+        <a class="" href="../uma/">UMA</a>
         
     </li>
 
@@ -435,7 +435,7 @@
         
             
     <li class="toctree-l1 ">
-        <a class="" href="../../integrate/scimuma-howto/">Protect SCIM endpoints with UMA</a>
+        <a class="" href="../scimuma-howto/">Protect SCIM endpoints with UMA</a>
         
     </li>
 
@@ -468,6 +468,34 @@
     </li>
 
         
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../../reference/logout/">Logout</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../../customize/auth-script/">Write a Custom OTP Authentication Script using Twilio</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../../how-to/find-gluu-server-version/">Find which version of Gluu you are using</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../../how-to/backup/">Backup Gluu CE Server</a>
+        
+    </li>
+
+        
     </ul>
 <li>
 		
@@ -494,13 +522,6 @@
         
             
     <li class="toctree-l1 ">
-        <a class="" href="../../customize/auth-script/">Custom Script How-To</a>
-        
-    </li>
-
-        
-            
-    <li class="toctree-l1 ">
         <a class="" href="../../customize/attributes/">Custom Attributes</a>
         
     </li>
@@ -518,35 +539,35 @@
         
             
     <li class="toctree-l1 ">
-        <a class="" href="../../integrate/outbound-saml/">Outbound SAML</a>
+        <a class="" href="../outbound-saml/">Outbound SAML</a>
         
     </li>
 
         
             
     <li class="toctree-l1 ">
-        <a class="" href="../../integrate/inbound-saml/">Inbound SAML</a>
+        <a class="" href="../inbound-saml/">Inbound SAML</a>
         
     </li>
 
         
             
     <li class="toctree-l1 ">
-        <a class="" href="../../integrate/openid-connect/">OpenID Connect</a>
+        <a class="" href="../openid-connect/">OpenID Connect</a>
         
     </li>
 
         
             
     <li class="toctree-l1 ">
-        <a class="" href="../../integrate/uma/">UMA</a>
+        <a class="" href="../uma/">UMA</a>
         
     </li>
 
         
             
     <li class="toctree-l1 ">
-        <a class="" href="../../integrate/oauth2grants/">OAuth2</a>
+        <a class="" href="../oauth2grants/">OAuth2</a>
         
     </li>
 
@@ -577,56 +598,81 @@
         
             
     <li class="toctree-l1 ">
-        <a class="" href="../../integrate/oxd/">oxd OAuth2 Client Software </a>
+        <a class="" href="../oxd/">oxd OAuth2 Client Software </a>
         
     </li>
 
         
             
     <li class="toctree-l1 ">
-        <a class="" href="../../integrate/ubuntu-installation/">OpenID Connect RP in Ubuntu</a>
+        <a class="" href="../ubuntu-installation/">OpenID Connect RP in Ubuntu</a>
         
     </li>
 
         
             
     <li class="toctree-l1 ">
-        <a class="" href="../../integrate/centos-installation/">OpenID Connect RP in CentOS</a>
+        <a class="" href="../centos-installation/">OpenID Connect RP in CentOS</a>
         
     </li>
 
         
             
     <li class="toctree-l1 ">
-        <a class="" href="../../integrate/oxray/">OpenID Connect Liferay Plugin</a>
+        <a class="" href="../oxray/">OpenID Connect Liferay Plugin</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 current">
+        <a class="current" href="./">OpenID Connect Java Authentication</a>
+        
+            <ul>
+            
+                <li class="toctree-l3"><a href="#using-openid-connect-to-authenticate-a-person-in-java">Using OpenID Connect to authenticate a person in Java</a></li>
+                
+                    <li><a class="toctree-l4" href="#discovery">Discovery</a></li>
+                
+                    <li><a class="toctree-l4" href="#client-registration">Client Registration</a></li>
+                
+                    <li><a class="toctree-l4" href="#obtaining-the-id_token">Obtaining the id_token</a></li>
+                
+                    <li><a class="toctree-l4" href="#logout">Logout</a></li>
+                
+            
+                <li class="toctree-l3"><a href="#using-openid-connect-from-javascript">Using OpenID Connect from JavaScript</a></li>
+                
+            
+            </ul>
         
     </li>
 
         
             
     <li class="toctree-l1 ">
-        <a class="" href="../../integrate/apache-saml/">SAML SP in CentOS</a>
+        <a class="" href="../apache-saml/">SAML SP in CentOS</a>
         
     </li>
 
         
             
     <li class="toctree-l1 ">
-        <a class="" href="../../integrate/ubuntu-shib-apache/">SAML SP in Ubuntu</a>
+        <a class="" href="../ubuntu-shib-apache/">SAML SP in Ubuntu</a>
         
     </li>
 
         
             
     <li class="toctree-l1 ">
-        <a class="" href="../../integrate/iis-saml/">SAML SP in IIS7</a>
+        <a class="" href="../iis-saml/">SAML SP in IIS7</a>
         
     </li>
 
         
             
     <li class="toctree-l1 ">
-        <a class="" href="../../integrate/saml-windows/">SAML SP in Windows</a>
+        <a class="" href="../saml-windows/">SAML SP in Windows</a>
         
     </li>
 
@@ -643,49 +689,49 @@
         
             
     <li class="toctree-l1 ">
-        <a class="" href="../../integrate/google-saml/">Google SSO</a>
+        <a class="" href="../google-saml/">Google SSO</a>
         
     </li>
 
         
             
     <li class="toctree-l1 ">
-        <a class="" href="../../integrate/office365/">Office 365 SSO</a>
+        <a class="" href="../office365/">Office 365 SSO</a>
         
     </li>
 
         
             
     <li class="toctree-l1 ">
-        <a class="" href="../../integrate/hobsons-saml/">Hobsons Education Solution SSO</a>
+        <a class="" href="../hobsons-saml/">Hobsons Education Solution SSO</a>
         
     </li>
 
         
             
     <li class="toctree-l1 ">
-        <a class="" href="../../integrate/salesforce-sso/">Salesforce SSO</a>
+        <a class="" href="../salesforce-sso/">Salesforce SSO</a>
         
     </li>
 
         
             
     <li class="toctree-l1 ">
-        <a class="" href="../../integrate/dropbox/">Dropbox SSO</a>
+        <a class="" href="../dropbox/">Dropbox SSO</a>
         
     </li>
 
         
             
     <li class="toctree-l1 ">
-        <a class="" href="../../integrate/test-shib2/">TestShib2 SSO</a>
+        <a class="" href="../test-shib2/">TestShib2 SSO</a>
         
     </li>
 
         
             
     <li class="toctree-l1 ">
-        <a class="" href="../../integrate/asimba/">Asimba & Gluu CE</a>
+        <a class="" href="../asimba/">Asimba & Gluu CE</a>
         
     </li>
 
@@ -714,79 +760,75 @@
 			
             <li>
     <ul class="subnav">
-    <li><span>Gluu Defaults</span></li>
+    <li><span>Reference</span></li>
 
         
             
     <li class="toctree-l1 ">
-        <a class="" href="../policy/">Gluu Policy</a>
+        <a class="" href="../../reference/policy/">Gluu Policy</a>
         
     </li>
 
         
             
     <li class="toctree-l1 ">
-        <a class="" href="../config/">Configurations</a>
+        <a class="" href="../../reference/config/">Configurations</a>
         
     </li>
 
         
             
     <li class="toctree-l1 ">
-        <a class="" href="../certificates/">Certificates</a>
+        <a class="" href="../../reference/certificates/">Certificates</a>
         
     </li>
 
         
             
     <li class="toctree-l1 ">
-        <a class="" href="../ldap/">LDAP</a>
+        <a class="" href="../../reference/ldap/">LDAP</a>
         
     </li>
 
         
             
     <li class="toctree-l1 ">
-        <a class="" href="../logout/">Logout</a>
+        <a class="" href="../../reference/schema/">Schema</a>
         
     </li>
 
         
             
     <li class="toctree-l1 ">
-        <a class="" href="../schema/">Schema</a>
+        <a class="" href="../../reference/schema/">LDAP Schema</a>
         
     </li>
 
         
             
     <li class="toctree-l1 ">
-        <a class="" href="../oxtrust-properties/">oxTrust Properties File</a>
-        
-    </li>
-
-        
-            
-    <li class="toctree-l1 current">
-        <a class="current" href="./">oxAuth Properties File</a>
-        
-            <ul>
-            
-                <li class="toctree-l3"><a href="#configuration">Configuration</a></li>
-                
-                    <li><a class="toctree-l4" href="#oxauth-configurations">oxAuth Configurations</a></li>
-                
-                    <li><a class="toctree-l4" href="#oxauthproperties">oxAuth.properties</a></li>
-                
-            
-            </ul>
+        <a class="" href="../../reference/logout/">Logout</a>
         
     </li>
 
         
             
     <li class="toctree-l1 ">
-        <a class="" href="../logs/">Logs</a>
+        <a class="" href="../../reference/oxtrust-properties/">oxTrust Properties File</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../../reference/oxauth-properties/">oxAuth Properties File</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../../reference/logs/">Logs</a>
         
     </li>
 
@@ -932,16 +974,16 @@
     
       
         
-          <li>Gluu Defaults &raquo;</li>	 
+          <li>SP / RP Integration Modules &raquo;</li>	 
         
       
     
-    <li>oxAuth Properties File</li>
+    <li>OpenID Connect Java Authentication</li>
     <li class="wy-breadcrumbs-aside">
            
       
         
-          <a href="https://github.com/GluuFederation/docs/blob/master/sources/gluu-defaults/oxauth-properties.md" class="icon icon-github"> Edit on GitHub</a>
+          <a href="https://github.com/GluuFederation/docs/blob/master/sources/integrate\java-connect.md" class="icon icon-github"> Edit on GitHub</a>
       
         
       
@@ -952,22 +994,51 @@
           <div role="main">
             <div class="section">
               
-                <div class="toc">
-<ul>
-<li><a href="#configuration">Configuration</a><ul>
-<li><a href="#oxauth-configurations">oxAuth Configurations</a></li>
-<li><a href="#oxauthproperties">oxAuth.properties</a></li>
-</ul>
-</li>
-</ul>
-</div>
-<h1 id="configuration">Configuration</h1>
-<h2 id="oxauth-configurations">oxAuth Configurations</h2>
-<p>This page explains the JSON Configuration under the Configuration Tab in the configuration Menu.</p>
-<p><img alt="image" src="https://raw.githubusercontent.com/GluuFederation/docs/master/sources/img/2.4/config-json_menu.png" /></p>
-<h2 id="oxauthproperties">oxAuth.properties</h2>
-<p><img alt="image" src="https://raw.githubusercontent.com/GluuFederation/docs/master/sources/img/2.4/config-json_oxauthproperties.png" /></p>
-<p>The descriptions for the oxAuth JSON configurations are given under the fields. </p>
+                <h1 id="using-openid-connect-to-authenticate-a-person-in-java">Using OpenID Connect to authenticate a person in Java</h1>
+<p>The <a href="https://openid.net/connect/">OpenID Connect</a> Protocol offers Java
+developers a way to authenticate a person at any Internet domain that
+supports the standard. To accomplish this, the domain must provide a way
+to register clients--the website and mobile applications that use the
+authentication API offered by the domain.</p>
+<h2 id="discovery">Discovery</h2>
+<p>Discovery is the first step! Luckily, its super-easy! All you have to 
+do is make a get request to
+<code>https://{domain}/.well-known/openid-configuration</code>.</p>
+<p>This will return a JSON object, as described in the
+<a href="http://openid.net/specs/openid-connect-discovery-1_0.html">specification</a>.
+For example, you can see Gluu's OpenID Connect discovery
+<a href="https://idp.gluu.org/.well-known/openid-configuration">url</a>.</p>
+<p>This will tell you everything you need to know about this OpenID Connect
+provider, like what are the endpoints (URLs), what crypto is supported,
+and what user claims can you ask for.</p>
+<p>An <a href="https://github.com/GluuFederation/oxAuth/blob/master/RP/src/main/java/org/xdi/oxauth/action/OpenIdConnectDiscoveryAction.java">example</a>
+of a Discovery Request, using the oxAuth RP library.</p>
+<h2 id="client-registration">Client Registration</h2>
+<p>In SAML, the website was called a "Service Provider." In OpenID Connect,
+the website (or mobile application) is called a "Client". Clients can be
+registered manually by the OP, but more frequently, clients use the
+<a href="http://openid.net/specs/openid-connect-registration-1_0.html">Dynamic Registration
+API</a> to
+automate the process.</p>
+<h2 id="obtaining-the-id_token">Obtaining the id_token</h2>
+<p>After your client is registered, it is time to get down to business.
+OpenID Connect offers two common workflows for authentication: basic
+(where the person is using a browser, and can be re-directed) and
+implicit where the client sends the credentials, including the secret.
+There is a useful implements guide for
+<a href="http://openid.net/specs/openid-connect-basic-1_0.html">basic</a> and
+<a href="http://openid.net/specs/openid-connect-implicit-1_0.html">implicit</a>.</p>
+<h2 id="logout">Logout</h2>
+<p>OpenID Connect defines a mechanism for <a href="http://openid.net/specs/openid-connect-session-1_0.html">Session
+Management</a>.
+The idea is that JavaScript in a web tab can detect that another tab has
+logged out. One detection of a logout event, the Web application can
+cleanup sessions in any backend systems as necessary. It is not 100%
+effective. If the tab is closed when the logout occurs in another tab,
+the event may not be detected, and the backend systems are advised to
+timeout sessions.</p>
+<h1 id="using-openid-connect-from-javascript">Using OpenID Connect from JavaScript</h1>
+<p>See <a href="http://www.gluu.co/.qqh2">OpenID Connect plugin for Passport</a> for further details.</p>
               
             </div>
           </div>
@@ -975,10 +1046,10 @@
   
     <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
       
-        <a href="../logs/" class="btn btn-neutral float-right" title="Logs"/>Next <span class="icon icon-circle-arrow-right"></span></a>
+        <a href="../apache-saml/" class="btn btn-neutral float-right" title="SAML SP in CentOS"/>Next <span class="icon icon-circle-arrow-right"></span></a>
       
       
-        <a href="../oxtrust-properties/" class="btn btn-neutral" title="oxTrust Properties File"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+        <a href="../oxray/" class="btn btn-neutral" title="OpenID Connect Liferay Plugin"><span class="icon icon-circle-arrow-left"></span> Previous</a>
       
     </div>
   
@@ -1007,10 +1078,10 @@
           <a class="icon icon-github" style="float: left; color: #fcfcfc"> GitHub</a>
       
       
-        <span><a href="../oxtrust-properties/" style="color: #fcfcfc;">&laquo; Previous</a></span>
+        <span><a href="../oxray/" style="color: #fcfcfc;">&laquo; Previous</a></span>
       
       
-        <span style="margin-left: 15px"><a href="../logs/" style="color: #fcfcfc">Next &raquo;</a></span>
+        <span style="margin-left: 15px"><a href="../apache-saml/" style="color: #fcfcfc">Next &raquo;</a></span>
       
     </span>
 </div>

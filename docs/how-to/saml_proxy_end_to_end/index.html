@@ -8,7 +8,7 @@
   <title>Inbound SAML End to End Testing - Gluu Docs</title>
   
 
-  <link rel="shortcut icon" href="../../img/gluu_favicon.ico">
+  <link rel="shortcut icon" href="/img/gluu_favicon.ico">
   
 
   
@@ -241,14 +241,14 @@
         
             
     <li class="toctree-l1 ">
-        <a class="" href="../../gluu-defaults/oxtrust-properties/">OxTrust JSON Configuration</a>
+        <a class="" href="../../reference/oxtrust-properties/">OxTrust JSON Configuration</a>
         
     </li>
 
         
             
     <li class="toctree-l1 ">
-        <a class="" href="../../gluu-defaults/oxauth-properties/">OxAuth JSON Configuration</a>
+        <a class="" href="../../reference/oxauth-properties/">OxAuth JSON Configuration</a>
         
     </li>
 
@@ -483,6 +483,34 @@
     </li>
 
         
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../../reference/logout/">Logout</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../../customize/auth-script/">Write a Custom OTP Authentication Script using Twilio</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../find-gluu-server-version/">Find which version of Gluu you are using</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../backup/">Backup Gluu CE Server</a>
+        
+    </li>
+
+        
     </ul>
 <li>
 		
@@ -503,13 +531,6 @@
             
     <li class="toctree-l1 ">
         <a class="" href="../../customize/script/">Behaviour Customization</a>
-        
-    </li>
-
-        
-            
-    <li class="toctree-l1 ">
-        <a class="" href="../../customize/auth-script/">Custom Script How-To</a>
         
     </li>
 
@@ -614,6 +635,13 @@
             
     <li class="toctree-l1 ">
         <a class="" href="../../integrate/oxray/">OpenID Connect Liferay Plugin</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../../integrate/java-connect/">OpenID Connect Java Authentication</a>
         
     </li>
 
@@ -729,68 +757,75 @@
 			
             <li>
     <ul class="subnav">
-    <li><span>Gluu Defaults</span></li>
+    <li><span>Reference</span></li>
 
         
             
     <li class="toctree-l1 ">
-        <a class="" href="../../gluu-defaults/policy/">Gluu Policy</a>
+        <a class="" href="../../reference/policy/">Gluu Policy</a>
         
     </li>
 
         
             
     <li class="toctree-l1 ">
-        <a class="" href="../../gluu-defaults/config/">Configurations</a>
+        <a class="" href="../../reference/config/">Configurations</a>
         
     </li>
 
         
             
     <li class="toctree-l1 ">
-        <a class="" href="../../gluu-defaults/certificates/">Certificates</a>
+        <a class="" href="../../reference/certificates/">Certificates</a>
         
     </li>
 
         
             
     <li class="toctree-l1 ">
-        <a class="" href="../../gluu-defaults/ldap/">LDAP</a>
+        <a class="" href="../../reference/ldap/">LDAP</a>
         
     </li>
 
         
             
     <li class="toctree-l1 ">
-        <a class="" href="../../gluu-defaults/logout/">Logout</a>
+        <a class="" href="../../reference/schema/">Schema</a>
         
     </li>
 
         
             
     <li class="toctree-l1 ">
-        <a class="" href="../../gluu-defaults/schema/">Schema</a>
+        <a class="" href="../../reference/schema/">LDAP Schema</a>
         
     </li>
 
         
             
     <li class="toctree-l1 ">
-        <a class="" href="../../gluu-defaults/oxtrust-properties/">oxTrust Properties File</a>
+        <a class="" href="../../reference/logout/">Logout</a>
         
     </li>
 
         
             
     <li class="toctree-l1 ">
-        <a class="" href="../../gluu-defaults/oxauth-properties/">oxAuth Properties File</a>
+        <a class="" href="../../reference/oxtrust-properties/">oxTrust Properties File</a>
         
     </li>
 
         
             
     <li class="toctree-l1 ">
-        <a class="" href="../../gluu-defaults/logs/">Logs</a>
+        <a class="" href="../../reference/oxauth-properties/">oxAuth Properties File</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../../reference/logs/">Logs</a>
         
     </li>
 
@@ -945,7 +980,7 @@
            
       
         
-          <a href="https://github.com/GluuFederation/docs/blob/master/sources/how-to/saml_proxy_end_to_end.md" class="icon icon-github"> Edit on GitHub</a>
+          <a href="https://github.com/GluuFederation/docs/blob/master/sources/how-to\saml_proxy_end_to_end.md" class="icon icon-github"> Edit on GitHub</a>
       
         
       
@@ -971,35 +1006,92 @@
 <p>Description of SAML Authentication Module is available here: https://github.com/GluuFederation/oxAuth/tree/master/Server/integrations/saml</p>
 <h2 id="preparation-in-gluu-server">Preparation in Gluu Server</h2>
 <p>During installation of Gluu Server (https://test.gluu.org), deployer need to select 'Asimba' and 'Shibboleth IDP' along with other core components (oxTrust,oxAuth,Web Server and LDAP). After the completion of installation, we can move forward for rest of the work. </p>
+<h3 id="asimba-core-configuration-file-modification">Asimba core configuration file modification</h3>
+<ul>
+<li>File name: asimba.xml</li>
+<li>Location: /opt/tomcat/webapps/asimba/WEB-INF/conf ( inside Gluu Server container )</li>
+<li>After below modifications, restart tomcat: </li>
+<li>Enable whitelist for attributes </li>
+</ul>
+<pre><code>&lt;gather&gt;
+   &lt;attribute name=&quot;whitelist-attribute-name&quot; /&gt;
+&lt;/gather&gt;
+</code></pre>
+
+<ul>
+<li>Allow all attributes released by remote AuthN server. Add 'attribute name="*"' in attributeRelease class</li>
+</ul>
+<pre><code>&lt;attributerelease class=&quot;com.alfaariss.oa.engine.attribute.release.configuration.ConfigurationFactory&quot;&gt;
+         &lt;policy id=&quot;asimba.releasepolicy.1&quot; friendlyname=&quot;Default Attribute Release policy&quot; enabled=&quot;true&quot;&gt;
+                        &lt;attribute name=&quot;firstname&quot; /&gt;
+                        &lt;attribute name=&quot;lastname&quot; /&gt;
+                        &lt;attribute name=&quot;email&quot; /&gt;
+                        &lt;attribute name=&quot;role&quot; /&gt;
+                        &lt;attribute name=&quot;country&quot; /&gt;    &lt;!-- country is defined in &lt;global ..&gt; attribute section --&gt;
+                        &lt;attribute name=&quot;*&quot; /&gt;
+                        .............
+                        .............
+</code></pre>
+
 <h3 id="saml-custom-script-configuration">SAML custom script configuration</h3>
 <p>Server: https://test.gluu.org</p>
-<p><img alt="SAML Script" src="https://github.com/GluuFederation/oxAuth/blob/master/Server/integrations/saml/SamlExternalAuthenticator.py" /> allows Gluu Server Administrator to prepare a complete SAML Proxy setup with their Gluu Server. 
-To configure this custom script, 
- - Log into Gluu Server as admin user. 
- - Configuration -&gt; Manage Custom Scripts
- - Select/Add 'saml' script from 'Person Authentication' tab
-    - Name: saml
-    - Description: Saml Authentication module
-    - Programming Language: Python
-    - Level: 1
-    - Location Type: LDAP
-    - Usage Type: Web
-    - Custom property (key/value)
-       - saml_deployment_type: enroll
-       - saml_idp_sso_target_url: https://test.gluu.org/asimba/profiles/saml2/sso/web
-       - saml_validate_response: false
-       - asimba_entity_id: https://test.gluu.org/saml
-       - asimba_saml_certificate_file: /etc/certs/saml.pem 
-         - note: Deployer need to copy 'asimba.crt' in 'saml.pem' without any 'BEGIN CERTIFICATE' and 'END CERTIFICATE' tag. 
-       - user_object_classes: eduPerson
-       - saml_idp_attributes_mapping: { "attribute_name": ["attribute_name", "SAML2 URI"] } 
-         - example: <code>{"uid": ["uid", "urn:oid:0.9.2342.19200300.100.1.1"], "mail": ["mail", "urn:oid:0.9.2342.19200300.100.1.3"], "givenName": ["givenName", "urn:oid:2.5.4.42"], "sn": ["sn", "urn:oid:2.5.4.4"], "eduPersonPrincipalName": ["eduPersonPrincipalName", "urn:oid:1.3.6.1.4.1.5923.1.1.1.6"] }</code>
-       - enforce_uniqueness_attr_list: attribute1, attribute2
-         - example: <code>edupersonprincipalname, uid, mail, givenName</code>
-       - saml_use_authn_context: false
-       - saml_generate_name_id: true
-    - Script: Grab script from github and paste it here. 
-    - Enabled: True</p>
+<p><a href="https://github.com/GluuFederation/oxAuth/blob/master/Server/integrations/saml/SamlExternalAuthenticator.py">SAML Script</a> allows Gluu Server Administrator to prepare a complete SAML Proxy setup with their Gluu Server. 
+To configure this custom script, </p>
+<ul>
+<li>
+<p>Log into Gluu Server as admin user. </p>
+</li>
+<li>
+<p>Configuration -&gt; Manage Custom Scripts</p>
+</li>
+<li>
+<p>Select/Add 'saml' script from 'Person Authentication' tab</p>
+<ul>
+<li>
+<p>Name: saml</p>
+</li>
+<li>
+<p>Description: Saml Authentication module</p>
+</li>
+<li>
+<p>Programming Language: Python</p>
+</li>
+<li>
+<p>Level: 1</p>
+</li>
+<li>
+<p>Location Type: LDAP</p>
+</li>
+<li>
+<p>Usage Type: Web</p>
+</li>
+<li>
+<p>Custom property (key/value)</p>
+</li>
+<li>
+<p>saml_deployment_type: enroll_all_attr</p>
+</li>
+<li>saml_idp_sso_target_url: https://test.gluu.org/asimba/profiles/saml2/sso/web</li>
+<li>saml_validate_response: false</li>
+<li>asimba_entity_id: https://test.gluu.org/saml</li>
+<li>asimba_saml_certificate_file: /etc/certs/saml.pem [ Deployer need to make sure that 'saml.pem' is there inside /etc/certs/. The ingredient of this pem is asimba.crt without '-----BEGIN CERTIFICATE-----' and '-----END CERTIFICATE-----' header and footer ] </li>
+<li>user_object_classes: eduPerson, ox-563D78CE5EDA45D900017569E2D5 [ This varies from org to org. If Organization want to process any eduPerson related attribute they need to add 'eduPerson' here. The other OC 'ox-563D....' is required if Organization need to process/use any custom attribute ] </li>
+<li>saml_idp_attributes_mapping: { "attribute_name": ["attribute_name", "SAML2 URI"] } <ul>
+<li>example: <code>{"uid": ["uid", "urn:oid:0.9.2342.19200300.100.1.1"], "mail": ["mail", "urn:oid:0.9.2342.19200300.100.1.3"], "givenName": ["givenName", "urn:oid:2.5.4.42"], "sn": ["sn", "urn:oid:2.5.4.4"], "eduPersonPrincipalName": ["eduPersonPrincipalName", "urn:oid:1.3.6.1.4.1.5923.1.1.1.6"] }</code></li>
+</ul>
+</li>
+<li>enforce_uniqueness_attr_list: attribute1, attribute2 [ This also varies from Org to Org ] <ul>
+<li>example: <code>edupersonprincipalname, uid, mail, givenName</code></li>
+</ul>
+</li>
+<li>saml_use_authn_context: false</li>
+<li>saml_generate_name_id: true</li>
+<li>saml_update_user: true</li>
+<li>Script: Grab script from github ( https://github.com/GluuFederation/oxAuth/tree/master/Server/integrations/saml ) and paste it here. </li>
+<li>Enabled: True</li>
+</ul>
+</li>
+</ul>
 <h3 id="asimba-configuration">Asimba Configuration:</h3>
 <p>Server: https://test.gluu.org</p>
 <h4 id="enroll-remote-authentication-servers">Enroll Remote Authentication servers:</h4>
@@ -1064,29 +1156,49 @@ To configure this custom script,
 
 <h3 id="saml-trust-relationship">SAML Trust Relationship</h3>
 <p>Server: https://test.gluu.org</p>
-<p>Create Trust relationships for all service provides which are included in SAML Proxy SSO workflow. In our test setup we created Trust relationship for remote SP which has entityID 'https://sp.gluu.org/shibboleth'. How to create Trust Relationship is available <img alt="here" src="https://gluu.org/docs/integrate/outbound-saml/" /></p>
+<p>Create Trust relationships for all service provides which are included in SAML Proxy SSO workflow. In our test setup we created Trust relationship for remote SP which has entityID 'https://sp.gluu.org/shibboleth'. How to create Trust Relationship is available <a href="https://gluu.org/docs/integrate/outbound-saml/">here</a></p>
 <h2 id="preparation-in-remote-authentication-server-idp">Preparation in Remote Authentication Server (IDP)</h2>
 <p>Server: https://nest.gluu.org</p>
 <p>Create a SAML Trust Relationship with Gluu Server's Asimba bit. 
-Requirements: 
-  - Gluu Server's Asimba metadata can be achieved from 'https://test.gluu.org/asimba/profiles/saml2'
-    - Download the metadata and use 'File' method to create Trust relationship
-  - Relying Party Configuration: 'SAML2SSO' Profile 
-    - example: 
-        - includeAttributeStatement: Yes
-        - assertionLifeTime: 300000
-        - assertionProxyCount: 0
-        - signResponses: conditional
-        - signAssertions: never
-        - signRequests: conditional
-        - encryptAssertions: never
-        - encryptNameIds: never
-  - Attribute: Any attribute according to Service Providers own need. Any kind of nameID from below list is mandatory. 
-     - nameID: 
-        - <code>nameIDFormat="urn:oasis:names:tc:SAML:1.1:nameid-format:unspecified"</code>
-        - <code>nameIDFormat="urn:oasis:names:tc:SAML:2.0:nameid-format:transient"</code>
-        - <code>nameIDFormat="urn:oasis:names:tc:SAML:1.1:nameid-format:emailAddress"</code>
-     - How to create nameID in Gluu Server is available <img alt="here" src="https://gluu.org/docs/customize/attributes/#custom-nameid" /></p>
+Requirements: </p>
+<ul>
+<li>Download the Asimba metadata and use 'File' method to create Trust relationship<ul>
+<li>Asimba metadata is available @ <code>https://test.gluu.org/asimba/profiles/saml2</code></li>
+</ul>
+</li>
+<li>
+<p>Relying Party Configuration: 'SAML2SSO' Profile </p>
+<ul>
+<li>example: <ul>
+<li>includeAttributeStatement: Yes</li>
+<li>assertionLifeTime: 300000</li>
+<li>assertionProxyCount: 0</li>
+<li>signResponses: conditional</li>
+<li>signAssertions: never</li>
+<li>signRequests: conditional</li>
+<li>encryptAssertions: never</li>
+<li>encryptNameIds: never</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<p>Attribute: Any attribute according to Service Providers own need. Any kind of nameID from below list is mandatory. </p>
+<ul>
+<li>
+<p>nameID: </p>
+<ul>
+<li><code>nameIDFormat="urn:oasis:names:tc:SAML:1.1:nameid-format:unspecified"</code></li>
+<li><code>nameIDFormat="urn:oasis:names:tc:SAML:2.0:nameid-format:transient"</code></li>
+<li><code>nameIDFormat="urn:oasis:names:tc:SAML:1.1:nameid-format:emailAddress"</code></li>
+</ul>
+</li>
+<li>
+<p>How to create nameID in Gluu Server is available <a href="https://gluu.org/docs/customize/attributes/#custom-nameid">here</a></p>
+</li>
+</ul>
+</li>
+</ul>
 <h2 id="preparation-in-service-provider-sp">Preparation in Service Provider (SP)</h2>
 <p>Server: https://sp.gluu.org</p>
 <p>Preparing Service Provider for SAML Proxy worflow follows standard procedure. Service Provider need to connect with Gluu Server's Shibboleth part ( for our case, the entityID would be: https://test.gluu.org/idp/shibboleth ). How to configure any site with Shibboelth SP piece is available <a href="https://gluu.org/docs/integrate/ubuntu-shib-apache/">here</a>. </p>
@@ -1099,7 +1211,7 @@ Requirements:
   
     <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
       
-        <a href="../../customize/design/" class="btn btn-neutral float-right" title="Design Customization"/>Next <span class="icon icon-circle-arrow-right"></span></a>
+        <a href="../../reference/logout/" class="btn btn-neutral float-right" title="Logout"/>Next <span class="icon icon-circle-arrow-right"></span></a>
       
       
         <a href="../update-certificate/" class="btn btn-neutral" title="Update Gluu Server Certificates"><span class="icon icon-circle-arrow-left"></span> Previous</a>
@@ -1134,7 +1246,7 @@ Requirements:
         <span><a href="../update-certificate/" style="color: #fcfcfc;">&laquo; Previous</a></span>
       
       
-        <span style="margin-left: 15px"><a href="../../customize/design/" style="color: #fcfcfc">Next &raquo;</a></span>
+        <span style="margin-left: 15px"><a href="../../reference/logout/" style="color: #fcfcfc">Next &raquo;</a></span>
       
     </span>
 </div>

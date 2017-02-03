@@ -5,10 +5,10 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
-  <title>Custom Script How-To - Gluu Docs</title>
+  <title>Write a Custom OTP Authentication Script using Twilio - Gluu Docs</title>
   
 
-  <link rel="shortcut icon" href="../../img/gluu_favicon.ico">
+  <link rel="shortcut icon" href="/img/gluu_favicon.ico">
   
 
   
@@ -241,14 +241,14 @@
         
             
     <li class="toctree-l1 ">
-        <a class="" href="../../gluu-defaults/oxtrust-properties/">OxTrust JSON Configuration</a>
+        <a class="" href="../../reference/oxtrust-properties/">OxTrust JSON Configuration</a>
         
     </li>
 
         
             
     <li class="toctree-l1 ">
-        <a class="" href="../../gluu-defaults/oxauth-properties/">OxAuth JSON Configuration</a>
+        <a class="" href="../../reference/oxauth-properties/">OxAuth JSON Configuration</a>
         
     </li>
 
@@ -468,6 +468,64 @@
     </li>
 
         
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../../reference/logout/">Logout</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 current">
+        <a class="current" href="./">Write a Custom OTP Authentication Script using Twilio</a>
+        
+            <ul>
+            
+                <li class="toctree-l3"><a href="#writing-a-custom-authentication-script">Writing a Custom Authentication Script</a></li>
+                
+                    <li><a class="toctree-l4" href="#custom-script-location">Custom Script Location</a></li>
+                
+                    <li><a class="toctree-l4" href="#suggested-development-environment">Suggested Development Environment</a></li>
+                
+                    <li><a class="toctree-l4" href="#samples-and-documentation">Samples and Documentation</a></li>
+                
+                    <li><a class="toctree-l4" href="#implement-methods">Implement methods</a></li>
+                
+                    <li><a class="toctree-l4" href="#methods">Methods</a></li>
+                
+                    <li><a class="toctree-l4" href="#saving-the-value-in-ldap-and-passing-values-between-two-steps">Saving the value in LDAP and Passing values between two steps</a></li>
+                
+                    <li><a class="toctree-l4" href="#custom-properties">Custom Properties</a></li>
+                
+                    <li><a class="toctree-l4" href="#returning-a-message-to-the-user">Returning a message to the user</a></li>
+                
+                    <li><a class="toctree-l4" href="#adding-libraries">Adding Libraries</a></li>
+                
+                    <li><a class="toctree-l4" href="#testing">Testing</a></li>
+                
+            
+                <li class="toctree-l3"><a href="#reverting-authentication-method">Reverting Authentication Method</a></li>
+                
+            
+            </ul>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../../how-to/find-gluu-server-version/">Find which version of Gluu you are using</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../../how-to/backup/">Backup Gluu CE Server</a>
+        
+    </li>
+
+        
     </ul>
 <li>
 		
@@ -488,39 +546,6 @@
             
     <li class="toctree-l1 ">
         <a class="" href="../script/">Behaviour Customization</a>
-        
-    </li>
-
-        
-            
-    <li class="toctree-l1 current">
-        <a class="current" href="./">Custom Script How-To</a>
-        
-            <ul>
-            
-                <li class="toctree-l3"><a href="#writing-a-custom-authentication-script">Writing a Custom Authentication Script</a></li>
-                
-                    <li><a class="toctree-l4" href="#custom-script-location">Custom Script Location</a></li>
-                
-                    <li><a class="toctree-l4" href="#suggested-development-environment">Suggested Development Environment</a></li>
-                
-                    <li><a class="toctree-l4" href="#samples-and-documentation">Samples and Documentation</a></li>
-                
-                    <li><a class="toctree-l4" href="#implement-methods">Implement methods</a></li>
-                
-                    <li><a class="toctree-l4" href="#custom-properties">Custom Properties</a></li>
-                
-                    <li><a class="toctree-l4" href="#returning-a-message-to-the-user">Returning a message to the user</a></li>
-                
-                    <li><a class="toctree-l4" href="#adding-libraries">Adding Libraries</a></li>
-                
-                    <li><a class="toctree-l4" href="#testing">Testing</a></li>
-                
-            
-                <li class="toctree-l3"><a href="#reverting-authentication-method">Reverting Authentication Method</a></li>
-                
-            
-            </ul>
         
     </li>
 
@@ -625,6 +650,13 @@
             
     <li class="toctree-l1 ">
         <a class="" href="../../integrate/oxray/">OpenID Connect Liferay Plugin</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../../integrate/java-connect/">OpenID Connect Java Authentication</a>
         
     </li>
 
@@ -740,68 +772,75 @@
 			
             <li>
     <ul class="subnav">
-    <li><span>Gluu Defaults</span></li>
+    <li><span>Reference</span></li>
 
         
             
     <li class="toctree-l1 ">
-        <a class="" href="../../gluu-defaults/policy/">Gluu Policy</a>
+        <a class="" href="../../reference/policy/">Gluu Policy</a>
         
     </li>
 
         
             
     <li class="toctree-l1 ">
-        <a class="" href="../../gluu-defaults/config/">Configurations</a>
+        <a class="" href="../../reference/config/">Configurations</a>
         
     </li>
 
         
             
     <li class="toctree-l1 ">
-        <a class="" href="../../gluu-defaults/certificates/">Certificates</a>
+        <a class="" href="../../reference/certificates/">Certificates</a>
         
     </li>
 
         
             
     <li class="toctree-l1 ">
-        <a class="" href="../../gluu-defaults/ldap/">LDAP</a>
+        <a class="" href="../../reference/ldap/">LDAP</a>
         
     </li>
 
         
             
     <li class="toctree-l1 ">
-        <a class="" href="../../gluu-defaults/logout/">Logout</a>
+        <a class="" href="../../reference/schema/">Schema</a>
         
     </li>
 
         
             
     <li class="toctree-l1 ">
-        <a class="" href="../../gluu-defaults/schema/">Schema</a>
+        <a class="" href="../../reference/schema/">LDAP Schema</a>
         
     </li>
 
         
             
     <li class="toctree-l1 ">
-        <a class="" href="../../gluu-defaults/oxtrust-properties/">oxTrust Properties File</a>
+        <a class="" href="../../reference/logout/">Logout</a>
         
     </li>
 
         
             
     <li class="toctree-l1 ">
-        <a class="" href="../../gluu-defaults/oxauth-properties/">oxAuth Properties File</a>
+        <a class="" href="../../reference/oxtrust-properties/">oxTrust Properties File</a>
         
     </li>
 
         
             
     <li class="toctree-l1 ">
-        <a class="" href="../../gluu-defaults/logs/">Logs</a>
+        <a class="" href="../../reference/oxauth-properties/">oxAuth Properties File</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../../reference/logs/">Logs</a>
         
     </li>
 
@@ -947,16 +986,16 @@
     
       
         
-          <li>Customize Gluu Server &raquo;</li>	 
+          <li>How To &raquo;</li>	 
         
       
     
-    <li>Custom Script How-To</li>
+    <li>Write a Custom OTP Authentication Script using Twilio</li>
     <li class="wy-breadcrumbs-aside">
            
       
         
-          <a href="https://github.com/GluuFederation/docs/blob/master/sources/customize/auth-script.md" class="icon icon-github"> Edit on GitHub</a>
+          <a href="https://github.com/GluuFederation/docs/blob/master/sources/customize\auth-script.md" class="icon icon-github"> Edit on GitHub</a>
       
         
       
@@ -971,13 +1010,15 @@
 <ul>
 <li><a href="#writing-a-custom-authentication-script">Writing a Custom Authentication Script</a><ul>
 <li><a href="#custom-script-location">Custom Script Location</a></li>
-<li><a href="#suggested-development-environment">Suggested Development Environment</a><ul>
-<li><a href="#install-eclipse-plugins">Install Eclipse Plugins</a></li>
-<li><a href="#create-a-project">Create a project</a></li>
-</ul>
-</li>
+<li><a href="#suggested-development-environment">Suggested Development Environment</a></li>
 <li><a href="#samples-and-documentation">Samples and Documentation</a></li>
 <li><a href="#implement-methods">Implement methods</a></li>
+<li><a href="#methods">Methods</a></li>
+<li><a href="#saving-the-value-in-ldap-and-passing-values-between-two-steps">Saving the value in LDAP and Passing values between two steps</a><ul>
+<li><a href="#saving-values">Saving Values:</a></li>
+<li><a href="#retriving-and-passing-values-between-the-authentication-steps">Retriving and passing values between the authentication steps:</a></li>
+</ul>
+</li>
 <li><a href="#custom-properties">Custom Properties</a></li>
 <li><a href="#returning-a-message-to-the-user">Returning a message to the user</a></li>
 <li><a href="#adding-libraries">Adding Libraries</a></li>
@@ -988,140 +1029,193 @@
 </ul>
 </div>
 <h1 id="writing-a-custom-authentication-script">Writing a Custom Authentication Script</h1>
-<p>To develop this article, I decided to write a script to use
-<a href="http://twilio.com">Twilio</a> to send an SMS code to implement a two-step
-out-of-band authentication mechanism.</p>
+<p>In this document we walk through the steps of writing a script to implement OTP authentication using <a href="http://twilio.com">Twilio</a> to send an SMS code for a two-step out-of-band authentication mechanism.</p>
+<p>At the end of this tutorial you should have a better understanding of how to write your own custom scripts. For reference, you can review the completed Twilio custom authentication script <a href="https://github.com/GluuFederation/oxAuth/blob/master/Server/integrations/twilio_sms/twilio2FA.py">here</a>. </p>
+<p>Fields in Custom Script:</p>
+<table>
+<thead>
+<tr>
+<th>Field</th>
+<th align="left">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Name</td>
+<td align="left">Name of the Script</td>
+</tr>
+<tr>
+<td>Description</td>
+<td align="left">[optional] Description about the script</td>
+</tr>
+<tr>
+<td>Programming Language</td>
+<td align="left">Currently Python is supported, In future jscript and Java script might be added</td>
+</tr>
+<tr>
+<td>Level</td>
+<td align="left">Authentication Level for the authentication, which determines the security level</td>
+</tr>
+<tr>
+<td>Location Type</td>
+<td align="left">Determines the script location. Can be stored in a "File" or could be stored in "LDAP"</td>
+</tr>
+<tr>
+<td>Usage Type</td>
+<td align="left">Determines the type of the usage. Web, Native or Both</td>
+</tr>
+<tr>
+<td>Custome Property</td>
+<td align="left">Determines the key and value of the custom property, which can added to the authentication to pass the values</td>
+</tr>
+<tr>
+<td>Script Box</td>
+<td align="left">Script Box will displayed if Location Type is selected as "File", to enter the path of the script</td>
+</tr>
+<tr>
+<td>Script</td>
+<td align="left">Script Box will be displayed when Location Type is selected as "LDAP"</td>
+</tr>
+</tbody>
+</table>
 <h2 id="custom-script-location">Custom Script Location</h2>
-<p>Gluu Server User Interface allows the developer to specify the path to
-script rather than use the text box from oxTrust. The script will be
-loaded from the specified path. This feature will improve script
-development and there is an option to revert back to working script, if
-the script is faulty or needs further development. </p>
-<p>The administrator can select <code>File</code> from the Script Location Type in oxTrust and the file
-input box will be displayed:
-<img alt="image" src="https://raw.githubusercontent.com/GluuFederation/docs/master/sources/img/auth_article/script_upload_box.png" /></p>
-<p>The 'LDAP' option in the Script Location
-Type can be used to store the script in the LDAP tree once the
-development is complete. Remember that selecting the <code>LDAP</code> method
-requires that the script has to be copied in the input box that appears
-upon LDAP selection:</p>
+<p>Custom scripts can either be inserted directly into the Gluu Server interface or you can specify a path to the script. Specifying a path will make script development easier. There is also an option to revert back to a working script if the script is faulty or needs further enhancements. The administrator can select <code>File</code> from the Script Location Type in oxTrust and the file input box will be displayed:</p>
+<p><img alt="image" src="https://raw.githubusercontent.com/GluuFederation/docs/master/sources/img/auth_article/script_upload_box.png" /></p>
+<p>The 'LDAP' option in the Script Location Type can be used to store the script in the LDAP tree once the development is complete. Remember that selecting the <code>LDAP</code> method requires the script to be copied in the input box that appears upon LDAP selection:</p>
 <p><img alt="image" src="https://raw.githubusercontent.com/GluuFederation/docs/master/sources/img/auth_article/script_in_ldap.png" /></p>
 <h2 id="suggested-development-environment">Suggested Development Environment</h2>
-<p>Gluu Server custom scripts are written in
-<a href="http://www.jython.org/">Jython</a>. In this article, I'm going to
-recommend using Eclipse. You cannot actually run the scripts from
-Eclipse, but it provides a nice editor which makes coding more
-enjoyable.</p>
-<p>Before you begin, install the following:</p>
-<ul>
-<li><a href="https://www.python.org/downloads/">Python 2.7.x</a></li>
-<li><a href="http://www.jython.org/downloads.html">Jython</a></li>
-<li><a href="http://www.oracle.com/technetwork/java/javase/terms/products/index.html">Java Standard Edition</a></li>
-<li><a href="https://eclipse.org/downloads/">Eclipse IDE for Java Developers</a></li>
-</ul>
-<h3 id="install-eclipse-plugins">Install Eclipse Plugins</h3>
-<p>PyDev is a useful Eclipse tool for editing Python files. It also
-supports Jython. To add an Eclipse plugin, the first thing to do to
-select "Install New Software" from the Help menu:</p>
-<p><img alt="image" src="https://raw.githubusercontent.com/GluuFederation/docs/master/sources/img/auth_article/01-install-software.jpg" /></p>
-<p>After this, you'll need to add the repositories for the software.</p>
-<p><img alt="image" src="https://raw.githubusercontent.com/GluuFederation/docs/master/sources/img/auth_article/02-Add-Repositories.jpg" /></p>
-<ul>
-<li>PyDev - http://download.jboss.org/jbosstools/mars/development/updates/</li>
-<li>JBoss Tools - http://download.jboss.org/jbosstools/mars/development/updates/</li>
-</ul>
-<p>Then, select the respective repository in the "Work with" dropdown, and
-check the box for the software you want to install, as in the images
-below:</p>
-<p><img alt="image" src="https://raw.githubusercontent.com/GluuFederation/docs/master/sources/img/auth_article/03-add-Pydev.jpg" /></p>
-<p>From JBoss Tools select "Jboss Tools RichFaces" in "JBoss Web and Jave
-EE Development":</p>
-<p><img alt="image" src="https://raw.githubusercontent.com/GluuFederation/docs/master/sources/img/auth_article/04-add-jboss-richfaces.jpg" /></p>
-<h3 id="create-a-project">Create a project</h3>
-<p>As the next step specify the Jython interpreter under the Window /
-Preferences menu:</p>
-<p><img alt="image" src="https://raw.githubusercontent.com/GluuFederation/docs/master/sources/img/auth_article/05-preferences-jython-interpreter.jpg" /></p>
-<p>Now you can create a new project to keep all your stuff. From the File
-menu, create a new PyDev project:</p>
-<p><img alt="image" src="https://raw.githubusercontent.com/GluuFederation/docs/master/sources/img/auth_article/06-new-pydev-project.jpg" /></p>
-<p>Now, you can create some files:</p>
-<ul>
-<li>A Python file for your script</li>
-<li>Zero or more XHTML files if you have a custom form for your authentication</li>
-<li>Zero or more XML files (you'll need one for each XHTML file) that
-   provide some information to the Tomcat server about how to display
-   the XHTML file.</li>
-</ul>
+<p>Gluu Server custom scripts are written in <a href="http://www.jython.org/">Jython</a>. It is recommended to use Eclipse for coding purposes.</p>
+<p>Now, create some files:
+- A Python file for your script
+- One or more XHTML files if you have a custom form for your authentication
+- One or more XML files (you'll need one for each XHTML file) that provide some information to the Tomcat server about how to display the XHTML file.</p>
 <h2 id="samples-and-documentation">Samples and Documentation</h2>
-<p>There are many good examples of authentication interception scripts
-checked into the <a href="https://github.com/GluuFederation/oxAuth/tree/master/Server/integrations">integrations
-folder</a>
-of the oxAuth project. Also, the respective <code>XHTML</code> and <code>XML</code> files are
-checked in to the <a href="https://github.com/GluuFederation/oxAuth/tree/master/Server/src/main/webapp/auth">auth
-folder</a>. The interfaces for the authentication interception can be found in the <a href="http://www.gluu.org/docs/reference/interception-scripts/#authentication">Gluu
-Documentation</a>.</p>
-<p>When I started my Twilio script, I decided to use the <a href="https://raw.githubusercontent.com/GluuFederation/oxAuth/master/Server/integrations/basic/BasicExternalAuthenticator.py">Basic
-Script</a>
-as a template. I also used the <a href="https://github.com/GluuFederation/oxAuth/tree/master/Server/src/main/webapp/auth/wikid">Wikid
-Forms</a> as my templates for the forms, because I remembered that I'd basically
-need to get a code in step 2.
-I also looked at the <a href="https://github.com/GluuFederation/oxAuth/blob/master/Server/integrations/wikid/WikidExternalAuthenticator.py">Wikid
-Authentication</a>
-script quite a bit for examples of how to process the form.</p>
+<p>There are many good examples of authentication interception scripts checked into Gluu's<br />
+<a href="https://github.com/GluuFederation/oxAuth/tree/master/Server/integrations">oxAuth integrations folder</a>. Also, the respective <code>XHTML</code> and <code>XML</code> files are checked in to the <a href="https://github.com/GluuFederation/oxAuth/tree/master/Server/src/main/webapp/auth">auth folder</a>.
+The interfaces for the authentication interception can be found in the <a href="http://www.gluu.org/docs/reference/interception-scripts/#authentication">Gluu Documentation</a>.</p>
+<p>We used the <a href="https://raw.githubusercontent.com/GluuFederation/oxAuth/master/Server/integrations/basic/BasicExternalAuthenticator.py">Basic Script</a> 
+as a template. The <a href="https://github.com/GluuFederation/oxAuth/tree/master/Server/src/main/webapp/auth/wikid">Wikid forms</a> were also used as a template since it is required to pass the value of the "code" obtained from Twilio to step 2 of the authentication in order to validate and authenticate the user.</p>
+<p>The <a href="https://github.com/GluuFederation/oxAuth/blob/master/Server/integrations/wikid/WikidExternalAuthenticator.py">Wikid authentication</a> script was also looked upon quite a bit for examples on how to process the form.</p>
 <h2 id="implement-methods">Implement methods</h2>
-<p>The most important method to implement is obviously the <code>authenticate</code>
-method. This is where the main business logic is located for your
-authentication workflow. Notice how you can switch on the step, with the
-<code>if (step == 1):</code> statement. In oxAuth, there is no assumption that step
-1 and step 2 happen on the same server, so the step is sent into the
-<code>authenticate</code> method.</p>
-<p>To access  information from requestParameters in your script with <code>ServerUtil.getFirstValue(requestParameters, &lt;key&gt;)</code> where <code>&lt;key&gt;</code> specifies the value you want to retrieve, you can also use another method <code>requestParameters.get("&lt;key&gt;")</code> where <code>&lt;key&gt;</code> specifies the value you want to retrieve .</p>
-<p>Another method you usually need to implement is
-<code>getCountAuthenticationSteps</code>. This method normally just returns 1, 2,
-or 3. If you are implementing an adaptive authentication strategy, where
-the number of steps depends on the context, you need to get a little
-fancier. Check out the Duo script for a good example of this. In our
-sample <a href="https://github.com/GluuFederation/oxAuth/blob/master/Server/integrations/duo/DuoExternalAuthenticator.py">Duo
-script</a>,
-the organization we wrote it for only wanted to use Duo for the IT
-group. So we checked group membership, and dynamically adjusted the
-number of steps.</p>
-<p>If you need to save session variables between steps, use the
-<code>getExtraParametersForStep</code> method. The Gluu Server persists these
-variables in LDAP in able to support stateless clustered two step
-authentications.</p>
-<p>If you need to display a special Web page for an interactive login, (or
-even a custom first page) you'll need to implement the <code>getPageForStep</code>
-which specifies the page you want to return for a given step.</p>
+<p>Simple example of how to add a custom template and how to pass values between 2 steps of authentication and save the value temporarily for authentication of a user. Our Sample 
+<a href="https://github.com/GluuFederation/oxAuth/blob/master/Server/integrations/twilio_sms/twilio2FA.py">Twilio script</a></p>
+<ol>
+<li>Login to Gluu UI</li>
+<li>Navigate to "Configuration" on the Menu panel to the left</li>
+<li>Select Manage Custom Scripts</li>
+<li>Scroll to the end of the page and click on "Add custom script configuration"</li>
+<li>Enter the Name, Description, Programming Language (Python will be by default, may be in future Java or JavaSCript will be added)</li>
+<li>Select the Level needed to set the security level to.</li>
+<li>Select Location Type from the script to be executed.</li>
+<li>Select the Usage Type required for the authentication.</li>
+<li>Define Custom property which is provided by Twilio and can be noted down from Twilio account page of the signed up user. </li>
+<li>Click on Enabled to enable the added custom script.</li>
+<li>Scroll down to the end of the update and click on Update button to submit the form. </li>
+<li>After the custom script is added, click on Manage Authenticaion on the Menu Panel to left. </li>
+<li>Select "Default Authentication Method" tab and change the oxTrust authentication mode to "Twilio" or "Name of the script" from the drop down.</li>
+</ol>
+<p><strong>Note: All three below custom properties are mandatory for the Twilio Two-Factor Authentication script to work</strong></p>
+<ul>
+<li>ACCOUNT_SID - Numerical sequence of numbers, to identify the token assigned to the user associated with Twilio.</li>
+<li>AUTH TOKEN  - Alphanumerical number provided by Twilio for the account holder to identify the user.</li>
+<li>FROM_NUMBER - Number which is either assigned by Twilio or can be a number user provides to send the code from.</li>
+</ul>
+<p>As shown in the below illustration:</p>
+<p><img alt="image" src="https://github.com/GluuFederation/docs/blob/master/sources/img/auth_article/twilio.png?raw=true" /></p>
+<h2 id="methods">Methods</h2>
+<p><strong>authenticate():</strong></p>
+<p>The most important method to implement is obviously the <code>authenticate</code> method. This is where the main business logic is located for
+the authentication workflow. It is possible to switch on the step, with the <code>if (step == 1):</code> statement. In oxAuth, there is no
+assumption that step 1 and step 2 happen on the same server, therefore the value stored in the LDAP using a temporarily created attribute and retrieved in step 2. There the step is sent into the <code>authenticate</code> method, which helps to save and retrieve the values whereever required.</p>
+<p>Below are few Methods and Libraries used to Save the Value to LDAP and retrieve the values as per the requirement.</p>
+<p><strong>random.randit()</strong> 
+random.randit("start number",""end number"), Generates the code as per designer or requirements. 
+Example: random.randit(10000,99999)</p>
+<p><strong>context.set()</strong>
+This particular method is obtained from jboss to pass the session attribute value to ldap, by creating a temporary attribute which has limited life time and can be retrieved within the life span, expires and session becomes invalid. Save the value of the code obtained through the code generator method. context.set("Name of the temp attribute", <code>&lt;key&gt;</code>). Where <code>&lt;key&gt;</code> is the value that needs to be stored temporarily in ldap.
+Example:
+context.set("code",code)</p>
+<p><strong>UserService.instance()</strong> 
+Gets the user login instance</p>
+<p><strong>ServerUtil.getFirstValue():</strong></p>
+<p>To access  information from requestParameters in your script with <code>ServerUtil.getFirstValue(requestParameters, &lt;key&gt;)</code> where <code>&lt;key&gt;</code>
+specifies the value you want to retrieve, you can also use another method <code>requestParameters.get("&lt;key&gt;")</code>
+where <code>&lt;key&gt;</code> specifies the value you want to retrieve .</p>
+<p><strong>userService.getUserByAttribute():</strong></p>
+<p><code>getUserByAttribute("LDAP Attribute", &lt;key&gt;)</code> method access the information in LDAP and retrieves the value of the attribute comparing the value of the <code>&lt;Key&gt;</code>.
+Example:
+userService.getUserByAttribute("uid", user_name)</p>
+<p><strong>getAttribute():</strong>
+To retrieve the value of an attribute from LDAP, getAttribute("LDAP Attribute name") can be used. 
+Example:
+getAttribute("mobile")</p>
+<p><strong>requestParameters.get():</strong>
+To retrieve values passed from the form through header can be obtained by using the method requestParameters.get(<code>&lt;key&gt;</code>). This will retrieve the values from the form via header and can be stored in a string. Where <code>&lt;key&gt;</code> is the value to be retrieved from header.
+Example:
+abc = requestParameters.get("passcode")[0].strip()</p>
+<p><strong>getCountAuthenticationSteps():</strong></p>
+<p>Another method usually needed to implement is <code>getCountAuthenticationSteps</code>. This method normally just returns 1, 2, or 3. If implementing an adaptive authentication strategy,
+where the number of steps depends on the context. Check out the
+Duo script for a good example of this. In our sample 
+<a href="https://github.com/GluuFederation/oxAuth/blob/master/Server/integrations/duo/DuoExternalAuthenticator.py">Duo script</a>,</p>
+<p>Duo Script was scripted only for those who wanted to use Duo
+for the IT group. So this was checked for group membership, and dynamically adjusted the number of steps. And this can be scripted for any logic or attribute to the check the authentication, like "country" or "region".</p>
+<p><strong>getExtraParametersForStep():</strong></p>
+<p>If required to save session variables between steps, use the <code>getExtraParametersForStep</code> method. The Gluu Server persists
+these variables in LDAP in able to support stateless clustered two
+step authentications.</p>
+<p><strong>getPageForStep():</strong></p>
+<p>If required to display a special Web page for an interactive
+login, (or even a custom first page) you'll need to implement the
+<code>getPageForStep</code> which specifies the page you want to return for a given
+step.</p>
+<p><strong>session_attributes.get():</strong>
+The attribute value that are saved by the session using context.set. This method is derived from the oxauth core java libraries and called using the SessionState parameters which is defined in the code or programme.
+session_attributes.get(<code>&lt;key&gt;</code>), where <code>&lt;key&gt;</code> is the session atribute value that is stored in the ldap.
+Example:
+session_attributes.get("code")</p>
+<h2 id="saving-the-value-in-ldap-and-passing-values-between-two-steps">Saving the value in LDAP and Passing values between two steps</h2>
+<h4 id="saving-values">Saving Values:</h4>
+<p><strong>context.set</strong> can be used to save values of the required key to an attribute temporarily and the created temporary attribute will be alive only for limited time and expires and gets removed, by that way, adding new attribute to the user is not messed up. And also the expired attribute kills the validity of the session and becomes invalid.</p>
+<h4 id="retriving-and-passing-values-between-the-authentication-steps">Retriving and passing values between the authentication steps:</h4>
+<p>Using <strong>session_attribute.get()</strong> method, stored session attribute could be retrieved anywhere between the authentication method, by that way the values can be passed between two authentication methods for verification and validation.
+Generated code and the entered "code" in the form can be verified using a simple if and the "code" from the form can be obtained using the requestParameters.get() method or serviceUtil.getFirstValue() method.</p>
 <h2 id="custom-properties">Custom Properties</h2>
-<p>Sometimes it is helpful to enable system administrators to enter
-properties that might change a lot. If you don't want to ask them to
-modify the script, you can use the Custom Property feature, as seen in
-this screenshot:</p>
+<p>Sometimes it is helpful to enable system administrators to
+enter properties that might change a lot. If administrators are
+not allowed to modify the script, Custom Property feature can be used, as illustrated in below screenshot:</p>
 <p><img alt="image" src="https://raw.githubusercontent.com/GluuFederation/docs/master/sources/img/auth_article/07-custom-properties.jpg" /></p>
-<p>To access this information in your script with
-<code>configurationAttributes.get("&lt;key&gt;").getValue2()</code> where <code>&lt;key&gt;</code>
-specifies the value you want to retrieve.</p>
+<p>configurationAttributes.get("<key>").getValue2"():</p>
+<p>To access this information in your script with 
+<code>configurationAttributes.get("&lt;key&gt;").getValue2()</code>
+where <code>&lt;key&gt;</code> specifies the value you want to retrieve.</p>
 <h2 id="returning-a-message-to-the-user">Returning a message to the user</h2>
-<p>It is possible to use the Context to return a message to the user, which
-could be especially useful if an error happened, or you need some kind
-of user action.</p>
+<p>It is possible to use the Context to return a message to the
+user, which could be especially useful if an error occurs, or if
+required to have some kind of user action.</p>
 <h2 id="adding-libraries">Adding Libraries</h2>
-<p>If you have some pure Python libraries, you can add them to
-<code>/opt/tomcat/conf/python</code>, jar files can be added to
-<code>/opt/tomcat/endorsed</code>.</p>
+<p>Pure Python libraries, can be added to <code>/opt/tomcat/conf/python</code>, jar files can be added to <code>/var/gluu/webapps/oxauth/libs</code>.</p>
+<p><strong>Note:</strong> jar files should be added within chroot. And not in the main <code>/var/</code> of the system.</p>
 <h2 id="testing">Testing</h2>
-<p>So you think you're done with your script, it is time to test it! Print
-statements are sent to <code>/opt/tomcat/logs/wrapper.log</code> If you prefix your
-logs, you can use <code>tail -f | grep &lt;prefix&gt;</code> to just see your script
-output while you try to login to test your script. In the Twilio test
-script I wrote a special method called <code>printOut</code> to make it easier to
-add this prefix.</p>
-<p>Also, remember that putting all your code in a <code>try / catch</code> is a good
-practice to avoid unhandled exceptions. But when you're debugging,
-sometimes those exceptions may give you a hint as to what's going wrong.</p>
+<p>When the scripting is done, you can test the script by print
+the statments to wrapper.log under <code>/opt/tomcat/logs/wrapper.log</code>. </p>
+<p>And by prefix the logs, will help to find the script at ease
+using tail command <code>tail -f | grep &lt;prefix&gt;</code>, the prefix logs will
+provide the script output while one trys to login using the script.</p>
+<p>In the Twilio test script, a specific method called
+<code>printOut</code> has been scripted to make it easier to add this prefix.</p>
+<p>Also, remember that putting all the code in a <code>try / catch</code>
+is a good practice to avoid unhandled exceptions. Since during
+debugging, those exception may provide a hint pointing what causes the issue.</p>
+<p>Further logs to debug and monitor the sequence can be done using oxauth_script.log and oxauth.log
+under<code>/opt/tomcat/logs/</code> which is within the chroot.</p>
 <h1 id="reverting-authentication-method">Reverting Authentication Method</h1>
-<p>It is not unlikely that you will lock yourself out of Gluu Server while testing the authentication script, if there is any problem in it. In such a case the following method can be used to revert back the older authentication method. Please see the <a href="../../faq/troubleshooting/">FAQ</a> for details.</p>
+<p>It is not unlikely that one may get locked out of Gluu
+Server, while testing the authentication script.</p>
+<p>If there is any problem in it. In such a case the following
+method can be used to revert back the older authentication method. </p>
+<p>As a secondary option, InPrivate or Incognito or Private Browser from various Browsers can be used.</p>
+<p>Please see the <a href="../../faq/troubleshooting/">FAQ</a> for details.</p>
               
             </div>
           </div>
@@ -1129,10 +1223,10 @@ sometimes those exceptions may give you a hint as to what's going wrong.</p>
   
     <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
       
-        <a href="../attributes/" class="btn btn-neutral float-right" title="Custom Attributes"/>Next <span class="icon icon-circle-arrow-right"></span></a>
+        <a href="../../how-to/find-gluu-server-version/" class="btn btn-neutral float-right" title="Find which version of Gluu you are using"/>Next <span class="icon icon-circle-arrow-right"></span></a>
       
       
-        <a href="../script/" class="btn btn-neutral" title="Behaviour Customization"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+        <a href="../../reference/logout/" class="btn btn-neutral" title="Logout"><span class="icon icon-circle-arrow-left"></span> Previous</a>
       
     </div>
   
@@ -1161,10 +1255,10 @@ sometimes those exceptions may give you a hint as to what's going wrong.</p>
           <a class="icon icon-github" style="float: left; color: #fcfcfc"> GitHub</a>
       
       
-        <span><a href="../script/" style="color: #fcfcfc;">&laquo; Previous</a></span>
+        <span><a href="../../reference/logout/" style="color: #fcfcfc;">&laquo; Previous</a></span>
       
       
-        <span style="margin-left: 15px"><a href="../attributes/" style="color: #fcfcfc">Next &raquo;</a></span>
+        <span style="margin-left: 15px"><a href="../../how-to/find-gluu-server-version/" style="color: #fcfcfc">Next &raquo;</a></span>
       
     </span>
 </div>

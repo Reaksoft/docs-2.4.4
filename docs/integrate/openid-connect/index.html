@@ -8,7 +8,7 @@
   <title>OpenID Connect - Gluu Docs</title>
   
 
-  <link rel="shortcut icon" href="../../img/gluu_favicon.ico">
+  <link rel="shortcut icon" href="/img/gluu_favicon.ico">
   
 
   
@@ -241,14 +241,14 @@
         
             
     <li class="toctree-l1 ">
-        <a class="" href="../../gluu-defaults/oxtrust-properties/">OxTrust JSON Configuration</a>
+        <a class="" href="../../reference/oxtrust-properties/">OxTrust JSON Configuration</a>
         
     </li>
 
         
             
     <li class="toctree-l1 ">
-        <a class="" href="../../gluu-defaults/oxauth-properties/">OxAuth JSON Configuration</a>
+        <a class="" href="../../reference/oxauth-properties/">OxAuth JSON Configuration</a>
         
     </li>
 
@@ -468,6 +468,34 @@
     </li>
 
         
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../../reference/logout/">Logout</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../../customize/auth-script/">Write a Custom OTP Authentication Script using Twilio</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../../how-to/find-gluu-server-version/">Find which version of Gluu you are using</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../../how-to/backup/">Backup Gluu CE Server</a>
+        
+    </li>
+
+        
     </ul>
 <li>
 		
@@ -488,13 +516,6 @@
             
     <li class="toctree-l1 ">
         <a class="" href="../../customize/script/">Behaviour Customization</a>
-        
-    </li>
-
-        
-            
-    <li class="toctree-l1 ">
-        <a class="" href="../../customize/auth-script/">Custom Script How-To</a>
         
     </li>
 
@@ -541,7 +562,16 @@
             
                 <li class="toctree-l3"><a href="#overview">Overview</a></li>
                 
-                    <li><a class="toctree-l4" href="#jargon-taxonomy">Jargon (taxonomy)</a></li>
+                    <li><a class="toctree-l4" href="#openid-connect-architecture">OpenID Connect Architecture</a></li>
+                
+            
+                <li class="toctree-l3"><a href="#openid-connect-support-in-the-gluu-server">OpenID Connect Support in the Gluu Server</a></li>
+                
+                    <li><a class="toctree-l4" href="#openid-connect-implicit-flows">OpenID Connect Implicit Flows</a></li>
+                
+                    <li><a class="toctree-l4" href="#openid-connect-authorization-code-flows">OpenID Connect Authorization Code Flows</a></li>
+                
+                    <li><a class="toctree-l4" href="#openid-connect-hybrid-flows">OpenID Connect Hybrid Flows</a></li>
                 
                     <li><a class="toctree-l4" href="#discovery">Discovery</a></li>
                 
@@ -551,7 +581,21 @@
                 
                     <li><a class="toctree-l4" href="#session-management">Session management</a></li>
                 
-                    <li><a class="toctree-l4" href="#testing-with-oxauth-rp">Testing with oxAuth RP</a></li>
+                    <li><a class="toctree-l4" href="#openid-connect-relying-party-registration">OpenID Connect Relying Party Registration</a></li>
+                
+            
+                <li class="toctree-l3"><a href="#client-code">Client Code</a></li>
+                
+                    <li><a class="toctree-l4" href="#javascript-client">JavaScript Client</a></li>
+                
+                    <li><a class="toctree-l4" href="#server-side-libraries">Server-Side libraries</a></li>
+                
+                    <li><a class="toctree-l4" href="#apache-httpd-module">Apache HTTPD module</a></li>
+                
+                    <li><a class="toctree-l4" href="#appauth-for-mobile-applications">AppAuth for Mobile Applications</a></li>
+                
+            
+                <li class="toctree-l3"><a href="#oxauth-rp">oxAuth RP</a></li>
                 
             
                 <li class="toctree-l3"><a href="#oauth-2-grants">oAuth 2 Grants</a></li>
@@ -624,6 +668,13 @@
             
     <li class="toctree-l1 ">
         <a class="" href="../oxray/">OpenID Connect Liferay Plugin</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../java-connect/">OpenID Connect Java Authentication</a>
         
     </li>
 
@@ -739,68 +790,75 @@
 			
             <li>
     <ul class="subnav">
-    <li><span>Gluu Defaults</span></li>
+    <li><span>Reference</span></li>
 
         
             
     <li class="toctree-l1 ">
-        <a class="" href="../../gluu-defaults/policy/">Gluu Policy</a>
+        <a class="" href="../../reference/policy/">Gluu Policy</a>
         
     </li>
 
         
             
     <li class="toctree-l1 ">
-        <a class="" href="../../gluu-defaults/config/">Configurations</a>
+        <a class="" href="../../reference/config/">Configurations</a>
         
     </li>
 
         
             
     <li class="toctree-l1 ">
-        <a class="" href="../../gluu-defaults/certificates/">Certificates</a>
+        <a class="" href="../../reference/certificates/">Certificates</a>
         
     </li>
 
         
             
     <li class="toctree-l1 ">
-        <a class="" href="../../gluu-defaults/ldap/">LDAP</a>
+        <a class="" href="../../reference/ldap/">LDAP</a>
         
     </li>
 
         
             
     <li class="toctree-l1 ">
-        <a class="" href="../../gluu-defaults/logout/">Logout</a>
+        <a class="" href="../../reference/schema/">Schema</a>
         
     </li>
 
         
             
     <li class="toctree-l1 ">
-        <a class="" href="../../gluu-defaults/schema/">Schema</a>
+        <a class="" href="../../reference/schema/">LDAP Schema</a>
         
     </li>
 
         
             
     <li class="toctree-l1 ">
-        <a class="" href="../../gluu-defaults/oxtrust-properties/">oxTrust Properties File</a>
+        <a class="" href="../../reference/logout/">Logout</a>
         
     </li>
 
         
             
     <li class="toctree-l1 ">
-        <a class="" href="../../gluu-defaults/oxauth-properties/">oxAuth Properties File</a>
+        <a class="" href="../../reference/oxtrust-properties/">oxTrust Properties File</a>
         
     </li>
 
         
             
     <li class="toctree-l1 ">
-        <a class="" href="../../gluu-defaults/logs/">Logs</a>
+        <a class="" href="../../reference/oxauth-properties/">oxAuth Properties File</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../../reference/logs/">Logs</a>
         
     </li>
 
@@ -955,7 +1013,7 @@
            
       
         
-          <a href="https://github.com/GluuFederation/docs/blob/master/sources/integrate/openid-connect.md" class="icon icon-github"> Edit on GitHub</a>
+          <a href="https://github.com/GluuFederation/docs/blob/master/sources/integrate\openid-connect.md" class="icon icon-github"> Edit on GitHub</a>
       
         
       
@@ -967,66 +1025,35 @@
             <div class="section">
               
                 <h1 id="table-of-contents">Table of Contents</h1>
-<div class="toc">
-<ul>
-<li><a href="#table-of-contents">Table of Contents</a></li>
-<li><a href="#overview">Overview</a><ul>
-<li><a href="#jargon-taxonomy">Jargon (taxonomy)</a></li>
-<li><a href="#discovery">Discovery</a></li>
-<li><a href="#scopes">Scopes</a></li>
-<li><a href="#client-registration">Client Registration</a><ul>
-<li><a href="#multi-factor-authentication-for-clients">Multi-Factor Authentication for Clients</a></li>
-<li><a href="#algorithm">Algorithm</a></li>
-<li><a href="#custom-client-registration">Custom Client Registration</a></li>
-<li><a href="#search-clients">Search clients</a></li>
-<li><a href="#view-client">View client</a></li>
-</ul>
-</li>
-<li><a href="#session-management">Session management</a></li>
-<li><a href="#testing-with-oxauth-rp">Testing with oxAuth RP</a><ul>
-<li><a href="#openid-connect-discovery">OpenID Connect Discovery</a></li>
-<li><a href="#dynamic-client-registration">Dynamic Client Registration</a><ul>
-<li><a href="#client-read">Client Read</a></li>
-</ul>
-</li>
-<li><a href="#authorization-endpoint">Authorization Endpoint</a><ul>
-<li><a href="#request-authorization-and-receive-the-authorization-code-and-id-token">Request Authorization and receive the Authorization Code and ID Token</a></li>
-<li><a href="#request-access-token-using-the-authorization-code">Request Access Token using the Authorization Code</a></li>
-<li><a href="#request-new-access-token-using-the-refresh-token">Request new Access Token using the Refresh Token</a></li>
-</ul>
-</li>
-<li><a href="#userinfo-endpoint">UserInfo Endpoint</a></li>
-<li><a href="#openid-connect-session-management">OpenID Connect Session Management</a><ul>
-<li><a href="#end-session-endpoint">End Session Endpoint</a></li>
-<li><a href="#check-session-iframe">Check Session iFrame</a></li>
-</ul>
-</li>
-</ul>
-</li>
-</ul>
-</li>
-<li><a href="#oauth-2-grants">oAuth 2 Grants</a></li>
-</ul>
-</div>
 <h1 id="overview">Overview</h1>
-<p><a href="http://openid.net/connect">OpenID Connect</a> ("Connect") is a standard
-profile of OAuth2 which defines a protocol to enable a website or mobile
-application to send a person to a domain for authentication and required
-attributes (e.g. email address, first name, last name, etc.). OpenID Connect
-also provides some of the plumbing around authentication to automate how
-this happens. If a person is visiting a website for the first time, the
-process that OpenID Connect defines is 100% bootstrapable by the
-website. This is really critical for Internet scalability. To visit
-someone's website, or to send someone an email, you do not need to get
-the system administrators involved. Connect provides the same type of
-scalable infrastructure for authentication and authorization, and promises to define a base level domain
-identification.</p>
-<h2 id="jargon-taxonomy">Jargon (taxonomy)</h2>
-<p>If you are familiar with SAML, there are many parallels in OpenID
-Connect, but the jargon (or "taxonomy") is different. For example,
-instead of attributes, we have "user claims". Instead of Service
-Provider (SP), we have "client". Instead of Identity Provider (IdP), it
-is an OpenID Provider (OP).</p>
+<p><a href="http://openid.net/connect">OpenID Connect</a> ("Connect") is an authentication layer built on OAuth 2.0. 
+It is both a profile and extension of OAuth. The authorization server (or "OpenID Provider" in this case) holds information about a person. OAuth is used to protect this information, enabling a third-party application (client) to access it on behalf of a person. To authorize the release of information, the person is authenticated, and the OpenID Provider provides details to the client about when and how that authentication happened.</p>
+<h2 id="openid-connect-architecture">OpenID Connect Architecture</h2>
+<p>Some OpenID Connect jargon to keep in mind:</p>
+<ul>
+<li>
+<p>The <em>end user</em> or <em>subject</em> (a.k.a. OAuth 2.0 resource owner) is the person whose user information the application needs to access.</p>
+</li>
+<li>
+<p>The <em>OpenID Provider</em> is the OAuth authorization server which issues the tokens and generally provides the user infromation. The role is similar to a SAML identity provider (IDP).</p>
+</li>
+<li>
+<p>The <em>User Agent</em> is normally a browser, but could also be a native application. </p>
+</li>
+<li>
+<p>The <em>Relying Party (RP)</em> (a.k.a. OAuth 2.0 client) needs access to the end user's protected user information. The RP can be either server side (like a typical web application), or client side (for example a JavaScript application residing in the User Agent).</p>
+</li>
+</ul>
+<p>The Gluu Server is an OpenID Provider. The OP holds information about the user and allows the end user to consent to providing the RP with access to user information (unless the RP has been "pre-authorized", in which case the OP may just release information automatically). OpenID Connect defines a unique identification for an account (subject identifier + issuer identifier), and the RP can use this as a key to its own user profile. </p>
+<p>OpenID Connect defines some optional dynamic features. It makes it possible to discover OpenID Provider metadata, and to register RP client applications on the fly. For example, hypothetically, a person should be able to shop at a new online store, and authenticate at their home domain by providing nothing more then an email address. From the email domain, a discovery request and client registration can happen, and the person can be redirected to authenticate at their home domain.</p>
+<h1 id="openid-connect-support-in-the-gluu-server">OpenID Connect Support in the Gluu Server</h1>
+<p>The Gluu Server has passed all <a href="http://openid.net/certification/">conformance profiles for an OpenID Connect Provider</a>. As an OpenID Provider, the Gluu Server enables OpenID Connect clients to discover its capabilities, handle both dynamic and static registration of relying parties, respond to relying party requests with authorization codes, access tokens, and user information according to the code, implicit and hybrid flows.</p>
+<h2 id="openid-connect-implicit-flows">OpenID Connect Implicit Flows</h2>
+<p>This flow is used only for user-agent based clients--primarily JavaScript--where you cannot hide a client secret, so client authentication makes no sense. The main difference between the OAuth and OpenID Connect implicit flows is the use of the <em>id_token</em>, which provides extra contextual information about the subject and authentication event. Properly validated, the <em>id_token</em> also adds additional security to the transaction. For example, the <em>nonce</em> can be verified, and the <em>at_hash</em> can be used to check the integrity of the returned token. For more information, read the <a href="http://openid.net/specs/openid-connectimplicit-1_0.html">OpenID Connect Implicit Client Implementer's guide</a>.</p>
+<h2 id="openid-connect-authorization-code-flows">OpenID Connect Authorization Code Flows</h2>
+<p>The OpenID Connect Authorization Code Flow specifies how the relying party interacts with the OpenID Provider based on use of the OAuth 2.0 authorization grant. The authorization code flow is more secure than the implicit flow because the tokens are never exposed to the web browser and because the client is authenticated. As with the implicit flow, the id_token should be validated and adds extra security over an OAuth2 code flow.</p>
+<h2 id="openid-connect-hybrid-flows">OpenID Connect Hybrid Flows</h2>
+<p>Hybrid flow is one of the least understood Connect features, but it's really not that bad. The <code>response_type</code> for hybrid flow always includes code, plus either token, <code>id_token</code>, or both. The hybrid flow can be used to achieve higher security levels--by returning the <code>id_token</code> from the authorization endpoint, the client can verify the integrity of the code by verifying the <code>id_token</code> claim <code>c_hash</code>. The most logical hybrid flow <code>response_type</code> is <code>code id_token</code>. You can also get back and access token from the authorization endpoint in the hybrid flow.</p>
 <h2 id="discovery">Discovery</h2>
 <p>The first thing you want to know about any OAuth2 API is where are the
 endpoints (i.e. what are the uris where you call the APIs).
@@ -1251,6 +1278,11 @@ Content-Type: application/json
 
 <p>The following is an example using the <a href="https://ox.gluu.org/maven/org/xdi/oxauth-client/">oxAuth-Client</a> lib:</p>
 <pre><code>String resource = &quot;acct:mike@idp.gluu.org&quot;;
+}
+</code></pre>
+
+<p>The following is an example using the <a href="https://ox.gluu.org/maven/org/xdi/oxauth-client/">oxAuth-Client</a> lib:</p>
+<pre><code>String resource = &quot;acct:mike@idp.gluu.org&quot;;
 
 OpenIdConnectDiscoveryClient openIdConnectDiscoveryClient = new OpenIdConnectDiscoveryClient(resource);
 OpenIdConnectDiscoveryResponse openIdConnectDiscoveryResponse = openIdConnectDiscoveryClient.exec();
@@ -1269,8 +1301,8 @@ self-approve the release of information from the IdP to the website (or
 mobile application). In OAuth2, scopes can be used for various purposes.
 OpenID Connect uses OAuth2 scopes to "group" attributes. For example, we
 could have a scope called "address" that includes the street, city,
-state, and country user claims. By default the Gluu Server defines six
-scopes.</p>
+state, and country user claims. By default the Gluu Server defines nine
+scopes: <code>address</code>, <code>clientinfo</code>, <code>email</code>, <code>mobile_phone</code>, <code>openid</code>, <code>permission</code>, <code>phone</code>, <code>profile</code>, <code>user_name</code></p>
 <p><img alt="Scopes Screenshot" src="https://raw.githubusercontent.com/GluuFederation/docs/master/sources/img/oxTrust/admin_oauth2_scope.png" /></p>
 <p>The Gluu Server administrator can easily add more scopes in the GUI.
 Click <em>Add Scope</em> and you will be presented with the following screen:</p>
@@ -1312,8 +1344,9 @@ new client.</p>
 <p><img alt="Add new client" src="https://raw.githubusercontent.com/GluuFederation/docs/master/sources/img/oxTrust/admin_oauth2_newclient.png" /></p>
 <ul>
 <li>
-<p><em>Client Name:</em> This contains the recognizable and unique display name
-  of the client. The name of the Client to be presented to the End-User.</p>
+<p><em>Client Name:</em> This contains the recognizable display name
+  of the client, which is presented to the End-User in the authorization
+  dialogue.</p>
 </li>
 <li>
 <p><em>Client Secret:</em> This is the Data Encryption Standard scheme used by
@@ -1594,8 +1627,9 @@ for further reference.</p>
 <h3 id="view-client">View client</h3>
 <p><img alt="" src="http://www.gluu.org/docs/img/openid_connect/oxtrust_view_client.png" title="Screenshot of oxTrust view client" /></p>
 <h2 id="session-management">Session management</h2>
-<p>Logout is a catch-22. There is no perfect answer to logout that
-satisfies all the requirements of all the domains on the Internet. For
+<p>OpenID Connect lets the relying party track whether the end user is logged in at the provider, and also initiate end user logout at the provider. The specification has the relying party monitor session state using an invisible iframe and communicate status using the HTML 5 postMessage API.</p>
+<p>However, be forewarned that there is no perfect answer to logout that
+satisfies all requirements for all domains on the Internet. For
 example, large OpenID Providers, like Google, need a totally stateless
 implementation--Google cannot track sessions on the server side for
 every browser on the Internet. But in smaller domains, server side
@@ -1613,73 +1647,48 @@ Connect logout API would return <code>IMG</code> HTML tags to the browser with t
 logout callbacks of the clients. This way, the browser could call the
 logout uris (not the server).</p>
 <p>The Gluu Server is very flexible, and supports both server side session
-management, and stateless session management. For server side business
-logout, the domain admin can use Custom Logout scripts. This can be
+management, and stateless session management. For server side
+logout, the domain admin can use <a href="./custom-script.md#application-session-management">Custom Logout scripts</a>. This can be
 useful to clean up sessions in a legacy SSO system (i.e. SiteMinder), or
 perhaps in a portal.</p>
 <p>The key for logout is to understand the limitations of logout, and to
 test the use cases that are important to you, so you will not be
 surprised by the behavior when you put your application into production.</p>
-<h2 id="testing-with-oxauth-rp">Testing with oxAuth RP</h2>
-<ul>
-<li>Go to https://seed.gluu.org/oxauth-rp</li>
-<li>Or deploy <code>oxAuth-rp.war</code></li>
-</ul>
-<h3 id="openid-connect-discovery">OpenID Connect Discovery</h3>
-<ul>
-<li>Enter an identifier, for example: https://seed.gluu.org or acct:mike@seed.gluu.org</li>
-<li>Click submit.</li>
-</ul>
-<p><img alt="" src="http://www.gluu.org/docs/img/oxAuth-RP/openidconnectdiscovery.png" title="Screenshot of oxAuth-RP OpenID Connect Discovery" /></p>
-<h3 id="dynamic-client-registration">Dynamic Client Registration</h3>
-<p><img alt="" src="http://www.gluu.org/docs/img/oxAuth-RP/dynamicclientregistration.png" title="Screenshot of oxAuth-RP Dynamic Client Registration" /></p>
-<h4 id="client-read">Client Read</h4>
-<p><img alt="" src="http://www.gluu.org/docs/img/oxAuth-RP/clientread.png" title="Screenshot of oxAuth-RP Client Read" /></p>
-<h3 id="authorization-endpoint">Authorization Endpoint</h3>
-<h4 id="request-authorization-and-receive-the-authorization-code-and-id-token">Request Authorization and receive the Authorization Code and ID Token</h4>
-<ul>
-<li>Go to https://seed.gluu.org/oxauth-rp</li>
-<li>Enter the Authorization Endpoint (eg: https://seed.gluu.org/oxauth/seam/resource/restv1/oxauth/authorize)</li>
-<li>Select the Response Types: CODE and ID_TOKEN</li>
-<li>Enter the Client ID (eg: @!EDFB.879F.2DAE.D95A!0001!0442.B31E!0008!A2DA.C10F)</li>
-<li>Select the desired scopes: OpenID is mandatory, profile, address,
-    email and phone are optional.</li>
-<li>Enter a Redirect uri, e.g. https://seed.gluu.org/oxauth-rp/home.seam</li>
-<li>Optionally enter a state value.</li>
-<li>Click submit.</li>
-</ul>
-<p><img alt="" src="http://www.gluu.org/docs/img/oxAuth-RP/requestauthorizationcodegrant.png" title="Screenshot of oxAuth-RP Authorization Endpoint" /></p>
-<h4 id="request-access-token-using-the-authorization-code">Request Access Token using the Authorization Code</h4>
-<ul>
-<li>Once redirected back to https://seed.gluu.org/oxauth-rp</li>
-<li>Enter the Token Endpoint (eg: https://seed.gluu.org/oxauth/seam/resource/restv1/oxauth/token)</li>
-<li>Select the Grant Type: AUTHORIZATION_CODE</li>
-<li>Enter the Client ID.</li>
-<li>Enter the Client Secret.</li>
-<li>Enter the Code received from the previous request</li>
-<li>Enter the Redirect uri, e.g. https://seed.gluu.org/oxauth-rp/home.seam</li>
-<li>Enter the scopes: OpenID profile address email phone.</li>
-<li>Click submit.</li>
-</ul>
-<p><img alt="" src="http://www.gluu.org/docs/img/oxAuth-RP/requestaccesstokenwithauthorizationcode.png" title="Screenshot of oxAuth-RP Token Endpoint" /></p>
-<h4 id="request-new-access-token-using-the-refresh-token">Request new Access Token using the Refresh Token</h4>
-<ul>
-<li>Go to https://seed.gluu.org/oxauth-rp</li>
-<li>Enter the Token Endpoint (https://seed.gluu.org/oxauth/seam/resource/restv1/oxauth/token)</li>
-<li>Select the Grant Type: REFRESH_TOKEN</li>
-<li>Enter the Client ID.</li>
-<li>Enter the Client Secret.</li>
-<li>Enter the Refresh Token received in a previous request.</li>
-<li>Click submit.</li>
-</ul>
-<p><img alt="" src="http://www.gluu.org/docs/img/oxAuth-RP/refreshtoken.png" title="Screenshot of oxAuth-RP Refresh Token" /></p>
-<h3 id="userinfo-endpoint">UserInfo Endpoint</h3>
-<p><img alt="" src="http://www.gluu.org/docs/img/oxAuth-RP/userinfoendpoint.png" title="Screenshot of oxAuth-RP User Info Endpoint" /></p>
-<h3 id="openid-connect-session-management">OpenID Connect Session Management</h3>
-<h4 id="end-session-endpoint">End Session Endpoint</h4>
-<p><img alt="" src="http://www.gluu.org/docs/img/oxAuth-RP/endsession.png" title="Screenshot of oxAuth-RP End Session Endpoint" /></p>
-<h4 id="check-session-iframe">Check Session iFrame</h4>
-<p><img alt="" src="http://www.gluu.org/docs/img/oxAuth-RP/checksession.png" title="Screenshot of oxAuth-RP Check Session iFrame" /></p>
+<h2 id="openid-connect-relying-party-registration">OpenID Connect Relying Party Registration</h2>
+<p>Relying parties can register with the Gluu Server both statically, by the Gluu Server admin, and dynamically, as specified by OpenID Connect Discovery. To allow dynamic registration, you register an initial OAuth 2.0 client that other relying parties can use to get access tokens for registration. You can also enable OpenID Connect relying parties to register dynamically without having to provide an access token. If dynamic registration is enabled, make sure to limit or throttle registrations as it could be used as a form of DDOS.</p>
+<h1 id="client-code">Client Code</h1>
+<p>Although you can use generic OAuth 2.0 client libraries to call OpenID Connect endpoints, you would have to implement code to take advantage of some of OpenID Connect's features. For example, there is no id_token in OAuth 2.0, so you won't find any code for id_token validation in an OAuth 2.0 library. A good OpenID Connect client will do much of the heavy lifting for you. </p>
+<h2 id="javascript-client">JavaScript Client</h2>
+<p>A JavaScript client is one of the easiest ways to use OpenID Connect, although it's not the most secure. The client we recommend was forked from a sample application written to demonstrate how easy it is to use Connect. Gluu forked the code, and has enhanced it since the time of its original publishing. The project can be found on <a href="https://github.com/GluuFederation/openid-implicit-client">Github</a>.</p>
+<p>It's not a fancy app--it sends the person to the authorization endpoint to be authenticated, and then prints the claims tha are returned in the id_token. Currently the client does not handle dynamic client registration. </p>
+<p>You'll have to add the client manually to the Gluu Server via the GUI. When completing the <code>add client</code> form, you can use the following configuration:</p>
+<pre><code>Client Name: Implicit Test Client
+response_type: token id_token
+Application Type: Web
+Pre-Authorization: Enabled
+Subject Type: public
+Scopes: openid, profile, email
+Response Types: token id_token
+Grant Types: implicit
+</code></pre>
+
+<p>Once you have registered the client in the Gluu Server, all you need to do is update the <code>client_id</code>, <code>redirect_uri</code>, and <code>providerInfo</code> values in the login page html. Assuming you've checked out the project into a web accessible folder, then navigate to the page and test! </p>
+<h2 id="server-side-libraries">Server-Side libraries</h2>
+<p>Many applications are "server-side", meaning the web page displays content but most of the dynamic business logic resides on the web server. The OpenID Foundation maintains a list of client libraries on <a href="http://openid.net/developers/libraries">their website</a>. However, our experience has been that the quality of these libraries varies widely. Some are not well documented, other are not updated frequently, and some do not implement essential security features available in OpenID Connect. In addition, if a wide array of client libraries are used it becomes difficult to monitor and patch security vulnerabilities. For this reason, we recommend that you use our OpenID Connect middleware software called <a href="http://oxd.gluu.org">oxd</a>.  </p>
+<p>oxd is not open source, but it is very reasonably priced at $0.33 per day per server--or ~$10/month. The code is available on <a href="https://github.com/gluufederation/oxd">GitHub</a>, and there are free open source oxd libraries available for PHP, Java, Python, C#, Node, Ruby, Perl and Go. There are also plugins available for several popular open source applications.</p>
+<p><a href="http://gluu.co/oxd-demo">Watch the oxd demo</a>.</p>
+<p><a href="http://oxd.gluu.org">Get an oxd license for free</a></p>
+<h2 id="apache-httpd-module">Apache HTTPD module</h2>
+<p>A popular approach to protecting web applications is to use a web server filter to intercept the request, and make sure the person using that connection is authenticated and authorized. The web server with the filter may directly serve the application, or may proxy to a backend service. Leveraging the web server is a well established pattern, used by older access management platforms like CA Siteminder and Oracle Access Manager. </p>
+<p>One of the advantages of the web server filter approach is that the application developer does not need to know that much about the security protocols--if the request makes it through to the application, the person has been authenticated and the request is authorized. Another advantage is that the application security is administered by the system administrators, not by developers. For example, it may be easier to manage and audit apache configuration than to read a bunch of code. </p>
+<p>One of the best OpenID Connect relying party implementations was written by Hans Zandbelt, called <a href="https://github/com/pingidentity/mod_auth_openidc">mod_auth_openidc</a>. It is an authentication and authorization module for the Apache 2.x HTTP server that authenticates users against an OpenID Connect Provider (OP). The software can be found on GitHub and is included in the package management system for several Linux distributions. There are binary packages available, and if you are good at compiling C code, you can build it yourself from the source. </p>
+<p>Note: if you are an Nginx fan, there is a similar <a href="https://github.com/pingidentity/lua-resty-openidc">Lua implementation</a> to make NGINX operate as an OpenID Connect RP or OAuth 2.0 RS. </p>
+<h2 id="appauth-for-mobile-applications">AppAuth for Mobile Applications</h2>
+<p>One of the most compelling reasons to use Connect is to authenticate people from a mobile application. The IETF draft <a href="https://tools.ietf.org/html/draft-ietf-oauth-native-apps-06">"OAuth 2.0 for Native Apps"</a> provides an overview of an improved design for mobile security. In additio to the security features of OpenID Connect, this draft suggests the use of a PKCE and custom URI schemes (i.e. an application can register a URI such as myapp:// instead of https://).</p>
+<p>In 2016, Google released and then donated code to the OpenID Foundation called AppAuth for <a href="https://github.com/openid/AppAuth-android">Android</a> and <a href="https://github.com/openid/AppAuth-iOS">iOS</a>. The AppAuth projects also include sample applications. Simulataneously, Google announced that it was deprecating the use of WebViews--a strategy used by mobile app developers which is vulnerable to malicious application code. Not only does AppAuth provide secure authentication, it enables SSO across the system browser and mobile applications. It accomplishes this by leveraging new operating system features that enable the system browser to be called by an application in an opaque view that does not enable an app developer to steal a person's credentials, or other applications to steal codes or tokens. Using this approach, mobile app developers can use the authorization code or hypbrid flow (as described earlier). </p>
+<p>The Gluu Server is the only free open source OpenID Connect Provider that currently supports AppAuth. </p>
+<h1 id="oxauth-rp">oxAuth RP</h1>
+<p>The Gluu Server ships with an optional OpenID Connect relying party web application, which is handy for testing.  It's called oxauth-rp. During Gluu Server setup, you'll be asked if you want to install it--which you should on a development environment. It will be deployed on <code>https://&lt;hostname&gt;/oxauth-rp</code>. Using this tool you can exercise all of the OpenID Connect API's, including discovery, client registration, authorization, token, userinfo, and end_session. </p>
 <h1 id="oauth-2-grants">oAuth 2 Grants</h1>
 <p>There are two additional flows that the Gluu Server supports for user
 and client authentication, which are not part of the OpenID Connect

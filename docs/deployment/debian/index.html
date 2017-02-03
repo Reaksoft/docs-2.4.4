@@ -8,7 +8,7 @@
   <title>Debian - Gluu Docs</title>
   
 
-  <link rel="shortcut icon" href="../../img/gluu_favicon.ico">
+  <link rel="shortcut icon" href="/img/gluu_favicon.ico">
   
 
   
@@ -262,14 +262,14 @@
         
             
     <li class="toctree-l1 ">
-        <a class="" href="../../gluu-defaults/oxtrust-properties/">OxTrust JSON Configuration</a>
+        <a class="" href="../../reference/oxtrust-properties/">OxTrust JSON Configuration</a>
         
     </li>
 
         
             
     <li class="toctree-l1 ">
-        <a class="" href="../../gluu-defaults/oxauth-properties/">OxAuth JSON Configuration</a>
+        <a class="" href="../../reference/oxauth-properties/">OxAuth JSON Configuration</a>
         
     </li>
 
@@ -489,6 +489,34 @@
     </li>
 
         
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../../reference/logout/">Logout</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../../customize/auth-script/">Write a Custom OTP Authentication Script using Twilio</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../../how-to/find-gluu-server-version/">Find which version of Gluu you are using</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../../how-to/backup/">Backup Gluu CE Server</a>
+        
+    </li>
+
+        
     </ul>
 <li>
 		
@@ -509,13 +537,6 @@
             
     <li class="toctree-l1 ">
         <a class="" href="../../customize/script/">Behaviour Customization</a>
-        
-    </li>
-
-        
-            
-    <li class="toctree-l1 ">
-        <a class="" href="../../customize/auth-script/">Custom Script How-To</a>
         
     </li>
 
@@ -620,6 +641,13 @@
             
     <li class="toctree-l1 ">
         <a class="" href="../../integrate/oxray/">OpenID Connect Liferay Plugin</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../../integrate/java-connect/">OpenID Connect Java Authentication</a>
         
     </li>
 
@@ -735,68 +763,75 @@
 			
             <li>
     <ul class="subnav">
-    <li><span>Gluu Defaults</span></li>
+    <li><span>Reference</span></li>
 
         
             
     <li class="toctree-l1 ">
-        <a class="" href="../../gluu-defaults/policy/">Gluu Policy</a>
+        <a class="" href="../../reference/policy/">Gluu Policy</a>
         
     </li>
 
         
             
     <li class="toctree-l1 ">
-        <a class="" href="../../gluu-defaults/config/">Configurations</a>
+        <a class="" href="../../reference/config/">Configurations</a>
         
     </li>
 
         
             
     <li class="toctree-l1 ">
-        <a class="" href="../../gluu-defaults/certificates/">Certificates</a>
+        <a class="" href="../../reference/certificates/">Certificates</a>
         
     </li>
 
         
             
     <li class="toctree-l1 ">
-        <a class="" href="../../gluu-defaults/ldap/">LDAP</a>
+        <a class="" href="../../reference/ldap/">LDAP</a>
         
     </li>
 
         
             
     <li class="toctree-l1 ">
-        <a class="" href="../../gluu-defaults/logout/">Logout</a>
+        <a class="" href="../../reference/schema/">Schema</a>
         
     </li>
 
         
             
     <li class="toctree-l1 ">
-        <a class="" href="../../gluu-defaults/schema/">Schema</a>
+        <a class="" href="../../reference/schema/">LDAP Schema</a>
         
     </li>
 
         
             
     <li class="toctree-l1 ">
-        <a class="" href="../../gluu-defaults/oxtrust-properties/">oxTrust Properties File</a>
+        <a class="" href="../../reference/logout/">Logout</a>
         
     </li>
 
         
             
     <li class="toctree-l1 ">
-        <a class="" href="../../gluu-defaults/oxauth-properties/">oxAuth Properties File</a>
+        <a class="" href="../../reference/oxtrust-properties/">oxTrust Properties File</a>
         
     </li>
 
         
             
     <li class="toctree-l1 ">
-        <a class="" href="../../gluu-defaults/logs/">Logs</a>
+        <a class="" href="../../reference/oxauth-properties/">oxAuth Properties File</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../../reference/logs/">Logs</a>
         
     </li>
 
@@ -951,7 +986,7 @@
            
       
         
-          <a href="https://github.com/GluuFederation/docs/blob/master/sources/deployment/debian.md" class="icon icon-github"> Edit on GitHub</a>
+          <a href="https://github.com/GluuFederation/docs/blob/master/sources/deployment\debian.md" class="icon icon-github"> Edit on GitHub</a>
       
         
       
@@ -991,72 +1026,74 @@ following Gluu Server Base Ubuntu requirements.</p>
 
 # apt-get update
 
-# apt-get install gluu-server-2.4.4
+# apt-get install gluu-server-2.4.4.2
 </code></pre>
 
+<p><strong>Note: While entering the "deb" command manually, make sure to enter an extra space between "/debian/" and "stable main".</strong></p>
 <h2 id="configuring-gluu-server">Configuring Gluu Server</h2>
 <p>After both the retrieval, and the installation of the Gluu Server
 software package start the Gluu Server, and login into the local chroot
-environment to configure the Gluu Server. These are the single steps:</p>
-<pre><code># /etc/init.d/gluu-server-2.4.4 start
-
-# /etc/init.d/gluu-server-2.4.4 login
-
+environment to configure the Gluu Server. </p>
+<p>Below are the steps to configure Gluu Server:</p>
+<p>1. Start the Gluu Server
+2. Login into local chroot environment to configure Gluu Server.
+3. Navigate or change to community-edition-setup directory where setup.py script is located.
+4. Run setup.py to configure the Gluu Server</p>
+<pre><code># /etc/init.d/gluu-server-2.4.4.2 start
+# /etc/init.d/gluu-server-2.4.4.2 login
 # cd /install/community-edition-setup/
-
 #./setup.py
 </code></pre>
 
 <p>The <code>setup.py</code> script will bring up a prompt to provide information for certificate. It is recommened to use
 <code>hostname.domain</code> structure for hostname and refrain from using <code>127.x.x.x</code>
 for IP address. After the successful execution of <code>setup.py</code> script, login to oxTrust,
-the policy administration point for Gluu. Point your browser to the uri
-<code>https://hostname.domain</code>.</p>
-<p>For both help and the latest
-installation options see either <a href="../setup_py/">setup.py help</a>, or run
-<code>./setup.py -h</code>.</p>
-<p>If you are not using a resolvable DNS host, you will need to add
-the hostname to your hosts file on the server which is running your browser.
-Login with the default user name “admin” and the password printed back in
-the confirmation (also contained in <code>setup.properties.last</code> (use the
+the policy administration point for Gluu. </p>
+<p>Access the oxtrust UI from the local browser using <code>https://hostname.domain</code>, which was provided during the configuration. And the uri will be mentioned at the end of successful configuration.</p>
+<p>For both help and the latest installation options see either <a href="../setup_py/">setup.py help</a>, or run <code>./setup.py -h</code>.</p>
+<p>If resolvable DNS host is not used, add the hostname to your hosts file on the server or the system where the oxtrust UI is accessed.
+Login with the default user name “admin” and the password used in
+the configuration (also contained in <code>setup.properties.last</code> use the
 Unix command <code>grep --color -i pass</code> to find the according line quickly)
 and look for the LDAP password which is the same as the admin password.</p>
-<p>Make sure you remove or encrypt <code>setup.properties.last</code> It has the clear 
+<p>Make sure to remove or encrypt <code>setup.properties.last</code> It has the clear 
 text passwords for everything: LDAP, admin user, keystores, and 3DES salt.
 If something goes wrong, check <code>setup.log</code> for a detailed step-by-step
-of the installation. As an alternative you may check the file
+analysis of the installation. As an alternative,check the file
 <code>setup_errors.log</code> to just see the errors (or stderr output from the
 scripts).</p>
 <h2 id="removingdisabling-gluu-repo">Removing/disabling Gluu repo</h2>
-<p>After initial installation is completed, it's recommended to remove Gluu
-repos from sources list so you won't inadvertently upgrade your Gluu package by
-conducting regular system's update procedures (like, by running <code># apt-get update</code>)</p>
+<p>After initial installation is completed, it is recommended to remove Gluu
+repos from sources list, to avoid accidental upgrade of the Gluu package by conducting regular system's update procedures (like, by running <code># apt-get update</code>)</p>
 <p>Either remove <code>/etc/apt/sources.list.d/gluu-repo.list</code> file, or modify it
 commenting out lines declaring Gluu CE's repos there.</p>
 <h2 id="starting-and-stopping-the-gluu-server">Starting and Stopping the Gluu Server</h2>
-<p>You can start the Gluu Server with this command:</p>
-<pre><code># /etc/init.d/gluu-server-2.4.4 start
+<p>To start the Gluu Server use the below command:</p>
+<pre><code># /etc/init.d/gluu-server-2.4.4.2 start
 
 </code></pre>
 
-<p>You can stop the Gluu Server with this command:</p>
-<pre><code># /etc/init.d/gluu-server-2.4.4 stop
+<p>To stop the Gluu Server use the below command:</p>
+<pre><code># /etc/init.d/gluu-server-2.4.4.2 stop
 
+</code></pre>
+
+<p>To check the status of Gluu Server use the below command:</p>
+<pre><code># /etc/init.d/glu-server-2.4.4.2 status
 </code></pre>
 
 <h2 id="login-to-the-chroot-environment">Login to the chroot environment</h2>
-<pre><code># /etc/init.d/gluu-server-2.4.4 login
+<pre><code># /etc/init.d/gluu-server-2.4.4.2 login
 
 </code></pre>
 
-<p>Or if you prefer...</p>
+<p>alternatively sudo can be used as below</p>
 <pre><code># chroot /home/gluu-server24/ su -
 
 </code></pre>
 
 <h3 id="scripted-installation">Scripted Installation</h3>
-<p>If you want to script the installation of the Gluu Server, here is what
-you can do to achieve your goal:</p>
+<p>Below are the steps to script the installation of the Gluu Server: </p>
 <ul>
 <li>Save and backup your existing file <code>setup.properties.last</code>.</li>
 <li>Uninstall existing Gluu Server installation.</li>
@@ -1069,26 +1106,25 @@ you can do to achieve your goal:</p>
 <li>Run the setup script with <code>./setup.py</code> command.</li>
 </ul>
 <h2 id="uninstallation">Uninstallation</h2>
-<p>First, exit from the chroot environment to main Linux.</p>
-<p>Second, stop the Gluu Server chroot environment which will unmount all
-chroot directories. As a third step, delete both the Gluu Server
-packages that are installed, and the home directory of the Gluu Server
-user. The following commands illustrate the single steps:</p>
-<pre><code># service gluu-server-2.4.4 stop
-
-# apt-get remove gluu-server-2.4.4
-
-# rm -rf /opt/gluu-server-2.4.4*
-
+<p>Below are the steps to script the installation of the Gluu Server: </p>
+<p>Step by Step instructions to uninstall Gluu Server:</p>
+<ol>
+<li>Exit from the chroot environment to main linux, by entering Logout command.</li>
+<li>Stop the Gluu Server chroot environment which will unmount allchroot directories.</li>
+<li>Delete both the Gluu Server packages that are installed, and the home directory of the Gluu Server user.</li>
+</ol>
+<p>The following commands illustrate the steps:</p>
+<pre><code># service gluu-server-2.4.4.2 stop
+# apt-get remove gluu-server-2.4.4.2
+# rm -rf /opt/gluu-server-2.4.4.2*
 </code></pre>
 
-<p>On an installation, any modified files are saved in the directory
-<code>/home/gluu-server24.save</code>. If you want to remove all the remnants of the
-installation, delete these files with the command `rm -rf
-/home/gluu-server24.save'.</p>
+<p>During an installation, any modified files are saved in the directory
+<code>/home/gluu-server-2.4.4.2.save</code>. If required to remove all the remnants of the
+installation, delete these files with the command `rm -rf /home/gluu-server-2.4.4.2.save'.</p>
 <p>In some circumstances, the installation can be broken. In that case
 please try the following to force to uninstall the package.</p>
-<pre><code># dpkg --purge --force-all gluu-server-2.4.4
+<pre><code># dpkg --purge --force-all gluu-server-2.4.4.2
 
 </code></pre>
 

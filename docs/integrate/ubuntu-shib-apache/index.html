@@ -8,7 +8,7 @@
   <title>SAML SP in Ubuntu - Gluu Docs</title>
   
 
-  <link rel="shortcut icon" href="../../img/gluu_favicon.ico">
+  <link rel="shortcut icon" href="/img/gluu_favicon.ico">
   
 
   
@@ -241,14 +241,14 @@
         
             
     <li class="toctree-l1 ">
-        <a class="" href="../../gluu-defaults/oxtrust-properties/">OxTrust JSON Configuration</a>
+        <a class="" href="../../reference/oxtrust-properties/">OxTrust JSON Configuration</a>
         
     </li>
 
         
             
     <li class="toctree-l1 ">
-        <a class="" href="../../gluu-defaults/oxauth-properties/">OxAuth JSON Configuration</a>
+        <a class="" href="../../reference/oxauth-properties/">OxAuth JSON Configuration</a>
         
     </li>
 
@@ -468,6 +468,34 @@
     </li>
 
         
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../../reference/logout/">Logout</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../../customize/auth-script/">Write a Custom OTP Authentication Script using Twilio</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../../how-to/find-gluu-server-version/">Find which version of Gluu you are using</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../../how-to/backup/">Backup Gluu CE Server</a>
+        
+    </li>
+
+        
     </ul>
 <li>
 		
@@ -488,13 +516,6 @@
             
     <li class="toctree-l1 ">
         <a class="" href="../../customize/script/">Behaviour Customization</a>
-        
-    </li>
-
-        
-            
-    <li class="toctree-l1 ">
-        <a class="" href="../../customize/auth-script/">Custom Script How-To</a>
         
     </li>
 
@@ -599,6 +620,13 @@
             
     <li class="toctree-l1 ">
         <a class="" href="../oxray/">OpenID Connect Liferay Plugin</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../java-connect/">OpenID Connect Java Authentication</a>
         
     </li>
 
@@ -730,68 +758,75 @@
 			
             <li>
     <ul class="subnav">
-    <li><span>Gluu Defaults</span></li>
+    <li><span>Reference</span></li>
 
         
             
     <li class="toctree-l1 ">
-        <a class="" href="../../gluu-defaults/policy/">Gluu Policy</a>
+        <a class="" href="../../reference/policy/">Gluu Policy</a>
         
     </li>
 
         
             
     <li class="toctree-l1 ">
-        <a class="" href="../../gluu-defaults/config/">Configurations</a>
+        <a class="" href="../../reference/config/">Configurations</a>
         
     </li>
 
         
             
     <li class="toctree-l1 ">
-        <a class="" href="../../gluu-defaults/certificates/">Certificates</a>
+        <a class="" href="../../reference/certificates/">Certificates</a>
         
     </li>
 
         
             
     <li class="toctree-l1 ">
-        <a class="" href="../../gluu-defaults/ldap/">LDAP</a>
+        <a class="" href="../../reference/ldap/">LDAP</a>
         
     </li>
 
         
             
     <li class="toctree-l1 ">
-        <a class="" href="../../gluu-defaults/logout/">Logout</a>
+        <a class="" href="../../reference/schema/">Schema</a>
         
     </li>
 
         
             
     <li class="toctree-l1 ">
-        <a class="" href="../../gluu-defaults/schema/">Schema</a>
+        <a class="" href="../../reference/schema/">LDAP Schema</a>
         
     </li>
 
         
             
     <li class="toctree-l1 ">
-        <a class="" href="../../gluu-defaults/oxtrust-properties/">oxTrust Properties File</a>
+        <a class="" href="../../reference/logout/">Logout</a>
         
     </li>
 
         
             
     <li class="toctree-l1 ">
-        <a class="" href="../../gluu-defaults/oxauth-properties/">oxAuth Properties File</a>
+        <a class="" href="../../reference/oxtrust-properties/">oxTrust Properties File</a>
         
     </li>
 
         
             
     <li class="toctree-l1 ">
-        <a class="" href="../../gluu-defaults/logs/">Logs</a>
+        <a class="" href="../../reference/oxauth-properties/">oxAuth Properties File</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../../reference/logs/">Logs</a>
         
     </li>
 
@@ -946,7 +981,7 @@
            
       
         
-          <a href="https://github.com/GluuFederation/docs/blob/master/sources/integrate/ubuntu-shib-apache.md" class="icon icon-github"> Edit on GitHub</a>
+          <a href="https://github.com/GluuFederation/docs/blob/master/sources/integrate\ubuntu-shib-apache.md" class="icon icon-github"> Edit on GitHub</a>
       
         
       
@@ -982,22 +1017,9 @@ Hate to read? This article is for you. Replace both <code>minnow</code> and
 
 <p>Download <code>minnow-metadata.xml</code> to your machine. You will need this file
 later when you create the Trust Relationship in the Gluu Server.</p>
-<pre><code># mkdir protected
+<pre><code># mkdir /var/www/protected
 # touch /var/www/protected/printHeaders.py
 # chmod ugo+x /var/www/protected/printHeaders.py
-</code></pre>
-
-<p>Edit the default site at <code>/etc/apache2/sites-available/default-ssl.conf</code>, 
-and add this part:</p>
-<pre><code>ScriptAlias /protected/ /var/www/protected/
-&lt;Directory /var/www/protected&gt;
-    AddHandler cgi-script .py
-    Options +ExecCGI
-    SSLOptions +StdEnvVars
-    AuthType shibboleth
-    ShibRequestSetting requireSession 1
-    Require valid-user
-&lt;/Directory&gt;
 </code></pre>
 
 <p>Edit <code>printHeaders.py</code>, and add this simple script. It will show you the
@@ -1017,6 +1039,19 @@ print &quot;&lt;h1&gt;Environment Variables&lt;/H1&gt;&quot;
 for item in k:
     print &quot;&lt;p&gt;&lt;B&gt;%s&lt;/B&gt;: %s &lt;/p&gt;&quot; % (item, d[item])
 print &quot;&lt;/BODY&gt;&lt;/HTML&gt;&quot;
+</code></pre>
+
+<p>Edit the default site at <code>/etc/apache2/sites-available/default-ssl.conf</code>, 
+and add this part:</p>
+<pre><code>ScriptAlias /protected/ /var/www/protected/
+&lt;Directory /var/www/protected&gt;
+    AddHandler cgi-script .py
+    Options +ExecCGI
+    SSLOptions +StdEnvVars
+    AuthType shibboleth
+    ShibRequestSetting requireSession 1
+    Require valid-user
+&lt;/Directory&gt;
 </code></pre>
 
 <h1 id="configure-the-shibboleth-sp">Configure the Shibboleth SP</h1>

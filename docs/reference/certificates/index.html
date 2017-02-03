@@ -5,10 +5,10 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
-  <title>Configurations - Gluu Docs</title>
+  <title>Certificates - Gluu Docs</title>
   
 
-  <link rel="shortcut icon" href="../../img/gluu_favicon.ico">
+  <link rel="shortcut icon" href="/img/gluu_favicon.ico">
   
 
   
@@ -468,6 +468,34 @@
     </li>
 
         
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../logout/">Logout</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../../customize/auth-script/">Write a Custom OTP Authentication Script using Twilio</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../../how-to/find-gluu-server-version/">Find which version of Gluu you are using</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../../how-to/backup/">Backup Gluu CE Server</a>
+        
+    </li>
+
+        
     </ul>
 <li>
 		
@@ -488,13 +516,6 @@
             
     <li class="toctree-l1 ">
         <a class="" href="../../customize/script/">Behaviour Customization</a>
-        
-    </li>
-
-        
-            
-    <li class="toctree-l1 ">
-        <a class="" href="../../customize/auth-script/">Custom Script How-To</a>
         
     </li>
 
@@ -599,6 +620,13 @@
             
     <li class="toctree-l1 ">
         <a class="" href="../../integrate/oxray/">OpenID Connect Liferay Plugin</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../../integrate/java-connect/">OpenID Connect Java Authentication</a>
         
     </li>
 
@@ -714,7 +742,7 @@
 			
             <li>
     <ul class="subnav">
-    <li><span>Gluu Defaults</span></li>
+    <li><span>Reference</span></li>
 
         
             
@@ -725,24 +753,32 @@
 
         
             
-    <li class="toctree-l1 current">
-        <a class="current" href="./">Configurations</a>
-        
-            <ul>
-            
-                <li class="toctree-l3"><a href="#default-configuration-wihtin-gluu-server">Default Configuration wihtin Gluu Server</a></li>
-                
-                    <li><a class="toctree-l4" href="#openid-connect">OpenID Connect</a></li>
-                
-            
-            </ul>
+    <li class="toctree-l1 ">
+        <a class="" href="../config/">Configurations</a>
         
     </li>
 
         
             
-    <li class="toctree-l1 ">
-        <a class="" href="../certificates/">Certificates</a>
+    <li class="toctree-l1 current">
+        <a class="current" href="./">Certificates</a>
+        
+            <ul>
+            
+                <li class="toctree-l3"><a href="#certificates">Certificates</a></li>
+                
+                    <li><a class="toctree-l4" href="#asimba">Asimba</a></li>
+                
+                    <li><a class="toctree-l4" href="#apache">Apache</a></li>
+                
+                    <li><a class="toctree-l4" href="#opendj">OpenDJ</a></li>
+                
+                    <li><a class="toctree-l4" href="#oxauth">oxAuth</a></li>
+                
+                    <li><a class="toctree-l4" href="#shibboleth-idp">Shibboleth IDP</a></li>
+                
+            
+            </ul>
         
     </li>
 
@@ -756,14 +792,21 @@
         
             
     <li class="toctree-l1 ">
-        <a class="" href="../logout/">Logout</a>
+        <a class="" href="../schema/">Schema</a>
         
     </li>
 
         
             
     <li class="toctree-l1 ">
-        <a class="" href="../schema/">Schema</a>
+        <a class="" href="../schema/">LDAP Schema</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../logout/">Logout</a>
         
     </li>
 
@@ -930,16 +973,16 @@
     
       
         
-          <li>Gluu Defaults &raquo;</li>	 
+          <li>Reference &raquo;</li>	 
         
       
     
-    <li>Configurations</li>
+    <li>Certificates</li>
     <li class="wy-breadcrumbs-aside">
            
       
         
-          <a href="https://github.com/GluuFederation/docs/blob/master/sources/gluu-defaults/config.md" class="icon icon-github"> Edit on GitHub</a>
+          <a href="https://github.com/GluuFederation/docs/blob/master/sources/reference\certificates.md" class="icon icon-github"> Edit on GitHub</a>
       
         
       
@@ -950,43 +993,74 @@
           <div role="main">
             <div class="section">
               
-                <h1 id="default-configuration-wihtin-gluu-server">Default Configuration wihtin Gluu Server</h1>
-<p>This page contains the default configurations for Gluu Server Community Edition. The defaults are not recommended and can be changed according to the internal policy of the organization. This page will also be helpful in understanding the defaults and changing them.</p>
-<h2 id="openid-connect">OpenID Connect</h2>
-<table>
-<thead>
-<tr>
-<th>Attribute</th>
-<th>Description</th>
-<th>Default</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>dynamicRegistrationExpirationTime</td>
-<td>Expiration of client secret</td>
-<td>86400 seconds</td>
-</tr>
-<tr>
-<td>sessionIdUnusedLifetime</td>
-<td>Expiration of session for authenticated user</td>
-<td>86400 seconds</td>
-</tr>
-<tr>
-<td>sessionIdUnauthenticatedUnusedLifetime</td>
-<td>Expiration of session for unauthenticated user</td>
-<td>120 seconds</td>
-</tr>
-<tr>
-<td>webKeysStorage</td>
-<td>Set to <strong>keystore</strong> to use a JKS file for private key storage. Set to <strong>pkcs11</strong> to use SoftHSMv2 storage (PKCS #11 interface) through oxEleven REST Services</td>
-<td>keystore</td>
-</tr>
-</tbody>
-</table>
+                <div class="toc">
 <ul>
-<li>The <code>clientSecretExpiresAt</code> parameter is used to determine the expiration time of the client secret while registring any client with Gluu Server. This parameter sent along with the register request to Gluu Server.</li>
+<li><a href="#certificates">Certificates</a><ul>
+<li><a href="#asimba">Asimba</a></li>
+<li><a href="#apache">Apache</a><ul>
+<li><a href="#updating-apache-certificate">Updating Apache Certificate</a></li>
+<li><a href="#installing-intermediate-certificates">Installing Intermediate Certificates</a></li>
 </ul>
+</li>
+<li><a href="#opendj">OpenDJ</a></li>
+<li><a href="#oxauth">oxAuth</a></li>
+<li><a href="#shibboleth-idp">Shibboleth IDP</a></li>
+</ul>
+</li>
+</ul>
+</div>
+<h1 id="certificates">Certificates</h1>
+<p>Many of the components of the Gluu Server have cryptographic keys and
+X.509 certificates. There are many key formats, and keystore formats.
+Navigate to the sections below to find what you need for each of the</p>
+<h2 id="asimba">Asimba</h2>
+<p><code>asimba.crt</code>, <code>asimba.csr</code>, <code>asimba.key</code>, <code>asimba.key.orig</code>,
+<code>asimba.pkcs12</code> and <code>asimbaIDP.jks</code> are associated with the
+Asimba SAML Proxy Server. If you install the server 
+in your Gluu Server, you have to deal with these certificates
+and keys.</p>
+<h2 id="apache">Apache</h2>
+<p><code>httpd.crt</code>, <code>httpd.csr</code>, <code>httpd.key</code>, <code>httpd.key.orig</code> are Apache SSL
+related certificates and keys. If you want to update your Apache SSL
+certificate do not worry about the file extension <code>.csr</code> and <code>.key.orig</code>.</p>
+<h3 id="updating-apache-certificate">Updating Apache Certificate</h3>
+<p>If you are using the Gluu Server CE binaries or latest Gluu Servers, you
+need to manually update certificates and keys from the file
+<code>/etc/certs/</code>. Please note that your private key cannot be password
+protected, and the public key should be base64 X.509. It's recommended to
+backup your full <code>/etc/certs</code> directory and <code>cacerts</code> file before
+proceeding, as well as to remove previous versions of certificates
+you are about to update from the <code>cacerts</code> storage.</p>
+<p>For example, follow these steps in order to update the Apache SSL cert:</p>
+<ul>
+<li>save both the latest SSL httpd key and certificate in the file 
+  <code>/etc/certs</code>.</li>
+<li>rename them to <code>httpd.key</code> and <code>httpd.crt</code>, respectively.</li>
+<li>import 'httpd.der' into java keystore</li>
+<li>Convertion to DER, command: <code>openssl x509 -outform der -in httpd.crt -out httpd.der</code></li>
+<li>Import this DER into java keystore (cacerts), command: <code>keytool -importcert -file httpd.der -keystore cacerts -alias &lt;hostname_of_your_Gluu_Server&gt;_httpd</code></li>
+<li>restart LDAP server, apache2/httpd and tomcat.</li>
+</ul>
+<p>You may find more info on certificates Gluu CE uses, as well as detailed steps to update them, in <a href="../../how-to/update-certificate/">this article</a></p>
+<h3 id="installing-intermediate-certificates">Installing Intermediate Certificates</h3>
+<p>To install intermediate certificates follow these steps:</p>
+<ol>
+<li>Log into your Gluu Server container.</li>
+<li>Keep your intermediate certificate in the file <code>/etc/certs/</code>.</li>
+<li>Modify <code>/etc/httpd/conf.d/https_gluu.conf</code>, and add
+   <code>SSLCertificateChainFile /etc/certs/name_of_your_interm_root_cert.crt</code>.</li>
+<li>Restart the service of the httpd server.</li>
+</ol>
+<h2 id="opendj">OpenDJ</h2>
+<p><code>opendj.crt</code> is the public certificate being used by oxAuth to make a
+connection to the internal Gluu-LDAP.</p>
+<h2 id="oxauth">oxAuth</h2>
+<p><code>oxauth-web-keys.json</code> is being used by Gluu's OpenID Connect &amp; UMA
+server.</p>
+<h2 id="shibboleth-idp">Shibboleth IDP</h2>
+<p><code>shibIDP.crt</code>, <code>shibIDP.csr</code>, <code>shibIDP.jks</code>, <code>shibIDP.key</code>,
+<code>shibIDP.key.orig</code>, <code>shibIDP.pkcs12</code> are required if you use the Gluu
+Server's Shibboleth SAML server for SAML transactions.</p>
               
             </div>
           </div>
@@ -994,10 +1068,10 @@
   
     <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
       
-        <a href="../certificates/" class="btn btn-neutral float-right" title="Certificates"/>Next <span class="icon icon-circle-arrow-right"></span></a>
+        <a href="../ldap/" class="btn btn-neutral float-right" title="LDAP"/>Next <span class="icon icon-circle-arrow-right"></span></a>
       
       
-        <a href="../policy/" class="btn btn-neutral" title="Gluu Policy"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+        <a href="../config/" class="btn btn-neutral" title="Configurations"><span class="icon icon-circle-arrow-left"></span> Previous</a>
       
     </div>
   
@@ -1026,10 +1100,10 @@
           <a class="icon icon-github" style="float: left; color: #fcfcfc"> GitHub</a>
       
       
-        <span><a href="../policy/" style="color: #fcfcfc;">&laquo; Previous</a></span>
+        <span><a href="../config/" style="color: #fcfcfc;">&laquo; Previous</a></span>
       
       
-        <span style="margin-left: 15px"><a href="../certificates/" style="color: #fcfcfc">Next &raquo;</a></span>
+        <span style="margin-left: 15px"><a href="../ldap/" style="color: #fcfcfc">Next &raquo;</a></span>
       
     </span>
 </div>

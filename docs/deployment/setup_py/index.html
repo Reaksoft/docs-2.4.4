@@ -8,7 +8,7 @@
   <title>Setup Script Options - Gluu Docs</title>
   
 
-  <link rel="shortcut icon" href="../../img/gluu_favicon.ico">
+  <link rel="shortcut icon" href="/img/gluu_favicon.ico">
   
 
   
@@ -248,14 +248,14 @@
         
             
     <li class="toctree-l1 ">
-        <a class="" href="../../gluu-defaults/oxtrust-properties/">OxTrust JSON Configuration</a>
+        <a class="" href="../../reference/oxtrust-properties/">OxTrust JSON Configuration</a>
         
     </li>
 
         
             
     <li class="toctree-l1 ">
-        <a class="" href="../../gluu-defaults/oxauth-properties/">OxAuth JSON Configuration</a>
+        <a class="" href="../../reference/oxauth-properties/">OxAuth JSON Configuration</a>
         
     </li>
 
@@ -475,6 +475,34 @@
     </li>
 
         
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../../reference/logout/">Logout</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../../customize/auth-script/">Write a Custom OTP Authentication Script using Twilio</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../../how-to/find-gluu-server-version/">Find which version of Gluu you are using</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../../how-to/backup/">Backup Gluu CE Server</a>
+        
+    </li>
+
+        
     </ul>
 <li>
 		
@@ -495,13 +523,6 @@
             
     <li class="toctree-l1 ">
         <a class="" href="../../customize/script/">Behaviour Customization</a>
-        
-    </li>
-
-        
-            
-    <li class="toctree-l1 ">
-        <a class="" href="../../customize/auth-script/">Custom Script How-To</a>
         
     </li>
 
@@ -606,6 +627,13 @@
             
     <li class="toctree-l1 ">
         <a class="" href="../../integrate/oxray/">OpenID Connect Liferay Plugin</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../../integrate/java-connect/">OpenID Connect Java Authentication</a>
         
     </li>
 
@@ -721,68 +749,75 @@
 			
             <li>
     <ul class="subnav">
-    <li><span>Gluu Defaults</span></li>
+    <li><span>Reference</span></li>
 
         
             
     <li class="toctree-l1 ">
-        <a class="" href="../../gluu-defaults/policy/">Gluu Policy</a>
+        <a class="" href="../../reference/policy/">Gluu Policy</a>
         
     </li>
 
         
             
     <li class="toctree-l1 ">
-        <a class="" href="../../gluu-defaults/config/">Configurations</a>
+        <a class="" href="../../reference/config/">Configurations</a>
         
     </li>
 
         
             
     <li class="toctree-l1 ">
-        <a class="" href="../../gluu-defaults/certificates/">Certificates</a>
+        <a class="" href="../../reference/certificates/">Certificates</a>
         
     </li>
 
         
             
     <li class="toctree-l1 ">
-        <a class="" href="../../gluu-defaults/ldap/">LDAP</a>
+        <a class="" href="../../reference/ldap/">LDAP</a>
         
     </li>
 
         
             
     <li class="toctree-l1 ">
-        <a class="" href="../../gluu-defaults/logout/">Logout</a>
+        <a class="" href="../../reference/schema/">Schema</a>
         
     </li>
 
         
             
     <li class="toctree-l1 ">
-        <a class="" href="../../gluu-defaults/schema/">Schema</a>
+        <a class="" href="../../reference/schema/">LDAP Schema</a>
         
     </li>
 
         
             
     <li class="toctree-l1 ">
-        <a class="" href="../../gluu-defaults/oxtrust-properties/">oxTrust Properties File</a>
+        <a class="" href="../../reference/logout/">Logout</a>
         
     </li>
 
         
             
     <li class="toctree-l1 ">
-        <a class="" href="../../gluu-defaults/oxauth-properties/">oxAuth Properties File</a>
+        <a class="" href="../../reference/oxtrust-properties/">oxTrust Properties File</a>
         
     </li>
 
         
             
     <li class="toctree-l1 ">
-        <a class="" href="../../gluu-defaults/logs/">Logs</a>
+        <a class="" href="../../reference/oxauth-properties/">oxAuth Properties File</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../../reference/logs/">Logs</a>
         
     </li>
 
@@ -937,7 +972,7 @@
            
       
         
-          <a href="https://github.com/GluuFederation/docs/blob/master/sources/deployment/setup_py.md" class="icon icon-github"> Edit on GitHub</a>
+          <a href="https://github.com/GluuFederation/docs/blob/master/sources/deployment\setup_py.md" class="icon icon-github"> Edit on GitHub</a>
       
         
       
@@ -949,24 +984,65 @@
             <div class="section">
               
                 <h1 id="setuppy-command-line-options">setup.py Command Line Options</h1>
-<p>Use <code>setup.py</code> to configure your Gluu Server and to add initial data
+<p>Use <code>setup.py</code> to configure Gluu Server and to add initial data
 required for oxAuth and oxTrust to start. If <code>setup.properties</code> is found
 in this folder, these properties will automatically be used instead of
 the interactive setup.</p>
 <p>The following options are available:</p>
-<ul>
-<li><strong>-a</strong> install Asimba</li>
-<li><strong>-c</strong> install CAS</li>
-<li><strong>-d</strong> specify the directory where community-edition-setup is located. Defaults to '.'</li>
-<li><strong>-f</strong> specify <code>setup.properties</code> file</li>
-<li><strong>-h</strong> invoke this help</li>
-<li><strong>-l</strong> install LDAP</li>
-<li><strong>-n</strong> no interactive prompt before install starts. Run with <code>-f</code></li>
-<li><strong>-N</strong> no Apache httpd server</li>
-<li><strong>-s</strong> install the Shibboleth IDP</li>
-<li><strong>-u</strong> update hosts file with IP address/hostname</li>
-<li><strong>-w</strong> get the development head war files</li>
-</ul>
+<table>
+<thead>
+<tr>
+<th align="center">Option</th>
+<th>Function</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="center"><strong>-a</strong></td>
+<td>install Asimba</td>
+</tr>
+<tr>
+<td align="center"><strong>-c</strong></td>
+<td>install CAS</td>
+</tr>
+<tr>
+<td align="center"><strong>-d</strong></td>
+<td>specify the directory where community-edition-setup is located. Defaults to '.'</td>
+</tr>
+<tr>
+<td align="center"><strong>-f</strong></td>
+<td>specify <code>setup.properties</code> file</td>
+</tr>
+<tr>
+<td align="center"><strong>-h</strong></td>
+<td>invoke this help</td>
+</tr>
+<tr>
+<td align="center"><strong>-l</strong></td>
+<td>install LDAP</td>
+</tr>
+<tr>
+<td align="center"><strong>-n</strong></td>
+<td>no interactive prompt before install starts. Run with <code>-f</code></td>
+</tr>
+<tr>
+<td align="center"><strong>-N</strong></td>
+<td>no Apache httpd server</td>
+</tr>
+<tr>
+<td align="center"><strong>-s</strong></td>
+<td>install the Shibboleth IDP</td>
+</tr>
+<tr>
+<td align="center"><strong>-u</strong></td>
+<td>update hosts file with IP address/hostname</td>
+</tr>
+<tr>
+<td align="center"><strong>-w</strong></td>
+<td>get the development head war files</td>
+</tr>
+</tbody>
+</table>
               
             </div>
           </div>

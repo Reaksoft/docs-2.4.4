@@ -8,7 +8,7 @@
   <title>OpenID Connect RP in CentOS - Gluu Docs</title>
   
 
-  <link rel="shortcut icon" href="../../img/gluu_favicon.ico">
+  <link rel="shortcut icon" href="/img/gluu_favicon.ico">
   
 
   
@@ -241,14 +241,14 @@
         
             
     <li class="toctree-l1 ">
-        <a class="" href="../../gluu-defaults/oxtrust-properties/">OxTrust JSON Configuration</a>
+        <a class="" href="../../reference/oxtrust-properties/">OxTrust JSON Configuration</a>
         
     </li>
 
         
             
     <li class="toctree-l1 ">
-        <a class="" href="../../gluu-defaults/oxauth-properties/">OxAuth JSON Configuration</a>
+        <a class="" href="../../reference/oxauth-properties/">OxAuth JSON Configuration</a>
         
     </li>
 
@@ -468,6 +468,34 @@
     </li>
 
         
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../../reference/logout/">Logout</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../../customize/auth-script/">Write a Custom OTP Authentication Script using Twilio</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../../how-to/find-gluu-server-version/">Find which version of Gluu you are using</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../../how-to/backup/">Backup Gluu CE Server</a>
+        
+    </li>
+
+        
     </ul>
 <li>
 		
@@ -488,13 +516,6 @@
             
     <li class="toctree-l1 ">
         <a class="" href="../../customize/script/">Behaviour Customization</a>
-        
-    </li>
-
-        
-            
-    <li class="toctree-l1 ">
-        <a class="" href="../../customize/auth-script/">Custom Script How-To</a>
         
     </li>
 
@@ -603,14 +624,11 @@
                 
                     <li><a class="toctree-l4" href="#configure-ssl-module">Configure SSL Module</a></li>
                 
-                    <li><a class="toctree-l4" href="#authentication-module-mod_auth_openidc">Authentication Module (mod_auth_openidc)</a></li>
+                    <li><a class="toctree-l4" href="#install-cgi-script">Install CGI Script</a></li>
                 
-            
-                <li class="toctree-l3"><a href="#client-registration">Client Registration</a></li>
+                    <li><a class="toctree-l4" href="#client-registration">Client Registration</a></li>
                 
-                    <li><a class="toctree-l4" href="#dynamic-client-registration">Dynamic Client Registration</a></li>
-                
-                    <li><a class="toctree-l4" href="#manual-client-registration">Manual Client Registration</a></li>
+                    <li><a class="toctree-l4" href="#configure-the-apache-virtualhost">Configure the Apache Virtualhost</a></li>
                 
             
             </ul>
@@ -621,6 +639,13 @@
             
     <li class="toctree-l1 ">
         <a class="" href="../oxray/">OpenID Connect Liferay Plugin</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../java-connect/">OpenID Connect Java Authentication</a>
         
     </li>
 
@@ -736,68 +761,75 @@
 			
             <li>
     <ul class="subnav">
-    <li><span>Gluu Defaults</span></li>
+    <li><span>Reference</span></li>
 
         
             
     <li class="toctree-l1 ">
-        <a class="" href="../../gluu-defaults/policy/">Gluu Policy</a>
+        <a class="" href="../../reference/policy/">Gluu Policy</a>
         
     </li>
 
         
             
     <li class="toctree-l1 ">
-        <a class="" href="../../gluu-defaults/config/">Configurations</a>
+        <a class="" href="../../reference/config/">Configurations</a>
         
     </li>
 
         
             
     <li class="toctree-l1 ">
-        <a class="" href="../../gluu-defaults/certificates/">Certificates</a>
+        <a class="" href="../../reference/certificates/">Certificates</a>
         
     </li>
 
         
             
     <li class="toctree-l1 ">
-        <a class="" href="../../gluu-defaults/ldap/">LDAP</a>
+        <a class="" href="../../reference/ldap/">LDAP</a>
         
     </li>
 
         
             
     <li class="toctree-l1 ">
-        <a class="" href="../../gluu-defaults/logout/">Logout</a>
+        <a class="" href="../../reference/schema/">Schema</a>
         
     </li>
 
         
             
     <li class="toctree-l1 ">
-        <a class="" href="../../gluu-defaults/schema/">Schema</a>
+        <a class="" href="../../reference/schema/">LDAP Schema</a>
         
     </li>
 
         
             
     <li class="toctree-l1 ">
-        <a class="" href="../../gluu-defaults/oxtrust-properties/">oxTrust Properties File</a>
+        <a class="" href="../../reference/logout/">Logout</a>
         
     </li>
 
         
             
     <li class="toctree-l1 ">
-        <a class="" href="../../gluu-defaults/oxauth-properties/">oxAuth Properties File</a>
+        <a class="" href="../../reference/oxtrust-properties/">oxTrust Properties File</a>
         
     </li>
 
         
             
     <li class="toctree-l1 ">
-        <a class="" href="../../gluu-defaults/logs/">Logs</a>
+        <a class="" href="../../reference/oxauth-properties/">oxAuth Properties File</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../../reference/logs/">Logs</a>
         
     </li>
 
@@ -952,7 +984,7 @@
            
       
         
-          <a href="https://github.com/GluuFederation/docs/blob/master/sources/integrate/centos-installation.md" class="icon icon-github"> Edit on GitHub</a>
+          <a href="https://github.com/GluuFederation/docs/blob/master/sources/integrate\centos-installation.md" class="icon icon-github"> Edit on GitHub</a>
       
         
       
@@ -968,19 +1000,13 @@
 <li><a href="#installation">Installation</a><ul>
 <li><a href="#add-epel-repository">Add EPEL Repository</a></li>
 <li><a href="#apache-web-server">Apache Web Server</a></li>
-<li><a href="#configure-ssl-module">Configure SSL Module</a></li>
-<li><a href="#authentication-module-mod_auth_openidc">Authentication Module (mod_auth_openidc)</a><ul>
+<li><a href="#configure-ssl-module">Configure SSL Module</a><ul>
 <li><a href="#load-authentication-module">Load Authentication Module</a></li>
 </ul>
 </li>
-</ul>
-</li>
-<li><a href="#client-registration">Client Registration</a><ul>
-<li><a href="#dynamic-client-registration">Dynamic Client Registration</a></li>
-<li><a href="#manual-client-registration">Manual Client Registration</a><ul>
-<li><a href="#getting-dn-from-client-id">Getting DN from Client ID</a></li>
-</ul>
-</li>
+<li><a href="#install-cgi-script">Install CGI Script</a></li>
+<li><a href="#client-registration">Client Registration</a></li>
+<li><a href="#configure-the-apache-virtualhost">Configure the Apache Virtualhost</a></li>
 </ul>
 </li>
 </ul>
@@ -991,24 +1017,37 @@ add the according entries in <code>/etc/hosts</code>, please.</p>
 <h3 id="add-epel-repository">Add EPEL Repository</h3>
 <p>Run the following command to <strong>Add EPEL Repo</strong>.</p>
 <ul>
-<li><code>rpm -ivh http://download.fedoraproject.org/pub/epel/6/x86_64/epel-release-6-8.noarch.rpm</code></li>
+<li><code># rpm -ivh http://download.fedoraproject.org/pub/epel/6/x86_64/epel-release-6-8.noarch.rpm</code></li>
 </ul>
 <h2 id="apache-web-server">Apache Web Server</h2>
 <p>To setup <strong>Apache2 SSL</strong>, run the following commands:</p>
-<pre><code>yum install httpd mod_ssl
-yum install curl hiredis jansson
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>If the hiredis package is not found by the <code>yum</code> command, please download it manually from <a href="https://centos.pkgs.org/6/puias-unsupported-x86_64/hiredis-0.12.1-1.sdl6.x86_64.rpm.html">this page</a> and install it.</p>
+</div>
+<pre><code># yum install httpd mod_ssl
+# yum install curl hiredis jansson
 </code></pre>
 
 <h2 id="configure-ssl-module">Configure SSL Module</h2>
 <p>This section will guide you to create SSL certificates.
 Use the following commands to crete a  directory and generate the certificates.</p>
-<pre><code>mkdir /etc/httpd/ssl
-openssl req -new -x509 -sha256 -days 365 -nodes -out /etc/httpd/ssl/httpd.pem -keyout /etc/httpd/ssl/httpd.key
+<pre><code># mkdir /etc/httpd/ssl
+# openssl req -new -x509 -sha256 -days 365 -nodes -out /etc/httpd/ssl/httpd.pem -keyout /etc/httpd/ssl/httpd.key
 </code></pre>
 
-<p>You will be prompted to enter some values such as company name, country etc. Please enter them and your certificate will be ready.</p>
-<p>The next step is to configure Apache to use the certificates and use the following command to edit the vhost.conf file.</p>
-<pre><code>vi /etc/httpd/conf.d/vhost.conf
+<p>You will be prompted to enter some values such as company name, country etc. Please enter them and your certificate will be ready. A template is given below</p>
+<pre><code class="text">    Country Name (2 letter code) [XX]:US
+    State or Province Name (full name) []:TX
+    Locality Name (eg, city) [Default City]:Austin
+    Organization Name (eg, company) [Default Company Ltd]:Gluu
+    Organizational Unit Name (eg, section) []:
+    Common Name (eg, your name or your server's hostname) []:modauth-centos.info
+    Email Address []:support@gluu.org
+</code></pre>
+
+<p>The next step is to configure Apache to use the certificates and use the following command to edit the <code>ssl.conf</code> file. </p>
+<pre><code># vi /etc/httpd/conf.d/ssl.conf
 </code></pre>
 
 <p>The important part of the configuration is to enter the path to the created SSL certificates. The example is given below.<br/>
@@ -1020,17 +1059,24 @@ openssl req -new -x509 -sha256 -days 365 -nodes -out /etc/httpd/ssl/httpd.pem -k
 </code></pre>
 
 <p>Restart Apache Server and you are done configuring the SSL Module. Use the command below to restart the Apache Server.</p>
-<pre><code>service httpd restart
+<pre><code># service httpd restart
 </code></pre>
 
-<h2 id="authentication-module-mod_auth_openidc">Authentication Module (mod_auth_openidc)</h2>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>The latest version of the apache OpenID Connect module is available from <a href="https://github.com/pingidentity/mod_auth_openidc/releases">this page</a></p>
+</div>
+<p>The latest package for the apache module might have multiple dependencies which must be installed first.</p>
 <p>Run the following command to install the <code>mod_auth_openidc</code> module:</p>
 <pre><code>rpm -ivh https://github.com/pingidentity/mod_auth_openidc/releases/download/v1.8.2/mod_auth_openidc-1.8.2-1.el6.x86_64.rpm
 </code></pre>
 
-<p><strong>Note:</strong> If there are any difficulties installing <code>hiredis</code> and <code>jansson</code>,
-try to update the package database of your system using the following command:</p>
-<pre><code>yum upgrade
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>If there are any difficulties installing <code>hiredis</code> and <code>jansson</code>,</p>
+</div>
+<p>try to update the package database of your system using the command below.</p>
+<pre><code># yum upgrade
 </code></pre>
 
 <h3 id="load-authentication-module">Load Authentication Module</h3>
@@ -1038,196 +1084,91 @@ try to update the package database of your system using the following command:</
 <pre><code>ls -l /usr/lib64/httpd/modules/mod_auth_openidc.so
 </code></pre>
 
-<p>Next, create an <strong>Apache <em>conf</em></strong> file for loading this module.</p>
-<pre><code>echo -e &quot;LoadModule auth_openidc_module modules/mod_auth_openidc.so\nListen 44443&quot; &gt; /etc/httpd/conf.d/mod_auth_openidc.conf
+<h2 id="install-cgi-script">Install CGI Script</h2>
+<p>The test page is made using the cgi-script. Please use the following command to create the script.</p>
+<pre><code># vi /var/www/cgi-bin/printHeaders.cgi
 </code></pre>
 
-<p>The file <code>/etc/httpd/conf.d/mod_auth_openidc.conf</code> will now contain
-these two lines:</p>
-<pre><code>LoadModule auth_openidc_module modules/mod_auth_openidc.so
-Listen 44443
+<p>Please paste the following code to prepare the script</p>
+<pre><code class="python">#!/usr/bin/python
+
+import os
+
+d = os.environ
+k = d.keys()
+k.sort()
+
+print &quot;Content-type: text/html\n\n&quot;
+
+print &quot;&lt;HTML&gt;&lt;Head&gt;&lt;TITLE&gt;Print Env Variables&lt;/TITLE&gt;&lt;/Head&gt;&lt;BODY&gt;&quot;
+print &quot;&lt;h1&gt;Environment Variables&lt;/H1&gt;&quot;
+for item in k:
+    print &quot;&lt;p&gt;&lt;B&gt;%s&lt;/B&gt;: %s &lt;/p&gt;&quot; % (item, d[item])
+    print &quot;&lt;/BODY&gt;&lt;/HTML&gt;&quot;
+
 </code></pre>
 
-<p>This Apache mod should now be listening on port <strong>44443</strong>. To enable
-this, start the Apache service (running gluuCE at <strong>ce.gluu.org</strong>):</p>
-<pre><code>service httpd start
+<p>The next step is to make the script executable by HTTPD</p>
+<pre><code class="text"># chown apache:apache /var/www/cgi-bin/printHeaders.cgi
+# chmod ug+x /var/www/cgi-bin/printHeaders.cgi
 </code></pre>
 
-<h1 id="client-registration">Client Registration</h1>
+<h2 id="client-registration">Client Registration</h2>
 <p>There are two methods for client registration:</p>
 <ol>
 <li>Dynamic Client Registration</li>
 <li>Manual Client Registration</li>
 </ol>
-<p>You can use any of the methods to register the client.</p>
-<h2 id="dynamic-client-registration">Dynamic Client Registration</h2>
-<p>For dynamic client registration, we'll name the server: <strong>dynamic.gluu.org.</strong></p>
-<p>Create a directory named <code>dynamic</code> inside the directory <code>/var/www/html</code>, that is:</p>
-<pre><code>mkdir /var/www/html/dynamic
+<p>You can use any of the methods to register the client.
+For this example, let's create the client manually in the Gluu Server.
+Please use the following parameters to create the client:</p>
+<pre><code class="text">Name: mod_auth_openidc
+Client Secret: something-sufficiently-unguessable
+Application Type: Web
+Pre-Authorization: Enabled
+login uri: https://www.mydomain.com/callback
+Subject Type: Public
+Scopes: openid, profile, email
+Response Types: code
 </code></pre>
 
-<p>Now, create a file named <code>index.html</code>, and add the following content:</p>
-<pre><code>&lt;html&gt;
-    &lt;title&gt;
-        Protected URL
-    &lt;/title&gt;
-    &lt;body&gt;
-        Nice to see the protected url via Dynamic Registration
-    &lt;/body&gt;
-&lt;/html&gt;
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>The <code>client_secret</code> should be noted after creating the client in Gluu Server as it is used later.</p>
+</div>
+<h2 id="configure-the-apache-virtualhost">Configure the Apache Virtualhost</h2>
+<p>The apache module is confgured in the defautl ssl configuration file. Please use the command below to open the file</p>
+<pre><code class="text"># vi /etc/httpd/conf.d/ssl.conf 
 </code></pre>
 
-<p>Create another directory named <code>metadata</code> inside the directory from
-above to hold further metadata. Then, change the ownership of this
-directory using this command:</p>
-<pre><code>chown -R apache:apache /var/www/html
+<p>Please add the following at the bottom of the file</p>
+<pre><code class="text">OIDCProviderMetadataURL https://idp.mydomain.com/.well-known/openid-configuration
+OIDCClientID (client-id-you-got-back-when-you-added-the-client)
+OIDCClientSecret (your-client-secret)
+OIDCRedirectURI https://www.mydomain.com/callback
+OIDCResponseType code
+OIDCScope &quot;openid profile email&quot;
+OIDCSSLValidateServer Off
+OIDCCryptoPassphrase (a-random-seed-value)
+OIDCPassClaimsAs environment
+OIDCClaimPrefix USERINFO_
+OIDCPassIDTokenAs payload
+&lt;Location &quot;/&quot;&gt;
+    Require valid-user
+    AuthType openid-connect
+&lt;/Location&gt;
 </code></pre>
 
-<p>Let's create the Apache configuration file now. Create a file named
-<code>/etc/httpd/conf.d/dynamic.conf</code> with the content as below:</p>
-<pre><code>&lt;VirtualHost *:44443&gt;
-    ServerName dynamic.gluu.org
-    DocumentRoot /var/www/html
-
-    OIDCMetadataDir /var/www/html/metadata
-    OIDCClientSecret secret
-
-    OIDCRedirectURI https://dynamic.gluu.org:44443/dynamic/fake_redirect_uri
-    OIDCCryptoPassphrase secret
-    OIDCSSLValidateServer Off
-
-    &lt;Location /dynamic/&gt;
-        AuthType openid-connect
-        Require valid-user
-    &lt;/Location&gt;
-
-    SSLEngine On
-    SSLCertificateFile /etc/pki/tls/certs/localhost.crt
-    SSLCertificateKeyFile /etc/pki/tls/private/localhost.key
-&lt;/VirtualHost&gt;
+<div class="admonition warning">
+<p class="admonition-title">Warning</p>
+<p>Please remember to populate the <code>OIDCRedirectURI</code> with a value that is not used by the server. The apache-filter uses the redirect_uri to process the response from the OpenID Provider (Gluu Server).</p>
+</div>
+<p>Please restart the HTTPD server for the changes to take effect</p>
+<pre><code class="text"># service httpd restart
 </code></pre>
 
-<p>Here, both certificate and key files already exist on the server. You
-can use your own, too. Next, enable the site by running the
-following command, and restart the Apache service as:</p>
-<pre><code>ln -s /etc/httpd/sites-available/dynamic.conf
-service httpd restart
-</code></pre>
-
-<p>Now, try to access <a href="https://dynamic.gluu.org:44443/dynamic">this page</a>,
-and you'll be presented with a discovery page. To access this page,
-enter <code>admin@ce.gluu.org</code>.</p>
-<p><img alt="IMAGE" src="https://raw.githubusercontent.com/GluuFederation/docs/master/sources/img/mod_auth_oidc/dynamic_discovery.png" /></p>
-<p>The usual choice as per present used uris is: <code>admin@ce.gluu.org</code>. Note
-that you have to use an existing user at the gluuCE along with an
-existing uri. An example is <code>existing_user@your.gluu.ce.server</code>.</p>
-<p>After this the <em>oxAuth</em> page from gluuCE is displayed where you enter
-the credentials for authentication.</p>
-<p><img alt="IMAGE" src="https://raw.githubusercontent.com/GluuFederation/docs/master/sources/img/mod_auth_oidc/oxauth_authentication.png" /></p>
-<h2 id="manual-client-registration">Manual Client Registration</h2>
-<p>Considering the <strong>manual client registration</strong> case, we will name the
-server <code>static.gluu.org</code>, instead.</p>
-<p>Create a directory named <code>/var/www/html/static</code>, i. e. with this
-command:</p>
-<pre><code>mkdir /var/www/html/static
-</code></pre>
-
-<p>Now, let's create another file named <code>index.html</code> with this content:</p>
-<pre><code>&lt;html&gt;
-    &lt;title&gt;
-        Protected URL
-    &lt;/title&gt;
-    &lt;body&gt;
-        Nice to see the protected url via Manual registration
-    &lt;/body&gt;
-&lt;/html&gt;
-</code></pre>
-
-<p>Then, change the ownerships by using this command:</p>
-<pre><code>chown -R apache:apache /var/www/html
-</code></pre>
-
-<p>Create a file named <code>/etc/httpd/conf.d/static.conf</code> with the contents as
-below:</p>
-<pre><code>&lt;VirtualHost *:44443&gt;
-    ServerName static.gluu.org
-    DocumentRoot /var/www/html
-
-    OIDCRedirectURI https://static.gluu.org:44443/static/fake_redirect_uri
-    OIDCCryptoPassphrase newsecret
-
-    OIDCProviderMetadataURL https://ce.gluu.org/.well-known/openid-configuration
-    OIDCClientID @!C648.9803.5565.E5CB!0001!0DB0.EEDB!0008!7728.5650
-    OIDCClientSecret newsecret
-    OIDCResponseType id_token
-    OIDCProviderTokenEndpointAuth client_secret_basic
-
-    OIDCProviderIssuer  https://ce.gluu.org
-    OIDCSSLValidateServer Off
-
-    &lt;Location /static/&gt;
-        AuthType openid-connect
-        Require valid-user
-    &lt;/Location&gt;
-
-    SSLEngine On
-    SSLCertificateFile /etc/httpd/ssl/httpd.pem
-    SSLCertificateKeyFile /etc/httpd/ssl/httpd.key
-&lt;/VirtualHost&gt;
-</code></pre>
-
-<p>Instead of pre-existing cert and key files, feel free to use your own.
-Next, enable the static site by running the following command, and
-restart the Apache service as below:</p>
-<pre><code>ln -s /etc/httpd/sites-available/sites-available/static.conf
-service httpd restart
-</code></pre>
-
-<p>Now, try to access <a href="https://static.gluu.org:44443/static">this page</a>,
-and you should see the oxAuth page from gluuCE where you enter the
-credentials for authentication.</p>
-<p><img alt="IMAGE" src="https://raw.githubusercontent.com/GluuFederation/docs/master/sources/img/mod_auth_oidc/oxauth_authentication.png" /></p>
-<p>Chances are there that you'll see this error after logging in: </p>
-<pre><code>Error:
-
-The OpenID Connect Provider returned an error: Error in handling response type.
-</code></pre>
-
-<p>The according Apache log looks like that:</p>
-<pre><code>[Fri Jun 05 14:48:28 2015] [error] [client 124.253.60.123] oidc_proto_validate_idtoken: id_token JSON payload did not contain the required-by-spec &quot;sub&quot; string value, referer: https://static.gluu.org:44443/static/fake_redirect_uri
-[Fri Jun 05 14:48:28 2015] [error] [client 124.253.60.123] oidc_proto_parse_idtoken: id_token payload could not be validated, aborting, referer: https://static.gluu.org:44443/static/fake_redirect_uri
-</code></pre>
-
-<p>To solve this problem, log into the gluuCE server by running the
-following command:</p>
-<pre><code>service gluu-server login
-</code></pre>
-
-<h3 id="getting-dn-from-client-id">Getting DN from Client ID</h3>
-<p>We get the client id from the search performed in Gluu Server's Web UI.
-So, to get the DN part we perform the below command. The LDAP password
-can be stored in <code>/root/.pw</code> or at any other location that is convenient
-for you. In our case the command is:</p>
-<pre><code>/opt/opendj/bin/ldapsearch -T -X -Z -p 1636 -D &quot;cn=Directory Manager&quot; -j /root/.pw -s sub -b &quot;o=gluu&quot; 'inum=@!C648.9803.5565.E5CB!0001!0DB0.EEDB!0008!7728.5650'
-</code></pre>
-
-<p>Create a file named <code>mod.ldif</code> with the contents given below. The DN
-part to be used in <code>mod.ldif</code> is obtained from output of the command
-above:</p>
-<pre><code>dn: inum=@!C648.9803.5565.E5CB!0001!0DB0.EEDB!0008!7728.5650,ou=clients,o=@!C648.9803.5565.E5CB!0001!0DB0.EEDB,o=gluu
-changetype: modify
-add: oxAuthSubjectIdentifier
-oxAuthSubjectIdentifier: @!C648.9803.5565.E5CB!0001!0DB0.EEDB!0008!7728.5650
-</code></pre>
-
-<p>Then, run the <code>ldapmodify</code> command to insert the
-<strong>oxAuthSubjectIdentifier</strong> as below:</p>
-<pre><code>/opt/opendj/bin/ldapmodify -Z -X -h localhost -p 1636 -D &quot;cn=Directory Manager&quot; -j /root/.pw -f /root/mod.ldif
-</code></pre>
-
-<p>The command may vary depending upon your installation. Next, access
-<a href="https://static.gluu.org:44443/static">this page</a> or <code>&lt;hostname&gt;:4443/static</code>, and the success
-message should be visible.</p>
+<p>Now you're ready to test. Open your web browser, and point it at
+https://www.mydomain.com/cgi-bin/printHeaders.cgi`</p>
               
             </div>
           </div>
