@@ -8,7 +8,7 @@ Internet's largest domains. However, the last major release of SAML was in 2005!
 Therefore it is important to understand when to use SAML and when to use a 
 newer protocol like OpenID Connect to achieve your identity goals. 
 
-In short, refer to these four considerations to determine which protocol 
+Refer to these four considerations to determine which protocol 
 to use for single sign-on (SSO):
 
 - If you have an application that already supports SAML, use SAML.
@@ -26,7 +26,7 @@ SAML is a versatile protocol. The two main use cases are Outbound SAML and Inbou
 Outbound SAML can also be called SP-initiated Single Sign-On (SSO) or traditional SAML. 
 In an outbound SAML transaction a website or application (SP) redirects a user to a 
 designated Identity Provider (IDP) for authentication and authorization. 
-The IDP will ask for the user's credentials and upon successful authentication, 
+The IDP will ask for the user's credentials. Upon successful authentication, 
 the user is sent back to the SP logged in. 
 
 Inbound SAML enables an organization to offer SAML authentication as a front door 
