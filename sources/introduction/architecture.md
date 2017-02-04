@@ -1,5 +1,3 @@
-[TOC]
-
 # Architecture
 
 Following is a list of the technical components that comprise the Gluu Server.

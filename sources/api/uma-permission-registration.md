@@ -1,4 +1,4 @@
-## API Document
+# API Document
 
 ### /host/rsrc_pr
 

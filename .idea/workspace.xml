@@ -2,9 +2,47 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="26c476cd-110e-48df-bbb2-14d13b7b2df0" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/mkdocs.yml" afterPath="$PROJECT_DIR$/mkdocs.yml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sources/integrate/openid-connect.md" afterPath="$PROJECT_DIR$/sources/integrate/openid-connect.md" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sources/reference/logout.md" afterPath="$PROJECT_DIR$/sources/reference/logout.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sources/api/oic-end-session.md" afterPath="$PROJECT_DIR$/sources/api/oic-end-session.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sources/api/oic-register-client.md" afterPath="$PROJECT_DIR$/sources/api/oic-register-client.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sources/api/oic-token.md" afterPath="$PROJECT_DIR$/sources/api/oic-token.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sources/api/oic-userinfo.md" afterPath="$PROJECT_DIR$/sources/api/oic-userinfo.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sources/api/scim-1.1.md" afterPath="$PROJECT_DIR$/sources/api/scim-1.1.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sources/api/scim-2.0.md" afterPath="$PROJECT_DIR$/sources/api/scim-2.0.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sources/api/uma-authorization-endpoint.md" afterPath="$PROJECT_DIR$/sources/api/uma-authorization-endpoint.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sources/api/uma-create-rpt.md" afterPath="$PROJECT_DIR$/sources/api/uma-create-rpt.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sources/api/uma-discovery.md" afterPath="$PROJECT_DIR$/sources/api/uma-discovery.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sources/api/uma-permission-registration.md" afterPath="$PROJECT_DIR$/sources/api/uma-permission-registration.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sources/api/uma-resource-registration.md" afterPath="$PROJECT_DIR$/sources/api/uma-resource-registration.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sources/api/uma-rpt-status.md" afterPath="$PROJECT_DIR$/sources/api/uma-rpt-status.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sources/cache-refresh/index.md" afterPath="$PROJECT_DIR$/sources/cache-refresh/index.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sources/cache-refresh/register.md" afterPath="$PROJECT_DIR$/sources/cache-refresh/register.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sources/cluster/csync-installation.md" afterPath="$PROJECT_DIR$/sources/cluster/csync-installation.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sources/cluster/index.md" afterPath="$PROJECT_DIR$/sources/cluster/index.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sources/customize/auth-script.md" afterPath="$PROJECT_DIR$/sources/customize/auth-script.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sources/customize/script.md" afterPath="$PROJECT_DIR$/sources/customize/script.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sources/deployment/azure.md" afterPath="$PROJECT_DIR$/sources/deployment/azure.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sources/deployment/centos.md" afterPath="$PROJECT_DIR$/sources/deployment/centos.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sources/deployment/centos7.md" afterPath="$PROJECT_DIR$/sources/deployment/centos7.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sources/deployment/debian.md" afterPath="$PROJECT_DIR$/sources/deployment/debian.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sources/deployment/index.md" afterPath="$PROJECT_DIR$/sources/deployment/index.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sources/deployment/rhel.md" afterPath="$PROJECT_DIR$/sources/deployment/rhel.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sources/deployment/rhel7.md" afterPath="$PROJECT_DIR$/sources/deployment/rhel7.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sources/deployment/ubuntu-xenial.md" afterPath="$PROJECT_DIR$/sources/deployment/ubuntu-xenial.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sources/deployment/ubuntu.md" afterPath="$PROJECT_DIR$/sources/deployment/ubuntu.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sources/deployment/updating.md" afterPath="$PROJECT_DIR$/sources/deployment/updating.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sources/deployment/upgrading.md" afterPath="$PROJECT_DIR$/sources/deployment/upgrading.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sources/examples/oxd-spring.md" afterPath="$PROJECT_DIR$/sources/examples/oxd-spring.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sources/faq/general.md" afterPath="$PROJECT_DIR$/sources/faq/general.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sources/faq/troubleshooting.md" afterPath="$PROJECT_DIR$/sources/faq/troubleshooting.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sources/index.md" afterPath="$PROJECT_DIR$/sources/index.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sources/integrate/apache-saml.md" afterPath="$PROJECT_DIR$/sources/integrate/apache-saml.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sources/integrate/asimba.md" afterPath="$PROJECT_DIR$/sources/integrate/asimba.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sources/integrate/centos-installation.md" afterPath="$PROJECT_DIR$/sources/integrate/centos-installation.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sources/introduction/architecture.md" afterPath="$PROJECT_DIR$/sources/introduction/architecture.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sources/introduction/design.md" afterPath="$PROJECT_DIR$/sources/introduction/design.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sources/introduction/history.md" afterPath="$PROJECT_DIR$/sources/introduction/history.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sources/introduction/index.md" afterPath="$PROJECT_DIR$/sources/introduction/index.md" />
     </list>
     <ignored path="docs.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -24,22 +62,12 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="mkdocs.yml" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/mkdocs.yml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="170">
-              <caret line="10" column="4" lean-forward="false" selection-start-line="10" selection-start-column="4" selection-end-line="10" selection-end-column="35" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="openid-connect.md" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/sources/integrate/openid-connect.md">
+      <file leaf-file-name="uma-discovery.md" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/sources/api/uma-discovery.md">
           <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
             <state split_layout="SPLIT">
-              <first_editor relative-caret-position="556">
-                <caret line="708" column="0" lean-forward="true" selection-start-line="708" selection-start-column="0" selection-end-line="708" selection-end-column="0" />
+              <first_editor relative-caret-position="-2467">
+                <caret line="2" column="5" lean-forward="false" selection-start-line="2" selection-start-column="5" selection-end-line="2" selection-end-column="5" />
                 <folding />
               </first_editor>
               <second_editor />
@@ -47,11 +75,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="auth-script.md" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/sources/customize/auth-script.md">
+      <file leaf-file-name="uma-permission-registration.md" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/sources/api/uma-permission-registration.md">
           <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
             <state split_layout="SPLIT">
-              <first_editor relative-caret-position="-1224">
+              <first_editor relative-caret-position="-1736">
                 <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
                 <folding />
               </first_editor>
@@ -60,8 +88,60 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="logout.md" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/sources/reference/logout.md">
+      <file leaf-file-name="uma-resource-registration.md" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/sources/api/uma-resource-registration.md">
+          <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+            <state split_layout="SPLIT">
+              <first_editor relative-caret-position="-6703">
+                <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+                <folding />
+              </first_editor>
+              <second_editor />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="uma-rpt-status.md" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/sources/api/uma-rpt-status.md">
+          <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+            <state split_layout="SPLIT">
+              <first_editor relative-caret-position="-2419">
+                <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+                <folding />
+              </first_editor>
+              <second_editor />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="index.md" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/sources/cache-refresh/index.md">
+          <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+            <state split_layout="SPLIT">
+              <first_editor relative-caret-position="556">
+                <caret line="161" column="0" lean-forward="false" selection-start-line="161" selection-start-column="0" selection-end-line="161" selection-end-column="0" />
+                <folding />
+              </first_editor>
+              <second_editor />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="register.md" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/sources/cache-refresh/register.md">
+          <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+            <state split_layout="SPLIT">
+              <first_editor relative-caret-position="-87">
+                <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+                <folding />
+              </first_editor>
+              <second_editor />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="reset-password.md" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/sources/cache-refresh/reset-password.md">
           <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
             <state split_layout="SPLIT">
               <first_editor relative-caret-position="0">
@@ -73,12 +153,38 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="script.md" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/sources/customize/script.md">
+      <file leaf-file-name="oxd-spring.md" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/sources/examples/oxd-spring.md">
           <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
             <state split_layout="SPLIT">
-              <first_editor relative-caret-position="459">
-                <caret line="274" column="6" lean-forward="true" selection-start-line="274" selection-start-column="6" selection-end-line="274" selection-end-column="6" />
+              <first_editor relative-caret-position="-971">
+                <caret line="35" column="1" lean-forward="false" selection-start-line="35" selection-start-column="1" selection-end-line="35" selection-end-column="1" />
+                <folding />
+              </first_editor>
+              <second_editor />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="general.md" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/sources/faq/general.md">
+          <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+            <state split_layout="SPLIT">
+              <first_editor relative-caret-position="-614">
+                <caret line="1" column="0" lean-forward="false" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
+                <folding />
+              </first_editor>
+              <second_editor />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="troubleshooting.md" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/sources/faq/troubleshooting.md">
+          <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+            <state split_layout="SPLIT">
+              <first_editor relative-caret-position="202">
+                <caret line="191" column="40" lean-forward="true" selection-start-line="191" selection-start-column="40" selection-end-line="191" selection-end-column="40" />
                 <folding />
               </first_editor>
               <second_editor />
@@ -87,6 +193,17 @@
         </entry>
       </file>
     </leaf>
+  </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>#</find>
+    </findStrings>
+    <replaceStrings>
+      <replace>##</replace>
+    </replaceStrings>
+    <dirStrings>
+      <dir>D:\Gluu\GluuDocs-3.0\docs-2.4.4-dev\sources</dir>
+    </dirStrings>
   </component>
   <component name="FindManager">
     <FindUsagesManager>
@@ -99,10 +216,50 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/sources/customize/script.md" />
         <option value="$PROJECT_DIR$/sources/integrate/openid-connect.md" />
         <option value="$PROJECT_DIR$/sources/reference/logout.md" />
         <option value="$PROJECT_DIR$/mkdocs.yml" />
+        <option value="$PROJECT_DIR$/sources/index.md" />
+        <option value="$PROJECT_DIR$/sources/customize/auth-script.md" />
+        <option value="$PROJECT_DIR$/sources/customize/script.md" />
+        <option value="$PROJECT_DIR$/sources/api/oic-clientinfo.md" />
+        <option value="$PROJECT_DIR$/sources/introduction/architecture.md" />
+        <option value="$PROJECT_DIR$/sources/introduction/design.md" />
+        <option value="$PROJECT_DIR$/sources/introduction/history.md" />
+        <option value="$PROJECT_DIR$/sources/introduction/index.md" />
+        <option value="$PROJECT_DIR$/sources/integrate/apache-saml.md" />
+        <option value="$PROJECT_DIR$/sources/integrate/asimba.md" />
+        <option value="$PROJECT_DIR$/sources/integrate/centos-installation.md" />
+        <option value="$PROJECT_DIR$/sources/deployment/index.md" />
+        <option value="$PROJECT_DIR$/sources/deployment/ubuntu.md" />
+        <option value="$PROJECT_DIR$/sources/deployment/ubuntu-xenial.md" />
+        <option value="$PROJECT_DIR$/sources/deployment/centos.md" />
+        <option value="$PROJECT_DIR$/sources/deployment/centos7.md" />
+        <option value="$PROJECT_DIR$/sources/deployment/debian.md" />
+        <option value="$PROJECT_DIR$/sources/deployment/rhel.md" />
+        <option value="$PROJECT_DIR$/sources/deployment/rhel7.md" />
+        <option value="$PROJECT_DIR$/sources/deployment/updating.md" />
+        <option value="$PROJECT_DIR$/sources/deployment/upgrading.md" />
+        <option value="$PROJECT_DIR$/sources/deployment/azure.md" />
+        <option value="$PROJECT_DIR$/sources/cluster/csync-installation.md" />
+        <option value="$PROJECT_DIR$/sources/cluster/index.md" />
+        <option value="$PROJECT_DIR$/sources/api/scim-1.1.md" />
+        <option value="$PROJECT_DIR$/sources/api/oic-register-client.md" />
+        <option value="$PROJECT_DIR$/sources/api/oic-end-session.md" />
+        <option value="$PROJECT_DIR$/sources/api/oic-token.md" />
+        <option value="$PROJECT_DIR$/sources/api/oic-userinfo.md" />
+        <option value="$PROJECT_DIR$/sources/api/scim-2.0.md" />
+        <option value="$PROJECT_DIR$/sources/api/uma-authorization-endpoint.md" />
+        <option value="$PROJECT_DIR$/sources/api/uma-create-rpt.md" />
+        <option value="$PROJECT_DIR$/sources/api/uma-discovery.md" />
+        <option value="$PROJECT_DIR$/sources/api/uma-permission-registration.md" />
+        <option value="$PROJECT_DIR$/sources/api/uma-resource-registration.md" />
+        <option value="$PROJECT_DIR$/sources/api/uma-rpt-status.md" />
+        <option value="$PROJECT_DIR$/sources/cache-refresh/index.md" />
+        <option value="$PROJECT_DIR$/sources/cache-refresh/register.md" />
+        <option value="$PROJECT_DIR$/sources/examples/oxd-spring.md" />
+        <option value="$PROJECT_DIR$/sources/faq/general.md" />
+        <option value="$PROJECT_DIR$/sources/faq/troubleshooting.md" />
       </list>
     </option>
   </component>
@@ -164,14 +321,13 @@
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/sources" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="FullScreen" value="false" />
     <property name="options.lastSelected" value="com.jetbrains.python.configuration.PythonSdkConfigurable" />
     <property name="options.splitter.main.proportions" value="0.3" />
     <property name="options.splitter.details.proportions" value="0.2" />
     <property name="options.searchVisible" value="true" />
-    <property name="SearchEverywhereHistoryKey" value="custom-scripts&#9;FILE&#9;file://D:/Gluu/GluuDocs-3.0/docs-2.4.4-dev/docs/img/google_login/06-manage-custom-scripts.png" />
+    <property name="SearchEverywhereHistoryKey" value="&#9;FILE&#9;file://D:/Gluu/GluuDocs-3.0/docs-2.4.4-dev/sources/api/oic-register-client.md&#10;custom-scripts&#9;FILE&#9;file://D:/Gluu/GluuDocs-3.0/docs-2.4.4-dev/docs/img/google_login/06-manage-custom-scripts.png" />
   </component>
   <component name="PyConsoleOptionsProvider">
     <option name="myPythonConsoleState">
@@ -332,11 +488,12 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="754" extended-state="6" />
-    <editor active="true" />
+    <editor active="false" />
     <layout>
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.15592971" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32919255" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -360,7 +517,6 @@
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="CheckStyle" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
   <component name="Vcs.Log.UiProperties">
@@ -379,63 +535,11 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/sources/admin-guide/installation/index.md" />
-    <entry file="file://$PROJECT_DIR$/sources/admin-guide/installation/centos.md" />
-    <entry file="file://$PROJECT_DIR$/sources/admin-guide/installation/ubuntu.md" />
-    <entry file="file://$PROJECT_DIR$/sources/admin-guide/mod-ox/index.md" />
-    <entry file="file://$PROJECT_DIR$/sources/admin-guide/mod-ox/index.md" />
-    <entry file="file://$PROJECT_DIR$/sources/admin-guide/interception-scripts/index.md" />
-    <entry file="file://$PROJECT_DIR$/mkdocs.yml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="11" column="0" lean-forward="false" selection-start-line="11" selection-start-column="0" selection-end-line="11" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/sources/admin-guide/interception-scripts/index.md" />
-    <entry file="file://$PROJECT_DIR$/mkdocs.yml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="11" column="0" lean-forward="false" selection-start-line="11" selection-start-column="0" selection-end-line="11" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/sources/admin-guide/interception-scripts/index.md" />
-    <entry file="file://$PROJECT_DIR$/sources/admin-guide/interception-scripts/index.md" />
-    <entry file="file://$PROJECT_DIR$/sources/admin-guide/interception-scripts/index.md" />
-    <entry file="file://$PROJECT_DIR$/sources/reference/ldap/config.md" />
-    <entry file="file://$PROJECT_DIR$/sources/reference/ldap/schema.md" />
-    <entry file="file://$PROJECT_DIR$/sources/reference/ldap/schema.md" />
-    <entry file="file://$PROJECT_DIR$/sources/reference/ldap/config.md" />
-    <entry file="file://$PROJECT_DIR$/sources/admin-guide/user-management/local-user-mgt.md" />
-    <entry file="file://$PROJECT_DIR$/sources/admin-guide/interception-scripts/index.md" />
-    <entry file="file://$PROJECT_DIR$/sources/admin-guide/introduction/architecture.md" />
-    <entry file="file://$PROJECT_DIR$/sources/admin-guide/installation/index.md" />
-    <entry file="file://$PROJECT_DIR$/sources/admin-guide/installation/centos.md" />
-    <entry file="file://$PROJECT_DIR$/sources/admin-guide/installation/ubuntu.md" />
-    <entry file="file://$PROJECT_DIR$/sources/articles/apache-oauth2.md" />
-    <entry file="file://$PROJECT_DIR$/sources/admin-guide/mod-ox/index.md" />
-    <entry file="file://$PROJECT_DIR$/sources/customize/auth-script-new.md">
+    <entry file="file://$PROJECT_DIR$/sources/integrate/openid-connect.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="SPLIT">
-          <first_editor relative-caret-position="-2127">
-            <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-            <folding />
-          </first_editor>
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/docs/img/google_login/06-manage-custom-scripts.png">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/sources/customize/design.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor relative-caret-position="0">
-            <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <first_editor relative-caret-position="556">
+            <caret line="708" column="0" lean-forward="false" selection-start-line="708" selection-start-column="0" selection-end-line="708" selection-end-column="0" />
             <folding />
           </first_editor>
           <second_editor />
@@ -445,30 +549,8 @@
     <entry file="file://$PROJECT_DIR$/sources/customize/auth-script.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="SPLIT">
-          <first_editor relative-caret-position="-1224">
-            <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-            <folding />
-          </first_editor>
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/sources/customize/script.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor relative-caret-position="459">
-            <caret line="274" column="6" lean-forward="true" selection-start-line="274" selection-start-column="6" selection-end-line="274" selection-end-column="6" />
-            <folding />
-          </first_editor>
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/sources/integrate/openid-connect.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor relative-caret-position="556">
-            <caret line="708" column="0" lean-forward="true" selection-start-line="708" selection-start-column="0" selection-end-line="708" selection-end-column="0" />
+          <first_editor relative-caret-position="289">
+            <caret line="209" column="2" lean-forward="false" selection-start-line="209" selection-start-column="2" selection-end-line="209" selection-end-column="2" />
             <folding />
           </first_editor>
           <second_editor />
@@ -486,7 +568,106 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/sp2.md">
+    <entry file="file://$PROJECT_DIR$/sources/introduction/index.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="310">
+            <caret line="44" column="104" lean-forward="false" selection-start-line="44" selection-start-column="104" selection-end-line="44" selection-end-column="104" />
+            <folding />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sources/introduction/history.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="-829">
+            <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+            <folding />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sources/introduction/design.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="344">
+            <caret line="54" column="0" lean-forward="true" selection-start-line="54" selection-start-column="0" selection-end-line="54" selection-end-column="0" />
+            <folding />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sources/introduction/architecture.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="344">
+            <caret line="47" column="0" lean-forward="true" selection-start-line="47" selection-start-column="0" selection-end-line="47" selection-end-column="0" />
+            <folding />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sources/customize/script.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="187">
+            <caret line="274" column="2" lean-forward="false" selection-start-line="274" selection-start-column="1" selection-end-line="274" selection-end-column="2" />
+            <folding />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sources/integrate/apache-saml.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="505">
+            <caret line="132" column="62" lean-forward="false" selection-start-line="132" selection-start-column="62" selection-end-line="132" selection-end-column="62" />
+            <folding />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sources/integrate/centos-installation.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="539">
+            <caret line="186" column="50" lean-forward="false" selection-start-line="186" selection-start-column="50" selection-end-line="186" selection-end-column="50" />
+            <folding />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sources/integrate/dropbox.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="556">
+            <caret line="101" column="0" lean-forward="true" selection-start-line="101" selection-start-column="0" selection-end-line="101" selection-end-column="0" />
+            <folding />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sources/integrate/asimba.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="522">
+            <caret line="71" column="107" lean-forward="false" selection-start-line="71" selection-start-column="107" selection-end-line="71" selection-end-column="107" />
+            <folding />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sources/integrate/appauth.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="SPLIT">
           <first_editor relative-caret-position="0">
@@ -497,11 +678,418 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/sources/integrate/google-saml.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="556">
+            <caret line="94" column="0" lean-forward="true" selection-start-line="94" selection-start-column="0" selection-end-line="94" selection-end-column="0" />
+            <folding />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sources/deployment/index.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="420">
+            <caret line="115" column="2" lean-forward="false" selection-start-line="115" selection-start-column="2" selection-end-line="115" selection-end-column="2" />
+            <folding />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sources/deployment/ubuntu.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="-2399">
+            <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+            <folding />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sources/deployment/ubuntu-xenial.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="-2297">
+            <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+            <folding />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sources/deployment/centos.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="-1566">
+            <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+            <folding />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sources/deployment/centos7.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="-1821">
+            <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+            <folding />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sources/deployment/debian.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="-2161">
+            <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+            <folding />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sources/deployment/linode.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="-172">
+            <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+            <folding />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sources/deployment/rhel.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="-1736">
+            <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+            <folding />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sources/deployment/rhel7.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="0">
+            <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+            <folding />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sources/deployment/updating.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="-702">
+            <caret line="7" column="3" lean-forward="false" selection-start-line="7" selection-start-column="3" selection-end-line="7" selection-end-column="3" />
+            <folding />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sources/deployment/upgrading.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="-1073">
+            <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+            <folding />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sources/deployment/azure.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="114">
+            <caret line="45" column="31" lean-forward="false" selection-start-line="45" selection-start-column="31" selection-end-line="45" selection-end-column="31" />
+            <folding />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sources/cluster/CAS_session_configuration.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="-1005">
+            <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+            <folding />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sources/cluster/csync-installation.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="-612">
+            <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+            <folding />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/mkdocs.yml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
+        <state relative-caret-position="-136">
           <caret line="10" column="4" lean-forward="false" selection-start-line="10" selection-start-column="4" selection-end-line="10" selection-end-column="35" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sources/cluster/index.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="49">
+            <caret line="400" column="0" lean-forward="false" selection-start-line="400" selection-start-column="0" selection-end-line="400" selection-end-column="0" />
+            <folding />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sources/api/scim-1.1.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="556">
+            <caret line="147" column="5" lean-forward="true" selection-start-line="147" selection-start-column="5" selection-end-line="147" selection-end-column="5" />
+            <folding />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sources/api/id-generation.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="1224">
+            <caret line="72" column="1" lean-forward="false" selection-start-line="72" selection-start-column="1" selection-end-line="72" selection-end-column="1" />
+            <folding />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sources/api/oic-authorization.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="7582">
+            <caret line="446" column="43" lean-forward="false" selection-start-line="446" selection-start-column="43" selection-end-line="446" selection-end-column="43" />
+            <folding />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sources/api/oic-clientinfo.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="0">
+            <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+            <folding />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sources/api/oic-end-session.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="119">
+            <caret line="7" column="4" lean-forward="false" selection-start-line="7" selection-start-column="4" selection-end-line="7" selection-end-column="4" />
+            <folding />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sources/api/oic-register-client.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="-2178">
+            <caret line="7" column="4" lean-forward="false" selection-start-line="7" selection-start-column="4" selection-end-line="7" selection-end-column="4" />
+            <folding />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sources/api/oic-token.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="-1821">
+            <caret line="2" column="11" lean-forward="false" selection-start-line="2" selection-start-column="11" selection-end-line="2" selection-end-column="11" />
+            <folding />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sources/api/oic-userinfo.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="-1889">
+            <caret line="6" column="22" lean-forward="true" selection-start-line="6" selection-start-column="22" selection-end-line="6" selection-end-column="22" />
+            <folding />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sources/api/scim-2.0.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="-32404">
+            <caret line="102" column="0" lean-forward="false" selection-start-line="102" selection-start-column="0" selection-end-line="102" selection-end-column="0" />
+            <folding />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sources/api/uma-authorization-endpoint.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="-2467">
+            <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+            <folding />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sources/api/uma-create-rpt.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="-515">
+            <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+            <folding />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sources/api/uma-discovery.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="-2467">
+            <caret line="2" column="5" lean-forward="false" selection-start-line="2" selection-start-column="5" selection-end-line="2" selection-end-column="5" />
+            <folding />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sources/api/uma-permission-registration.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="-1736">
+            <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+            <folding />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sources/api/uma-resource-registration.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="-6703">
+            <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+            <folding />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sources/api/uma-rpt-status.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="-2419">
+            <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+            <folding />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sources/cache-refresh/index.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="556">
+            <caret line="161" column="0" lean-forward="false" selection-start-line="161" selection-start-column="0" selection-end-line="161" selection-end-column="0" />
+            <folding />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sources/cache-refresh/register.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="-87">
+            <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+            <folding />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sources/cache-refresh/reset-password.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="0">
+            <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+            <folding />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sources/examples/oxd-spring.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="-971">
+            <caret line="35" column="1" lean-forward="false" selection-start-line="35" selection-start-column="1" selection-end-line="35" selection-end-column="1" />
+            <folding />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sources/faq/general.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="-614">
+            <caret line="1" column="0" lean-forward="false" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
+            <folding />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sources/faq/troubleshooting.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="202">
+            <caret line="191" column="40" lean-forward="true" selection-start-line="191" selection-start-column="40" selection-end-line="191" selection-end-column="40" />
+            <folding />
+          </first_editor>
+          <second_editor />
         </state>
       </provider>
     </entry>

@@ -5,7 +5,7 @@
 ## Overview
 Any OpenID Client needs to register with the OpenID Provider to utilize OpenID Services, in this case register a user, and acquire a client ID and a shared secret.
 
-## `/oxauth/register`
+#### `/oxauth/register`
 ### registerPost
 **POST** `/oxauth/register`
 

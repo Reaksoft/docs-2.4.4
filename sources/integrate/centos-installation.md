@@ -1,4 +1,3 @@
-[TOC]
 # Installation
 
 We assume that all the hostnames will be dns resolvable. If not, then

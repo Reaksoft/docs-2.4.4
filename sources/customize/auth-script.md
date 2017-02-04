@@ -1,5 +1,3 @@
-[TOC]
-
 # Writing a Custom Authentication Script
 
 In this document we walk through the steps of writing a script to implement OTP authentication using [Twilio](http://twilio.com) to send an SMS code for a two-step out-of-band authentication mechanism.
@@ -79,7 +77,7 @@ As shown in the below illustration:
 
 ![image](https://github.com/GluuFederation/docs/blob/master/sources/img/auth_article/twilio.png?raw=true)
 
-##Methods 
+###Methods 
 **authenticate():**
 
 The most important method to implement is obviously the `authenticate` method. This is where the main business logic is located for
@@ -209,7 +207,7 @@ debugging, those exception may provide a hint pointing what causes the issue.
 Further logs to debug and monitor the sequence can be done using oxauth_script.log and oxauth.log
 under`/opt/tomcat/logs/` which is within the chroot.
 
-# Reverting Authentication Method
+## Reverting Authentication Method
 
 It is not unlikely that one may get locked out of Gluu
 Server, while testing the authentication script.

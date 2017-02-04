@@ -1,5 +1,3 @@
-[TOC]
-
 # Manual Cluster
 ## Design
 The following diagram outlines the design of the cluster.
@@ -399,6 +397,7 @@ group cluster_group
 
 <ol start ="10">
 <li> Add cronjob to automate csync2 run. The cronjob example is given below:</li></ol>
+
 ```
 1,3,5,7,9,11,13,15,17,19,21,23,25,27,29,31,33,35,37,39,41,43,45,47,49,51,53,55,57,59 * * * *    /usr/sbin/csync2 -N idp2.gluu.org -xv 2>/var/log/csync2.log 
 ```
@@ -410,7 +409,7 @@ in each host, when required. Move to `/etc/certs/` on the 1st node (inside the c
 
 After that's done you still will need to update default system storage (`cacerts` file) at the 2nd node with these newly copied certificates. The [Certificate Page](../reference/certificates.md) contains the details about available certificates and how to update certificates are detailed in the [update-certificate page](../how-to/update-certificate.md).
 
-## [Optional] Actions in case setup.properties.last method of installation didn't work for you
+### [Optional] Actions in case setup.properties.last method of installation didn't work for you
 
 In this case jks keystores you'll be moving to the 2nd node will be protected by passwords hardcoded into different configuration files on the 1st node, which are different from the similar passwords hardcoded into the same files on the 2nd node.
 

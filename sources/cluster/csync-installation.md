@@ -1,5 +1,3 @@
-[TOC]
-
 # How to install csync2 in different Gluu CE containers
 
 

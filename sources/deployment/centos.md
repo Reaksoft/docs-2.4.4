@@ -1,5 +1,3 @@
-[TOC]
-
 # CentOS 6.5 Installation Guide
 ## Installing Gluu Server 
 Download and install Gluu Server by the following commands. Use the

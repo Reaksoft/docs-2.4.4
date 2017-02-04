@@ -1,5 +1,3 @@
-[TOC]
-
 # History
 
 ## How we got started

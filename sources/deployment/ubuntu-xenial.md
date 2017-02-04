@@ -1,5 +1,3 @@
-[TOC]
-
 # Ubuntu 16.04 Installation Guide
 ## Installing Gluu Server 
 Download and install Gluu Server by the following commands. Use the

@@ -1,5 +1,3 @@
-[TOC]
-
 # RHEL 6.x Installation Guide
 
 ## Installing Gluu Server 

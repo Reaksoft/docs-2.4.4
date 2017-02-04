@@ -1,5 +1,3 @@
-[TOC]
-
 # Hardware Requirements
 The Gluu Server is very flexible, and can be used for a wide array of
 access management requirements. Depending on the size of data, and
@@ -14,7 +12,7 @@ SAML, OAuth2, LDAP), server will need at least:
 
 **Note:** *Not enough memory may produce some issues or errors, which may require few adjustments on the resources based on environment's specific requirements.*
 
-# Operating System Requirement
+## Operating System Requirement
 Gluu Server Community Edition is available for the following Operating Systems.
 Click on the desired operating system for deployment guide.
 
@@ -82,7 +80,8 @@ The following ports need to stay open for the Gluu Server to run. Please keep th
 ## Disable SELinux
 * Make sure there is "SELINUX=disabled" directive in the /etc/selinux/config file.
 * Reboot your system. After reboot, confirm that the __getenforce__ command returns __Disabled__.
-# Cloud Specific Requirements
+
+## Cloud Specific Requirements
 ## Amazon AWS
 Amazon AWS provides a public and private IP address to its clouds. While
 running the `/install/community-edition-setup/setup.py` script, use the
@@ -96,7 +95,7 @@ addresses each time the server is started. Please see the [Azure Guide](./azure.
 ## Linode
 The Linode Virtual Machines (VM) use a custom kernel which is not supported by Gluu Server, therefore the kernel must be updated before Gluu Server can be installed in Linode VM. Please see the [Linode Guide](./linode.md) to update your Linode VM Kernel.
 
-# Available Components
+## Available Components
 
 When deploying the Gluu Server, installer will prompt on the following softwares to be installed along with Gluu Server:
 
@@ -114,7 +113,7 @@ When deploying the Gluu Server, installer will prompt on the following softwares
 
 *__Note:__* * implies that the software should *always* be deployed. And recommended to use defaults where ever required.
 
-# Support
+## Support
 Gluu offers both community and VIP support. Anyone can browse and open
 tickets on our [support portal](http://support.gluu.org). For private
 support, expedited assistance, and strategic consultations, please view

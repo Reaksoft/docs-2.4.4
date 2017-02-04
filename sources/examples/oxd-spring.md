@@ -1,7 +1,7 @@
 # oxd-spring
 This is a sample project that demonstrates how to authenticate using Gluu as an authentication provider in spring project.
 
-# Dependencies
+## Dependencies
 Before you can run or build this project, you must install and configure the following dependencies on your machine:
 
 1. [oxd-server-2.4.3.Final](https://ox.gluu.org/maven/org/xdi/oxd-server/2.4.3.Final/). Configure `${install_dir}/oxd-server/conf/oxd-conf.json`->
@@ -10,7 +10,7 @@ Before you can run or build this project, you must install and configure the fol
 2. [gluu-server-2.4.3](https://www.gluu.org/docs/deployment/)
 
 
-# Building&Running
+## Building&Running
 Clone this repo to your computer, and cd into the project directory:
 ```
 git clone https://github.com/GluuFederation/oxd-spring.git
@@ -33,7 +33,7 @@ And point browser to `https://127.0.0.1:8443/`.
 
 ***Note:*** oxd-server must run on *localhost* and be bound to port: *8099*, otherwise you'll need to configure `oxd-spring/src/main/resources/application.properties` file.
 
-# How it works
+## How it works
 
 The app is using [oxd-java](https://gluu.org/docs-oxd/plugin/java/) library that helps to communicate with Gluu openid connect provider. This example uses the following functions defined in `org/xdi/oxd/spring/service/OxdService.java`
 ### OxdService.java

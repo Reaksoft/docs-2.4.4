@@ -1,14 +1,13 @@
-[TOC]
 # Overview
 Cache Refresh is the process of connecting an existing backend LDAP server, like Microsoft Active Directory, with the Gluu Server's local LDAP server. Synching people and attributes from a backend server into the Gluu Server speeds up authentication transactions. It is possible to perform attribute transformations, changing the name of attributes, or even using an interception script to change the values. Transformations are stored in the Gluu LDAP service. 
 
-# Video Tutorial
+## Video Tutorial
 For a guided video overview of configuring Cache Refresh, please watch the following three videos:    
 - [Part 1: What is 'Cache Refresh' and How Does it Work?](https://youtu.be/VnyCTUCRkic)     
 - [Part 2: Configuring Cache Refresh in the Gluu Server](https://youtu.be/c64l_xmBbvw)    
 - [Part 3: Managing Authentication After You've Setup Cache Refresh](https://youtu.be/fyAEwJuwqn4)    
        
-# Things To Remember
+## Things To Remember
 The Gluu Server supports two LDAP modes: (1) authentication and (2)
 identity mapping. Only sometimes it is the same LDAP server. To
 synchronize user accounts from an external LDAP directory server, you
@@ -44,7 +43,7 @@ and populate the LDAP server. Here are some tips before you get started:
   setup your Gluu Server to use the correct LDAP server for
   authentication.
 
-# Things To Know
+## Things To Know
 The deployer needs to know various values of his own backend AD to
 configure this part. For example, host & port, bindDN user information,
 bindDN password, Objectclasses, attributes whose information will be
@@ -59,7 +58,7 @@ baseDN respectively.
 After collecting this information, the deployer can move forward with
 the setup of the Cache Refresh engine.
 
-# Configuring Cache Refresh From oxTrust
+## Configuring Cache Refresh From oxTrust
 For a successful Cache Refresh setup, please complete the data fields in
 both the 'Cache Refresh', 'Customer Backend Key/Attributes', and 'Source
 Backend LDAP Servers' sections. It is not necessary enter data in the
@@ -97,7 +96,7 @@ Backend LDAP Servers' sections. It is not necessary enter data in the
 
   * _Keep external persons:_ Check this box to retain the `admin` user.
 
-## Customer Backend Key and Attributes
+### Customer Backend Key and Attributes
 ![Customer Backend Key](https://raw.githubusercontent.com/GluuFederation/docs/master/sources/img/oxTrust/admin_cache_backend.png)
 
 * _Key Attribute:_ This is the unique key attribute of backend Active
@@ -114,7 +113,7 @@ Backend LDAP Servers' sections. It is not necessary enter data in the
   filtering mechanism can be used such as `sn=*`. The value of this field
   ensures that every user must contain an attribute named SN.
 
-## Source Backend LDAP Servers
+### Source Backend LDAP Servers
 
 ![Source Backend](https://raw.githubusercontent.com/GluuFederation/docs/master/sources/img/oxTrust/admin_cache_sourcebackend.png)
 
@@ -154,7 +153,7 @@ If any organization has multiple Active Directory/LDAP server, click on
 **Add source LDAP server** and add the additional server information.
 Please remember that a *failover server* is not a new server.
 
-# Cache Refresh Whitepages
+## Cache Refresh Whitepages
 The following file is prepared by a Gluu Engineer to make Cache refresh mechanism 
 easy to understand. Please download and read it if this page is not clear.
 

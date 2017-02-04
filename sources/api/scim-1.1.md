@@ -1,11 +1,11 @@
-## SCIM 1.1
+# SCIM 1.1
 
-### SCIM 1.1 Specifications
+## SCIM 1.1 Specifications
 
 You can see the detailed SCIM 1.1 specification documents
 [here](http://www.simplecloud.info/specs/draft-scim-api-01.html).
 
-### SCIM 1.1 Endpoints
+## SCIM 1.1 Endpoints
 
 - [User Endpoint](#user-endpoint)
 - [Group Endpoint](#group-endpoint)
@@ -14,7 +14,7 @@ You can see the detailed SCIM 1.1 specification documents
 
 ## User Endpoint
 
-### /seam/resource/restv1/Users
+##### /seam/resource/restv1/Users
 - - -
 ##### getUser
 **GET** `/host/seam/resource/restv1/scim/v1/Users{rsid}`

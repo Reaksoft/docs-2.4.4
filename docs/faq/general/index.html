@@ -819,6 +819,8 @@
     
     <input class="md-toggle md-nav__toggle" data-md-toggle="toc" type="checkbox" id="toc">
     
+      
+    
     
       <label class="md-nav__link md-nav__link--active" for="toc">
         General
@@ -831,6 +833,8 @@
       
 <nav class="md-nav md-nav--secondary">
   
+  
+    
   
   
     <label class="md-nav__title" for="toc">Table of contents</label>
@@ -1765,6 +1769,8 @@
 <nav class="md-nav md-nav--secondary">
   
   
+    
+  
   
     <label class="md-nav__title" for="toc">Table of contents</label>
     <ul class="md-nav__list" data-md-scrollfix>
@@ -1826,18 +1832,7 @@
                
               
                 
-                  <h1>General</h1>
-                
-                <div class="toc">
-<ul>
-<li><a href="#how-do-i-change-hostname-andor-ip-address-andor-listening-port-of-my-gluu-server">How do I change hostname and/or IP address and/or listening port of my Gluu Server?</a></li>
-<li><a href="#how-do-i-set-my-port-to-something-other-than-443">How do I set my port to something other than 443?</a></li>
-<li><a href="#how-do-i-customize-the-idp-to-ask-for-email-instead-of-username-for-login">How do I customize the IDP to ask for Email instead of Username for login?</a></li>
-<li><a href="#how-do-i-add-additional-roles-to-oxtrust-gluus-web-ui-andor-change-permissions-set-for-existing-ones">How do I add additional roles to oxTrust (Gluu's web UI) and/or change permissions set for existing ones?</a></li>
-<li><a href="#how-do-i-properly-reboot-my-gluu-server">How do I properly reboot my Gluu Server?</a></li>
-<li><a href="#how-do-i-perform-matinenace-on-my-gluu-server">How do I perform matinenace on my Gluu Server?</a></li>
-</ul>
-</div>
+                <h1 id="faq">FAQ<a class="headerlink" href="#faq" title="Permanent link">#</a></h1>
 <h2 id="how-do-i-change-hostname-andor-ip-address-andor-listening-port-of-my-gluu-server">How do I change hostname and/or IP address and/or listening port of my Gluu Server?<a class="headerlink" href="#how-do-i-change-hostname-andor-ip-address-andor-listening-port-of-my-gluu-server" title="Permanent link">#</a></h2>
 <p>There is no easy way to change any of those once your instance is already deployed. At very least it would require to modify a lot of settings stored in LDAP configuration entries, in Apache/Tomcat configuration, and perhaps in custom authentication scripts' sources too (if you plan to use one). If you need to change an IP address, we recommend doing a fresh install on a new VM.</p>
 <p>Aside from using static public ip address, you could opt to use some static ip address from private range of your internal network, and to employ some sort of reverse proxy, or load balancer, or simple port forwarding on another internet-facing device that will forward connections to your instance in that network. When it's set up this way you can freely change your public ip address on this internet-facing intermediary device (just will need to make sure your DNS records will be updated accordingly each time).</p>

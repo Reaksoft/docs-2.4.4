@@ -1,4 +1,4 @@
-## SCIM 2.0
+# SCIM 2.0
 
 ### SCIM 2.0 Specifications
 

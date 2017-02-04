@@ -1,12 +1,11 @@
-## API Document
+# API Document
 
 ### /oxauth
 
-#### Overview
+## Overview
 
-
-#### `/oxauth/token`
-##### requestAccessToken
+#### `/oxauth/token` 
+#### requestAccessToken
 **POST** `/oxauth/token`
 
 To obtain an Access Token, an ID Token, and optionally a Refresh Token,
@@ -15,7 +14,7 @@ Token Response.
 
 ###### URL
     http://gluu.org/oxauth/token
-###### Parameters
+### Parameters
 - form
 
     <table border="1">
@@ -96,11 +95,11 @@ pre-registered at the OpenID Provider.</td>
         </tr>
     </table>
 
-###### Response
+#### Response
 [JSON[Response]](#JSON[Response])
 
 
-###### Errors
+#### Errors
 <table border="1">
     <tr>
         <th>Status Code</th>

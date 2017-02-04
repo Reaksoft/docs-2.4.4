@@ -648,6 +648,10 @@
       
     
     
+      <label class="md-nav__link md-nav__link--active" for="toc">
+        Sync LDAP/AD
+      </label>
+    
     <a href="./" title="Sync LDAP/AD" class="md-nav__link md-nav__link--active">
       Sync LDAP/AD
     </a>
@@ -658,6 +662,66 @@
   
     
   
+  
+    <label class="md-nav__title" for="toc">Table of contents</label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#video-tutorial" title="Video Tutorial" class="md-nav__link">
+    Video Tutorial
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#things-to-remember" title="Things To Remember" class="md-nav__link">
+    Things To Remember
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#things-to-know" title="Things To Know" class="md-nav__link">
+    Things To Know
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#configuring-cache-refresh-from-oxtrust" title="Configuring Cache Refresh From oxTrust" class="md-nav__link">
+    Configuring Cache Refresh From oxTrust
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#customer-backend-key-and-attributes" title="Customer Backend Key and Attributes" class="md-nav__link">
+    Customer Backend Key and Attributes
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#source-backend-ldap-servers" title="Source Backend LDAP Servers" class="md-nav__link">
+    Source Backend LDAP Servers
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#cache-refresh-whitepages" title="Cache Refresh Whitepages" class="md-nav__link">
+    Cache Refresh Whitepages
+  </a>
+  
+</li>
+      
+    </ul>
   
 </nav>
     
@@ -1721,6 +1785,66 @@
     
   
   
+    <label class="md-nav__title" for="toc">Table of contents</label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#video-tutorial" title="Video Tutorial" class="md-nav__link">
+    Video Tutorial
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#things-to-remember" title="Things To Remember" class="md-nav__link">
+    Things To Remember
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#things-to-know" title="Things To Know" class="md-nav__link">
+    Things To Know
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#configuring-cache-refresh-from-oxtrust" title="Configuring Cache Refresh From oxTrust" class="md-nav__link">
+    Configuring Cache Refresh From oxTrust
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#customer-backend-key-and-attributes" title="Customer Backend Key and Attributes" class="md-nav__link">
+    Customer Backend Key and Attributes
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#source-backend-ldap-servers" title="Source Backend LDAP Servers" class="md-nav__link">
+    Source Backend LDAP Servers
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#cache-refresh-whitepages" title="Cache Refresh Whitepages" class="md-nav__link">
+    Cache Refresh Whitepages
+  </a>
+  
+</li>
+      
+    </ul>
+  
 </nav>
                   </div>
                 </div>
@@ -1734,28 +1858,14 @@
                
               
                 
-                <div class="toc">
-<ul>
-<li><a href="#overview">Overview</a></li>
-<li><a href="#video-tutorial">Video Tutorial</a></li>
-<li><a href="#things-to-remember">Things To Remember</a></li>
-<li><a href="#things-to-know">Things To Know</a></li>
-<li><a href="#configuring-cache-refresh-from-oxtrust">Configuring Cache Refresh From oxTrust</a><ul>
-<li><a href="#customer-backend-key-and-attributes">Customer Backend Key and Attributes</a></li>
-<li><a href="#source-backend-ldap-servers">Source Backend LDAP Servers</a></li>
-</ul>
-</li>
-<li><a href="#cache-refresh-whitepages">Cache Refresh Whitepages</a></li>
-</ul>
-</div>
-<h1 id="overview">Overview<a class="headerlink" href="#overview" title="Permanent link">#</a></h1>
+                <h1 id="overview">Overview<a class="headerlink" href="#overview" title="Permanent link">#</a></h1>
 <p>Cache Refresh is the process of connecting an existing backend LDAP server, like Microsoft Active Directory, with the Gluu Server's local LDAP server. Synching people and attributes from a backend server into the Gluu Server speeds up authentication transactions. It is possible to perform attribute transformations, changing the name of attributes, or even using an interception script to change the values. Transformations are stored in the Gluu LDAP service. </p>
-<h1 id="video-tutorial">Video Tutorial<a class="headerlink" href="#video-tutorial" title="Permanent link">#</a></h1>
+<h2 id="video-tutorial">Video Tutorial<a class="headerlink" href="#video-tutorial" title="Permanent link">#</a></h2>
 <p>For a guided video overview of configuring Cache Refresh, please watch the following three videos:  <br />
 - <a href="https://youtu.be/VnyCTUCRkic">Part 1: What is 'Cache Refresh' and How Does it Work?</a>   <br />
 - <a href="https://youtu.be/c64l_xmBbvw">Part 2: Configuring Cache Refresh in the Gluu Server</a>  <br />
 - <a href="https://youtu.be/fyAEwJuwqn4">Part 3: Managing Authentication After You've Setup Cache Refresh</a>    </p>
-<h1 id="things-to-remember">Things To Remember<a class="headerlink" href="#things-to-remember" title="Permanent link">#</a></h1>
+<h2 id="things-to-remember">Things To Remember<a class="headerlink" href="#things-to-remember" title="Permanent link">#</a></h2>
 <p>The Gluu Server supports two LDAP modes: (1) authentication and (2)
 identity mapping. Only sometimes it is the same LDAP server. To
 synchronize user accounts from an external LDAP directory server, you
@@ -1796,7 +1906,7 @@ and populate the LDAP server. Here are some tips before you get started:</p>
   setup your Gluu Server to use the correct LDAP server for
   authentication.</li>
 </ul>
-<h1 id="things-to-know">Things To Know<a class="headerlink" href="#things-to-know" title="Permanent link">#</a></h1>
+<h2 id="things-to-know">Things To Know<a class="headerlink" href="#things-to-know" title="Permanent link">#</a></h2>
 <p>The deployer needs to know various values of his own backend AD to
 configure this part. For example, host &amp; port, bindDN user information,
 bindDN password, Objectclasses, attributes whose information will be
@@ -1808,7 +1918,7 @@ Gluu Server's LDAP. By default, the deployer can use 'localhost:1636',
 baseDN respectively.</p>
 <p>After collecting this information, the deployer can move forward with
 the setup of the Cache Refresh engine.</p>
-<h1 id="configuring-cache-refresh-from-oxtrust">Configuring Cache Refresh From oxTrust<a class="headerlink" href="#configuring-cache-refresh-from-oxtrust" title="Permanent link">#</a></h1>
+<h2 id="configuring-cache-refresh-from-oxtrust">Configuring Cache Refresh From oxTrust<a class="headerlink" href="#configuring-cache-refresh-from-oxtrust" title="Permanent link">#</a></h2>
 <p>For a successful Cache Refresh setup, please complete the data fields in
 both the 'Cache Refresh', 'Customer Backend Key/Attributes', and 'Source
 Backend LDAP Servers' sections. It is not necessary enter data in the
@@ -1855,7 +1965,7 @@ Backend LDAP Servers' sections. It is not necessary enter data in the
 <p><em>Keep external persons:</em> Check this box to retain the <code>admin</code> user.</p>
 </li>
 </ul>
-<h2 id="customer-backend-key-and-attributes">Customer Backend Key and Attributes<a class="headerlink" href="#customer-backend-key-and-attributes" title="Permanent link">#</a></h2>
+<h3 id="customer-backend-key-and-attributes">Customer Backend Key and Attributes<a class="headerlink" href="#customer-backend-key-and-attributes" title="Permanent link">#</a></h3>
 <p><img alt="Customer Backend Key" src="https://raw.githubusercontent.com/GluuFederation/docs/master/sources/img/oxTrust/admin_cache_backend.png" /></p>
 <ul>
 <li>
@@ -1877,7 +1987,7 @@ Backend LDAP Servers' sections. It is not necessary enter data in the
   ensures that every user must contain an attribute named SN.</p>
 </li>
 </ul>
-<h2 id="source-backend-ldap-servers">Source Backend LDAP Servers<a class="headerlink" href="#source-backend-ldap-servers" title="Permanent link">#</a></h2>
+<h3 id="source-backend-ldap-servers">Source Backend LDAP Servers<a class="headerlink" href="#source-backend-ldap-servers" title="Permanent link">#</a></h3>
 <p><img alt="Source Backend" src="https://raw.githubusercontent.com/GluuFederation/docs/master/sources/img/oxTrust/admin_cache_sourcebackend.png" /></p>
 <p>This section allows the Gluu Server to connect to the backend Active
 Directory/LDAP server of your organization.</p>
@@ -1924,7 +2034,7 @@ Directory/LDAP server of your organization.</p>
 <p>If any organization has multiple Active Directory/LDAP server, click on
 <strong>Add source LDAP server</strong> and add the additional server information.
 Please remember that a <em>failover server</em> is not a new server.</p>
-<h1 id="cache-refresh-whitepages">Cache Refresh Whitepages<a class="headerlink" href="#cache-refresh-whitepages" title="Permanent link">#</a></h1>
+<h2 id="cache-refresh-whitepages">Cache Refresh Whitepages<a class="headerlink" href="#cache-refresh-whitepages" title="Permanent link">#</a></h2>
 <p>The following file is prepared by a Gluu Engineer to make Cache refresh mechanism 
 easy to understand. Please download and read it if this page is not clear.</p>
 <ul>

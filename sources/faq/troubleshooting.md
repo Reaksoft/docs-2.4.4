@@ -1,17 +1,15 @@
-[TOC]
-
 # Logs
 When it comes to troubleshooting issues in the Gluu Server--from service hiccups to outages--your [server logs](../reference/logs.md) are the best place to gather relevant information.
 
-# Connectivity Issues?
-## DNS names not resolving!
+## Connectivity Issues?
+### DNS names not resolving!
 It is possible that even after configuring everything there is a `DNS` resolve error in Gluu Server.
 The reason is the `DNS` used inside the chroot container; the `dns` used by the container is the Google DNS servers 
 and the `DNS` for the host OS is not used. Therefore to fix this issue:
 
 - Change the DNS inside the container by editing the `/etc/resolv.conf` file and adding the DNS used by your organization
-# Locked Out?
-## Forgot the admin password! 
+## Locked Out?
+### Forgot the admin password! 
 
 Oh no, its been a few days since you booted your test Gluu Server, and
 you can't remember the admin password. No worries, the Gluu Server
@@ -183,8 +181,8 @@ Once the ldif looks right, run this to grant your account admin rights in Gluu:
 
 Log into the web interface and pick up where you left off :)
 
-# Lock users?
-## Lock Account using Custom Scripts
+## Lock users?
+### Lock Account using Custom Scripts
 This section will help in locking a user account using custom scripts in solutions where it is
 mandatory to limit access trials to a specific number i.e. lock user account if the user fails to
 produce correct password 3 times.

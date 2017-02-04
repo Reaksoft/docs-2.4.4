@@ -1,4 +1,4 @@
-[TOC]
+#FAQ
 
 ## How do I change hostname and/or IP address and/or listening port of my Gluu Server?
 

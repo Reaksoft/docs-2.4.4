@@ -1,5 +1,3 @@
-[TOC]
-
 # Design Goals
 
 ## Free Open Source Identity Suite

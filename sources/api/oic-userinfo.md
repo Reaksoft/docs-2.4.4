@@ -1,11 +1,11 @@
-## API Document
+# API Document
 
-### /oxauth
+####/oxauth
 
-#### Overview
+## Overview
 
+**`/oxauth/userinfo`**
 
-#### `/oxauth/userinfo`
 ##### requestUserInfoPost
 **POST** `/oxauth/userinfo`
 
@@ -14,7 +14,7 @@ The Access Token obtained from an OpenID Connect Authentication Request is sent 
 
 ###### URL
     http://gluu.org/oxauth/userinfo
-###### Parameters
+#### Parameters
 - form
 
     <table border="1">
@@ -48,11 +48,11 @@ The Access Token obtained from an OpenID Connect Authentication Request is sent 
         </tr>
     </table>
 
-###### Response
+### Response
 [JSON[Response]](#JSON[Response])
 
 
-###### Errors
+#### Errors
 <table border="1">
     <tr>
         <th>Status Code</th>
@@ -74,7 +74,7 @@ The Access Token obtained from an OpenID Connect Authentication Request is sent 
 
 
 - - -
-##### requestUserInfoGet
+### requestUserInfoGet
 **GET** `/oxauth/userinfo`
 
 Returns Claims about the authenticated End-User.
@@ -116,11 +116,10 @@ The Access Token obtained from an OpenID Connect Authentication Request is sent 
         </tr>
     </table>
 
-###### Response
+### Response
 [JSON[Response]](#JSON[Response])
 
-
-###### Errors
+#### Errors
 <table border="1">
     <tr>
         <th>Status Code</th>

@@ -26,7 +26,7 @@ Learn more about each supported standard on [our website](https://www.gluu.org/r
 
 The Gluu Server code is open source, and can be found on [Github](github.com/GluuFederation/).
 
-# Client Software
+## Client Software
 In order for an application to leverage the Gluu Server (or any external identity provider) for authentication and authorization, the application needs to support federation. The Gluu Server provides identity provider endpoints for the SAML and OpenID Connect federation standards. Therefore, any application that wants to send users to the Gluu Server for login should support either SAML or OpenID Connect. 
 
 If the application does not already support one of these standards, we highly recommend securing the application using [oxd](http://oxd.gluu.org), our OpenID Connect middleware software. oxd makes its easy to properly secure the sign-in flow for applications with OpenID Connect, and is supported and maintained by Gluu. 
@@ -37,13 +37,13 @@ Watch the [oxd demo](http://gluu.co/oxd-demo).
 
 The Gluu Server also supports a few third party OpenID Connect client library projects, including the AppAuth client SDK for mobile single sign-on. See [the current list](https://www.gluu.org/blog/limiting-openid-connect-community-client-support/). 
 
-# Support
+## Support
 
 Gluu hosts a public knowledge base and support platform on the [Gluu support site](http://support.gluu.org). Anyone can browse tickets and register to open public tickets. 
 
 VIP support can be purchased if you or your organization wants private support, SLA's on support responses (like production outages), and consultative support from Gluu. See VIP support pricing on [our website](gluu.org/pricing) options.
 
-# License
+## License
 Any software published by Gluu in the OX Project is under the [MIT License](http://opensource.org/licenses/MIT). This includes oxAuth, the OAuth 2.0 and OpenID Connect Provider, and UMA Authorization Server, and oxTrust, the web based server administration GUI.
 
 During installation you will also have the option to install third party software components which have the following licenses:

@@ -1,6 +1,6 @@
-## API Document
+# API Document
 
-### /.well-known/uma-configuration
+##### /.well-known/uma-configuration
 
 #### Overview
 

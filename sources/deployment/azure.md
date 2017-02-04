@@ -43,8 +43,7 @@ dropdown menu.
     Name`. This is the name that is used to access the Gluu Server.
 
 11. SSH into the VM and install the Gluu Server. See our [Deployment
-    Guide](http://www.gluu.org/docs/admin-guide/deployment/) for
-    installation instructions.
+    Guide](../deployment/) for installation instructions.
 
 ## Setup.py Configuration
 

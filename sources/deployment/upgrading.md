@@ -1,5 +1,3 @@
-[TOC]
-
 # Upgrading Gluu Server CE
 
 Upgrading a Gluu Server is NOT a simple `apt-get upgrade`. The admin needs to explicitly install the version of the Gluu Server. It generally involves the following steps:

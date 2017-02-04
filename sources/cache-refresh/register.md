@@ -1,5 +1,3 @@
-[TOC]
-
 # Register User
 The oxTrust component provides a very basic user registration service for 
 the people to sign-up for an account on the Gluu Server. This service is 

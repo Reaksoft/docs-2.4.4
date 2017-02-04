@@ -215,6 +215,10 @@
       
     
     
+      <label class="md-nav__link md-nav__link--active" for="toc">
+        Home
+      </label>
+    
     <a href="." title="Home" class="md-nav__link md-nav__link--active">
       Home
     </a>
@@ -225,6 +229,32 @@
   
     
   
+  
+    <label class="md-nav__title" for="toc">Table of contents</label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#client-software" title="Client Software" class="md-nav__link">
+    Client Software
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#support" title="Support" class="md-nav__link">
+    Support
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#license" title="License" class="md-nav__link">
+    License
+  </a>
+  
+</li>
+      
+    </ul>
   
 </nav>
     
@@ -1717,6 +1747,32 @@
     
   
   
+    <label class="md-nav__title" for="toc">Table of contents</label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#client-software" title="Client Software" class="md-nav__link">
+    Client Software
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#support" title="Support" class="md-nav__link">
+    Support
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#license" title="License" class="md-nav__link">
+    License
+  </a>
+  
+</li>
+      
+    </ul>
+  
 </nav>
                   </div>
                 </div>
@@ -1754,16 +1810,16 @@
 <p>Learn more about the differences between OAuth, SAML and OpenID Connect in <a href="https://www.gluu.org/blog/oauth-vs-saml-vs-openid-connect/">this blog</a>.</p>
 <p>Learn more about each supported standard on <a href="https://www.gluu.org/resources/documents/#standards">our website</a>. </p>
 <p>The Gluu Server code is open source, and can be found on <a href="./github.com/GluuFederation/">Github</a>.</p>
-<h1 id="client-software">Client Software<a class="headerlink" href="#client-software" title="Permanent link">#</a></h1>
+<h2 id="client-software">Client Software<a class="headerlink" href="#client-software" title="Permanent link">#</a></h2>
 <p>In order for an application to leverage the Gluu Server (or any external identity provider) for authentication and authorization, the application needs to support federation. The Gluu Server provides identity provider endpoints for the SAML and OpenID Connect federation standards. Therefore, any application that wants to send users to the Gluu Server for login should support either SAML or OpenID Connect. </p>
 <p>If the application does not already support one of these standards, we highly recommend securing the application using <a href="http://oxd.gluu.org">oxd</a>, our OpenID Connect middleware software. oxd makes its easy to properly secure the sign-in flow for applications with OpenID Connect, and is supported and maintained by Gluu. </p>
 <p>Learn more about oxd in <a href="https://www.gluu.org/blog/secure-web-apps-openid-connect-oxd/">this blog</a>. </p>
 <p>Watch the <a href="http://gluu.co/oxd-demo">oxd demo</a>. </p>
 <p>The Gluu Server also supports a few third party OpenID Connect client library projects, including the AppAuth client SDK for mobile single sign-on. See <a href="https://www.gluu.org/blog/limiting-openid-connect-community-client-support/">the current list</a>. </p>
-<h1 id="support">Support<a class="headerlink" href="#support" title="Permanent link">#</a></h1>
+<h2 id="support">Support<a class="headerlink" href="#support" title="Permanent link">#</a></h2>
 <p>Gluu hosts a public knowledge base and support platform on the <a href="http://support.gluu.org">Gluu support site</a>. Anyone can browse tickets and register to open public tickets. </p>
 <p>VIP support can be purchased if you or your organization wants private support, SLA's on support responses (like production outages), and consultative support from Gluu. See VIP support pricing on <a href="./gluu.org/pricing">our website</a> options.</p>
-<h1 id="license">License<a class="headerlink" href="#license" title="Permanent link">#</a></h1>
+<h2 id="license">License<a class="headerlink" href="#license" title="Permanent link">#</a></h2>
 <p>Any software published by Gluu in the OX Project is under the <a href="http://opensource.org/licenses/MIT">MIT License</a>. This includes oxAuth, the OAuth 2.0 and OpenID Connect Provider, and UMA Authorization Server, and oxTrust, the web based server administration GUI.</p>
 <p>During installation you will also have the option to install third party software components which have the following licenses:</p>
 <table>

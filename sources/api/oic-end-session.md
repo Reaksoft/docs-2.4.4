@@ -1,11 +1,12 @@
-## API Document
+# API Document
 
-### /oxauth
+## /oxauth
 
-#### Overview
+## Overview
 
 
 #### `/oxauth/end_session`
+
 ##### requestEndSession
 **GET** `/oxauth/end_session`
 
@@ -14,7 +15,7 @@ End current Connect session.
 
 ###### URL
     http://gluu.org/oxauth/end_session
-###### Parameters
+#### Parameters
 - query
 
     <table border="1">
@@ -50,11 +51,11 @@ End current Connect session.
         </tr>
     </table>
 
-###### Response
+#### Response
 [JSON[Response]](#JSON[Response])
 
 
-###### Errors
+##### Errors
 <table border="1">
     <tr>
         <th>Status Code</th>

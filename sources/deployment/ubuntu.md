@@ -1,5 +1,3 @@
-[TOC]
-
 # Ubuntu 14.04.2 Installation Guide
 
 ## Installing Gluu Server 

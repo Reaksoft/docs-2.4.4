@@ -1537,6 +1537,8 @@
     
     <input class="md-toggle md-nav__toggle" data-md-toggle="toc" type="checkbox" id="toc">
     
+      
+    
     
       <label class="md-nav__link md-nav__link--active" for="toc">
         OpenID Connect Token Endpoint
@@ -1550,40 +1552,33 @@
 <nav class="md-nav md-nav--secondary">
   
   
+    
+  
   
     <label class="md-nav__title" for="toc">Table of contents</label>
     <ul class="md-nav__list" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#api-document" title="API Document" class="md-nav__link">
-    API Document
-  </a>
-  
-    <nav class="md-nav">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
   <a href="#oxauth" title="/oxauth" class="md-nav__link">
     /oxauth
   </a>
   
-    <nav class="md-nav">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
+</li>
+      
+        <li class="md-nav__item">
   <a href="#overview" title="Overview" class="md-nav__link">
     Overview
   </a>
   
-</li>
+    <nav class="md-nav">
+      <ul class="md-nav__list">
         
           <li class="md-nav__item">
   <a href="#oxauthtoken" title="/oxauth/token" class="md-nav__link">
     /oxauth/token
   </a>
   
-    <nav class="md-nav">
-      <ul class="md-nav__list">
+</li>
         
           <li class="md-nav__item">
   <a href="#requestaccesstoken" title="requestAccessToken" class="md-nav__link">
@@ -1600,12 +1595,18 @@
   
 </li>
         
+      </ul>
+    </nav>
+  
+</li>
+        
           <li class="md-nav__item">
   <a href="#parameters" title="Parameters" class="md-nav__link">
     Parameters
   </a>
   
-</li>
+    <nav class="md-nav">
+      <ul class="md-nav__list">
         
           <li class="md-nav__item">
   <a href="#response" title="Response" class="md-nav__link">
@@ -1618,16 +1619,6 @@
   <a href="#errors" title="Errors" class="md-nav__link">
     Errors
   </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-        
-      </ul>
-    </nav>
   
 </li>
         
@@ -1817,40 +1808,33 @@
 <nav class="md-nav md-nav--secondary">
   
   
+    
+  
   
     <label class="md-nav__title" for="toc">Table of contents</label>
     <ul class="md-nav__list" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#api-document" title="API Document" class="md-nav__link">
-    API Document
-  </a>
-  
-    <nav class="md-nav">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
   <a href="#oxauth" title="/oxauth" class="md-nav__link">
     /oxauth
   </a>
   
-    <nav class="md-nav">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
+</li>
+      
+        <li class="md-nav__item">
   <a href="#overview" title="Overview" class="md-nav__link">
     Overview
   </a>
   
-</li>
+    <nav class="md-nav">
+      <ul class="md-nav__list">
         
           <li class="md-nav__item">
   <a href="#oxauthtoken" title="/oxauth/token" class="md-nav__link">
     /oxauth/token
   </a>
   
-    <nav class="md-nav">
-      <ul class="md-nav__list">
+</li>
         
           <li class="md-nav__item">
   <a href="#requestaccesstoken" title="requestAccessToken" class="md-nav__link">
@@ -1867,12 +1851,18 @@
   
 </li>
         
+      </ul>
+    </nav>
+  
+</li>
+        
           <li class="md-nav__item">
   <a href="#parameters" title="Parameters" class="md-nav__link">
     Parameters
   </a>
   
-</li>
+    <nav class="md-nav">
+      <ul class="md-nav__list">
         
           <li class="md-nav__item">
   <a href="#response" title="Response" class="md-nav__link">
@@ -1885,16 +1875,6 @@
   <a href="#errors" title="Errors" class="md-nav__link">
     Errors
   </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-        
-      </ul>
-    </nav>
   
 </li>
         
@@ -1930,13 +1910,11 @@
                
               
                 
-                  <h1>OpenID Connect Token Endpoint</h1>
-                
-                <h2 id="api-document">API Document<a class="headerlink" href="#api-document" title="Permanent link">#</a></h2>
+                <h1 id="api-document">API Document<a class="headerlink" href="#api-document" title="Permanent link">#</a></h1>
 <h3 id="oxauth">/oxauth<a class="headerlink" href="#oxauth" title="Permanent link">#</a></h3>
-<h4 id="overview">Overview<a class="headerlink" href="#overview" title="Permanent link">#</a></h4>
+<h2 id="overview">Overview<a class="headerlink" href="#overview" title="Permanent link">#</a></h2>
 <h4 id="oxauthtoken"><code>/oxauth/token</code><a class="headerlink" href="#oxauthtoken" title="Permanent link">#</a></h4>
-<h5 id="requestaccesstoken">requestAccessToken<a class="headerlink" href="#requestaccesstoken" title="Permanent link">#</a></h5>
+<h4 id="requestaccesstoken">requestAccessToken<a class="headerlink" href="#requestaccesstoken" title="Permanent link">#</a></h4>
 <p><strong>POST</strong> <code>/oxauth/token</code></p>
 <p>To obtain an Access Token, an ID Token, and optionally a Refresh Token,
 the RP (Client) sends a Token Request to the Token Endpoint to obtain a
@@ -1944,7 +1922,7 @@ Token Response.</p>
 <h6 id="url">URL<a class="headerlink" href="#url" title="Permanent link">#</a></h6>
 <pre><code>http://gluu.org/oxauth/token
 </code></pre>
-<h6 id="parameters">Parameters<a class="headerlink" href="#parameters" title="Permanent link">#</a></h6>
+<h3 id="parameters">Parameters<a class="headerlink" href="#parameters" title="Permanent link">#</a></h3>
 <ul>
 <li>
 <p>form</p>
@@ -2027,9 +2005,9 @@ pre-registered at the OpenID Provider.</td>
 </table></p>
 </li>
 </ul>
-<h6 id="response">Response<a class="headerlink" href="#response" title="Permanent link">#</a></h6>
+<h4 id="response">Response<a class="headerlink" href="#response" title="Permanent link">#</a></h4>
 <p><a href="#JSON[Response]">JSON[Response]</a></p>
-<h6 id="errors">Errors<a class="headerlink" href="#errors" title="Permanent link">#</a></h6>
+<h4 id="errors">Errors<a class="headerlink" href="#errors" title="Permanent link">#</a></h4>
 <p><table border="1">
     <tr>
         <th>Status Code</th>

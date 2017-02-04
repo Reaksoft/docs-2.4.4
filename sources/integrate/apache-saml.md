@@ -131,5 +131,3 @@ service httpd restart
 ```
 
 * Create a Trust Relationship for this SP in your desired IdP.
-
-

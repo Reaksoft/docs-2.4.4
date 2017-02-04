@@ -986,12 +986,18 @@
     Implement methods
   </a>
   
-</li>
-      
-        <li class="md-nav__item">
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
   <a href="#methods" title="Methods" class="md-nav__link">
     Methods
   </a>
+  
+</li>
+        
+      </ul>
+    </nav>
   
 </li>
       
@@ -1046,6 +1052,13 @@
         <li class="md-nav__item">
   <a href="#testing" title="Testing" class="md-nav__link">
     Testing
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#reverting-authentication-method" title="Reverting Authentication Method" class="md-nav__link">
+    Reverting Authentication Method
   </a>
   
 </li>
@@ -1849,12 +1862,18 @@
     Implement methods
   </a>
   
-</li>
-      
-        <li class="md-nav__item">
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
   <a href="#methods" title="Methods" class="md-nav__link">
     Methods
   </a>
+  
+</li>
+        
+      </ul>
+    </nav>
   
 </li>
       
@@ -1913,6 +1932,13 @@
   
 </li>
       
+        <li class="md-nav__item">
+  <a href="#reverting-authentication-method" title="Reverting Authentication Method" class="md-nav__link">
+    Reverting Authentication Method
+  </a>
+  
+</li>
+      
     </ul>
   
 </nav>
@@ -1928,29 +1954,7 @@
                
               
                 
-                <div class="toc">
-<ul>
-<li><a href="#writing-a-custom-authentication-script">Writing a Custom Authentication Script</a><ul>
-<li><a href="#custom-script-location">Custom Script Location</a></li>
-<li><a href="#suggested-development-environment">Suggested Development Environment</a></li>
-<li><a href="#samples-and-documentation">Samples and Documentation</a></li>
-<li><a href="#implement-methods">Implement methods</a></li>
-<li><a href="#methods">Methods</a></li>
-<li><a href="#saving-the-value-in-ldap-and-passing-values-between-two-steps">Saving the value in LDAP and Passing values between two steps</a><ul>
-<li><a href="#saving-values">Saving Values:</a></li>
-<li><a href="#retriving-and-passing-values-between-the-authentication-steps">Retriving and passing values between the authentication steps:</a></li>
-</ul>
-</li>
-<li><a href="#custom-properties">Custom Properties</a></li>
-<li><a href="#returning-a-message-to-the-user">Returning a message to the user</a></li>
-<li><a href="#adding-libraries">Adding Libraries</a></li>
-<li><a href="#testing">Testing</a></li>
-</ul>
-</li>
-<li><a href="#reverting-authentication-method">Reverting Authentication Method</a></li>
-</ul>
-</div>
-<h1 id="writing-a-custom-authentication-script">Writing a Custom Authentication Script<a class="headerlink" href="#writing-a-custom-authentication-script" title="Permanent link">#</a></h1>
+                <h1 id="writing-a-custom-authentication-script">Writing a Custom Authentication Script<a class="headerlink" href="#writing-a-custom-authentication-script" title="Permanent link">#</a></h1>
 <p>In this document we walk through the steps of writing a script to implement OTP authentication using <a href="http://twilio.com">Twilio</a> to send an SMS code for a two-step out-of-band authentication mechanism.</p>
 <p>At the end of this tutorial you should have a better understanding of how to write your own custom scripts. For reference, you can review the completed Twilio custom authentication script <a href="https://github.com/GluuFederation/oxAuth/blob/master/Server/integrations/twilio_sms/twilio2FA.py">here</a>. </p>
 <p>Fields in Custom Script:</p>
@@ -2044,7 +2048,7 @@ as a template. The <a href="https://github.com/GluuFederation/oxAuth/tree/master
 </ul>
 <p>As shown in the below illustration:</p>
 <p><img alt="image" src="https://github.com/GluuFederation/docs/blob/master/sources/img/auth_article/twilio.png?raw=true" /></p>
-<h2 id="methods">Methods<a class="headerlink" href="#methods" title="Permanent link">#</a></h2>
+<h3 id="methods">Methods<a class="headerlink" href="#methods" title="Permanent link">#</a></h3>
 <p><strong>authenticate():</strong></p>
 <p>The most important method to implement is obviously the <code>authenticate</code> method. This is where the main business logic is located for
 the authentication workflow. It is possible to switch on the step, with the <code>if (step == 1):</code> statement. In oxAuth, there is no
@@ -2131,7 +2135,7 @@ is a good practice to avoid unhandled exceptions. Since during
 debugging, those exception may provide a hint pointing what causes the issue.</p>
 <p>Further logs to debug and monitor the sequence can be done using oxauth_script.log and oxauth.log
 under<code>/opt/tomcat/logs/</code> which is within the chroot.</p>
-<h1 id="reverting-authentication-method">Reverting Authentication Method<a class="headerlink" href="#reverting-authentication-method" title="Permanent link">#</a></h1>
+<h2 id="reverting-authentication-method">Reverting Authentication Method<a class="headerlink" href="#reverting-authentication-method" title="Permanent link">#</a></h2>
 <p>It is not unlikely that one may get locked out of Gluu
 Server, while testing the authentication script.</p>
 <p>If there is any problem in it. In such a case the following

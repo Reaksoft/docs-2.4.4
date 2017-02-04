@@ -1,4 +1,3 @@
-[TOC]
 # Testing Asimba with Gluu Server 2.4.4
 This guide outlines how to test Asimba with Gluu Server 2.4.4
 The authentication flow for this test is as follows
@@ -71,4 +70,3 @@ In this Gluu Server, add the Asimba Server, _https://upgrade.gluu.org_ as a trus
 
 * Configure Relaying Party <br/>
 ![image](https://raw.githubusercontent.com/GluuFederation/docs/master/sources/img/2.4/rp_configuration.png)
-
