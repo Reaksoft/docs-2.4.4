@@ -1,15 +1,18 @@
 site_name: Gluu Docs
 site_description: Documenation for the Gluu Server
-site_favicon: '/img/gluu_favicon.ico'
+site_favicon: 'favicon.ico'
 copyright: Copyright &copy; 2016, Gluu, Inc.
 docs_dir: sources
-repo_url: https://github.com/GluuFederation/docs
-theme: readthedocs
-theme_dir: ./theme/mkdocs/
-
+repo_url: https://github.com/GluuFederation/docs-2.4.4-dev
+#theme: material
+theme_dir: theme/material/
+extra:
+    version: '2.4.4'
+    logo: 'theme/material/gluu.jpg'
 markdown_extensions:
 - admonition
-
+- toc:
+     permalink: '#'
 pages:
 
 - Home: 'index.md'
@@ -31,12 +34,12 @@ pages:
     - 'Setup Script Options': 'deployment/setup_py.md'
     - 'Microsoft Azure Guide': 'deployment/azure.md'
     - 'Linode VM Guide': 'deployment/linode.md'
-- Upgrade/Update Gluu CE:
-    - 'Upgrade from 2.4.x': 'deployment/upgrading.md'
-    - 'Update Gluu CE 2.4.4': 'deployment/updating.md'
-- Cluster Configuration:
-    - 'Requirements: csync2 Installation': 'cluster/csync-installation.md'
-    - 'Clustering with CE': 'cluster/index.md'
+    - Upgrade/Update Gluu CE:
+        - 'Upgrade from 2.4.x': 'deployment/upgrading.md'
+        - 'Update Gluu CE 2.4.4': 'deployment/updating.md'
+    - Cluster Configuration:
+        - 'Requirements: csync2 Installation': 'cluster/csync-installation.md'
+        - 'Clustering with CE': 'cluster/index.md'
 - Gluu Server GUI:
     - 'Configuration': 'oxtrust/configuration.md'
     - 'OxTrust JSON Configuration': 'reference/oxtrust-properties.md'

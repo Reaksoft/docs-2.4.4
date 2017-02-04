@@ -1,5 +1,3 @@
-# Table of Contents 
-
 # Overview
 [OpenID Connect](http://openid.net/connect) ("Connect") is an authentication layer built on OAuth 2.0. 
 It is both a profile and extension of OAuth. The authorization server (or "OpenID Provider" in this case) holds information about a person. OAuth is used to protect this information, enabling a third-party application (client) to access it on behalf of a person. To authorize the release of information, the person is authenticated, and the OpenID Provider provides details to the client about when and how that authentication happened.
@@ -20,7 +18,7 @@ The Gluu Server is an OpenID Provider. The OP holds information about the user a
 
 OpenID Connect defines some optional dynamic features. It makes it possible to discover OpenID Provider metadata, and to register RP client applications on the fly. For example, hypothetically, a person should be able to shop at a new online store, and authenticate at their home domain by providing nothing more then an email address. From the email domain, a discovery request and client registration can happen, and the person can be redirected to authenticate at their home domain.
 
-# OpenID Connect Support in the Gluu Server
+## OpenID Connect Support in the Gluu Server
 The Gluu Server has passed all [conformance profiles for an OpenID Connect Provider](http://openid.net/certification/). As an OpenID Provider, the Gluu Server enables OpenID Connect clients to discover its capabilities, handle both dynamic and static registration of relying parties, respond to relying party requests with authorization codes, access tokens, and user information according to the code, implicit and hybrid flows.
 
 ## OpenID Connect Implicit Flows
@@ -606,7 +604,7 @@ logout uris (not the server).
 
 The Gluu Server is very flexible, and supports both server side session
 management, and stateless session management. For server side
-logout, the domain admin can use [Custom Logout scripts](./custom-script.md#application-session-management). This can be
+logout, the domain admin can use [Custom Logout scripts](../customize/script.md#application-session-management). This can be
 useful to clean up sessions in a legacy SSO system (i.e. SiteMinder), or
 perhaps in a portal.
 
@@ -615,17 +613,34 @@ test the use cases that are important to you, so you will not be
 surprised by the behavior when you put your application into production.
 
 ## OpenID Connect Relying Party Registration
-Relying parties can register with the Gluu Server both statically, by the Gluu Server admin, and dynamically, as specified by OpenID Connect Discovery. To allow dynamic registration, you register an initial OAuth 2.0 client that other relying parties can use to get access tokens for registration. You can also enable OpenID Connect relying parties to register dynamically without having to provide an access token. If dynamic registration is enabled, make sure to limit or throttle registrations as it could be used as a form of DDOS.
+Relying parties can register with the Gluu Server both statically, by the Gluu Server admin, 
+and dynamically, as specified by OpenID Connect Discovery. To allow dynamic registration, 
+you register an initial OAuth 2.0 client that other relying parties can use to get access 
+tokens for registration. You can also enable OpenID Connect relying parties to register 
+dynamically without having to provide an access token. If dynamic registration is enabled, 
+make sure to limit or throttle registrations as it could be used as a form of DDOS.
 
-# Client Code
-Although you can use generic OAuth 2.0 client libraries to call OpenID Connect endpoints, you would have to implement code to take advantage of some of OpenID Connect's features. For example, there is no id_token in OAuth 2.0, so you won't find any code for id_token validation in an OAuth 2.0 library. A good OpenID Connect client will do much of the heavy lifting for you. 
+## Client Code
+Although you can use generic OAuth 2.0 client libraries to call OpenID Connect endpoints, 
+you would have to implement code to take advantage of some of OpenID Connect's features. 
+For example, there is no id_token in OAuth 2.0, so you won't find any code for id_token 
+validation in an OAuth 2.0 library. 
+A good OpenID Connect client will do much of the heavy lifting for you. 
+
 
 ## JavaScript Client
-A JavaScript client is one of the easiest ways to use OpenID Connect, although it's not the most secure. The client we recommend was forked from a sample application written to demonstrate how easy it is to use Connect. Gluu forked the code, and has enhanced it since the time of its original publishing. The project can be found on [Github](https://github.com/GluuFederation/openid-implicit-client).
+A JavaScript client is one of the easiest ways to use OpenID Connect, although 
+it's not the most secure. The client we recommend was forked from a sample application written 
+to demonstrate how easy it is to use Connect. Gluu forked the code, and has enhanced it 
+since the time of its original publishing. 
+The project can be found on [Github](https://github.com/GluuFederation/openid-implicit-client).
 
-It's not a fancy app--it sends the person to the authorization endpoint to be authenticated, and then prints the claims tha are returned in the id_token. Currently the client does not handle dynamic client registration. 
+It's not a fancy app--it sends the person to the authorization endpoint to be authenticated, 
+and then prints the claims tha are returned in the id_token. Currently the client does not 
+handle dynamic client registration. 
 
-You'll have to add the client manually to the Gluu Server via the GUI. When completing the `add client` form, you can use the following configuration:
+You'll have to add the client manually to the Gluu Server via the GUI. 
+When completing the `add client` form, you can use the following configuration:
 
 ```
 Client Name: Implicit Test Client
@@ -641,16 +656,31 @@ Grant Types: implicit
 Once you have registered the client in the Gluu Server, all you need to do is update the `client_id`, `redirect_uri`, and `providerInfo` values in the login page html. Assuming you've checked out the project into a web accessible folder, then navigate to the page and test! 
 
 ## Server-Side libraries
-Many applications are "server-side", meaning the web page displays content but most of the dynamic business logic resides on the web server. The OpenID Foundation maintains a list of client libraries on [their website](http://openid.net/developers/libraries). However, our experience has been that the quality of these libraries varies widely. Some are not well documented, other are not updated frequently, and some do not implement essential security features available in OpenID Connect. In addition, if a wide array of client libraries are used it becomes difficult to monitor and patch security vulnerabilities. For this reason, we recommend that you use our OpenID Connect middleware software called [oxd](http://oxd.gluu.org).  
+Many applications are "server-side", meaning the web page displays content but most 
+of the dynamic business logic resides on the web server. The OpenID Foundation maintains a list 
+of client libraries on [their website](http://openid.net/developers/libraries). 
+However, our experience has been that the quality of these libraries varies widely. 
+Some are not well documented, other are not updated frequently, and some do not implement 
+essential security features available in OpenID Connect. In addition, if a wide array of client 
+libraries are used it becomes difficult to monitor and patch security vulnerabilities. 
+For this reason, we recommend that you use our OpenID Connect middleware software 
+called [oxd](http://oxd.gluu.org).  
 
-oxd is not open source, but it is very reasonably priced at $0.33 per day per server--or ~$10/month. The code is available on [GitHub](https://github.com/gluufederation/oxd), and there are free open source oxd libraries available for PHP, Java, Python, C#, Node, Ruby, Perl and Go. There are also plugins available for several popular open source applications.
+oxd is not open source, but it is very reasonably priced at $0.33 per day per 
+server--or ~$10/month. The code is available on [GitHub](https://github.com/gluufederation/oxd), 
+and there are free open source oxd libraries available for PHP, Java, Python, C#, Node, Ruby, Perl and Go. 
+There are also plugins available for several popular open source applications.
 
 [Watch the oxd demo](http://gluu.co/oxd-demo).
 
 [Get an oxd license for free](http://oxd.gluu.org)
 
 ## Apache HTTPD module
-A popular approach to protecting web applications is to use a web server filter to intercept the request, and make sure the person using that connection is authenticated and authorized. The web server with the filter may directly serve the application, or may proxy to a backend service. Leveraging the web server is a well established pattern, used by older access management platforms like CA Siteminder and Oracle Access Manager. 
+A popular approach to protecting web applications is to use a web server filter to intercept the request, 
+and make sure the person using that connection is authenticated and authorized. 
+The web server with the filter may directly serve the application, or may proxy to a 
+backend service. Leveraging the web server is a well established pattern, used by older 
+access management platforms like CA Siteminder and Oracle Access Manager. 
 
 One of the advantages of the web server filter approach is that the application developer does not need to know that much about the security protocols--if the request makes it through to the application, the person has been authenticated and the request is authorized. Another advantage is that the application security is administered by the system administrators, not by developers. For example, it may be easier to manage and audit apache configuration than to read a bunch of code. 
 
@@ -665,11 +695,11 @@ In 2016, Google released and then donated code to the OpenID Foundation called A
 
 The Gluu Server is the only free open source OpenID Connect Provider that currently supports AppAuth. 
 
-# oxAuth RP
+## oxAuth RP
 
 The Gluu Server ships with an optional OpenID Connect relying party web application, which is handy for testing.  It's called oxauth-rp. During Gluu Server setup, you'll be asked if you want to install it--which you should on a development environment. It will be deployed on `https://<hostname>/oxauth-rp`. Using this tool you can exercise all of the OpenID Connect API's, including discovery, client registration, authorization, token, userinfo, and end_session. 
 
-# oAuth 2 Grants
+## oAuth 2 Grants
 
 There are two additional flows that the Gluu Server supports for user
 and client authentication, which are not part of the OpenID Connect

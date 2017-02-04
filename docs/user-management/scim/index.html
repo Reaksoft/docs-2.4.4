@@ -1,994 +1,1875 @@
+
 <!DOCTYPE html>
-<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
-<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
-<head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  
-  <title>SCIM 2.0 Add/Delete User - Gluu Docs</title>
-  
-
-  <link rel="shortcut icon" href="/img/gluu_favicon.ico">
-  
-
-  
-  <link href='https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700' rel='stylesheet' type='text/css'>
-
-  <link rel="stylesheet" href="../../css/theme.css" type="text/css" />
-  <link rel="stylesheet" href="../../css/theme_extra.css" type="text/css" />
-  <link rel="stylesheet" href="../../css/highlight.css">
-
-  <script src="../../js/jquery-2.1.1.min.js"></script>
-  <script src="../../js/modernizr-2.8.3.min.js"></script>
-  <script type="text/javascript" src="../../js/highlight.pack.js"></script>
-  <script src="../../js/theme.js"></script> 
-
-  
-</head>
-
-<body class="wy-body-for-nav" role="document">
-
-  <div class="wy-grid-for-nav">
-
+<html class="no-js">
+  <head>
     
-    <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
-      <div class="wy-side-nav-search">
-        <a href="../.." class="icon icon-home"> Gluu Docs</a>
-        <div role="search">
-  <form id ="rtd-search-form" class="wy-form" action="../../search.html" method="get">
-    <input type="text" name="q" placeholder="Search docs" />
-  </form>
-</div>
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+        <meta name="description" content="Documenation for the Gluu Server">
+      
+      
+      
+      
+        <link rel="shortcut icon" href="../../favicon.ico">
+      
+      <meta name="generator" content="mkdocs+mkdocs-material#1.0.3">
+    
+    
+      
+        <title>SCIM 2.0 Add/Delete User - Gluu Docs</title>
+      
+    
+    
+      <script src="../../assets/javascripts/modernizr-facb31f4a3.js"></script>
+    
+    
+      
+        
+        
+        
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,400i,700|Roboto+Mono">
+        <style>body,input{font-family:"Roboto","Helvetica Neue",Helvetica,Arial,sans-serif}code,kbd,pre{font-family:"Roboto Mono","Courier New",Courier,monospace}</style>
+      
+      <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    
+    
+      <link rel="stylesheet" href="../../assets/stylesheets/application-f3ab63f78a.css">
+      
+      
+    
+    
+  </head>
+  
+  
+  
+  
+    <body>
+  
+    <svg class="md-svg">
+      <defs>
+        
+        
+          <svg xmlns="http://www.w3.org/2000/svg" width="416" height="448" viewBox="0 0 416 448" id="github"><path fill="currentColor" d="M160 304q0 10-3.125 20.5t-10.75 19T128 352t-18.125-8.5-10.75-19T96 304t3.125-20.5 10.75-19T128 256t18.125 8.5 10.75 19T160 304zm160 0q0 10-3.125 20.5t-10.75 19T288 352t-18.125-8.5-10.75-19T256 304t3.125-20.5 10.75-19T288 256t18.125 8.5 10.75 19T320 304zm40 0q0-30-17.25-51T296 232q-10.25 0-48.75 5.25Q229.5 240 208 240t-39.25-2.75Q130.75 232 120 232q-29.5 0-46.75 21T56 304q0 22 8 38.375t20.25 25.75 30.5 15 35 7.375 37.25 1.75h42q20.5 0 37.25-1.75t35-7.375 30.5-15 20.25-25.75T360 304zm56-44q0 51.75-15.25 82.75-9.5 19.25-26.375 33.25t-35.25 21.5-42.5 11.875-42.875 5.5T212 416q-19.5 0-35.5-.75t-36.875-3.125-38.125-7.5-34.25-12.875T37 371.5t-21.5-28.75Q0 312 0 260q0-59.25 34-99-6.75-20.5-6.75-42.5 0-29 12.75-54.5 27 0 47.5 9.875t47.25 30.875Q171.5 96 212 96q37 0 70 8 26.25-20.5 46.75-30.25T376 64q12.75 25.5 12.75 54.5 0 21.75-6.75 42 34 40 34 99.5z"/></svg>
+        
+      </defs>
+    </svg>
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="drawer">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="search">
+    <label class="md-overlay" data-md-component="overlay" for="drawer"></label>
+    
+      <header class="md-header">
+  <nav class="md-header-nav md-grid">
+    <div class="md-flex">
+	 <div class="md-flex__cell md-flex__cell--shrink">
+        <a href="../.." title="Gluu Docs" class=" md-logo  md-header-nav__button">
+          
+            <img src="../../theme/material/gluu.jpg" width="24" height="24">
+          
+        </a>
       </div>
-
-      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
-        <ul class="current">
-          
-			
-            <li>
-    <li class="toctree-l1 ">
-        <a class="" href="../..">Home</a>
-        
-    </li>
-<li>
-		
-          
-			
-            <li>
-    <ul class="subnav">
-    <li><span>Introduction</span></li>
-
-        
-            
-    <li class="toctree-l1 ">
-        <a class="" href="../../introduction/">Summary</a>
-        
-    </li>
-
-        
-            
-    <li class="toctree-l1 ">
-        <a class="" href="../../introduction/history/">History</a>
-        
-    </li>
-
-        
-            
-    <li class="toctree-l1 ">
-        <a class="" href="../../introduction/design/">Design Goals</a>
-        
-    </li>
-
-        
-            
-    <li class="toctree-l1 ">
-        <a class="" href="../../introduction/architecture/">Gluu Server Architecture</a>
-        
-    </li>
-
-        
-    </ul>
-<li>
-		
-          
-			
-            <li>
-    <ul class="subnav">
-    <li><span>Install Gluu CE</span></li>
-
-        
-            
-    <li class="toctree-l1 ">
-        <a class="" href="../../deployment/">Preparing VM</a>
-        
-    </li>
-
-        
-            
-    <li class="toctree-l1 ">
-        <a class="" href="../../deployment/ubuntu/">Ubuntu 14.04</a>
-        
-    </li>
-
-        
-            
-    <li class="toctree-l1 ">
-        <a class="" href="../../deployment/ubuntu-xenial/">Ubuntu 16.04</a>
-        
-    </li>
-
-        
-            
-    <li class="toctree-l1 ">
-        <a class="" href="../../deployment/centos/">CentOS 6.x</a>
-        
-    </li>
-
-        
-            
-    <li class="toctree-l1 ">
-        <a class="" href="../../deployment/centos7/">CentOS 7.2</a>
-        
-    </li>
-
-        
-            
-    <li class="toctree-l1 ">
-        <a class="" href="../../deployment/rhel/">RHEL 6.x</a>
-        
-    </li>
-
-        
-            
-    <li class="toctree-l1 ">
-        <a class="" href="../../deployment/rhel7/">RHEL 7</a>
-        
-    </li>
-
-        
-            
-    <li class="toctree-l1 ">
-        <a class="" href="../../deployment/debian/">Debian</a>
-        
-    </li>
-
-        
-            
-    <li class="toctree-l1 ">
-        <a class="" href="../../deployment/setup_py/">Setup Script Options</a>
-        
-    </li>
-
-        
-            
-    <li class="toctree-l1 ">
-        <a class="" href="../../deployment/azure/">Microsoft Azure Guide</a>
-        
-    </li>
-
-        
-            
-    <li class="toctree-l1 ">
-        <a class="" href="../../deployment/linode/">Linode VM Guide</a>
-        
-    </li>
-
-        
-    </ul>
-<li>
-		
-          
-			
-            <li>
-    <ul class="subnav">
-    <li><span>Upgrade/Update Gluu CE</span></li>
-
-        
-            
-    <li class="toctree-l1 ">
-        <a class="" href="../../deployment/upgrading/">Upgrade from 2.4.x</a>
-        
-    </li>
-
-        
-            
-    <li class="toctree-l1 ">
-        <a class="" href="../../deployment/updating/">Update Gluu CE 2.4.4</a>
-        
-    </li>
-
-        
-    </ul>
-<li>
-		
-          
-			
-            <li>
-    <ul class="subnav">
-    <li><span>Cluster Configuration</span></li>
-
-        
-            
-    <li class="toctree-l1 ">
-        <a class="" href="../../cluster/csync-installation/">Requirements: csync2 Installation</a>
-        
-    </li>
-
-        
-            
-    <li class="toctree-l1 ">
-        <a class="" href="../../cluster/">Clustering with CE</a>
-        
-    </li>
-
-        
-    </ul>
-<li>
-		
-          
-			
-            <li>
-    <ul class="subnav">
-    <li><span>Gluu Server GUI</span></li>
-
-        
-            
-    <li class="toctree-l1 ">
-        <a class="" href="../../oxtrust/configuration/">Configuration</a>
-        
-    </li>
-
-        
-            
-    <li class="toctree-l1 ">
-        <a class="" href="../../reference/oxtrust-properties/">OxTrust JSON Configuration</a>
-        
-    </li>
-
-        
-            
-    <li class="toctree-l1 ">
-        <a class="" href="../../reference/oxauth-properties/">OxAuth JSON Configuration</a>
-        
-    </li>
-
-        
-            
-    <li class="toctree-l1 ">
-        <a class="" href="../../integrate/outbound-saml/">SAML</a>
-        
-    </li>
-
-        
-            
-    <li class="toctree-l1 ">
-        <a class="" href="../../integrate/openid-connect/">OpenID Connect</a>
-        
-    </li>
-
-        
-            
-    <li class="toctree-l1 ">
-        <a class="" href="../../integrate/uma/">UMA</a>
-        
-    </li>
-
-        
-            
-    <li class="toctree-l1 ">
-        <a class="" href="../../oxtrust/users/">Users</a>
-        
-    </li>
-
-        
-            
-    <li class="toctree-l1 ">
-        <a class="" href="../../oxtrust/personal/">Personal</a>
-        
-    </li>
-
-        
-    </ul>
-<li>
-		
-          
-			
-            <li>
-    <ul class="subnav">
-    <li><span>User Managment</span></li>
-
-        
-            
-    <li class="toctree-l1 ">
-        <a class="" href="../../cache-refresh/">Sync LDAP/AD</a>
-        
-    </li>
-
-        
-            
-    <li class="toctree-l1 ">
-        <a class="" href="../xlsfile/">Import XLS File</a>
-        
-    </li>
-
-        
-            
-    <li class="toctree-l1 ">
-        <a class="" href="../../cache-refresh/register/">Register Users</a>
-        
-    </li>
-
-        
-            
-    <li class="toctree-l1 ">
-        <a class="" href="../../cache-refresh/reset-password/">Reset User Password</a>
-        
-    </li>
-
-        
-            
-    <li class="toctree-l1 current">
-        <a class="current" href="./">SCIM 2.0 Add/Delete User</a>
-        
-            <ul>
-            
-                <li class="toctree-l3"><a href="#scim-20-user-adddelete">SCIM 2.0 User Add/Delete</a></li>
-                
-                    <li><a class="toctree-l4" href="#add-user">Add User</a></li>
-                
-                    <li><a class="toctree-l4" href="#delete-user">Delete User</a></li>
-                
-                    <li><a class="toctree-l4" href="#user-extensions">User Extensions</a></li>
-                
-            
-            </ul>
-        
-    </li>
-
-        
-    </ul>
-<li>
-		
-          
-			
-            <li>
-    <ul class="subnav">
-    <li><span>Authentication</span></li>
-
-        
-            
-    <li class="toctree-l1 ">
-        <a class="" href="../../multi-factor/intro/">Intro</a>
-        
-    </li>
-
-        
-            
-    <li class="toctree-l1 ">
-        <a class="" href="../../multi-factor/duo/">DUO</a>
-        
-    </li>
-
-        
-            
-    <li class="toctree-l1 ">
-        <a class="" href="../../multi-factor/u2f/">U2F</a>
-        
-    </li>
-
-        
-            
-    <li class="toctree-l1 ">
-        <a class="" href="../../multi-factor/oxpush2/">oxPush2</a>
-        
-    </li>
-
-        
-            
-    <li class="toctree-l1 ">
-        <a class="" href="../../multi-factor/wikid/">Wikid</a>
-        
-    </li>
-
-        
-            
-    <li class="toctree-l1 ">
-        <a class="" href="../../multi-factor/cert/">Certificate</a>
-        
-    </li>
-
-        
-            
-    <li class="toctree-l1 ">
-        <a class="" href="../../customize/social-login-google/">Google Authentication</a>
-        
-    </li>
-
-        
-    </ul>
-<li>
-		
-          
-			
-            <li>
-    <ul class="subnav">
-    <li><span>FAQ</span></li>
-
-        
-            
-    <li class="toctree-l1 ">
-        <a class="" href="../../faq/general/">General</a>
-        
-    </li>
-
-        
-            
-    <li class="toctree-l1 ">
-        <a class="" href="../../faq/troubleshooting/">Troubleshooting</a>
-        
-    </li>
-
-        
-    </ul>
-<li>
-		
-          
-			
-            <li>
-    <ul class="subnav">
-    <li><span>How To</span></li>
-
-        
-            
-    <li class="toctree-l1 ">
-        <a class="" href="../../how-to/automate-schema/">Automate Custom Schema</a>
-        
-    </li>
-
-        
-            
-    <li class="toctree-l1 ">
-        <a class="" href="../../integrate/scimuma-howto/">Protect SCIM endpoints with UMA</a>
-        
-    </li>
-
-        
-            
-    <li class="toctree-l1 ">
-        <a class="" href="../lock-user/">Lock User on Failed Attempt</a>
-        
-    </li>
-
-        
-            
-    <li class="toctree-l1 ">
-        <a class="" href="../../how-to/uma-demo/">Configure UMA</a>
-        
-    </li>
-
-        
-            
-    <li class="toctree-l1 ">
-        <a class="" href="../../how-to/update-certificate/">Update Gluu Server Certificates</a>
-        
-    </li>
-
-        
-            
-    <li class="toctree-l1 ">
-        <a class="" href="../../how-to/saml_proxy_end_to_end/">Inbound SAML End to End Testing</a>
-        
-    </li>
-
-        
-            
-    <li class="toctree-l1 ">
-        <a class="" href="../../reference/logout/">Logout</a>
-        
-    </li>
-
-        
-            
-    <li class="toctree-l1 ">
-        <a class="" href="../../customize/auth-script/">Write a Custom OTP Authentication Script using Twilio</a>
-        
-    </li>
-
-        
-            
-    <li class="toctree-l1 ">
-        <a class="" href="../../how-to/find-gluu-server-version/">Find which version of Gluu you are using</a>
-        
-    </li>
-
-        
-            
-    <li class="toctree-l1 ">
-        <a class="" href="../../how-to/backup/">Backup Gluu CE Server</a>
-        
-    </li>
-
-        
-    </ul>
-<li>
-		
-          
-			
-            <li>
-    <ul class="subnav">
-    <li><span>Customize Gluu Server</span></li>
-
-        
-            
-    <li class="toctree-l1 ">
-        <a class="" href="../../customize/design/">Design Customization</a>
-        
-    </li>
-
-        
-            
-    <li class="toctree-l1 ">
-        <a class="" href="../../customize/script/">Behaviour Customization</a>
-        
-    </li>
-
-        
-            
-    <li class="toctree-l1 ">
-        <a class="" href="../../customize/attributes/">Custom Attributes</a>
-        
-    </li>
-
-        
-    </ul>
-<li>
-		
-          
-			
-            <li>
-    <ul class="subnav">
-    <li><span>Supported Protocols</span></li>
-
-        
-            
-    <li class="toctree-l1 ">
-        <a class="" href="../../integrate/outbound-saml/">Outbound SAML</a>
-        
-    </li>
-
-        
-            
-    <li class="toctree-l1 ">
-        <a class="" href="../../integrate/inbound-saml/">Inbound SAML</a>
-        
-    </li>
-
-        
-            
-    <li class="toctree-l1 ">
-        <a class="" href="../../integrate/openid-connect/">OpenID Connect</a>
-        
-    </li>
-
-        
-            
-    <li class="toctree-l1 ">
-        <a class="" href="../../integrate/uma/">UMA</a>
-        
-    </li>
-
-        
-            
-    <li class="toctree-l1 ">
-        <a class="" href="../../integrate/oauth2grants/">OAuth2</a>
-        
-    </li>
-
-        
-            
-    <li class="toctree-l1 ">
-        <a class="" href="../../api/scim-1.1/">SCIM 1.1</a>
-        
-    </li>
-
-        
-            
-    <li class="toctree-l1 ">
-        <a class="" href="../../api/scim-2.0/">SCIM 2.0</a>
-        
-    </li>
-
-        
-    </ul>
-<li>
-		
-          
-			
-            <li>
-    <ul class="subnav">
-    <li><span>SP / RP Integration Modules</span></li>
-
-        
-            
-    <li class="toctree-l1 ">
-        <a class="" href="../../integrate/oxd/">oxd OAuth2 Client Software </a>
-        
-    </li>
-
-        
-            
-    <li class="toctree-l1 ">
-        <a class="" href="../../integrate/ubuntu-installation/">OpenID Connect RP in Ubuntu</a>
-        
-    </li>
-
-        
-            
-    <li class="toctree-l1 ">
-        <a class="" href="../../integrate/centos-installation/">OpenID Connect RP in CentOS</a>
-        
-    </li>
-
-        
-            
-    <li class="toctree-l1 ">
-        <a class="" href="../../integrate/oxray/">OpenID Connect Liferay Plugin</a>
-        
-    </li>
-
-        
-            
-    <li class="toctree-l1 ">
-        <a class="" href="../../integrate/java-connect/">OpenID Connect Java Authentication</a>
-        
-    </li>
-
-        
-            
-    <li class="toctree-l1 ">
-        <a class="" href="../../integrate/apache-saml/">SAML SP in CentOS</a>
-        
-    </li>
-
-        
-            
-    <li class="toctree-l1 ">
-        <a class="" href="../../integrate/ubuntu-shib-apache/">SAML SP in Ubuntu</a>
-        
-    </li>
-
-        
-            
-    <li class="toctree-l1 ">
-        <a class="" href="../../integrate/iis-saml/">SAML SP in IIS7</a>
-        
-    </li>
-
-        
-            
-    <li class="toctree-l1 ">
-        <a class="" href="../../integrate/saml-windows/">SAML SP in Windows</a>
-        
-    </li>
-
-        
-    </ul>
-<li>
-		
-          
-			
-            <li>
-    <ul class="subnav">
-    <li><span>Integration Guides</span></li>
-
-        
-            
-    <li class="toctree-l1 ">
-        <a class="" href="../../integrate/google-saml/">Google SSO</a>
-        
-    </li>
-
-        
-            
-    <li class="toctree-l1 ">
-        <a class="" href="../../integrate/office365/">Office 365 SSO</a>
-        
-    </li>
-
-        
-            
-    <li class="toctree-l1 ">
-        <a class="" href="../../integrate/hobsons-saml/">Hobsons Education Solution SSO</a>
-        
-    </li>
-
-        
-            
-    <li class="toctree-l1 ">
-        <a class="" href="../../integrate/salesforce-sso/">Salesforce SSO</a>
-        
-    </li>
-
-        
-            
-    <li class="toctree-l1 ">
-        <a class="" href="../../integrate/dropbox/">Dropbox SSO</a>
-        
-    </li>
-
-        
-            
-    <li class="toctree-l1 ">
-        <a class="" href="../../integrate/test-shib2/">TestShib2 SSO</a>
-        
-    </li>
-
-        
-            
-    <li class="toctree-l1 ">
-        <a class="" href="../../integrate/asimba/">Asimba & Gluu CE</a>
-        
-    </li>
-
-        
-    </ul>
-<li>
-		
-          
-			
-            <li>
-    <ul class="subnav">
-    <li><span>Fine Tuning and Benchmarking</span></li>
-
-        
-            
-    <li class="toctree-l1 ">
-        <a class="" href="../../fine-tuning/">Tuning LDAP, Tomcat</a>
-        
-    </li>
-
-        
-    </ul>
-<li>
-		
-          
-			
-            <li>
-    <ul class="subnav">
-    <li><span>Reference</span></li>
-
-        
-            
-    <li class="toctree-l1 ">
-        <a class="" href="../../reference/policy/">Gluu Policy</a>
-        
-    </li>
-
-        
-            
-    <li class="toctree-l1 ">
-        <a class="" href="../../reference/config/">Configurations</a>
-        
-    </li>
-
-        
-            
-    <li class="toctree-l1 ">
-        <a class="" href="../../reference/certificates/">Certificates</a>
-        
-    </li>
-
-        
-            
-    <li class="toctree-l1 ">
-        <a class="" href="../../reference/ldap/">LDAP</a>
-        
-    </li>
-
-        
-            
-    <li class="toctree-l1 ">
-        <a class="" href="../../reference/schema/">Schema</a>
-        
-    </li>
-
-        
-            
-    <li class="toctree-l1 ">
-        <a class="" href="../../reference/schema/">LDAP Schema</a>
-        
-    </li>
-
-        
-            
-    <li class="toctree-l1 ">
-        <a class="" href="../../reference/logout/">Logout</a>
-        
-    </li>
-
-        
-            
-    <li class="toctree-l1 ">
-        <a class="" href="../../reference/oxtrust-properties/">oxTrust Properties File</a>
-        
-    </li>
-
-        
-            
-    <li class="toctree-l1 ">
-        <a class="" href="../../reference/oxauth-properties/">oxAuth Properties File</a>
-        
-    </li>
-
-        
-            
-    <li class="toctree-l1 ">
-        <a class="" href="../../reference/logs/">Logs</a>
-        
-    </li>
-
-        
-    </ul>
-<li>
-		
-          
-			
-            <li>
-    <ul class="subnav">
-    <li><span>Gluu Server API</span></li>
-
-        
-            
-    <li class="toctree-l1 ">
-        <a class="" href="../../api/oic-authorization/">OpenID Connect Authorization Endpoint</a>
-        
-    </li>
-
-        
-            
-    <li class="toctree-l1 ">
-        <a class="" href="../../api/oic-token/">OpenID Connect Token Endpoint</a>
-        
-    </li>
-
-        
-            
-    <li class="toctree-l1 ">
-        <a class="" href="../../api/oic-userinfo/">OpenID Connect UserInfo Endpoint</a>
-        
-    </li>
-
-        
-            
-    <li class="toctree-l1 ">
-        <a class="" href="../../api/oic-register-client/">OpenID Connect Client Registration Endpoint</a>
-        
-    </li>
-
-        
-            
-    <li class="toctree-l1 ">
-        <a class="" href="../../api/oic-end-session/">OpenID Connect End Session Endpoint</a>
-        
-    </li>
-
-        
-            
-    <li class="toctree-l1 ">
-        <a class="" href="../../api/oic-clientinfo/">OpenID Connect Client Info Endpoint</a>
-        
-    </li>
-
-        
-            
-    <li class="toctree-l1 ">
-        <a class="" href="../../api/uma-discovery/">UMA Discovery Endpoint</a>
-        
-    </li>
-
-        
-            
-    <li class="toctree-l1 ">
-        <a class="" href="../../api/uma-authorization-endpoint/">UMA Authorization Endpoint</a>
-        
-    </li>
-
-        
-            
-    <li class="toctree-l1 ">
-        <a class="" href="../../api/uma-resource-registration/">UMA Resource Registration Endpoint</a>
-        
-    </li>
-
-        
-            
-    <li class="toctree-l1 ">
-        <a class="" href="../../api/uma-permission-registration/">UMA Permission Registration Endpoint</a>
-        
-    </li>
-
-        
-            
-    <li class="toctree-l1 ">
-        <a class="" href="../../api/uma-create-rpt/">UMA CreateRPT Endpoint</a>
-        
-    </li>
-
-        
-            
-    <li class="toctree-l1 ">
-        <a class="" href="../../api/uma-rpt-status/">UMA RPT Introspection Endpoint</a>
-        
-    </li>
-
-        
-            
-    <li class="toctree-l1 ">
-        <a class="" href="../../api/id-generation/">Custom ID Generation API</a>
-        
-    </li>
-
-        
-            
-    <li class="toctree-l1 ">
-        <a class="" href="../../api/scim-1.1/">SCIM 1.1</a>
-        
-    </li>
-
-        
-            
-    <li class="toctree-l1 ">
-        <a class="" href="../../api/scim-2.0/">SCIM 2.0</a>
-        
-    </li>
-
-        
-    </ul>
-<li>
-		
-          
-        </ul>
+      <div class="md-flex__cell md-flex__cell--shrink">
+        <label class="md-icon md-icon--menu md-header-nav__button" for="drawer"></label>
       </div>
-      &nbsp;
-    </nav>
-
-    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
-
-      
-      <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
-        <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
-        <a href="../..">Gluu Docs</a>
-      </nav>
-
-      
-      <div class="wy-nav-content">
-        <div class="rst-content">
-          <div role="navigation" aria-label="breadcrumbs navigation">
-  <ul class="wy-breadcrumbs">
-    <li><a href="../..">Docs</a> &raquo;</li>
-    
-      
-        
-          <li>User Managment &raquo;</li>	 
-        
-      
-    
-    <li>SCIM 2.0 Add/Delete User</li>
-    <li class="wy-breadcrumbs-aside">
-           
-      
-        
-          <a href="https://github.com/GluuFederation/docs/blob/master/sources/user-management\scim.md" class="icon icon-github"> Edit on GitHub</a>
-      
-        
-      
-    </li>
-  </ul>
-  <hr/>
-</div>
-          <div role="main">
-            <div class="section">
+      <div class="md-flex__cell md-flex__cell--stretch">
+        <span class="md-flex__ellipsis md-header-nav__title">
+          
+            
               
+                <span class="md-header-nav__parent">
+                  User Managment
+                </span>
+              
+            
+            SCIM 2.0 Add/Delete User
+          
+        </span>
+      </div>
+      <div class="md-flex__cell md-flex__cell--shrink">
+        
+          <label class="md-icon md-icon--search md-header-nav__button" for="search"></label>
+          
+<div class="md-search" data-md-component="search">
+  <div class="md-search__overlay"></div>
+  <div class="md-search__inner">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" placeholder="Search" accesskey="s" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false">
+      <label class="md-icon md-search__icon" for="search"></label>
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="result"></div>
+      </div>
+    </div>
+  </div>
+</div>
+        
+      </div>
+      <div class="md-flex__cell md-flex__cell--shrink">
+          <div class="md-header-nav__source">
+            
+              
+
+
+  
+
+
+  <a href="https://github.com/GluuFederation/docs-2.4.4-dev" title="Go to repository" class="md-source" data-md-source="github">
+    
+      <div class="md-source__icon">
+        <svg viewBox="0 0 24 24" width="24" height="24">
+          <use xlink:href="#github" width="24" height="24"></use>
+        </svg>
+      </div>
+    
+    <div class="md-source__repository">
+      GitHub
+    </div>
+  </a>
+
+            
+          </div>
+      </div>
+    </div>
+  </nav>
+
+<nav class="md-secondary-header-nav md-grid" style="
+    height: 45px;
+    background: transparent;
+	
+">
+<div class="md-flex-secondary" style="
+    display: table;
+    padding: 10px;
+">
+<select id="versions" onchange="window.location.href=this.value;" style="
+    position: relative;
+    display: block;
+    /*min-width: 100%;*/
+    width: 120%; 
+    height: 25px;
+    padding: 5px 10px 5px 5px;
+    color: #555555;
+    border: none;
+    background: transparent;
+    outline: none;
+    -webkit-appearance: none;
+    z-index: 99;
+    cursor: pointer;
+    font-size: 10px;
+    margin-bottom: 10px;
+    border: 1px solid black;
+">
+  <option value="/docs-3">Latest</option>
+  <option value="/docs-3/2.4.4">2.4.4.2</option>
+    </select> 
+
+ </div>
+   </nav>
+</header>
+    
+    <div class="md-container">
+      <main class="md-main">
+        <div class="md-main__inner md-grid" data-md-component="container">
+          
+            
+              <div class="md-sidebar md-sidebar--primary" data-md-component="navigation">
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    <nav class="md-nav md-nav--primary">
+  <label class="md-nav__title md-nav__title--site" for="drawer">
+    <i class=" md-logo  md-nav__button">
+      
+        <img src="../../theme/material/gluu.jpg">
+      
+    </i>
+    Gluu Docs
+  </label>
+  
+    <div class="md-nav__source">
+      
+
+
+  
+
+
+  <a href="https://github.com/GluuFederation/docs-2.4.4-dev" title="Go to repository" class="md-source" data-md-source="github">
+    
+      <div class="md-source__icon">
+        <svg viewBox="0 0 24 24" width="24" height="24">
+          <use xlink:href="#github" width="24" height="24"></use>
+        </svg>
+      </div>
+    
+    <div class="md-source__repository">
+      GitHub
+    </div>
+  </a>
+
+    </div>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  <li class="md-nav__item">
+    
+      <a href="../.." title="Home" class="md-nav__link">
+        Home
+      </a>
+    
+  </li>
+
+    
+      
+      
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-2" type="checkbox" id="nav-2">
+    
+    <label class="md-nav__link" for="nav-2">
+      Introduction
+    </label>
+    <nav class="md-nav" data-md-component="collapsible">
+      <label class="md-nav__title" for="nav-2">
+        Introduction
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+  <li class="md-nav__item">
+    
+      <a href="../../introduction/" title="Summary" class="md-nav__link">
+        Summary
+      </a>
+    
+  </li>
+
+        
+          
+          
+  <li class="md-nav__item">
+    
+      <a href="../../introduction/history/" title="History" class="md-nav__link">
+        History
+      </a>
+    
+  </li>
+
+        
+          
+          
+  <li class="md-nav__item">
+    
+      <a href="../../introduction/design/" title="Design Goals" class="md-nav__link">
+        Design Goals
+      </a>
+    
+  </li>
+
+        
+          
+          
+  <li class="md-nav__item">
+    
+      <a href="../../introduction/architecture/" title="Gluu Server Architecture" class="md-nav__link">
+        Gluu Server Architecture
+      </a>
+    
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+      
+      
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-3" type="checkbox" id="nav-3">
+    
+    <label class="md-nav__link" for="nav-3">
+      Install Gluu CE
+    </label>
+    <nav class="md-nav" data-md-component="collapsible">
+      <label class="md-nav__title" for="nav-3">
+        Install Gluu CE
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+  <li class="md-nav__item">
+    
+      <a href="../../deployment/" title="Preparing VM" class="md-nav__link">
+        Preparing VM
+      </a>
+    
+  </li>
+
+        
+          
+          
+  <li class="md-nav__item">
+    
+      <a href="../../deployment/ubuntu/" title="Ubuntu 14.04" class="md-nav__link">
+        Ubuntu 14.04
+      </a>
+    
+  </li>
+
+        
+          
+          
+  <li class="md-nav__item">
+    
+      <a href="../../deployment/ubuntu-xenial/" title="Ubuntu 16.04" class="md-nav__link">
+        Ubuntu 16.04
+      </a>
+    
+  </li>
+
+        
+          
+          
+  <li class="md-nav__item">
+    
+      <a href="../../deployment/centos/" title="CentOS 6.x" class="md-nav__link">
+        CentOS 6.x
+      </a>
+    
+  </li>
+
+        
+          
+          
+  <li class="md-nav__item">
+    
+      <a href="../../deployment/centos7/" title="CentOS 7.2" class="md-nav__link">
+        CentOS 7.2
+      </a>
+    
+  </li>
+
+        
+          
+          
+  <li class="md-nav__item">
+    
+      <a href="../../deployment/rhel/" title="RHEL 6.x" class="md-nav__link">
+        RHEL 6.x
+      </a>
+    
+  </li>
+
+        
+          
+          
+  <li class="md-nav__item">
+    
+      <a href="../../deployment/rhel7/" title="RHEL 7" class="md-nav__link">
+        RHEL 7
+      </a>
+    
+  </li>
+
+        
+          
+          
+  <li class="md-nav__item">
+    
+      <a href="../../deployment/debian/" title="Debian" class="md-nav__link">
+        Debian
+      </a>
+    
+  </li>
+
+        
+          
+          
+  <li class="md-nav__item">
+    
+      <a href="../../deployment/setup_py/" title="Setup Script Options" class="md-nav__link">
+        Setup Script Options
+      </a>
+    
+  </li>
+
+        
+          
+          
+  <li class="md-nav__item">
+    
+      <a href="../../deployment/azure/" title="Microsoft Azure Guide" class="md-nav__link">
+        Microsoft Azure Guide
+      </a>
+    
+  </li>
+
+        
+          
+          
+  <li class="md-nav__item">
+    
+      <a href="../../deployment/linode/" title="Linode VM Guide" class="md-nav__link">
+        Linode VM Guide
+      </a>
+    
+  </li>
+
+        
+          
+          
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-3-12" type="checkbox" id="nav-3-12">
+    
+    <label class="md-nav__link" for="nav-3-12">
+      Upgrade/Update Gluu CE
+    </label>
+    <nav class="md-nav" data-md-component="collapsible">
+      <label class="md-nav__title" for="nav-3-12">
+        Upgrade/Update Gluu CE
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+  <li class="md-nav__item">
+    
+      <a href="../../deployment/upgrading/" title="Upgrade from 2.4.x" class="md-nav__link">
+        Upgrade from 2.4.x
+      </a>
+    
+  </li>
+
+        
+          
+          
+  <li class="md-nav__item">
+    
+      <a href="../../deployment/updating/" title="Update Gluu CE 2.4.4" class="md-nav__link">
+        Update Gluu CE 2.4.4
+      </a>
+    
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+        
+          
+          
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-3-13" type="checkbox" id="nav-3-13">
+    
+    <label class="md-nav__link" for="nav-3-13">
+      Cluster Configuration
+    </label>
+    <nav class="md-nav" data-md-component="collapsible">
+      <label class="md-nav__title" for="nav-3-13">
+        Cluster Configuration
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+  <li class="md-nav__item">
+    
+      <a href="../../cluster/csync-installation/" title="Requirements: csync2 Installation" class="md-nav__link">
+        Requirements: csync2 Installation
+      </a>
+    
+  </li>
+
+        
+          
+          
+  <li class="md-nav__item">
+    
+      <a href="../../cluster/" title="Clustering with CE" class="md-nav__link">
+        Clustering with CE
+      </a>
+    
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+      
+      
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-4" type="checkbox" id="nav-4">
+    
+    <label class="md-nav__link" for="nav-4">
+      Gluu Server GUI
+    </label>
+    <nav class="md-nav" data-md-component="collapsible">
+      <label class="md-nav__title" for="nav-4">
+        Gluu Server GUI
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+  <li class="md-nav__item">
+    
+      <a href="../../oxtrust/configuration/" title="Configuration" class="md-nav__link">
+        Configuration
+      </a>
+    
+  </li>
+
+        
+          
+          
+  <li class="md-nav__item">
+    
+      <a href="../../reference/oxtrust-properties/" title="OxTrust JSON Configuration" class="md-nav__link">
+        OxTrust JSON Configuration
+      </a>
+    
+  </li>
+
+        
+          
+          
+  <li class="md-nav__item">
+    
+      <a href="../../reference/oxauth-properties/" title="OxAuth JSON Configuration" class="md-nav__link">
+        OxAuth JSON Configuration
+      </a>
+    
+  </li>
+
+        
+          
+          
+  <li class="md-nav__item">
+    
+      <a href="../../integrate/outbound-saml/" title="SAML" class="md-nav__link">
+        SAML
+      </a>
+    
+  </li>
+
+        
+          
+          
+  <li class="md-nav__item">
+    
+      <a href="../../integrate/openid-connect/" title="OpenID Connect" class="md-nav__link">
+        OpenID Connect
+      </a>
+    
+  </li>
+
+        
+          
+          
+  <li class="md-nav__item">
+    
+      <a href="../../integrate/uma/" title="UMA" class="md-nav__link">
+        UMA
+      </a>
+    
+  </li>
+
+        
+          
+          
+  <li class="md-nav__item">
+    
+      <a href="../../oxtrust/users/" title="Users" class="md-nav__link">
+        Users
+      </a>
+    
+  </li>
+
+        
+          
+          
+  <li class="md-nav__item">
+    
+      <a href="../../oxtrust/personal/" title="Personal" class="md-nav__link">
+        Personal
+      </a>
+    
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+      
+      
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-5" type="checkbox" id="nav-5" checked>
+    
+    <label class="md-nav__link" for="nav-5">
+      User Managment
+    </label>
+    <nav class="md-nav" data-md-component="collapsible">
+      <label class="md-nav__title" for="nav-5">
+        User Managment
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+  <li class="md-nav__item">
+    
+      <a href="../../cache-refresh/" title="Sync LDAP/AD" class="md-nav__link">
+        Sync LDAP/AD
+      </a>
+    
+  </li>
+
+        
+          
+          
+  <li class="md-nav__item">
+    
+      <a href="../xlsfile/" title="Import XLS File" class="md-nav__link">
+        Import XLS File
+      </a>
+    
+  </li>
+
+        
+          
+          
+  <li class="md-nav__item">
+    
+      <a href="../../cache-refresh/register/" title="Register Users" class="md-nav__link">
+        Register Users
+      </a>
+    
+  </li>
+
+        
+          
+          
+  <li class="md-nav__item">
+    
+      <a href="../../cache-refresh/reset-password/" title="Reset User Password" class="md-nav__link">
+        Reset User Password
+      </a>
+    
+  </li>
+
+        
+          
+          
+  <li class="md-nav__item">
+    
+    <input class="md-toggle md-nav__toggle" data-md-toggle="toc" type="checkbox" id="toc">
+    
+      
+    
+    
+      <label class="md-nav__link md-nav__link--active" for="toc">
+        SCIM 2.0 Add/Delete User
+      </label>
+    
+    <a href="./" title="SCIM 2.0 Add/Delete User" class="md-nav__link md-nav__link--active">
+      SCIM 2.0 Add/Delete User
+    </a>
+    
+      
+<nav class="md-nav md-nav--secondary">
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="toc">Table of contents</label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#add-user" title="Add User" class="md-nav__link">
+    Add User
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#required-parameters" title="Required Parameters" class="md-nav__link">
+    Required Parameters
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#json-string" title="JSON String" class="md-nav__link">
+    JSON String
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#user-object" title="User Object" class="md-nav__link">
+    User Object
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#delete-user" title="Delete User" class="md-nav__link">
+    Delete User
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#required-parameter" title="Required Parameter" class="md-nav__link">
+    Required Parameter
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#user-extensions" title="User Extensions" class="md-nav__link">
+    User Extensions
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+    
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+      
+      
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-6" type="checkbox" id="nav-6">
+    
+    <label class="md-nav__link" for="nav-6">
+      Authentication
+    </label>
+    <nav class="md-nav" data-md-component="collapsible">
+      <label class="md-nav__title" for="nav-6">
+        Authentication
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+  <li class="md-nav__item">
+    
+      <a href="../../multi-factor/intro/" title="Intro" class="md-nav__link">
+        Intro
+      </a>
+    
+  </li>
+
+        
+          
+          
+  <li class="md-nav__item">
+    
+      <a href="../../multi-factor/duo/" title="DUO" class="md-nav__link">
+        DUO
+      </a>
+    
+  </li>
+
+        
+          
+          
+  <li class="md-nav__item">
+    
+      <a href="../../multi-factor/u2f/" title="U2F" class="md-nav__link">
+        U2F
+      </a>
+    
+  </li>
+
+        
+          
+          
+  <li class="md-nav__item">
+    
+      <a href="../../multi-factor/oxpush2/" title="oxPush2" class="md-nav__link">
+        oxPush2
+      </a>
+    
+  </li>
+
+        
+          
+          
+  <li class="md-nav__item">
+    
+      <a href="../../multi-factor/wikid/" title="Wikid" class="md-nav__link">
+        Wikid
+      </a>
+    
+  </li>
+
+        
+          
+          
+  <li class="md-nav__item">
+    
+      <a href="../../multi-factor/cert/" title="Certificate" class="md-nav__link">
+        Certificate
+      </a>
+    
+  </li>
+
+        
+          
+          
+  <li class="md-nav__item">
+    
+      <a href="../../customize/social-login-google/" title="Google Authentication" class="md-nav__link">
+        Google Authentication
+      </a>
+    
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+      
+      
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-7" type="checkbox" id="nav-7">
+    
+    <label class="md-nav__link" for="nav-7">
+      FAQ
+    </label>
+    <nav class="md-nav" data-md-component="collapsible">
+      <label class="md-nav__title" for="nav-7">
+        FAQ
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+  <li class="md-nav__item">
+    
+      <a href="../../faq/general/" title="General" class="md-nav__link">
+        General
+      </a>
+    
+  </li>
+
+        
+          
+          
+  <li class="md-nav__item">
+    
+      <a href="../../faq/troubleshooting/" title="Troubleshooting" class="md-nav__link">
+        Troubleshooting
+      </a>
+    
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+      
+      
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-8" type="checkbox" id="nav-8">
+    
+    <label class="md-nav__link" for="nav-8">
+      How To
+    </label>
+    <nav class="md-nav" data-md-component="collapsible">
+      <label class="md-nav__title" for="nav-8">
+        How To
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+  <li class="md-nav__item">
+    
+      <a href="../../how-to/automate-schema/" title="Automate Custom Schema" class="md-nav__link">
+        Automate Custom Schema
+      </a>
+    
+  </li>
+
+        
+          
+          
+  <li class="md-nav__item">
+    
+      <a href="../../integrate/scimuma-howto/" title="Protect SCIM endpoints with UMA" class="md-nav__link">
+        Protect SCIM endpoints with UMA
+      </a>
+    
+  </li>
+
+        
+          
+          
+  <li class="md-nav__item">
+    
+      <a href="../lock-user/" title="Lock User on Failed Attempt" class="md-nav__link">
+        Lock User on Failed Attempt
+      </a>
+    
+  </li>
+
+        
+          
+          
+  <li class="md-nav__item">
+    
+      <a href="../../how-to/uma-demo/" title="Configure UMA" class="md-nav__link">
+        Configure UMA
+      </a>
+    
+  </li>
+
+        
+          
+          
+  <li class="md-nav__item">
+    
+      <a href="../../how-to/update-certificate/" title="Update Gluu Server Certificates" class="md-nav__link">
+        Update Gluu Server Certificates
+      </a>
+    
+  </li>
+
+        
+          
+          
+  <li class="md-nav__item">
+    
+      <a href="../../how-to/saml_proxy_end_to_end/" title="Inbound SAML End to End Testing" class="md-nav__link">
+        Inbound SAML End to End Testing
+      </a>
+    
+  </li>
+
+        
+          
+          
+  <li class="md-nav__item">
+    
+      <a href="../../reference/logout/" title="Logout" class="md-nav__link">
+        Logout
+      </a>
+    
+  </li>
+
+        
+          
+          
+  <li class="md-nav__item">
+    
+      <a href="../../customize/auth-script/" title="Write a Custom OTP Authentication Script using Twilio" class="md-nav__link">
+        Write a Custom OTP Authentication Script using Twilio
+      </a>
+    
+  </li>
+
+        
+          
+          
+  <li class="md-nav__item">
+    
+      <a href="../../how-to/find-gluu-server-version/" title="Find which version of Gluu you are using" class="md-nav__link">
+        Find which version of Gluu you are using
+      </a>
+    
+  </li>
+
+        
+          
+          
+  <li class="md-nav__item">
+    
+      <a href="../../how-to/backup/" title="Backup Gluu CE Server" class="md-nav__link">
+        Backup Gluu CE Server
+      </a>
+    
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+      
+      
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-9" type="checkbox" id="nav-9">
+    
+    <label class="md-nav__link" for="nav-9">
+      Customize Gluu Server
+    </label>
+    <nav class="md-nav" data-md-component="collapsible">
+      <label class="md-nav__title" for="nav-9">
+        Customize Gluu Server
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+  <li class="md-nav__item">
+    
+      <a href="../../customize/design/" title="Design Customization" class="md-nav__link">
+        Design Customization
+      </a>
+    
+  </li>
+
+        
+          
+          
+  <li class="md-nav__item">
+    
+      <a href="../../customize/script/" title="Behaviour Customization" class="md-nav__link">
+        Behaviour Customization
+      </a>
+    
+  </li>
+
+        
+          
+          
+  <li class="md-nav__item">
+    
+      <a href="../../customize/attributes/" title="Custom Attributes" class="md-nav__link">
+        Custom Attributes
+      </a>
+    
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+      
+      
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-10" type="checkbox" id="nav-10">
+    
+    <label class="md-nav__link" for="nav-10">
+      Supported Protocols
+    </label>
+    <nav class="md-nav" data-md-component="collapsible">
+      <label class="md-nav__title" for="nav-10">
+        Supported Protocols
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+  <li class="md-nav__item">
+    
+      <a href="../../integrate/outbound-saml/" title="Outbound SAML" class="md-nav__link">
+        Outbound SAML
+      </a>
+    
+  </li>
+
+        
+          
+          
+  <li class="md-nav__item">
+    
+      <a href="../../integrate/inbound-saml/" title="Inbound SAML" class="md-nav__link">
+        Inbound SAML
+      </a>
+    
+  </li>
+
+        
+          
+          
+  <li class="md-nav__item">
+    
+      <a href="../../integrate/openid-connect/" title="OpenID Connect" class="md-nav__link">
+        OpenID Connect
+      </a>
+    
+  </li>
+
+        
+          
+          
+  <li class="md-nav__item">
+    
+      <a href="../../integrate/uma/" title="UMA" class="md-nav__link">
+        UMA
+      </a>
+    
+  </li>
+
+        
+          
+          
+  <li class="md-nav__item">
+    
+      <a href="../../integrate/oauth2grants/" title="OAuth2" class="md-nav__link">
+        OAuth2
+      </a>
+    
+  </li>
+
+        
+          
+          
+  <li class="md-nav__item">
+    
+      <a href="../../api/scim-1.1/" title="SCIM 1.1" class="md-nav__link">
+        SCIM 1.1
+      </a>
+    
+  </li>
+
+        
+          
+          
+  <li class="md-nav__item">
+    
+      <a href="../../api/scim-2.0/" title="SCIM 2.0" class="md-nav__link">
+        SCIM 2.0
+      </a>
+    
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+      
+      
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-11" type="checkbox" id="nav-11">
+    
+    <label class="md-nav__link" for="nav-11">
+      SP / RP Integration Modules
+    </label>
+    <nav class="md-nav" data-md-component="collapsible">
+      <label class="md-nav__title" for="nav-11">
+        SP / RP Integration Modules
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+  <li class="md-nav__item">
+    
+      <a href="../../integrate/oxd/" title="oxd OAuth2 Client Software " class="md-nav__link">
+        oxd OAuth2 Client Software 
+      </a>
+    
+  </li>
+
+        
+          
+          
+  <li class="md-nav__item">
+    
+      <a href="../../integrate/ubuntu-installation/" title="OpenID Connect RP in Ubuntu" class="md-nav__link">
+        OpenID Connect RP in Ubuntu
+      </a>
+    
+  </li>
+
+        
+          
+          
+  <li class="md-nav__item">
+    
+      <a href="../../integrate/centos-installation/" title="OpenID Connect RP in CentOS" class="md-nav__link">
+        OpenID Connect RP in CentOS
+      </a>
+    
+  </li>
+
+        
+          
+          
+  <li class="md-nav__item">
+    
+      <a href="../../integrate/oxray/" title="OpenID Connect Liferay Plugin" class="md-nav__link">
+        OpenID Connect Liferay Plugin
+      </a>
+    
+  </li>
+
+        
+          
+          
+  <li class="md-nav__item">
+    
+      <a href="../../integrate/java-connect/" title="OpenID Connect Java Authentication" class="md-nav__link">
+        OpenID Connect Java Authentication
+      </a>
+    
+  </li>
+
+        
+          
+          
+  <li class="md-nav__item">
+    
+      <a href="../../integrate/apache-saml/" title="SAML SP in CentOS" class="md-nav__link">
+        SAML SP in CentOS
+      </a>
+    
+  </li>
+
+        
+          
+          
+  <li class="md-nav__item">
+    
+      <a href="../../integrate/ubuntu-shib-apache/" title="SAML SP in Ubuntu" class="md-nav__link">
+        SAML SP in Ubuntu
+      </a>
+    
+  </li>
+
+        
+          
+          
+  <li class="md-nav__item">
+    
+      <a href="../../integrate/iis-saml/" title="SAML SP in IIS7" class="md-nav__link">
+        SAML SP in IIS7
+      </a>
+    
+  </li>
+
+        
+          
+          
+  <li class="md-nav__item">
+    
+      <a href="../../integrate/saml-windows/" title="SAML SP in Windows" class="md-nav__link">
+        SAML SP in Windows
+      </a>
+    
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+      
+      
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-12" type="checkbox" id="nav-12">
+    
+    <label class="md-nav__link" for="nav-12">
+      Integration Guides
+    </label>
+    <nav class="md-nav" data-md-component="collapsible">
+      <label class="md-nav__title" for="nav-12">
+        Integration Guides
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+  <li class="md-nav__item">
+    
+      <a href="../../integrate/google-saml/" title="Google SSO" class="md-nav__link">
+        Google SSO
+      </a>
+    
+  </li>
+
+        
+          
+          
+  <li class="md-nav__item">
+    
+      <a href="../../integrate/office365/" title="Office 365 SSO" class="md-nav__link">
+        Office 365 SSO
+      </a>
+    
+  </li>
+
+        
+          
+          
+  <li class="md-nav__item">
+    
+      <a href="../../integrate/hobsons-saml/" title="Hobsons Education Solution SSO" class="md-nav__link">
+        Hobsons Education Solution SSO
+      </a>
+    
+  </li>
+
+        
+          
+          
+  <li class="md-nav__item">
+    
+      <a href="../../integrate/salesforce-sso/" title="Salesforce SSO" class="md-nav__link">
+        Salesforce SSO
+      </a>
+    
+  </li>
+
+        
+          
+          
+  <li class="md-nav__item">
+    
+      <a href="../../integrate/dropbox/" title="Dropbox SSO" class="md-nav__link">
+        Dropbox SSO
+      </a>
+    
+  </li>
+
+        
+          
+          
+  <li class="md-nav__item">
+    
+      <a href="../../integrate/test-shib2/" title="TestShib2 SSO" class="md-nav__link">
+        TestShib2 SSO
+      </a>
+    
+  </li>
+
+        
+          
+          
+  <li class="md-nav__item">
+    
+      <a href="../../integrate/asimba/" title="Asimba & Gluu CE" class="md-nav__link">
+        Asimba & Gluu CE
+      </a>
+    
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+      
+      
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-13" type="checkbox" id="nav-13">
+    
+    <label class="md-nav__link" for="nav-13">
+      Fine Tuning and Benchmarking
+    </label>
+    <nav class="md-nav" data-md-component="collapsible">
+      <label class="md-nav__title" for="nav-13">
+        Fine Tuning and Benchmarking
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+  <li class="md-nav__item">
+    
+      <a href="../../fine-tuning/" title="Tuning LDAP, Tomcat" class="md-nav__link">
+        Tuning LDAP, Tomcat
+      </a>
+    
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+      
+      
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-14" type="checkbox" id="nav-14">
+    
+    <label class="md-nav__link" for="nav-14">
+      Reference
+    </label>
+    <nav class="md-nav" data-md-component="collapsible">
+      <label class="md-nav__title" for="nav-14">
+        Reference
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+  <li class="md-nav__item">
+    
+      <a href="../../reference/policy/" title="Gluu Policy" class="md-nav__link">
+        Gluu Policy
+      </a>
+    
+  </li>
+
+        
+          
+          
+  <li class="md-nav__item">
+    
+      <a href="../../reference/config/" title="Configurations" class="md-nav__link">
+        Configurations
+      </a>
+    
+  </li>
+
+        
+          
+          
+  <li class="md-nav__item">
+    
+      <a href="../../reference/certificates/" title="Certificates" class="md-nav__link">
+        Certificates
+      </a>
+    
+  </li>
+
+        
+          
+          
+  <li class="md-nav__item">
+    
+      <a href="../../reference/ldap/" title="LDAP" class="md-nav__link">
+        LDAP
+      </a>
+    
+  </li>
+
+        
+          
+          
+  <li class="md-nav__item">
+    
+      <a href="../../reference/schema/" title="Schema" class="md-nav__link">
+        Schema
+      </a>
+    
+  </li>
+
+        
+          
+          
+  <li class="md-nav__item">
+    
+      <a href="../../reference/schema/" title="LDAP Schema" class="md-nav__link">
+        LDAP Schema
+      </a>
+    
+  </li>
+
+        
+          
+          
+  <li class="md-nav__item">
+    
+      <a href="../../reference/logout/" title="Logout" class="md-nav__link">
+        Logout
+      </a>
+    
+  </li>
+
+        
+          
+          
+  <li class="md-nav__item">
+    
+      <a href="../../reference/oxtrust-properties/" title="oxTrust Properties File" class="md-nav__link">
+        oxTrust Properties File
+      </a>
+    
+  </li>
+
+        
+          
+          
+  <li class="md-nav__item">
+    
+      <a href="../../reference/oxauth-properties/" title="oxAuth Properties File" class="md-nav__link">
+        oxAuth Properties File
+      </a>
+    
+  </li>
+
+        
+          
+          
+  <li class="md-nav__item">
+    
+      <a href="../../reference/logs/" title="Logs" class="md-nav__link">
+        Logs
+      </a>
+    
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+      
+      
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-15" type="checkbox" id="nav-15">
+    
+    <label class="md-nav__link" for="nav-15">
+      Gluu Server API
+    </label>
+    <nav class="md-nav" data-md-component="collapsible">
+      <label class="md-nav__title" for="nav-15">
+        Gluu Server API
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+  <li class="md-nav__item">
+    
+      <a href="../../api/oic-authorization/" title="OpenID Connect Authorization Endpoint" class="md-nav__link">
+        OpenID Connect Authorization Endpoint
+      </a>
+    
+  </li>
+
+        
+          
+          
+  <li class="md-nav__item">
+    
+      <a href="../../api/oic-token/" title="OpenID Connect Token Endpoint" class="md-nav__link">
+        OpenID Connect Token Endpoint
+      </a>
+    
+  </li>
+
+        
+          
+          
+  <li class="md-nav__item">
+    
+      <a href="../../api/oic-userinfo/" title="OpenID Connect UserInfo Endpoint" class="md-nav__link">
+        OpenID Connect UserInfo Endpoint
+      </a>
+    
+  </li>
+
+        
+          
+          
+  <li class="md-nav__item">
+    
+      <a href="../../api/oic-register-client/" title="OpenID Connect Client Registration Endpoint" class="md-nav__link">
+        OpenID Connect Client Registration Endpoint
+      </a>
+    
+  </li>
+
+        
+          
+          
+  <li class="md-nav__item">
+    
+      <a href="../../api/oic-end-session/" title="OpenID Connect End Session Endpoint" class="md-nav__link">
+        OpenID Connect End Session Endpoint
+      </a>
+    
+  </li>
+
+        
+          
+          
+  <li class="md-nav__item">
+    
+      <a href="../../api/oic-clientinfo/" title="OpenID Connect Client Info Endpoint" class="md-nav__link">
+        OpenID Connect Client Info Endpoint
+      </a>
+    
+  </li>
+
+        
+          
+          
+  <li class="md-nav__item">
+    
+      <a href="../../api/uma-discovery/" title="UMA Discovery Endpoint" class="md-nav__link">
+        UMA Discovery Endpoint
+      </a>
+    
+  </li>
+
+        
+          
+          
+  <li class="md-nav__item">
+    
+      <a href="../../api/uma-authorization-endpoint/" title="UMA Authorization Endpoint" class="md-nav__link">
+        UMA Authorization Endpoint
+      </a>
+    
+  </li>
+
+        
+          
+          
+  <li class="md-nav__item">
+    
+      <a href="../../api/uma-resource-registration/" title="UMA Resource Registration Endpoint" class="md-nav__link">
+        UMA Resource Registration Endpoint
+      </a>
+    
+  </li>
+
+        
+          
+          
+  <li class="md-nav__item">
+    
+      <a href="../../api/uma-permission-registration/" title="UMA Permission Registration Endpoint" class="md-nav__link">
+        UMA Permission Registration Endpoint
+      </a>
+    
+  </li>
+
+        
+          
+          
+  <li class="md-nav__item">
+    
+      <a href="../../api/uma-create-rpt/" title="UMA CreateRPT Endpoint" class="md-nav__link">
+        UMA CreateRPT Endpoint
+      </a>
+    
+  </li>
+
+        
+          
+          
+  <li class="md-nav__item">
+    
+      <a href="../../api/uma-rpt-status/" title="UMA RPT Introspection Endpoint" class="md-nav__link">
+        UMA RPT Introspection Endpoint
+      </a>
+    
+  </li>
+
+        
+          
+          
+  <li class="md-nav__item">
+    
+      <a href="../../api/id-generation/" title="Custom ID Generation API" class="md-nav__link">
+        Custom ID Generation API
+      </a>
+    
+  </li>
+
+        
+          
+          
+  <li class="md-nav__item">
+    
+      <a href="../../api/scim-1.1/" title="SCIM 1.1" class="md-nav__link">
+        SCIM 1.1
+      </a>
+    
+  </li>
+
+        
+          
+          
+  <li class="md-nav__item">
+    
+      <a href="../../api/scim-2.0/" title="SCIM 2.0" class="md-nav__link">
+        SCIM 2.0
+      </a>
+    
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="toc">
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+<nav class="md-nav md-nav--secondary">
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="toc">Table of contents</label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#add-user" title="Add User" class="md-nav__link">
+    Add User
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#required-parameters" title="Required Parameters" class="md-nav__link">
+    Required Parameters
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#json-string" title="JSON String" class="md-nav__link">
+    JSON String
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#user-object" title="User Object" class="md-nav__link">
+    User Object
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#delete-user" title="Delete User" class="md-nav__link">
+    Delete User
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#required-parameter" title="Required Parameter" class="md-nav__link">
+    Required Parameter
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#user-extensions" title="User Extensions" class="md-nav__link">
+    User Extensions
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          <div class="md-content">
+            <article class="md-content__inner md-typeset">
+               
+                 <a href="https://github.com/GluuFederation/docs-2.4.4-dev/blob/master/source/user-management\scim.md" title="Edit this page" class="md-icon md-content__edit">edit</a>
+               
+              
+                
                 <div class="toc">
 <ul>
 <li><a href="#scim-20-user-adddelete">SCIM 2.0 User Add/Delete</a><ul>
@@ -1007,15 +1888,15 @@
 </li>
 </ul>
 </div>
-<h1 id="scim-20-user-adddelete">SCIM 2.0 User Add/Delete</h1>
+<h1 id="scim-20-user-adddelete">SCIM 2.0 User Add/Delete<a class="headerlink" href="#scim-20-user-adddelete" title="Permanent link">#</a></h1>
 <p>This section outlines how to add/remove user from Gluu Server CE using <a href="https://github.com/GluuFederation/SCIM-Client">SCIM-Client</a>.</p>
-<h2 id="add-user">Add User</h2>
+<h2 id="add-user">Add User<a class="headerlink" href="#add-user" title="Permanent link">#</a></h2>
 <p>There are two methods to add users:</p>
 <ol>
 <li><a href="#json-string">JSON Sting</a></li>
 <li><a href="#user-object">User Object</a></li>
 </ol>
-<h3 id="required-parameters">Required Parameters</h3>
+<h3 id="required-parameters">Required Parameters<a class="headerlink" href="#required-parameters" title="Permanent link">#</a></h3>
 <table>
 <thead>
 <tr>
@@ -1046,14 +1927,14 @@
 </tr>
 </tbody>
 </table>
-<h3 id="json-string">JSON String</h3>
+<h3 id="json-string">JSON String<a class="headerlink" href="#json-string" title="Permanent link">#</a></h3>
 <p>The user is added using a JSON object string using the required parameters; however it is possible to add more parameters. The following is an example of a JSON string used to add a user.</p>
 <pre><code>        Scim2Client client = Scim2Client.umaInstance(domain, umaMetaDataUrl, umaAatClientId, umaAatClientJksPath, umaAatClientJksPassword, umaAatClientKeyId);
         String createJson = {&quot;schemas&quot;:[&quot;urn:ietf:params:scim:schemas:core:2.0:User&quot;],&quot;externalId&quot;:&quot;12345&quot;,&quot;userName&quot;:&quot;newUser&quot;,&quot;name&quot;:{&quot;givenName&quot;:&quot;json&quot;,&quot;familyName&quot;:&quot;json&quot;,&quot;middleName&quot;:&quot;N/A&quot;,&quot;honorificPrefix&quot;:&quot;&quot;,&quot;honorificSuffix&quot;:&quot;&quot;},&quot;displayName&quot;:&quot;json json&quot;,&quot;nickName&quot;:&quot;json&quot;,&quot;profileUrl&quot;:&quot;http://www.gluu.org/&quot;,&quot;emails&quot;:[{&quot;value&quot;:&quot;json@gluu.org&quot;,&quot;type&quot;:&quot;work&quot;,&quot;primary&quot;:&quot;true&quot;},{&quot;value&quot;:&quot;json2@gluu.org&quot;,&quot;type&quot;:&quot;home&quot;,&quot;primary&quot;:&quot;false&quot;}],&quot;addresses&quot;:[{&quot;type&quot;:&quot;work&quot;,&quot;streetAddress&quot;:&quot;621 East 6th Street Suite 200&quot;,&quot;locality&quot;:&quot;Austin&quot;,&quot;region&quot;:&quot;TX&quot;,&quot;postalCode&quot;:&quot;78701&quot;,&quot;country&quot;:&quot;US&quot;,&quot;formatted&quot;:&quot;621 East 6th Street Suite 200  Austin , TX 78701 US&quot;,&quot;primary&quot;:&quot;true&quot;}],&quot;phoneNumbers&quot;:[{&quot;value&quot;:&quot;646-345-2346&quot;,&quot;type&quot;:&quot;work&quot;}],&quot;ims&quot;:[{&quot;value&quot;:&quot;nynytest_user&quot;,&quot;type&quot;:&quot;Skype&quot;}],&quot;userType&quot;:&quot;CEO&quot;,&quot;title&quot;:&quot;CEO&quot;,&quot;preferredLanguage&quot;:&quot;en-us&quot;,&quot;locale&quot;:&quot;en_US&quot;,&quot;active&quot;:&quot;true&quot;,&quot;password&quot;:&quot;secret&quot;,&quot;groups&quot;:[{&quot;display&quot;:&quot;Gluu Test Group&quot;,&quot;value&quot;:&quot;@!9B22.5F33.7D8D.B890!0001!880B.F95A!0003!60B7&quot;}],&quot;roles&quot;:[{&quot;value&quot;:&quot;Owner&quot;}],&quot;entitlements&quot;:[{&quot;value&quot;:&quot;full access&quot;}],&quot;x509Certificates&quot;:[{&quot;value&quot;:&quot;cert-12345&quot;}]}
         ScimResponse response = client.createPersonString(createJson, MediaType.APPLICATION_JSON);
 </code></pre>
 
-<h3 id="user-object">User Object</h3>
+<h3 id="user-object">User Object<a class="headerlink" href="#user-object" title="Permanent link">#</a></h3>
 <p>The following code snippet uses the User object.</p>
 <pre><code>        User user = new User();
 
@@ -1118,13 +1999,13 @@
         String id = userCreated.getId();
 </code></pre>
 
-<h2 id="delete-user">Delete User</h2>
+<h2 id="delete-user">Delete User<a class="headerlink" href="#delete-user" title="Permanent link">#</a></h2>
 <p>To delete a user only the id (the LDAP <code>inum</code>) is needed.</p>
 <pre><code>        ScimResponse response = client.deletePerson(id);
         assertEquals(response.getStatusCode(), 200, &quot;User could not be deleted, status != 200&quot;);
 </code></pre>
 
-<h3 id="required-parameter">Required Parameter</h3>
+<h3 id="required-parameter">Required Parameter<a class="headerlink" href="#required-parameter" title="Permanent link">#</a></h3>
 <table>
 <thead>
 <tr>
@@ -1139,7 +2020,7 @@
 </tr>
 </tbody>
 </table>
-<h2 id="user-extensions">User Extensions</h2>
+<h2 id="user-extensions">User Extensions<a class="headerlink" href="#user-extensions" title="Permanent link">#</a></h2>
 <p>SCIM 2.0 User Extensions implementation in Gluu server is very simple. Just set the custom attribute's <code>SCIM Attribute</code> parameter to <code>true</code> in oxTrust GUI and it will be recognized as a User extension. It is a must to create new custom attributes to be used as User extensions for a cleaner implementation.</p>
 <p><img alt="image" src="https://raw.githubusercontent.com/GluuFederation/docs/master/sources/img/2.4/scim-attribute.png" /></p>
 <p>You can verify the User extensions via the <code>Schema</code> endpoint:</p>
@@ -1151,51 +2032,78 @@
 <li><a href="https://github.com/GluuFederation/SCIM-Client/blob/master/src/test/java/gluu/scim2/client/UserExtensionsJsonTest.java">UserExtensionsJsonTest</a></li>
 </ul>
               
-            </div>
+            </article>
           </div>
-          <footer>
+        </div>
+      </main>
+      
+        
+<footer class="md-footer">
   
-    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
-      
-        <a href="../../multi-factor/intro/" class="btn btn-neutral float-right" title="Intro"/>Next <span class="icon icon-circle-arrow-right"></span></a>
-      
-      
-        <a href="../../cache-refresh/reset-password/" class="btn btn-neutral" title="Reset User Password"><span class="icon icon-circle-arrow-left"></span> Previous</a>
-      
+    <div class="md-footer-nav">
+      <nav class="md-footer-nav__inner md-grid">
+        
+          <a href="../../cache-refresh/reset-password/" title="Reset User Password" class="md-flex md-footer-nav__link md-footer-nav__link--prev" rel="prev">
+            <div class="md-flex__cell md-flex__cell--shrink">
+              <i class="md-icon md-icon--arrow-back md-footer-nav__button"></i>
+            </div>
+            <div class="md-flex__cell md-flex__cell--stretch md-footer-nav__title">
+              <span class="md-flex__ellipsis">
+                <span class="md-footer-nav__direction">
+                  Previous
+                </span>
+                Reset User Password
+              </span>
+            </div>
+          </a>
+        
+        
+          <a href="../../multi-factor/intro/" title="Intro" class="md-flex md-footer-nav__link md-footer-nav__link--next" rel="next">
+            <div class="md-flex__cell md-flex__cell--stretch md-footer-nav__title">
+              <span class="md-flex__ellipsis">
+                <span class="md-footer-nav__direction">
+                  Next
+                </span>
+                Intro
+              </span>
+            </div>
+            <div class="md-flex__cell md-flex__cell--shrink">
+              <i class="md-icon md-icon--arrow-forward md-footer-nav__button"></i>
+            </div>
+          </a>
+        
+      </nav>
     </div>
   
-
-  <hr/>
-
-  <div role="contentinfo">
-    <p>
-    <!-- Copyright etc -->
-    </p>
-  </div>
-
-  Built with <a href="http://www.mkdocs.org">MkDocs</a> using a <a href="https://github.com/snide/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
-</footer>
-	  
-        </div>
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-footer-copyright">
+        
+          <div class="md-footer-copyright__highlight">
+            Copyright &copy; 2016, Gluu, Inc.
+          </div>
+        
+        powered by
+        <a href="http://www.mkdocs.org" title="MkDocs">MkDocs</a>
+        and
+        <a href="http://squidfunk.github.io/mkdocs-material/" title="Material for MkDocs">
+          Material for MkDocs</a>
       </div>
-
-    </section>
-
+      
+        
+      
+    </div>
   </div>
-
-<div class="rst-versions" role="note" style="cursor: pointer">
-    <span class="rst-current-version" data-toggle="rst-current-version">
+</footer>
       
-          <a class="icon icon-github" style="float: left; color: #fcfcfc"> GitHub</a>
+    </div>
+    
+      <script src="../../assets/javascripts/application-2afe21e0b2.js"></script>
+      <script>var config={url:{base:"../.."}},app=new Application(config);app.initialize()</script>
       
+    
+    
       
-        <span><a href="../../cache-refresh/reset-password/" style="color: #fcfcfc;">&laquo; Previous</a></span>
-      
-      
-        <span style="margin-left: 15px"><a href="../../multi-factor/intro/" style="color: #fcfcfc">Next &raquo;</a></span>
-      
-    </span>
-</div>
-
-</body>
+    
+  </body>
 </html>
