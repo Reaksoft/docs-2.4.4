@@ -1,8 +1,5 @@
-# Personal
+## Personal
+Personal tab allows the individual person to view his basic profile and 
+modify certain fields. This section is detailed under User Management 
+in [Personal](../admin-guide/user-group.md)
 
-The Personal section of the oxTrust application, shown below, provides a
-user with some basic details about their account within the Gluu Server.
-Currently all information is static, but we plan on developing it out so
-the user can perform basic self-service profile management.
-
-![personal oxtrust view](../img/2.4/admin_personal_profile.png)
