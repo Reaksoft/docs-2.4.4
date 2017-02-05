@@ -17,7 +17,7 @@
     
     
       
-        <title>Behaviour Customization - Gluu Docs</title>
+        <title>Interception Scripts - Gluu Docs</title>
       
     
     
@@ -75,15 +75,11 @@
             
               
                 <span class="md-header-nav__parent">
-                  Operation Guide
-                </span>
-              
-                <span class="md-header-nav__parent">
-                  Customize Gluu Server
+                  Gluu Server GUI
                 </span>
               
             
-            Behaviour Customization
+            Interception Scripts
           
         </span>
       </div>
@@ -518,7 +514,7 @@
       
   <li class="md-nav__item md-nav__item--nested">
     
-      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-4" type="checkbox" id="nav-4">
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-4" type="checkbox" id="nav-4" checked>
     
     <label class="md-nav__link" for="nav-4">
       Gluu Server GUI
@@ -598,15 +594,146 @@
         
           
           
+  <li class="md-nav__item">
+    
+    <input class="md-toggle md-nav__toggle" data-md-toggle="toc" type="checkbox" id="toc">
+    
+      
+    
+    
+      <label class="md-nav__link md-nav__link--active" for="toc">
+        Interception Scripts
+      </label>
+    
+    <a href="./" title="Interception Scripts" class="md-nav__link md-nav__link--active">
+      Interception Scripts
+    </a>
+    
+      
+<nav class="md-nav md-nav--secondary">
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="toc">Table of contents</label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#overview" title="Overview" class="md-nav__link">
+    Overview
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#interception-script-methods" title="Interception Script Methods" class="md-nav__link">
+    Interception Script Methods
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#interception-script-logs" title="Interception Script Logs" class="md-nav__link">
+    Interception Script Logs
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#person-authentication" title="Person Authentication" class="md-nav__link">
+    Person Authentication
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#certificate-authentication" title="Certificate Authentication" class="md-nav__link">
+    Certificate Authentication
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#update-user" title="Update User" class="md-nav__link">
+    Update User
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#user-registration" title="User Registration" class="md-nav__link">
+    User Registration
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#client-registration" title="Client Registration" class="md-nav__link">
+    Client Registration
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#dynamic-scopes" title="Dynamic Scopes" class="md-nav__link">
+    Dynamic Scopes
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#id-generator" title="ID Generator" class="md-nav__link">
+    ID Generator
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#cache-refresh" title="Cache Refresh" class="md-nav__link">
+    Cache Refresh
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#uma-authorization-policies" title="UMA Authorization Policies" class="md-nav__link">
+    UMA Authorization Policies
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#application-session-management" title="Application Session Management" class="md-nav__link">
+    Application Session Management
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+    
+  </li>
+
+        
+          
+          
   <li class="md-nav__item md-nav__item--nested">
     
-      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-4-7" type="checkbox" id="nav-4-7">
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-4-8" type="checkbox" id="nav-4-8">
     
-    <label class="md-nav__link" for="nav-4-7">
+    <label class="md-nav__link" for="nav-4-8">
       User Managment
     </label>
     <nav class="md-nav" data-md-component="collapsible">
-      <label class="md-nav__title" for="nav-4-7">
+      <label class="md-nav__title" for="nav-4-8">
         User Managment
       </label>
       <ul class="md-nav__list" data-md-scrollfix>
@@ -676,13 +803,13 @@
           
   <li class="md-nav__item md-nav__item--nested">
     
-      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-4-8" type="checkbox" id="nav-4-8">
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-4-9" type="checkbox" id="nav-4-9">
     
-    <label class="md-nav__link" for="nav-4-8">
+    <label class="md-nav__link" for="nav-4-9">
       Authentication
     </label>
     <nav class="md-nav" data-md-component="collapsible">
-      <label class="md-nav__title" for="nav-4-8">
+      <label class="md-nav__title" for="nav-4-9">
         Authentication
       </label>
       <ul class="md-nav__list" data-md-scrollfix>
@@ -1211,7 +1338,7 @@
       
   <li class="md-nav__item md-nav__item--nested">
     
-      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-8" type="checkbox" id="nav-8" checked>
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-8" type="checkbox" id="nav-8">
     
     <label class="md-nav__link" for="nav-8">
       Operation Guide
@@ -1260,7 +1387,7 @@
           
   <li class="md-nav__item md-nav__item--nested">
     
-      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-8-4" type="checkbox" id="nav-8-4" checked>
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-8-4" type="checkbox" id="nav-8-4">
     
     <label class="md-nav__link" for="nav-8-4">
       Customize Gluu Server
@@ -1279,137 +1406,6 @@
       <a href="../design/" title="Design Customization" class="md-nav__link">
         Design Customization
       </a>
-    
-  </li>
-
-        
-          
-          
-  <li class="md-nav__item">
-    
-    <input class="md-toggle md-nav__toggle" data-md-toggle="toc" type="checkbox" id="toc">
-    
-      
-    
-    
-      <label class="md-nav__link md-nav__link--active" for="toc">
-        Behaviour Customization
-      </label>
-    
-    <a href="./" title="Behaviour Customization" class="md-nav__link md-nav__link--active">
-      Behaviour Customization
-    </a>
-    
-      
-<nav class="md-nav md-nav--secondary">
-  
-  
-    
-  
-  
-    <label class="md-nav__title" for="toc">Table of contents</label>
-    <ul class="md-nav__list" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#overview" title="Overview" class="md-nav__link">
-    Overview
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#interception-script-methods" title="Interception Script Methods" class="md-nav__link">
-    Interception Script Methods
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#interception-script-logs" title="Interception Script Logs" class="md-nav__link">
-    Interception Script Logs
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#person-authentication" title="Person Authentication" class="md-nav__link">
-    Person Authentication
-  </a>
-  
-    <nav class="md-nav">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#certificate-authentication" title="Certificate Authentication" class="md-nav__link">
-    Certificate Authentication
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#update-user" title="Update User" class="md-nav__link">
-    Update User
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#user-registration" title="User Registration" class="md-nav__link">
-    User Registration
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#client-registration" title="Client Registration" class="md-nav__link">
-    Client Registration
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#dynamic-scopes" title="Dynamic Scopes" class="md-nav__link">
-    Dynamic Scopes
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#id-generator" title="ID Generator" class="md-nav__link">
-    ID Generator
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#cache-refresh" title="Cache Refresh" class="md-nav__link">
-    Cache Refresh
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#uma-authorization-policies" title="UMA Authorization Policies" class="md-nav__link">
-    UMA Authorization Policies
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#application-session-management" title="Application Session Management" class="md-nav__link">
-    Application Session Management
-  </a>
-  
-</li>
-      
-    </ul>
-  
-</nav>
     
   </li>
 
@@ -2235,7 +2231,7 @@ level.</p>
     <div class="md-footer-nav">
       <nav class="md-footer-nav__inner md-grid">
         
-          <a href="../design/" title="Design Customization" class="md-flex md-footer-nav__link md-footer-nav__link--prev" rel="prev">
+          <a href="../../oxtrust/personal/" title="Personal" class="md-flex md-footer-nav__link md-footer-nav__link--prev" rel="prev">
             <div class="md-flex__cell md-flex__cell--shrink">
               <i class="md-icon md-icon--arrow-back md-footer-nav__button"></i>
             </div>
@@ -2244,19 +2240,19 @@ level.</p>
                 <span class="md-footer-nav__direction">
                   Previous
                 </span>
-                Design Customization
+                Personal
               </span>
             </div>
           </a>
         
         
-          <a href="../attributes/" title="Custom Attributes" class="md-flex md-footer-nav__link md-footer-nav__link--next" rel="next">
+          <a href="../../cache-refresh/" title="Sync LDAP/AD" class="md-flex md-footer-nav__link md-footer-nav__link--next" rel="next">
             <div class="md-flex__cell md-flex__cell--stretch md-footer-nav__title">
               <span class="md-flex__ellipsis">
                 <span class="md-footer-nav__direction">
                   Next
                 </span>
-                Custom Attributes
+                Sync LDAP/AD
               </span>
             </div>
             <div class="md-flex__cell md-flex__cell--shrink">

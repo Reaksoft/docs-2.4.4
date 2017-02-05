@@ -47,6 +47,7 @@ pages:
     - 'UMA': 'integrate/backup/uma.md'
     - 'Users': 'oxtrust/users.md'
     - 'Personal': 'oxtrust/personal.md'
+    - 'Interception Scripts': 'customize/script.md'
     - User Managment:
         - 'Sync LDAP/AD': 'cache-refresh/index.md'
         - 'Import XLS File': 'user-management/xlsfile.md'
@@ -118,7 +119,6 @@ pages:
     - 'Find which version of Gluu you are using': 'how-to/find-gluu-server-version.md'
     - Customize Gluu Server:
         - 'Design Customization': 'customize/design.md'
-        - 'Behaviour Customization': 'customize/script.md'
         - 'Custom Attributes': 'customize/attributes.md'
     #- 'Gluu Policy': 'reference/policy.md'
     - 'Certificates': 'reference/certificates.md'

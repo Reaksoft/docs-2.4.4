@@ -2,146 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="26c476cd-110e-48df-bbb2-14d13b7b2df0" name="Default" comment="">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/docs/api/id-generation/index.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/docs/api/oic-authorization/index.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/docs/api/oic-clientinfo/index.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/docs/api/oic-end-session/index.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/docs/api/oic-register-client/index.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/docs/api/oic-token/index.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/docs/api/oic-userinfo/index.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/docs/api/scim-1.1/index.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/docs/api/scim-2.0/index.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/docs/api/uma-authorization-endpoint/index.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/docs/api/uma-create-rpt/index.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/docs/api/uma-discovery/index.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/docs/api/uma-permission-registration/index.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/docs/api/uma-resource-registration/index.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/docs/api/uma-rpt-status/index.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/docs/cache-refresh/index.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/docs/cache-refresh/register/index.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/docs/cache-refresh/reset-password/index.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/docs/customize/attributes/index.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/docs/customize/auth-script/index.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/docs/customize/design/index.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/docs/customize/social-login-google/index.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/docs/faq/general/index.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/docs/faq/troubleshooting/index.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/docs/fine-tuning/index.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/docs/how-to/automate-schema/index.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/docs/how-to/backup/index.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/docs/how-to/find-gluu-server-version/index.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/docs/how-to/saml_proxy_end_to_end/index.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/docs/how-to/uma-demo/index.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/docs/how-to/update-certificate/index.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/docs/integrate/apache-saml/index.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/docs/integrate/asimba/index.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/docs/integrate/centos-installation/index.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/docs/integrate/dropbox/index.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/docs/integrate/google-saml/index.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/docs/integrate/hobsons-saml/index.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/docs/integrate/iis-saml/index.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/docs/integrate/inbound-saml/index.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/docs/integrate/java-connect/index.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/docs/integrate/oauth2grants/index.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/docs/integrate/office365/index.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/docs/integrate/openid-connect/index.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/docs/integrate/outbound-saml/index.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/docs/integrate/oxd/index.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/docs/integrate/oxray/index.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/docs/integrate/salesforce-sso/index.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/docs/integrate/saml-windows/index.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/docs/integrate/scimuma-howto/index.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/docs/integrate/test-shib2/index.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/docs/integrate/ubuntu-installation/index.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/docs/integrate/ubuntu-shib-apache/index.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/docs/integrate/uma/index.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/docs/mkdocs/search_index.json" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/docs/multi-factor/cert/index.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/docs/multi-factor/duo/index.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/docs/multi-factor/intro/index.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/docs/multi-factor/oxpush2/index.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/docs/multi-factor/u2f/index.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/docs/multi-factor/wikid/index.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/docs/oxtrust/personal/index.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/docs/oxtrust/users/index.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/docs/reference/certificates/index.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/docs/reference/config/index.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/docs/reference/ldap/index.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/docs/reference/logout/index.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/docs/reference/logs/index.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/docs/reference/oxauth-properties/index.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/docs/reference/oxtrust-properties/index.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/docs/reference/schema/index.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/docs/user-management/lock-user/index.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/docs/user-management/scim/index.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/docs/user-management/xlsfile/index.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/sources/api/id-generation.md" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/sources/api/oic-authorization.md" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/sources/api/oic-clientinfo.md" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/sources/api/oic-end-session.md" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/sources/api/oic-register-client.md" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/sources/api/oic-token.md" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/sources/api/oic-userinfo.md" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/sources/api/scim-1.1.md" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/sources/api/scim-2.0.md" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/sources/api/uma-authorization-endpoint.md" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/sources/api/uma-create-rpt.md" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/sources/api/uma-discovery.md" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/sources/api/uma-permission-registration.md" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/sources/api/uma-resource-registration.md" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/sources/api/uma-rpt-status.md" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/sources/integrate/apache-saml.md" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/sources/integrate/appauth.md" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/sources/integrate/asimba.md" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/sources/integrate/centos-installation.md" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/sources/integrate/google-saml.md" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/sources/integrate/hobsons-saml.md" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/sources/integrate/iis-saml.md" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/sources/integrate/inbound-saml.md" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/sources/integrate/java-connect.md" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/sources/integrate/oauth2grants.md" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/sources/integrate/office365.md" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/sources/integrate/openid-connect.md" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/sources/integrate/outbound-saml.md" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/sources/integrate/oxd.md" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/sources/integrate/oxray.md" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/sources/integrate/salesforce-sso.md" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/sources/integrate/saml-windows.md" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/sources/integrate/scimuma-howto.md" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/sources/integrate/test-shib2.md" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/sources/integrate/ubuntu-installation.md" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/sources/integrate/ubuntu-shib-apache.md" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/sources/integrate/uma.md" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/sources/integrate/webex.md" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/docs/404.html" afterPath="$PROJECT_DIR$/docs/404.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/docs/cluster/csync-installation/index.html" afterPath="$PROJECT_DIR$/docs/cluster/csync-installation/index.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/docs/cluster/index.html" afterPath="$PROJECT_DIR$/docs/cluster/index.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/docs/customize/script/index.html" afterPath="$PROJECT_DIR$/docs/customize/script/index.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/docs/deployment/azure/index.html" afterPath="$PROJECT_DIR$/docs/deployment/azure/index.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/docs/deployment/centos/index.html" afterPath="$PROJECT_DIR$/docs/deployment/centos/index.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/docs/deployment/centos7/index.html" afterPath="$PROJECT_DIR$/docs/deployment/centos7/index.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/docs/deployment/debian/index.html" afterPath="$PROJECT_DIR$/docs/deployment/debian/index.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/docs/deployment/index.html" afterPath="$PROJECT_DIR$/docs/deployment/index.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/docs/deployment/linode/index.html" afterPath="$PROJECT_DIR$/docs/deployment/linode/index.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/docs/deployment/rhel/index.html" afterPath="$PROJECT_DIR$/docs/deployment/rhel/index.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/docs/deployment/rhel7/index.html" afterPath="$PROJECT_DIR$/docs/deployment/rhel7/index.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/docs/deployment/setup_py/index.html" afterPath="$PROJECT_DIR$/docs/deployment/setup_py/index.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/docs/deployment/ubuntu-xenial/index.html" afterPath="$PROJECT_DIR$/docs/deployment/ubuntu-xenial/index.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/docs/deployment/ubuntu/index.html" afterPath="$PROJECT_DIR$/docs/deployment/ubuntu/index.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/docs/deployment/updating/index.html" afterPath="$PROJECT_DIR$/docs/deployment/updating/index.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/docs/deployment/upgrading/index.html" afterPath="$PROJECT_DIR$/docs/deployment/upgrading/index.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/docs/index.html" afterPath="$PROJECT_DIR$/docs/index.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/docs/introduction/architecture/index.html" afterPath="$PROJECT_DIR$/docs/introduction/architecture/index.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/docs/introduction/design/index.html" afterPath="$PROJECT_DIR$/docs/introduction/design/index.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/docs/introduction/history/index.html" afterPath="$PROJECT_DIR$/docs/introduction/history/index.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/docs/introduction/index.html" afterPath="$PROJECT_DIR$/docs/introduction/index.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/docs/oxtrust/configuration/index.html" afterPath="$PROJECT_DIR$/docs/oxtrust/configuration/index.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/docs/sitemap.xml" afterPath="$PROJECT_DIR$/docs/sitemap.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/mkdocs.yml" afterPath="$PROJECT_DIR$/mkdocs.yml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sources/customize/script.md" afterPath="$PROJECT_DIR$/sources/customize/script.md" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sources/integrate/dropbox.md" afterPath="$PROJECT_DIR$/sources/integrate/dropbox.md" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sources/multi-factor/intro.md" afterPath="$PROJECT_DIR$/sources/multi-factor/intro.md" />
     </list>
     <ignored path="docs.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -164,8 +25,8 @@
       <file leaf-file-name="mkdocs.yml" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/mkdocs.yml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="420">
-              <caret line="94" column="48" lean-forward="false" selection-start-line="94" selection-start-column="48" selection-end-line="94" selection-end-column="48" />
+            <state relative-caret-position="284">
+              <caret line="49" column="27" lean-forward="false" selection-start-line="49" selection-start-column="27" selection-end-line="49" selection-end-column="27" />
               <folding />
             </state>
           </provider>
@@ -1139,8 +1000,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/mkdocs.yml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="420">
-          <caret line="94" column="48" lean-forward="false" selection-start-line="94" selection-start-column="48" selection-end-line="94" selection-end-column="48" />
+        <state relative-caret-position="284">
+          <caret line="49" column="27" lean-forward="false" selection-start-line="49" selection-start-column="27" selection-end-line="49" selection-end-column="27" />
           <folding />
         </state>
       </provider>
