@@ -169,18 +169,8 @@
      <changefreq>daily</changefreq>
     </url>
         
-    
-
-    
-        
     <url>
-     <loc>/faq/general/</loc>
-     <lastmod>2017-02-05</lastmod>
-     <changefreq>daily</changefreq>
-    </url>
-        
-    <url>
-     <loc>/faq/troubleshooting/</loc>
+     <loc>/reference/config/</loc>
      <lastmod>2017-02-05</lastmod>
      <changefreq>daily</changefreq>
     </url>
@@ -420,24 +410,8 @@
     
         
     <url>
-     <loc>/fine-tuning/</loc>
-     <lastmod>2017-02-05</lastmod>
-     <changefreq>daily</changefreq>
-    </url>
-        
-    
-
-    
-        
-    <url>
-     <loc>/reference/policy/</loc>
-     <lastmod>2017-02-05</lastmod>
-     <changefreq>daily</changefreq>
-    </url>
-        
-    <url>
-     <loc>/reference/config/</loc>
-     <lastmod>2017-02-05</lastmod>
+     <loc></loc>
+     <lastmod></lastmod>
      <changefreq>daily</changefreq>
     </url>
         
@@ -494,91 +468,23 @@
     
         
     <url>
-     <loc>/api/oic-authorization/</loc>
+     <loc>/faq/general/</loc>
      <lastmod>2017-02-05</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
-     <loc>/api/oic-token/</loc>
+     <loc>/faq/troubleshooting/</loc>
      <lastmod>2017-02-05</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
-    <url>
-     <loc>/api/oic-userinfo/</loc>
-     <lastmod>2017-02-05</lastmod>
-     <changefreq>daily</changefreq>
-    </url>
+    
+
+    
         
     <url>
-     <loc>/api/oic-register-client/</loc>
-     <lastmod>2017-02-05</lastmod>
-     <changefreq>daily</changefreq>
-    </url>
-        
-    <url>
-     <loc>/api/oic-end-session/</loc>
-     <lastmod>2017-02-05</lastmod>
-     <changefreq>daily</changefreq>
-    </url>
-        
-    <url>
-     <loc>/api/oic-clientinfo/</loc>
-     <lastmod>2017-02-05</lastmod>
-     <changefreq>daily</changefreq>
-    </url>
-        
-    <url>
-     <loc>/api/uma-discovery/</loc>
-     <lastmod>2017-02-05</lastmod>
-     <changefreq>daily</changefreq>
-    </url>
-        
-    <url>
-     <loc>/api/uma-authorization-endpoint/</loc>
-     <lastmod>2017-02-05</lastmod>
-     <changefreq>daily</changefreq>
-    </url>
-        
-    <url>
-     <loc>/api/uma-resource-registration/</loc>
-     <lastmod>2017-02-05</lastmod>
-     <changefreq>daily</changefreq>
-    </url>
-        
-    <url>
-     <loc>/api/uma-permission-registration/</loc>
-     <lastmod>2017-02-05</lastmod>
-     <changefreq>daily</changefreq>
-    </url>
-        
-    <url>
-     <loc>/api/uma-create-rpt/</loc>
-     <lastmod>2017-02-05</lastmod>
-     <changefreq>daily</changefreq>
-    </url>
-        
-    <url>
-     <loc>/api/uma-rpt-status/</loc>
-     <lastmod>2017-02-05</lastmod>
-     <changefreq>daily</changefreq>
-    </url>
-        
-    <url>
-     <loc>/api/id-generation/</loc>
-     <lastmod>2017-02-05</lastmod>
-     <changefreq>daily</changefreq>
-    </url>
-        
-    <url>
-     <loc>/api/scim-1.1/</loc>
-     <lastmod>2017-02-05</lastmod>
-     <changefreq>daily</changefreq>
-    </url>
-        
-    <url>
-     <loc>/api/scim-2.0/</loc>
+     <loc>/fine-tuning/</loc>
      <lastmod>2017-02-05</lastmod>
      <changefreq>daily</changefreq>
     </url>

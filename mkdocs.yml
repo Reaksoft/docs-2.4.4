@@ -8,7 +8,7 @@ repo_url: https://github.com/GluuFederation/docs-2.4.4-dev
 theme_dir: theme/material/
 extra:
     version: '2.4.4'
-    #logo: 'theme/material/gluu.jpg'
+    #logo: 'theme/material/gluu.svg'
 markdown_extensions:
 - admonition
 - toc:
@@ -62,10 +62,7 @@ pages:
         - 'Certificate': 'multi-factor/cert.md'
         - 'Google Authentication': 'customize/social-login-google.md'
         - 'Custom Authentication Script': 'customize/auth-script.md'
-
-- FAQ:
-    - 'General': 'faq/general.md'
-    - 'Troubleshooting': 'faq/troubleshooting.md'
+    - 'Session timeout Configuration': 'reference/config.md'
 - How To:
     - 'Automate Custom Schema': 'how-to/automate-schema.md'
     - 'Protect SCIM endpoints with UMA': 'integrate/scimuma-howto.md'
@@ -108,11 +105,24 @@ pages:
     - 'Dropbox SSO': 'integrate/dropbox.md'
     - 'TestShib2 SSO': 'integrate/test-shib2.md'
     - 'Asimba & Gluu CE': 'integrate/asimba.md'
-- Fine Tuning and Benchmarking:
-    - 'Tuning LDAP, Tomcat': 'fine-tuning/index.md'
 - Reference:
-    - 'Gluu Policy': 'reference/policy.md'
-    - 'Configurations': 'reference/config.md'
+    - Gluu Server API:
+        - 'OpenID Connect Authorization Endpoint': 'api/oic-authorization.md'
+        - 'OpenID Connect Token Endpoint': 'api/oic-token.md'
+        - 'OpenID Connect UserInfo Endpoint': 'api/oic-userinfo.md'
+        - 'OpenID Connect Client Registration Endpoint': 'api/oic-register-client.md'
+        - 'OpenID Connect End Session Endpoint': 'api/oic-end-session.md'
+        - 'OpenID Connect Client Info Endpoint': 'api/oic-clientinfo.md'
+        - 'UMA Discovery Endpoint': 'api/uma-discovery.md'
+        - 'UMA Authorization Endpoint': 'api/uma-authorization-endpoint.md'
+        - 'UMA Resource Registration Endpoint': 'api/uma-resource-registration.md'
+        - 'UMA Permission Registration Endpoint': 'api/uma-permission-registration.md'
+        - 'UMA CreateRPT Endpoint': 'api/uma-create-rpt.md'
+        - 'UMA RPT Introspection Endpoint': 'api/uma-rpt-status.md'
+        - 'Custom ID Generation API': 'api/id-generation.md'
+        - 'SCIM 1.1': 'api/scim-1.1.md'
+        - 'SCIM 2.0': 'api/scim-2.0.md'
+    #- 'Gluu Policy': 'reference/policy.md'
     - 'Certificates': 'reference/certificates.md'
     - 'LDAP': 'reference/ldap.md'
     - 'Schema': 'reference/schema.md'
@@ -121,20 +131,8 @@ pages:
     - 'oxTrust JSON Properties': 'reference/oxtrust-properties.md'
     - 'oxAuth JSON Properties': 'reference/oxauth-properties.md'
     - 'Logs': 'reference/logs.md'
-- Gluu Server API:
-    - 'OpenID Connect Authorization Endpoint': 'api/oic-authorization.md'
-    - 'OpenID Connect Token Endpoint': 'api/oic-token.md'
-    - 'OpenID Connect UserInfo Endpoint': 'api/oic-userinfo.md'
-    - 'OpenID Connect Client Registration Endpoint': 'api/oic-register-client.md'
-    - 'OpenID Connect End Session Endpoint': 'api/oic-end-session.md'
-    - 'OpenID Connect Client Info Endpoint': 'api/oic-clientinfo.md'
-    - 'UMA Discovery Endpoint': 'api/uma-discovery.md'
-    - 'UMA Authorization Endpoint': 'api/uma-authorization-endpoint.md'
-    - 'UMA Resource Registration Endpoint': 'api/uma-resource-registration.md'
-    - 'UMA Permission Registration Endpoint': 'api/uma-permission-registration.md'
-    - 'UMA CreateRPT Endpoint': 'api/uma-create-rpt.md'
-    - 'UMA RPT Introspection Endpoint': 'api/uma-rpt-status.md'
-    - 'Custom ID Generation API': 'api/id-generation.md'
-    - 'SCIM 1.1': 'api/scim-1.1.md'
-    - 'SCIM 2.0': 'api/scim-2.0.md'
-
+- FAQ:
+    - 'General': 'faq/general.md'
+    - 'Troubleshooting': 'faq/troubleshooting.md'
+- Fine Tuning and Benchmarking:
+    - 'Tuning LDAP, Tomcat': 'fine-tuning/index.md'
