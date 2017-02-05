@@ -1,57 +1,87 @@
 # Gluu Server Community Edition (CE) Docs
-The Gluu Server is a free open source identity provider (IDP) and access management suite of software primarily written in Java. The Gluu Server is a central authentication and authorization server that should be leveraged by applications to perform person identification and lowest common denominator authorization decisions. The Gluu Server is engineered to support robust enterprise requirements for uptime and availability.
+## Introduction
+The Gluu Server is a free open source identity and access management 
+(IAM) platform. The most common use case for the Gluu Server is Single 
+Sign-On (SSO). Other common use cases include mobile authentication, 
+API access management, two-factor authentication, customer identity
+and access management (CIAM), and identity federation. 
 
-Organizations use the Gluu Server to achieve:       
+The Gluu Server is a container distribution composed of software written by Gluu and incorporated from other open source projects. Gluu
+projects are frequently prefixed with our open source handle: **ox** (e.g. oxAuth, oxTrust). Any code in the Gluu Server that we wrote is MIT license, and is available on [Github](https://github.com/GluuFederation/). 
 
-- Outbound and Inbound Single Sign-On (SSO)          
-- Centralized authentication and authorization          
-- Customer, partner, and employee authentication          
-- Web & API access management          
-- Strong authentication          
-- Identity Federation          
+SaaS, custom, open source and commercial software can be made more 
+secure by leveraging a central authentication and authorization service. 
+Because there are so many different kinds of apps, there is no way to 
+"top down" implement proprietary security mechanisms. This is why
+open standards are so important for IAM. 
 
-The Gluu Server supports the following open standards for federation, authentication, authorization, and identity management:
-     
-- SAML      
-- OpenID Connect     
-- UMA     
-- CAS       
-- SCIM        
-- FIDO       
-- LDAP         
+While there are many open protocols for IAM, Gluu focuses on just a few. 
+Consolidation saves money, and one-off integrations should be avoided. 
+Our goal was to support the most widely adopted older protocols, and the 
+most promising new protocols. 
 
-Learn more about the differences between OAuth, SAML and OpenID Connect in [this blog](https://www.gluu.org/blog/oauth-vs-saml-vs-openid-connect/).
+The Gluu Server supports the following open web standards for 
+authentication, authorization, federated identity, and identity management:
 
-Learn more about each supported standard on [our website](https://www.gluu.org/resources/documents/#standards). 
+- OAuth 2.0    
+- SAML 2.0   
+- OpenID Connect    
+- User Managed Access (UMA)    
+- Simple Cloud Identity Management (SCIM)    
+- FIDO Universal 2nd Factor (U2F)    
+- Lightweight Directory Access Protocol (LDAP)   
 
-The Gluu Server code is open source, and can be found on [Github](github.com/GluuFederation/).
+If this is your first exposure to the Gluu Server, welcome to the 
+community! We want to see the ecosystem flourish, and ultimately make 
+the Internet a safer, more privacy protected place. In order to do that, 
+we believe we need to keep the Gluu Server free so all kinds of 
+organizations can use, contribute and benefit from the software.
 
-## Client Software
-In order for an application to leverage the Gluu Server (or any external identity provider) for authentication and authorization, the application needs to support federation. The Gluu Server provides identity provider endpoints for the SAML and OpenID Connect federation standards. Therefore, any application that wants to send users to the Gluu Server for login should support either SAML or OpenID Connect. 
+These docs are not perfect! Please help us make them so by submitting
+any improvements to our [Documentation Github](https://github.com/GluuFederation/docs-3).
+If you're a Github pro, submit a pull request. If not, just open an issue
+on any typos, bugs, or improvements you'd like to see. We need your
+help... even if you're not a coder, you can contribute! 
 
-If the application does not already support one of these standards, we highly recommend securing the application using [oxd](http://oxd.gluu.org), our OpenID Connect middleware software. oxd makes its easy to properly secure the sign-in flow for applications with OpenID Connect, and is supported and maintained by Gluu. 
+##  oxd Client Software
+Gluu offers commercial OAuth 2.0 client software called [oxd](https://oxd.gluu.org) to make securing and integrating applications with the Gluu Server easier. Your application can use any client software that implements the open standards the Gluu Server supports, but you may want to consider using oxd for the following reasons:
+ 
+(1). oxd is super-easy and fun to use; 
 
-Learn more about oxd in [this blog](https://www.gluu.org/blog/secure-web-apps-openid-connect-oxd/). 
+(2). We keep updating oxd to address the latest OAuth 2.0 security knowledge; 
 
-Watch the [oxd demo](http://gluu.co/oxd-demo). 
+(3). We can provide more complete end-to-end support if we know both 
+the client and server software;
 
-The Gluu Server also supports a few third party OpenID Connect client library projects, including the AppAuth client SDK for mobile single sign-on. See [the current list](https://www.gluu.org/blog/limiting-openid-connect-community-client-support/). 
+(4). oxd subscriptions help support this project so you can see more enhancements faster; 
+
+(5). There are oxd libraries for Php, Python, Java, Node, Ruby, C#, Perl and Go. If your application is programmed in another language, oxd has a simple JSON/REST API;
+
+(6). There are oxd plugins for many popular applications like: Wordpress, Drupal, Magento, OpenCart, SugarCRM, SuiteCRM, Roundcube, Shopify, and Kong. More are being added too. Next on the list are: MatterMost, RocketChat, NextCloud, and Liferay.
 
 ## Support
 
-Gluu hosts a public knowledge base and support platform on the [Gluu support site](http://support.gluu.org). Anyone can browse tickets and register to open public tickets. 
+We are committed to providing free community support! You can browse or register and post 
+your questions on [Gluu support](https://support.gluu.org). All community
+questions are public, and we do our best to answer them in a timely 
+manner. 
 
-VIP support can be purchased if you or your organization wants private support, SLA's on support responses (like production outages), and consultative support from Gluu. See VIP support pricing on [our website](gluu.org/pricing) options.
+Private support, guaranteed response times, and consultative 
+support are available to organizations who purchase a support contract. For
+more information, see [our website](gluu.org/pricing).
 
 ## License
-Any software published by Gluu in the OX Project is under the [MIT License](http://opensource.org/licenses/MIT). This includes oxAuth, the OAuth 2.0 and OpenID Connect Provider, and UMA Authorization Server, and oxTrust, the web based server administration GUI.
 
-During installation you will also have the option to install third party software components which have the following licenses:
+All of Gluu's open source software is published under an
+[MIT License](http://opensource.org/licenses/MIT). The licenses 
+for other components are listed below.
 
-|	Component	|	License	|
+|	Component	|	License	            |
 |-----------------------|---------------|
-|	Shibboleth  |	[Apache2](http://www.apache.org/licenses/LICENSE-2.0)|
-|	OpenDJ		|[CDDL-1.0](http://opensource.org/licenses/CDDL-1.0)|
-|	Asimba		|	[GNU APGL 3.0](http://www.gnu.org/licenses/agpl-3.0.html)|
-
-
+|	Shibboleth IDP      | [Apache2](http://www.apache.org/licenses/LICENSE-2.0)|
+|	OpenLDAP	        | [OpenLDAP Public License](http://www.openldap.org/software/release/license.html)|
+|	Asimba		        | [GNU APGL 3.0](http://www.gnu.org/licenses/agpl-3.0.html)|
+|	OpenDJ		        | [CDDL](https://forgerock.org/cddlv1-0/)|
+|  UnboundID LDAP SDK	| [UnboundID LDAP SDK Free Use License](https://github.com/UnboundID/ldapsdk/blob/master/LICENSE-UnboundID-LDAPSDK.txt)|
+| Passport-JS           | [MIT License](https://github.com/jaredhanson/passport/blob/master/LICENSE) |
+| Jetty / Apache HTTPD  | [Apache2](http://www.apache.org/licenses/LICENSE-2.0)|
