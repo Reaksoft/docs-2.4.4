@@ -1,5 +1,3 @@
-[TOC]
-
 # Client Credentials Grant
 
 The Client Credentials Grant allows resource owner to use password
@@ -82,7 +80,7 @@ Pragma: no-cache
 {"access_token":"c769d7ff-c476-42ab-b531-fe2f60b2f5cc","token_type":"bearer","expires_in":3600}
 ```
 
-# Resource Owner Password Credentials Grant
+## Resource Owner Password Credentials Grant
 
 The resource owner password credentials (i.e. username and password) can
 be used directly as an authorization grant to obtain an access token.
@@ -191,7 +189,7 @@ Pragma: no-cache
 
 {"access_token":"26d55e4b-6c61-40ea-9763-3282f5db0f0e","token_type":"bearer","expires_in":3599,"refresh_token":"aba91bd9-aa10-4fca-952b-50a9a9afac28","scope":"openid","id_token":"eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwczpcL1wvc2VlZC5nbHV1Lm9yZyIsInVzZXJfaWQiOiJtaWtlIiwiYXVkIjoiQCExMTExITAwMDghRkY4MSEyRDM5IiwiZXhwIjoxMzM5MTk2ODgxMzAzLCJveEludW0iOiJAITExMTEhMDAwMCFENEU3Iiwib3hWYWxpZGF0aW9uVVJJIjoiaHR0cHM6XC9cL3NlZWQuZ2x1dS5vcmdcL294YXV0aFwvc2VhbVwvcmVzb3VyY2VcL3Jlc3R2MVwvb3hhdXRoXC9jaGVja19zZXNzaW9uIiwib3hPcGVuSURDb25uZWN0VmVyc2lvbiI6Im9wZW5pZGNvbm5lY3QtMS4wIn0.SzWfJsmlz62qTRw1lEJZ8PygY9eRupgmsbXLCQwPVDQ"}
 ```
-# Gluu OAuth2 Access Management
+## Gluu OAuth2 Access Management
 [GAT][Gluu Access Token] is used for Gluu OAuth2 Access Management.
 ## Overview
 ![image](https://ox.gluu.org/lib/exe/fetch.php?media=uma:gat.png)

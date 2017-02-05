@@ -1,13 +1,12 @@
-[TOC]
 # Configuration
 ## oxTrust Configuration
 This page explains the JSON Configuration under the Configuration Tab in the Configuration menu.
 
-![image](https://raw.githubusercontent.com/GluuFederation/docs/master/sources/img/2.4/config-json_menu.png)
+![image](../img/2.4/config-json_menu.png)
 
 ## oxtrust.properties
 
-![image](https://raw.githubusercontent.com/GluuFederation/docs/master/sources/img/2.4/config-json_oxtrustproperties.png)
+![image](../img/2.4/config-json_oxtrustproperties.png)
 
 The following fields are available for edit in the menu.
 
@@ -16,7 +15,7 @@ The following fields are available for edit in the menu.
 * _orgIname:_ 
 * _orgSupportEmail:_ the support email address of the Gluu Server installation
 
-![image](https://raw.githubusercontent.com/GluuFederation/docs/master/sources/img/2.4/config-json_oxauthproperties0.png)
+![image](../img/2.4/config-json_oxauthproperties0.png)
 
 * _applianceInum:_ the [INUM][inum] of the appliance
 * _applianceUrl:_ the [URI][uri] of the appliance
@@ -27,31 +26,31 @@ The following fields are available for edit in the menu.
 ## personObjectClassTypes
 This class holds the relation between the person entry and it's relative object class.
 
-![image](https://raw.githubusercontent.com/GluuFederation/docs/master/sources/img/2.4/config-json_oxtrustproperties1.png)
+![image](../img/2.4/config-json_oxtrustproperties1.png)
 
 * _item 1:_ inetOrgPerson
 * _item 2:_ gluuPerson
 
-![image](https://raw.githubusercontent.com/GluuFederation/docs/master/sources/img/2.4/config-json_oxtrustproperties1-1.png)
+![image](../img/2.4/config-json_oxtrustproperties1-1.png)
 
 * _personCustomObjectClass:_
 
 ## personObjectClassDisplayNames
 This class holds the relation betwee the display name of the person and the relative object class.
 
-![image](https://raw.githubusercontent.com/GluuFederation/docs/master/sources/img/2.4/config-json_oxtrustproperties2.png)
+![image](../img/2.4/config-json_oxtrustproperties2.png)
 
 * _item 1:_ inetOrgPerson
 * _item 2:_ gluuPerson
 
-![image](https://raw.githubusercontent.com/GluuFederation/docs/master/sources/img/2.4/config-json_oxtrustproperties2-1.png)
+![image](../img/2.4/config-json_oxtrustproperties2-1.png)
 
 * _schemaAddAttributeDefenition:_ 
 
 ## contactObjectClassDisplayNames 
 Items can be added under this class by clicking on the `+ item` button.
 
-![image](https://raw.githubusercontent.com/GluuFederation/docs/master/sources/img/2.4/config-json_oxtrustproperties3.png)
+![image](../img/2.4/config-json_oxtrustproperties3.png)
 
 * _photoRepositoryRootDir:_ the path to the root directory of photographs
 * _photoRepositoryThumbWidth:_ the thumb with of a photo
@@ -59,37 +58,37 @@ Items can be added under this class by clicking on the `+ item` button.
 * _photoRepositoryCountLevels:_ the count level per photo repository
 * _photoRepositoryCountFoldersPerLevel:_ he number of folders per level
 
-![image](https://raw.githubusercontent.com/GluuFederation/docs/master/sources/img/2.4/config-json_oxtrustproperties3-1.png)
+![image](../img/2.4/config-json_oxtrustproperties3-1.png)
 
 * _authMode:_ set this tag to `basic` to use basic authentication or leave it blank to use oxAuth
 * _ldifStore:_ the path to the [LDIF][ldif] store
 
-![image](https://raw.githubusercontent.com/GluuFederation/docs/master/sources/img/2.4/config-json_oxtrustproperties3-2.png)
+![image](../img/2.4/config-json_oxtrustproperties3-2.png)
 
 * _shibboleth2IdpRootDir:_ the root directory for the shibboleth plugin
 * _shibboleth2SpConfDir:_ the configuration directory for the shibboleth plugin
 
-![image](https://raw.githubusercontent.com/GluuFederation/docs/master/sources/img/2.4/config-json_oxtrustproperties3-3.png)
+![image](../img/2.4/config-json_oxtrustproperties3-3.png)
 
 * _pokenApplicationSecret:_
 * _updateAplicanceStatus:_  the update appliance state for the site. Use `true` to allow, and `false` to forbid (default value)
 * _svnConfigurationStoreRoot:_ he root of the [SVN][svn] configuration store
 * _svnConfigurationStorePassword:_ the password of the [SVN][svn] configuration store
 
-![image](https://raw.githubusercontent.com/GluuFederation/docs/master/sources/img/2.4/config-json_oxtrustproperties3-4.png)
+![image](../img/2.4/config-json_oxtrustproperties3-4.png)
 
 * _keystorePath:_ the path to the keystore
 * _keystorePassword:_ the password to the keystore
 * _allowPersonModification:_ enables or disables the allowance to modify a person entry. Use `true` to allow (default value), and  `false` otherwise
 
-![image](https://raw.githubusercontent.com/GluuFederation/docs/master/sources/img/2.4/config-json_oxtrustproperties3-5.png)
+![image](../img/2.4/config-json_oxtrustproperties3-5.png)
 
 * _idpUrl:_ the [uri][uri] of the [OpenID][openid] provider that is in use
 * _velocityLog:_ the velocity log filename with path
 * _spMetadataPath:_the path to the Gluu Server metadata
 * _logoLocation:_ the directory name for the images and logos that are used
 
-![image](https://raw.githubusercontent.com/GluuFederation/docs/master/sources/img/2.4/config-json_oxtrustproperties3-6.png)
+![image](../img/2.4/config-json_oxtrustproperties3-6.png)
 
 * _idpSecurityKey:_ the security key of the [OpenID][openid] provider
 * _idpSecurityKeyPassowrd:_ the security password of the [OpenID][openid] provider
@@ -98,13 +97,13 @@ Items can be added under this class by clicking on the `+ item` button.
 ## gluuSpAttributes
 Items can be added here by clicking on the `+ item` button.
 
-![image](https://raw.githubusercontent.com/GluuFederation/docs/master/sources/img/2.4/config-json_oxtrustproperties4.png)
+![image](../img/2.4/config-json_oxtrustproperties4.png)
 
 * _configGeneration:_ this entry controls the automatic generation of the configuration files. Use `enable` to allow and `disable` otherwise
 * _idpLdapProtocol:_ the protocol used by the [LDAP][ldap] server
 * _idpLdapServer:_ hostname of the [LDAP][ldap] server with port
 
-![image](https://raw.githubusercontent.com/GluuFederation/docs/master/sources/img/2.4/config-json_oxtrustproperties4-1.png)
+![image](../img/2.4/config-json_oxtrustproperties4-1.png)
 
 * _orgInum:_ the [INUM][inum] of the organization
 * _idpBindDn:_ the domain name of the [OpenID][openid] provider
@@ -112,14 +111,14 @@ Items can be added here by clicking on the `+ item` button.
 * _idpUserFields:_ 
 * _gluuSpCert:_ the certificate name and location of the Gluu Server
 
-![image](https://raw.githubusercontent.com/GluuFederation/docs/master/sources/img/2.4/config-json_oxtrustproperties4-2.png)
+![image](../img/2.4/config-json_oxtrustproperties4-2.png)
 
 * _mysqlUrl:_ the MySql connector as [URI][uri]
 * _mysqlUser:_ the username for the MySql server
 * _mysqlPassword:_ passowrd for the MySql server
 * _shibboleth2FederationRootDir:_ the root directory for the [Shobboleth][shibboleth] federation plugin
 
-![image](https://raw.githubusercontent.com/GluuFederation/docs/master/sources/img/2.4/config-json_oxtrustproperties4-3.png)
+![image](../img/2.4/config-json_oxtrustproperties4-3.png)
 
 * _cacheRefreshEnabled:_ the value of the cache refresh mechanism. Use `true` to enable and `false` otherwise
 * _cacheRefreshIntervalMinutes:_ the time in minutes counting down to next cache-refresh event
@@ -128,12 +127,12 @@ Items can be added here by clicking on the `+ item` button.
 * _tempCertDir:_ the temporary location for certificates while certificate update procedure
 * _certDir:_ the locaiton of certificates used in configuration files
 
-![image](https://raw.githubusercontent.com/GluuFederation/docs/master/sources/img/2.4/config-json_oxtrustproperties4-4.png)
+![image](../img/2.4/config-json_oxtrustproperties4-4.png)
 
 * _servicesRestartTrigger:_ the location of the file which will restart the applicance server if deleted
 * _persistSVN:_ the state of persistence in [SVN][svn]. Use `true` to enable or `false` otherwise
 
-![image](https://raw.githubusercontent.com/GluuFederation/docs/master/sources/img/2.4/config-json_oxtrustproperties4-5.png)
+![image](../img/2.4/config-json_oxtrustproperties4-5.png)
 
 * _oxAuthAuthorizeUrl:_ the authorization [URI][uri] for oxAuth
 * _oxAuthTokenUrl:_ the token [URI][uri] for oxAuth
@@ -142,7 +141,7 @@ Items can be added here by clicking on the `+ item` button.
 * _oxAuthLogoutUrl:_ the [URI][uri] for logging out of oxAuth
 * _oxAuthTokenValidationUrl:_ the [URI][uri] for oxAuth token validation
 
-![image](https://raw.githubusercontent.com/GluuFederation/docs/master/sources/img/2.4/config-json_oxtrustproperties4-6.png)
+![image](../img/2.4/config-json_oxtrustproperties4-6.png)
 
 * _oxAuthUserInfo:_ the [URI][uri] for oxAuth user information
 * _oxAuthSectorIdentifierUrl:_ the [URI][uri] for oxAuth sector identifier
@@ -155,13 +154,13 @@ Items can be added here by clicking on the `+ item` button.
 ## clusteredInums
 Items can be added here by clicking on the `+ item` button.
 
-![image](https://raw.githubusercontent.com/GluuFederation/docs/master/sources/img/2.4/config-json_oxtrustproperties5.png)
+![image](../img/2.4/config-json_oxtrustproperties5.png)
 
 * _clientAssociationAttribute:_ the attribute which identifies the [OpenID][openid] client
 * _oxAuthIssuers:_ the [URI][uri] of the issuer authorization server
 * _ignoreValidation:_ the control to check/ignore token validation. Use `true` to validate or `false` otherwise
 
-![image](https://raw.githubusercontent.com/GluuFederation/docs/master/sources/img/2.4/config-json_oxtrustproperties5-1.png)
+![image](../img/2.4/config-json_oxtrustproperties5-1.png)
 
 * _umaIssuer:_ the [URI][uri] of the issuer authorization server
 * _umaClientId:_ the identification of the [UMA][uma] client
@@ -169,7 +168,7 @@ Items can be added here by clicking on the `+ item` button.
 * _umaResourceId:_
 * _umaScope:_ the scopes available for this resource
 
-![image](https://raw.githubusercontent.com/GluuFederation/docs/master/sources/img/2.4/config-json_oxtrustproperties5-2.png)
+![image](../img/2.4/config-json_oxtrustproperties5-2.png)
 
 * _recaptchaSiteKey:_
 * _recaptchaSecretKey:_

@@ -1,5 +1,4 @@
-
-## oxauth-ldap.properties
+# oxauth-ldap.properties
 
 The Gluu Server uses [Lightweight Directory Access Protocol
 (LDAP)][ldap] for persistence to store [oxTrust][oxtrust] and oxAuth

@@ -1,4 +1,3 @@
-[TOC]
 # Inbound SAML in Gluu Server
 
 To achieve inbound SAML, the Gluu Server uses an open source product called Asimba. The main use case for Asimba is to enable websites to use a single IdP
@@ -133,5 +132,7 @@ oxAsimba will transact all kind of attributes whichever authentication server ( 
 
 * Restart tomcat service: 'service tomcat restart' from Gluu Server container
 
-# Inbound SAML End to End Testing
-Gluu Server supports Inbound SAML using the custom script feature. A step by step guide is available in the `How To` section called [Inbound SAML End to End Testing](../how-to/saml_proxy_end_to_end.md)
+## Inbound SAML End to End Testing
+Gluu Server supports Inbound SAML using the custom script feature. 
+A step by step guide is available in the `How To` 
+section called [Inbound SAML End to End Testing](../how-to/saml_proxy_end_to_end.md)

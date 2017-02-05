@@ -62,9 +62,7 @@
   <nav class="md-header-nav md-grid">
     <div class="md-flex">
 	 <div class="md-flex__cell md-flex__cell--shrink">
-        <a href="../.." title="Gluu Docs" class=" md-logo  md-header-nav__button">
-          
-            <img src="../../theme/material/gluu.jpg" width="24" height="24">
+        <a href="../.." title="Gluu Docs" class=" md-icon md-icon--home  md-header-nav__button">
           
         </a>
       </div>
@@ -178,9 +176,7 @@
                   <div class="md-sidebar__inner">
                     <nav class="md-nav md-nav--primary">
   <label class="md-nav__title md-nav__title--site" for="drawer">
-    <i class=" md-logo  md-nav__button">
-      
-        <img src="../../theme/material/gluu.jpg">
+    <i class=" md-icon md-icon--home  md-nav__button">
       
     </i>
     Gluu Docs
@@ -1828,30 +1824,16 @@
                
               
                 
-                <div class="toc">
-<ul>
-<li><a href="#how-to-back-up-gluu-ce-server">How to back up Gluu CE Server</a><ul>
-<li><a href="#tar-command-to-back-up-gluu-server">Tar command to Back up Gluu Server</a><ul>
-<li><a href="#steps-to-back-up-gluu-ce-server-using-tar">Steps to Back up Gluu CE server using tar</a></li>
-</ul>
-</li>
-<li><a href="#using-gluu-script-to-back-up-ldif-of-ldap">Using Gluu Script to Back up Ldif of LDAP</a><ul>
-<li><a href="#steps-to-back-up-gluu-ce-server-using-gluu-export-scripts">Steps to Back up Gluu CE Server using Gluu Export Scripts</a></li>
-</ul>
-</li>
-</ul>
-</li>
-</ul>
-</div>
-<h1 id="how-to-back-up-gluu-ce-server">How to back up Gluu CE Server<a class="headerlink" href="#how-to-back-up-gluu-ce-server" title="Permanent link">#</a></h1>
+                <h1 id="how-to-back-up-gluu-ce-server">How to back up Gluu CE Server<a class="headerlink" href="#how-to-back-up-gluu-ce-server" title="Permanent link">#</a></h1>
 <p>Gluu CE Server Back up can be performed using below methods.</p>
 <ul>
 <li>Using tar command to tar the Gluu Server Folder from the Host OS</li>
 <li>Using Gluu provided export and import scripts to back up ldif of the LDAP.</li>
 </ul>
-<blockquote>
-<p>NOTE: In this documentation,'2.4.x' is referred to the existing installed version of Gluu CE Server. </p>
-</blockquote>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+</div>
+<p>In this documentation,'2.4.x' is referred to the existing installed version of Gluu CE Server. </p>
 <h2 id="tar-command-to-back-up-gluu-server">Tar command to Back up Gluu Server<a class="headerlink" href="#tar-command-to-back-up-gluu-server" title="Permanent link">#</a></h2>
 <h3 id="steps-to-back-up-gluu-ce-server-using-tar">Steps to Back up Gluu CE server using tar<a class="headerlink" href="#steps-to-back-up-gluu-ce-server-using-tar" title="Permanent link">#</a></h3>
 <pre><code>1. Stop the server using below command

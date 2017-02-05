@@ -1,5 +1,3 @@
-[TOC]
-
 # Certificates 
 Many of the components of the Gluu Server have cryptographic keys and
 X.509 certificates. There are many key formats, and keystore formats.

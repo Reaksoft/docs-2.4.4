@@ -62,9 +62,7 @@
   <nav class="md-header-nav md-grid">
     <div class="md-flex">
 	 <div class="md-flex__cell md-flex__cell--shrink">
-        <a href="../.." title="Gluu Docs" class=" md-logo  md-header-nav__button">
-          
-            <img src="../../theme/material/gluu.jpg" width="24" height="24">
+        <a href="../.." title="Gluu Docs" class=" md-icon md-icon--home  md-header-nav__button">
           
         </a>
       </div>
@@ -178,9 +176,7 @@
                   <div class="md-sidebar__inner">
                     <nav class="md-nav md-nav--primary">
   <label class="md-nav__title md-nav__title--site" for="drawer">
-    <i class=" md-logo  md-nav__button">
-      
-        <img src="../../theme/material/gluu.jpg">
+    <i class=" md-icon md-icon--home  md-nav__button">
       
     </i>
     Gluu Docs
@@ -1734,29 +1730,8 @@
                
               
                 
-                <div class="toc">
-<ul>
-<li><a href="#ldap-namespace">LDAP Namespace</a></li>
-<li><a href="#ldap-configuration">LDAP Configuration</a></li>
-<li><a href="#indexing">Indexing</a><ul>
-<li><a href="#opendj-indexing">OpenDJ Indexing</a></li>
-<li><a href="#389ds-indexing">389DS Indexing</a></li>
-<li><a href="#openldap-indexing">OpenLDAP Indexing</a></li>
-<li><a href="#configuring-ldap-indexing-to-improve-ox-applications-performance">Configuring LDAP indexing to improve OX applications performance</a></li>
-<li><a href="#oxauth-filters">oxAuth filters</a></li>
-<li><a href="#determining-what-needs-indexing">Determining what needs indexing</a></li>
-<li><a href="#sample-commands-to-add-indexes">Sample commands to add indexes</a></li>
-</ul>
-</li>
-<li><a href="#replication">Replication</a><ul>
-<li><a href="#opendj">OpenDJ</a></li>
-<li><a href="#openldap">OpenLDAP</a></li>
-<li><a href="#389ds">389DS</a></li>
-</ul>
-</li>
-</ul>
-</div>
-<h1 id="ldap-namespace">LDAP Namespace<a class="headerlink" href="#ldap-namespace" title="Permanent link">#</a></h1>
+                <h1 id="_1"><a class="headerlink" href="#_1" title="Permanent link">#</a></h1>
+<h2 id="ldap-namespace">LDAP Namespace<a class="headerlink" href="#ldap-namespace" title="Permanent link">#</a></h2>
 <p>The LDAP Namespace, or Directory Information Tree (DIT) structure, is
 the convention for naming entries in LDAP so that they form a
 hierarchical tree structure.</p>
@@ -1840,7 +1815,7 @@ under <code>o=gluu</code>:</p>
 </tr>
 </tbody>
 </table>
-<h1 id="ldap-configuration">LDAP Configuration<a class="headerlink" href="#ldap-configuration" title="Permanent link">#</a></h1>
+<h2 id="ldap-configuration">LDAP Configuration<a class="headerlink" href="#ldap-configuration" title="Permanent link">#</a></h2>
 <p>This section has information about how the Gluu Server uses LDAP, and
 other LDAP recommendations.</p>
 <p>The Gluu Server uses LDAP for persistence to store information about
@@ -1848,7 +1823,7 @@ things like configuration, user claims, and client claims. Currently
 Gluu ships with a forked version of OpenDJ. However, we hope to bolster
 support for OpenLDAP and 389DS. If you are an LDAP guru please help us
 by contributing documentation details!</p>
-<h1 id="indexing">Indexing<a class="headerlink" href="#indexing" title="Permanent link">#</a></h1>
+<h2 id="indexing">Indexing<a class="headerlink" href="#indexing" title="Permanent link">#</a></h2>
 <p>All databases need proper indexing to function. This is particularly
 true for LDAP servers. There should never be any <code>sub</code> or <code>one</code> scoped
 searches to the LDAP server that are not properly indexed. Because
@@ -1857,11 +1832,11 @@ provide a good starting point. The LDAP server logs should be
 periodically analyzed to identify un-indexed searches. The exact
 indexing requirements may vary based on custom attributes, and custom
 authentication and authorization requirements.</p>
-<h2 id="opendj-indexing">OpenDJ Indexing<a class="headerlink" href="#opendj-indexing" title="Permanent link">#</a></h2>
+<h3 id="opendj-indexing">OpenDJ Indexing<a class="headerlink" href="#opendj-indexing" title="Permanent link">#</a></h3>
 <p><a href="http://opendj.forgerock.org/opendj-server/doc/bootstrap/admin-guide/#chap-indexing">Indexing Attribute Values</a></p>
-<h2 id="389ds-indexing">389DS Indexing<a class="headerlink" href="#389ds-indexing" title="Permanent link">#</a></h2>
+<h3 id="389ds-indexing">389DS Indexing<a class="headerlink" href="#389ds-indexing" title="Permanent link">#</a></h3>
 <p><a href="http://directory.fedoraproject.org/docs/389ds/design/database-architecture.html">Indexing Architecture</a></p>
-<h2 id="openldap-indexing">OpenLDAP Indexing<a class="headerlink" href="#openldap-indexing" title="Permanent link">#</a></h2>
+<h3 id="openldap-indexing">OpenLDAP Indexing<a class="headerlink" href="#openldap-indexing" title="Permanent link">#</a></h3>
 <p><a href="http://www.openldap.org/doc/admin24/tuning.html">OpenLDAP Tuning</a></p>
 <p><strong>Recommended Indexes for OX</strong></p>
 <p>Indexed attributes in OpenDS on seed.gluu.org server:</p>
@@ -1884,7 +1859,7 @@ authentication and authorization requirements.</p>
 <p>For o=site cache refresh will search on the 'Primary Key'. So it will
 not be possible for us to know which attributes need to be indexed until
 configuration time.</p>
-<h2 id="configuring-ldap-indexing-to-improve-ox-applications-performance">Configuring LDAP indexing to improve OX applications performance<a class="headerlink" href="#configuring-ldap-indexing-to-improve-ox-applications-performance" title="Permanent link">#</a></h2>
+<h3 id="configuring-ldap-indexing-to-improve-ox-applications-performance">Configuring LDAP indexing to improve OX applications performance<a class="headerlink" href="#configuring-ldap-indexing-to-improve-ox-applications-performance" title="Permanent link">#</a></h3>
 <p>In order to keep optimal server load it is necessary to configure
 indexing for OpenDJ LDAP server. OpenDJ support these index types:
 approximate, equality, ordering, presence, substring, virtual list view,
@@ -1899,7 +1874,7 @@ givenName, id2children, id2subtree, mail, member, objectClass, sn,
 telephone­Number, uid, unique­Member. This table contains definition of
 these indexes: <a href="http://opendj.forgerock.org/opendj-server/doc/admin-guide/#default-indexes">default
 Indexes</a>.</p>
-<h2 id="oxauth-filters">oxAuth filters<a class="headerlink" href="#oxauth-filters" title="Permanent link">#</a></h2>
+<h3 id="oxauth-filters">oxAuth filters<a class="headerlink" href="#oxauth-filters" title="Permanent link">#</a></h3>
 <p>oxAuth has a few parts which allows custom LDAP filters:</p>
 <pre><code>`&lt;auth-filters-enabled&gt;`true`&lt;/auth-filters-enabled&gt;`
 `&lt;auth-filters&gt;`
@@ -1935,12 +1910,12 @@ Indexes</a>.</p>
 <p>oxAuth uses them to find clients. Hence it is necessary to configure
 indexing for these filters. If there are no indexes for the filter
 attributes OpenDJ might use an unindexed search.</p>
-<h2 id="determining-what-needs-indexing">Determining what needs indexing<a class="headerlink" href="#determining-what-needs-indexing" title="Permanent link">#</a></h2>
+<h3 id="determining-what-needs-indexing">Determining what needs indexing<a class="headerlink" href="#determining-what-needs-indexing" title="Permanent link">#</a></h3>
 <p>OpenDJ has built in functionality to help the admin find unindexed
 searches. More information about this is available in the OpenDJ Admin
 Guide <a href="http://opendj.forgerock.org/opendj-server/doc/admin-guide/#debug-search-indexes">Determining What Needs
 Indexing</a>.</p>
-<h2 id="sample-commands-to-add-indexes">Sample commands to add indexes<a class="headerlink" href="#sample-commands-to-add-indexes" title="Permanent link">#</a></h2>
+<h3 id="sample-commands-to-add-indexes">Sample commands to add indexes<a class="headerlink" href="#sample-commands-to-add-indexes" title="Permanent link">#</a></h3>
 <p>Add an index for the inum attribute.</p>
 <pre><code>./dsconfig create-local-db-index --backend-name userRoot --type generic --index-name inum --set index-type:equality --set index-entry-limit:4000 --hostName host --port 4444 --bindDN cn=Directory\ Manager -j /tmp/.pw --trustAll --noPropertiesFile --no-prompt
 ./dsconfig set-backend-prop --backend-name userRoot --set enabled:false --hostName host --port 4444 --bindDN cn=Directory\ Manager -j /tmp/.pw --trustAll --noPropertiesFile --no-prompt
@@ -1983,7 +1958,7 @@ Indexing</a>.</p>
 <p>Determine the current status of indexes.</p>
 <pre><code>./dbtest list-index-status --backendID userRoot -b o=gluu
 </code></pre>
-<h1 id="replication">Replication<a class="headerlink" href="#replication" title="Permanent link">#</a></h1>
+<h2 id="replication">Replication<a class="headerlink" href="#replication" title="Permanent link">#</a></h2>
 <p>The Gluu Server was designed to take advantage of LDAP replication. Each
 server has its own special configuration for replication. Below are some
 pointers to the respective platform's documentation on how to manage

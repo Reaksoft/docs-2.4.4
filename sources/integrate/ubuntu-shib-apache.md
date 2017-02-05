@@ -73,7 +73,7 @@ ScriptAlias /protected/ /var/www/protected/
 ```
 
 
-# Configure the Shibboleth SP
+## Configure the Shibboleth SP
 
 Use this for `shibboleth2.xml` and replace `squid.gluu.info` with the
 hostname of your SP, and `albacore.gluu.info` with the hostname of your
@@ -167,16 +167,16 @@ Copy this file into `/etc/shibboleth/attribute-map.xml`:
 Now you need to create a Trust Relationship in your Gluu Server. Login,
 go to SAML / Trust Relationships, and "Add Relationship":
 
-![image](https://raw.githubusercontent.com/GluuFederation/docs/master/sources/img/ubuntu-shib-apache/minnow-saml-trust-relationship-shibboleth-sp.png)
+![image](../img/ubuntu-shib-apache/minnow-saml-trust-relationship-shibboleth-sp.png)
 
 Then, configure for SAML2SSO profile. Click on the checkbox to
 "Configure specific RelyingParty":
 
-![image](https://raw.githubusercontent.com/GluuFederation/docs/master/sources/img/ubuntu-shib-apache/configure_rp.png)
+![image](../img/ubuntu-shib-apache/configure_rp.png)
 
 Then, click to add the SAML2SSO profile:
 
-![image](https://raw.githubusercontent.com/GluuFederation/docs/master/sources/img/ubuntu-shib-apache/saml_sso-profile.png)
+![image](../img/ubuntu-shib-apache/saml_sso-profile.png)
 
 Then "Save" and "Update." Wait 5 minutes for the Shibboleth IDP to detect reload the metadata or
 stop and start tomcat.

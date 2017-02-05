@@ -1,6 +1,4 @@
-[TOC]
-
-## oxauth-config.xml
+# oxauth-config.xml
 
 The configuration for oxAuth is a file in [XML format][xml]. It consists
 of several sections that we explain in more detail in the according
@@ -19,7 +17,7 @@ The general structure of the configuration file is like that:
 The sections are listed according to their order in the configuration
 file as it is delivered with the original package of the Gluu Server.
 
-### Basic Settings
+## Basic Settings
 
 This section describes the general setup of the Gluu Server.
 
@@ -97,7 +95,7 @@ The according entry in the configuration file looks like that:
 <uma-configuration-endpoint>https://%(hostname)s/oxauth/seam/resource/restv1/oxauth/uma-configuration</uma-configuration-endpoint>
 ```
 
-### Server Mode
+## Server Mode
 
 This entry sets the mode of the Gluu oxAuth Server. Possible modes are
 `memory` and `ldap`.
@@ -114,7 +112,7 @@ The according entry in the configuration file looks like that:
 <mode>ldap</mode>
 ```
 
-### Update Interval
+## Update Interval
 
 This entry sets the value for the interval the configuration is updated
 from the LDAP server. The value represents the interval in seconds
@@ -126,7 +124,7 @@ This is the according entry in the configuration file:
 <configuration-update-interval>3600</configuration-update-interval>
 ```
 
-### Supported Response Types
+## Supported Response Types
 
 This section explains the various response types that are supported by
 the Gluu Server. The following combinations are possible:
@@ -154,7 +152,7 @@ according tag `response-type` in the configuration file as shown here:
 </response-types-supported>
 ```
 
-### Supported Grant Types
+## Supported Grant Types
 
 These grant types are supported:
 
@@ -185,7 +183,7 @@ This is the according entry in the configuration file:
 </grant-types-supported>
 ```
 
-### Support for Authentication Methods References (AMR)
+## Support for Authentication Methods References (AMR)
 
 AMR abbreviates the term [Authentication Methods References][ietf-amr].
 In general, it is a [JSON][json] array of case sensitive strings that
@@ -202,7 +200,7 @@ feature is turned off:
 </amr-values-supported>
 ```
 
-### Supported Subject Identifier Types
+## Supported Subject Identifier Types
 
 According to the [OpenID Core Documentation][openid-core], an identifier
 is a locally unique and never reassigned identifier within the issuer
@@ -223,7 +221,7 @@ file:
 </subject-types-supported>
 ```
 
-### Supported Algorithms An User Can Login With
+## Supported Algorithms An User Can Login With
 
 Currently, the Gluu Server supports these algorithms for login
 procedures:
@@ -255,7 +253,7 @@ according tag `userinfo-signing-alg` in the configuration file:
 </userinfo-signing-alg-values-supported>
 ```
 
-### Supported Encryption Algorithms
+## Supported Encryption Algorithms
 
 Currently, the Gluu Server supports these algorithms for data encryption:
 
@@ -289,7 +287,7 @@ according tag `userinfo-encryption-alg` in the configuration file:
 </userinfo-encryption-alg-values-supported>
 ```
 
-### Supported Encryption Encoding Values
+## Supported Encryption Encoding Values
 
 These encryption encoding values are supported:
 
@@ -310,7 +308,7 @@ activate the according tag `userinfo-encryption-enc`:
 </userinfo-encryption-enc-values-supported>
 ```
 
-### Supported ID Token Signing Algorithms
+## Supported ID Token Signing Algorithms
 
 Currently, the Gluu Server supports these algorithms to sign an ID
 token:
@@ -342,7 +340,7 @@ activate the according tag `id-token-signing-alg`:
 </id-token-signing-alg-values-supported>
 ```
 
-### Supported ID Token Encryption Algorithms
+## Supported ID Token Encryption Algorithms
 
 Currently, the Gluu Server supports these encryption algorithms for
 ID tokens:
@@ -378,7 +376,7 @@ configuration file:
 
 ```
 
-### Supported Encryption Encoding Values For ID Tokens
+## Supported Encryption Encoding Values For ID Tokens
 
 The following encryption encoding values for ID tokens are supported:
 
@@ -399,7 +397,7 @@ above activate the according tag `id-token-encryption-enc`:
 </id-token-encryption-enc-values-supported>
 ```
 
-### Supported Request Object Signing Algorithms
+## Supported Request Object Signing Algorithms
 
 Currently, the Gluu Server supports these algorithms to sign a request
 object:
@@ -431,7 +429,7 @@ according tag `request-object-signing-alg`:
 </request-object-signing-alg-values-supported>
 ```
 
-### Supported Request Object Encryption Algorithms
+## Supported Request Object Encryption Algorithms
 
 Currently, the Gluu Server supports these encryption algorithms for
 request objects:
@@ -465,7 +463,7 @@ activate the according tag `request-object-encryption-alg`:
 </request-object-encryption-alg-values-supported>
 ```
 
-### Supported Request Object Encryption Encoding Values
+## Supported Request Object Encryption Encoding Values
 
 These encryption encoding values are supported:
 
@@ -486,7 +484,7 @@ activate the according tag `request-object-encryption-enc`:
 </request-object-encryption-enc-values-supported>
 ```
 
-### Supported Token Endpoint Authentication Methods
+## Supported Token Endpoint Authentication Methods
 
 The [OpenID Core specification][openid-core] defines a number of methods
 that are used by clients to authenticate to the authorization server
@@ -530,7 +528,7 @@ Furthermore, the [OpenID Core specification][openid-core] defines the
 method `none`. This method is used to connect without authentication,
 and is not supported by the Gluu Server, currently.
 
-### Supported Token Endpoint Authentication Signing Algorithm Values
+## Supported Token Endpoint Authentication Signing Algorithm Values
 
 Currently, the Gluu Server supports these signing algorithms to
 authenticate endpoints:
@@ -559,7 +557,7 @@ authenticate endpoints:
 </token-endpoint-auth-signing-alg-values-supported>
 ```
 
-### Supported OpenID Display Values
+## Supported OpenID Display Values
 
 According to the [OpenID Core Documentation][openid-core], the Gluu
 Server supports these OpenID display values as part of the request
@@ -586,7 +584,7 @@ other display values enable the according tag in the configuration file.
 </display-values-supported>
 ```
 
-### Supported OpenID Claim Types
+## Supported OpenID Claim Types
 
 According to the [OpenID Core Documentation][openid-core], the Gluu
 Server supports the claims `normal` and `distributed`:
@@ -611,7 +609,7 @@ configuration file as follows:
 </claim-types-supported>
 ```
 
-### Supported OpenID Claims
+## Supported OpenID Claims
 
 The Gluu Server supports these values for claims:
 
@@ -633,7 +631,7 @@ These are the according entries in the configuration file:
 </claims-supported>
 ```
 
-### Service Documentation
+## Service Documentation
 
 This entry keeps the path to the service documentation of the Gluu
 Server.
@@ -642,7 +640,7 @@ Server.
 <service-documentation>http://gluu.org/docs</service-documentation>
 ```
 
-### Supported Locales For Claims
+## Supported Locales For Claims
 
 Currently, the Gluu Server supports these languages for claims:
 
@@ -666,7 +664,7 @@ These languages are enabled by default:
 </claims-locales-supported>
 ```
 
-### Supported Locales For User Interfaces
+## Supported Locales For User Interfaces
 
 Currently, these languages are supported for claims as part of user
 interfaces:
@@ -694,7 +692,7 @@ The following entries refer to the according locales:
 </ui-locales-supported>
 ```
 
-### Supported Claims Parameters
+## Supported Claims Parameters
 
 To enable additional parameters for claims, the tag
 `claims-parameter-supported` has to be set to `true` before, and
@@ -704,7 +702,7 @@ To enable additional parameters for claims, the tag
 <claims-parameter-supported>true</claims-parameter-supported>
 ```
 
-### Supported Request Parameters
+## Supported Request Parameters
 
 To enable additional parameters for requests, the tag
 `request-parameter-supported` has to be set to `true` before, and
@@ -714,7 +712,7 @@ To enable additional parameters for requests, the tag
 <request-parameter-supported>true</request-parameter-supported>
 ```
 
-### Supported Request Uri Parameters
+## Supported Request Uri Parameters
 
 To enable additional parameters for uri requests, the tag
 `request-uri-parameter-supported` has to be set to `true` before, and
@@ -724,7 +722,7 @@ To enable additional parameters for uri requests, the tag
 <request-uri-parameter-supported>true</request-uri-parameter-supported>
 ```
 
-### Required Request Uri Registration
+## Required Request Uri Registration
 
 To require a request for uri registration, the tag
 `require-request-uri-registration` has to be set to `true` before, and
@@ -734,7 +732,7 @@ To require a request for uri registration, the tag
 <require-request-uri-registration>false</require-request-uri-registration>
 ```
 
-### Uri For An Operation Policy
+## Uri For An Operation Policy
 
 To define a certain oxAuth operation policy uri use the tag
 `op-policy-uri`. The value refers to an according policy document.
@@ -743,7 +741,7 @@ To define a certain oxAuth operation policy uri use the tag
 <op-policy-uri>http://ox.gluu.org/doku.php?id=oxauth:policy</op-policy-uri>
 ```
 
-### Uri For Type-of-service Operations
+## Uri For Type-of-service Operations
 
 To define an uri for certain oxAuth type-of-service operations use the
 tag `op-tos-uri`. The value refers to an according type-of-service
@@ -753,7 +751,7 @@ document.
 <op-tos-uri>http://ox.gluu.org/doku.php?id=oxauth:tos</op-tos-uri>
 ```
 
-### Connection Behaviour
+## Connection Behaviour
 
 These tags control the behaviour of the connection:
 
@@ -822,7 +820,7 @@ value is 600 seconds:
 <clean-service-interval>600</clean-service-interval>
 ```
 
-### Default Signature Algorithms
+## Default Signature Algorithms
 
 These entries define the default signature algorithm, and list the key
 IDs for the other signature algorithms that are available. These values
@@ -845,7 +843,7 @@ are part of the list:
 <ES512-keyid>6</ES512-keyid>
 ```
 
-### Federation Settings
+## Federation Settings
 
 The entry `federation-enabled` sets the value for the [Active Directory
 Federation Services (ADFS)][adfs-wikipedia] feature. `true` means
@@ -896,7 +894,7 @@ section about default signature algorithms.
 <federation-signing-kid>1</federation-signing-kid>
 ```
 
-### Dynamic Registration Of Custom Object
+## Dynamic Registration Of Custom Object
 
 Dynamic Client Registration is configurable because some servers may not
 want to support this feature due to it opens you up to the possibility
@@ -962,7 +960,7 @@ Trusted clients have to be enabled, first. Set the tag
 <trusted-client-enabled>true</trusted-client-enabled>
 ```
 
-### Authorization LDAP Filters
+## Authorization LDAP Filters
 
 To use authorization [LDAP][ldap] filters you have to enable them,
 first. Set the tag `auth-filters-enabled` to `true`. The value `false`
@@ -999,7 +997,7 @@ definition allows the following tags:
 </auth-filters>
 ```
 
-### Custom LDAP Client Filters
+## Custom LDAP Client Filters
 
 oxAuth allows to define custom [LDAP][ldap] client filters. oxAuth uses
 them to find clients in the [LDAP][ldap] Namespace, or Directory

@@ -33,18 +33,18 @@ first time use. The [demo](https://www.wikidsystems.com/demo) explains how to do
 Follow the steps below to configure the Wikid module in the oxTrust Admin GUI.
 
 1. Go to Manage Custom Scripts
-![image](https://raw.githubusercontent.com/GluuFederation/docs/master/sources/img/2.4/config-script_menu.png)
+![image](../img/2.4/config-script_menu.png)
 
 2. Click on the add custom script button
-![image](https://raw.githubusercontent.com/GluuFederation/docs/master/sources/img/2.4/config-script_add.png)
+![image](../img/2.4/config-script_add.png)
 
 3. Fill up the form and add the [Wikid Authentication Script](https://raw.githubusercontent.com/GluuFederation/oxAuth/master/Server/integrations/wikid/WikidExternalAuthenticator.py)
 
 4. Enable the script by ticking the check box
-![image](https://raw.githubusercontent.com/GluuFederation/docs/master/sources/img/2.4/config-script_enable.png)
+![image](../img/2.4/config-script_enable.png)
 
 5. Click Update
-![image](https://raw.githubusercontent.com/GluuFederation/docs/master/sources/img/2.4/config-script_update.png)
+![image](../img/2.4/config-script_update.png)
 
 6. Change the Default Authentication method to Wikid
-![image](https://raw.githubusercontent.com/GluuFederation/docs/master/sources/img/2.4/admin_auth_wikid.png)
+![image](../img/2.4/admin_auth_wikid.png)

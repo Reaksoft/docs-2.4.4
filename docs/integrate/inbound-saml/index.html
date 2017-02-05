@@ -62,9 +62,7 @@
   <nav class="md-header-nav md-grid">
     <div class="md-flex">
 	 <div class="md-flex__cell md-flex__cell--shrink">
-        <a href="../.." title="Gluu Docs" class=" md-logo  md-header-nav__button">
-          
-            <img src="../../theme/material/gluu.jpg" width="24" height="24">
+        <a href="../.." title="Gluu Docs" class=" md-icon md-icon--home  md-header-nav__button">
           
         </a>
       </div>
@@ -178,9 +176,7 @@
                   <div class="md-sidebar__inner">
                     <nav class="md-nav md-nav--primary">
   <label class="md-nav__title md-nav__title--site" for="drawer">
-    <i class=" md-logo  md-nav__button">
-      
-        <img src="../../theme/material/gluu.jpg">
+    <i class=" md-icon md-icon--home  md-nav__button">
       
     </i>
     Gluu Docs
@@ -1114,6 +1110,13 @@
   
 </li>
       
+        <li class="md-nav__item">
+  <a href="#inbound-saml-end-to-end-testing" title="Inbound SAML End to End Testing" class="md-nav__link">
+    Inbound SAML End to End Testing
+  </a>
+  
+</li>
+      
     </ul>
   
 </nav>
@@ -1803,6 +1806,13 @@
   
 </li>
       
+        <li class="md-nav__item">
+  <a href="#inbound-saml-end-to-end-testing" title="Inbound SAML End to End Testing" class="md-nav__link">
+    Inbound SAML End to End Testing
+  </a>
+  
+</li>
+      
     </ul>
   
 </nav>
@@ -1818,20 +1828,7 @@
                
               
                 
-                <div class="toc">
-<ul>
-<li><a href="#inbound-saml-in-gluu-server">Inbound SAML in Gluu Server</a><ul>
-<li><a href="#required-setup">Required Setup</a></li>
-<li><a href="#add-idp">Add IdP</a></li>
-<li><a href="#add-sp">Add SP</a></li>
-<li><a href="#add-selectors">Add Selectors</a></li>
-<li><a href="#attributes-handling">Attributes Handling</a></li>
-</ul>
-</li>
-<li><a href="#inbound-saml-end-to-end-testing">Inbound SAML End to End Testing</a></li>
-</ul>
-</div>
-<h1 id="inbound-saml-in-gluu-server">Inbound SAML in Gluu Server<a class="headerlink" href="#inbound-saml-in-gluu-server" title="Permanent link">#</a></h1>
+                <h1 id="inbound-saml-in-gluu-server">Inbound SAML in Gluu Server<a class="headerlink" href="#inbound-saml-in-gluu-server" title="Permanent link">#</a></h1>
 <p>To achieve inbound SAML, the Gluu Server uses an open source product called Asimba. The main use case for Asimba is to enable websites to use a single IdP
 for single sign-on (SSO) even when the organization may have a number of
 IdPs that are trusted. For more information, please review the <a href="http://www.asimba.org/site/">Asimba
@@ -2018,8 +2015,10 @@ website</a>.</p>
 <ul>
 <li>Restart tomcat service: 'service tomcat restart' from Gluu Server container</li>
 </ul>
-<h1 id="inbound-saml-end-to-end-testing">Inbound SAML End to End Testing<a class="headerlink" href="#inbound-saml-end-to-end-testing" title="Permanent link">#</a></h1>
-<p>Gluu Server supports Inbound SAML using the custom script feature. A step by step guide is available in the <code>How To</code> section called <a href="../../how-to/saml_proxy_end_to_end/">Inbound SAML End to End Testing</a></p>
+<h2 id="inbound-saml-end-to-end-testing">Inbound SAML End to End Testing<a class="headerlink" href="#inbound-saml-end-to-end-testing" title="Permanent link">#</a></h2>
+<p>Gluu Server supports Inbound SAML using the custom script feature. 
+A step by step guide is available in the <code>How To</code> 
+section called <a href="../../how-to/saml_proxy_end_to_end/">Inbound SAML End to End Testing</a></p>
               
             </article>
           </div>

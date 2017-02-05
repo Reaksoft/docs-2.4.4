@@ -1,5 +1,5 @@
-[TOC]
-# LDAP Namespace 
+# 
+## LDAP Namespace 
 
 The LDAP Namespace, or Directory Information Tree (DIT) structure, is
 the convention for naming entries in LDAP so that they form a
@@ -36,7 +36,7 @@ under `o=gluu`:
 | ou=u2f			| The U2F authentication requests, registration requests and registered devices are stored in this branch|
 | ou=uma			| UMA policies, scopes, and resource sets 		|
 
-# LDAP Configuration
+## LDAP Configuration
 
 This section has information about how the Gluu Server uses LDAP, and
 other LDAP recommendations.
@@ -47,7 +47,7 @@ Gluu ships with a forked version of OpenDJ. However, we hope to bolster
 support for OpenLDAP and 389DS. If you are an LDAP guru please help us
 by contributing documentation details!
 
-# Indexing
+## Indexing
 
 All databases need proper indexing to function. This is particularly
 true for LDAP servers. There should never be any `sub` or `one` scoped
@@ -58,16 +58,16 @@ periodically analyzed to identify un-indexed searches. The exact
 indexing requirements may vary based on custom attributes, and custom
 authentication and authorization requirements.
 
-## OpenDJ Indexing
+### OpenDJ Indexing
 
 [Indexing Attribute Values](http://opendj.forgerock.org/opendj-server/doc/bootstrap/admin-guide/#chap-indexing)
 
 
-## 389DS Indexing
+### 389DS Indexing
 
 [Indexing Architecture](http://directory.fedoraproject.org/docs/389ds/design/database-architecture.html)
 
-## OpenLDAP Indexing
+### OpenLDAP Indexing
 
 
 [OpenLDAP Tuning](http://www.openldap.org/doc/admin24/tuning.html)
@@ -97,7 +97,7 @@ For o=site cache refresh will search on the 'Primary Key'. So it will
 not be possible for us to know which attributes need to be indexed until
 configuration time.
 
-## Configuring LDAP indexing to improve OX applications performance
+### Configuring LDAP indexing to improve OX applications performance
 
 In order to keep optimal server load it is necessary to configure
 indexing for OpenDJ LDAP server. OpenDJ support these index types:
@@ -115,7 +115,7 @@ telephone­Number, uid, unique­Member. This table contains definition of
 these indexes: [default
 Indexes](http://opendj.forgerock.org/opendj-server/doc/admin-guide/#default-indexes).
 
-## oxAuth filters
+### oxAuth filters
 
 oxAuth has a few parts which allows custom LDAP filters:
 	
@@ -154,14 +154,14 @@ oxAuth uses them to find clients. Hence it is necessary to configure
 indexing for these filters. If there are no indexes for the filter
 attributes OpenDJ might use an unindexed search.
 
-## Determining what needs indexing
+### Determining what needs indexing
 
 OpenDJ has built in functionality to help the admin find unindexed
 searches. More information about this is available in the OpenDJ Admin
 Guide [Determining What Needs
 Indexing](http://opendj.forgerock.org/opendj-server/doc/admin-guide/#debug-search-indexes).
 
-## Sample commands to add indexes
+### Sample commands to add indexes
 
 Add an index for the inum attribute.
 
@@ -211,7 +211,7 @@ Determine the current status of indexes.
 
 	./dbtest list-index-status --backendID userRoot -b o=gluu
 
-# Replication
+## Replication
 
 The Gluu Server was designed to take advantage of LDAP replication. Each
 server has its own special configuration for replication. Below are some

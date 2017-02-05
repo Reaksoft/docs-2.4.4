@@ -62,9 +62,7 @@
   <nav class="md-header-nav md-grid">
     <div class="md-flex">
 	 <div class="md-flex__cell md-flex__cell--shrink">
-        <a href="../.." title="Gluu Docs" class=" md-logo  md-header-nav__button">
-          
-            <img src="../../theme/material/gluu.jpg" width="24" height="24">
+        <a href="../.." title="Gluu Docs" class=" md-icon md-icon--home  md-header-nav__button">
           
         </a>
       </div>
@@ -178,9 +176,7 @@
                   <div class="md-sidebar__inner">
                     <nav class="md-nav md-nav--primary">
   <label class="md-nav__title md-nav__title--site" for="drawer">
-    <i class=" md-logo  md-nav__button">
-      
-        <img src="../../theme/material/gluu.jpg">
+    <i class=" md-icon md-icon--home  md-nav__button">
       
     </i>
     Gluu Docs
@@ -605,6 +601,10 @@
       
     
     
+      <label class="md-nav__link md-nav__link--active" for="toc">
+        Users
+      </label>
+    
     <a href="./" title="Users" class="md-nav__link md-nav__link--active">
       Users
     </a>
@@ -615,6 +615,73 @@
   
     
   
+  
+    <label class="md-nav__title" for="toc">Table of contents</label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#user-management" title="User Management" class="md-nav__link">
+    User Management
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#cache-refresh" title="Cache Refresh" class="md-nav__link">
+    Cache Refresh
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#self-registration" title="Self Registration" class="md-nav__link">
+    Self Registration
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#local-user-management" title="Local User Management" class="md-nav__link">
+    Local User Management
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#people" title="People" class="md-nav__link">
+    People
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#import-people" title="Import People" class="md-nav__link">
+    Import People
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#groups" title="Groups" class="md-nav__link">
+    Groups
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#attributes" title="Attributes" class="md-nav__link">
+    Attributes
+  </a>
+  
+</li>
+      
+    </ul>
   
 </nav>
     
@@ -1721,6 +1788,73 @@
     
   
   
+    <label class="md-nav__title" for="toc">Table of contents</label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#user-management" title="User Management" class="md-nav__link">
+    User Management
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#cache-refresh" title="Cache Refresh" class="md-nav__link">
+    Cache Refresh
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#self-registration" title="Self Registration" class="md-nav__link">
+    Self Registration
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#local-user-management" title="Local User Management" class="md-nav__link">
+    Local User Management
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#people" title="People" class="md-nav__link">
+    People
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#import-people" title="Import People" class="md-nav__link">
+    Import People
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#groups" title="Groups" class="md-nav__link">
+    Groups
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#attributes" title="Attributes" class="md-nav__link">
+    Attributes
+  </a>
+  
+</li>
+      
+    </ul>
+  
 </nav>
                   </div>
                 </div>
@@ -1734,34 +1868,26 @@
                
               
                 
-                <p><strong>Table of Contents</strong> </p>
+                <h1 id="user-management-guide">User Management Guide<a class="headerlink" href="#user-management-guide" title="Permanent link">#</a></h1>
+<p>&lt;!--</p>
+<pre><code>            ********** This part needs some maintenance **********
+</code></pre>
 <ul>
-<li><a href="#user-management">User Management</a></li>
-<li><a href="#cache-refresh">Cache Refresh</a></li>
-<li><a href="#self-registration">Self Registration</a></li>
-<li><a href="#local-user-management">Local User Management</a><ul>
-<li><a href="#people">People</a></li>
-<li><a href="#groups">Groups</a></li>
-<li><a href="#attributes">Attributes</a></li>
+<li><a href="#scim-oxauth-authentication">SCIM oxAuth Authentication</a><ul>
+<li><a href="#base-configuration-create-oxauth-client">Base configuration: create oxAuth client</a></li>
+<li><a href="#configuration-resource-server">configuration (Resource Server)</a></li>
+<li><a href="#scim-client-requesting-party-sample-code">SCIM Client (Requesting Party) sample code</a></li>
+</ul>
+</li>
+<li><a href="#scim-uma-authentication">SCIM UMA Authentication</a><ul>
+<li><a href="#base-configuration-create-oxauth-clients-policies">Base configuration: Create oxAuth Clients, Policies</a></li>
+<li><a href="#oxtrust-configuration-resource-server">oxTrust configuration (Resource Server)</a></li>
+<li><a href="#scim-client-requesting-party-sample-code">SCIM Client (Requesting Party) sample code</a></li>
 </ul>
 </li>
 </ul>
-<!--
-
-                ********** This part needs some maintenance **********
-
-- [SCIM oxAuth Authentication](#scim-oxauth-authentication)
-    - [Base configuration: create oxAuth client](#base-configuration-create-oxauth-client)
-    - [configuration (Resource Server)](#configuration-resource-server)
-    - [SCIM Client (Requesting Party) sample code](#scim-client-requesting-party-sample-code)
-- [SCIM UMA Authentication](#scim-uma-authentication )
-    - [Base configuration: Create oxAuth Clients, Policies](#base-configuration-create-oxauth-clients-policies)
-    - [oxTrust configuration (Resource Server)](#oxtrust-configuration-resource-server)
-    - [SCIM Client (Requesting Party) sample code](#scim-client-requesting-party-sample-code)
-
--->
-
-<h1 id="user-management">User Management<a class="headerlink" href="#user-management" title="Permanent link">#</a></h1>
+<p>--&gt;</p>
+<h2 id="user-management">User Management<a class="headerlink" href="#user-management" title="Permanent link">#</a></h2>
 <p>To keep the Gluu Server up-to-date with the latest user claims, your
 organization can either "push" or "pull" identity data. In the "pull"
 mode, otherwise known as LDAP Synchronization or Cache Refresh, the Gluu
@@ -1770,13 +1896,13 @@ Directory as the authoritative source of identity information. If you
 "push" identities to the Gluu Server, you can use the JSON/REST SCIM
 API. Local user management can also be performed inside oxTrust. Each
 method is detailed below.</p>
-<h1 id="cache-refresh">Cache Refresh<a class="headerlink" href="#cache-refresh" title="Permanent link">#</a></h1>
+<h2 id="cache-refresh">Cache Refresh<a class="headerlink" href="#cache-refresh" title="Permanent link">#</a></h2>
 <p>Cache Refresh was built by Gluu to pull user information from a backend
 Active Directory/LDAP Server. Cache refresh dynamically synchronizes
 user information from the backend data source to a local LDAP server in
 order to maximize performance. Cache refresh is documented in our
 <a href="../configuration/#cache-refresh">configuration section</a>.</p>
-<h1 id="self-registration">Self Registration<a class="headerlink" href="#self-registration" title="Permanent link">#</a></h1>
+<h2 id="self-registration">Self Registration<a class="headerlink" href="#self-registration" title="Permanent link">#</a></h2>
 <p>Self-Registration is done by users on a self-service basis. Since
 oxTrust user registration cannot add users to a backend LDAP or Active
 Directory server, self-registration will only be effective if GluuLDAP
@@ -1786,14 +1912,14 @@ self-registration form. If more attributes are needed they can be added
 in Registration Management of Organization Configuration. Learn more
 about Registration Management
 <a href="../configuration/#manage-registration">here</a>.</p>
-<h1 id="local-user-management">Local User Management<a class="headerlink" href="#local-user-management" title="Permanent link">#</a></h1>
+<h2 id="local-user-management">Local User Management<a class="headerlink" href="#local-user-management" title="Permanent link">#</a></h2>
 <p>In oxTrust, you can add, edit and manage people, groups and user
 attributes and claims to ensure the proper information is released about
 the right people.</p>
-<h2 id="people">People<a class="headerlink" href="#people" title="Permanent link">#</a></h2>
+<h3 id="people">People<a class="headerlink" href="#people" title="Permanent link">#</a></h3>
 <p>To manage people, navigate to User &gt; Manage People, as shown in the
 screenshot below.</p>
-<p><img alt="" src="https://raw.githubusercontent.com/GluuFederation/docs/master/sources/img/local_user_admin/manage_people.png" /></p>
+<p><img alt="" src="../../img/local_user_admin/manage_people.png" /></p>
 <p>From this interface you can add users and search for specific users.
 Because the user database can potentially be very large, a value is
 required in the search field. In other words, you can not click search
@@ -1801,20 +1927,20 @@ with a blank entry to populate all users. If you need to see all users,
 this would be best performed manually within the Gluu OpenDJ server.
 Upon performing a user search, a list will be populated with all users
 that match the search, as shown in the screenshot below.</p>
-<p><img alt="Search Users" src="https://raw.githubusercontent.com/GluuFederation/docs/master/sources/img/2.4/admin_users_searchadmin.png" /></p>
+<p><img alt="Search Users" src="../../img/2.4/admin_users_searchadmin.png" /></p>
 <p>To edit a user, simply click on any of the hyperlinks associated with
 that user and you will be taken to a user management interface where you
 can modify that specific attributes relating to that user as displayed
 below.</p>
-<p><img alt="Manage Users" src="https://raw.githubusercontent.com/GluuFederation/docs/master/sources/img/2.4/admin_users_edituser.png" /></p>
+<p><img alt="Manage Users" src="../../img/2.4/admin_users_edituser.png" /></p>
 <h3 id="import-people">Import People<a class="headerlink" href="#import-people" title="Permanent link">#</a></h3>
 <p>This feature allows the Gluu Server Administrator to bulk import users.
 The user <em>xls</em> file can be added using the <strong>Add</strong> button.</p>
-<p><img alt="Import User" src="https://raw.githubusercontent.com/GluuFederation/docs/master/sources/img/oxTrust/admin_config_people.png" /></p>
+<p><img alt="Import User" src="../../img/oxTrust/admin_config_people.png" /></p>
 <p>Validation checking for the added <em>xls</em> file can be done using the
 <strong>Validate</strong> button. If the file is not formatted properly, the server
 will reject the same with an error as shown below in the screenshot.</p>
-<p><img alt="Validation Error Message" src="https://raw.githubusercontent.com/GluuFederation/docs/master/sources/img/oxTrust/admin_config_people_validation.png" /></p>
+<p><img alt="Validation Error Message" src="../../img/oxTrust/admin_config_people_validation.png" /></p>
 <h2 id="groups">Groups<a class="headerlink" href="#groups" title="Permanent link">#</a></h2>
 <p>Out of the box, the Gluu Server includes one group: Gluu Server manager
 group, named: “gluuManager”. Groups can be added and populated as
@@ -1822,17 +1948,17 @@ needed. By using the <em>Manage Groups</em> feature, the Gluu Server
 Administrator can add, delete or modify any group or user within a
 group. The list of available groups can be viewed by hitting the
 <em>Search</em> button with a blank search box.
-<img alt="Manage User Groups" src="https://raw.githubusercontent.com/GluuFederation/docs/master/sources/img/oxTrust/admin_users_managegroups.png" /></p>
+<img alt="Manage User Groups" src="../../img/oxTrust/admin_users_managegroups.png" /></p>
 <p>The Gluu Server Administrator can modify information such as Display
 Name, Group Owner, Visibility type etc. The Server Administrator can
 also add or delete users within existing groups. The group information
 is represented as shown below.
-<img alt="View group information" src="https://raw.githubusercontent.com/GluuFederation/docs/master/sources/img/oxTrust/admin_users_groupinfo.png" /></p>
+<img alt="View group information" src="../../img/oxTrust/admin_users_groupinfo.png" /></p>
 <p>If any member of the Organization is required to be added in any
 specific group, this can be achieved be clicking on the Add Member
 button. The flow is <em>Add Member --&gt; Search the name/email of the user
 --&gt; Select the user --&gt; Click OK --&gt; Update.</em>
-<img alt="Add Member" src="https://raw.githubusercontent.com/GluuFederation/docs/master/sources/img/oxTrust/admin_users_addmember.png" /></p>
+<img alt="Add Member" src="../../img/oxTrust/admin_users_addmember.png" /></p>
 <h2 id="attributes">Attributes<a class="headerlink" href="#attributes" title="Permanent link">#</a></h2>
 <p>An “Active” attribute list can be seen from the Configuration &gt;
 Attributes section. By default, only active attributes are shown. To see
@@ -1843,12 +1969,12 @@ about Attributes management <a href="../configuration/#attributes">here</a>.</p>
 
                 ********** This part needs some maintenance **********
 
-# SCIM oxAuth Authentication
+## SCIM oxAuth Authentication
 
 This is a step by step guide to configure oxTrust and SCIM client for
 oxAuth authentication.
 
-## Base Configuration: Create oxAuth Client
+### Base Configuration: Create oxAuth Client
 In order to access SCIM endpoints, an oxAuth client should be registered
 with scopes "openid" and "user_name". Authentication method (or LDAP
 Property “oxAuthTokenEndpointAuthMethod”) of this client should have
@@ -1873,12 +1999,12 @@ Sample result entry:
         oxAuthScope: inum=@!1111!0009!E4B5,ou=scopes,o=@!1111,o=gluu
         oxAuthTokenEndpointAuthMethod: client_secret_basic
 
-##  Configuration (Resource Server)
+###  Configuration (Resource Server)
 
 It's possible to enable/disable SCIM endpoints in oxTrust under
 "Organization Configuration" page.
 
-## SCIM Client (Requesting Party) Sample Code
+### SCIM Client (Requesting Party) Sample Code
 
 This is a sample SCIM Client code which requests user information from
 server.
@@ -1907,14 +2033,14 @@ server.
 Values in this example are correspond to client entry fields from first
 section.
 
-# SCIM UMA Authentication
+## SCIM UMA Authentication
 
 This is step by step guide to configure UMA for oxTrust and SCIM client.
 High level architecture overview is available in the following article
 [OX SCIM Architecture
 Overview](http://ox.gluu.org/doku.php?id=oxtrust:scim:uma_authentication#ox_scim_architecture_overview).
 
-## Base Configuration: Create oxAuth Clients, Policies
+### Base Configuration: Create oxAuth Clients, Policies
 
 1. Register oxAuth client with scope “uma_protection”. Property “oxAuthTokenEndpointAuthMethod” of this client should has value “client_secret_basic”. It's possible to do that using few methods: [Client Registration](http://ox.gluu.org/doku.php?id=oxauth:clientregistration), using [oxTrust](http://ox.gluu.org/doku.php?id=oxtrust:home) GUI, manually add entry to LDAP. oxTrust will use this oxAuth client to obtain PAT. Sample result entry:
 
@@ -2041,7 +2167,7 @@ Note: There is sample UMA Authorization Policy in CE. You can modify it instead 
                 oxId: 1403179695657
                 oxRevision: 1
 
-## oxTrust configuration (Resource Server)
+### oxTrust configuration (Resource Server)
 
 Add next oxTrust UMA related configuration properties to oxTrust.properties:
 
@@ -2059,7 +2185,7 @@ remove oxTrust configuration entry from LDAP and restart tomcat. Example
 DN of oxTrust configuration entry:
 ou=oxtrust,ou=configuration,inum=@!1111!0002!4907,ou=appliances,o=gluu
 
-## SCIM Client (Requesting Party) sample code
+### SCIM Client (Requesting Party) sample code
 
 This is sample SCIM Client code which request user information from server.
 

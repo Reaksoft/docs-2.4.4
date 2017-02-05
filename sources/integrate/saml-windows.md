@@ -7,16 +7,16 @@
 
 2. Start the installation
 
-![IMAGE](https://raw.githubusercontent.com/GluuFederation/docs/master/sources/img/sp_setup/admin_sp_click.png)
+![IMAGE](../img/sp_setup/admin_sp_click.png)
 
 3. Define the destination folder (by default it is: C:\opt\shibboleth-sp).
 
-![IMAGE](https://raw.githubusercontent.com/GluuFederation/docs/master/sources/img/sp_setup/admin_sp_destination.png)
+![IMAGE](../img/sp_setup/admin_sp_destination.png)
 
 4. Select the Shibboleth Daemon port. By default it is 1600, and you may
    keep it for testing it, locally.
 
-![IMAGE](https://raw.githubusercontent.com/GluuFederation/docs/master/sources/img/sp_setup/admin_sp_port.png)
+![IMAGE](../img/sp_setup/admin_sp_port.png)
 
 5. Now, there are two options. According to your target you will have to
 choose one.
@@ -29,41 +29,41 @@ choose one.
 		and configure IIS”. Remember to put the file Extension ”.sso” --
 		this is necessary.
 
-![IMAGE](https://raw.githubusercontent.com/GluuFederation/docs/master/sources/img/sp_setup/admin_sp_microsoft.png)
+![IMAGE](../img/sp_setup/admin_sp_microsoft.png)
 
 		
 		b. For the Apache Web Server, UNCHECK "Install ISAPI filter and
 		configure IIS".
 
-![IMAGE](https://raw.githubusercontent.com/GluuFederation/docs/master/sources/img/sp_setup/admin_sp_apachesetup.png)
+![IMAGE](../img/sp_setup/admin_sp_apachesetup.png)
 
 	3. UAC of Windows 7 may block this program, so allow it.
 
-![IMAGE](https://raw.githubusercontent.com/GluuFederation/docs/master/sources/img/sp_setup/admin_sp_uac.png)
+![IMAGE](../img/sp_setup/admin_sp_uac.png)
 
 ## Apache Configuration
 
 1. Download the Apache HTTP server MSI Installer with OpenSSL:
    http://httpd.apache.org/download.cgi#apache22 .
 
-![IMAGE](https://raw.githubusercontent.com/GluuFederation/docs/master/sources/img/sp_setup/admin_sp_apacheclick.png)
+![IMAGE](../img/sp_setup/admin_sp_apacheclick.png)
 
 2. Select the destination. You can keep the default destination for your
 local testing. But, make sure that there is no other “Apache Software
 Foundation” directory in your current “C:\Program Files\” location.
 
-![IMAGE](https://raw.githubusercontent.com/GluuFederation/docs/master/sources/img/sp_setup/admin_sp_apachedestination.png)
+![IMAGE](../img/sp_setup/admin_sp_apachedestination.png)
 
 3. Provide the Server Information. For local testing you can use
    `localdomain/localhost`.
 
-![IMAGE](https://raw.githubusercontent.com/GluuFederation/docs/master/sources/img/sp_setup/admin_sp_serverinfo.png)
+![IMAGE](../img/sp_setup/admin_sp_serverinfo.png)
 
 4. Test whether the Apache web server is installed or not. Open your web
 browser and use `localhost`. If you see something like the image shown
 below--you are done!
 
-a![IMAGE](https://raw.githubusercontent.com/GluuFederation/docs/master/sources/img/sp_setup/admin_sp_apachetest.png)
+a![IMAGE](../img/sp_setup/admin_sp_apachetest.png)
 
 ### Shibboleth and Apache Configuration
 
@@ -93,4 +93,4 @@ a![IMAGE](https://raw.githubusercontent.com/GluuFederation/docs/master/sources/i
 2. If you can see some XML page like the one shown below--you are done
    with your SP installation in Windows through Apache2.
 
- a![IMAGE](https://raw.githubusercontent.com/GluuFederation/docs/master/sources/img/sp_setup/admin_sp_checkstatus.png)
+ a![IMAGE](../img/sp_setup/admin_sp_checkstatus.png)

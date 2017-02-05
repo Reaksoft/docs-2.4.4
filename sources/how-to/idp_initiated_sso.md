@@ -1,4 +1,3 @@
- 
 # IDP Initiated SSO with Gluu Server
 IDP initiated SSO enables the SAML Response to be sent to an SP landing page. In this documentation we are going to see how we can configure a SSO which is IDP-initiated in Gluu Server. 
 

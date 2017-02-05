@@ -1,5 +1,3 @@
-[TOC]
-
 # Basic Web Server Installation
 
 Before you can install mod_auth_openidc, you need to have an Apache
@@ -75,9 +73,9 @@ working. Point your browser at
 https://www.mydomain.com/cgi-bin/printHeaders.cgi
 You should see a list of current environment variables. 
 
-# Configuration of mod_auth_openidc 
+## Configuration of mod_auth_openidc 
 
-## Installation
+### Installation
 
 `mod_auth_openidc` module depends on the Ubuntu package `libjansson4`: 
 

@@ -1,5 +1,3 @@
-
-[TOC]
 #Enterprise UMA
 The Gluu Server implements UMA in a way that enables the protection
 of any web resource. Through the oxTrust interface, the server admin can
@@ -36,18 +34,18 @@ Some helpful definitions:
   definition a client.      
 
 ## UMA Authorization Workflow
-![UMA Authorization Workflow](https://raw.githubusercontent.com/GluuFederation/docs/master/sources/img/uma/uma_parts.png "UMA Parts")
+![UMA Authorization Workflow](../img/uma/uma_parts.png "UMA Parts")
 
 ## Detailed Authorization Overview
-![Detailed authorization overview](https://raw.githubusercontent.com/GluuFederation/docs/master/sources/img/uma/uma_flow.png "UMA Parts")
+![Detailed authorization overview](../img/uma/uma_flow.png "UMA Parts")
 
 ## UMA Authorization Token Workflow
-![UMA Authorization token workflow](https://raw.githubusercontent.com/GluuFederation/docs/master/sources/img/uma/uma_token_workflow.png "UMA Parts")
+![UMA Authorization token workflow](../img/uma/uma_token_workflow.png "UMA Parts")
 
 ## UMA Authorization Complete Sequence
-![UMA Authorization complete sequence diagram](https://raw.githubusercontent.com/GluuFederation/docs/master/sources/img/uma/uma_very_detailed_flow.png "UMA Parts")
+![UMA Authorization complete sequence diagram](../img/uma/uma_very_detailed_flow.png "UMA Parts")
 
-# Discovery
+## Discovery
 
 The Gluu Server exposes an endpoint for discovering information about
 UMA Provider configuration. A resource server or client can perform an
@@ -135,7 +133,7 @@ register a requested permission.
 
 `dynamic_client_endpoint`: the uri for registering a dynamic client.
 
-# Resource Registration
+## Resource Registration
 
 To let the Gluu Server know which resources are protected by UMA they
 must be registered. Resources are described by the following properties:
@@ -151,10 +149,11 @@ custom properties.
 
 ## Register resource via oxTrust
 
-![oxTrust UMA Resources Interface](https://raw.githubusercontent.com/GluuFederation/docs/master/sources/img/uma/uma_oxtrust_resources.png)
+![oxTrust UMA Resources Interface](../img/uma/uma_oxtrust_resources.png)
 
-![oxTrust UMA Add Resources Interface](https://raw.githubusercontent.com/GluuFederation/docs/master/sources/img/uma/uma_oxtrust_resources_add.png)
-# UMA Scopes
+![oxTrust UMA Add Resources Interface](../img/uma/uma_oxtrust_resources_add.png)
+
+## UMA Scopes
 
 UMA Scopes are bound to resource sets and are used by policies to check
 whether the specified user has access to the resource. An UMA Scope is
@@ -177,9 +176,9 @@ this document.
 
 ## Define UMA Scopes via oxTrust
 
-![oxTrust Scopes](https://raw.githubusercontent.com/GluuFederation/docs/master/sources/img/uma/uma_oxtrust_scopes.png)
+![oxTrust Scopes](../img/uma/uma_oxtrust_scopes.png)
 
-![Add oxTrust Scopes](https://raw.githubusercontent.com/GluuFederation/docs/master/sources/img/uma/uma_oxtrust_scopes_add.png)
+![Add oxTrust Scopes](../img/uma/uma_oxtrust_scopes_add.png)
 
 ## Implementation specificity
 
@@ -252,7 +251,7 @@ You can find more information on crafting UMA policies as well as an
 example script
 [here](../customize/script.md).
 
-![Add UMA Policies](https://raw.githubusercontent.com/GluuFederation/docs/master/sources/img/uma/uma_oxtrust_policy_add.png)
+![Add UMA Policies](../img/uma/uma_oxtrust_policy_add.png)
 
 ## Algorithm
 
@@ -267,9 +266,9 @@ The algorithm follows theses rules:
   authorize access. If at least one policy returned false then the
   authorization is denied.
 
-![UMA Policy Handling](https://raw.githubusercontent.com/GluuFederation/docs/master/sources/img/interception_scripts/uma_policy_handling.jpg) 
+![UMA Policy Handling](../img/interception_scripts/uma_policy_handling.jpg) 
 
-# Requesting party trust elevation
+## Requesting party trust elevation
 
 This section defines the OX claim profile for UMA. Following is a
 summary:
@@ -317,7 +316,7 @@ Cache-Control: no-store
 }
 ```
 
-# UMA Resource Server Java Library
+## UMA Resource Server Java Library
 
 [UMA RS Java Library](https://github.com/GluuFederation/uma-rs) helps to easily protect Java based project with UMA in declarative way.
 
@@ -375,7 +374,7 @@ ResourceRegistrar resourceRegistrar = new ResourceRegistrar(patProvider);
 resourceRegistrar.register(values);
 ```
 
-# References
+#### References
 - [UMA 1.0.1 Specification](https://docs.kantarainitiative.org/uma/rec-uma-core.html)
 - [Kantara Enterprise UMA Case Study](http://kantarainitiative.org/confluence/display/uma/Case+Study%3A+Access+Management+2.0+for+the+Enterprise) 
 - [UMA Specifications](https://kantarainitiative.org/confluence/display/uma/UMA+Protocol)

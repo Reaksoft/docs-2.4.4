@@ -62,9 +62,7 @@
   <nav class="md-header-nav md-grid">
     <div class="md-flex">
 	 <div class="md-flex__cell md-flex__cell--shrink">
-        <a href="../.." title="Gluu Docs" class=" md-logo  md-header-nav__button">
-          
-            <img src="../../theme/material/gluu.jpg" width="24" height="24">
+        <a href="../.." title="Gluu Docs" class=" md-icon md-icon--home  md-header-nav__button">
           
         </a>
       </div>
@@ -178,9 +176,7 @@
                   <div class="md-sidebar__inner">
                     <nav class="md-nav md-nav--primary">
   <label class="md-nav__title md-nav__title--site" for="drawer">
-    <i class=" md-logo  md-nav__button">
-      
-        <img src="../../theme/material/gluu.jpg">
+    <i class=" md-icon md-icon--home  md-nav__button">
       
     </i>
     Gluu Docs
@@ -926,6 +922,13 @@
   
     <label class="md-nav__title" for="toc">Table of contents</label>
     <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#procedure-for-manually-updating-certificates-of-a-live-gluu-ce-instance" title="Procedure for manually updating certificates of a live Gluu CE instance." class="md-nav__link">
+    Procedure for manually updating certificates of a live Gluu CE instance.
+  </a>
+  
+</li>
       
         <li class="md-nav__item">
   <a href="#before-you-start-changing-anything" title="Before you start changing anything" class="md-nav__link">
@@ -1815,6 +1818,13 @@
     <ul class="md-nav__list" data-md-scrollfix>
       
         <li class="md-nav__item">
+  <a href="#procedure-for-manually-updating-certificates-of-a-live-gluu-ce-instance" title="Procedure for manually updating certificates of a live Gluu CE instance." class="md-nav__link">
+    Procedure for manually updating certificates of a live Gluu CE instance.
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#before-you-start-changing-anything" title="Before you start changing anything" class="md-nav__link">
     Before you start changing anything
   </a>
@@ -1910,29 +1920,8 @@
                
               
                 
-                <div class="toc">
-<ul>
-<li><a href="#full-procedures-for-manually-updating-certificates-of-a-live-gluu-ce-instance">Full procedures for manually updating certificates of a live Gluu CE instance.</a><ul>
-<li><a href="#before-you-start-changing-anything">Before you start changing anything</a></li>
-<li><a href="#default-jvm-keystore">Default JVM Keystore</a></li>
-<li><a href="#apache-web-server-certificate-update-process">Apache Web Server Certificate Update Process</a><ul>
-<li><a href="#how-to-test">How to test</a></li>
-</ul>
-</li>
-<li><a href="#updating-certificate-used-by-shibboleth-module-idpwar">Updating certificate used by Shibboleth module (idp.war)</a><ul>
-<li><a href="#how-to-test_1">How to test</a></li>
-</ul>
-</li>
-<li><a href="#updating-certificate-used-by-asimba-module-asimbawar">Updating certificate used by Asimba module (asimba.war)</a></li>
-<li><a href="#updating-opendjs-certificate-in-the-default-java-keystore">Updating OpenDJ's certificate in the default java keystore</a><ul>
-<li><a href="#how-to-test_2">How to test</a></li>
-</ul>
-</li>
-</ul>
-</li>
-</ul>
-</div>
-<h1 id="full-procedures-for-manually-updating-certificates-of-a-live-gluu-ce-instance">Full procedures for manually updating certificates of a live Gluu CE instance.<a class="headerlink" href="#full-procedures-for-manually-updating-certificates-of-a-live-gluu-ce-instance" title="Permanent link">#</a></h1>
+                <h1 id="update-certificate">Update Certificate<a class="headerlink" href="#update-certificate" title="Permanent link">#</a></h1>
+<h2 id="procedure-for-manually-updating-certificates-of-a-live-gluu-ce-instance">Procedure for manually updating certificates of a live Gluu CE instance.<a class="headerlink" href="#procedure-for-manually-updating-certificates-of-a-live-gluu-ce-instance" title="Permanent link">#</a></h2>
 <p>This page describes how to manually update SSL/TLS certificates used by different components of Gluu CE instance. Ubuntu-based container's environment will be used for all command examples, if not stated otherwise explicitly. Commands may differ slightly for other distro families.</p>
 <h2 id="before-you-start-changing-anything">Before you start changing anything<a class="headerlink" href="#before-you-start-changing-anything" title="Permanent link">#</a></h2>
 <p>Backup all your current certificates, keys and java key storages that may be affected:</p>

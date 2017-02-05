@@ -25,17 +25,17 @@ The following steps prepare the GLuu Server for Certificate Authentication.
 Follow the steps below to configure the certificate authentication in the oxTrust Admin GUI.
 
 1. Go to Manage Custom Scripts
-![image](https://raw.githubusercontent.com/GluuFederation/docs/master/sources/img/2.4/config-script_menu.png)
+![image](../img/2.4/config-script_menu.png)
 
 2. Click on the add custom script button
-![image](https://raw.githubusercontent.com/GluuFederation/docs/master/sources/img/2.4/config-script_add.png)
+![image](../img/2.4/config-script_add.png)
 
 3. Fill up the from and add the [Certificate Authentication Script](https://raw.githubusercontent.com/GluuFederation/oxAuth/master/Server/integrations/cert/UserCertExternalAuthenticator.py)
 
 4. Enable the script by ticking the check box
-![image](https://raw.githubusercontent.com/GluuFederation/docs/master/sources/img/2.4/config-script_enable.png)
+![image](../img/2.4/config-script_enable.png)
 
 5. Change the default authentication method to Certificate/Cert.
-![image](https://raw.githubusercontent.com/GluuFederation/docs/master/sources/img/2.4/admin_auth_cert.png)
+![image](../img/2.4/admin_auth_cert.png)
 
 

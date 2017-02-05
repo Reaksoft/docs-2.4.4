@@ -62,9 +62,7 @@
   <nav class="md-header-nav md-grid">
     <div class="md-flex">
 	 <div class="md-flex__cell md-flex__cell--shrink">
-        <a href="../.." title="Gluu Docs" class=" md-logo  md-header-nav__button">
-          
-            <img src="../../theme/material/gluu.jpg" width="24" height="24">
+        <a href="../.." title="Gluu Docs" class=" md-icon md-icon--home  md-header-nav__button">
           
         </a>
       </div>
@@ -178,9 +176,7 @@
                   <div class="md-sidebar__inner">
                     <nav class="md-nav md-nav--primary">
   <label class="md-nav__title md-nav__title--site" for="drawer">
-    <i class=" md-logo  md-nav__button">
-      
-        <img src="../../theme/material/gluu.jpg">
+    <i class=" md-icon md-icon--home  md-nav__button">
       
     </i>
     Gluu Docs
@@ -659,6 +655,10 @@
       
     
     
+      <label class="md-nav__link md-nav__link--active" for="toc">
+        Import XLS File
+      </label>
+    
     <a href="./" title="Import XLS File" class="md-nav__link md-nav__link--active">
       Import XLS File
     </a>
@@ -669,6 +669,18 @@
   
     
   
+  
+    <label class="md-nav__title" for="toc">Table of contents</label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#file-scructure" title="File Scructure" class="md-nav__link">
+    File Scructure
+  </a>
+  
+</li>
+      
+    </ul>
   
 </nav>
     
@@ -1721,6 +1733,18 @@
     
   
   
+    <label class="md-nav__title" for="toc">Table of contents</label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#file-scructure" title="File Scructure" class="md-nav__link">
+    File Scructure
+  </a>
+  
+</li>
+      
+    </ul>
+  
 </nav>
                   </div>
                 </div>
@@ -1734,28 +1758,22 @@
                
               
                 
-                <div class="toc">
-<ul>
-<li><a href="#import-people-from-file">Import People from file</a></li>
-<li><a href="#file-scructure">File Scructure</a></li>
-</ul>
-</div>
-<h1 id="import-people-from-file">Import People from file<a class="headerlink" href="#import-people-from-file" title="Permanent link">#</a></h1>
-<p><img alt="image" src="https://raw.githubusercontent.com/GluuFederation/docs/master/sources/img/2.4/import-people_menu.png" /></p>
+                <h1 id="import-people-from-file">Import People from file<a class="headerlink" href="#import-people-from-file" title="Permanent link">#</a></h1>
+<p><img alt="image" src="../../img/2.4/import-people_menu.png" /></p>
 <p>Gluu Server allows the administrator to add users from files. This can be accessed from the <code>Import People</code> button from the <code>Users</code> menu.</p>
-<p><img alt="image" src="https://raw.githubusercontent.com/GluuFederation/docs/master/sources/img/2.4/import-people_add.png" /></p>
+<p><img alt="image" src="../../img/2.4/import-people_add.png" /></p>
 <ul>
 <li>Click on the <code>Add</code> button to select the file from which the users will be imported. This feature has been tested with a <code>xls</code> file.</li>
 </ul>
-<p><img alt="image" src="https://raw.githubusercontent.com/GluuFederation/docs/master/sources/img/2.4/import-people_validate.png" /></p>
+<p><img alt="image" src="../../img/2.4/import-people_validate.png" /></p>
 <ul>
 <li>The file needs to be validated before it can be imported. Click on the <code>Validate</code> button.</li>
 </ul>
-<p><img alt="import" src="https://raw.githubusercontent.com/GluuFederation/docs/master/sources/img/2.4/import-people_import.png" /></p>
+<p><img alt="import" src="../../img/2.4/import-people_import.png" /></p>
 <ul>
 <li>Click on the <code>Import</code> button to complete the import of users.</li>
 </ul>
-<h1 id="file-scructure">File Scructure<a class="headerlink" href="#file-scructure" title="Permanent link">#</a></h1>
+<h2 id="file-scructure">File Scructure<a class="headerlink" href="#file-scructure" title="Permanent link">#</a></h2>
 <p>The file needs to contain the following fields from which the user data will be pulled. Please remember to use the exact spelling as shown here.</p>
 <ul>
 <li>

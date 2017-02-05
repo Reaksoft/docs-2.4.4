@@ -79,7 +79,7 @@ Further documentation is available at the Salesforce.com site.
   * 'Update' the trust relationship
   * Here is how it looks like in our example setup:
 
-  ![image](://cloud.githubusercontent.com/assets/7156097/13378587/85cd191c-ddd0-11e5-922e-2195841e98a8.png)
+  ![image](../img/salesforce/example-setup.png)
 
 ## Test SSO
 
@@ -92,7 +92,7 @@ Further documentation is available at the Salesforce.com site.
   * Save it
   * Here is how the 'Authentication Configuration' looks like:
 
-![image](https://raw.githubusercontent.com/GluuFederation/docs/master/sources/img/salesforce/Authentication_Configuration.png)
+![image](../img/salesforce/Authentication_Configuration.png)
 
 * This is SP-initiate SSO. So hit your Salesforce.com website link to
 initiate the SSO.

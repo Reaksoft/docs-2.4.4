@@ -62,9 +62,7 @@
   <nav class="md-header-nav md-grid">
     <div class="md-flex">
 	 <div class="md-flex__cell md-flex__cell--shrink">
-        <a href="../.." title="Gluu Docs" class=" md-logo  md-header-nav__button">
-          
-            <img src="../../theme/material/gluu.jpg" width="24" height="24">
+        <a href="../.." title="Gluu Docs" class=" md-icon md-icon--home  md-header-nav__button">
           
         </a>
       </div>
@@ -178,9 +176,7 @@
                   <div class="md-sidebar__inner">
                     <nav class="md-nav md-nav--primary">
   <label class="md-nav__title md-nav__title--site" for="drawer">
-    <i class=" md-logo  md-nav__button">
-      
-        <img src="../../theme/material/gluu.jpg">
+    <i class=" md-icon md-icon--home  md-nav__button">
       
     </i>
     Gluu Docs
@@ -955,6 +951,19 @@
   <a href="#register-client" title="Register Client" class="md-nav__link">
     Register Client
   </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#restart-tomcat" title="Restart Tomcat" class="md-nav__link">
+    Restart Tomcat
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
   
 </li>
         
@@ -1820,6 +1829,19 @@
     Register Client
   </a>
   
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#restart-tomcat" title="Restart Tomcat" class="md-nav__link">
+    Restart Tomcat
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
 </li>
         
       </ul>
@@ -1842,24 +1864,7 @@
                
               
                 
-                <div class="toc">
-<ul>
-<li><a href="#configure-uma-demo">Configure UMA Demo</a><ul>
-<li><a href="#uma-discovery">UMA Discovery</a></li>
-<li><a href="#resource-server-configuration">Resource Server Configuration</a><ul>
-<li><a href="#add-client">Add Client</a></li>
-</ul>
-</li>
-<li><a href="#requesting-party-configuration">Requesting Party Configuration</a><ul>
-<li><a href="#register-client">Register Client</a></li>
-</ul>
-</li>
-</ul>
-</li>
-<li><a href="#restart-tomcat">Restart Tomcat</a></li>
-</ul>
-</div>
-<h1 id="configure-uma-demo">Configure UMA Demo<a class="headerlink" href="#configure-uma-demo" title="Permanent link">#</a></h1>
+                <h1 id="configure-uma-demo">Configure UMA Demo<a class="headerlink" href="#configure-uma-demo" title="Permanent link">#</a></h1>
 <p>This section will guide you through to configuring UMA demo in Gluu Server. The values will change accrding you your setup.
 There are three things that needs to be ensured while configuring UMA:</p>
 <ol>
@@ -1992,7 +1997,7 @@ This link for any IdP or UMA-enabled IdP will contain the UMA discovery informat
 <p>Populate the <code>oxuma-rp-conf.json</code> with the client ID and secret that was used in the form</p>
 </li>
 </ol>
-<h1 id="restart-tomcat">Restart Tomcat<a class="headerlink" href="#restart-tomcat" title="Permanent link">#</a></h1>
+<h4 id="restart-tomcat">Restart Tomcat<a class="headerlink" href="#restart-tomcat" title="Permanent link">#</a></h4>
 <p>Please remember to restart tomcat using the following command after the changes are made:</p>
 <p><code># service tomcat restart</code></p>
               

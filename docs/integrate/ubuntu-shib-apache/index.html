@@ -62,9 +62,7 @@
   <nav class="md-header-nav md-grid">
     <div class="md-flex">
 	 <div class="md-flex__cell md-flex__cell--shrink">
-        <a href="../.." title="Gluu Docs" class=" md-logo  md-header-nav__button">
-          
-            <img src="../../theme/material/gluu.jpg" width="24" height="24">
+        <a href="../.." title="Gluu Docs" class=" md-icon md-icon--home  md-header-nav__button">
           
         </a>
       </div>
@@ -178,9 +176,7 @@
                   <div class="md-sidebar__inner">
                     <nav class="md-nav md-nav--primary">
   <label class="md-nav__title md-nav__title--site" for="drawer">
-    <i class=" md-logo  md-nav__button">
-      
-        <img src="../../theme/material/gluu.jpg">
+    <i class=" md-icon md-icon--home  md-nav__button">
       
     </i>
     Gluu Docs
@@ -1239,6 +1235,27 @@
   
 </li>
       
+        <li class="md-nav__item">
+  <a href="#configure-the-shibboleth-sp" title="Configure the Shibboleth SP" class="md-nav__link">
+    Configure the Shibboleth SP
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#test" title="Test" class="md-nav__link">
+    Test
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#troubleshooting" title="Troubleshooting" class="md-nav__link">
+    Troubleshooting
+  </a>
+  
+</li>
+      
     </ul>
   
 </nav>
@@ -1747,6 +1764,27 @@
   
 </li>
       
+        <li class="md-nav__item">
+  <a href="#configure-the-shibboleth-sp" title="Configure the Shibboleth SP" class="md-nav__link">
+    Configure the Shibboleth SP
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#test" title="Test" class="md-nav__link">
+    Test
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#troubleshooting" title="Troubleshooting" class="md-nav__link">
+    Troubleshooting
+  </a>
+  
+</li>
+      
     </ul>
   
 </nav>
@@ -1824,7 +1862,7 @@ and add this part:</p>
 &lt;/Directory&gt;
 </code></pre>
 
-<h1 id="configure-the-shibboleth-sp">Configure the Shibboleth SP<a class="headerlink" href="#configure-the-shibboleth-sp" title="Permanent link">#</a></h1>
+<h2 id="configure-the-shibboleth-sp">Configure the Shibboleth SP<a class="headerlink" href="#configure-the-shibboleth-sp" title="Permanent link">#</a></h2>
 <p>Use this for <code>shibboleth2.xml</code> and replace <code>squid.gluu.info</code> with the
 hostname of your SP, and <code>albacore.gluu.info</code> with the hostname of your
 IDP.</p>
@@ -1913,12 +1951,12 @@ IDP.</p>
 
 <p>Now you need to create a Trust Relationship in your Gluu Server. Login,
 go to SAML / Trust Relationships, and "Add Relationship":</p>
-<p><img alt="image" src="https://raw.githubusercontent.com/GluuFederation/docs/master/sources/img/ubuntu-shib-apache/minnow-saml-trust-relationship-shibboleth-sp.png" /></p>
+<p><img alt="image" src="../../img/ubuntu-shib-apache/minnow-saml-trust-relationship-shibboleth-sp.png" /></p>
 <p>Then, configure for SAML2SSO profile. Click on the checkbox to
 "Configure specific RelyingParty":</p>
-<p><img alt="image" src="https://raw.githubusercontent.com/GluuFederation/docs/master/sources/img/ubuntu-shib-apache/configure_rp.png" /></p>
+<p><img alt="image" src="../../img/ubuntu-shib-apache/configure_rp.png" /></p>
 <p>Then, click to add the SAML2SSO profile:</p>
-<p><img alt="image" src="https://raw.githubusercontent.com/GluuFederation/docs/master/sources/img/ubuntu-shib-apache/saml_sso-profile.png" /></p>
+<p><img alt="image" src="../../img/ubuntu-shib-apache/saml_sso-profile.png" /></p>
 <p>Then "Save" and "Update." Wait 5 minutes for the Shibboleth IDP to detect reload the metadata or
 stop and start tomcat.</p>
 <h2 id="test">Test<a class="headerlink" href="#test" title="Permanent link">#</a></h2>

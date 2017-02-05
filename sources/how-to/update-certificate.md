@@ -1,6 +1,6 @@
-[TOC]
+#Update Certificate
 
-# Full procedures for manually updating certificates of a live Gluu CE instance.
+## Procedure for manually updating certificates of a live Gluu CE instance.
 
 This page describes how to manually update SSL/TLS certificates used by different components of Gluu CE instance. Ubuntu-based container's environment will be used for all command examples, if not stated otherwise explicitly. Commands may differ slightly for other distro families.
 

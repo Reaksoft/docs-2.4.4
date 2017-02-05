@@ -5,26 +5,26 @@ This section deals with the locking of user after 4 failed login attempts. This 
 The custom attribute `oxCountInvalidLogin` will track the unsuccessful login attempts by any user. Please create that attribute from the oxTrust Admin GUI.
 
 * Click on the add user button under **Configuration**
-![image](https://raw.githubusercontent.com/GluuFederation/docs/master/sources/img/2.4/admin_config_attribute_add.png)
+![image](../img/2.4/admin_config_attribute_add.png)
 
 * Please fill up the form as shown in the screenshot below
-![image](https://raw.githubusercontent.com/GluuFederation/docs/master/sources/img/2.4/custom_attribute.png)
+![image](../img/2.4/custom_attribute.png)
 
 * Click the **Update** button and the custom attribute is added in the Gluu Server
 
 ## Script Installation
 
 * Go to Manage Custom Scripts
-![image](https://raw.githubusercontent.com/GluuFederation/docs/master/sources/img/2.4/config-script_menu.png)
+![image](../img/2.4/config-script_menu.png)
 
 * Click on the Person Authenticaiton tab
-![image](https://raw.githubusercontent.com/GluuFederation/docs/master/sources/img/2.4/config-script_person.png)
+![image](../img/2.4/config-script_person.png)
 
 * Click on the Add custon script configuration button
-![image](https://raw.githubusercontent.com/GluuFederation/docs/master/sources/img/2.4/config-script_add.png)
+![image](../img/2.4/config-script_add.png)
 
 * Fill up the form with the following information:
-![image](https://raw.githubusercontent.com/GluuFederation/docs/master/sources/img/2.4/config_script_update1.png)
+![image](../img/2.4/config_script_update1.png)
 
     1. Name: LockAccount
 
@@ -47,12 +47,12 @@ The custom attribute `oxCountInvalidLogin` will track the unsuccessful login att
     8. Script: [Lock User Account Script](https://github.com/GluuFederation/oxAuth/blob/master/Server/integrations/basic.lock.account/BasicLockAccountExternalAuthenticator.py)
 
     9. Enable the script by ticking the check box 
-![image](https://raw.githubusercontent.com/GluuFederation/docs/master/sources/img/2.4/config-script_enable.png)
+![image](../img/2.4/config-script_enable.png)
 
     10. Click Update 
-![image](https://raw.githubusercontent.com/GluuFederation/docs/master/sources/img/2.4/config-script_update.png)
+![image](../img/2.4/config-script_update.png)
 
     11. Change Default Authentication Method to LockAccount
-![image](https://raw.githubusercontent.com/GluuFederation/docs/master/sources/img/2.4/lock_user_method.png)
+![image](../img/2.4/lock_user_method.png)
 
 

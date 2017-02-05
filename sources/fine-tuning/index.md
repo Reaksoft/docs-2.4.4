@@ -1,5 +1,3 @@
-[TOC]
-
 # Fine Tuning Gluu Server
 Gluu Server has a stateless architecture, it scales quite easy. However
 to get high-performant server it must be tuned accordingly.
@@ -119,7 +117,7 @@ Measures were made on single machine with Gluu Server, LDAP Server and test runn
   </tr>
 </table>
 
-# Useful Links
+## Useful Links
 
 - [OpenDJ Performance Tuning](https://backstage.forgerock.com/#!/docs/opendj/2.6.0/admin-guide/chap-tuning)
 - [OpenDJ Global configuration](http://opendj.forgerock.org/opendj-server/configref/global.html#max-allowed-client-connections)

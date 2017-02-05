@@ -1,5 +1,3 @@
-[TOC]
-
 # Automating Schema for Custom Attribute
 This how-to is created to guide through the process of automating a schema for a custom attribute.
 The creation of a custom schema will automaticaly create the custom attribute and it can be populated 

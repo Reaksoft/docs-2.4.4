@@ -1,4 +1,3 @@
-[TOC]
 # Configure UMA Demo
 This section will guide you through to configuring UMA demo in Gluu Server. The values will change accrding you your setup.
 There are three things that needs to be ensured while configuring UMA:
@@ -83,7 +82,7 @@ Please remember to populate the follwoing files
 
 * Populate the `oxuma-rp-conf.json` with the client ID and secret that was used in the form
 
-# Restart Tomcat
+#### Restart Tomcat
 Please remember to restart tomcat using the following command after the changes are made:
 
 `# service tomcat restart`

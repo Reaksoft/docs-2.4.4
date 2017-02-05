@@ -54,5 +54,5 @@ effective. If the tab is closed when the logout occurs in another tab,
 the event may not be detected, and the backend systems are advised to
 timeout sessions.
 
-# Using OpenID Connect from JavaScript
+## Using OpenID Connect from JavaScript
 See [OpenID Connect plugin for Passport](http://www.gluu.co/.qqh2) for further details.

@@ -1,13 +1,4 @@
-**Table of Contents** 
-
-- [User Management](#user-management)
-- [Cache Refresh](#cache-refresh)
-- [Self Registration](#self-registration)
-- [Local User Management](#local-user-management)
-	- [People](#people)
-	- [Groups](#groups)
-	- [Attributes](#attributes)
-
+# User Management Guide
 <!--
 
 				********** This part needs some maintenance **********
@@ -23,7 +14,7 @@
 
 -->
 
-# User Management
+## User Management
 
 To keep the Gluu Server up-to-date with the latest user claims, your
 organization can either "push" or "pull" identity data. In the "pull"
@@ -34,7 +25,7 @@ Directory as the authoritative source of identity information. If you
 API. Local user management can also be performed inside oxTrust. Each
 method is detailed below.
 
-# Cache Refresh
+## Cache Refresh
 
 Cache Refresh was built by Gluu to pull user information from a backend
 Active Directory/LDAP Server. Cache refresh dynamically synchronizes
@@ -42,7 +33,7 @@ user information from the backend data source to a local LDAP server in
 order to maximize performance. Cache refresh is documented in our
 [configuration section](./configuration.md#cache-refresh).
 
-# Self Registration
+## Self Registration
 
 Self-Registration is done by users on a self-service basis. Since
 oxTrust user registration cannot add users to a backend LDAP or Active
@@ -55,17 +46,17 @@ in Registration Management of Organization Configuration. Learn more
 about Registration Management
 [here](./configuration.md#manage-registration).
 
-# Local User Management
+## Local User Management
 
 In oxTrust, you can add, edit and manage people, groups and user
 attributes and claims to ensure the proper information is released about
 the right people.
 
-## People
+### People
 To manage people, navigate to User > Manage People, as shown in the
 screenshot below.
 
-![](https://raw.githubusercontent.com/GluuFederation/docs/master/sources/img/local_user_admin/manage_people.png)
+![](../img/local_user_admin/manage_people.png)
 
 From this interface you can add users and search for specific users.
 Because the user database can potentially be very large, a value is
@@ -75,26 +66,26 @@ this would be best performed manually within the Gluu OpenDJ server.
 Upon performing a user search, a list will be populated with all users
 that match the search, as shown in the screenshot below.
 
-![Search Users](https://raw.githubusercontent.com/GluuFederation/docs/master/sources/img/2.4/admin_users_searchadmin.png)
+![Search Users](../img/2.4/admin_users_searchadmin.png)
 
 To edit a user, simply click on any of the hyperlinks associated with
 that user and you will be taken to a user management interface where you
 can modify that specific attributes relating to that user as displayed
 below.
 
-![Manage Users](https://raw.githubusercontent.com/GluuFederation/docs/master/sources/img/2.4/admin_users_edituser.png)
+![Manage Users](../img/2.4/admin_users_edituser.png)
 
 ### Import People
 This feature allows the Gluu Server Administrator to bulk import users.
 The user *xls* file can be added using the **Add** button.
 
-![Import User](https://raw.githubusercontent.com/GluuFederation/docs/master/sources/img/oxTrust/admin_config_people.png)
+![Import User](../img/oxTrust/admin_config_people.png)
 
 Validation checking for the added *xls* file can be done using the
 **Validate** button. If the file is not formatted properly, the server
 will reject the same with an error as shown below in the screenshot.
 
-![Validation Error Message](https://raw.githubusercontent.com/GluuFederation/docs/master/sources/img/oxTrust/admin_config_people_validation.png)
+![Validation Error Message](../img/oxTrust/admin_config_people_validation.png)
 
 ## Groups
 Out of the box, the Gluu Server includes one group: Gluu Server manager
@@ -103,19 +94,19 @@ needed. By using the *Manage Groups* feature, the Gluu Server
 Administrator can add, delete or modify any group or user within a
 group. The list of available groups can be viewed by hitting the
 _Search_ button with a blank search box.
-![Manage User Groups](https://raw.githubusercontent.com/GluuFederation/docs/master/sources/img/oxTrust/admin_users_managegroups.png)
+![Manage User Groups](../img/oxTrust/admin_users_managegroups.png)
 
 The Gluu Server Administrator can modify information such as Display
 Name, Group Owner, Visibility type etc. The Server Administrator can
 also add or delete users within existing groups. The group information
 is represented as shown below.
-![View group information](https://raw.githubusercontent.com/GluuFederation/docs/master/sources/img/oxTrust/admin_users_groupinfo.png)
+![View group information](../img/oxTrust/admin_users_groupinfo.png)
 
 If any member of the Organization is required to be added in any
 specific group, this can be achieved be clicking on the Add Member
 button. The flow is _Add Member --> Search the name/email of the user
 --> Select the user --> Click OK --> Update._
-![Add Member](https://raw.githubusercontent.com/GluuFederation/docs/master/sources/img/oxTrust/admin_users_addmember.png)
+![Add Member](../img/oxTrust/admin_users_addmember.png)
 
 ## Attributes
 An “Active” attribute list can be seen from the Configuration >
@@ -128,12 +119,12 @@ about Attributes management [here](./configuration.md#attributes).
 
 				********** This part needs some maintenance **********
 
-# SCIM oxAuth Authentication
+## SCIM oxAuth Authentication
 
 This is a step by step guide to configure oxTrust and SCIM client for
 oxAuth authentication.
 
-## Base Configuration: Create oxAuth Client
+### Base Configuration: Create oxAuth Client
 In order to access SCIM endpoints, an oxAuth client should be registered
 with scopes "openid" and "user_name". Authentication method (or LDAP
 Property “oxAuthTokenEndpointAuthMethod”) of this client should have
@@ -158,12 +149,12 @@ Sample result entry:
         oxAuthScope: inum=@!1111!0009!E4B5,ou=scopes,o=@!1111,o=gluu
         oxAuthTokenEndpointAuthMethod: client_secret_basic
 
-##  Configuration (Resource Server)
+###  Configuration (Resource Server)
 
 It's possible to enable/disable SCIM endpoints in oxTrust under
 "Organization Configuration" page.
 
-## SCIM Client (Requesting Party) Sample Code
+### SCIM Client (Requesting Party) Sample Code
 
 This is a sample SCIM Client code which requests user information from
 server.
@@ -192,14 +183,14 @@ server.
 Values in this example are correspond to client entry fields from first
 section.
 
-# SCIM UMA Authentication
+## SCIM UMA Authentication
 
 This is step by step guide to configure UMA for oxTrust and SCIM client.
 High level architecture overview is available in the following article
 [OX SCIM Architecture
 Overview](http://ox.gluu.org/doku.php?id=oxtrust:scim:uma_authentication#ox_scim_architecture_overview).
 
-## Base Configuration: Create oxAuth Clients, Policies
+### Base Configuration: Create oxAuth Clients, Policies
 
 1. Register oxAuth client with scope “uma_protection”. Property “oxAuthTokenEndpointAuthMethod” of this client should has value “client_secret_basic”. It's possible to do that using few methods: [Client Registration](http://ox.gluu.org/doku.php?id=oxauth:clientregistration), using [oxTrust](http://ox.gluu.org/doku.php?id=oxtrust:home) GUI, manually add entry to LDAP. oxTrust will use this oxAuth client to obtain PAT. Sample result entry:
 
@@ -326,7 +317,7 @@ Note: There is sample UMA Authorization Policy in CE. You can modify it instead 
                 oxId: 1403179695657
                 oxRevision: 1
 
-## oxTrust configuration (Resource Server)
+### oxTrust configuration (Resource Server)
 
 Add next oxTrust UMA related configuration properties to oxTrust.properties:
 
@@ -344,7 +335,7 @@ remove oxTrust configuration entry from LDAP and restart tomcat. Example
 DN of oxTrust configuration entry:
 ou=oxtrust,ou=configuration,inum=@!1111!0002!4907,ou=appliances,o=gluu
 
-## SCIM Client (Requesting Party) sample code
+### SCIM Client (Requesting Party) sample code
 
 This is sample SCIM Client code which request user information from server.
 

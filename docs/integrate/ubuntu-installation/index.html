@@ -62,9 +62,7 @@
   <nav class="md-header-nav md-grid">
     <div class="md-flex">
 	 <div class="md-flex__cell md-flex__cell--shrink">
-        <a href="../.." title="Gluu Docs" class=" md-logo  md-header-nav__button">
-          
-            <img src="../../theme/material/gluu.jpg" width="24" height="24">
+        <a href="../.." title="Gluu Docs" class=" md-icon md-icon--home  md-header-nav__button">
           
         </a>
       </div>
@@ -178,9 +176,7 @@
                   <div class="md-sidebar__inner">
                     <nav class="md-nav md-nav--primary">
   <label class="md-nav__title md-nav__title--site" for="drawer">
-    <i class=" md-logo  md-nav__button">
-      
-        <img src="../../theme/material/gluu.jpg">
+    <i class=" md-icon md-icon--home  md-nav__button">
       
     </i>
     Gluu Docs
@@ -1204,6 +1200,47 @@
   
 </li>
       
+        <li class="md-nav__item">
+  <a href="#configuration-of-mod_auth_openidc" title="Configuration of mod_auth_openidc" class="md-nav__link">
+    Configuration of mod_auth_openidc
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#installation" title="Installation" class="md-nav__link">
+    Installation
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#client-registration" title="Client Registration" class="md-nav__link">
+    Client Registration
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#install-cgi-script" title="Install CGI script" class="md-nav__link">
+    Install CGI script
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#configuring-the-apache-virtualhost" title="Configuring the Apache VirtualHost" class="md-nav__link">
+    Configuring the Apache VirtualHost
+  </a>
+  
+</li>
+      
     </ul>
   
 </nav>
@@ -1787,6 +1824,47 @@
   
 </li>
       
+        <li class="md-nav__item">
+  <a href="#configuration-of-mod_auth_openidc" title="Configuration of mod_auth_openidc" class="md-nav__link">
+    Configuration of mod_auth_openidc
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#installation" title="Installation" class="md-nav__link">
+    Installation
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#client-registration" title="Client Registration" class="md-nav__link">
+    Client Registration
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#install-cgi-script" title="Install CGI script" class="md-nav__link">
+    Install CGI script
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#configuring-the-apache-virtualhost" title="Configuring the Apache VirtualHost" class="md-nav__link">
+    Configuring the Apache VirtualHost
+  </a>
+  
+</li>
+      
     </ul>
   
 </nav>
@@ -1802,26 +1880,7 @@
                
               
                 
-                <div class="toc">
-<ul>
-<li><a href="#basic-web-server-installation">Basic Web Server Installation</a><ul>
-<li><a href="#apache-web-server">Apache Web Server</a></li>
-<li><a href="#ssl-configuration">SSL Configuration</a><ul>
-<li><a href="#configure-apache-to-use-ssl">Configure Apache to use SSL</a></li>
-</ul>
-</li>
-</ul>
-</li>
-<li><a href="#configuration-of-mod_auth_openidc">Configuration of mod_auth_openidc</a><ul>
-<li><a href="#installation">Installation</a></li>
-<li><a href="#client-registration">Client Registration</a></li>
-<li><a href="#install-cgi-script">Install CGI script</a></li>
-<li><a href="#configuring-the-apache-virtualhost">Configuring the Apache VirtualHost</a></li>
-</ul>
-</li>
-</ul>
-</div>
-<h1 id="basic-web-server-installation">Basic Web Server Installation<a class="headerlink" href="#basic-web-server-installation" title="Permanent link">#</a></h1>
+                <h1 id="basic-web-server-installation">Basic Web Server Installation<a class="headerlink" href="#basic-web-server-installation" title="Permanent link">#</a></h1>
 <p>Before you can install mod_auth_openidc, you need to have an Apache
 HTTPD server running with SSL enabled. </p>
 <h2 id="apache-web-server">Apache Web Server<a class="headerlink" href="#apache-web-server" title="Permanent link">#</a></h2>
@@ -1888,8 +1947,8 @@ use the SSL module</p>
 working. Point your browser at 
 https://www.mydomain.com/cgi-bin/printHeaders.cgi
 You should see a list of current environment variables. </p>
-<h1 id="configuration-of-mod_auth_openidc">Configuration of mod_auth_openidc<a class="headerlink" href="#configuration-of-mod_auth_openidc" title="Permanent link">#</a></h1>
-<h2 id="installation">Installation<a class="headerlink" href="#installation" title="Permanent link">#</a></h2>
+<h2 id="configuration-of-mod_auth_openidc">Configuration of mod_auth_openidc<a class="headerlink" href="#configuration-of-mod_auth_openidc" title="Permanent link">#</a></h2>
+<h3 id="installation">Installation<a class="headerlink" href="#installation" title="Permanent link">#</a></h3>
 <p><code>mod_auth_openidc</code> module depends on the Ubuntu package <code>libjansson4</code>: </p>
 <pre><code class="text"># apt-get install libjansson
 

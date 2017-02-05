@@ -83,7 +83,7 @@ Enroll SP requestor for 'test.gluu.org/saml'
 
 Service Provider configuration is straight forward. We installed Shibboleth SP in Ubuntu 14.04 LTS. Sp configurations are also added below. 
 
-# Files
+## Files
 
 ## SAML Script: 
 ```

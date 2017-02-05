@@ -62,9 +62,7 @@
   <nav class="md-header-nav md-grid">
     <div class="md-flex">
 	 <div class="md-flex__cell md-flex__cell--shrink">
-        <a href="../.." title="Gluu Docs" class=" md-logo  md-header-nav__button">
-          
-            <img src="../../theme/material/gluu.jpg" width="24" height="24">
+        <a href="../.." title="Gluu Docs" class=" md-icon md-icon--home  md-header-nav__button">
           
         </a>
       </div>
@@ -178,9 +176,7 @@
                   <div class="md-sidebar__inner">
                     <nav class="md-nav md-nav--primary">
   <label class="md-nav__title md-nav__title--site" for="drawer">
-    <i class=" md-logo  md-nav__button">
-      
-        <img src="../../theme/material/gluu.jpg">
+    <i class=" md-icon md-icon--home  md-nav__button">
       
     </i>
     Gluu Docs
@@ -1734,44 +1730,7 @@
                
               
                 
-                <div class="toc">
-<ul>
-<li><a href="#enterprise-uma">Enterprise UMA</a></li>
-<li><a href="#uma-in-action">UMA in Action</a><ul>
-<li><a href="#uma-authorization-workflow">UMA Authorization Workflow</a></li>
-<li><a href="#detailed-authorization-overview">Detailed Authorization Overview</a></li>
-<li><a href="#uma-authorization-token-workflow">UMA Authorization Token Workflow</a></li>
-<li><a href="#uma-authorization-complete-sequence">UMA Authorization Complete Sequence</a></li>
-</ul>
-</li>
-<li><a href="#discovery">Discovery</a></li>
-<li><a href="#resource-registration">Resource Registration</a><ul>
-<li><a href="#register-resource-via-oxtrust">Register resource via oxTrust</a></li>
-</ul>
-</li>
-<li><a href="#uma-scopes">UMA Scopes</a><ul>
-<li><a href="#define-uma-scopes-via-oxtrust">Define UMA Scopes via oxTrust</a></li>
-<li><a href="#implementation-specificity">Implementation specificity</a><ul>
-<li><a href="#external-sample-ldif">External sample ldif</a></li>
-<li><a href="#internal-sample-ldif">Internal sample ldif</a></li>
-</ul>
-</li>
-</ul>
-</li>
-<li><a href="#uma-policies">UMA Policies</a><ul>
-<li><a href="#define-policies">Define Policies</a></li>
-<li><a href="#algorithm">Algorithm</a></li>
-</ul>
-</li>
-<li><a href="#requesting-party-trust-elevation">Requesting party trust elevation</a></li>
-<li><a href="#uma-resource-server-java-library">UMA Resource Server Java Library</a><ul>
-<li><a href="#usage">Usage</a></li>
-</ul>
-</li>
-<li><a href="#references">References</a></li>
-</ul>
-</div>
-<h1 id="enterprise-uma">Enterprise UMA<a class="headerlink" href="#enterprise-uma" title="Permanent link">#</a></h1>
+                <h1 id="enterprise-uma">Enterprise UMA<a class="headerlink" href="#enterprise-uma" title="Permanent link">#</a></h1>
 <p>The Gluu Server implements UMA in a way that enables the protection
 of any web resource. Through the oxTrust interface, the server admin can
 write custom <a href="../../customize/script/#authorization">authorization interception
@@ -1804,14 +1763,14 @@ used by this page is borrowed from UMA and Connect specs.</p>
   entity that can acquire an access token with this scope is by 
   definition a client.      </p>
 <h2 id="uma-authorization-workflow">UMA Authorization Workflow<a class="headerlink" href="#uma-authorization-workflow" title="Permanent link">#</a></h2>
-<p><img alt="UMA Authorization Workflow" src="https://raw.githubusercontent.com/GluuFederation/docs/master/sources/img/uma/uma_parts.png" title="UMA Parts" /></p>
+<p><img alt="UMA Authorization Workflow" src="../../img/uma/uma_parts.png" title="UMA Parts" /></p>
 <h2 id="detailed-authorization-overview">Detailed Authorization Overview<a class="headerlink" href="#detailed-authorization-overview" title="Permanent link">#</a></h2>
-<p><img alt="Detailed authorization overview" src="https://raw.githubusercontent.com/GluuFederation/docs/master/sources/img/uma/uma_flow.png" title="UMA Parts" /></p>
+<p><img alt="Detailed authorization overview" src="../../img/uma/uma_flow.png" title="UMA Parts" /></p>
 <h2 id="uma-authorization-token-workflow">UMA Authorization Token Workflow<a class="headerlink" href="#uma-authorization-token-workflow" title="Permanent link">#</a></h2>
-<p><img alt="UMA Authorization token workflow" src="https://raw.githubusercontent.com/GluuFederation/docs/master/sources/img/uma/uma_token_workflow.png" title="UMA Parts" /></p>
+<p><img alt="UMA Authorization token workflow" src="../../img/uma/uma_token_workflow.png" title="UMA Parts" /></p>
 <h2 id="uma-authorization-complete-sequence">UMA Authorization Complete Sequence<a class="headerlink" href="#uma-authorization-complete-sequence" title="Permanent link">#</a></h2>
-<p><img alt="UMA Authorization complete sequence diagram" src="https://raw.githubusercontent.com/GluuFederation/docs/master/sources/img/uma/uma_very_detailed_flow.png" title="UMA Parts" /></p>
-<h1 id="discovery">Discovery<a class="headerlink" href="#discovery" title="Permanent link">#</a></h1>
+<p><img alt="UMA Authorization complete sequence diagram" src="../../img/uma/uma_very_detailed_flow.png" title="UMA Parts" /></p>
+<h2 id="discovery">Discovery<a class="headerlink" href="#discovery" title="Permanent link">#</a></h2>
 <p>The Gluu Server exposes an endpoint for discovering information about
 UMA Provider configuration. A resource server or client can perform an
 HTTP GET on <code>https://domain.com/.well-known/uma-configuration</code> to
@@ -1879,7 +1838,7 @@ register a resource set.</p>
 register a requested permission.</p>
 <p><code>rpt_endpoint</code>: the uri for the client to request authorization data.</p>
 <p><code>dynamic_client_endpoint</code>: the uri for registering a dynamic client.</p>
-<h1 id="resource-registration">Resource Registration<a class="headerlink" href="#resource-registration" title="Permanent link">#</a></h1>
+<h2 id="resource-registration">Resource Registration<a class="headerlink" href="#resource-registration" title="Permanent link">#</a></h2>
 <p>To let the Gluu Server know which resources are protected by UMA they
 must be registered. Resources are described by the following properties:</p>
 <ul>
@@ -1892,9 +1851,9 @@ must be registered. Resources are described by the following properties:</p>
 <p>These are standard properties however a resource description MAY contain
 custom properties.</p>
 <h2 id="register-resource-via-oxtrust">Register resource via oxTrust<a class="headerlink" href="#register-resource-via-oxtrust" title="Permanent link">#</a></h2>
-<p><img alt="oxTrust UMA Resources Interface" src="https://raw.githubusercontent.com/GluuFederation/docs/master/sources/img/uma/uma_oxtrust_resources.png" /></p>
-<p><img alt="oxTrust UMA Add Resources Interface" src="https://raw.githubusercontent.com/GluuFederation/docs/master/sources/img/uma/uma_oxtrust_resources_add.png" /></p>
-<h1 id="uma-scopes">UMA Scopes<a class="headerlink" href="#uma-scopes" title="Permanent link">#</a></h1>
+<p><img alt="oxTrust UMA Resources Interface" src="../../img/uma/uma_oxtrust_resources.png" /></p>
+<p><img alt="oxTrust UMA Add Resources Interface" src="../../img/uma/uma_oxtrust_resources_add.png" /></p>
+<h2 id="uma-scopes">UMA Scopes<a class="headerlink" href="#uma-scopes" title="Permanent link">#</a></h2>
 <p>UMA Scopes are bound to resource sets and are used by policies to check
 whether the specified user has access to the resource. An UMA Scope is
 described in JSON and has the following properties:</p>
@@ -1912,8 +1871,8 @@ described in JSON and has the following properties:</p>
 <p>The scope JSON MAY contain custom properties which are out of scope of
 this document.</p>
 <h2 id="define-uma-scopes-via-oxtrust">Define UMA Scopes via oxTrust<a class="headerlink" href="#define-uma-scopes-via-oxtrust" title="Permanent link">#</a></h2>
-<p><img alt="oxTrust Scopes" src="https://raw.githubusercontent.com/GluuFederation/docs/master/sources/img/uma/uma_oxtrust_scopes.png" /></p>
-<p><img alt="Add oxTrust Scopes" src="https://raw.githubusercontent.com/GluuFederation/docs/master/sources/img/uma/uma_oxtrust_scopes_add.png" /></p>
+<p><img alt="oxTrust Scopes" src="../../img/uma/uma_oxtrust_scopes.png" /></p>
+<p><img alt="Add oxTrust Scopes" src="../../img/uma/uma_oxtrust_scopes_add.png" /></p>
 <h2 id="implementation-specificity">Implementation specificity<a class="headerlink" href="#implementation-specificity" title="Permanent link">#</a></h2>
 <p>The following types of scopes exist:</p>
 <ul>
@@ -1970,7 +1929,7 @@ Manage Custom Scripts &gt; UMA Authorization policies.</p>
 <p>You can find more information on crafting UMA policies as well as an
 example script
 <a href="../../customize/script/">here</a>.</p>
-<p><img alt="Add UMA Policies" src="https://raw.githubusercontent.com/GluuFederation/docs/master/sources/img/uma/uma_oxtrust_policy_add.png" /></p>
+<p><img alt="Add UMA Policies" src="../../img/uma/uma_oxtrust_policy_add.png" /></p>
 <h2 id="algorithm">Algorithm<a class="headerlink" href="#algorithm" title="Permanent link">#</a></h2>
 <p>The algorithm follows theses rules:</p>
 <ul>
@@ -1983,8 +1942,8 @@ example script
   authorize access. If at least one policy returned false then the
   authorization is denied.</li>
 </ul>
-<p><img alt="UMA Policy Handling" src="https://raw.githubusercontent.com/GluuFederation/docs/master/sources/img/interception_scripts/uma_policy_handling.jpg" /> </p>
-<h1 id="requesting-party-trust-elevation">Requesting party trust elevation<a class="headerlink" href="#requesting-party-trust-elevation" title="Permanent link">#</a></h1>
+<p><img alt="UMA Policy Handling" src="../../img/interception_scripts/uma_policy_handling.jpg" /> </p>
+<h2 id="requesting-party-trust-elevation">Requesting party trust elevation<a class="headerlink" href="#requesting-party-trust-elevation" title="Permanent link">#</a></h2>
 <p>This section defines the OX claim profile for UMA. Following is a
 summary:</p>
 <ul>
@@ -2030,7 +1989,7 @@ Cache-Control: no-store
 }
 </code></pre>
 
-<h1 id="uma-resource-server-java-library">UMA Resource Server Java Library<a class="headerlink" href="#uma-resource-server-java-library" title="Permanent link">#</a></h1>
+<h2 id="uma-resource-server-java-library">UMA Resource Server Java Library<a class="headerlink" href="#uma-resource-server-java-library" title="Permanent link">#</a></h2>
 <p><a href="https://github.com/GluuFederation/uma-rs">UMA RS Java Library</a> helps to easily protect Java based project with UMA in declarative way.</p>
 <p>Sample declaration</p>
 <pre><code class="json">{&quot;resources&quot;:[
@@ -2082,7 +2041,7 @@ ResourceRegistrar resourceRegistrar = new ResourceRegistrar(patProvider);
 resourceRegistrar.register(values);
 </code></pre>
 
-<h1 id="references">References<a class="headerlink" href="#references" title="Permanent link">#</a></h1>
+<h4 id="references">References<a class="headerlink" href="#references" title="Permanent link">#</a></h4>
 <ul>
 <li><a href="https://docs.kantarainitiative.org/uma/rec-uma-core.html">UMA 1.0.1 Specification</a></li>
 <li><a href="http://kantarainitiative.org/confluence/display/uma/Case+Study%3A+Access+Management+2.0+for+the+Enterprise">Kantara Enterprise UMA Case Study</a> </li>

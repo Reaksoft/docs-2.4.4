@@ -1,12 +1,11 @@
-[TOC]
 # Configuration
 This section of the documentation includes instructions for configuring
 a number of the components of the Gluu Server in order to adjust the
 server to your organizational needs.
 
-![Configuration Menu](https://raw.githubusercontent.com/GluuFederation/docs/master/sources/img/oxTrust/config_menu.png)
+![Configuration Menu](../img/oxTrust/config_menu.png)
 
-# Organization Configuration
+## Organization Configuration
 This section contains the following options:
 - [System Configuration](#system-configuration)
 - [Manage Email Addresses](#manage-email-addresses)
@@ -18,7 +17,7 @@ This feature allows the Gluu system administrator to customize and
 implement various options such as *Cache Refresh*, *Federation Hosting*,
 *SCIM Support* etc.
 
-![System Configuration](https://raw.githubusercontent.com/GluuFederation/docs/2.4/sources/img/2.4/admin_config_system.png)
+![System Configuration](../img/2.4/admin_config_system.png)
 
 * _White Pages:_ If the user intends to use the built-in White Pages of
   the Gluu Server, this feature can be enabled here.
@@ -47,7 +46,7 @@ fields. All Gluu Server related informats *(cron daemon/logwatch/crash
 reports etc.)* can be pushed to the desired Gluu Server administrator
 using this feature.
 
-![SMTP Server Configuration](https://raw.githubusercontent.com/GluuFederation/docs/2.4/sources/img/2.4/admin_config_smtp.png)
+![SMTP Server Configuration](../img/2.4/admin_config_smtp.png)
 
 * _SMTP Host:_ Name of the SMTP host server.
 
@@ -76,7 +75,7 @@ User Interface. The Gluu Server administrator can add Title, Display
 Name or even modify the Web User Interface color and logo from this
 section.
 
-![Configuration Panel](https://raw.githubusercontent.com/GluuFederation/docs/2.4/sources/img/2.4/admin_config_config.png)
+![Configuration Panel](../img/2.4/admin_config_config.png)
 
 * _Manager Group:_ The Gluu Server has a single manager group. The users
   that belong to the manager group can use the Web User Interface to
@@ -89,7 +88,7 @@ section.
 * _Organization Favicon:_ This feature can be used to change the
   organization favicon, if desired.
 
-# Manage Authentication
+## Manage Authentication
 This section allows the Gluu Server administrator to define how and
 where the server should connect to authenticate users. If it is a remote
 LDAP/Active Directory server, the values are required. Put the details
@@ -97,7 +96,7 @@ of the data source that you are trying to connect with Gluu Server. For
 example, the data source can be your back-end Active Directory, or your
 local LDAP server.
 
-![Manage LDAP Authentication](https://raw.githubusercontent.com/GluuFederation/docs/2.4/sources/img/2.4/admin_manage_ldap.png)
+![Manage LDAP Authentication](../img/2.4/admin_manage_ldap.png)
 
 * _Deactivate:_ This button *Deactivates/Activates* the Gluu Server
   accessibility for authentication.
@@ -152,22 +151,22 @@ Gluu Server uses oxAuth as the first step of authentication in all kind of SSO p
 |Authentication mode|This mode is used in case of users authenticating with Gluu Server only without entring into oxTrust|
 |oxTrust authentication mode|This mode is used for authenticate the GUI admins or users with oxTrust GUI access|
 
-![Default Authentication Method](https://raw.githubusercontent.com/GluuFederation/docs/2.4/sources/img/2.4/admin_auth_default.png)
+![Default Authentication Method](../img/2.4/admin_auth_default.png)
 
-# Manage Custom Scripts  
+## Manage Custom Scripts  
 
 The latest edition of the Gluu Server introduced a new Configuration
 section called _Manage Custom Scripts_. This is a single place where the
 server administrator can manage and implement interception scripts to
 customize the behavior of the Gluu Server.
 
-![Custom Authentication Scritp](https://raw.githubusercontent.com/GluuFederation/docs/master/sources/img/2.4/admin_auth_custom.png)
+![Custom Authentication Scritp](../img/2.4/admin_auth_custom.png)
 
 Please see the [Behaviour Customization page](../customize/script.md) for details.
 
-# Manage Registration
+## Manage Registration
 
-![Image](https://raw.githubusercontent.com/GluuFederation/docs/master/sources/img/2.4/admin_config_workflow.png)
+![Image](../img/2.4/admin_config_workflow.png)
 
 From the Manage Registration interface, the Gluu Server administrator
 can customize the self-registration work-flow. Each option will be
@@ -185,29 +184,29 @@ feature, just start typing the attribute name in the Attributes Filter
 and then add desired attributes to the right column. Finally, click
 "Update" to complete this step.
 
-# Attributes
+## Attributes
 An *Active* attribute list can be seen from the Configuration >
 Attributes section.
 
-![Attribute Menu](https://raw.githubusercontent.com/GluuFederation/docs/master/sources/img/2.4/admin_attribute_menu.png)
+![Attribute Menu](../img/2.4/admin_attribute_menu.png)
 
 The Gluu Server has a large LDAP tree which includes all standard
 attributes. It is not necessary for all of them to be *Active*. The
 active LDAP trees can be sorted using the *Show only Active Attributes*
 link.
 
-![Show Active Attribute](https://raw.githubusercontent.com/GluuFederation/docs/master/sources/img/2.4/admin_attribute_show.png)
+![Show Active Attribute](../img/2.4/admin_attribute_show.png)
 
 The Gluu Server administrator can make changes, such as changing the
 status to active/inactive, to an attribute after clicking on it.
 
-![Attributes](https://raw.githubusercontent.com/GluuFederation/docs/master/sources/img/2.4/admin_attribute_attribute.png)
+![Attributes](../img/2.4/admin_attribute_attribute.png)
 
 Additional attributes can be added from the Gluu Server GUI, oxTrust, by
 clicking the **Add Attribute** button. Then, the following screen will
 appear:
 
-![Add Attribute Screen](https://raw.githubusercontent.com/GluuFederation/docs/master/sources/img/2.4/admin_attribute_add.png)
+![Add Attribute Screen](../img/2.4/admin_attribute_add.png)
 
 * _Name:_ This field defines the name of the custom attribute which must
   be unique in the Gluu Server LDAP tree.
@@ -245,7 +244,7 @@ appear:
 * _Status:_ The status, when selected active, will release and publish
   the attribute in IdP.
 
-# Cache Refresh
+## Cache Refresh
 
 **Cache Refresh** was built by Gluu to pull user information from a
 backend customer Active Directory/LDAP Server. Cache refresh dynamically
@@ -259,7 +258,7 @@ assistance from [Gluu Support](http://support.gluu.org). *For a
 successful Cache Refresh setup, you have to insert data in ALL FIELDS
 below.*
 
-![Cache Refresh Menu](https://raw.githubusercontent.com/GluuFederation/docs/master/sources/img/2.4/admin_cache_menu.png)
+![Cache Refresh Menu](../img/2.4/admin_cache_menu.png)
 
 * _Last Run:_ The date and time of the latest cache refresh cycle
   completion is shown here.
@@ -272,10 +271,10 @@ below.*
   been rejected by the Gluu Server during the update. If there are any
   rejections, please contact Gluu Support for clarification and help.
 
-![Last Run](https://raw.githubusercontent.com/GluuFederation/docs/master/sources/img/2.4/admin_cache_lastrun.png)
+![Last Run](../img/2.4/admin_cache_lastrun.png)
 
 ## Customer Backend Key and Attributes
-![Customer Backend Key](https://raw.githubusercontent.com/GluuFederation/docs/master/sources/img/2.4/admin_cache_backend.png)
+![Customer Backend Key](../img/2.4/admin_cache_backend.png)
 
 * _Key Attribute:_ This is the unique key attribute of backend Active
   Directory/LDAP Server such as SAMAccountname for any Active Directory.
@@ -292,7 +291,7 @@ filtering mechanism can be used such as "sn=*" whereas the value of this
 field ensures that every user must contain an attribute named SN.
 
 ## Source Backend LDAP Servers
-![Source Backend](https://raw.githubusercontent.com/GluuFederation/docs/master/sources/img/2.4/admin_cache_sourcebackend.png)
+![Source Backend](../img/2.4/admin_cache_sourcebackend.png)
 
 This section allows the Gluu Server to connect to the backend Active
 Directory/LDAP server of the organization.
@@ -335,7 +334,7 @@ Please remember that a *failover server* is not a new server.
 
 ## Inum LDAP Server
 
-![Inum LDAP Server](https://raw.githubusercontent.com/GluuFederation/docs/master/sources/img/2.4/admin_cache_inum.png)
+![Inum LDAP Server](../img/2.4/admin_cache_inum.png)
 
 This section of the application allows the server administrator to
 connect to the internal LDAP of the Gluu Server. As Gluu Server
@@ -351,13 +350,13 @@ you try to manually configure it anyway).
   the VDS method. This option can be enabled via the drop-down menu in
   Refresh Method option.
 
-![Refresh VDS](https://raw.githubusercontent.com/GluuFederation/docs/master/sources/img/2.4/admin_cache_refresh_vds.png)
+![Refresh VDS](../img/2.4/admin_cache_refresh_vds.png)
 
   2. _Copy Method:_ If the organization has any kind of Active
   Directory/LDAP server, they are strongly recommended to use the *Copy
   Method* from the drop-down menu.
 
-![Refresh Copy](https://raw.githubusercontent.com/GluuFederation/docs/master/sources/img/2.4/admin_cache_refresh_copy.png)
+![Refresh Copy](../img/2.4/admin_cache_refresh_copy.png)
 
 ## Attributes Mapping
 
@@ -366,7 +365,7 @@ be exposed. In this section, the Gluu Server Administrator can map any
 attribute from the backend Active Directory/LDAP to the LDAP cache of
 the Gluu Server.
 
-![Attribute Mapping](https://raw.githubusercontent.com/GluuFederation/docs/75518bb90184aa1b096874526b4da5f9f924bd44/sources/img/2.4/admin_cache_mapattribute.png)
+![Attribute Mapping](../img/2.4/admin_cache_mapattribute.png)
 
 In the source attribute to destination attribute mapping field, you can
 enter the source attribute value on the left, and the destination
@@ -419,38 +418,38 @@ upgraded sections here.
   * _Update and Validate Script:_ This button is used to test the
     operation and integrity of any custom script such as a Jython Script.
 
-# Configure Log Viewer
+## Configure Log Viewer
 
 The Gluu Server has the facility to read log files using the GUI. The
 log file can be displayed from the Web UI with a few clicks of the
 mouse. This feature can be enabled from the configuration menu clicking
 **Configuration --> Configure Log Viewer**.
 
-![Configure Log Viewer](https://cloud.githubusercontent.com/assets/7703245/12272408/8fc7ecc2-b98a-11e5-9297-3d3f3329ba5d.png)
+![Configure Log Viewer](../img/2.4/logviewer.png)
 
 Gluu Server comes preloaded with four logs in this page as the screenshot portrays. The oxAuth, oxTrust, Cache Refresh and the console log is available by default.
 Clicking on **Add log template** will bring up boxes where log path can be set to view the same from the GUI. The boxes on the
 left contain the name/description of the log file, and the right boxes
 contain the path of the log file such as _/opt/tomcat/logs/demo.log_.
 
-# View Log File
+## View Log File
 
 The log files configured in the earlier section can be viewed using the
 **View log file** feature. This feature can be accessed through the
 configuration menu using **Configuration --> View Log File**.
 
-![View Log File](https://raw.githubusercontent.com/GluuFederation/docs/master/sources/img/2.4/admin_view_log.png)
+![View Log File](../img/2.4/admin_view_log.png)
 
 The **Display last lines count** field contains the lines that will be
 displayed in the Web GUI. If the field contains the value **400**, then
 the Gluu Server will show the last 400 lines of the log in the GUI. The
 screenshot below shows an according example.
 
-![Log file tail](https://raw.githubusercontent.com/GluuFederation/docs/master/sources/img/2.4/admin_view_logtail.png)
+![Log file tail](../img/2.4/admin_view_logtail.png)
 
-# Status
+## Status
 
-![Status](https://raw.githubusercontent.com/GluuFederation/docs/master/sources/img/2.4/admin_config_status.png)
+![Status](../img/2.4/admin_config_status.png)
 
 The Status section provides a high level overview of server metrics. The
 included values are straightforward and shouldn't require any further

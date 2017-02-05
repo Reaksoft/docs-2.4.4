@@ -18,7 +18,7 @@ HTTP server as the Internet facing Web server. There are a number of
 Apache HTTP denial of service plugins. It is easier to handle re-directs
 for things like discovery. And its convenient to have a non-J2EE way to
 publish static content. ![Gluu Web
-Communication](https://raw.githubusercontent.com/GluuFederation/docs/master/sources/img/design/gluu_http-tomcat_overview.png)
+Communication](../img/design/gluu_http-tomcat_overview.png)
 
 ## LDAP for Persistence
 LDAP was chosen for persistence for a number of reasons: (1) we understood

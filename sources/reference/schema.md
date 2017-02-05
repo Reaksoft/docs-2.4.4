@@ -1,4 +1,3 @@
-[TOC]
 # Schema
 
 Below are the schemes for OpenDJ and OpenLDAP. The OpenDJ schema should
