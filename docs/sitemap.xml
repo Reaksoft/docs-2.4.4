@@ -128,18 +128,6 @@
     </url>
         
     <url>
-     <loc>/reference/oxtrust-properties/</loc>
-     <lastmod>2017-02-05</lastmod>
-     <changefreq>daily</changefreq>
-    </url>
-        
-    <url>
-     <loc>/reference/oxauth-properties/</loc>
-     <lastmod>2017-02-05</lastmod>
-     <changefreq>daily</changefreq>
-    </url>
-        
-    <url>
      <loc>/integrate/outbound-saml/</loc>
      <lastmod>2017-02-05</lastmod>
      <changefreq>daily</changefreq>
@@ -169,83 +157,15 @@
      <changefreq>daily</changefreq>
     </url>
         
-    
-
-    
-        
     <url>
-     <loc>/cache-refresh/</loc>
-     <lastmod>2017-02-05</lastmod>
+     <loc></loc>
+     <lastmod></lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
-     <loc>/user-management/xlsfile/</loc>
-     <lastmod>2017-02-05</lastmod>
-     <changefreq>daily</changefreq>
-    </url>
-        
-    <url>
-     <loc>/cache-refresh/register/</loc>
-     <lastmod>2017-02-05</lastmod>
-     <changefreq>daily</changefreq>
-    </url>
-        
-    <url>
-     <loc>/cache-refresh/reset-password/</loc>
-     <lastmod>2017-02-05</lastmod>
-     <changefreq>daily</changefreq>
-    </url>
-        
-    <url>
-     <loc>/user-management/scim/</loc>
-     <lastmod>2017-02-05</lastmod>
-     <changefreq>daily</changefreq>
-    </url>
-        
-    
-
-    
-        
-    <url>
-     <loc>/multi-factor/intro/</loc>
-     <lastmod>2017-02-05</lastmod>
-     <changefreq>daily</changefreq>
-    </url>
-        
-    <url>
-     <loc>/multi-factor/duo/</loc>
-     <lastmod>2017-02-05</lastmod>
-     <changefreq>daily</changefreq>
-    </url>
-        
-    <url>
-     <loc>/multi-factor/u2f/</loc>
-     <lastmod>2017-02-05</lastmod>
-     <changefreq>daily</changefreq>
-    </url>
-        
-    <url>
-     <loc>/multi-factor/oxpush2/</loc>
-     <lastmod>2017-02-05</lastmod>
-     <changefreq>daily</changefreq>
-    </url>
-        
-    <url>
-     <loc>/multi-factor/wikid/</loc>
-     <lastmod>2017-02-05</lastmod>
-     <changefreq>daily</changefreq>
-    </url>
-        
-    <url>
-     <loc>/multi-factor/cert/</loc>
-     <lastmod>2017-02-05</lastmod>
-     <changefreq>daily</changefreq>
-    </url>
-        
-    <url>
-     <loc>/customize/social-login-google/</loc>
-     <lastmod>2017-02-05</lastmod>
+     <loc></loc>
+     <lastmod></lastmod>
      <changefreq>daily</changefreq>
     </url>
         
@@ -307,12 +227,6 @@
         
     <url>
      <loc>/reference/logout/</loc>
-     <lastmod>2017-02-05</lastmod>
-     <changefreq>daily</changefreq>
-    </url>
-        
-    <url>
-     <loc>/customize/auth-script/</loc>
      <lastmod>2017-02-05</lastmod>
      <changefreq>daily</changefreq>
     </url>

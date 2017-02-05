@@ -42,27 +42,26 @@ pages:
         - 'Clustering with CE': 'cluster/index.md'
 - Gluu Server GUI:
     - 'Configuration': 'oxtrust/configuration.md'
-    - 'OxTrust JSON Configuration': 'reference/oxtrust-properties.md'
-    - 'OxAuth JSON Configuration': 'reference/oxauth-properties.md'
     - 'SAML': 'integrate/outbound-saml.md'
     - 'OpenID Connect': 'integrate/openid-connect.md'
     - 'UMA': 'integrate/uma.md'
     - 'Users': 'oxtrust/users.md'
     - 'Personal': 'oxtrust/personal.md'
-- User Managment: 
-    - 'Sync LDAP/AD': 'cache-refresh/index.md'
-    - 'Import XLS File': 'user-management/xlsfile.md'
-    - 'Register Users': 'cache-refresh/register.md'
-    - 'Reset User Password': 'cache-refresh/reset-password.md'
-    - 'SCIM 2.0 Add/Delete User': 'user-management/scim.md'
-- Authentication: 
-    - 'Intro': 'multi-factor/intro.md' 
-    - 'DUO': 'multi-factor/duo.md'
-    - 'U2F': 'multi-factor/u2f.md'
-    - 'oxPush2': 'multi-factor/oxpush2.md'
-    - 'Wikid': 'multi-factor/wikid.md'
-    - 'Certificate': 'multi-factor/cert.md'
-    - 'Google Authentication': 'customize/social-login-google.md'
+    - User Managment:
+        - 'Sync LDAP/AD': 'cache-refresh/index.md'
+        - 'Import XLS File': 'user-management/xlsfile.md'
+        - 'Register Users': 'cache-refresh/register.md'
+        - 'Reset User Password': 'cache-refresh/reset-password.md'
+        - 'SCIM 2.0 Add/Delete User': 'user-management/scim.md'
+    - Authentication:
+        - 'Intro': 'multi-factor/intro.md'
+        - 'DUO': 'multi-factor/duo.md'
+        - 'U2F': 'multi-factor/u2f.md'
+        - 'oxPush2': 'multi-factor/oxpush2.md'
+        - 'Wikid': 'multi-factor/wikid.md'
+        - 'Certificate': 'multi-factor/cert.md'
+        - 'Google Authentication': 'customize/social-login-google.md'
+        - 'Custom Authentication Script': 'customize/auth-script.md'
 
 - FAQ:
     - 'General': 'faq/general.md'
@@ -75,7 +74,6 @@ pages:
     - 'Update Gluu Server Certificates': 'how-to/update-certificate.md'
     - 'Inbound SAML End to End Testing': 'how-to/saml_proxy_end_to_end.md'
     - 'Logout': 'reference/logout.md'
-    - 'Write a Custom OTP Authentication Script using Twilio': 'customize/auth-script.md'
     - 'Find which version of Gluu you are using': 'how-to/find-gluu-server-version.md'
     - 'Backup Gluu CE Server': 'how-to/backup.md'
 - Customize Gluu Server: 
@@ -120,8 +118,8 @@ pages:
     - 'Schema': 'reference/schema.md'
     - 'LDAP Schema': 'reference/schema.md'
     - 'Logout': 'reference/logout.md'
-    - 'oxTrust Properties File': 'reference/oxtrust-properties.md'
-    - 'oxAuth Properties File': 'reference/oxauth-properties.md'
+    - 'oxTrust JSON Properties': 'reference/oxtrust-properties.md'
+    - 'oxAuth JSON Properties': 'reference/oxauth-properties.md'
     - 'Logs': 'reference/logs.md'
 - Gluu Server API:
     - 'OpenID Connect Authorization Endpoint': 'api/oic-authorization.md'
