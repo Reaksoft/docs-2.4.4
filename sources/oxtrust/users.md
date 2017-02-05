@@ -1,50 +1,7 @@
-# User Management Guide
-<!--
+# User Management in Gluu Server
 
-				********** This part needs some maintenance **********
-
-- [SCIM oxAuth Authentication](#scim-oxauth-authentication)
-	- [Base configuration: create oxAuth client](#base-configuration-create-oxauth-client)
-	- [configuration (Resource Server)](#configuration-resource-server)
-	- [SCIM Client (Requesting Party) sample code](#scim-client-requesting-party-sample-code)
-- [SCIM UMA Authentication](#scim-uma-authentication )
-	- [Base configuration: Create oxAuth Clients, Policies](#base-configuration-create-oxauth-clients-policies)
-	- [oxTrust configuration (Resource Server)](#oxtrust-configuration-resource-server)
-	- [SCIM Client (Requesting Party) sample code](#scim-client-requesting-party-sample-code)
-
--->
-
-## User Management
-
-To keep the Gluu Server up-to-date with the latest user claims, your
-organization can either "push" or "pull" identity data. In the "pull"
-mode, otherwise known as LDAP Synchronization or Cache Refresh, the Gluu
-Server can use an existing LDAP identity source like Microsoft Active
-Directory as the authoritative source of identity information. If you
-"push" identities to the Gluu Server, you can use the JSON/REST SCIM
-API. Local user management can also be performed inside oxTrust. Each
-method is detailed below.
-
-## Cache Refresh
-
-Cache Refresh was built by Gluu to pull user information from a backend
-Active Directory/LDAP Server. Cache refresh dynamically synchronizes
-user information from the backend data source to a local LDAP server in
-order to maximize performance. Cache refresh is documented in our
-[configuration section](./configuration.md#cache-refresh).
-
-## Self Registration
-
-Self-Registration is done by users on a self-service basis. Since
-oxTrust user registration cannot add users to a backend LDAP or Active
-Directory server, self-registration will only be effective if GluuLDAP
-is used for authentication of users.
-
-BY default a a limited number of attribute is present in default
-self-registration form. If more attributes are needed they can be added
-in Registration Management of Organization Configuration. Learn more
-about Registration Management
-[here](./configuration.md#manage-registration).
+## Overview
+You can either "push" or "pull" identity data to the Gluu server to keep it up-to-date with the latest user claims. In the "pull" mode, otherwise known as LDAP Synchronization or Cache Refresh, the Gluu Server can use one or more existing LDAP identity sources (like Microsoft Active Directory) as the authoritative source of identity information. To "push" identities to the Gluu Server you can use the JSON/REST SCIM API. Local user management can also be performed inside oxTrust. Each method is detailed below.
 
 ## Local User Management
 
@@ -52,319 +9,455 @@ In oxTrust, you can add, edit and manage people, groups and user
 attributes and claims to ensure the proper information is released about
 the right people.
 
-### People
-To manage people, navigate to User > Manage People, as shown in the
-screenshot below.
+### Manage People
+To manage people, navigate to `User` > `Manage People`.
 
-![](../img/local_user_admin/manage_people.png)
+From this interface you can add and search users. Because the user database can potentially be very large, a value is required in the search field. In other words, you can not click search with a blank entry to populate all users. If you need to see all users, this would be best performed manually within the Gluu LDAP server. Upon performing a user search in oxTrust a list will be populated with all users that match the search.
 
-From this interface you can add users and search for specific users.
-Because the user database can potentially be very large, a value is
-required in the search field. In other words, you can not click search
-with a blank entry to populate all users. If you need to see all users,
-this would be best performed manually within the Gluu OpenDJ server.
-Upon performing a user search, a list will be populated with all users
-that match the search, as shown in the screenshot below.
-
-![Search Users](../img/2.4/admin_users_searchadmin.png)
+![Search Users](../img/admin-guide/user/admin_users_searchadmin.png)
 
 To edit a user, simply click on any of the hyperlinks associated with
 that user and you will be taken to a user management interface where you
-can modify that specific attributes relating to that user as displayed
-below.
+can modify specific attributes relating to that user.
 
-![Manage Users](../img/2.4/admin_users_edituser.png)
+![Manage Users](../img/admin-guide/user/admin_users_edituser.png)
 
-### Import People
-This feature allows the Gluu Server Administrator to bulk import users.
-The user *xls* file can be added using the **Add** button.
-
-![Import User](../img/oxTrust/admin_config_people.png)
-
-Validation checking for the added *xls* file can be done using the
-**Validate** button. If the file is not formatted properly, the server
-will reject the same with an error as shown below in the screenshot.
-
-![Validation Error Message](../img/oxTrust/admin_config_people_validation.png)
-
-## Groups
-Out of the box, the Gluu Server includes one group: Gluu Server manager
-group, named: “gluuManager”. Groups can be added and populated as
-needed. By using the *Manage Groups* feature, the Gluu Server
+### Manage Groups
+Out of the box, the Gluu Server includes one group: the Gluu Manager
+Group (`gluuManager`). Groups can be added and populated as
+needed. By using the `Manage Groups` feature, the Gluu Server
 Administrator can add, delete or modify any group or user within a
 group. The list of available groups can be viewed by hitting the
-_Search_ button with a blank search box.
-![Manage User Groups](../img/oxTrust/admin_users_managegroups.png)
+`Search` button with a blank search box.
+![Manage User Groups](../img/admin-guide/user/admin_users_managegroups.png)
 
 The Gluu Server Administrator can modify information such as Display
 Name, Group Owner, Visibility type etc. The Server Administrator can
 also add or delete users within existing groups. The group information
 is represented as shown below.
-![View group information](../img/oxTrust/admin_users_groupinfo.png)
+![View group information](../img/admin-guide/user/admin_users_groupinfo.png)
 
 If any member of the Organization is required to be added in any
 specific group, this can be achieved be clicking on the Add Member
 button. The flow is _Add Member --> Search the name/email of the user
 --> Select the user --> Click OK --> Update._
-![Add Member](../img/oxTrust/admin_users_addmember.png)
+![Add Member](../img/admin-guide/user/admin_users_addmember.png)
 
-## Attributes
-An “Active” attribute list can be seen from the Configuration >
-Attributes section. By default, only active attributes are shown. To see
-inactive attributes, click the "Show All Attributes" link above the
-table. To edit an attribute simply click on the Display Name. Learn more
-about Attributes management [here](./configuration.md#attributes).
+### Import People
+Gluu Server allows the administrator to import users from a file. This can be accessed by navigating to `Users` > `Import People`.
 
-<!--
+![image](../img/admin-guide/user/import-people_add.png)
 
-				********** This part needs some maintenance **********
+* Click on the `Add` button to select the file from which the users will be imported. This feature has been tested with a `xls` file.
 
-## SCIM oxAuth Authentication
+![image](../img/admin-guide/user/import-people_validate.png)
 
-This is a step by step guide to configure oxTrust and SCIM client for
-oxAuth authentication.
+* The file needs to be validated before it can be imported. Click on the `Validate` button.
 
-### Base Configuration: Create oxAuth Client
-In order to access SCIM endpoints, an oxAuth client should be registered
-with scopes "openid" and "user_name". Authentication method (or LDAP
-Property “oxAuthTokenEndpointAuthMethod”) of this client should have
-value “client_secret_basic”.
- 
-A new client can be created through various methods: [Client
-Registration](http://ox.gluu.org/doku.php?id=oxauth:clientregistration),
-using [oxTrust](http://ox.gluu.org/doku.php?id=oxtrust:home) GUI, or
-manually adding an entry to LDAP.
+![import](../img/admin-guide/user/import-people_import.png)
 
-Sample result entry:
+* Click on the `Import` button to complete the import of users.
 
-        dn: inum=@!1111!0008!F781.80AF,ou=clients,o=@!1111,o=gluu
-        objectClass: oxAuthClient
-        objectClass: top
-        displayName: SCIM
-        inum: @!1111!0008!F781.80AF
-        oxAuthAppType: web
-        oxAuthClientSecret: eUXIbkBHgIM=
-        oxAuthIdTokenSignedResponseAlg: HS256
-        oxAuthScope: inum=@!1111!0009!E4B4,ou=scopes,o=@!1111,o=gluu
-        oxAuthScope: inum=@!1111!0009!E4B5,ou=scopes,o=@!1111,o=gluu
-        oxAuthTokenEndpointAuthMethod: client_secret_basic
+#### File Structure
 
-###  Configuration (Resource Server)
+The file needs to contain the following fields from which the user data will be pulled. Please remember to use the exact spelling as shown here.
 
-It's possible to enable/disable SCIM endpoints in oxTrust under
-"Organization Configuration" page.
+* Username
 
-### SCIM Client (Requesting Party) Sample Code
+* First Name
 
-This is a sample SCIM Client code which requests user information from
-server.
+* Last Name
 
-    package gluu.scim.client.dev.local;
-    
-    import gluu.scim.client.ScimClient;
-    import gluu.scim.client.ScimResponse;
+* Email
 
-    import javax.ws.rs.core.MediaType;
-    
-    public class TestScimClient {
-	    public static void main(String[] args) {
-		    final ScimClient scimClient = ScimClient.oAuthInstance("admin", "secret", "@!9BCF.396B.14EB.1974!0001!CA0D.1918!0008!2F06.F0DF", "secret",
-				    "https://centos65.gluu.info/identity/seam/resource/restv1", "https://centos65.gluu.info/oxauth/seam/resource/restv1/oxauth/token");
-		    try {
-			    ScimResponse response1 = scimClient.retrievePerson("@!9BCF.396B.14EB.1974!0001!CA0D.1918!0000!A8F2.DE1E.D7FB", MediaType.APPLICATION_JSON);
-			    System.out.println(response1.getResponseBodyString());
-		    } catch (Exception ex) {
-			    ex.printStackTrace();
-		    }
-	    }
-    
-    }
+## LDAP Synchronization 
+LDAP Synchronization, a.k.a. Cache Refresh, is the process of connecting 
+one or more existing backend LDAP servers, like Microsoft Active Directory, with the
+Gluu Server's local LDAP server. Synching people and attributes from a 
+backend server into the Gluu Server speeds up authentication transactions. 
+It is possible to perform attribute transformations, changing the name of 
+attributes, or even using an interception script to change the values. 
+Transformations are stored in the Gluu LDAP service. 
 
-Values in this example are correspond to client entry fields from first
-section.
+### Video Tutorial
+For a guided video overview of configuring Cache Refresh, please watch the following three videos:    
+- [Part 1: What is 'Cache Refresh' and How Does it Work?](https://youtu.be/VnyCTUCRkic)     
+- [Part 2: Configuring Cache Refresh in the Gluu Server](https://youtu.be/c64l_xmBbvw)    
+- [Part 3: Managing Authentication After You've Setup Cache Refresh](https://youtu.be/fyAEwJuwqn4)    
+       
+### Things To Remember
+The Gluu Server supports two LDAP modes: 
 
-## SCIM UMA Authentication
+- Authentication 
+- Identity mapping
 
-This is step by step guide to configure UMA for oxTrust and SCIM client.
-High level architecture overview is available in the following article
-[OX SCIM Architecture
-Overview](http://ox.gluu.org/doku.php?id=oxtrust:scim:uma_authentication#ox_scim_architecture_overview).
+Only sometimes is it the same LDAP server. To synchronize user accounts from an external LDAP directory server, you can use the built-in oxTrust features for Cache Refresh, which supports mapping identities from one or more source directory servers.
 
-### Base Configuration: Create oxAuth Clients, Policies
+After configuring Cache Refresh, you should give it some time to run and populate the LDAP server. Here are some tips before you get started:
 
-1. Register oxAuth client with scope “uma_protection”. Property “oxAuthTokenEndpointAuthMethod” of this client should has value “client_secret_basic”. It's possible to do that using few methods: [Client Registration](http://ox.gluu.org/doku.php?id=oxauth:clientregistration), using [oxTrust](http://ox.gluu.org/doku.php?id=oxtrust:home) GUI, manually add entry to LDAP. oxTrust will use this oxAuth client to obtain PAT. Sample result entry:
+* Enable 'Keep External Person' during CR setup. This will allow your
+  default user 'admin' to log into Gluu Server after initial Cache 
+  Refresh iteration. If you do not enable 'Keep External Person', your 
+  'admin' user including all other test users will be gone after first 
+  Cache Refresh iteration.
 
-        dn: inum=@!1111!0008!F781.80AF,ou=clients,o=@!1111,o=gluu
-        objectClass: oxAuthClient
-        objectClass: top
-        displayName: Resource Server Client
-        inum: @!1111!0008!F781.80AF
-        oxAuthAppType: web
-        oxAuthClientSecret: eUXIbkBHgIM=
-        oxAuthIdTokenSignedResponseAlg: HS256
-        oxAuthScope: inum=@!1111!0009!6D96,ou=scopes,o=@!1111,o=gluu
-        oxAuthTokenEndpointAuthMethod: client_secret_basic
+* Make sure you are using LDAP authentication, not VDS. You will only
+  need VDS setting if you are using the Radiant Logic Virtual Directory
+  Server.
 
-2. Register oxAuth client with scope “uma_authorization”. Property “oxAuthTokenEndpointAuthMethod” of this client should has value “client_secret_basic”. It's possible to do that using few methods: [Client Registration](http://ox.gluu.org/doku.php?id=oxauth:clientregistration), using [oxTrust](http://ox.gluu.org/doku.php?id=oxtrust:home) GUI, manually add entry to LDAP. SCIM Client will use this oxAuth client to obtain AAT. Sample result entry:
+* Check the snapshots folder to see if files are being created.
 
-        dn: inum=@!1111!0008!FDC0.0FF5,ou=clients,o=@!1111,o=gluu
-        objectClass: oxAuthClient
-        objectClass: top
-        displayName: Requesting Party Client
-        inum: @!1111!0008!FDC0.0FF5
-        oxAuthAppType: web
-        oxAuthClientSecret: eUXIbkBHgIM=
-        oxAuthIdTokenSignedResponseAlg: HS256
-        oxAuthScope: inum=@!1111!0009!6D97,ou=scopes,o=@!1111,o=gluu
-        oxAuthTokenEndpointAuthMethod: client_secret_basic
+* Use the oxTrust admin to browse users.
 
-3. Create UMA policy. These are list of steps which allows to add new policy: 
+* Use the command `ldapsearch` to check to see if results are starting
+  to come in. The following command will search for the total number of
+  users in the Gluu LDAP:
 
- 	1. Log with administrative privileges into oxTrust.
- 	2. Open menu “Configuration→Manage Custom Scripts”.
- 	4. Select “UMA Authorization Policies” tab and click “Add custom script configuration”.
- 	5. Select language “Python”.
- 	6. Paste this base policy script:
+```
+# /opt/opendj/bin/ldapsearch -h localhost -p 1636 -Z -X -D "cn=directory manager" -w 'pass_of_ldap_ -b 'ou=people,o=DA....,o=gluu' dn | grep "dn\:" | wc -l
+```
+
+* Try to login with one of these users. We assume that you have also
+  setup your Gluu Server to use the correct LDAP server for
+  authentication.
+
+### Things To Know
+The deployer needs to know various values of his own backend AD to
+configure this part. For example, host & port, bindDN user information,
+bindDN password, Objectclasses, attributes whose information will be
+pulled etc.
+
+In addition, the deployer also needs to know generic information of his
+Gluu Server's LDAP. By default, the deployer can use 'localhost:1636',
+'cn=directory manager', 'password what he chose during installation',
+'ou=people,o=site' as server information, bindDN, bindDN password and
+baseDN respectively.
+
+After collecting this information, the deployer can move forward with
+the setup of the Cache Refresh engine.
+
+![Cache Refresh Menu](../img/admin-guide/user/admin_cache_menu.png)
 
 
-            from org.xdi.model.custom.script.type.uma import AuthorizationPolicyType
-            from org.xdi.util import StringHelper, ArrayHelper
-            from java.util import Arrays, ArrayList
-            from org.xdi.oxauth.service.uma.authorization import AuthorizationContext
+* _Last Run:_ The date and time of the latest cache refresh cycle
+  completion is shown here.
 
-            import java
+* _Updates at the Last Run:_ This shows the total number of users who
+  have been updated in the last Cache Refresh cycle. For example an user
+  who has any of his attribute updated will show up here.
 
-            class AuthorizationPolicy(AuthorizationPolicyType):
-                def __init__(self, currentTimeMillis):
-                    self.currentTimeMillis = currentTimeMillis
+* _Problem at the Last Run:_ This shows the number of users who have
+  been rejected by the Gluu Server during the update. If there are any
+  rejections, please contact Gluu Support for clarification and help.
 
-            def init(self, configurationAttributes):
-                print "UMA authorization policy. Initialization"
-                print "UMA authorization policy. Initialized successfully"
+![Last Run](../img/admin-guide/user/admin_cache_lastrun1.png)
 
-                return True   
+### Customer Backend Key and Attributes
+![Customer Backend Key](../img/admin-guide/user/admin_cache_backend.png)
 
-            def destroy(self, configurationAttributes):
-                print "UMA authorization policy. Destroy"
-                print "UMA authorization policy. Destroyed successfully"
-                return True   
+* _Key Attribute:_ This is the unique key attribute of backend Active
+  Directory/LDAP Server such as SAMAccountname for any Active Directory.
 
-            def getApiVersion(self):
-                return 1
+* _Object Class:_ This contains the Object Classes of the backend Active
+  Directory/LDAP which has permission to talk to Gluu Server Cache Refresh
+  such as person, organizationalPerson, user etc.
 
-            # Authorize access to resource
-            #   authorizationContext is org.xdi.oxauth.service.uma.authorization.AuthorizationContext
-            #   configurationAttributes is java.util.Map<String, SimpleCustomProperty>
-            def authorize(self, authorizationContext, configurationAttributes):
-                print "UMA Authorization policy. Attempting to authorize client"
-                client_id = authorizationContext.getGrant().getClientId()
-                user_id = authorizationContext.getGrant().getUserId()
+* _Source Attribute:_ This contains the list of attributes which will be
+  pulled and read by the Gluu Server.
 
-                print "UMA Authorization policy. Client: ", client_id
-                print "UMA Authorization policy. User: ", user_id
-                if (StringHelper.equalsIgnoreCase("@!1111!0008!FDC0.0FF5", client_id)):
-                    print "UMA Authorization policy. Authorizing client"
-                    return True
-                else:
-                    print "UMA Authorization policy. Client isn't authorized"
-                    return False
+* _Custom LDAP Filter:_ If there is any custom search required, this
+filtering mechanism can be used such as "sn=*" whereas the value of this
+field ensures that every user must contain an attribute named SN.
 
-                print "UMA Authorization policy. Authorizing client"
-                return True
- - Replace in script above client inum "@!1111!0008!FDC0.0FF5" with client inum which were added in step 2.
- - Click "Enabled" check box.
- - Click "Update" button.
+### Source Backend LDAP Servers
+![Source Backend](../img/admin-guide/user/admin_cache_sourcebackend.png)
 
-Note: There is sample UMA Authorization Policy in CE. You can modify it instead of adding new one.
+This section allows the Gluu Server to connect to the backend Active
+Directory/LDAP server of the organization.
 
-4. Add UMA scope. These are list of steps which allows to add new scope.
- - Log with administrative privileges into oxTrust.
- - Open menu “OAuth2→UMA”.
- - Select “Scopes” tab and click “Add Scope Description”.
- - Select “Internal” type.
- - Fill the form.
- - Select policy which we added in previous step.
- - Click “Add” button. Sample result entry:
+* _Name:_ Please input **source** as the value.
 
-            dn: inum=@!1111!D386.9FB1,ou=scopes,ou=uma,o=@!1111,o=gluu
-            objectClass: oxAuthUmaScopeDescription
-            objectClass: top
-            displayName: Access SCIM
-            inum: @!1111!D386.9FB1
-            owner: inum=@!1111!0000!D9D9,ou=people,o=@!1111,o=gluu
-            oxPolicyScriptDn: inum=@!1111!CA0D.1918!2DAF.F995,ou=scripts,o=@!1111,o=gluu
-            oxId: access_scim
-            oxRevision: 1
-            oxType: internal
+* _Use Anonymous Bind:_ Some customers do now allow username/password
+  connections to their backend server. Enable this option if this applies
+  to your organization.
 
-5. Register UMA resource set. It's possible to do that via Rest API or via oxTrust GUI. Sample code: [https://github.com/GluuFederation/oxAuth/blob/master/Client/src/test/java/org/xdi/oxauth/ws/rs/uma/RegisterResourceSetFlowHttpTest.java) These are list of steps which allows to add new resource set.
- - Log with administrative privileges into oxTrust.
- - Open menu “OAuth2→UMA”.
- - Select “Resources” tab and click “Add Resource Set”.
- - Fill the form.
- - Add UMA Scope which we created in previous steps.
- - Add Client which we created in second step.
- - Click “Add” button. Sample result entry:
+* _Bind DN:_ This contains the username to connect to the backend
+  server. You need to use full DN here. As for example,
+  _cn=gluu,dc=company,dc=org_.
 
-                dn: inum=@!1111!C264.D316,ou=resource_sets,ou=uma,o=@!1111,o=gluu
-                objectClass: oxAuthUmaResourceSet
-                objectClass: top
-                displayName: SCIM Resource Set
-                inum: @!1111!C264.D316
-                owner: inum=@!1111!0000!D9D9,ou=people,o=@!1111,o=gluu
-                oxAuthUmaScope: inum=@!1111!D386.9FB1,ou=scopes,ou=uma,o=@!1111,o=gluu
-                oxFaviconImage: http://example.org/scim_resource_set.jpg
-                oxId: 1403179695657
-                oxRevision: 1
+* _Use SSL:_ Use this feature if the backend server allows SSL
+  connectivity.
 
-### oxTrust configuration (Resource Server)
+* _Max Connections:_ This value defines the maximum number of
+  connections that are allowed to read the backend Active Directory/LDAP
+  server. It is recommended to keep the value of 2 or 3.
 
-Add next oxTrust UMA related configuration properties to oxTrust.properties:
+* _Server:_ This contains the backend Active Directory/LDAP server
+  hostname with port i.e. backend.organization.com:389. If organization
+  has a failover server, click **Add Server** and add more hostnames with
+  port.
 
-    # UMA SCIM protection
-    uma.issuer=https://centos65.gluu.info
-    uma.client_id=@!1111!0008!F781.80AF
-    uma.client_password=<encrypted_password>
-    uma.resource_id=1403179695657
-    uma.scope=https://centos65.gluu.info/oxauth/seam/resource/restv1/uma/scopes/access_scim
+* _Base DN:_ This contains the location of the Active Directory/LDAP
+  tree from where the Gluu Server shall read the user information.
 
-Values of these properties correspond to entries from first section.
+* _Enabled:_ This check-box is used to save and push the changes. Do not
+  use this unless the server administrator has entered all the required
+  values.
 
-Note: In order to recreate oxTrust configuration in LDAP you should
-remove oxTrust configuration entry from LDAP and restart tomcat. Example
-DN of oxTrust configuration entry:
-ou=oxtrust,ou=configuration,inum=@!1111!0002!4907,ou=appliances,o=gluu
+* _Change Bind Password:_ This can be used for a new password or to
+  change any existing password.
 
-### SCIM Client (Requesting Party) sample code
+If your organization has a multiple Active Directory/LDAP server, click
+on **Add source LDAP server** and add the additional server information.
+Please remember that a *failover server* is not a new server.
 
-This is sample SCIM Client code which request user information from server.
+### Inum LDAP Server
 
-    package gluu.scim.client.dev.local;
-    
-    import gluu.scim.client.ScimClient;
-    import gluu.scim.client.ScimResponse;
+![Inum LDAP Server](../img/admin-guide/user/admin_cache_inum.png)
 
-    import javax.ws.rs.core.MediaType;
-    
-    public class TestScimClient {
-	    public static void main(String[] args) {
-		    final ScimClient scimClient = ScimClient.umaInstance("https://centos65.gluu.info/identity/seam/resource/restv1", "https://centos65.gluu.info/.well-known/uma-configuration",
-				    "@!1111!0008!FDC0.0FF5", "secret");
+This section of the application allows the server administrator to
+connect to the internal LDAP of the Gluu Server. As Gluu Server
+administrator, you do not need to insert anything here in this section
+as new Gluu Server versions automatically populates this for you (unless
+you try to manually configure it anyway).
 
-		    try {
-			    ScimResponse response1 = scimClient.retrievePerson("@!1111!0008!FDC0.0FF5", MediaType.APPLICATION_JSON);
-			    System.out.println(response1.getResponseBodyString());
-		    } catch (Exception ex) {
-			    ex.printStackTrace();
-		    }
-	    }
-    
-    }
+* _Refresh Method:_ The Gluu Server allows the Server Administrator to
+  apply two types of Cache Refresh mechanism--(i) VDS Method and (ii) Copy
+  Method.
 
-Values from these example correspond to entries from first section.
+  1. _VDS Method:_ Any organization with a database like *mysql* can use
+  the VDS method. This option can be enabled via the drop-down menu in
+  Refresh Method option.
 
--->
+![Refresh VDS](../img/admin-guide/user/admin_cache_refresh_vds.png)
 
+  2. _Copy Method:_ If the organization has any kind of Active
+  Directory/LDAP server, they are strongly recommended to use the *Copy
+  Method* from the drop-down menu.
 
+![Refresh Copy](../img/admin-guide/user/admin_cache_refresh_copy.png)
 
+### Attributes Mapping
+
+When the Copy method is selected, a section for Attribute mapping will
+be exposed. In this section, the Gluu Server Administrator can map any
+attribute from the backend Active Directory/LDAP to the LDAP cache of
+the Gluu Server.
+
+![Attribute Mapping](../img/admin-guide/user/admin_cache_mapattribute.png)
+
+In the source attribute to destination attribute mapping field, you can
+enter the source attribute value on the left, and the destination
+attribute on the right. In other words, you can specify what the
+attribute is on the backend in the left field, and what it should be
+rendered as when it comes through the Gluu Server in the right field.
+
+The Administrator can select any Cache Refresh Method according to the
+backend Active Directory/LDAP server, but there are some essential
+values for both types of cache refresh method. The values are given
+below.
+
+  * _Pooling Interval (Minutes):_ This is the interval value for running
+    the Cache Refresh mechanism in the Gluu Server. It is recommended to 
+    be kept higher than 15 minutes.
+
+  * _Script File Name:_ The Gluu Server cache refresh can accept any
+    kind of Jython Script which might help to calculate any custom/complex
+    attribute i.e. eduPersonScopedAffiliation. For more information please
+    contact Gluu Support.
+
+  * _Snapshot Folder:_ Every cycle of of Gluu Server Cache Refresh cycle
+    saves an overall snapshot and problem-list record on a specified
+    location. This is where the Gluu Server Administrator can specify the
+    location. You can easily decide whether cache refresh synchronizes all
+    users or not. Generally the rejected users are enclosed in the
+    problem-list file. An overall report is displayed at the top of the
+    cache refresh page with headings **Updated at the last run** and
+    **Problems at the last run**.
+
+  * _Snapshot Count:_ This defines the total number of snapshots that
+    are allowed to be saved in the hard drive of the VM. It is recommended
+    to be kept to 20 snapshots.
+
+Latest Gluu Servers (including Community Edition) introduced two
+upgraded sections here.
+
+  * _Server IP Address:_ Include the IP of your Gluu Server here. This
+    feature helps to run Cache Refresh mechanism perfectly in a clustered
+    environment.
+
+  * _Removed Script File Name location:_ New version of the Gluu Server
+    allows the administrator to manage your custom scripts with more
+    interactive section under configuration named Manage Custom Scripts.
+
+  * _Update:_ This button is used to push the changes in the Gluu
+    Server. Hit this button only when the values have been entered,
+    completely.
+
+  * _Update and Validate Script:_ This button is used to test the
+    operation and integrity of any custom script such as a Jython Script.
+
+## User Registration
+Self-Registration is done by users on a self-service basis. Since
+oxTrust user registration cannot add users to a backend LDAP or Active
+Directory server, self-registration will only be effective if GluuLDAP
+is used for authentication of users.
+
+BY default a a limited number of attribute is present in default
+self-registration form. If more attributes are needed they can be added
+in Registration Management of Organization Configuration
+The oxTrust component provides a very basic user registration service for 
+the people to sign-up for an account on the Gluu Server. This service is 
+disabled by default. The `User Registration` custom script  is used to enable the 
+registration feature.
+
+!!! Note
+    When possible, we recommend handling user registration in your app locally, then pushing the information to the Gluu Server via SCIM 2.0. This will give you much more control and flexibility in defining the exact registration process. Also, frequently oxTrust is not Internet facing--it was primarily designed as an interface for admins.
+
+### oxTrust Configuration
+Navigate to the custom scripts section of the Admin Panel. Click on `Configuration` then `Manage Custom Scripts`.
+
+The tabs near the top of the page can be used to navigate to different custom scripts. Navigate to the `User Registration` tab.
+
+![image](../img/admin-guide/user/config-manage-script_menu1.png)
+
+Set the `enable_user` value to `true` so that the user can login as soon as the registration is complete. If you want to manually review and approve new user registrations, you can leave this value set to `false`.
+
+![image](../img/admin-guide/user/config-manage-script_enable.png)
+
+Click `Enable` checkbox at the bottom of the page.
+
+![image]
+(../img/admin-guide/user/config-manage-script_check.png)
+
+Now users should be able to self-register through the user registration link, which should be available at `<hostname>/identity/register`.
+
+![image]
+(../img/admin-guide/user/config-manage-script_enable.png)
+
+## SCIM 2.0 
+This section outlines how to add/remove user from Gluu Server CE using [SCIM-Client](https://github.com/GluuFederation/SCIM-Client).
+
+### Add User
+There are two methods to add users:
+
+1. [JSON Sting](#json-string)
+2. [User Object](#user-object)
+
+#### Required Parameters
+|Parameter|Description|
+|---------|-----------|
+|userName | The intended username for the end-user|
+|givenName| The first name of the end-user|
+|familyName| The last name of the end-user|
+|displayName| The formatted first name followed by last name|
+|_groups_| Optional parameter if the user is added to any specific group|
+
+#### JSON String
+The user is added using a JSON object string using the required parameters; however it is possible to add more parameters. The following is an example of a JSON string used to add a user.
+
+```
+        Scim2Client client = Scim2Client.umaInstance(domain, umaMetaDataUrl, umaAatClientId, umaAatClientJksPath, umaAatClientJksPassword, umaAatClientKeyId);
+        String createJson = {"schemas":["urn:ietf:params:scim:schemas:core:2.0:User"],"externalId":"12345","userName":"newUser","name":{"givenName":"json","familyName":"json","middleName":"N/A","honorificPrefix":"","honorificSuffix":""},"displayName":"json json","nickName":"json","profileUrl":"http://www.gluu.org/","emails":[{"value":"json@gluu.org","type":"work","primary":"true"},{"value":"json2@gluu.org","type":"home","primary":"false"}],"addresses":[{"type":"work","streetAddress":"621 East 6th Street Suite 200","locality":"Austin","region":"TX","postalCode":"78701","country":"US","formatted":"621 East 6th Street Suite 200  Austin , TX 78701 US","primary":"true"}],"phoneNumbers":[{"value":"646-345-2346","type":"work"}],"ims":[{"value":"nynytest_user","type":"Skype"}],"userType":"CEO","title":"CEO","preferredLanguage":"en-us","locale":"en_US","active":"true","password":"secret","groups":[{"display":"Gluu Test Group","value":"@!9B22.5F33.7D8D.B890!0001!880B.F95A!0003!60B7"}],"roles":[{"value":"Owner"}],"entitlements":[{"value":"full access"}],"x509Certificates":[{"value":"cert-12345"}]}
+        ScimResponse response = client.createPersonString(createJson, MediaType.APPLICATION_JSON);
+```
+#### User Object
+The following code snippet uses the User object.
+
+```
+        User user = new User();
+
+        Name name = new Name();
+        name.setGivenName("Given Name");
+        name.setMiddleName("Middle Name");
+        name.setFamilyName("Family Name");
+        user.setName(name);
+
+        user.setActive(true);
+
+        user.setUserName("newUser_" +  + new Date().getTime());
+        user.setPassword("secret");
+        user.setDisplayName("Display Name");
+        user.setNickName("Nickname");
+        user.setProfileUrl("");
+        user.setLocale("en");
+        user.setPreferredLanguage("US_en");
+
+        List<Email> emails = new ArrayList<Email>();
+        Email email = new Email();
+        email.setPrimary(true);
+        email.setValue("a@b.com");
+        email.setDisplay("a@b.com");
+        email.setType(Email.Type.WORK);
+        email.setReference("");
+        emails.add(email);
+        user.setEmails(emails);
+
+        List<PhoneNumber> phoneNumbers = new ArrayList<PhoneNumber>();
+        PhoneNumber phoneNumber = new PhoneNumber();
+        phoneNumber.setPrimary(true);
+        phoneNumber.setValue("123-456-7890");
+        phoneNumber.setDisplay("123-456-7890");
+        phoneNumber.setType(PhoneNumber.Type.WORK);
+        phoneNumber.setReference("");
+        phoneNumbers.add(phoneNumber);
+        user.setPhoneNumbers(phoneNumbers);
+
+        List<Address> addresses = new ArrayList<Address>();
+        Address address = new Address();
+        address.setPrimary(true);
+        address.setValue("test");
+        address.setDisplay("My Address");
+        address.setType(Address.Type.WORK);
+        address.setReference("");
+        address.setStreetAddress("My Street");
+        address.setLocality("My Locality");
+        address.setPostalCode("12345");
+        address.setRegion("My Region");
+        address.setCountry("My Country");
+        address.setFormatted("My Formatted Address");
+        addresses.add(address);
+        user.setAddresses(addresses);
+
+        ScimResponse response = client.createUser(user, new String[]{});
+        System.out.println("response body = " + response.getResponseBodyString());
+
+        assertEquals(response.getStatusCode(), 201, "Could not add user, status != 201");
+
+        User userCreated = Util.toUser(response, client.getUserExtensionSchema());
+        String id = userCreated.getId();
+```
+
+### Delete User
+To delete a user only the id (the LDAP `inum`) is needed.
+
+```
+        ScimResponse response = client.deletePerson(id);
+        assertEquals(response.getStatusCode(), 200, "User could not be deleted, status != 200");
+```
+
+#### Required Parameter
+
+|Parameter|Description|
+|---------|-----------|
+|id	  |The LDAP `inum` of the user to be deleted|
+
+### User Extensions
+
+User Extensions allow you to create Custom Attributes in SCIM 2.0. 
+Set the custom attribute's `SCIM Attribute` parameter to `true` in oxTrust GUI and 
+it will be recognized as a User Extension. This is required to create new custom attributes.
+
+![image](../img/admin-guide/user/scim-attribute.png)
+
+You can verify the User Extensions via the `Schema` endpoint:
+
+`<domain root>/identity/seam/resource/restv1/scim/v2/Schemas/urn:ietf:params:scim:schemas:extension:gluu:2.0:User`
+
+![image](../img/admin-guide/user/scim-custom-first.png)
+
+Now for the actual code, you can refer to the unit tests in SCIM-Client:
+
+* [UserExtensionsObjectTest](/src/test/java/gluu/scim2/client/UserExtensionsObjectTest.java)
+* [UserExtensionsJsonTest](/src/test/java/gluu/scim2/client/UserExtensionsJsonTest.java)
 
