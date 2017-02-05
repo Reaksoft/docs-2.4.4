@@ -7,17 +7,17 @@
 2. Select (i) IIS (ii) Web Management Tools (iii) II6 Management Compatibility (iv) IIS Management Console (v) IIS Management Scripts and Tools (vi) IIS Management Service
 
 3. Select (i) World Wide Web Services (ii) CGI (iii) ISAPI Filters (iv) ISAPI Extensions --> Press OK.
-![IIS 7 Setup](https://raw.githubusercontent.com/GluuFederation/docs/master/sources/img/sp_setup/admin_sp_iis7setup.png)
+![IIS 7 Setup](../img/sp_setup/admin_sp_iis7setup.png)
 
 4. Test IIS to see if it is installed in your system with "127.0.0.1" in the web browser. For our test case, we used IIS7.
-![Test IIS](https://raw.githubusercontent.com/GluuFederation/docs/master/sources/img/sp_setup/admin_sp_iis7test.png)
+![Test IIS](../img/sp_setup/admin_sp_iis7test.png)
 
 ## ISAPI Filter Configuration
 
 1. Open IIS Manager (Start --> Administrative Tools --> Internet Information Service/IIS Manager)
 
 2. Double click on "ISAPI and CGI Restrictions"
-![ISAPI and CGI](https://raw.githubusercontent.com/GluuFederation/docs/master/sources/img/sp_setup/admin_sp_isapicgi.png)
+![ISAPI and CGI](../img/sp_setup/admin_sp_isapicgi.png)
 
 3. Add a new Filter
 
@@ -29,11 +29,11 @@
 
   d. Click "Allow" (from the right hand side)
 
-![ISAPI Path](https://raw.githubusercontent.com/GluuFederation/docs/master/sources/img/sp_setup/apache_sp_isapipath.png)
+![ISAPI Path](../img/sp_setup/apache_sp_isapipath.png)
 
   e. Back to IIS Manager --> ISAPI Filters
 
-![ISAPI Filters](https://raw.githubusercontent.com/GluuFederation/docs/master/sources/img/sp_setup/apache_sp_isapifilter.png)
+![ISAPI Filters](../img/sp_setup/apache_sp_isapifilter.png)
 
         1. Click "Add" (upper right corner)
 
@@ -41,42 +41,42 @@
 
         3. Executable: "\opt\shibboleth-sp\lib\shibboleth\isapi_shib.dll"
 
-![ISAPI Edit](https://raw.githubusercontent.com/GluuFederation/docs/master/sources/img/sp_setup/apache_sp_isapiedit.png)
+![ISAPI Edit](../img/sp_setup/apache_sp_isapiedit.png)
 
   f. SSO file extension mapping
 
         1. Click on "Handler Mapping" from main page
 
-![SP Handler](https://raw.githubusercontent.com/GluuFederation/docs/master/sources/img/sp_setup/admin_sp_handlermapping.png)
+![SP Handler](../img/sp_setup/admin_sp_handlermapping.png)
 
         2. Click "Add Script Map" from Action
-![Script Map](https://raw.githubusercontent.com/GluuFederation/docs/master/sources/img/sp_setup/admin_sp_addscriptmap.png)
+![Script Map](../img/sp_setup/admin_sp_addscriptmap.png)
 
         3. Request Path :".sso"
 
         4. Executable should be pointed to "isapi_shib.dll"
-![Executable](https://raw.githubusercontent.com/GluuFederation/docs/master/sources/img/sp_setup/admin_sp_executable.png)
+![Executable](../img/sp_setup/admin_sp_executable.png)
 
   g. Restart IIS
 
   h. Check Status
 
   Check Status by typing in "http://127.0.0.1/Shibboleth.sso/Status" in the web browser. If it displays an XML document, then the Shibboleth SP Installation in Windows IIS7 in complete.
-![Status Check](https://raw.githubusercontent.com/GluuFederation/docs/master/sources/img/sp_setup/admin_sp_checkstatus.png)
+![Status Check](../img/sp_setup/admin_sp_checkstatus.png)
 
 ## Shibboleth SP Setup in Windows 2008 R2 with IIS7
 
 1. Open up "Server Manager", scroll down and click on "Add Roles".
 
-![Add Role](https://raw.githubusercontent.com/GluuFederation/docs/master/sources/img/sp_setup/iis_setup_addrole.png)
+![Add Role](../img/sp_setup/iis_setup_addrole.png)
 
 2. Hit "Next"
 
-![Next](https://raw.githubusercontent.com/GluuFederation/docs/master/sources/img/sp_setup/iis_setup_next.png)
+![Next](../img/sp_setup/iis_setup_next.png)
 
 3. Select "Web Server (IIS)", hit "Next"
 
-![Web Server](https://raw.githubusercontent.com/GluuFederation/docs/master/sources/img/sp_setup/iis_setup_webserver.png)
+![Web Server](../img/sp_setup/iis_setup_webserver.png)
 
 4. Select (i) CGI
 
@@ -94,23 +94,23 @@
 
 (v) All IIS6 Management Compatibility
 
-![Selection](https://raw.githubusercontent.com/GluuFederation/docs/master/sources/img/sp_setup/iis_setup_selection.png)
+![Selection](../img/sp_setup/iis_setup_selection.png)
 
-![Selection](https://raw.githubusercontent.com/GluuFederation/docs/master/sources/img/sp_setup/iis_setup_selection1.png)
+![Selection](../img/sp_setup/iis_setup_selection1.png)
 
 5. Hit "Next", for the confirmation, check the list of plugins.
 
-![Plugin](https://raw.githubusercontent.com/GluuFederation/docs/master/sources/img/sp_setup/iis_setup_plugin.png)
+![Plugin](../img/sp_setup/iis_setup_plugin.png)
 
-![Management Tools](https://raw.githubusercontent.com/GluuFederation/docs/master/sources/img/sp_setup/iis_setup_managementtools.png)
+![Management Tools](../img/sp_setup/iis_setup_managementtools.png)
 
 6. Hit "Install" and Windows 2008 will complete the installation. A confirmation window shall appear which resembles the screenshot below.
 
-![Confirmation](https://raw.githubusercontent.com/GluuFederation/docs/master/sources/img/sp_setup/iis_setup_confirmation.png)
+![Confirmation](../img/sp_setup/iis_setup_confirmation.png)
 
 7.Test IIS7 setup from the Internet.
 
-![Test](https://raw.githubusercontent.com/GluuFederation/docs/master/sources/img/sp_setup/iis_setup_test.png)
+![Test](../img/sp_setup/iis_setup_test.png)
 
 ### Shibboleth SP 2.5.x Setup
 
@@ -118,25 +118,25 @@
 
 2. Start the installation, keep the default path, Select "Install ISAPI modules into IIS", IIS Script Extension must be ".sso" and Hit "Next".
 
-![Shib Setup](https://raw.githubusercontent.com/GluuFederation/docs/master/sources/img/sp_setup/iis_setup_shibsetup.png)
+![Shib Setup](../img/sp_setup/iis_setup_shibsetup.png)
 
 3. After the completion of the installation, the system will ask to reboot the system; hit "Yes".
 
-![Restart](https://raw.githubusercontent.com/GluuFederation/docs/master/sources/img/sp_setup/iis_setup_restart.png)
+![Restart](../img/sp_setup/iis_setup_restart.png)
 
 4. Test the Shibboleth SP installation from the SP VM using the URL "localhost/Shibboleth.sso/Status" in the address bar of the Web Browser.
 
-![Status](https://raw.githubusercontent.com/GluuFederation/docs/master/sources/img/sp_setup/iis_setup_status.png)
+![Status](../img/sp_setup/iis_setup_status.png)
 
 ### Trust Relationship in IdP
 
 1. Create a Trust Relationship for the new SP in the IdP. It is necessary to upload the Public Certificate of the new SP in the IdP. Please note that the CN of the public certificate MUST BE the same as _Hostname_ of the SP. Hit "Add".
 
-![Add TR](https://raw.githubusercontent.com/GluuFederation/docs/master/sources/img/sp_setup/iis_setup_addtr.png)
+![Add TR](../img/sp_setup/iis_setup_addtr.png)
 
 2. Download the IdP generated configuration files for Shib SP modification.
 
-![Download](https://raw.githubusercontent.com/GluuFederation/docs/master/sources/img/sp_setup/iis_setup_download.png)
+![Download](../img/sp_setup/iis_setup_download.png)
 
 ### SP Configuration
 
@@ -154,7 +154,7 @@
 
 3. For testing purpose, we are going to protect a directory named "secure" with the IdP.  Create a folder/directory in the IIS Root Directory and restart Shibd and IIS.
 
-![Secure](https://raw.githubusercontent.com/GluuFederation/docs/master/sources/img/sp_setup/iis_setup_secure.png)
+![Secure](../img/sp_setup/iis_setup_secure.png)
 
 ### SSO Testing
 

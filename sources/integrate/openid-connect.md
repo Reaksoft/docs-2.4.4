@@ -146,12 +146,12 @@ user claims. The Gluu Server supports the [standard scopes]
 in the OpenID Connect specification. You can also define your own scopes,
 and map them to any user attributes which you have registered. 
 
-![Add Scopes](https://raw.githubusercontent.com/GluuFederation/docs/master/sources/img/openid_connect/oxtrust_scope_screenshot.png)
+![Add Scopes](../img/openid_connect/oxtrust_scope_screenshot.png)
 
 To add more claims, simply click "Add Claim" and you will be presented
 with the following screen:
 
-![Add Claims](https://raw.githubusercontent.com/GluuFederation/docs/master/sources/img/oxTrust/admin_oauth2_scopeadd.png)
+![Add Claims](../img/oxTrust/admin_oauth2_scopeadd.png)
 
 | Field | Description |
 |---| ---|

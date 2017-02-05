@@ -6,7 +6,7 @@ This SSO requires setting a custom `nameid` called `emailnid`.
 Please see [this doc](../customize/attributes.md) on how to create custom attributes.
 
 The new attribute screen should look like the screenshot below
-![image](https://raw.githubusercontent.com/GluuFederation/docs/master/sources/img/2.4/emailnid.png)
+![image](../img/2.4/emailnid.png)
 
 The custom `nameid` needs to be defined in the `attribute-resolver` template file.
 
@@ -65,10 +65,10 @@ signRequests: conditional
 encryptAssertions: never
 encryptNameIds: never
 ```
-![image](https://raw.githubusercontent.com/GluuFederation/docs/master/sources/img/2.4/rp_configuration.png)
+![image](../img/2.4/rp_configuration.png)
 
 *  Released attribute: emailnid
-![image](https://raw.githubusercontent.com/GluuFederation/docs/master/sources/img/2.4/dropboxtr.png)
+![image](../img/2.4/dropboxtr.png)
 
 ### Configure Gluu Server as IdP in Dropbox
 
@@ -87,7 +87,7 @@ encryptNameIds: never
 ```
     Get `shibIDP.crt` from Gluu Server `chroot` environment under `/etc/certs/` folder and upload it
 ```
-![image](https://raw.githubusercontent.com/GluuFederation/docs/master/sources/img/2.4/dbadmin.png)
+![image](../img/2.4/dbadmin.png)
 
 *  Save configuration
 
@@ -95,7 +95,7 @@ encryptNameIds: never
 * Please go to https://www.dropbox.com and click on the `Sign In` button
 
 * If the account is configured for SSO, then a screen similar to the screenshot below will appear after entering the email address.
-![image](https://raw.githubusercontent.com/GluuFederation/docs/master/sources/img/2.4/dblogin.png)
+![image](../img/2.4/dblogin.png)
 
 * Click `Continue` and the website will redirect to Gluu Server for authentication.
 

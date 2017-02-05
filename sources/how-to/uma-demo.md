@@ -32,15 +32,15 @@ Please remember to populate the follwoing files
 
 * Click on the Clients Menu from oxTrust GUI
 
-![image](https://raw.githubusercontent.com/GluuFederation/docs/master/sources/img/2.4/admin_oauth2_clientmenu.png)
+![image](../img/2.4/admin_oauth2_clientmenu.png)
 
 * Click on the Add Client button
 
-![image](https://raw.githubusercontent.com/GluuFederation/docs/master/sources/img/oxTrust/admin_oauth2_addclient.png)
+![image](../img/oxTrust/admin_oauth2_addclient.png)
 
 * The following screen will appear and you have to fill it up with the information given below
 
-![image](https://raw.githubusercontent.com/GluuFederation/docs/master/sources/img/oxTrust/admin_oauth2_newclient.png)
+![image](../img/oxTrust/admin_oauth2_newclient.png)
 
   1. Name : oxUma Demo RS (or any other name you like)
 
@@ -61,15 +61,15 @@ Please remember to populate the follwoing files
 
 * Click on the Clients Menu from oxTrust GUI
 
-![image](https://raw.githubusercontent.com/GluuFederation/docs/master/sources/img/2.4/admin_oauth2_clientmenu.png)
+![image](../img/2.4/admin_oauth2_clientmenu.png)
 
 * Click on the Add Client button
 
-![image](https://raw.githubusercontent.com/GluuFederation/docs/master/sources/img/oxTrust/admin_oauth2_addclient.png)
+![image](../img/oxTrust/admin_oauth2_addclient.png)
 
 * The following screen will appear and you have to fill it up with the information given below
 
-![image](https://raw.githubusercontent.com/GluuFederation/docs/master/sources/img/oxTrust/admin_oauth2_newclient.png)
+![image](../img/oxTrust/admin_oauth2_newclient.png)
 
   1. Name : oxUma Demo RS (or any other name you like)
 

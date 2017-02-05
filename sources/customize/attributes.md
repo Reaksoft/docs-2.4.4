@@ -9,8 +9,8 @@ Additional attributes can be added from the Gluu Server GUI, oxTrust, by
 clicking the **Add Attribute** button. Then, the following screen will
 appear:
 
-![image](https://raw.githubusercontent.com/GluuFederation/docs/master/sources/img/2.4/admin_menu_attribute.png)
-![Add Attribute Screen](https://raw.githubusercontent.com/GluuFederation/docs/master/sources/img/2.4/admin_attribute_add.png)
+![image](../img/2.4/admin_menu_attribute.png)
+![Add Attribute Screen](../img/2.4/admin_attribute_add.png)
 
 * _Name:_ This field defines the name of the custom attribute which must
   be unique in the Gluu Server LDAP tree.
@@ -74,7 +74,7 @@ An example of the default Gluu Server authorization request can be seen
 here:
 
 ![OpenID Connect Scope Authorization Screenshot]
-(https://raw.githubusercontent.com/GluuFederation/docs/master/sources/img/openid_connect/authz_screenshot.png)
+(../img/openid_connect/authz_screenshot.png)
 
 So if you have custom attributes, you may need to define a custom OpenID Scope.
 This is pretty easy to do using the oxTrust user interface, and you can just

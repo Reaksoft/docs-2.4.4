@@ -2,8 +2,19 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="26c476cd-110e-48df-bbb2-14d13b7b2df0" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/sources/img/2.4/logviewer.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/sources/img/salesforce/example-setup.png" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/mkdocs.yml" afterPath="$PROJECT_DIR$/mkdocs.yml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sources/cache-refresh/index.md" afterPath="$PROJECT_DIR$/sources/cache-refresh/index.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sources/cache-refresh/register.md" afterPath="$PROJECT_DIR$/sources/cache-refresh/register.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sources/cache-refresh/reset-password.md" afterPath="$PROJECT_DIR$/sources/cache-refresh/reset-password.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sources/cluster/LBConfig.md" afterPath="$PROJECT_DIR$/sources/cluster/LBConfig.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sources/customize/attributes.md" afterPath="$PROJECT_DIR$/sources/customize/attributes.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sources/customize/auth-script-new.md" afterPath="$PROJECT_DIR$/sources/customize/auth-script-new.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sources/customize/auth-script.md" afterPath="$PROJECT_DIR$/sources/customize/auth-script.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sources/customize/social-login-google.md" afterPath="$PROJECT_DIR$/sources/customize/social-login-google.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sources/deployment/updating.md" afterPath="$PROJECT_DIR$/sources/deployment/updating.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sources/faq/general.md" afterPath="$PROJECT_DIR$/sources/faq/general.md" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sources/fine-tuning/index.md" afterPath="$PROJECT_DIR$/sources/fine-tuning/index.md" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sources/further-reading/oxauth/oxauth-config.md" afterPath="$PROJECT_DIR$/sources/further-reading/oxauth/oxauth-config.md" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sources/further-reading/oxauth/oxauth-ldap-properties.md" afterPath="$PROJECT_DIR$/sources/further-reading/oxauth/oxauth-ldap-properties.md" />
@@ -14,9 +25,16 @@
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sources/how-to/saml_script_end_to_end.md" afterPath="$PROJECT_DIR$/sources/how-to/saml_script_end_to_end.md" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sources/how-to/uma-demo.md" afterPath="$PROJECT_DIR$/sources/how-to/uma-demo.md" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sources/how-to/update-certificate.md" afterPath="$PROJECT_DIR$/sources/how-to/update-certificate.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sources/integrate/asimba.md" afterPath="$PROJECT_DIR$/sources/integrate/asimba.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sources/integrate/dropbox.md" afterPath="$PROJECT_DIR$/sources/integrate/dropbox.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sources/integrate/google-saml.md" afterPath="$PROJECT_DIR$/sources/integrate/google-saml.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sources/integrate/hobsons-saml.md" afterPath="$PROJECT_DIR$/sources/integrate/hobsons-saml.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sources/integrate/iis-saml.md" afterPath="$PROJECT_DIR$/sources/integrate/iis-saml.md" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sources/integrate/inbound-saml.md" afterPath="$PROJECT_DIR$/sources/integrate/inbound-saml.md" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sources/integrate/java-connect.md" afterPath="$PROJECT_DIR$/sources/integrate/java-connect.md" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sources/integrate/oauth2grants.md" afterPath="$PROJECT_DIR$/sources/integrate/oauth2grants.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sources/integrate/office365.md" afterPath="$PROJECT_DIR$/sources/integrate/office365.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sources/integrate/openid-connect.md" afterPath="$PROJECT_DIR$/sources/integrate/openid-connect.md" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sources/integrate/oxd.md" afterPath="$PROJECT_DIR$/sources/integrate/oxd.md" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sources/integrate/salesforce-sso.md" afterPath="$PROJECT_DIR$/sources/integrate/salesforce-sso.md" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sources/integrate/saml-windows.md" afterPath="$PROJECT_DIR$/sources/integrate/saml-windows.md" />
@@ -61,12 +79,74 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="mkdocs.yml" pinned="false" current-in-tab="true">
+      <file leaf-file-name="mkdocs.yml" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/mkdocs.yml">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="17">
-              <caret line="10" column="5" lean-forward="false" selection-start-line="10" selection-start-column="5" selection-end-line="10" selection-end-column="5" />
+              <caret line="10" column="30" lean-forward="false" selection-start-line="10" selection-start-column="30" selection-end-line="10" selection-end-column="30" />
               <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/docs/cache-refresh/index.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="126">
+              <caret line="1921" column="38" lean-forward="false" selection-start-line="1921" selection-start-column="38" selection-end-line="1921" selection-end-column="38" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="index.md" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/sources/cache-refresh/index.md">
+          <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+            <state split_layout="SPLIT">
+              <first_editor relative-caret-position="126">
+                <caret line="66" column="22" lean-forward="false" selection-start-line="66" selection-start-column="22" selection-end-line="66" selection-end-column="22" />
+                <folding />
+              </first_editor>
+              <second_editor />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="register.md" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/sources/cache-refresh/register.md">
+          <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+            <state split_layout="SPLIT">
+              <first_editor relative-caret-position="126">
+                <caret line="12" column="9" lean-forward="false" selection-start-line="12" selection-start-column="9" selection-end-line="12" selection-end-column="9" />
+                <folding />
+              </first_editor>
+              <second_editor />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="reset-password.md" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/sources/cache-refresh/reset-password.md">
+          <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+            <state split_layout="SPLIT">
+              <first_editor relative-caret-position="126">
+                <caret line="9" column="9" lean-forward="false" selection-start-line="9" selection-start-column="9" selection-end-line="9" selection-end-column="9" />
+                <folding />
+              </first_editor>
+              <second_editor />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="LBConfig.md" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/sources/cluster/LBConfig.md">
+          <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+            <state split_layout="SPLIT">
+              <first_editor relative-caret-position="-172">
+                <caret line="7" column="21" lean-forward="false" selection-start-line="7" selection-start-column="21" selection-end-line="7" selection-end-column="21" />
+                <folding />
+              </first_editor>
+              <second_editor />
             </state>
           </provider>
         </entry>
@@ -76,14 +156,15 @@
   <component name="FindInProjectRecents">
     <findStrings>
       <find>#</find>
-      <find>https://raw.githubusercontent.com/GluuFederation/docs/2.4/sources</find>
       <find>https://raw.githubusercontent.com/GluuFederation/docs/master/sources</find>
+      <find>https://raw.githubusercontent.com/GluuFederation/docs/2.4/sources</find>
     </findStrings>
     <replaceStrings>
       <replace>##</replace>
       <replace>..</replace>
     </replaceStrings>
     <dirStrings>
+      <dir>D:\Gluu\GluuDocs-3.0\docs-2.4.4-dev</dir>
       <dir>D:\Gluu\GluuDocs-3.0\docs-2.4.4-dev\sources</dir>
     </dirStrings>
   </component>
@@ -98,15 +179,11 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/sources/api/scim-2.0.md" />
-        <option value="$PROJECT_DIR$/sources/api/uma-authorization-endpoint.md" />
         <option value="$PROJECT_DIR$/sources/api/uma-create-rpt.md" />
         <option value="$PROJECT_DIR$/sources/api/uma-discovery.md" />
         <option value="$PROJECT_DIR$/sources/api/uma-permission-registration.md" />
         <option value="$PROJECT_DIR$/sources/api/uma-resource-registration.md" />
         <option value="$PROJECT_DIR$/sources/api/uma-rpt-status.md" />
-        <option value="$PROJECT_DIR$/sources/cache-refresh/index.md" />
-        <option value="$PROJECT_DIR$/sources/cache-refresh/register.md" />
         <option value="$PROJECT_DIR$/sources/examples/oxd-spring.md" />
         <option value="$PROJECT_DIR$/sources/faq/general.md" />
         <option value="$PROJECT_DIR$/sources/faq/troubleshooting.md" />
@@ -149,6 +226,10 @@
         <option value="$PROJECT_DIR$/sources/user-management/scim.md" />
         <option value="$PROJECT_DIR$/sources/user-management/xlsfile.md" />
         <option value="$PROJECT_DIR$/mkdocs.yml" />
+        <option value="$PROJECT_DIR$/sources/cache-refresh/index.md" />
+        <option value="$PROJECT_DIR$/sources/cache-refresh/register.md" />
+        <option value="$PROJECT_DIR$/sources/cache-refresh/reset-password.md" />
+        <option value="$PROJECT_DIR$/sources/cluster/LBConfig.md" />
       </list>
     </option>
   </component>
@@ -377,12 +458,12 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="754" extended-state="6" />
-    <editor active="true" />
+    <editor active="false" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.15519765" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.15519765" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32919255" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32919255" sideWeight="0.50292826" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32919255" sideWeight="0.49707174" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -424,61 +505,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/sources/integrate/appauth.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor relative-caret-position="0">
-            <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-            <folding />
-          </first_editor>
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/sources/integrate/apache-saml.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor relative-caret-position="-1770">
-            <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-            <folding />
-          </first_editor>
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/sources/integrate/asimba.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor relative-caret-position="-733">
-            <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-            <folding />
-          </first_editor>
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/sources/integrate/centos-installation.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor relative-caret-position="-2433">
-            <caret line="15" column="31" lean-forward="true" selection-start-line="15" selection-start-column="31" selection-end-line="15" selection-end-column="31" />
-            <folding />
-          </first_editor>
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/sources/integrate/dropbox.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor relative-caret-position="-1005">
-            <caret line="14" column="37" lean-forward="true" selection-start-line="14" selection-start-column="37" selection-end-line="14" selection-end-column="37" />
-            <folding />
-          </first_editor>
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/sources/integrate/google-saml.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="SPLIT">
@@ -991,8 +1017,60 @@
     <entry file="file://$PROJECT_DIR$/mkdocs.yml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="17">
-          <caret line="10" column="5" lean-forward="false" selection-start-line="10" selection-start-column="5" selection-end-line="10" selection-end-column="5" />
+          <caret line="10" column="30" lean-forward="false" selection-start-line="10" selection-start-column="30" selection-end-line="10" selection-end-column="30" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/docs/cache-refresh/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="126">
+          <caret line="1921" column="38" lean-forward="false" selection-start-line="1921" selection-start-column="38" selection-end-line="1921" selection-end-column="38" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sources/cache-refresh/index.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="126">
+            <caret line="66" column="22" lean-forward="false" selection-start-line="66" selection-start-column="22" selection-end-line="66" selection-end-column="22" />
+            <folding />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sources/cache-refresh/register.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="126">
+            <caret line="12" column="9" lean-forward="false" selection-start-line="12" selection-start-column="9" selection-end-line="12" selection-end-column="9" />
+            <folding />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sources/cache-refresh/reset-password.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="126">
+            <caret line="9" column="9" lean-forward="false" selection-start-line="9" selection-start-column="9" selection-end-line="9" selection-end-column="9" />
+            <folding />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sources/cluster/LBConfig.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="-172">
+            <caret line="7" column="21" lean-forward="false" selection-start-line="7" selection-start-column="21" selection-end-line="7" selection-end-column="21" />
+            <folding />
+          </first_editor>
+          <second_editor />
         </state>
       </provider>
     </entry>

@@ -21,10 +21,10 @@ The IdP can be added from the Gluu Admin Panel (oxTrust) and navigating to SAML 
 * Log into the oxTrust interface
 
 * Navigate to SAML --> Idp
-![image](https://raw.githubusercontent.com/GluuFederation/docs/master/sources/img/2.4/asimba_idp.png)
+![image](../img/2.4/asimba_idp.png)
 
 * Click on 'Add IDP' button
-![image](https://raw.githubusercontent.com/GluuFederation/docs/master/sources/img/2.4/asimba-idp_button.png)
+![image](../img/2.4/asimba-idp_button.png)
 
 * Fill up the form with the information below:
     
@@ -52,17 +52,17 @@ The IdP can be added from the Gluu Admin Panel (oxTrust) and navigating to SAML 
 
 * Restart tomcat service: 'service tomcat restart' from Gluu Server container
 
-![image](https://raw.githubusercontent.com/GluuFederation/docs/master/sources/img/2.4/add_idp.png)
+![image](../img/2.4/add_idp.png)
 
 ## Add SP
 
 * Log into oxTrust interface
 
 * Navigate to SAML --> SP Requestor
-![image](https://raw.githubusercontent.com/GluuFederation/docs/master/sources/img/2.4/asimba-sp_menu.png)
+![image](../img/2.4/asimba-sp_menu.png)
 
 * Click on 'Add SP Requestor'
-![image](https://raw.githubusercontent.com/GluuFederation/docs/master/sources/img/2.4/asimba-sp_addbutton.png)
+![image](../img/2.4/asimba-sp_addbutton.png)
 
 * Please fill up the form with the information below:
 
@@ -82,7 +82,7 @@ The IdP can be added from the Gluu Admin Panel (oxTrust) and navigating to SAML 
 
 * Restart tomcat service: 'service tomcat restart' from Gluu Server container
 
-![image](https://raw.githubusercontent.com/GluuFederation/docs/master/sources/img/2.4/add_sp2mod.png)
+![image](../img/2.4/add_sp2mod.png)
 
 ## Add Selectors
 This feature will allow you 'automatically' select specific IDP for specific SP. As for example: If OrgA has SP 'orgASP.gluu.org' and 'orgAIDP.gluu.org' respectively and if you configure selector for 'orgASP.gluu.org' –> 'orgAIDP.gluu.org', then after whenever user will go to 'orgASP.gluu.org', your Gluu Server's Asimba will automatically forward user to 'orgAIDP.gluu.org' for authentication.
@@ -90,10 +90,10 @@ This feature will allow you 'automatically' select specific IDP for specific SP.
 * Log into oxTrust interface
 
 * Navigate to SAML --> Selectors
-![image](https://raw.githubusercontent.com/GluuFederation/docs/master/sources/img/2.4/add-selector_menu.png)
+![image](../img/2.4/add-selector_menu.png)
 
 * Click on the 'Add Selector' button
-![image](https://raw.githubusercontent.com/GluuFederation/docs/master/sources/img/2.4/add-selector_button.png)
+![image](../img/2.4/add-selector_button.png)
 
     * Select SP Requestor: Select your desired SP from drop down menu
 
@@ -103,7 +103,7 @@ This feature will allow you 'automatically' select specific IDP for specific SP.
 
 * Restart tomcat service: 'service tomcat restart' from Gluu Server container
 
-![image](https://raw.githubusercontent.com/GluuFederation/docs/master/sources/img/2.4/selector.png)
+![image](../img/2.4/selector.png)
 
 ## Attributes Handling
 oxAsimba will transact all kind of attributes whichever authentication server ( remote IDP/ADFS ) can release to SP. By default this feature is not enabled.

@@ -10,24 +10,24 @@ frequently oxTrust is not Internet facing--it was primarily designed as an inter
 ## Preparing Gluu Server
 Navigate to the [custom scripts](../customize/script.md) section of the Admin Panel. Click on the [configuration](../oxtrust/configuration.md) menu and then  `Manage Custom Scripts`.
 
-![image](https://raw.githubusercontent.com/GluuFederation/docs/master/sources/img/2.4/config-manage-script_menu.png)
+![image](../img/2.4/config-manage-script_menu.png)
 
 The tabs near the top of the page can be used to navigate to different custom scripts. We are concerned about 
 the `User Registration` tab.
 
-![image](https://raw.githubusercontent.com/GluuFederation/docs/master/sources/img/2.4/config-manage-script_menu1.png)
+![image](../img/2.4/config-manage-script_menu1.png)
 
 Set the `enable_user` value to to `true` so that the user can login as soon as 
 the registration is complete, which sets the default status value. You may want to leave this to `false` if you 
 want to manually review user registrations before allowing them.
 
-![image](https://raw.githubusercontent.com/GluuFederation/docs/master/sources/img/2.4/config-manage-script_enable.png)
+![image](../img/2.4/config-manage-script_enable.png)
 
 Click `Enable` checkbox at the bottom of the page.
 
-![image](https://raw.githubusercontent.com/GluuFederation/docs/master/sources/img/2.4/config-manage-script_check.png)
+![image](../img/2.4/config-manage-script_check.png)
 
 ## User Registration
 The users can register through the user registration link usually available at `<hostname>/identity/register`.
 
-![image](https://raw.githubusercontent.com/GluuFederation/docs/master/sources/img/2.4/config-manage-script_register.png)
+![image](../img/2.4/config-manage-script_register.png)

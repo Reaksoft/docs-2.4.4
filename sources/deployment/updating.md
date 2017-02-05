@@ -12,7 +12,7 @@ effected replacing the `war` file. These are installed using
  `oxTrust version: cat /opt/tomcat/webapps/identity/META-INF/MANIFEST.MF`
  `oxAuth version: cat /opt/tomcat/webapps/oxauth/META-INF/MANIFEST.MF`
  
- ![image](https://raw.githubusercontent.com/GluuFederation/docs/master/sources/img/gluu-verify-version.png)
+ ![image](../img/gluu-verify-version.png)
  
  
 ## Backup

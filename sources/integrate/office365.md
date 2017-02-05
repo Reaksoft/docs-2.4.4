@@ -39,13 +39,13 @@ The configuration begins by creating a few custom attributes named `IDPEmail`, `
 Please see [this doc](../customize/attributes.md) to create custom attributes.
 
 1. `IDPEmail` Custom Attribute
-![image](https://raw.githubusercontent.com/GluuFederation/docs/master/sources/img/2.4/idpemail.png)
+![image](../img/2.4/idpemail.png)
 
 2. `ImmutableID` Custom Attribute
-![image](https://raw.githubusercontent.com/GluuFederation/docs/master/sources/img/2.4/immutableid.png)
+![image](../img/2.4/immutableid.png)
 
 3. `objectguid` Custom Attribute
-![image](https://raw.githubusercontent.com/GluuFederation/docs/master/sources/img/2.4/objectguid.png)
+![image](../img/2.4/objectguid.png)
 
 ### OpenDJ Configuration
 
@@ -102,4 +102,4 @@ binaryAttributes=objectGUID,objectguid
 Please see [this doc](../integrate/outbound-saml.md) to create trust relationships.
 
 * Configure Relaying Party like the following screenshot
-![image](https://raw.githubusercontent.com/GluuFederation/docs/master/sources/img/2.4/o365_trelationship.png)
+![image](../img/2.4/o365_trelationship.png)

@@ -16,11 +16,11 @@ Recommendation: use a virtual ethernet interface and a different IP address on y
 
 In oxTrust navigate to the Manage Authentication tab within the Configuration section. By default the Primary Key and Local Key are set to `uid`. Set those values to `mail` and now your Gluu Server will expect email as the identifier instead of username.
 
-![Screenshot](https://raw.githubusercontent.com/GluuFederation/docs/master/sources/img/oxTrustConfiguration/Configuration/Authentication/Manage_Authentication_Primary_key_change.png)
+![Screenshot](../img/oxTrustConfiguration/Configuration/Authentication/Manage_Authentication_Primary_key_change.png)
 
 Now you will want to update your IDP login page to display `Email Address` as the requested identifier. In order to do that you need to modify the `login.xhtml` file, which is located in `/opt/tomcat/webapps/oxauth/`. Insert `Email Address` as the value for `outputLabel`; this snippet is under the `dialog` class. See the screenshot below. 
 
-![Screenshot](https://raw.githubusercontent.com/GluuFederation/docs/master/sources/img/oxTrustConfiguration/Configuration/Authentication/Email_Address.png)
+![Screenshot](../img/oxTrustConfiguration/Configuration/Authentication/Email_Address.png)
 
 ## How do I add additional roles to oxTrust (Gluu's web UI) and/or change permissions set for existing ones?
 

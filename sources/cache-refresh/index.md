@@ -64,22 +64,22 @@ both the 'Cache Refresh', 'Customer Backend Key/Attributes', and 'Source
 Backend LDAP Servers' sections. It is not necessary enter data in the
 'Inum LDAP Server' tab.
 
-![Cache Refresh Menu](https://raw.githubusercontent.com/GluuFederation/docs/master/sources/img/oxTrust/admin_cache_menu.png)
+![Cache Refresh Menu](../img/oxTrust/admin_cache_menu.png)
 
 * _Refresh Method:_ The Gluu Server allows the server administrator to
   apply two types of Cache Refresh mechanisms--(1) VDS Method, and (2) 
   Copy Method.
 
   1. _VDS Method:_ Use this if the backend is a database such as *mysql*.
-![Refresh VDS](https://raw.githubusercontent.com/GluuFederation/docs/master/sources/img/oxTrust/admin_cache_refresh_vds.png)
+![Refresh VDS](../img/oxTrust/admin_cache_refresh_vds.png)
 
   2. _Copy Method:_ It is strongly recommended to use this method if the backend data source is any kind of Active Directory or LDAP Server.
-![Refresh Copy](https://raw.githubusercontent.com/GluuFederation/docs/master/sources/img/oxTrust/admin_cache_refresh_copy.png)
+![Refresh Copy](../img/oxTrust/admin_cache_refresh_copy.png)
 
 * _Source attribute to destination attribute mapping:_ The left entry field defines 
   the attributes from the backend data source. The right entry field 
   defines where it should be rendered/placed as it is delivered to the Gluu Server.
-![cache-refresh8](https://raw.githubusercontent.com/GluuFederation/docs/master/sources/img/oxTrustConfiguration/CR/Cache_Refresh_8.png)
+![cache-refresh8](../img/oxTrustConfiguration/CR/Cache_Refresh_8.png)
 
   * _Pooling Interval (Minutes):_ It is recommended to be
   kept higher than 15 minutes.
@@ -97,7 +97,7 @@ Backend LDAP Servers' sections. It is not necessary enter data in the
   * _Keep external persons:_ Check this box to retain the `admin` user.
 
 ### Customer Backend Key and Attributes
-![Customer Backend Key](https://raw.githubusercontent.com/GluuFederation/docs/master/sources/img/oxTrust/admin_cache_backend.png)
+![Customer Backend Key](../img/oxTrust/admin_cache_backend.png)
 
 * _Key Attribute:_ This is the unique key attribute of backend Active
   Directory/LDAP Server such as `SAMAccountname` for any Active Directory.
@@ -115,7 +115,7 @@ Backend LDAP Servers' sections. It is not necessary enter data in the
 
 ### Source Backend LDAP Servers
 
-![Source Backend](https://raw.githubusercontent.com/GluuFederation/docs/master/sources/img/oxTrust/admin_cache_sourcebackend.png)
+![Source Backend](../img/oxTrust/admin_cache_sourcebackend.png)
 
 This section allows the Gluu Server to connect to the backend Active
 Directory/LDAP server of your organization.

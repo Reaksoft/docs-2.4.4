@@ -27,12 +27,12 @@ Gluu Server User Interface allows the developer to specify the path to script ra
 to working script, if the script is faulty or needs further enhancement. The administrator can select `File` from the Script Location
 Type in oxTrust and the file input box will be displayed:
 
-![image](https://raw.githubusercontent.com/GluuFederation/docs/master/sources/img/auth_article/script_upload_box.png)
+![image](../img/auth_article/script_upload_box.png)
 
 The 'LDAP' option in the Script Location Type can be used to store the script in the LDAP tree once the development is complete. Remember that selecting the `LDAP` method requires that the script has to be copied in the input box
 that appears upon LDAP selection:
 
-![image](https://raw.githubusercontent.com/GluuFederation/docs/master/sources/img/auth_article/script_in_ldap.png)
+![image](../img/auth_article/script_in_ldap.png)
 
 ## Suggested Development Environment
 
@@ -108,7 +108,7 @@ enter properties that might change a lot. If administrators are
 not allowed to modify the script, Custom Property feature can be used, as seen
 in this screenshot:
 
-![image](https://raw.githubusercontent.com/GluuFederation/docs/master/sources/img/auth_article/07-custom-properties.jpg)
+![image](../img/auth_article/07-custom-properties.jpg)
 
 configurationAttributes.get("<key>").getValue2"():
 

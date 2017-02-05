@@ -12,12 +12,12 @@ Server UI, oxTrust.
 * Next, click on the SAML tab, and select the option Trust
 Relationships. Then, click on the `Add Relationship` button.
 
-![Add Relationship](https://raw.githubusercontent.com/GluuFederation/docs/master/sources/img/oxTrust/admin_saml_create.png)
+![Add Relationship](../img/oxTrust/admin_saml_create.png)
 
 * The button `Add Relationship` will open the following page, the trust
 relationship can be created easily using the following form.
 
-![Add empty form](https://raw.githubusercontent.com/GluuFederation/docs/master/sources/img/oxTrust/admin_saml_newTR.png)
+![Add empty form](../img/oxTrust/admin_saml_newTR.png)
 
 	1. __Display Name__: This field contains the display name of the 
     Trust Relationship. In the example below we use “Test Hobsons-Radius TR”.
@@ -34,7 +34,7 @@ relationship can be created easily using the following form.
 	6. __Released__: The two necessary attributes--`Transientid` and the
     `eduPersonPrincipalName`--were selected from the attribute list.
 
-![hobsons-tr](https://raw.githubusercontent.com/GluuFederation/docs/master/sources/img/sp_setup/hobsons-tr.jpg)
+![hobsons-tr](../img/sp_setup/hobsons-tr.jpg)
 
 	7. Finally, click "Add" to finish creating the Trust Relationship.
 
@@ -44,7 +44,7 @@ Please ensure that the new Trust Relationship status is "active".
 Otherwise click on the Trust Relationship, and activate it before
 configuring it.
 
-![hobsons-tr-active](https://raw.githubusercontent.com/GluuFederation/docs/master/sources/img/sp_setup/hobsons-tr-active.jpg)
+![hobsons-tr-active](../img/sp_setup/hobsons-tr-active.jpg)
 
 The configuration screen opens by clicking on the Hobsons Trust Relationship.
 
@@ -62,7 +62,7 @@ The configuration screen opens by clicking on the Hobsons Trust Relationship.
 	* Set "encryptNameIds" to `Never` from the drop-down menu, and click
     "Save".
 
-![hobsons-tr-update](https://raw.githubusercontent.com/GluuFederation/docs/master/sources/img/sp_setup/hobsons-tr-update.jpg)
+![hobsons-tr-update](../img/sp_setup/hobsons-tr-update.jpg)
 
 4. Click "Update" to finish the configuration of the Trust Relationship.
 

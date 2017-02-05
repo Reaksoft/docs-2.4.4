@@ -19,13 +19,13 @@ Further documentation is available at the Salesforce.com site.
   * Wait for some time. Salesforce.com will register this domain name
   for you. As an example we use `testgluu-dev-ed.my.salesforce.com` here.
 
-  ![image](https://raw.githubusercontent.com/GluuFederation/docs/master/sources/img/salesforce/My_Domain.png)
+  ![image](../img/salesforce/My_Domain.png)
 
 * Register your Gluu Server information in Salesforce.com
    * Go to _Security Controls_ –> _Single Sign On Settings_
    * Click _New_
 
-  ![image](https://raw.githubusercontent.com/GluuFederation/docs/master/sources/img/salesforce/SSO_Settings.png)
+  ![image](../img/salesforce/SSO_Settings.png)
 
    * Now you need to add the information of your Gluu Server here
      * _Name_: Anything, whichever is easier for you to recognize this
@@ -48,7 +48,7 @@ Further documentation is available at the Salesforce.com site.
      * _Service Provider Initiated Request Binding_: HTTP-Redirect
      * Here is how our example setup looks like:
 
-     ![image](https://raw.githubusercontent.com/GluuFederation/docs/master/sources/img/salesforce/Final_setup.png)
+     ![image](../img/salesforce/Final_setup.png)
 
 ## Prepare Gluu Server
 

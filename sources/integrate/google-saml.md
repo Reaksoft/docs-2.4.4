@@ -15,18 +15,18 @@ can talk to each other.
 
 * Login to dashboard.
 
-![Image](https://raw.githubusercontent.com/GluuFederation/docs/master/sources/img/SAMLTrustRelationships/GoogleAppSSO/admin_console.png)
+![Image](../img/SAMLTrustRelationships/GoogleAppSSO/admin_console.png)
 
 * From the list of options choose the "Security" tab.
 
 * A new page will open. Select `Set up single sign-on(SSO)` from the
 options.
 
-![Image](https://raw.githubusercontent.com/GluuFederation/docs/master/sources/img/SAMLTrustRelationships/GoogleAppSSO/security_setting.png)
+![Image](../img/SAMLTrustRelationships/GoogleAppSSO/security_setting.png)
 
 * Finally, the Single Sign-On setting page will appear. 
 
-![Image](https://raw.githubusercontent.com/GluuFederation/docs/master/sources/img/SAMLTrustRelationships/GoogleAppSSO/final_setup.png)
+![Image](../img/SAMLTrustRelationships/GoogleAppSSO/final_setup.png)
 
   This page contains a number of selection, and entry fields.
 

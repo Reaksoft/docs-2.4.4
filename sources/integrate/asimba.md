@@ -35,7 +35,7 @@ Two code snippets are given below <br/>
 * Add `https://upgrade.gluu.org`, as self IdP, and `https://test.gluu.org`, as remote IdP, inside Asimba
 server as authentication servers. **N.B.:** In the screenshot given below, `https://upgrade.gluu.org/idp/shibboleth` is added as one of
 the authentication servers. Follow this template to add `https://test.gluu.org` as well.
-![image](https://raw.githubusercontent.com/GluuFederation/docs/master/sources/img/2.4/asimba.png)
+![image](../img/2.4/asimba.png)
 
 **Note:** The certificates below can be found in the `/etc/certs/` folder in the Gluu Server CE environment
 
@@ -49,13 +49,13 @@ the authentication servers. Follow this template to add `https://test.gluu.org` 
 
 ### Add SP
 * Navigate to SP Requestors from the left hand menu <br/>
-![image](https://raw.githubusercontent.com/GluuFederation/docs/master/sources/img/2.4/sp-requestor.png)
+![image](../img/2.4/sp-requestor.png)
 
 * Click on Add SP Requestor <br/>
-![image](https://raw.githubusercontent.com/GluuFederation/docs/master/sources/img/2.4/add-sp-requestor.png)
+![image](../img/2.4/add-sp-requestor.png)
 
 * Download the SP Metadata from _https://sp.gluu.org_ and provide the absolute path link in the Metadata File location <br/>
-![image](https://raw.githubusercontent.com/GluuFederation/docs/master/sources/img/2.4/add-sp-requestor1.png)
+![image](../img/2.4/add-sp-requestor1.png)
 
 * Click `Update` and Restart Tomcat Server
 
@@ -63,10 +63,10 @@ the authentication servers. Follow this template to add `https://test.gluu.org` 
 In this Gluu Server, add the Asimba Server, _https://upgrade.gluu.org_ as a trusted party through a Trust Relationship.
 
 * Click on Add Trust Relationship <br/>
-![image](https://raw.githubusercontent.com/GluuFederation/docs/master/sources/img/2.4/admin_saml_create.png)
+![image](../img/2.4/admin_saml_create.png)
 
 * Setup the Trust Relationship as given below in the screenshot <br/>
-![image](https://raw.githubusercontent.com/GluuFederation/docs/master/sources/img/2.4/tr.png)
+![image](../img/2.4/tr.png)
 
 * Configure Relaying Party <br/>
-![image](https://raw.githubusercontent.com/GluuFederation/docs/master/sources/img/2.4/rp_configuration.png)
+![image](../img/2.4/rp_configuration.png)

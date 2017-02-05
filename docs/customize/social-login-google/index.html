@@ -1780,25 +1780,25 @@ for these steps.</p>
 <p>The first thing you'll need to do is Create a Project on Google to obtain
 client credentials. Click "Create project" and enter your desired
 project name.</p>
-<p><img alt="image" src="https://raw.githubusercontent.com/GluuFederation/docs/master/sources/img/google_login/01-create-project.png" /></p>
+<p><img alt="image" src="../../img/google_login/01-create-project.png" /></p>
 <p>Then click on your newly created project from the listing on the
 dashboard, and under the Credentials section, create a new "OAuth2 2.0
 client ID". </p>
-<p><img alt="image" src="https://raw.githubusercontent.com/GluuFederation/docs/master/sources/img/google_login/02-create-oauth2-creds.png" /></p>
+<p><img alt="image" src="../../img/google_login/02-create-oauth2-creds.png" /></p>
 <p>Google will ask you to configure your consent screen, to add your logo
 and other information displayed to the user to authorize Google to
 release information.</p>
-<p><img alt="image" src="https://raw.githubusercontent.com/GluuFederation/docs/master/sources/img/google_login/03-create-oauth2-creds.png" /></p>
+<p><img alt="image" src="../../img/google_login/03-create-oauth2-creds.png" /></p>
 <p>Fill out the form...</p>
-<p><img alt="image" src="https://raw.githubusercontent.com/GluuFederation/docs/master/sources/img/google_login/04-configure-authorization-page.png" /></p>
+<p><img alt="image" src="../../img/google_login/04-configure-authorization-page.png" /></p>
 <p>Now you're ready to create the credentials. Enter "Authorized JavaScript
 origins". It should be the uri of your Gluu Server--for example
 <code>https://idp.example.com</code>.</p>
-<p><img alt="image" src="https://raw.githubusercontent.com/GluuFederation/docs/master/sources/img/google_login/05-create-oauth2-creds.png" /></p>
+<p><img alt="image" src="../../img/google_login/05-create-oauth2-creds.png" /></p>
 <p>Google will display the client-id and the according secret ... ignore
 it. Instead, download the JSON file which you are going to upload into
 your Gluu Server, next.</p>
-<p><img alt="image" src="https://raw.githubusercontent.com/GluuFederation/docs/master/sources/img/google_login/06-download_json.png" /></p>
+<p><img alt="image" src="../../img/google_login/06-download_json.png" /></p>
 <p>Move this file to the location <code>/opt/tomcat/conf/google.json</code>. The JSON
 file will look something like this example (no... these data are not
 valid credentials!):</p>
@@ -1826,10 +1826,10 @@ valid credentials!):</p>
 </ul>
 <h2 id="configure-gluu-server">Configure Gluu Server<a class="headerlink" href="#configure-gluu-server" title="Permanent link">#</a></h2>
 <p>Login to oxTrust, and navigate to "Configure Custom Scripts".</p>
-<p><img alt="image" src="https://raw.githubusercontent.com/GluuFederation/docs/master/sources/img/google_login/06-manage-custom-scripts.png" /></p>
+<p><img alt="image" src="../../img/google_login/06-manage-custom-scripts.png" /></p>
 <p>At the bottom of the page, click on the link to "Add custom script
 configuration".</p>
-<p><img alt="image" src="https://raw.githubusercontent.com/GluuFederation/docs/master/sources/img/google_login/07-add_custom_script.png" /></p>
+<p><img alt="image" src="../../img/google_login/07-add_custom_script.png" /></p>
 <p>In the main body of the "Custom Script" section, paste the <a href="https://raw.githubusercontent.com/GluuFederation/oxAuth/master/Server/integrations/gplus/GooglePlusExternalAuthenticator.py">code from
 github</a>.</p>
 <p>You'll also need to add some custom properties:</p>
@@ -1913,14 +1913,14 @@ configuration.</li>
 "Configure Authentication" dropdown menu, select "Google" (or whatever
 you entered as the "Name" of the custom authentication script--as the
 default authentication method.</p>
-<p><img alt="image" src="https://raw.githubusercontent.com/GluuFederation/docs/master/sources/img/google_login/08-select_default_authentication.png" /></p>
+<p><img alt="image" src="../../img/google_login/08-select_default_authentication.png" /></p>
 <p>After you login and logout, you should be presented with a new login
 form that has the Google login button:</p>
-<p><img alt="image" src="https://raw.githubusercontent.com/GluuFederation/docs/master/sources/img/google_login/09-google-authentication-button.png" /></p>
+<p><img alt="image" src="../../img/google_login/09-google-authentication-button.png" /></p>
 <p>After clicking the Google login button, you are presented for
 authorization--Google needs to make sure its ok to release attributes to
 the Gluu Server:</p>
-<p><img alt="image" src="https://raw.githubusercontent.com/GluuFederation/docs/master/sources/img/google_login/10-google-authorization.png" /></p>
+<p><img alt="image" src="../../img/google_login/10-google-authorization.png" /></p>
 <p>If the script doesn't work, and you locked yourself out of oxTrust,
 don't worry! You can create an LDIF file, for example <code>revert.ldif</code>, to
 set back the default authentication method, like this:</p>
