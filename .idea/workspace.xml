@@ -2,6 +2,860 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="26c476cd-110e-48df-bbb2-14d13b7b2df0" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/source/img/2.4/add-selector_button.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/source/img/2.4/add-selector_menu.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/source/img/2.4/add-sp-requestor.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/source/img/2.4/add-sp-requestor1.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/source/img/2.4/add_idp.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/source/img/2.4/add_sp2mod.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/source/img/2.4/admin_attribute_add.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/source/img/2.4/admin_attribute_attribute.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/source/img/2.4/admin_attribute_menu.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/source/img/2.4/admin_attribute_show.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/source/img/2.4/admin_auth_cert.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/source/img/2.4/admin_auth_custom.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/source/img/2.4/admin_auth_default.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/source/img/2.4/admin_auth_duo.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/source/img/2.4/admin_auth_u2f.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/source/img/2.4/admin_auth_wikid.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/source/img/2.4/admin_cache_backend.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/source/img/2.4/admin_cache_inum.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/source/img/2.4/admin_cache_lastrun.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/source/img/2.4/admin_cache_mapattribute.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/source/img/2.4/admin_cache_menu.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/source/img/2.4/admin_cache_refresh_copy.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/source/img/2.4/admin_cache_refresh_vds.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/source/img/2.4/admin_cache_sourcebackend.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/source/img/2.4/admin_config_attribute.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/source/img/2.4/admin_config_attribute_add.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/source/img/2.4/admin_config_attributemenu.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/source/img/2.4/admin_config_cluster.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/source/img/2.4/admin_config_config.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/source/img/2.4/admin_config_config_message.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/source/img/2.4/admin_config_config_title.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/source/img/2.4/admin_config_config_welcome.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/source/img/2.4/admin_config_email.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/source/img/2.4/admin_config_logviewer.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/source/img/2.4/admin_config_people.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/source/img/2.4/admin_config_people_validation.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/source/img/2.4/admin_config_profile.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/source/img/2.4/admin_config_showattribute.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/source/img/2.4/admin_config_smtp.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/source/img/2.4/admin_config_status.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/source/img/2.4/admin_config_system.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/source/img/2.4/admin_config_workflow.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/source/img/2.4/admin_home_screen.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/source/img/2.4/admin_manage_cert.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/source/img/2.4/admin_manage_jre.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/source/img/2.4/admin_manage_ldap.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/source/img/2.4/admin_manage_public.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/source/img/2.4/admin_menu_attribute.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/source/img/2.4/admin_menu_configuration.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/source/img/2.4/admin_menu_managecustomscript.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/source/img/2.4/admin_oauth2_addclient.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/source/img/2.4/admin_oauth2_addgroup.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/source/img/2.4/admin_oauth2_addpolicy.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/source/img/2.4/admin_oauth2_addscope.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/source/img/2.4/admin_oauth2_adduri.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/source/img/2.4/admin_oauth2_clientlist.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/source/img/2.4/admin_oauth2_clientmenu.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/source/img/2.4/admin_oauth2_newclient.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/source/img/2.4/admin_oauth2_resourceset.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/source/img/2.4/admin_oauth2_response.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/source/img/2.4/admin_oauth2_scope.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/source/img/2.4/admin_oauth2_scopeadd.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/source/img/2.4/admin_oauth2_scopedescription.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/source/img/2.4/admin_oauth2_scopemenu.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/source/img/2.4/admin_oauth2_umamenu.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/source/img/2.4/admin_oauth2_umascreen.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/source/img/2.4/admin_personal_profile.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/source/img/2.4/admin_saml_addedTR.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/source/img/2.4/admin_saml_configmetadata.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/source/img/2.4/admin_saml_configrelying.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/source/img/2.4/admin_saml_create.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/source/img/2.4/admin_saml_entityiddemo.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/source/img/2.4/admin_saml_federation.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/source/img/2.4/admin_saml_metadatafile.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/source/img/2.4/admin_saml_metadatafilter.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/source/img/2.4/admin_saml_metadatatype.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/source/img/2.4/admin_saml_metadatauri.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/source/img/2.4/admin_saml_newTR.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/source/img/2.4/admin_saml_newentityid.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/source/img/2.4/admin_saml_relyingparty.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/source/img/2.4/admin_uma_resource.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/source/img/2.4/admin_uma_resourceadd.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/source/img/2.4/admin_uma_resourcepolicy.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/source/img/2.4/admin_uma_scope.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/source/img/2.4/admin_uma_scopeadd.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/source/img/2.4/admin_user_managepeoplescreen.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/source/img/2.4/admin_users_addmember.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/source/img/2.4/admin_users_edituser.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/source/img/2.4/admin_users_groupinfo.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/source/img/2.4/admin_users_managegroups.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/source/img/2.4/admin_users_managepeople.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/source/img/2.4/admin_users_managepeoplemenu.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/source/img/2.4/admin_users_search.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/source/img/2.4/admin_users_searchadmin.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/source/img/2.4/admin_view_log.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/source/img/2.4/admin_view_logtail.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/source/img/2.4/asimba-idp_add.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/source/img/2.4/asimba-idp_button.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/source/img/2.4/asimba-idp_list.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/source/img/2.4/asimba-selectors_add.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/source/img/2.4/asimba-selectors_list.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/source/img/2.4/asimba-sp_add.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/source/img/2.4/asimba-sp_addbutton.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/source/img/2.4/asimba-sp_list.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/source/img/2.4/asimba-sp_menu.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/source/img/2.4/asimba-sprp_add.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/source/img/2.4/asimba-sprp_list.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/source/img/2.4/asimba.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/source/img/2.4/asimba_idp.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/source/img/2.4/config-json_menu.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/source/img/2.4/config-json_oxauthproperties.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/source/img/2.4/config-json_oxauthproperties0.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/source/img/2.4/config-json_oxtrustproperties.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/source/img/2.4/config-json_oxtrustproperties1-1.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/source/img/2.4/config-json_oxtrustproperties1.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/source/img/2.4/config-json_oxtrustproperties2-1.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/source/img/2.4/config-json_oxtrustproperties2.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/source/img/2.4/config-json_oxtrustproperties3-1.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/source/img/2.4/config-json_oxtrustproperties3-2.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/source/img/2.4/config-json_oxtrustproperties3-3.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/source/img/2.4/config-json_oxtrustproperties3-4.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/source/img/2.4/config-json_oxtrustproperties3-5.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/source/img/2.4/config-json_oxtrustproperties3-6.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/source/img/2.4/config-json_oxtrustproperties3.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/source/img/2.4/config-json_oxtrustproperties4-1.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/source/img/2.4/config-json_oxtrustproperties4-2.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/source/img/2.4/config-json_oxtrustproperties4-3.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/source/img/2.4/config-json_oxtrustproperties4-4.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/source/img/2.4/config-json_oxtrustproperties4-5.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/source/img/2.4/config-json_oxtrustproperties4-6.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/source/img/2.4/config-json_oxtrustproperties4.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/source/img/2.4/config-json_oxtrustproperties5-1.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/source/img/2.4/config-json_oxtrustproperties5-2.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/source/img/2.4/config-json_oxtrustproperties5.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/source/img/2.4/config-manage-script_check.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/source/img/2.4/config-manage-script_enable.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/source/img/2.4/config-manage-script_menu.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/source/img/2.4/config-manage-script_menu1.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/source/img/2.4/config-manage-script_register.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/source/img/2.4/config-script_add.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/source/img/2.4/config-script_duo.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/source/img/2.4/config-script_enable.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/source/img/2.4/config-script_menu.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/source/img/2.4/config-script_oxpush2.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/source/img/2.4/config-script_person.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/source/img/2.4/config-script_u2f.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/source/img/2.4/config-script_update.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/source/img/2.4/config_script_update1.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/source/img/2.4/custom_attribute.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/source/img/2.4/dbadmin.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/source/img/2.4/dblogin.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/source/img/2.4/dropboxtr.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/source/img/2.4/emailnid.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/source/img/2.4/enable-scim.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/source/img/2.4/idpemail.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/source/img/2.4/immutableid.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/source/img/2.4/import-people_add.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/source/img/2.4/import-people_import.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/source/img/2.4/import-people_menu.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/source/img/2.4/import-people_validate.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/source/img/2.4/lock_user_method.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/source/img/2.4/logviewer.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/source/img/2.4/new-pass.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/source/img/2.4/o365_trelationship.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/source/img/2.4/objectguid.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/source/img/2.4/pass-reset-email.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/source/img/2.4/pass-reset.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/source/img/2.4/password-reset.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/source/img/2.4/rp_configuration.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/source/img/2.4/scim-attribute.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/source/img/2.4/scim-custom-first.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/source/img/2.4/scim-test-mode-403.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/source/img/2.4/scim-test-mode-config.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/source/img/2.4/scim-test-mode-example.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/source/img/2.4/scim-test-mode-false.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/source/img/2.4/scim-test-mode-true.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/source/img/2.4/selector.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/source/img/2.4/sp-requestor.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/source/img/2.4/tr.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/source/img/openid_connect/authz_screenshot.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/source/img/openid_connect/client_credentials_grant.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/source/img/openid_connect/oxd_overview.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/source/img/openid_connect/oxtrust_add_client.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/source/img/openid_connect/oxtrust_scope_screenshot.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/source/img/openid_connect/oxtrust_search_clients.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/source/img/openid_connect/oxtrust_view_client.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/source/img/openid_connect/resource_owner_password_credentials_flow.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/mkdocs1.yml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/source/admin-guide/attributes.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/source/admin-guide/certificates.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/source/admin-guide/config.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/source/cluster/CAS_session_configuration.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/source/cluster/LBConfig.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/source/cluster/csync-installation.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/source/cluster/index.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/source/cluster/ldapGeneralConfigInstall.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/source/cluster/replicationSetup.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/source/operation/config.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/source/operation/find-gluu-server-version.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/source/upgrade/updating.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/source/upgrade/upgrading.md" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/sources/api/api.md" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/sources/api/backup/id-generation.md" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/sources/api/backup/oic-authorization.md" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/sources/api/backup/oic-clientinfo.md" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/sources/api/backup/oic-end-session.md" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/sources/api/backup/oic-register-client.md" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/sources/api/backup/oic-token.md" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/sources/api/backup/oic-userinfo.md" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/sources/api/backup/scim-1.1.md" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/sources/api/backup/scim-2.0.md" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/sources/api/backup/uma-authorization-endpoint.md" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/sources/api/backup/uma-create-rpt.md" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/sources/api/backup/uma-discovery.md" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/sources/api/backup/uma-permission-registration.md" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/sources/api/backup/uma-resource-registration.md" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/sources/api/backup/uma-rpt-status.md" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/sources/api/openid-connect-api.md" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/sources/api/scim-api.md" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/sources/api/uma-api.md" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/sources/cache-refresh/GluuCache-Refresh.pdf" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/sources/cache-refresh/index.md" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/sources/cache-refresh/register.md" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/sources/cache-refresh/reset-password.md" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/sources/cluster/CAS_session_configuration.md" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/sources/cluster/LBConfig.md" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/sources/cluster/csync-installation.md" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/sources/cluster/index.md" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/sources/cluster/ldapGeneralConfigInstall.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/sources/cluster/replicationSetup.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/sources/customize/attributes.md" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/sources/customize/auth-script-new.md" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/sources/customize/auth-script.md" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/sources/customize/design.md" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/sources/customize/sample-application-session-script.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/sources/customize/sample-authentication-script.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/sources/customize/sample-cache-refresh-script.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/sources/customize/sample-client-registration-script.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/sources/customize/sample-dynamic-script.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/sources/customize/sample-id-generation-script.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/sources/customize/sample-uma-authorization-script.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/sources/customize/sample-update-user-script.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/sources/customize/sample-user-registration-script.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/sources/customize/script.md" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/sources/customize/social-login-google.md" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/sources/deployment/azure.md" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/sources/deployment/centos.md" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/sources/deployment/centos7.md" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/sources/deployment/debian.md" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/sources/deployment/index.md" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/sources/deployment/linode.md" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/sources/deployment/rhel.md" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/sources/deployment/rhel7.md" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/sources/deployment/setup_py.md" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/sources/deployment/ubuntu-xenial.md" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/sources/deployment/ubuntu.md" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/sources/deployment/updating.md" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/sources/deployment/upgrading.md" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/sources/examples/oxd-spring.md" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/sources/faq/general.md" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/sources/faq/troubleshooting.md" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/sources/fine-tuning/index.md" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/sources/further-reading/oxauth/oxauth-config.md" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/sources/further-reading/oxauth/oxauth-ldap-properties.md" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/sources/further-reading/oxauth/oxauth-scope-to-claims-mapping-file.md" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/sources/further-reading/oxtrust/index.md" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/sources/how-to/automate-schema.md" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/sources/how-to/backup.md" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/sources/how-to/find-gluu-server-version.md" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/sources/how-to/idp_initiated_sso.md" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/sources/how-to/saml_proxy_end_to_end.md" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/sources/how-to/saml_script_end_to_end.md" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/sources/how-to/uma-demo.md" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/sources/how-to/update-certificate.md" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/sources/img/2.4/add-selector_button.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/sources/img/2.4/add-selector_menu.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/sources/img/2.4/add-sp-requestor.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/sources/img/2.4/add-sp-requestor1.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/sources/img/2.4/add_idp.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/sources/img/2.4/add_sp2mod.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/sources/img/2.4/admin_attribute_add.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/sources/img/2.4/admin_attribute_attribute.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/sources/img/2.4/admin_attribute_menu.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/sources/img/2.4/admin_attribute_show.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/sources/img/2.4/admin_auth_cert.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/sources/img/2.4/admin_auth_custom.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/sources/img/2.4/admin_auth_default.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/sources/img/2.4/admin_auth_duo.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/sources/img/2.4/admin_auth_u2f.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/sources/img/2.4/admin_auth_wikid.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/sources/img/2.4/admin_cache_backend.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/sources/img/2.4/admin_cache_inum.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/sources/img/2.4/admin_cache_lastrun.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/sources/img/2.4/admin_cache_mapattribute.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/sources/img/2.4/admin_cache_menu.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/sources/img/2.4/admin_cache_refresh_copy.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/sources/img/2.4/admin_cache_refresh_vds.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/sources/img/2.4/admin_cache_sourcebackend.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/sources/img/2.4/admin_config_attribute.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/sources/img/2.4/admin_config_attribute_add.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/sources/img/2.4/admin_config_attributemenu.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/sources/img/2.4/admin_config_cluster.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/sources/img/2.4/admin_config_config.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/sources/img/2.4/admin_config_config_message.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/sources/img/2.4/admin_config_config_title.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/sources/img/2.4/admin_config_config_welcome.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/sources/img/2.4/admin_config_email.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/sources/img/2.4/admin_config_logviewer.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/sources/img/2.4/admin_config_people.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/sources/img/2.4/admin_config_people_validation.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/sources/img/2.4/admin_config_profile.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/sources/img/2.4/admin_config_showattribute.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/sources/img/2.4/admin_config_smtp.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/sources/img/2.4/admin_config_status.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/sources/img/2.4/admin_config_system.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/sources/img/2.4/admin_config_workflow.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/sources/img/2.4/admin_home_screen.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/sources/img/2.4/admin_manage_cert.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/sources/img/2.4/admin_manage_jre.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/sources/img/2.4/admin_manage_ldap.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/sources/img/2.4/admin_manage_public.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/sources/img/2.4/admin_menu_attribute.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/sources/img/2.4/admin_menu_configuration.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/sources/img/2.4/admin_menu_managecustomscript.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/sources/img/2.4/admin_oauth2_addclient.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/sources/img/2.4/admin_oauth2_addgroup.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/sources/img/2.4/admin_oauth2_addpolicy.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/sources/img/2.4/admin_oauth2_addscope.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/sources/img/2.4/admin_oauth2_adduri.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/sources/img/2.4/admin_oauth2_clientlist.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/sources/img/2.4/admin_oauth2_clientmenu.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/sources/img/2.4/admin_oauth2_newclient.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/sources/img/2.4/admin_oauth2_resourceset.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/sources/img/2.4/admin_oauth2_response.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/sources/img/2.4/admin_oauth2_scope.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/sources/img/2.4/admin_oauth2_scopeadd.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/sources/img/2.4/admin_oauth2_scopedescription.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/sources/img/2.4/admin_oauth2_scopemenu.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/sources/img/2.4/admin_oauth2_umamenu.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/sources/img/2.4/admin_oauth2_umascreen.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/sources/img/2.4/admin_personal_profile.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/sources/img/2.4/admin_saml_addedTR.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/sources/img/2.4/admin_saml_configmetadata.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/sources/img/2.4/admin_saml_configrelying.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/sources/img/2.4/admin_saml_create.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/sources/img/2.4/admin_saml_entityiddemo.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/sources/img/2.4/admin_saml_federation.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/sources/img/2.4/admin_saml_metadatafile.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/sources/img/2.4/admin_saml_metadatafilter.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/sources/img/2.4/admin_saml_metadatatype.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/sources/img/2.4/admin_saml_metadatauri.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/sources/img/2.4/admin_saml_newTR.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/sources/img/2.4/admin_saml_newentityid.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/sources/img/2.4/admin_saml_relyingparty.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/sources/img/2.4/admin_uma_resource.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/sources/img/2.4/admin_uma_resourceadd.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/sources/img/2.4/admin_uma_resourcepolicy.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/sources/img/2.4/admin_uma_scope.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/sources/img/2.4/admin_uma_scopeadd.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/sources/img/2.4/admin_user_managepeoplescreen.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/sources/img/2.4/admin_users_addmember.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/sources/img/2.4/admin_users_edituser.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/sources/img/2.4/admin_users_groupinfo.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/sources/img/2.4/admin_users_managegroups.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/sources/img/2.4/admin_users_managepeople.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/sources/img/2.4/admin_users_managepeoplemenu.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/sources/img/2.4/admin_users_search.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/sources/img/2.4/admin_users_searchadmin.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/sources/img/2.4/admin_view_log.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/sources/img/2.4/admin_view_logtail.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/sources/img/2.4/asimba-idp_add.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/sources/img/2.4/asimba-idp_button.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/sources/img/2.4/asimba-idp_list.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/sources/img/2.4/asimba-selectors_add.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/sources/img/2.4/asimba-selectors_list.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/sources/img/2.4/asimba-sp_add.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/sources/img/2.4/asimba-sp_addbutton.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/sources/img/2.4/asimba-sp_list.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/sources/img/2.4/asimba-sp_menu.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/sources/img/2.4/asimba-sprp_add.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/sources/img/2.4/asimba-sprp_list.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/sources/img/2.4/asimba.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/sources/img/2.4/asimba_idp.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/sources/img/2.4/config-json_menu.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/sources/img/2.4/config-json_oxauthproperties.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/sources/img/2.4/config-json_oxauthproperties0.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/sources/img/2.4/config-json_oxtrustproperties.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/sources/img/2.4/config-json_oxtrustproperties1-1.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/sources/img/2.4/config-json_oxtrustproperties1.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/sources/img/2.4/config-json_oxtrustproperties2-1.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/sources/img/2.4/config-json_oxtrustproperties2.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/sources/img/2.4/config-json_oxtrustproperties3-1.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/sources/img/2.4/config-json_oxtrustproperties3-2.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/sources/img/2.4/config-json_oxtrustproperties3-3.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/sources/img/2.4/config-json_oxtrustproperties3-4.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/sources/img/2.4/config-json_oxtrustproperties3-5.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/sources/img/2.4/config-json_oxtrustproperties3-6.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/sources/img/2.4/config-json_oxtrustproperties3.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/sources/img/2.4/config-json_oxtrustproperties4-1.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/sources/img/2.4/config-json_oxtrustproperties4-2.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/sources/img/2.4/config-json_oxtrustproperties4-3.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/sources/img/2.4/config-json_oxtrustproperties4-4.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/sources/img/2.4/config-json_oxtrustproperties4-5.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/sources/img/2.4/config-json_oxtrustproperties4-6.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/sources/img/2.4/config-json_oxtrustproperties4.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/sources/img/2.4/config-json_oxtrustproperties5-1.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/sources/img/2.4/config-json_oxtrustproperties5-2.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/sources/img/2.4/config-json_oxtrustproperties5.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/sources/img/2.4/config-manage-script_check.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/sources/img/2.4/config-manage-script_enable.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/sources/img/2.4/config-manage-script_menu.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/sources/img/2.4/config-manage-script_menu1.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/sources/img/2.4/config-manage-script_register.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/sources/img/2.4/config-script_add.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/sources/img/2.4/config-script_duo.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/sources/img/2.4/config-script_enable.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/sources/img/2.4/config-script_menu.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/sources/img/2.4/config-script_oxpush2.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/sources/img/2.4/config-script_person.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/sources/img/2.4/config-script_u2f.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/sources/img/2.4/config-script_update.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/sources/img/2.4/config_script_update1.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/sources/img/2.4/custom_attribute.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/sources/img/2.4/dbadmin.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/sources/img/2.4/dblogin.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/sources/img/2.4/dropboxtr.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/sources/img/2.4/emailnid.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/sources/img/2.4/enable-scim.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/sources/img/2.4/idpemail.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/sources/img/2.4/immutableid.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/sources/img/2.4/import-people_add.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/sources/img/2.4/import-people_import.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/sources/img/2.4/import-people_menu.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/sources/img/2.4/import-people_validate.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/sources/img/2.4/lock_user_method.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/sources/img/2.4/logviewer.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/sources/img/2.4/new-pass.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/sources/img/2.4/o365_trelationship.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/sources/img/2.4/objectguid.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/sources/img/2.4/pass-reset-email.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/sources/img/2.4/pass-reset.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/sources/img/2.4/password-reset.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/sources/img/2.4/rp_configuration.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/sources/img/2.4/scim-attribute.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/sources/img/2.4/scim-custom-first.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/sources/img/2.4/scim-test-mode-403.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/sources/img/2.4/scim-test-mode-config.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/sources/img/2.4/scim-test-mode-example.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/sources/img/2.4/scim-test-mode-false.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/sources/img/2.4/scim-test-mode-true.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/sources/img/2.4/selector.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/sources/img/2.4/sp-requestor.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/sources/img/2.4/tr.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/sources/img/LogViewer/Click_log_viewer.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/sources/img/LogViewer/Final_log_viewer.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/sources/img/LogViewer/Log_template.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/sources/img/LogViewer/View_Log_file.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/sources/img/SAMLTrustRelationships/Add_Relationships.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/sources/img/SAMLTrustRelationships/Admin_grant.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/sources/img/SAMLTrustRelationships/Federation_1.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/sources/img/SAMLTrustRelationships/Federation_2.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/sources/img/SAMLTrustRelationships/Federation_3.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/sources/img/SAMLTrustRelationships/GoogleAppSSO/admin_console.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/sources/img/SAMLTrustRelationships/GoogleAppSSO/advanced_setting.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/sources/img/SAMLTrustRelationships/GoogleAppSSO/dashboard.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/sources/img/SAMLTrustRelationships/GoogleAppSSO/final_setup.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/sources/img/SAMLTrustRelationships/GoogleAppSSO/security_setting.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/sources/img/SAMLTrustRelationships/GoogleAppSSO/sso_setting.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/sources/img/SAMLTrustRelationships/IDP_setup.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/sources/img/SAMLTrustRelationships/Metadata_Filter.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/sources/img/SAMLTrustRelationships/Permission_grant.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/sources/img/SAMLTrustRelationships/RelyingPartyConfigurationSAML2SSO.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/sources/img/SAMLTrustRelationships/Relying_Party_Configuration.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/sources/img/SAMLTrustRelationships/TR_all.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/sources/img/SAMLTrustRelationships/TR_new_page.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/sources/img/SAMLTrustRelationships/TR_status.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/sources/img/SAMLTrustRelationships/admin_saml_menu.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/sources/img/SAMLTrustRelationships/admin_saml_newTR.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/sources/img/SAMLTrustRelationships/testGluuOrgAsimba.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/sources/img/SAMLTrustRelationships/webex_webexnameid.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/sources/img/SAMLTrustRelationships/webex_wxemail.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/sources/img/SAMLTrustRelationships/webex_wxfirstname.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/sources/img/SAMLTrustRelationships/webex_wxlastname.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/sources/img/SAMLTrustRelationships/webex_wxuid.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/sources/img/SamlIDPAdminGuide/Active_inactive.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/sources/img/SamlIDPAdminGuide/Add_new_attribute.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/sources/img/SamlIDPAdminGuide/Base_attributes.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/sources/img/SamlIDPAdminGuide/LDAP_tree_Gluu_server.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/sources/img/SamlIDPAdminGuide/testshib_addingtr.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/sources/img/SamlIDPAdminGuide/testshib_addtr.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/sources/img/SamlIDPAdminGuide/testshib_confirmation.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/sources/img/SamlIDPAdminGuide/testshib_protectedpage.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/sources/img/SamlIDPAdminGuide/testshib_samltr.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/sources/img/SamlIDPAdminGuide/testshib_test.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/sources/img/SamlIDPAdminGuide/testshib_testshib.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/sources/img/SamlIDPAdminGuide/testshib_uploadmetadata.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/sources/img/WebUI_modification/oxtrust/Title.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/sources/img/WebUI_modification/oxtrust/Welcome_page_message.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/sources/img/WebUI_modification/oxtrust/Welcome_text.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/sources/img/WebUI_modification/oxtrust/oxTrust_GUI_mod_configuration_overview.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/sources/img/admin-guide/user/acct-lockout-config.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/sources/img/admin-guide/user/acct-lockout-update.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/sources/img/auth_article/01-install-software.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/sources/img/auth_article/02-Add-Repositories.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/sources/img/auth_article/03-add-Pydev.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/sources/img/auth_article/04-add-jboss-richfaces.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/sources/img/auth_article/05-preferences-jython-interpreter.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/sources/img/auth_article/06-new-pydev-project.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/sources/img/auth_article/07-custom-properties.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/sources/img/auth_article/script_in_ldap.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/sources/img/auth_article/script_upload_box.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/sources/img/auth_article/twilio.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/sources/img/auth_article/twillo.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/sources/img/benchmark/tomcatStatus.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/sources/img/cluster/Add_EC2_Instances7.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/sources/img/cluster/Assign_Security_Group_4.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/sources/img/cluster/Classic_LB.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/sources/img/cluster/Creat_LB_1.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/sources/img/cluster/Create_Record_Set11.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/sources/img/cluster/Define_LB_3.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/sources/img/cluster/Edit_Stickiness.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/sources/img/cluster/Hosted_Zone_GoToRecord_Sets10.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/sources/img/cluster/LB_creation_status_8.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/sources/img/cluster/Security_Health_Check_6.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/sources/img/cluster/Success9.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/sources/img/cluster/cluster.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/sources/img/cluster/flowchart_design.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/sources/img/cluster/glusterfs.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/sources/img/cluster/glusterfs2.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/sources/img/cluster/glusterfs_multi.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/sources/img/cluster/key_cert_4.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/sources/img/cluster/ldap.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/sources/img/cluster/ldap_multimaster.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/sources/img/cluster/multi_group_cluster.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/sources/img/cluster/process_flow.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/sources/img/cluster/twemproxy.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/sources/img/cluster/twemproxy2.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/sources/img/cluster/twemproxy_multi.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/sources/img/design/gluu_http-tomcat_overview.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/sources/img/examples/oxd-spring/Screen Shot 2016-05-23 at 12.30.15 AM.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/sources/img/examples/oxd-spring/Screen Shot 2016-05-23 at 12.37.21 AM.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/sources/img/examples/oxd-spring/Screen Shot 2016-05-23 at 12.37.48 AM.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/sources/img/gluu-verify-version.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/sources/img/gluu_favicon.ico" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/sources/img/google_login/01-create-project.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/sources/img/google_login/02-create-oauth2-creds.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/sources/img/google_login/03-create-oauth2-creds.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/sources/img/google_login/04-configure-authorization-page.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/sources/img/google_login/05-create-oauth2-creds.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/sources/img/google_login/06-download_json.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/sources/img/google_login/06-manage-custom-scripts.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/sources/img/google_login/07-add_custom_script.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/sources/img/google_login/08-select_default_authentication.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/sources/img/google_login/09-google-authentication-button.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/sources/img/google_login/10-google-authorization.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/sources/img/interception_scripts/saml_script_properties.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/sources/img/interception_scripts/uma_policy_handling.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/sources/img/juju/relation-view.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/sources/img/local_user_admin/add_person_form.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/sources/img/local_user_admin/admin_attribute_menu.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/sources/img/local_user_admin/attr_detail.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/sources/img/local_user_admin/attr_list.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/sources/img/local_user_admin/manage_people.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/sources/img/mod_auth_oidc/dynamic_discovery.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/sources/img/mod_auth_oidc/oxauth_authentication.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/sources/img/openid_connect/authz_screenshot.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/sources/img/openid_connect/client_credentials_grant.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/sources/img/openid_connect/oxd_overview.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/sources/img/openid_connect/oxtrust_add_client.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/sources/img/openid_connect/oxtrust_scope_screenshot.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/sources/img/openid_connect/oxtrust_search_clients.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/sources/img/openid_connect/oxtrust_view_client.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/sources/img/openid_connect/resource_owner_password_credentials_flow.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/sources/img/oxAuth-RP/checksession.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/sources/img/oxAuth-RP/clientread.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/sources/img/oxAuth-RP/dynamicclientregistration.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/sources/img/oxAuth-RP/endsession.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/sources/img/oxAuth-RP/openidconnectdiscovery.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/sources/img/oxAuth-RP/refreshtoken.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/sources/img/oxAuth-RP/requestaccesstokenwithauthorizationcode.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/sources/img/oxAuth-RP/requestauthorizationcodegrant.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/sources/img/oxAuth-RP/userinfoendpoint.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/sources/img/oxTrust/Title.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/sources/img/oxTrust/Welcome_page_message.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/sources/img/oxTrust/Welcome_text.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/sources/img/oxTrust/admin_attribute_add.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/sources/img/oxTrust/admin_attribute_attribute.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/sources/img/oxTrust/admin_attribute_menu.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/sources/img/oxTrust/admin_attribute_show.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/sources/img/oxTrust/admin_auth_custom.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/sources/img/oxTrust/admin_auth_default.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/sources/img/oxTrust/admin_cache_backend.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/sources/img/oxTrust/admin_cache_inum.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/sources/img/oxTrust/admin_cache_lastrun.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/sources/img/oxTrust/admin_cache_mapattribute.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/sources/img/oxTrust/admin_cache_menu.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/sources/img/oxTrust/admin_cache_refresh_copy.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/sources/img/oxTrust/admin_cache_refresh_vds.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/sources/img/oxTrust/admin_cache_sourcebackend.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/sources/img/oxTrust/admin_config_attribute.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/sources/img/oxTrust/admin_config_attributemenu.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/sources/img/oxTrust/admin_config_cluster.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/sources/img/oxTrust/admin_config_config.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/sources/img/oxTrust/admin_config_config_message.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/sources/img/oxTrust/admin_config_config_title.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/sources/img/oxTrust/admin_config_config_welcome.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/sources/img/oxTrust/admin_config_email.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/sources/img/oxTrust/admin_config_logviewer.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/sources/img/oxTrust/admin_config_people.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/sources/img/oxTrust/admin_config_people_validation.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/sources/img/oxTrust/admin_config_profile.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/sources/img/oxTrust/admin_config_showattribute.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/sources/img/oxTrust/admin_config_smtp.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/sources/img/oxTrust/admin_config_status.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/sources/img/oxTrust/admin_config_system.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/sources/img/oxTrust/admin_config_workflow.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/sources/img/oxTrust/admin_home_screen.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/sources/img/oxTrust/admin_manage_cert.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/sources/img/oxTrust/admin_manage_jre.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/sources/img/oxTrust/admin_manage_ldap.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/sources/img/oxTrust/admin_manage_public.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/sources/img/oxTrust/admin_menu_attribute.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/sources/img/oxTrust/admin_menu_attributes.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/sources/img/oxTrust/admin_menu_configuration.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/sources/img/oxTrust/admin_menu_managecustomscript.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/sources/img/oxTrust/admin_oauth2_addclient.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/sources/img/oxTrust/admin_oauth2_addgroup.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/sources/img/oxTrust/admin_oauth2_addpolicy.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/sources/img/oxTrust/admin_oauth2_addscope.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/sources/img/oxTrust/admin_oauth2_adduri.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/sources/img/oxTrust/admin_oauth2_clientlist.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/sources/img/oxTrust/admin_oauth2_clientmenu.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/sources/img/oxTrust/admin_oauth2_grants.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/sources/img/oxTrust/admin_oauth2_newclient.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/sources/img/oxTrust/admin_oauth2_resourceset.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/sources/img/oxTrust/admin_oauth2_response.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/sources/img/oxTrust/admin_oauth2_scope.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/sources/img/oxTrust/admin_oauth2_scopeadd.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/sources/img/oxTrust/admin_oauth2_scopedescription.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/sources/img/oxTrust/admin_oauth2_scopemenu.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/sources/img/oxTrust/admin_oauth2_umamenu.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/sources/img/oxTrust/admin_oauth2_umascreen.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/sources/img/oxTrust/admin_oauth_loginuri.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/sources/img/oxTrust/admin_personal_profile.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/sources/img/oxTrust/admin_saml_addedTR.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/sources/img/oxTrust/admin_saml_configmetadata.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/sources/img/oxTrust/admin_saml_configrelying.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/sources/img/oxTrust/admin_saml_create.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/sources/img/oxTrust/admin_saml_entityiddemo.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/sources/img/oxTrust/admin_saml_federation.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/sources/img/oxTrust/admin_saml_metadatafile.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/sources/img/oxTrust/admin_saml_metadatafilter.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/sources/img/oxTrust/admin_saml_metadatatype.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/sources/img/oxTrust/admin_saml_metadatauri.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/sources/img/oxTrust/admin_saml_newTR.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/sources/img/oxTrust/admin_saml_newentityid.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/sources/img/oxTrust/admin_saml_relyingparty.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/sources/img/oxTrust/admin_uma_resource.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/sources/img/oxTrust/admin_uma_resourceadd.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/sources/img/oxTrust/admin_uma_resourcepolicy.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/sources/img/oxTrust/admin_uma_scope.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/sources/img/oxTrust/admin_uma_scopeadd.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/sources/img/oxTrust/admin_user_managepeoplescreen.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/sources/img/oxTrust/admin_users_addmember.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/sources/img/oxTrust/admin_users_edituser.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/sources/img/oxTrust/admin_users_groupinfo.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/sources/img/oxTrust/admin_users_managegroups.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/sources/img/oxTrust/admin_users_managepeople.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/sources/img/oxTrust/admin_users_managepeoplemenu.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/sources/img/oxTrust/admin_users_search.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/sources/img/oxTrust/admin_users_searchadmin.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/sources/img/oxTrust/admin_view_log.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/sources/img/oxTrust/admin_view_logtail.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/sources/img/oxTrust/config_menu.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/sources/img/oxTrust/configure_metadata_filters.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/sources/img/oxTrust/discovery_page.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/sources/img/oxTrust/oxTrust-system.com" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/sources/img/oxTrust/oxTrust-system.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/sources/img/oxTrust/oxTrust_GUI_mod_configuration_overview.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/sources/img/oxTrust/selector.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/sources/img/oxTrustConfiguration/Attribute_mapping/add_new_attribute.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/sources/img/oxTrustConfiguration/Attribute_mapping/cutom_attribute_creation.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/sources/img/oxTrustConfiguration/Attribute_mapping/map_attribute_description.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/sources/img/oxTrustConfiguration/Attribute_mapping/source_attribute.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/sources/img/oxTrustConfiguration/Attribute_mapping/standard_attribute.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/sources/img/oxTrustConfiguration/CR/Authention_Script_location.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/sources/img/oxTrustConfiguration/CR/CR_script.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/sources/img/oxTrustConfiguration/CR/Cache_Refresh_1.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/sources/img/oxTrustConfiguration/CR/Cache_Refresh_2.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/sources/img/oxTrustConfiguration/CR/Cache_Refresh_3.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/sources/img/oxTrustConfiguration/CR/Cache_Refresh_4.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/sources/img/oxTrustConfiguration/CR/Cache_Refresh_5.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/sources/img/oxTrustConfiguration/CR/Cache_Refresh_6.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/sources/img/oxTrustConfiguration/CR/Cache_Refresh_7.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/sources/img/oxTrustConfiguration/CR/Cache_Refresh_8.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/sources/img/oxTrustConfiguration/CR/Script_page.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/sources/img/oxTrustConfiguration/CR/change.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/sources/img/oxTrustConfiguration/Configuration/Authentication/Custom_Auth.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/sources/img/oxTrustConfiguration/Configuration/Authentication/Default_Auth_method.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/sources/img/oxTrustConfiguration/Configuration/Authentication/Email_Address.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/sources/img/oxTrustConfiguration/Configuration/Authentication/Manage_Authentication_LDAP.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/sources/img/oxTrustConfiguration/Configuration/Authentication/Manage_Authentication_Primary_key_change.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/sources/img/oxTrustConfiguration/Configuration/Configure_Log_Viewer.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/sources/img/oxTrustConfiguration/Configuration/Configure_cluster_partners.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/sources/img/oxTrustConfiguration/Configuration/Import_people.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/sources/img/oxTrustConfiguration/Configuration/Import_people_failed.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/sources/img/oxTrustConfiguration/Configuration/Manage_Custom_Authentication_Methods.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/sources/img/oxTrustConfiguration/Configuration/Manage_LDAP_Authentication.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/sources/img/oxTrustConfiguration/Configuration/Status.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/sources/img/oxTrustConfiguration/Configuration/System_configuration.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/sources/img/oxTrustConfiguration/Configuration/View_Log_file.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/sources/img/oxTrustConfiguration/Configuration/View_Log_file_2.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/sources/img/oxTrustConfiguration/Manage_SSL_cert.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/sources/img/oxd/oxd-rp.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/sources/img/oxd/oxd_overview.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/sources/img/registration/LinktrackAPIMenu.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/sources/img/registration/ManageRegistrationMenu.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/sources/img/registration/ManageRegistrationStart.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/sources/img/registration/Moderation.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/sources/img/registration/ModerationMenu.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/sources/img/registration/RegistrationLinksManagementMenu.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/sources/img/registration/RegistrationRequestsModerationMenu.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/sources/img/registration/RegistrrationLinksInventory.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/sources/img/registration/ShareRegistrationLinks.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/sources/img/registration/UserAdded.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/sources/img/registration/UserManagement.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/sources/img/registration/UserManagementMenu.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/sources/img/registration/selfregistration.JPG" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/sources/img/salesforce/Authentication_Configuration.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/sources/img/salesforce/Final_setup.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/sources/img/salesforce/Gluu_Server.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/sources/img/salesforce/My_Domain.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/sources/img/salesforce/SSO_Settings.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/sources/img/salesforce/example-setup.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/sources/img/sp_setup/admin_sp_addscriptmap.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/sources/img/sp_setup/admin_sp_apacheclick.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/sources/img/sp_setup/admin_sp_apachedestination.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/sources/img/sp_setup/admin_sp_apachesetup.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/sources/img/sp_setup/admin_sp_apachetest.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/sources/img/sp_setup/admin_sp_checkstatus.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/sources/img/sp_setup/admin_sp_click.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/sources/img/sp_setup/admin_sp_destination.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/sources/img/sp_setup/admin_sp_executable.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/sources/img/sp_setup/admin_sp_handlermapping.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/sources/img/sp_setup/admin_sp_iis7setup.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/sources/img/sp_setup/admin_sp_iis7test.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/sources/img/sp_setup/admin_sp_isapicgi.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/sources/img/sp_setup/admin_sp_microsoft.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/sources/img/sp_setup/admin_sp_port.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/sources/img/sp_setup/admin_sp_serverinfo.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/sources/img/sp_setup/admin_sp_spapache.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/sources/img/sp_setup/admin_sp_uac.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/sources/img/sp_setup/apache_sp_isapiedit.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/sources/img/sp_setup/apache_sp_isapifilter.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/sources/img/sp_setup/apache_sp_isapipath.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/sources/img/sp_setup/hobsons-tr-active.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/sources/img/sp_setup/hobsons-tr-update.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/sources/img/sp_setup/hobsons-tr.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/sources/img/sp_setup/iis_setup_addrole.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/sources/img/sp_setup/iis_setup_addtr.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/sources/img/sp_setup/iis_setup_confirmation.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/sources/img/sp_setup/iis_setup_download.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/sources/img/sp_setup/iis_setup_managementtools.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/sources/img/sp_setup/iis_setup_next.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/sources/img/sp_setup/iis_setup_plugin.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/sources/img/sp_setup/iis_setup_restart.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/sources/img/sp_setup/iis_setup_secure.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/sources/img/sp_setup/iis_setup_selection.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/sources/img/sp_setup/iis_setup_selection1.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/sources/img/sp_setup/iis_setup_shibsetup.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/sources/img/sp_setup/iis_setup_status.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/sources/img/sp_setup/iis_setup_test.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/sources/img/sp_setup/iis_setup_webserver.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/sources/img/sp_setup/windows_sp_2_4.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/sources/img/ubuntu-shib-apache/configure_rp.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/sources/img/ubuntu-shib-apache/minnow-saml-trust-relationship-shibboleth-sp.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/sources/img/ubuntu-shib-apache/saml_sso-profile.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/sources/img/uma/uma_flow.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/sources/img/uma/uma_oxtrust_policies.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/sources/img/uma/uma_oxtrust_policy_add.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/sources/img/uma/uma_oxtrust_resources.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/sources/img/uma/uma_oxtrust_resources_add.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/sources/img/uma/uma_oxtrust_scopes.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/sources/img/uma/uma_oxtrust_scopes_add.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/sources/img/uma/uma_parts.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/sources/img/uma/uma_token_workflow.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/sources/img/uma/uma_very_detailed_flow.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/sources/index.md" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/sources/integrate/OpenIdConnectDiscoveryAction.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/sources/integrate/backup/apache-saml.md" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/sources/integrate/backup/appauth.md" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/sources/integrate/backup/asimba.md" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/sources/integrate/backup/centos-installation.md" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/sources/integrate/backup/dropbox.md" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/sources/integrate/backup/google-saml.md" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/sources/integrate/backup/hobsons-saml.md" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/sources/integrate/backup/iis-saml.md" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/sources/integrate/backup/inbound-saml.md" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/sources/integrate/backup/java-connect.md" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/sources/integrate/backup/oauth2grants.md" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/sources/integrate/backup/office365.md" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/sources/integrate/backup/openid-connect.md" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/sources/integrate/backup/outbound-saml.md" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/sources/integrate/backup/oxd.md" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/sources/integrate/backup/oxray.md" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/sources/integrate/backup/salesforce-sso.md" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/sources/integrate/backup/saml-windows.md" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/sources/integrate/backup/scimuma-howto.md" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/sources/integrate/backup/test-shib2.md" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/sources/integrate/backup/ubuntu-installation.md" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/sources/integrate/backup/ubuntu-shib-apache.md" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/sources/integrate/backup/uma.md" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/sources/integrate/backup/webex.md" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/sources/integrate/dropbox.md" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/sources/integrate/google.md" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/sources/integrate/hobsons.md" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/sources/integrate/oauth-js-implicit.md" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/sources/integrate/oauth2.md" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/sources/integrate/office.md" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/sources/integrate/openidc-rp.md" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/sources/integrate/salesforce.md" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/sources/integrate/saml-sp.md" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/sources/introduction/architecture.md" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/sources/introduction/design.md" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/sources/introduction/history.md" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/sources/introduction/index.md" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/sources/multi-factor/cert.md" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/sources/multi-factor/duo.md" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/sources/multi-factor/intro.md" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/sources/multi-factor/oxpush2.md" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/sources/multi-factor/u2f.md" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/sources/multi-factor/wikid.md" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/sources/old-docs.tar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/sources/oxtrust/configuration.md" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/sources/oxtrust/personal.md" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/sources/oxtrust/users.md" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/sources/reference/certificates.md" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/sources/reference/config.md" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/sources/reference/ldap.md" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/sources/reference/logout.md" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/sources/reference/logs.md" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/sources/reference/oxauth-properties.md" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/sources/reference/oxtrust-properties.md" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/sources/reference/policy.md" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/sources/reference/schema.md" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/sources/user-management/lock-user.md" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/sources/user-management/scim.md" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/sources/user-management/xlsfile.md" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/modules.xml" afterPath="$PROJECT_DIR$/.idea/modules.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/env/lib/python2.7/site-packages/mkdocs/config.py" afterPath="$PROJECT_DIR$/env/lib/python2.7/site-packages/mkdocs/config.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/env/lib/python2.7/site-packages/mkdocs/new.py" afterPath="$PROJECT_DIR$/env/lib/python2.7/site-packages/mkdocs/new.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/env/lib/python2.7/site-packages/mkdocs/serve.py" afterPath="$PROJECT_DIR$/env/lib/python2.7/site-packages/mkdocs/serve.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/env/lib/python2.7/site-packages/mkdocs/test.py" afterPath="$PROJECT_DIR$/env/lib/python2.7/site-packages/mkdocs/test.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/mkdocs.yml" afterPath="$PROJECT_DIR$/mkdocs.yml" />
     </list>
     <ignored path="docs.iws" />
@@ -22,22 +876,32 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="mkdocs.yml" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/mkdocs.yml">
+      <file leaf-file-name="mkdocs1.yml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/mkdocs1.yml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="284">
-              <caret line="49" column="27" lean-forward="false" selection-start-line="49" selection-start-column="27" selection-end-line="49" selection-end-column="27" />
+            <state relative-caret-position="420">
+              <caret line="49" column="4" lean-forward="false" selection-start-line="49" selection-start-column="4" selection-end-line="49" selection-end-column="51" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="intro.md" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/sources/multi-factor/intro.md">
+      <file leaf-file-name="mkdocs.yml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/mkdocs.yml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="816">
+              <caret line="89" column="32" lean-forward="true" selection-start-line="89" selection-start-column="32" selection-end-line="89" selection-end-column="32" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="certificates.md" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/source/admin-guide/certificates.md">
           <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
             <state split_layout="SPLIT">
-              <first_editor relative-caret-position="306">
-                <caret line="25" column="0" lean-forward="false" selection-start-line="25" selection-start-column="0" selection-end-line="25" selection-end-column="0" />
+              <first_editor relative-caret-position="201">
+                <caret line="26" column="53" lean-forward="true" selection-start-line="26" selection-start-column="53" selection-end-line="26" selection-end-column="53" />
                 <folding />
               </first_editor>
               <second_editor />
@@ -45,12 +909,12 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="script.md" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/sources/customize/script.md">
+      <file leaf-file-name="csync-installation.md" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/source/cluster/csync-installation.md">
           <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
             <state split_layout="SPLIT">
-              <first_editor relative-caret-position="539">
-                <caret line="290" column="104" lean-forward="false" selection-start-line="290" selection-start-column="104" selection-end-line="290" selection-end-column="104" />
+              <first_editor relative-caret-position="126">
+                <caret line="59" column="0" lean-forward="true" selection-start-line="59" selection-start-column="0" selection-end-line="59" selection-end-column="0" />
                 <folding />
               </first_editor>
               <second_editor />
@@ -59,50 +923,11 @@
         </entry>
       </file>
       <file leaf-file-name="index.md" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/sources/cache-refresh/index.md">
+        <entry file="file://$PROJECT_DIR$/source/cluster/index.md">
           <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
             <state split_layout="SPLIT">
-              <first_editor relative-caret-position="1122">
-                <caret line="66" column="22" lean-forward="false" selection-start-line="66" selection-start-column="22" selection-end-line="66" selection-end-column="22" />
-                <folding />
-              </first_editor>
-              <second_editor />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="register.md" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/sources/cache-refresh/register.md">
-          <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-            <state split_layout="SPLIT">
-              <first_editor relative-caret-position="204">
-                <caret line="12" column="9" lean-forward="false" selection-start-line="12" selection-start-column="9" selection-end-line="12" selection-end-column="9" />
-                <folding />
-              </first_editor>
-              <second_editor />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="reset-password.md" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/sources/cache-refresh/reset-password.md">
-          <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-            <state split_layout="SPLIT">
-              <first_editor relative-caret-position="153">
-                <caret line="9" column="9" lean-forward="false" selection-start-line="9" selection-start-column="9" selection-end-line="9" selection-end-column="9" />
-                <folding />
-              </first_editor>
-              <second_editor />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="LBConfig.md" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/sources/cluster/LBConfig.md">
-          <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-            <state split_layout="SPLIT">
-              <first_editor relative-caret-position="119">
-                <caret line="7" column="21" lean-forward="false" selection-start-line="7" selection-start-column="21" selection-end-line="7" selection-end-column="21" />
+              <first_editor relative-caret-position="116">
+                <caret line="416" column="179" lean-forward="false" selection-start-line="416" selection-start-column="179" selection-end-line="416" selection-end-column="179" />
                 <folding />
               </first_editor>
               <second_editor />
@@ -117,14 +942,22 @@
       <find>#</find>
       <find>https://raw.githubusercontent.com/GluuFederation/docs/master/sources</find>
       <find>https://raw.githubusercontent.com/GluuFederation/docs/2.4/sources</find>
+      <find>jetty</find>
+      <find>openldap</find>
+      <find>opendj`</find>
+      <find>cas</find>
+      <find>config</find>
+      <find>certificates.md</find>
+      <find>certificate.md</find>
     </findStrings>
     <replaceStrings>
       <replace>##</replace>
       <replace>..</replace>
     </replaceStrings>
     <dirStrings>
-      <dir>D:\Gluu\GluuDocs-3.0\docs-2.4.4-dev</dir>
       <dir>D:\Gluu\GluuDocs-3.0\docs-2.4.4-dev\sources</dir>
+      <dir>D:\Gluu\GluuDocs-3.0\docs-2.4.4-dev\source</dir>
+      <dir>D:\Gluu\GluuDocs-3.0\docs-2.4.4-dev</dir>
     </dirStrings>
   </component>
   <component name="FindManager">
@@ -138,22 +971,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/sources/api/uma-permission-registration.md" />
-        <option value="$PROJECT_DIR$/sources/api/uma-resource-registration.md" />
-        <option value="$PROJECT_DIR$/sources/api/uma-rpt-status.md" />
-        <option value="$PROJECT_DIR$/sources/examples/oxd-spring.md" />
-        <option value="$PROJECT_DIR$/sources/faq/general.md" />
-        <option value="$PROJECT_DIR$/sources/faq/troubleshooting.md" />
-        <option value="$PROJECT_DIR$/sources/fine-tuning/index.md" />
-        <option value="$PROJECT_DIR$/sources/further-reading/oxauth/oxauth-config.md" />
-        <option value="$PROJECT_DIR$/sources/further-reading/oxauth/oxauth-ldap-properties.md" />
-        <option value="$PROJECT_DIR$/sources/further-reading/oxauth/oxauth-scope-to-claims-mapping-file.md" />
-        <option value="$PROJECT_DIR$/sources/how-to/automate-schema.md" />
-        <option value="$PROJECT_DIR$/sources/how-to/backup.md" />
-        <option value="$PROJECT_DIR$/sources/how-to/idp_initiated_sso.md" />
-        <option value="$PROJECT_DIR$/sources/how-to/saml_script_end_to_end.md" />
-        <option value="$PROJECT_DIR$/sources/how-to/uma-demo.md" />
-        <option value="$PROJECT_DIR$/sources/how-to/update-certificate.md" />
         <option value="$PROJECT_DIR$/sources/integrate/inbound-saml.md" />
         <option value="$PROJECT_DIR$/sources/integrate/java-connect.md" />
         <option value="$PROJECT_DIR$/sources/integrate/oauth2grants.md" />
@@ -188,7 +1005,23 @@
         <option value="$PROJECT_DIR$/sources/cluster/LBConfig.md" />
         <option value="$PROJECT_DIR$/sources/customize/script.md" />
         <option value="$PROJECT_DIR$/sources/multi-factor/intro.md" />
+        <option value="$PROJECT_DIR$/source/installation-guide/index.md" />
+        <option value="$PROJECT_DIR$/source/index.md" />
+        <option value="$PROJECT_DIR$/source/operation/faq.md" />
+        <option value="$PROJECT_DIR$/source/authn-guide/otp.md" />
+        <option value="$PROJECT_DIR$/source/admin-guide/attribute.md" />
+        <option value="$PROJECT_DIR$/sources-bkp/customize/auth-script.md" />
+        <option value="$PROJECT_DIR$/source/authn-guide/customauthn.md" />
+        <option value="$PROJECT_DIR$/source/upgrade/update-war.md" />
+        <option value="$PROJECT_DIR$/source/admin-guide/certificate.md" />
+        <option value="$PROJECT_DIR$/source/admin-guide/fine-tuning.md" />
+        <option value="$PROJECT_DIR$/source/admin-guide/attributes.md" />
+        <option value="$PROJECT_DIR$/source/admin-guide/saml.md" />
+        <option value="$PROJECT_DIR$/source/installation-guide/install.md" />
+        <option value="$PROJECT_DIR$/source/admin-guide/oauth2.md" />
         <option value="$PROJECT_DIR$/mkdocs.yml" />
+        <option value="$PROJECT_DIR$/source/cluster/index.md" />
+        <option value="$PROJECT_DIR$/source/admin-guide/certificates.md" />
       </list>
     </option>
   </component>
@@ -217,6 +1050,7 @@
     </navigator>
     <panes>
       <pane id="Scratches" />
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -239,7 +1073,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="sources" />
+              <option name="myItemId" value="sources-bkp" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -253,11 +1087,11 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="sources" />
+              <option name="myItemId" value="sources-bkp" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="user-management" />
+              <option name="myItemId" value="reference" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -271,28 +1105,164 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="sources" />
+              <option name="myItemId" value="sources-bkp" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="customize" />
+              <option name="myItemId" value="how-to" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="docs" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="docs-2.4.4-dev" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="sources-bkp" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="cluster" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="docs" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="docs-2.4.4-dev" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="source" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="docs" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="docs-2.4.4-dev" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="source" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="reference" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="docs" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="docs-2.4.4-dev" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="source" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="operation" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="docs" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="docs-2.4.4-dev" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="source" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="installation-guide" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="docs" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="docs-2.4.4-dev" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="source" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="cluster" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="docs" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="docs-2.4.4-dev" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="source" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="admin-guide" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
         </subPane>
       </pane>
-      <pane id="Scope" />
       <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/sources" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/source" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="options.lastSelected" value="com.jetbrains.python.configuration.PythonSdkConfigurable" />
     <property name="options.splitter.main.proportions" value="0.3" />
     <property name="options.splitter.details.proportions" value="0.2" />
     <property name="options.searchVisible" value="true" />
     <property name="SearchEverywhereHistoryKey" value="&#9;FILE&#9;file://D:/Gluu/GluuDocs-3.0/docs-2.4.4-dev/sources/api/oic-register-client.md&#10;custom-scripts&#9;FILE&#9;file://D:/Gluu/GluuDocs-3.0/docs-2.4.4-dev/docs/img/google_login/06-manage-custom-scripts.png" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\Gluu\GluuDocs-3.0\docs-2.4.4-dev\source\operation" />
+      <recent name="D:\Gluu\GluuDocs-3.0\docs-2.4.4-dev\sources-bkp\reference" />
+      <recent name="D:\Gluu\GluuDocs-3.0\docs-2.4.4-dev\sources-bkp\oxtrust" />
+      <recent name="D:\Gluu\GluuDocs-3.0\docs-2.4.4-dev\sources-bkp\how-to" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\Gluu\GluuDocs-3.0\docs-2.4.4-dev\source\admin-guide" />
+      <recent name="D:\Gluu\GluuDocs-3.0\docs-2.4.4-dev\source\img" />
+      <recent name="D:\Gluu\GluuDocs-3.0\docs-2.4.4-dev\source" />
+      <recent name="D:\Gluu\GluuDocs-3.0\docs-2.4.4-dev\source\operation" />
+      <recent name="D:\Gluu\GluuDocs-3.0\docs-2.4.4-dev\source\upgrade" />
+    </key>
   </component>
   <component name="RunManager">
     <configuration default="true" type="PythonConfigurationType" factoryName="Python">
@@ -450,9 +1420,10 @@
     <frame x="-8" y="-8" width="1382" height="754" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.15373352" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.15300146" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32919255" sideWeight="0.50292826" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32919255" sideWeight="0.49707174" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
@@ -476,7 +1447,6 @@
       <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="CheckStyle" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32919255" sideWeight="0.49707174" order="1" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
   <component name="Vcs.Log.UiProperties">
@@ -495,480 +1465,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/sources/integrate/hobsons-saml.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor relative-caret-position="-682">
-            <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          </first_editor>
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/sources/integrate/iis-saml.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor relative-caret-position="-5714">
-            <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          </first_editor>
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/sources/integrate/inbound-saml.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor relative-caret-position="491">
-            <caret line="137" column="0" lean-forward="false" selection-start-line="137" selection-start-column="0" selection-end-line="137" selection-end-column="0" />
-          </first_editor>
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/sources/integrate/java-connect.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor relative-caret-position="459">
-            <caret line="56" column="2" lean-forward="false" selection-start-line="56" selection-start-column="2" selection-end-line="56" selection-end-column="2" />
-          </first_editor>
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/sources/integrate/oauth2grants.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor relative-caret-position="-580">
-            <caret line="191" column="2" lean-forward="false" selection-start-line="191" selection-start-column="2" selection-end-line="191" selection-end-column="2" />
-          </first_editor>
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/sources/integrate/oxd.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor relative-caret-position="204">
-            <caret line="12" column="0" lean-forward="false" selection-start-line="12" selection-start-column="0" selection-end-line="12" selection-end-column="0" />
-          </first_editor>
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/sources/integrate/oxray.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor relative-caret-position="-3521">
-            <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          </first_editor>
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/sources/integrate/office365.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor relative-caret-position="-1311">
-            <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          </first_editor>
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/sources/integrate/saml-windows.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor relative-caret-position="1326">
-            <caret line="78" column="34" lean-forward="true" selection-start-line="78" selection-start-column="34" selection-end-line="78" selection-end-column="34" />
-          </first_editor>
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/sources/integrate/openid-connect.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor relative-caret-position="-4966">
-            <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          </first_editor>
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/sources/integrate/test-shib2.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor relative-caret-position="319">
-            <caret line="63" column="0" lean-forward="false" selection-start-line="63" selection-start-column="0" selection-end-line="63" selection-end-column="0" />
-          </first_editor>
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/sources/integrate/scimuma-howto.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor relative-caret-position="75">
-            <caret line="151" column="3" lean-forward="false" selection-start-line="151" selection-start-column="3" selection-end-line="151" selection-end-column="3" />
-          </first_editor>
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/sources/integrate/outbound-saml.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor relative-caret-position="-29">
-            <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          </first_editor>
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/sources/integrate/ubuntu-installation.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor relative-caret-position="471">
-            <caret line="78" column="0" lean-forward="true" selection-start-line="78" selection-start-column="0" selection-end-line="78" selection-end-column="0" />
-          </first_editor>
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/sources/integrate/ubuntu-shib-apache.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor relative-caret-position="-1506">
-            <caret line="180" column="19" lean-forward="false" selection-start-line="180" selection-start-column="19" selection-end-line="180" selection-end-column="19" />
-          </first_editor>
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/sources/integrate/webex.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor relative-caret-position="-1795">
-            <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          </first_editor>
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/sources/integrate/uma.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor relative-caret-position="18">
-            <caret line="376" column="3" lean-forward="false" selection-start-line="376" selection-start-column="3" selection-end-line="376" selection-end-column="3" />
-          </first_editor>
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/sources/introduction/architecture.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor relative-caret-position="255">
-            <caret line="15" column="67" lean-forward="true" selection-start-line="15" selection-start-column="67" selection-end-line="15" selection-end-column="67" />
-          </first_editor>
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/sources/introduction/design.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor relative-caret-position="-629">
-            <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          </first_editor>
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/sources/introduction/history.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor relative-caret-position="-829">
-            <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          </first_editor>
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/sources/introduction/index.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor relative-caret-position="-486">
-            <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          </first_editor>
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/sources/integrate/salesforce-sso.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor relative-caret-position="68">
-            <caret line="81" column="42" lean-forward="false" selection-start-line="81" selection-start-column="42" selection-end-line="81" selection-end-column="42" />
-          </first_editor>
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/sources/multi-factor/cert.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor relative-caret-position="697">
-            <caret line="41" column="0" lean-forward="false" selection-start-line="41" selection-start-column="0" selection-end-line="41" selection-end-column="0" />
-          </first_editor>
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/sources/multi-factor/duo.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor relative-caret-position="385">
-            <caret line="50" column="36" lean-forward="false" selection-start-line="50" selection-start-column="36" selection-end-line="50" selection-end-column="36" />
-          </first_editor>
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/sources/multi-factor/oxpush2.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor relative-caret-position="419">
-            <caret line="31" column="40" lean-forward="false" selection-start-line="31" selection-start-column="40" selection-end-line="31" selection-end-column="40" />
-          </first_editor>
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/sources/multi-factor/u2f.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor relative-caret-position="374">
-            <caret line="22" column="0" lean-forward="true" selection-start-line="22" selection-start-column="0" selection-end-line="22" selection-end-column="0" />
-          </first_editor>
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/sources/multi-factor/wikid.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor relative-caret-position="419">
-            <caret line="50" column="0" lean-forward="false" selection-start-line="50" selection-start-column="0" selection-end-line="50" selection-end-column="0" />
-          </first_editor>
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/sources/oxtrust/personal.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor relative-caret-position="136">
-            <caret line="8" column="0" lean-forward="false" selection-start-line="8" selection-start-column="0" selection-end-line="8" selection-end-column="0" />
-          </first_editor>
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/sources/oxtrust/configuration.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor relative-caret-position="102">
-            <caret line="6" column="0" lean-forward="true" selection-start-line="6" selection-start-column="0" selection-end-line="6" selection-end-column="0" />
-          </first_editor>
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/sources/oxtrust/users.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor relative-caret-position="-2696">
-            <caret line="81" column="54" lean-forward="true" selection-start-line="81" selection-start-column="54" selection-end-line="81" selection-end-column="54" />
-          </first_editor>
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/sources/reference/certificates.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor relative-caret-position="612">
-            <caret line="36" column="56" lean-forward="true" selection-start-line="36" selection-start-column="56" selection-end-line="36" selection-end-column="56" />
-          </first_editor>
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/sources/reference/config.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor relative-caret-position="0">
-            <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          </first_editor>
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/sources/reference/oxauth-properties.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor relative-caret-position="153">
-            <caret line="9" column="22" lean-forward="false" selection-start-line="9" selection-start-column="22" selection-end-line="9" selection-end-column="22" />
-          </first_editor>
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/sources/reference/logs.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor relative-caret-position="-6113">
-            <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          </first_editor>
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/sources/reference/logout.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor relative-caret-position="-102">
-            <caret line="5" column="33" lean-forward="false" selection-start-line="5" selection-start-column="33" selection-end-line="5" selection-end-column="33" />
-          </first_editor>
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/sources/reference/ldap.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor relative-caret-position="85">
-            <caret line="220" column="1" lean-forward="false" selection-start-line="220" selection-start-column="1" selection-end-line="220" selection-end-column="1" />
-          </first_editor>
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/sources/reference/oxtrust-properties.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor relative-caret-position="92">
-            <caret line="176" column="20" lean-forward="false" selection-start-line="176" selection-start-column="20" selection-end-line="176" selection-end-column="20" />
-          </first_editor>
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/sources/reference/policy.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor relative-caret-position="0">
-            <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          </first_editor>
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/sources/reference/schema.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor relative-caret-position="-11213">
-            <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          </first_editor>
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/sources/user-management/lock-user.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor relative-caret-position="986">
-            <caret line="58" column="0" lean-forward="false" selection-start-line="58" selection-start-column="0" selection-end-line="58" selection-end-column="0" />
-          </first_editor>
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/sources/user-management/scim.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor relative-caret-position="194">
-            <caret line="118" column="33" lean-forward="false" selection-start-line="118" selection-start-column="33" selection-end-line="118" selection-end-column="33" />
-          </first_editor>
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/sources/user-management/xlsfile.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor relative-caret-position="306">
-            <caret line="18" column="2" lean-forward="false" selection-start-line="18" selection-start-column="2" selection-end-line="18" selection-end-column="2" />
-          </first_editor>
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/sources/index.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor relative-caret-position="0">
-            <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          </first_editor>
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/sources/cache-refresh/index.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor relative-caret-position="1122">
-            <caret line="66" column="22" lean-forward="false" selection-start-line="66" selection-start-column="22" selection-end-line="66" selection-end-column="22" />
-            <folding />
-          </first_editor>
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/sources/cache-refresh/register.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor relative-caret-position="204">
-            <caret line="12" column="9" lean-forward="false" selection-start-line="12" selection-start-column="9" selection-end-line="12" selection-end-column="9" />
-            <folding />
-          </first_editor>
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/sources/cache-refresh/reset-password.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor relative-caret-position="153">
-            <caret line="9" column="9" lean-forward="false" selection-start-line="9" selection-start-column="9" selection-end-line="9" selection-end-column="9" />
-            <folding />
-          </first_editor>
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/sources/cluster/LBConfig.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor relative-caret-position="119">
-            <caret line="7" column="21" lean-forward="false" selection-start-line="7" selection-start-column="21" selection-end-line="7" selection-end-column="21" />
-            <folding />
-          </first_editor>
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/docs/cache-refresh/index.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="17">
@@ -979,7 +1475,7 @@
     <entry file="file://$PROJECT_DIR$/sources/customize/script.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="SPLIT">
-          <first_editor relative-caret-position="539">
+          <first_editor relative-caret-position="4930">
             <caret line="290" column="104" lean-forward="false" selection-start-line="290" selection-start-column="104" selection-end-line="290" selection-end-column="104" />
             <folding />
           </first_editor>
@@ -990,8 +1486,511 @@
     <entry file="file://$PROJECT_DIR$/sources/multi-factor/intro.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="SPLIT">
-          <first_editor relative-caret-position="306">
+          <first_editor relative-caret-position="425">
             <caret line="25" column="0" lean-forward="false" selection-start-line="25" selection-start-column="0" selection-end-line="25" selection-end-column="0" />
+            <folding />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/source/introduction/design.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="0">
+            <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+            <folding />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/source/introduction/history.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="-595">
+            <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+            <folding />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/source/introduction/architecture.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="165">
+            <caret line="14" column="35" lean-forward="true" selection-start-line="14" selection-start-column="35" selection-end-line="14" selection-end-column="35" />
+            <folding />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/source/introduction/index.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="0">
+            <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+            <folding />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/source/upgrade/upgrading.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="0">
+            <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+            <folding />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/source/upgrade/update.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="-527">
+            <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+            <folding />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/source/upgrade/updating.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="0">
+            <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+            <folding />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sources-bkp/how-to/find-gluu-server-version.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="0">
+            <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+            <folding />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/source/operation/find-gluu-server-version.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="0">
+            <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+            <folding />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/source/operation/logs.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="-3325">
+            <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+            <folding />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sources-bkp/reference/logs.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="-459">
+            <caret line="11" column="50" lean-forward="true" selection-start-line="11" selection-start-column="50" selection-end-line="11" selection-end-column="50" />
+            <folding />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/source/authn-guide/otp.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="2108">
+            <caret line="124" column="0" lean-forward="true" selection-start-line="124" selection-start-column="0" selection-end-line="124" selection-end-column="0" />
+            <folding />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sources-bkp/how-to/find-gluu-version.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="126">
+            <caret line="11" column="18" lean-forward="false" selection-start-line="11" selection-start-column="18" selection-end-line="11" selection-end-column="18" />
+            <folding />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/source/operation/faq.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="153">
+            <caret line="9" column="0" lean-forward="false" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
+            <folding />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sources-bkp/customize/auth-script.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="68">
+            <caret line="208" column="5" lean-forward="true" selection-start-line="208" selection-start-column="5" selection-end-line="208" selection-end-column="24" />
+            <folding />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/source/authn-guide/customauthn.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="-10">
+            <caret line="184" column="127" lean-forward="false" selection-start-line="184" selection-start-column="127" selection-end-line="184" selection-end-column="127" />
+            <folding />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sources-bkp/deployment/upgrading.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="0">
+            <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+            <folding />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/source/upgrade/update-war.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="126">
+            <caret line="30" column="28" lean-forward="true" selection-start-line="30" selection-start-column="28" selection-end-line="30" selection-end-column="28" />
+            <folding />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sources-bkp/deployment/updating.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="119">
+            <caret line="11" column="71" lean-forward="false" selection-start-line="11" selection-start-column="71" selection-end-line="11" selection-end-column="71" />
+            <folding />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sources-bkp/customize/attributes.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="238">
+            <caret line="51" column="44" lean-forward="false" selection-start-line="51" selection-start-column="44" selection-end-line="51" selection-end-column="44" />
+            <folding />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/source/admin-guide/attribute.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="-1931">
+            <caret line="21" column="44" lean-forward="false" selection-start-line="21" selection-start-column="44" selection-end-line="21" selection-end-column="44" />
+            <folding />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/source/admin-guide/attributes.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="789">
+            <caret line="124" column="1" lean-forward="false" selection-start-line="124" selection-start-column="1" selection-end-line="124" selection-end-column="1" />
+            <folding />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/source/index.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="160">
+            <caret line="81" column="4" lean-forward="false" selection-start-line="81" selection-start-column="4" selection-end-line="81" selection-end-column="4" />
+            <folding />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/source/operation/intro.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="561">
+            <caret line="33" column="29" lean-forward="false" selection-start-line="33" selection-start-column="29" selection-end-line="33" selection-end-column="29" />
+            <folding />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/source/installation-guide/install.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="2958">
+            <caret line="174" column="33" lean-forward="false" selection-start-line="174" selection-start-column="33" selection-end-line="174" selection-end-column="33" />
+            <folding />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/source/installation-guide/setup_py.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="-495">
+            <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+            <folding />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/source/installation-guide/cluster.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="-2499">
+            <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+            <folding />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/source/admin-guide/saml.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="935">
+            <caret line="66" column="0" lean-forward="false" selection-start-line="66" selection-start-column="0" selection-end-line="66" selection-end-column="0" />
+            <folding />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/source/admin-guide/openid.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="-5969">
+            <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+            <folding />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/source/admin-guide/openid-connect.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="0">
+            <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+            <folding />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sources-bkp/integrate/backup/oauth2grants.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="-1447">
+            <caret line="138" column="0" lean-forward="true" selection-start-line="0" selection-start-column="0" selection-end-line="253" selection-end-column="0" />
+            <folding />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/source/admin-guide/oauth2.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="-2059">
+            <caret line="102" column="26" lean-forward="true" selection-start-line="102" selection-start-column="26" selection-end-line="102" selection-end-column="26" />
+            <folding />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/source/operation/config.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="0">
+            <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+            <folding />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/source/admin-guide/custom-script.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="-4114">
+            <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+            <folding />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mkdocs1.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="420">
+          <caret line="49" column="4" lean-forward="false" selection-start-line="49" selection-start-column="4" selection-end-line="49" selection-end-column="51" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/source/installation-guide/index.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="374">
+            <caret line="22" column="0" lean-forward="true" selection-start-line="22" selection-start-column="0" selection-end-line="22" selection-end-column="0" />
+            <folding />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sources-bkp/deployment/index.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="391">
+            <caret line="31" column="0" lean-forward="false" selection-start-line="26" selection-start-column="0" selection-end-line="31" selection-end-column="0" />
+            <folding />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/source/admin-guide/session.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="0">
+            <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+            <folding />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sources-bkp/reference/config.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="0">
+            <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+            <folding />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/source/admin-guide/config.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="221">
+            <caret line="13" column="0" lean-forward="true" selection-start-line="13" selection-start-column="0" selection-end-line="13" selection-end-column="0" />
+            <folding />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sources-bkp/how-to/update-certificate.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="1377">
+            <caret line="81" column="36" lean-forward="false" selection-start-line="81" selection-start-column="36" selection-end-line="81" selection-end-column="36" />
+            <folding />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sources-bkp/reference/certificates.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="0">
+            <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+            <folding />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/source/operation/update-certificate.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="476">
+            <caret line="108" column="31" lean-forward="false" selection-start-line="108" selection-start-column="31" selection-end-line="108" selection-end-column="31" />
+            <folding />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/source/operation/fine-tuning.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="17">
+            <caret line="12" column="0" lean-forward="false" selection-start-line="12" selection-start-column="0" selection-end-line="12" selection-end-column="0" />
+            <folding />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/source/cluster/csync-installation.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="126">
+            <caret line="59" column="0" lean-forward="true" selection-start-line="59" selection-start-column="0" selection-end-line="59" selection-end-column="0" />
+            <folding />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/source/cluster/index.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="116">
+            <caret line="416" column="179" lean-forward="false" selection-start-line="416" selection-start-column="179" selection-end-line="416" selection-end-column="179" />
             <folding />
           </first_editor>
           <second_editor />
@@ -1000,9 +1999,20 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/mkdocs.yml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="284">
-          <caret line="49" column="27" lean-forward="false" selection-start-line="49" selection-start-column="27" selection-end-line="49" selection-end-column="27" />
+        <state relative-caret-position="816">
+          <caret line="89" column="32" lean-forward="true" selection-start-line="89" selection-start-column="32" selection-end-line="89" selection-end-column="32" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/source/admin-guide/certificates.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="201">
+            <caret line="26" column="53" lean-forward="true" selection-start-line="26" selection-start-column="53" selection-end-line="26" selection-end-column="53" />
+            <folding />
+          </first_editor>
+          <second_editor />
         </state>
       </provider>
     </entry>

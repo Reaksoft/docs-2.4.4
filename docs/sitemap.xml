@@ -12,12 +12,6 @@
     
         
     <url>
-     <loc>/introduction/</loc>
-     <lastmod>2017-02-06</lastmod>
-     <changefreq>daily</changefreq>
-    </url>
-        
-    <url>
      <loc>/introduction/history/</loc>
      <lastmod>2017-02-06</lastmod>
      <changefreq>daily</changefreq>
@@ -40,67 +34,19 @@
     
         
     <url>
-     <loc>/deployment/</loc>
+     <loc>/installation-guide/</loc>
      <lastmod>2017-02-06</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
-     <loc>/deployment/ubuntu/</loc>
+     <loc>/installation-guide/install/</loc>
      <lastmod>2017-02-06</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
-     <loc>/deployment/ubuntu-xenial/</loc>
-     <lastmod>2017-02-06</lastmod>
-     <changefreq>daily</changefreq>
-    </url>
-        
-    <url>
-     <loc>/deployment/centos/</loc>
-     <lastmod>2017-02-06</lastmod>
-     <changefreq>daily</changefreq>
-    </url>
-        
-    <url>
-     <loc>/deployment/centos7/</loc>
-     <lastmod>2017-02-06</lastmod>
-     <changefreq>daily</changefreq>
-    </url>
-        
-    <url>
-     <loc>/deployment/rhel/</loc>
-     <lastmod>2017-02-06</lastmod>
-     <changefreq>daily</changefreq>
-    </url>
-        
-    <url>
-     <loc>/deployment/rhel7/</loc>
-     <lastmod>2017-02-06</lastmod>
-     <changefreq>daily</changefreq>
-    </url>
-        
-    <url>
-     <loc>/deployment/debian/</loc>
-     <lastmod>2017-02-06</lastmod>
-     <changefreq>daily</changefreq>
-    </url>
-        
-    <url>
-     <loc>/deployment/setup_py/</loc>
-     <lastmod>2017-02-06</lastmod>
-     <changefreq>daily</changefreq>
-    </url>
-        
-    <url>
-     <loc>/deployment/azure/</loc>
-     <lastmod>2017-02-06</lastmod>
-     <changefreq>daily</changefreq>
-    </url>
-        
-    <url>
-     <loc>/deployment/linode/</loc>
+     <loc>/installation-guide/setup_py/</loc>
      <lastmod>2017-02-06</lastmod>
      <changefreq>daily</changefreq>
     </url>
@@ -122,43 +68,13 @@
     
         
     <url>
-     <loc>/oxtrust/configuration/</loc>
+     <loc>/admin-guide/oxtrust-ui/</loc>
      <lastmod>2017-02-06</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
-     <loc>/integrate/backup/outbound-saml/</loc>
-     <lastmod>2017-02-06</lastmod>
-     <changefreq>daily</changefreq>
-    </url>
-        
-    <url>
-     <loc>/integrate/backup/openid-connect/</loc>
-     <lastmod>2017-02-06</lastmod>
-     <changefreq>daily</changefreq>
-    </url>
-        
-    <url>
-     <loc>/integrate/backup/uma/</loc>
-     <lastmod>2017-02-06</lastmod>
-     <changefreq>daily</changefreq>
-    </url>
-        
-    <url>
-     <loc>/oxtrust/users/</loc>
-     <lastmod>2017-02-06</lastmod>
-     <changefreq>daily</changefreq>
-    </url>
-        
-    <url>
-     <loc>/oxtrust/personal/</loc>
-     <lastmod>2017-02-06</lastmod>
-     <changefreq>daily</changefreq>
-    </url>
-        
-    <url>
-     <loc>/customize/script/</loc>
+     <loc>/admin-guide/custom-script/</loc>
      <lastmod>2017-02-06</lastmod>
      <changefreq>daily</changefreq>
     </url>
@@ -170,47 +86,49 @@
     </url>
         
     <url>
-     <loc></loc>
-     <lastmod></lastmod>
-     <changefreq>daily</changefreq>
-    </url>
-        
-    <url>
-     <loc>/reference/config/</loc>
-     <lastmod>2017-02-06</lastmod>
-     <changefreq>daily</changefreq>
-    </url>
-        
-    
-
-    
-        
-    <url>
-     <loc>/how-to/automate-schema/</loc>
+     <loc>/admin-guide/user-group/</loc>
      <lastmod>2017-02-06</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
-     <loc>/integrate/backup/scimuma-howto/</loc>
+     <loc>/admin-guide/config/</loc>
      <lastmod>2017-02-06</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
-     <loc>/user-management/lock-user/</loc>
+     <loc>/admin-guide/saml/</loc>
      <lastmod>2017-02-06</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
-     <loc>/how-to/uma-demo/</loc>
+     <loc>/admin-guide/oauth2/</loc>
      <lastmod>2017-02-06</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
-     <loc>/how-to/saml_proxy_end_to_end/</loc>
+     <loc>/admin-guide/openid-connect/</loc>
+     <lastmod>2017-02-06</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+        
+    <url>
+     <loc>/admin-guide/uma/</loc>
+     <lastmod>2017-02-06</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+        
+    <url>
+     <loc>/admin-guide/scim-uma/</loc>
+     <lastmod>2017-02-06</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+        
+    <url>
+     <loc>/admin-guide/certificates/</loc>
      <lastmod>2017-02-06</lastmod>
      <changefreq>daily</changefreq>
     </url>
@@ -258,87 +176,49 @@
     
         
     <url>
-     <loc>/how-to/backup/</loc>
+     <loc>/operation/backup/</loc>
      <lastmod>2017-02-06</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
-     <loc>/how-to/update-certificate/</loc>
+     <loc>/operation/find-gluu-server-version/</loc>
      <lastmod>2017-02-06</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
-     <loc>/how-to/find-gluu-server-version/</loc>
+     <loc>/operation/ports/</loc>
      <lastmod>2017-02-06</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
-     <loc></loc>
-     <lastmod></lastmod>
-     <changefreq>daily</changefreq>
-    </url>
-        
-    <url>
-     <loc>/reference/certificates/</loc>
+     <loc>/operation/logout/</loc>
      <lastmod>2017-02-06</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
-     <loc>/reference/ldap/</loc>
+     <loc>/operation/logs/</loc>
      <lastmod>2017-02-06</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
-     <loc>/reference/schema/</loc>
+     <loc>/operation/faq/</loc>
      <lastmod>2017-02-06</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
-     <loc>/reference/schema/</loc>
+     <loc>/operation/fine-tuning/</loc>
      <lastmod>2017-02-06</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
-     <loc>/reference/logout/</loc>
-     <lastmod>2017-02-06</lastmod>
-     <changefreq>daily</changefreq>
-    </url>
-        
-    <url>
-     <loc>/reference/logs/</loc>
-     <lastmod>2017-02-06</lastmod>
-     <changefreq>daily</changefreq>
-    </url>
-        
-    
-
-    
-        
-    <url>
-     <loc>/faq/general/</loc>
-     <lastmod>2017-02-06</lastmod>
-     <changefreq>daily</changefreq>
-    </url>
-        
-    <url>
-     <loc>/faq/troubleshooting/</loc>
-     <lastmod>2017-02-06</lastmod>
-     <changefreq>daily</changefreq>
-    </url>
-        
-    
-
-    
-        
-    <url>
-     <loc>/fine-tuning/</loc>
+     <loc>/operation/update-certificate/</loc>
      <lastmod>2017-02-06</lastmod>
      <changefreq>daily</changefreq>
     </url>
