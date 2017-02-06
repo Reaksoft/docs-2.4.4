@@ -86,6 +86,7 @@ pages:
         - 'Ports': 'operation/ports.md'
         - 'Single Logout (SLO)': 'operation/logout.md'
         - 'Log Management' : 'operation/logs.md'
+        - Customize Gluu Login Page': 'operation/design.md'
         - 'FAQ & Troubleshooting' : 'operation/faq.md'
         - 'Tuning LDAP, Tomcat': 'operation/fine-tuning.md'
         - 'Update Certificate': 'operation/update-certificate.md'
