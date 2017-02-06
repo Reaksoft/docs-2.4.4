@@ -128,9 +128,9 @@
       <replace>..</replace>
     </replaceStrings>
     <dirStrings>
-      <dir>D:\Gluu\GluuDocs-3.0\docs-2.4.4-dev\sources</dir>
-      <dir>D:\Gluu\GluuDocs-3.0\docs-2.4.4-dev\source</dir>
-      <dir>D:\Gluu\GluuDocs-3.0\docs-2.4.4-dev</dir>
+      <dir>D:\Gluu\GluuDocs-3.0\docs-2.4.4\sources</dir>
+      <dir>D:\Gluu\GluuDocs-3.0\docs-2.4.4\source</dir>
+      <dir>D:\Gluu\GluuDocs-3.0\docs-2.4.4</dir>
     </dirStrings>
   </component>
   <component name="FindManager">
