@@ -5,10 +5,11 @@
         <img src="{{ base_url }}/{{ config.extra.logo }}">
       {% endif %}
     </i>
-    {{ config.site_name }}
+    {{ config.site_name }}	
+  </label>
   <label for="Versions">Ver:<select id="versions" onchange="window.location.href=this.value;" style="
-    position: inherit;
-    display: block;
+    position: inline-table;
+    display: inline;
     min-width: 25%;
     /* width: 120%; */
     height: 25px;
@@ -27,8 +28,7 @@
   <option value="/docs/2.4.4">2.4.4</option>
   <option value="/docs">Latest</option>
     </select> 
-</label>	
-  </label>
+</label>
   {% if config.repo_url %}
     <div class="md-nav__source">
       {% include "partials/source.html" %}
