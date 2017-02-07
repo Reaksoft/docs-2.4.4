@@ -6,6 +6,28 @@
       {% endif %}
     </i>
     {{ config.site_name }}
+  <label for="Versions">Ver:<select id="versions" onchange="window.location.href=this.value;" style="
+    position: relative;
+    display: inline-block;
+    min-width: 100%;
+    /* width: 120%; */
+    height: 34px;
+    padding: 6px 30px 6px 15px;
+    color: #555555;
+    border: none;
+    background: transparent;
+    outline: none;
+    -webkit-appearance: none;
+    z-index: 99;
+    cursor: pointer;
+    font-size: 16px;
+    margin-bottom: 10px;
+    border: 1px;
+">
+  <option value="/docs/2.4.4">2.4.4</option>
+  <option value="/docs">Latest</option>
+    </select> 
+</label>	
   </label>
   {% if config.repo_url %}
     <div class="md-nav__source">
