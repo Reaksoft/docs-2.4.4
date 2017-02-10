@@ -80,13 +80,15 @@ pages:
             - 'OxTrust JSON Properties': 'reference/JSON-oxtrust-prop.md'
             - 'OxAuth JSON Properties': 'reference/JSON-oxauth-prop.md'
         #- 'Ox LDAP Properties':
+        - 'Gluu LDAP Schema':
+            - 'OpenLDAP Schema': 'reference/schema.md'
 - Operation Guide:
         - 'Backups': 'operation/backup.md'
         - 'Find your Gluu Version': 'operation/find-gluu-server-version.md'
         - 'Ports': 'operation/ports.md'
         - 'Single Logout (SLO)': 'operation/logout.md'
         - 'Log Management' : 'operation/logs.md'
-        - Customize Gluu Login Page': 'operation/design.md'
+        - 'Customize Gluu Login Page': 'operation/design.md'
         - 'FAQ & Troubleshooting' : 'operation/faq.md'
         - 'Tuning LDAP, Tomcat': 'operation/fine-tuning.md'
         - 'Update Certificate': 'operation/update-certificate.md'
